@@ -1,0 +1,146 @@
+{
+    "dcat:keyword": [],
+    "dc:license": {
+        "@id": "http://opendefinition.org/licenses/cc-by/"
+    },
+    "dc:publisher": {
+        "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+        "schema:url": {
+            "@id": "http://datalegend.org"
+        }
+    },
+    "url": "hiscam_u3.csv",
+    "dialect": {
+        "delimiter": "\t",
+        "encoding": "latin"
+    },
+    "@context": [
+        "http://www.w3.org/ns/csvw", {
+            "@base": "http://data.socialhistory.org/resource/hiscam/",
+            "@language": "en"
+        }, {
+            "owl": "http://www.w3.org/2002/07/owl#",
+            "clioctr": "http://data.socialhistory.org/resource/clio/country/",
+            "ldp": "http://www.w3.org/ns/ldp#",
+            "clio": "http://data.socialhistory.org/resource/clio/",
+            "occhisco": "http://data.socialhistory.org/resource/napp/OCCHISCO/",
+            "skos": "http://www.w3.org/2004/02/skos/core#",
+            "xml": "http://www.w3.org/XML/1998/namespace/",
+            "bibo": "http://purl.org/ontology/bibo/",
+            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+            "prov": "http://www.w3.org/ns/prov#",
+            "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+            "napp-can91": "http://data.socialhistory.org/resource/napp/dataset/canada1891/",
+            "hiscam": "http://data.socialhistory.org/resource/hiscam/v131/",
+            "hiscam-u3": "http://data.socialhistory.org/resource/hiscam/v131/u3/",
+            "np": "http://www.nanopub.org/nschema#",
+            "canfam-auke": "http://data.socialhistory.org/resource/canfam/auke/",
+            "dcterms": "http://purl.org/dc/terms/",
+            "schema": "http://schema.org/",
+            "foaf": "http://xmlns.com/foaf/0.1/",
+            "napp": "http://data.socialhistory.org/resource/napp/",
+            "sdv": "http://data.socialhistory.org/vocab/",
+            "hisco": "http://data.socialhistory.org/resource/hisco/",
+            "hisco-code": "http://data.socialhistory.org/resource/hisco/code/",
+            "sdp": "http://data.socialhistory.org/resource/person/",
+            "sdr": "http://data.socialhistory.org/resource/",
+            "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+            "dc": "http://purl.org/dc/terms/",
+            "clioprop": "http://data.socialhistory.org/resource/clio/property/",
+            "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+            "clioind": "http://data.socialhistory.org/resource/clio/indicator/",
+            "dc11": "http://purl.org/dc/elements/1.1/",
+            "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
+            "napp-eng81": "http://data.socialhistory.org/resource/napp/dataset/englandwales1881/",
+            "canfam": "http://data.socialhistory.org/resource/canfam/dataset/canada1901/",
+            "napp-sct81": "http://data.socialhistory.org/resource/napp/dataset/scotland1881/",
+            "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+            "qb": "http://purl.org/linked-data/cube#",
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+            "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/",
+            "": "http://data.socialhistory.org/resource/hiscam/v131/"
+        }
+    ],
+    "dc:title": "hiscam_u3.csv",
+    "dc:modified": {
+        "@value": "2016-08-11",
+        "@type": "xsd:date"
+    },
+    "qb:structure": {
+        "@id": "hisco:structure",
+        "@type": "qb:DataStructureDefinition",
+        "rdfs:comment": "Datastructure definition for HISCO to HISCAM mapping files",
+        "qb:component": [{
+            "qb:dimension": [{
+                "@id": "sdmx-dimension:refPeriod",
+                "@type": "qb:DimensionProperty",
+                "rdfs:range": {
+                    "@id": "time:Interval"
+                }
+            }, {
+                "@id": "sdmx-dimension:sex",
+                "@type": "qb:DimensionProperty"
+            }],
+            "qb:measure": {
+                "@id": "hiscam-u3:value",
+                "@type": ["qb:MeasureProperty", "owl:DatatypeProperty"],
+                "rdfs:range": {
+                    "@id": "xsd:decimal"
+                },
+                "rdfs:label": "The HISCAM value for the HISCO score in this reference period"
+            }
+        }]
+    },
+    "tableSchema": {
+        "aboutUrl": "hiscam-u3:{hisco:0>5}",
+        "columns": [{
+            "titles": [
+                "hisco"
+            ],
+            "name": "hisco",
+            "propertyUrl": "hiscam:hisco",
+            "valueUrl": "hisco-code:hisco/{hisco:0>5}",
+            "dc:description": "hisco"
+        }, {
+            "datatype": "decimal",
+            "titles": [
+                "hiscam"
+            ],
+            "propertyUrl": "hiscam:u3",
+            "name": "hiscam",
+            "dc:description": "The HISCAM value for this HISCO score"
+        }, {
+           "datatype": "decimal",
+           "titles": [
+               "hiscam"
+        ],
+           "propertyUrl": "hiscam:u3",
+           "name": "hiscam",
+           "dc:description": "A HISCAM scale score"
+        }, {
+            "virtual": true,
+            "aboutUrl": "hisco-code:hisco/{hisco:0>5}",
+            "propertyUrl": "hiscam:u3",
+            "datatype": "decimal",
+            "csvw:value": "{hiscam}"
+        }, {
+            "virtual": true,
+            "propertyUrl": "sdmx-dimension:sex",
+            "valueUrl": "sdmx-code:sex-F",
+            "dc:description": "The sex to which this HISCAM scale applies (1800-1938)"
+        }, {
+            "virtual": true,
+            "propertyUrl": "sdmx-dimension:refPeriod",
+            "valueUrl": "http://reference.data.gov.uk/id/gregorian-interval/1800-01-01T00:00:00/P139Y",
+            "dc:description": "The reference period for this HISCAM value (1800-1938)"
+        }, {
+            "datatype": "decimal",
+            "virtual": true,
+            "propertyUrl": "sdmx-measure:obsValue",
+            "name": "hiscam",
+            "dc:description": "The HISCAM value for this scale"
+        }
+       ]
+    }
+}

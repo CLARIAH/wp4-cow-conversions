@@ -1,0 +1,259 @@
+{
+ "dialect": {
+  "quoteChar": "\"", 
+  "delimiter": ",", 
+  "encoding": "ISO-8859-2"
+ }, 
+ "dcat:keyword": [], 
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ }, 
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend", 
+  "schema:url": {
+   "@id": "http://datalegend.org"
+  }
+ }, 
+ "url": "hisco_projects_provenance.csv", 
+ "@context": [
+  "http://www.w3.org/ns/csvw", 
+  {
+   "@base": "http://data.socialhistory.org/resource/hisco/", 
+   "@language": "en"
+  },
+  {
+   "bibo": "http://purl.org/ontology/bibo/",
+   "canfam-auke": "http://data.socialhistory.org/resource/canfam/auke/",
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
+   "canfam": "http://data.socialhistory.org/resource/canfam/dataset/canada1901/",
+   "clio": "http://data.socialhistory.org/resource/clio/",
+   "clioctr": "http://data.socialhistory.org/resource/clio/country/",
+   "clioind": "http://data.socialhistory.org/resource/clio/indicator/",
+   "clioprop": "http://data.socialhistory.org/resource/clio/property/",
+   "csvw": "http://www.w3.org/ns/csvw#",
+   "dbo": "http://dbpedia.org/ontology/",
+   "dbp": "http://dbpedia.org/property/",
+   "dbpedia": "http://dbpedia.org/resource/",
+   "dbr": "http://dbpedia.org/resource/",
+   "dc": "http://purl.org/dc/terms/",
+   "dc11": "http://purl.org/dc/elements/1.1/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "foaf": "http://xmlns.com/foaf/0.1/",
+   "hiscam": "http://data.socialhistory.org/resource/hiscam/",
+   "hisclass": "http://data.socialhistory.org/resource/hisclass/",
+   "hisclass5": "http://data.socialhistory.org/resource/hisclass5/",
+   "hisco": "http://data.socialhistory.org/resource/hisco/",
+   "hsn": "http://data.socialhistory.org/resource/hsn2013a/",
+   "iish": "http://data.socialhistory.org/",
+   "ldp": "http://www.w3.org/ns/ldp#",
+   "napp-can91": "http://data.socialhistory.org/resource/napp/dataset/canada1891/",
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/",
+   "napp-eng81": "http://data.socialhistory.org/resource/napp/dataset/englandwales1881/",
+   "napp-sct81": "http://data.socialhistory.org/resource/napp/dataset/scotland1881/",
+   "napp": "http://data.socialhistory.org/resource/napp/",
+   "np": "http://www.nanopub.org/nschema#",
+   "occhisco": "http://data.socialhistory.org/resource/napp/OCCHISCO/",
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "prov": "http://www.w3.org/ns/prov#",
+   "qb": "http://purl.org/linked-data/cube#",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "schema": "http://schema.org/",
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+   "sdp": "http://data.socialhistory.org/resource/person/",
+   "sdr": "http://data.socialhistory.org/resource/",
+   "sdv": "http://data.socialhistory.org/vocab/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "time": "http://www.w3.org/2006/time#",
+   "xml": "http://www.w3.org/XML/1998/namespace/",
+   "xsd": "http://www.w3.org/2001/XMLSchema#",
+   "": "http://data.socialhistory.org/resource/hisco/"
+  }
+ ], 
+ "dc:title": "hisco_projects_provenance.csv", 
+ "@id": "http://data.socialhistory.org/resource/hisco/hisco_projects_provenance.csv", 
+ "dc:modified": {
+  "@value": "2017-01-12", 
+  "@type": "xsd:date"
+ }, 
+ "tableSchema": {
+  "aboutUrl": "{code}", 
+  "primaryKey": "code", 
+  "columns": [
+   {
+    "datatype": "string", 
+    "titles": [
+     "code"
+    ], 
+    "name": "code", 
+    "propertyUrl": "skos:prefLabel",
+    "dc:description": "code for research project"
+   }, 
+   {
+    "datatype": "url", 
+    "titles": [
+     "hiwURL"
+    ], 
+    "name": "hiwURL", 
+    "dc:description": "URL provided by History of Work project at http://historyofwork.iisg.nl"
+   }, 
+   {
+    "virtual": "true",
+    "aboutUrl": "{code}",
+    "propertyUrl": "rdf:resource",
+    "valueUrl":"{hiwURL}"
+   },
+   {
+    "datatype": "string", 
+    "titles": [
+     "projectName"
+    ], 
+    "name": "projectName", 
+    "dc:description": "Name of research project providing HISCO occupations"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "coder1"
+    ], 
+    "name": "coder1", 
+    "dc:description": "First contributing occupation coder"
+   },
+   {
+    "virtual": "true",
+    "valueUrl": "foaf:person",
+    "propertyUrl": "rdf:type",
+    "aboutUrl": "iish:person/{coder1}"
+   },
+   {
+    "datatype": "string", 
+    "titles": [
+     "coder2"
+    ], 
+    "name": "coder2", 
+    "dc:description": "Second contributing occupation coder"
+   }, 
+   {
+    "virtual": true,
+    "valueUrl": "foaf:person",
+    "propertyUrl": "rdf:type",
+    "aboutUrl": "iish:person/{coder2}"
+   },
+   {
+    "datatype": "string", 
+    "titles": [
+     "coder3"
+    ], 
+    "name": "coder3", 
+    "dc:description": "Third contributing occupation coder"
+   }, 
+   {
+    "virtual": true,
+    "valueUrl": "foaf:person",
+    "propertyUrl": "rdf:type",
+    "aboutUrl": "iish:person/{coder3}"
+   },
+   {
+    "datatype": "string", 
+    "titles": [
+     "coder4"
+    ], 
+    "name": "coder4", 
+    "dc:description": "Fourth contributing occupation coder"
+   }, 
+   {
+    "virtual": true,
+    "valueUrl": "foaf:person",
+    "propertyUrl": "rdf:type",
+    "aboutUrl": "iish:person/{coder4}"
+   },
+   {
+    "datatype": "string", 
+    "titles": [
+     "institution"
+    ], 
+    "name": "institution", 
+    "dc:description": "institution"
+   }, 
+   {
+    "virtual": true,
+    "propertyUrl": "foaf:Organization",
+    "valueUrl": "iish:institute/{institution}"
+   },
+   {
+    "datatype": "string", 
+    "titles": [
+     "status"
+    ], 
+    "name": "status", 
+    "dc:description": "Indication of degree of peer reviewing of occupational coding"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "country"
+    ], 
+    "name": "country", 
+    "dc:description": "Country from which the occupational titles were derived"
+   }, 
+   {
+    "virtual": true,
+    "propertyUrl":"sdmx-dimension:refArea",
+    "valueUrl": "iish:country/{country}"
+   },
+   {
+    "datatype": "string", 
+    "titles": [
+     "geographicalCoverage"
+    ], 
+    "name": "geographicalCoverage", 
+    "dc:description": "Geographical coverage of the research study"
+   }, 
+   {
+    "virtual": true,
+    "propertyUrl":"sdmx-dimension:refArea",
+    "valueUrl": "{geographicalCoverage}"
+   },
+   {
+    "datatype": "string", 
+    "titles": [
+     "data"
+    ], 
+    "name": "data", 
+    "dc:description": "Type of data source"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "chronology"
+    ], 
+    "name": "chronology", 
+    "dc:description": "The period from which the observations were obtained"
+   }, 
+   {
+    "virtual": true,
+    "propertyUrl":"sdmx-dimension:refPeriod",
+    "valueUrl": "{chronology}"
+   },
+   {
+    "datatype": "string", 
+    "titles": [
+     "document"
+    ], 
+    "name": "document", 
+    "dc:description": "Reference to a document in which the occupational coding effort appears"
+   }, 
+   {
+    "datatype": "url", 
+    "titles": [
+     "projectURL"
+    ], 
+    "name": "projectURL", 
+    "dc:description": "URL of the research project"
+   }
+  ]
+ }
+}

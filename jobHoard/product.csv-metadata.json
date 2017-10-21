@@ -1,0 +1,181 @@
+{
+ "dcat:keyword": [],
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+ "dc:publisher": {
+     "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+     "schema:url": {
+         "@id": "http://datalegend.net"
+     }
+ },
+ "dc:creator": [{
+     "@id": "sdp:richard.zijdeman@gmail.com",
+     "rdf:type": [{
+         "@id": "foaf:Person"
+     }, {
+         "@id": "prov:Person"
+     }],
+     "owl:sameAs": [{
+         "@id": "http://orcid.org/0000-0003-0782-2704"
+     }, {
+         "@id": "info:eu-repo/dai/nl/304832960"
+     }, {
+         "@id": "http://isni.org/isni/000000010711579X"
+     }],
+     "foaf:name": "Richard Zijdeman",
+     "foaf:givenName": "Richard",
+     "foaf:familyName": "Zijdeman",
+     "foaf:mbox": {
+         "@id": "mailto:richard.zijdeman@iisg.nl"
+     }
+ }, {
+     "@id": "sdp:rjhoekstr@gmail.com",
+     "rdf:type": [{
+         "@id": "foaf:Person"
+     }, {
+         "@id": "prov:Person"
+     }],
+     "owl:sameAs": {
+         "@id": "http://orcid.org/0000-0001-7076-9083"
+     },
+     "foaf:name": "Rinke Hoekstra",
+     "foaf:familyName": "Hoekstra",
+     "foaf:givenName": "Rinke",
+     "foaf:mbox": {
+         "@id": "mailto:rinke.hoekstra@vu.nl"
+     }
+ }],
+ "prov:wasDerivedFrom": [{
+     "@id": "urn:isbn:9789058671967",
+     "rdf:type": {
+         "@id": "bibo:Book"
+     },
+     "dc:title": {
+         "@value": "Historical International Standard Classification of Occupations",
+         "@lang": "en"
+     },
+     "dc:creator": ["Marco van Leeuwen", "Ineke Maas", "Andrew Miles"],
+     "dc:publisher": "Leuven University Press",
+     "dc:date": {"@value":"2002","@type":"xsd:Year"}
+ }, {
+     "@id": "http://historyofwork.iisg.nl"
+ }],
+ "url": "product.csv",
+ "@context": [
+  "http://www.w3.org/ns/csvw",
+  {
+   "@base": "http://data.socialhistory.org/resource/hisco/product/",
+   "@language": "en"
+  },
+  {
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "clioctr": "http://data.socialhistory.org/resource/clio/country/",
+   "ldp": "http://www.w3.org/ns/ldp#",
+   "clio": "http://data.socialhistory.org/resource/clio/",
+   "occhisco": "http://data.socialhistory.org/resource/napp/OCCHISCO/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "xml": "http://www.w3.org/XML/1998/namespace/",
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "prov": "http://www.w3.org/ns/prov#",
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+   "napp-can91": "http://data.socialhistory.org/resource/napp/dataset/canada1891/",
+   "hiscam": "http://data.socialhistory.org/resource/hiscam/",
+   "np": "http://www.nanopub.org/nschema#",
+   "canfam-auke": "http://data.socialhistory.org/resource/canfam/auke/",
+   "foaf": "http://xmlns.com/foaf/0.1/",
+   "napp": "http://data.socialhistory.org/resource/napp/",
+   "sdv": "http://data.socialhistory.org/vocab/",
+   "hisco": "http://data.socialhistory.org/resource/hisco/",
+   "hisco-code": "http://data.socialhistory.org/resource/hisco/code/",
+   "sdp": "http://data.socialhistory.org/resource/person/",
+   "sdr": "http://data.socialhistory.org/resource/",
+   "clioprop": "http://data.socialhistory.org/resource/clio/property/",
+   "clioind": "http://data.socialhistory.org/resource/clio/indicator/",
+   "qb": "http://purl.org/linked-data/cube#",
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
+   "napp-eng81": "http://data.socialhistory.org/resource/napp/dataset/englandwales1881/",
+   "canfam": "http://data.socialhistory.org/resource/canfam/dataset/canada1901/",
+   "napp-sct81": "http://data.socialhistory.org/resource/napp/dataset/scotland1881/",
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "xsd": "http://www.w3.org/2001/XMLSchema#",
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/",
+   "bibo": "http://purl.org/ontology/bibo/"
+  }
+ ],
+ "dc:title": "product.csv",
+ "dc:modified": {
+  "@value": "2016-08-10",
+  "@type": "xsd:date"
+ },
+ "tableSchema": {
+  "aboutUrl": "hisco-code:product/{product_id}",
+  "primaryKey": "product_id",
+  "columns": [
+    {
+      "virtual": true,
+      "propertyUrl": "rdf:type",
+      "valueUrl": "skos:Concept"
+    },
+    {
+      "virtual": true,
+      "propertyUrl": "skos:inScheme",
+      "valueUrl": "hisco-code:product"
+    },
+    {
+      "virtual": true,
+      "aboutUrl": "hisco-code:product",
+      "propertyUrl": "rdf:type",
+      "valueUrl": "skos:ConceptScheme"
+    },
+    {
+      "virtual": true,
+      "aboutUrl": "hisco:vocabulary",
+      "propertyUrl": "skos:member",
+      "valueUrl": "hisco-code:product"
+    },
+    {
+      "virtual": true,
+      "aboutUrl": "hisco-code:product",
+      "propertyUrl": "skos:prefLabel",
+      "lang": "en",
+      "csvw:value": "Code list for the PRODUCT variable in HISCO"
+    },
+    {
+      "virtual": true,
+      "aboutUrl": "hisco-code:product",
+      "propertyUrl": "skos:note",
+      "valueUrl": "http://historyofwork.iisg.nl/detail_page_28771.php"
+    },
+    {
+      "virtual": true,
+      "aboutUrl": "hisco-code:product",
+      "propertyUrl": "rdf:label",
+      "lang": "en",
+      "csvw:value": "Code list for the PRODUCT variable in HISCO"
+    },
+    {
+      "virtual": true,
+      "aboutUrl": "hisco-code:product",
+      "propertyUrl": "skos:notation",
+      "csvw:value": "CL_HISCO_PRODUCT"
+    },
+    {
+    "virtual": true,
+    "aboutUrl": "hisco-code:product/{product_id}",
+    "propertyUrl": "skos:prefLabel",
+    "lang": "en",
+    "csvw:value": "{label}"
+    },
+    {
+    "virtual": true,
+    "aboutUrl": "hisco-code:product/{product_id}",
+    "propertyUrl": "skos:notation",
+    "csvw:value": "{product_id}"
+    }
+  ]
+ }
+}
