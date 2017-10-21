@@ -6,9 +6,54 @@
     "dc:publisher": {
         "schema:name": "CLARIAH Structured Data Hub - Datalegend",
         "schema:url": {
-            "@id": "http://datalegend.org"
+            "@id": "http://datalegend.net"
         }
     },
+{
+    "dcat:keyword": [],
+    "dc:license": {
+        "@id": "http://opendefinition.org/licenses/cc-by/"
+    },
+    "dc:publisher": {
+        "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+        "schema:url": {
+            "@id": "http://datalegend.net"
+        }
+    },
+    "dc:creator": [{
+        "@id": "sdp:richard.zijdeman@iisg.nl",
+        "rdf:type": [{
+            "@id": "foaf:Person"
+        }, {
+            "@id": "prov:Person"
+        }],
+        "owl:sameAs": [{
+            "@id": "http://orcid.org/0000-0003-0782-2704"
+        }, {
+            "@id": "info:eu-repo/dai/nl/304832960"
+        }, {
+            "@id": "http://isni.org/isni/000000010711579X"
+        }],
+        "foaf:name": "Richard Zijdeman",
+        "foaf:givenName": "Richard",
+        "foaf:familyName": "Zijdeman",
+        "foaf:mbox": {
+            "@id": "mailto:richard.zijdeman@iisg.nl"
+        }
+    }, {
+        "@id": "sdp:auke.rijpma@gmail.com",
+        "rdf:type": [{
+            "@id": "foaf:Person"
+        }, {
+            "@id": "prov:Person"
+        }],
+        "foaf:name": "Auke Rijpma",
+        "foaf:familyName": "Rijpma",
+        "foaf:givenName": "Rijpma",
+        "foaf:mbox": {
+            "@id": "mailto:auke.rijpma@uu.nl"
+        }
+    }],
     "url": "hiscam_gb.csv",
     "dialect": {
         "delimiter": "\t",
