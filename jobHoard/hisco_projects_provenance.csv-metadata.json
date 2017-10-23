@@ -16,7 +16,7 @@
  }, 
  "url": "hisco_projects_provenance.csv", 
  "@context": [
-  "http://www.w3.org/ns/csvw", 
+  "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json", 
   {
    "@base": "https://iisg.amsterdam/hisco/", 
    "@language": "en"

@@ -30,7 +30,7 @@
             "@id": "mailto:richard.zijdeman@iisg.nl"
         }
     }, {
-        "@id": "sdp:rjhoekstr@gmail.com",
+        "@id": "sdp:r.hoekstra@elsevier.com",
         "rdf:type": [{
             "@id": "foaf:Person"
         }, {
@@ -67,7 +67,7 @@
         "encoding": "iso-8859-1"
     },
     "@context": [
-        "http://www.w3.org/ns/csvw", {
+        "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json", {
             "@base": "https://iisg.amsterdam/hisco/",
             "@language": "en"
         }, {
@@ -160,11 +160,6 @@
             "propertyUrl": "skos:member",
             "valueUrl": "hisco-code:hisco/{hisco_1_id}{hisco_2_id}"
         }, {
-            "virtual": true,
-            "aboutUrl": "hisco-code:hisco/{hisco_1_id}{hisco_2_id}",
-            "propertyUrl": "skos:broaderTransitive",
-            "valueUrl": "hisco-code:hisco/{hisco_1_id}"
-        },{
             "virtual": true,
             "aboutUrl": "hisco:vocabulary",
             "propertyUrl": "skos:member",
