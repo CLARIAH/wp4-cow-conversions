@@ -1,6 +1,11 @@
 {
-    "dcat:keyword": [],
-    "dc:license": {
+  "url": "occupation_link.csv",
+      "dialect": {
+      "delimiter": ",",
+      "encoding": "windows-1255"
+    },
+  "dcat:keyword": [],
+      "dc:license": {
         "@id": "http://opendefinition.org/licenses/cc-by/"
     },
     "dc:publisher": {
@@ -64,11 +69,7 @@
     }, {
         "@id": "http://historyofwork.iisg.nl"
     }],
-    "url": "occupation_link.csv",
-    "dialect": {
-        "delimiter": ",",
-        "encoding": "iso-8859-1"
-    },
+
     "@context": [
         "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json",
         {

@@ -6,54 +6,9 @@
     "dc:publisher": {
         "schema:name": "CLARIAH Structured Data Hub - Datalegend",
         "schema:url": {
-            "@id": "http://datalegend.net"
+            "@id": "http://datalegend.org"
         }
     },
-{
-    "dcat:keyword": [],
-    "dc:license": {
-        "@id": "http://opendefinition.org/licenses/cc-by/"
-    },
-    "dc:publisher": {
-        "schema:name": "CLARIAH Structured Data Hub - Datalegend",
-        "schema:url": {
-            "@id": "http://datalegend.net"
-        }
-    },
-    "dc:creator": [{
-        "@id": "sdp:richard.zijdeman@iisg.nl",
-        "rdf:type": [{
-            "@id": "foaf:Person"
-        }, {
-            "@id": "prov:Person"
-        }],
-        "owl:sameAs": [{
-            "@id": "http://orcid.org/0000-0003-0782-2704"
-        }, {
-            "@id": "info:eu-repo/dai/nl/304832960"
-        }, {
-            "@id": "http://isni.org/isni/000000010711579X"
-        }],
-        "foaf:name": "Richard Zijdeman",
-        "foaf:givenName": "Richard",
-        "foaf:familyName": "Zijdeman",
-        "foaf:mbox": {
-            "@id": "mailto:richard.zijdeman@iisg.nl"
-        }
-    }, {
-        "@id": "sdp:auke.rijpma@gmail.com",
-        "rdf:type": [{
-            "@id": "foaf:Person"
-        }, {
-            "@id": "prov:Person"
-        }],
-        "foaf:name": "Auke Rijpma",
-        "foaf:familyName": "Rijpma",
-        "foaf:givenName": "Rijpma",
-        "foaf:mbox": {
-            "@id": "mailto:auke.rijpma@uu.nl"
-        }
-    }],
     "url": "hiscam_de.csv",
     "dialect": {
         "delimiter": "\t",
@@ -61,51 +16,51 @@
     },
     "@context": [
         "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json", {
-            "@base": "https://iisg.amsterdam/hiscam/v131/",
+            "@base": "http://data.socialhistory.org/resource/hiscam/v131/",
             "@language": "en"
         }, {
             "owl": "http://www.w3.org/2002/07/owl#",
-            "clioctr": "https://iisg.amsterdam/clio/country/",
+            "clioctr": "http://data.socialhistory.org/resource/clio/country/",
             "ldp": "http://www.w3.org/ns/ldp#",
-            "clio": "https://iisg.amsterdam/clio/",
-            "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
+            "clio": "http://data.socialhistory.org/resource/clio/",
+            "occhisco": "http://data.socialhistory.org/resource/napp/OCCHISCO/",
             "skos": "http://www.w3.org/2004/02/skos/core#",
             "xml": "http://www.w3.org/XML/1998/namespace/",
             "bibo": "http://purl.org/ontology/bibo/",
             "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
             "prov": "http://www.w3.org/ns/prov#",
             "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
-            "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/",
-            "hiscam": "https://iisg.amsterdam/hiscam/v131/",
-            "hiscam-de": "https://iisg.amsterdam/hiscam/v131/de/",
+            "napp-can91": "http://data.socialhistory.org/resource/napp/dataset/canada1891/",
+            "hiscam": "http://data.socialhistory.org/resource/hiscam/v131/",
+            "hiscam-de": "http://data.socialhistory.org/resource/hiscam/v131/de/",
             "np": "http://www.nanopub.org/nschema#",
-            "canfam-auke": "https://iisg.amsterdam/canfam/auke/",
+            "canfam-auke": "http://data.socialhistory.org/resource/canfam/auke/",
             "dcterms": "http://purl.org/dc/terms/",
             "schema": "http://schema.org/",
             "foaf": "http://xmlns.com/foaf/0.1/",
-            "napp": "https://iisg.amsterdam/napp/",
+            "napp": "http://data.socialhistory.org/resource/napp/",
             "sdv": "http://data.socialhistory.org/vocab/",
-            "hisco": "https://iisg.amsterdam/hisco/",
-            "sdp": "https://iisg.amsterdam/person/",
-            "sdr": "https://iisg.amsterdam/",
+            "hisco": "http://data.socialhistory.org/resource/hisco/",
+            "sdp": "http://data.socialhistory.org/resource/person/",
+            "sdr": "http://data.socialhistory.org/resource/",
             "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
             "dc": "http://purl.org/dc/terms/",
-            "clioprop": "https://iisg.amsterdam/clio/property/",
+            "clioprop": "http://data.socialhistory.org/resource/clio/property/",
             "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
-            "clioind": "https://iisg.amsterdam/clio/indicator/",
+            "clioind": "http://data.socialhistory.org/resource/clio/indicator/",
             "dc11": "http://purl.org/dc/elements/1.1/",
             "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
-            "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/",
-            "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/",
-            "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/",
+            "napp-eng81": "http://data.socialhistory.org/resource/napp/dataset/englandwales1881/",
+            "canfam": "http://data.socialhistory.org/resource/canfam/dataset/canada1901/",
+            "napp-sct81": "http://data.socialhistory.org/resource/napp/dataset/scotland1881/",
             "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
             "qb": "http://purl.org/linked-data/cube#",
             "xsd": "http://www.w3.org/2001/XMLSchema#",
             "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
             "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/",
-            "hisco": "https://iisg.amsterdam/hisco/",
-            "hisco-code": "https://iisg.amsterdam/hisco/code/",
-            "": "https://iisg.amsterdam/hiscam/v131/"
+            "hisco": "http://data.socialhistory.org/resource/hisco/",
+            "hisco-code": "http://data.socialhistory.org/resource/hisco/code/",
+            "": "http://data.socialhistory.org/resource/hiscam/v131/"
         }
     ],
     "dc:title": "hiscam_de.csv",

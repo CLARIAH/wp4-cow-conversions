@@ -1,6 +1,11 @@
 {
- "dcat:keyword": [],
- "dc:license": {
+  "dialect": {
+  "quoteChar": "\"",
+  "delimiter": ",",
+  "encoding": "ISO-8859-2"
+  },
+  "dcat:keyword": [],
+  "dc:license": {
   "@id": "http://opendefinition.org/licenses/cc-by/"
  },
  "dc:publisher": {
@@ -30,7 +35,7 @@
          "@id": "mailto:richard.zijdeman@iisg.nl"
      }
  }, {
-     "@id": "sdp:rjhoekstr@gmail.com",
+     "@id": "sdp:r.hoekstra@elsevier.com",
      "rdf:type": [{
          "@id": "foaf:Person"
      }, {

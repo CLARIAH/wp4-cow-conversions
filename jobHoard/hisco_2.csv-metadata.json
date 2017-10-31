@@ -1,4 +1,8 @@
 {
+    "dialect": {
+      "delimiter": ",",
+      "encoding": "iso-8859-1"
+    },
     "dcat:keyword": [],
     "dc:license": {
         "@id": "http://opendefinition.org/licenses/cc-by/"
@@ -62,10 +66,6 @@
         "@id": "http://historyofwork.iisg.nl"
     }],
     "url": "hisco_2.csv",
-    "dialect": {
-        "delimiter": ",",
-        "encoding": "iso-8859-1"
-    },
     "@context": [
         "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json", {
             "@base": "https://iisg.amsterdam/hisco/",

@@ -1,5 +1,10 @@
 {
- "dcat:keyword": [],
+"dialect": {
+  "quoteChar": "\"",
+  "delimiter": ",",
+  "encoding": "ascii"
+  },
+"dcat:keyword": [],
  "dc:license": {
   "@id": "http://opendefinition.org/licenses/cc-by/"
  },

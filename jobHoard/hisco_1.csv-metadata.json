@@ -1,4 +1,8 @@
 {
+    "dialect": {
+    "delimiter": ",",
+    "encoding": "iso-8859-1"
+    },
     "dcat:keyword": [],
     "dc:license": {
         "@id": "http://opendefinition.org/licenses/cc-by/"
@@ -62,10 +66,6 @@
         "@id": "http://historyofwork.iisg.nl"
     }],
     "url": "hisco_1.csv",
-    "dialect": {
-        "delimiter": ",",
-        "encoding": "iso-8859-1"
-    },
     "@context": [
         "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json", {
             "@base": "https://iisg.amsterdam/hisco/",
@@ -205,54 +205,54 @@
             "virtual": true,
             "aboutUrl": "hisco-code:hisco/{hisco_1_id}",
             "propertyUrl": "rdf:type",
-            "valueUrl": "hisco-code:HISCO" 
+            "valueUrl": "hisco-code:HISCO"
         }, {
             "virtual": true,
             "aboutUrl": "hisco-code:hisco/{hisco_1_id}",
             "propertyUrl": "skos:topConceptOf",
-            "valueUrl": "hisco-code:hisco" 
+            "valueUrl": "hisco-code:hisco"
         }, {
             "virtual": true,
             "aboutUrl": "hisco-code:hisco/{hisco_1_id}",
             "propertyUrl": "skos:note",
             "lang": "en",
-            "csvw:value": "{description}" 
+            "csvw:value": "{description}"
         }, {
             "virtual": true,
             "aboutUrl": "hisco-code:hisco/{hisco_1_id}",
             "propertyUrl": "skos:prefLabel",
             "lang": "en",
-            "csvw:value": "{label}" 
+            "csvw:value": "{label}"
         }, {
             "virtual": true,
             "aboutUrl": "hisco-code:hisco/{hisco_1_id}",
             "propertyUrl": "skos:notation",
-            "csvw:value": "{hisco_1_id}" 
+            "csvw:value": "{hisco_1_id}"
         }, {
             "virtual": true,
             "aboutUrl": "hisco-code:hisco/{hisco_1_id}",
             "propertyUrl": "skos:inScheme",
-            "valueUrl": "hisco-code:hisco" 
+            "valueUrl": "hisco-code:hisco"
         }, {
             "virtual": true,
             "aboutUrl": "hisco:majorGroup",
             "propertyUrl": "skos:type",
-            "valueUrl": "skos:Collection" 
+            "valueUrl": "skos:Collection"
         }, {
             "virtual": true,
             "aboutUrl": "hisco:majorGroup",
             "propertyUrl": "skos:member",
-            "valueUrl": "hisco-code:hisco/{hisco_1_id}" 
+            "valueUrl": "hisco-code:hisco/{hisco_1_id}"
         }, {
             "virtual": true,
             "aboutUrl": "hisco:vocabulary",
             "propertyUrl": "skos:member",
-            "valueUrl": "hisco:majorGroup" 
+            "valueUrl": "hisco:majorGroup"
         }, {
             "virtual": true,
             "aboutUrl": "hisco:majorGroup",
             "propertyUrl": "skos:definition",
-            "csvw:value": "The sub-divisions of occupational unit groups, coded to 1 digit, which provide the second lowest level of detail in the HISCO classification scheme." 
+            "csvw:value": "The sub-divisions of occupational unit groups, coded to 1 digit, which provide the second lowest level of detail in the HISCO classification scheme."
         }
        ]
     }
