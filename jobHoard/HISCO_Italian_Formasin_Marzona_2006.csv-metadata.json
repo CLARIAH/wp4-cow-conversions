@@ -15,7 +15,7 @@
   }
  },
  "dc:author": [{
-     "@id": "sdp:richard.zijdeman@gmail.com",
+     "@id": "sdp:richard.zijdeman@iisg.nl",
      "rdf:type": [{
          "@id": "foaf:Person"
      }, {
@@ -35,7 +35,7 @@
          "@id": "mailto:richard.zijdeman@iisg.nl"
      }
  }, {
-     "@id": "sdp:rjhoekstr@gmail.com",
+     "@id": "sdp:r.hoekstra@elsevier.com",
      "rdf:type": [{
          "@id": "foaf:Person"
      }, {
@@ -48,7 +48,7 @@
      "foaf:name": "Rinke Hoekstra",
      "foaf:givenName": "Rinke",
      "foaf:mbox": {
-         "@id": "mailto:rinke.hoekstra@vu.nl"
+         "@id": "mailto:r.hoekstra@elsevier.com"
      }
  }],
  "url": "HISCO_Italian_Formasin_Marzona_2006.csv",
@@ -92,8 +92,9 @@
    "time": "http://www.w3.org/2006/time#",
    "hsn": "https://iisg.amsterdam/hsn2013a/",
    "dc": "http://purl.org/dc/terms/",
-   "hisco-relation": "https://iisg.amsterdam/hisco/relation/",
-   "hisco-status": "https://iisg.amsterdam/hisco/status/",
+   "hisco-relation": "https://iisg.amsterdam/hisco/code/relation/",
+   "hisco-status": "https://iisg.amsterdam/hisco/code/status/",
+   "hisco-code": "https://iisg.amsterdam/hisco/code/hisco/",
    "dbp": "http://dbpedia.org/property/",
    "clioprop": "https://iisg.amsterdam/clio/property/",
    "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
@@ -157,7 +158,7 @@
     "titles": [
      "hisco"
     ],
-    "aboutUrl": "hisco:{% if not hisco in ['-3','-2','-1']%}{hisco:0>5}{% else %}{hisco}{% endif %}",
+    "aboutUrl": "hisco-code:{% if not hisco in ['-3','-2','-1']%}{hisco:0>5}{% else %}{hisco}{% endif %}",
     "propertyUrl": "skos:member",
     "valueUrl": "{occupation}",
     "name": "hisco",
