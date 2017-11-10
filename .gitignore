@@ -1,3 +1,8 @@
 # ignore all files of type:
 *.csv
 *.nq
+*.doc
+*.docx
+*.xls
+*.xlsx
+
