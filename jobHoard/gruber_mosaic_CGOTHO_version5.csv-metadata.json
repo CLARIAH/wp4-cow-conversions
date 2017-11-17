@@ -25,7 +25,7 @@
 ],
 "foaf:name": ["Bram van den Hout"],
 "foaf:mbox": {
-"@id": "mailto:Bramvdhout@gmail.com"
+"@id": "mailto:Bra.van.den.hout@iisg.nl"
 }
 },
  "url": "gruber_mosaic_CGOTHO_version5.csv",
@@ -91,11 +91,11 @@
  "dc:title": "gruber_mosaic_CGOTHO_version5.csv",
  "@id": "https://iisg.amsterdam/gruber_mosaic_CGOTHO_version5.csv",
  "dc:modified": {
-  "@value": "2017-11-06",
+  "@value": "2017-11-17",
   "@type": "xsd:date"
  },
  "tableSchema": {
-  "aboutUrl": "{{harmonized|lower}}",
+  "aboutUrl": "{{harmonized}}",
   "primaryKey": "harmonized",
   "columns": [
    {
@@ -107,11 +107,15 @@
     "name": "harmonized",
     "dc:description": "Job Description",
 	"propertyUrl": "skos:prefLabel",
-	"csvw:value": "{{harmonized|lower}}",
+	"csvw:value": "{{harmonized}}",
 	"lang": "de"
    },
    {
-    "datatype": "xsd:int",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "skos:Concept"
+   },
+   {
+    "datatype": "string",
     "titles": [
      "hisco"
     ],
@@ -120,13 +124,34 @@
     "dc:description": "hisco"
    },
    {
-    "datatype": "xsd:int",
+    "datatype": "string",
     "titles": [
      "occhisco"
     ],
     "@id": "https://iisg.amsterdam/gruber_mosaic_CGOTHO_version5.csv/column/occhisco",
     "name": "occhisco",
     "dc:description": "occhisco"
+   },
+    {
+    "virtual": true,
+    "aboutUrl": "hisco:jobHoard",
+    "propertyUrl": "skos:member",
+    "valueUrl": "{{harmonized}}"
+   },
+   {
+    "virtual": true,
+    "titles": [
+     "HISCO"
+    ],
+    "aboutUrl": "hisco-code:hisco/{HISCO}",
+    "propertyUrl": "skos:member",
+    "valueUrl": "{{harmonized}}",
+    "name": "HISCO",
+    "dc:description": "HISCO"
+   },
+   {
+    "valueUrl": "",
+    "propertyUrl": "prov:wasDerivedFrom" 
    }
   ]
  }
