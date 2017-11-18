@@ -25,7 +25,7 @@
 ],
 "foaf:name": ["Bram van den Hout"],
 "foaf:mbox": {
-"@id": "mailto:Bra.van.den.hout@iisg.nl"
+"@id": "mailto:Bram.van.den.hout@iisg.nl"
 }
 },
  "url": "gruber_mosaic_CGOTHO_version5.csv",
@@ -140,18 +140,13 @@
    },
    {
     "virtual": true,
-    "titles": [
-     "HISCO"
-    ],
-    "aboutUrl": "hisco-code:hisco/{HISCO}",
+    "aboutUrl": "hisco-code:hisco/{hisco}",
     "propertyUrl": "skos:member",
-    "valueUrl": "{{harmonized}}",
-    "name": "HISCO",
-    "dc:description": "HISCO"
+    "valueUrl": "{{harmonized}}"
    },
    {
-    "valueUrl": "",
-    "propertyUrl": "prov:wasDerivedFrom" 
+    "propertyUrl": "prov:wasDerivedFrom",
+    "valueUrl": "http://www.censusmosaic.org/data/mosaic-data-files"
    }
   ]
  }
