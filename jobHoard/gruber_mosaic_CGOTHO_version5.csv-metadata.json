@@ -36,7 +36,7 @@
   "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json",
   {
    "@base": "https://iisg.amsterdam/gruber_mosaic/",
-   "@language": "en"
+   "@language": "de"
   },
   {
    "owl": "http://www.w3.org/2002/07/owl#",
