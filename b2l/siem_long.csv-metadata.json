@@ -43,7 +43,11 @@
 },
 "prov:wasDerivedFrom": [{
       "dc:author": ["Eltjo Buringh"],
-      "dc:title": ["The Population of European Cities from 700 to 2000"]
+      "@id": "foaf:Person",
+      "dc:title": ["The Population of European Cities from 700 to 2000"],
+      "foaf:mbox":{
+    "@id": "mailto:e.buringh@uu.nl"
+    }
   }],
  "url": "siem_long.csv",
  "@context": [
