@@ -1,0 +1,272 @@
+{
+  "dialect": {
+  "quoteChar": "\"",
+  "delimiter": ",",
+  "encoding": "ISO-8859-2"
+ },
+ "dcat:keyword": [],
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+  "schema:url": {
+   "@id": "http://datalegend.org"
+  }
+ },
+ "dc:author": {
+  "rdf:type": [
+    {
+      "@id": "foaf:Person"
+    },
+    {
+      "@id": "prov:Person"
+    }
+  ],
+  "foaf:name": ["Auke Rijpma"],
+  "foaf:mbox":{
+"@id": "mailto:auke.rijpma@gmail.com"
+}},
+"dc:author": {
+  "rdf:type": [
+    {
+      "@id": "foaf:Person"
+    },
+    {
+      "@id": "prov:Person"
+    }
+  ],
+  "foaf:name": ["Ruben Schalk"],
+  "foaf:mbox":{
+"@id": "mailto:r.schalk@uu.nl"
+}
+},
+"prov:wasDerivedFrom": [{
+      "dc:author": ["Eltjo Buringh"],
+      "dc:title": ["The Population of European Cities from 700 to 2000"]
+  }],
+ "url": "siem_long.csv",
+ "@context": [
+  "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json",
+  {
+   "@base": "https://iisg.amsterdam/B2L/siem/",
+   "@language": "en"
+  },
+  {
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "dbo": "http://dbpedia.org/ontology/",
+   "clioctr": "http://iisg.amsterdam/clio/country/",
+   "hisclass": "http://iisg.amsterdam/hisclass/",
+   "hisco-product": "http://iisg.amsterdam/hisco/product/",
+   "ldp": "http://www.w3.org/ns/ldp#",
+   "clio": "http://iisg.amsterdam/clio/",
+   "occhisco": "http://iisg.amsterdam/napp/OCCHISCO/",
+   "dbr": "http://dbpedia.org/resource/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "xml": "http://www.w3.org/XML/1998/namespace/",
+   "bibo": "http://purl.org/ontology/bibo/",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "prov": "http://www.w3.org/ns/prov#",
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+   "napp-can91": "http://iisg.amsterdam/napp/dataset/canada1891/",
+   "hiscam": "http://iisg.amsterdam/hiscam/",
+   "dbpedia": "http://dbpedia.org/resource/",
+   "np": "http://www.nanopub.org/nschema#",
+   "canfam-auke": "http://iisg.amsterdam/canfam/auke/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "schema": "http://schema.org/",
+   "foaf": "http://xmlns.com/foaf/0.1/",
+   "napp": "http://iisg.amsterdam/napp/",
+   "sdv": "http://iisg.amsterdam/vocab/",
+   "hisco": "http://iisg.amsterdam/hisco/",
+   "sdp": "http://iisg.amsterdam/person/",
+   "sdr": "http://iisg.amsterdam/",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "time": "http://www.w3.org/2006/time#",
+   "hsn": "http://iisg.amsterdam/hsn2013a/",
+   "dc": "http://purl.org/dc/terms/",
+   "hisco-relation": "http://iisg.amsterdam/hisco/relation/",
+   "hisco-status": "http://iisg.amsterdam/hisco/status/",
+   "dbp": "http://dbpedia.org/property/",
+   "clioprop": "http://iisg.amsterdam/clio/property/",
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+   "csvw": "http://www.w3.org/ns/csvw#",
+   "clioind": "http://iisg.amsterdam/clio/indicator/",
+   "dc11": "http://purl.org/dc/elements/1.1/",
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
+   "napp-eng81": "http://iisg.amsterdam/napp/dataset/englandwales1881/",
+   "canfam": "http://iisg.amsterdam/canfam/dataset/canada1901/",
+   "napp-sct81": "http://iisg.amsterdam/napp/dataset/scotland1881/",
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+   "qb": "http://purl.org/linked-data/cube#",
+   "hisclass5": "http://iisg.amsterdam/hisclass5/",
+   "xsd": "http://www.w3.org/2001/XMLSchema#",
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+   "siem": "https://iisg.amsterdam/B2L/siem/",
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/"
+  }
+ ],
+ "dc:title": "siem_long.csv",
+ "@id": "https://iisg.amsterdam/resource/siem_long.csv",
+ "dc:modified": {
+  "@value": "2017-11-22",
+  "@type": "xsd:date"
+ },
+ "tableSchema": {
+  "aboutUrl": "https://iisg.amsterdam/B2L/siem/{_row}",
+  "primaryKey": "city",
+  "columns": [
+   {
+    "datatype": "string",
+    "titles": [
+     "city"
+    ],
+    "@id": "https://iisg.amsterdam/resource/siem_long.csv/column/city",
+    "name": "city",
+    "propertyUrl": "siem:vocab/city",
+    "dc:description": "Name of the town or city in modern English spelling, with alternative spellings in brackets",
+    "valueUrl": "siem:code/city/{city}"
+   },
+   {
+    "datatype": "integer",
+    "titles": [
+     "uncountrycode"
+    ],
+    "@id": "https://iisg.amsterdam/resource/siem_long.csv/column/uncountrycode",
+    "name": "uncountrycode",
+    "propertyUrl": "siem:vocab/uncountrycode",
+    "dc:description": "ISO-Assigned Numeric Code (3166-1)",
+    "valueUrl": "siem:code/uncountrycode/{uncountrycode}"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "siem:code/uncountrycode/{uncountrycode}",
+    "name": "uncountrycode",
+        "titles": [
+     "uncountrycode"
+    ],
+    "propertyUrl": "https://iisg.amsterdam/vocab/isoNumber",
+    "valueUrl": "https://iisg.amsterdam/vocab/isoNumber/{uncountrycode}"
+       },
+   {
+    "datatype": "string",
+    "titles": [
+     "country"
+    ],
+    "@id": "https://iisg.amsterdam/resource/siem_long.csv/column/country",
+    "name": "country",
+    "propertyUrl": "siem:vocab/country",
+    "valueUrl": "siem:code/country/{country}",
+    "dc:description": "Name of the country in the year 2000"
+   },
+   {
+   "virtual": true,
+   "aboutUrl": "siem:code/country/{country}",
+   "name": "country",
+       "titles": ["country"],
+   "propertyUrl": "siem:vocab/Country",
+   "valueUrl": "siem:code/Country/{country}"
+      },
+   {
+    "datatype": "string",
+    "titles": [
+     "latitude"
+    ],
+    "@id": "https://iisg.amsterdam/resource/siem_long.csv/column/latitude",
+    "name": "latitude",
+    "propertyUrl": "siem:vocab/latitude",
+    "dc:description": "Latitude"
+   },
+   {
+    "datatype": "string",
+        "titles": [
+     "longitude"
+    ],
+    "@id": "https://iisg.amsterdam/resource/siem_long.csv/column/longitude",
+    "name": "longitude",
+    "propertyUrl": "siem:vocab/longitude",
+    "dc:description": "Longitude"
+   },
+   {
+    "datatype": "integer",
+    "titles": [
+     "elevation"
+    ],
+    "@id": "https://iisg.amsterdam/resource/siem_long.csv/column/elevation",
+    "name": "elevation",
+    "propertyUrl": "siem:vocab/elevation",
+    "dc:description": "Elevation above sea level in meters"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "transportloc"
+    ],
+    "@id": "https://iisg.amsterdam/resource/siem_long.csv/column/transportloc",
+    "name": "transportloc",
+    "propertyUrl": "siem:vocab/transportloc",
+    "dc:description": "First nature geographical characteristics of the city: its fluvial catchment area and whether it was a ‘sea’, ‘river’ or ‘landlocked’ city"
+   },
+   {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "year"
+    ],
+    "@id": "https://iisg.amsterdam/resource/siem_long.csv/column/year",
+    "name": "year",
+    "propertyUrl": "siem:vocab/year",
+    "dc:description": "Time window of observation (whole centuries from 700 to 1500, and half centuries from 1500 to 2000)"
+   },
+   {
+    "datatype": "integer",
+    "titles": [
+     "inhab"
+    ],
+    "@id": "https://iisg.amsterdam/resource/siem_long.csv/column/inhab",
+    "name": "inhab",
+    "propertyUrl": "siem:vocab/inhab",
+    "dc:description": "Numbers of inhabitants (in thousands) in the city at the time window in question"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "comment"
+    ],
+    "@id": "https://iisg.amsterdam/resource/siem_long.csv/column/comment",
+    "name": "comment",
+    "propertyUrl": "siem:vocab/comment",
+    "dc:description": "Bibliographical references and other notes"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "quality"
+    ],
+    "@id": "https://iisg.amsterdam/resource/siem_long.csv/column/quality",
+    "name": "quality",
+    "propertyUrl": "siem:vocab/quality",
+    "dc:description": "Quality of observation, where 'rood' means derived from a proxy; 'cursief' imputed by the algorithm"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "city_alt"
+    ],
+    "@id": "https://iisg.amsterdam/resource/siem_long.csv/column/city_alt",
+    "name": "city_alt",
+    "propertyUrl": "siem:vocab/city_alt",
+    "dc:description": "Alternative spellings of city or town name"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "city_short"
+    ],
+    "@id": "https://iisg.amsterdam/resource/siem_long.csv/column/city_short",
+    "name": "city_short",
+    "propertyUrl": "siem:vocab/city_short",
+    "dc:description": "Name of the town or city in modern English spelling"
+   }
+  ]
+ }
+}
