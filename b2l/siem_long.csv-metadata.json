@@ -53,7 +53,7 @@
  "@context": [
   "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json",
   {
-   "@base": "https://iisg.amsterdam/B2L/siem/",
+   "@base": "https://iisg.amsterdam/siem/",
    "@language": "en"
   },
   {
@@ -106,7 +106,7 @@
    "hisclass5": "http://iisg.amsterdam/hisclass5/",
    "xsd": "http://www.w3.org/2001/XMLSchema#",
    "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
-   "siem": "https://iisg.amsterdam/B2L/siem/",
+   "siem": "https://iisg.amsterdam/siem/",
    "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/"
   }
  ],
@@ -117,7 +117,7 @@
   "@type": "xsd:date"
  },
  "tableSchema": {
-  "aboutUrl": "https://iisg.amsterdam/B2L/siem/{_row}",
+  "aboutUrl": "https://iisg.amsterdam/siem/{_row}",
   "primaryKey": "city",
   "columns": [
    {
