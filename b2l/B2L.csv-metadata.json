@@ -1,0 +1,768 @@
+{
+ "dialect": {
+  "quoteChar": "\"",
+  "delimiter": ";",
+  "encoding": "ascii"
+ },
+ "dcat:keyword": [],
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+  "schema:url": {
+   "@id": "http://datalegend.org"
+  }
+},
+"dc:author": {
+  "rdf:type": [
+    {
+      "@id": "foaf:Person"
+    },
+    {
+      "@id": "prov:Person"
+    }
+  ],
+  "foaf:name": ["Auke Rijpma"],
+  "foaf:mbox":{
+"@id": "mailto:auke.rijpma@gmail.com"
+}
+},"dc:author": {
+  "rdf:type": [
+    {
+      "@id": "foaf:Person"
+    },
+    {
+      "@id": "prov:Person"
+    }
+  ],
+  "foaf:name": ["Ruben Schalk"],
+  "foaf:mbox":{
+"@id": "mailto:r.schalk@uu.nl"
+}
+},
+"prov:wasDerivedFrom": [{
+  "rdf:type": {
+      "@id": "bibo:Article"
+  },
+  "dc:title": {
+      "@value": "From Baghdad to London: Unraveling Urban Development in Europe, the Middle East, and North Africa, 800–1800",
+      "@lang": "en"
+  },
+  "dc:author": ["M. Bosker","E. Buringh", "J.L. van Zanden"],
+  "dc:publisher": ["mitpressjournals"],
+  "dc:date": {"@value":"2013", "@type":"xsd:gYear"},
+  "dc:identifier": ["http://dx.doi.org/10.1162/REST_a_00284"],
+  "dc:mitpressjournals":["The Review of Economics and Statistics"],
+  "dcterms:bibliographicCitation": ["The Review of Economics and Statistics 95:4 (2013), 1418-1437"],
+  "dc:isPartOf": ["http://www.mitpressjournals.org/doi/abs/10.1162/REST_a_00284"]
+ }],
+ "url": "B2L.csv",
+ "@context": [
+  "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json",
+  {
+   "@base": "https://iisg.amsterdam/resource/",
+   "@language": "en"
+  },
+  {
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "dbo": "http://dbpedia.org/ontology/",
+   "clioctr": "http://iisg.amsterdam/clio/country/",
+   "hisclass": "http://iisg.amsterdam/hisclass/",
+   "hisco-product": "http://iisg.amsterdam/hisco/product/",
+   "ldp": "http://www.w3.org/ns/ldp#",
+   "clio": "http://iisg.amsterdam/clio/",
+   "occhisco": "http://iisg.amsterdam/napp/OCCHISCO/",
+   "dbr": "http://dbpedia.org/resource/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "xml": "http://www.w3.org/XML/1998/namespace/",
+   "bibo": "http://purl.org/ontology/bibo/",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "prov": "http://www.w3.org/ns/prov#",
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+   "napp-can91": "http://iisg.amsterdam/napp/dataset/canada1891/",
+   "hiscam": "http://iisg.amsterdam/hiscam/",
+   "dbpedia": "http://dbpedia.org/resource/",
+   "np": "http://www.nanopub.org/nschema#",
+   "canfam-auke": "http://iisg.amsterdam/canfam/auke/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "schema": "http://schema.org/",
+   "foaf": "http://xmlns.com/foaf/0.1/",
+   "napp": "http://iisg.amsterdam/napp/",
+   "sdv": "http://iisg.amsterdam/vocab/",
+   "hisco": "http://iisg.amsterdam/hisco/",
+   "sdp": "http://iisg.amsterdam/person/",
+   "sdr": "http://iisg.amsterdam/",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "time": "http://www.w3.org/2006/time#",
+   "hsn": "http://iisg.amsterdam/hsn2013a/",
+   "dc": "http://purl.org/dc/terms/",
+   "hisco-relation": "http://iisg.amsterdam/hisco/relation/",
+   "hisco-status": "http://iisg.amsterdam/hisco/status/",
+   "dbp": "http://dbpedia.org/property/",
+   "clioprop": "http://iisg.amsterdam/clio/property/",
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+   "csvw": "http://www.w3.org/ns/csvw#",
+   "clioind": "http://iisg.amsterdam/clio/indicator/",
+   "dc11": "http://purl.org/dc/elements/1.1/",
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
+   "napp-eng81": "http://iisg.amsterdam/napp/dataset/englandwales1881/",
+   "canfam": "http://iisg.amsterdam/canfam/dataset/canada1901/",
+   "napp-sct81": "http://iisg.amsterdam/napp/dataset/scotland1881/",
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+   "qb": "http://purl.org/linked-data/cube#",
+   "hisclass5": "http://iisg.amsterdam/hisclass5/",
+   "xsd": "http://www.w3.org/2001/XMLSchema#",
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/",
+   "B2L": "https://iisg.amsterdam/B2L/"
+  }
+ ],
+ "dc:title": "B2L.csv",
+ "@id": "https://iisg.amsterdam/resource/B2L.csv",
+ "dc:modified": {
+  "@value": "2017-11-24",
+  "@type": "xsd:date"
+ },
+ "tableSchema": {
+  "aboutUrl": "{_row}",
+  "primaryKey": "indicator",
+  "columns": [
+   {
+    "datatype": "string",
+    "titles": [
+     "indicator"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/indicator",
+    "name": "indicator",
+    "propertyUrl": "B2L:vocab/indicator",
+    "dc:description": "Numeric indicator unique to each city",
+    "valueUrl": "B2L:code/indicator/{indicator}"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "city"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/city",
+    "name": "city",
+    "propertyUrl": "B2L:vocab/city",
+    "dc:description": "Name of the city (sometimes containing different names used in different time periods)",
+    "valueUrl": "B2L:code/city/{city}"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "country"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/country",
+    "name": "country",
+    "propertyUrl": "B2L:vocab/country",
+    "dc:description": "Country (defined on 1990 boundaries) a city is located in",
+    "valueUrl": "B2L:code/country/{country}"
+   },
+   {
+   "virtual": true,
+   "aboutUrl": "B2L:code/country/{country}",
+   "name": "country",
+       "titles": ["country"],
+   "propertyUrl": "sdv:Country",
+   "valueUrl": "sdr:resource/country/{country}"
+   },
+   {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "year"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/year",
+    "name": "year",
+    "dc:description": "Century"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "arab_peninsula"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/arab_peninsula",
+    "name": "arab_peninsula",
+    "dc:description": "Dummy variable indicating whether or not a city is located on the Arabian Peninsula"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "latitude"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/latitude",
+    "name": "latitude",
+    "dc:description": "Latitude-coordinate"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "longitude"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/longitude",
+    "name": "longitude",
+    "dc:description": "Longitude-coordinate"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "citypop_le10"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/citypop_le10",
+    "name": "citypop_le10",
+    "dc:description": "City population in 1000s, only reported when the city has at least 10,000 inhabitants"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "citypop_le5"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/citypop_le5",
+    "name": "citypop_le5",
+    "dc:description": "City population in 1000s, only reported when the city has at least 5,000 inhabitants"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "sea"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/sea",
+    "name": "sea",
+    "dc:description": "Dummy variable indicating whether or not a city is located at sea"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "river"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/river",
+    "name": "river",
+    "dc:description": "Dummy variable indicating whether or not a city is located at a river"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "hub_3rr"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/hub_3rr",
+    "name": "hub_3rr",
+    "dc:description": "Dummy variable indicating whether or not a city is located on a crossing of at least two roman roads"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "rom_road_nohub"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/rom_road_nohub",
+    "name": "rom_road_nohub",
+    "dc:description": "Dummy variable indicating whether or not a city is located on a roman road (and is not a hub)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "caravan_hub"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/caravan_hub",
+    "name": "caravan_hub",
+    "dc:description": "Dummy variable indicating whether or not a city is located on a crossing of at least two caravan routes"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "caravan_nohub"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/caravan_nohub",
+    "name": "caravan_nohub",
+    "dc:description": "Dummy variable indicating whether or not a city is located on a caravan route (and is not a caravan hub)"
+   },
+   {
+    "datatype": "integer",
+    "titles": [
+     "elevation_m"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/elevation_m",
+    "name": "elevation_m",
+    "dc:description": "Elevation above sea level in meters"
+   },
+   {
+    "datatype": "float",
+    "titles": [
+     "rugg10"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/rugg10",
+    "name": "rugg10",
+    "dc:description": "Standard deviation of the elevation of the terrain within a 10km radius in meters"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "bishop"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/bishop",
+    "name": "bishop",
+    "dc:description": "Dummy variable indicating whether or not a city is the seat of a bishop"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "archbishop"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/archbishop",
+    "name": "archbishop",
+    "dc:description": "Dummy variable indicating whether or not a city is the seat of an archbishop"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "capital"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/capital",
+    "name": "capital",
+    "dc:description": "Dummy variable indicating whether or not a city is a capital city"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "university"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/university",
+    "name": "university",
+    "dc:description": "Dummy variable indicating whether or not a city hosts a university"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "muslim"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/muslim",
+    "name": "muslim",
+    "dc:description": "Dummy variable indicating whether or not a city falls under muslim rule"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "me_na"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/me_na",
+    "name": "me_na",
+    "dc:description": "Dummy variable indicating whether or not a city is located in the Middle East or North Africa (including Turkey)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "muslim_holy_city"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/muslim_holy_city",
+    "name": "muslim_holy_city",
+    "dc:description": "Dummy variable indicating whether or not a city is one of the four holiest cities in Islam (Jerusalem, Damascus, Mecca or Medina)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "plundered"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/plundered",
+    "name": "plundered",
+    "dc:description": "Dummy variable indicating the number of times a city was plundered in the previous century"
+   },
+   {
+    "datatype": "float",
+    "titles": [
+     "soilquality"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/soilquality",
+    "name": "soilquality",
+    "dc:description": "Dummy variable indicating the soil quality of the fields surrounding a city"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "commune"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/commune",
+    "name": "commune",
+    "dc:description": "Dummy variable indicating whether or not a city has a form of self-governance"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "ecozones"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/ecozones",
+    "name": "ecozones",
+    "dc:description": "Dummy variable indicating in which ecozone a city is located"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "free_prince_dls"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/free_prince_dls",
+    "name": "free_prince_dls",
+    "dc:description": "Dummy variable indicating whether or not a city is located in a country that is classified as “free” (=1) or “prince” (=0) according to DeLong and Shleifer (1993)s"
+   },
+   {
+    "datatype": "integer",
+    "titles": [
+     "total_pop_country"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/total_pop_country",
+    "name": "total_pop_country",
+    "dc:description": "Total population of the (1990) country the city belongs to (thousands)"
+   },
+   {
+    "datatype": "float",
+    "titles": [
+     "dmedina"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/dmedina",
+    "name": "dmedina",
+    "dc:description": "Distance to Medina in kms"
+   },
+   {
+    "datatype": "float",
+    "titles": [
+     "dmecca"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/dmecca",
+    "name": "dmecca",
+    "dc:description": "distance to Mecca in kms"
+   },
+   {
+    "datatype": "float",
+    "titles": [
+     "drome"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/drome",
+    "name": "drome",
+    "dc:description": "distance to Rome in kms"
+   },
+   {
+    "datatype": "float",
+    "titles": [
+     "djerusalem"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/djerusalem",
+    "name": "djerusalem",
+    "dc:description": "distance to Jerusalem in kms"
+   },
+   {
+    "datatype": "float",
+    "titles": [
+     "dbyzantium"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/dbyzantium",
+    "name": "dbyzantium",
+    "dc:description": "distance to Byzantium (Constantinople) in kms"
+   },
+   {
+    "datatype": "float",
+    "titles": [
+     "d_nearest_muslim"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/d_nearest_muslim",
+    "name": "d_nearest_muslim",
+    "dc:description": "Distance to the nearest city falling under Muslim rule"
+   },
+   {
+    "datatype": "float",
+    "titles": [
+     "d_nearest_christian"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/d_nearest_christian",
+    "name": "d_nearest_christian",
+    "dc:description": "Distance to the nearest city falling under Christian rule"
+   },
+   {
+    "datatype": "float",
+    "titles": [
+     "fup"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/fup",
+    "name": "fup",
+    "dc:description": "A city’s “foreign urban potential” – see our paper for its full definition"
+   },
+   {
+    "datatype": "float",
+    "titles": [
+     "musfup"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/musfup",
+    "name": "musfup",
+    "dc:description": "A city’s “Muslim foreign urban potential” – see our paper for its full definition"
+   },
+   {
+    "datatype": "float",
+    "titles": [
+     "chrfup"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/chrfup",
+    "name": "chrfup",
+    "dc:description": "A city’s “Christian foreign urban potential” – see our paper for its full definition"
+   },
+   {
+    "datatype": "float",
+    "titles": [
+     "musfup_devries"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/musfup_devries",
+    "name": "musfup_devries",
+    "dc:description": "A city’s “Muslim foreign urban potential” taking account of differences in transportation mode following De Vries (1984) – see our paper for its full definition"
+   },
+   {
+    "datatype": "float",
+    "titles": [
+     "chrfup_devries"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/chrfup_devries",
+    "name": "chrfup_devries",
+    "dc:description": "A city’s “Christian foreign urban potential” taking account of differences in transportation mode following De Vries (1984) – see our paper for its full definition"
+   },
+   {
+    "datatype": "float",
+    "titles": [
+     "distance_nearest_muslim_le10"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/distance_nearest_muslim_le10",
+    "name": "distance_nearest_muslim_le10",
+    "dc:description": "Distance to the nearest city with at least 10,000 inhabitants falling under Muslim rule"
+   },
+   {
+    "datatype": "float",
+    "titles": [
+     "distance_nearest_christian_le101"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/distance_nearest_christian_le101",
+    "name": "distance_nearest_christian_le101",
+    "dc:description": "Distance to the nearest city with at least 10,000 inhabitants falling under Christian rule"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "nrcities_le10_0_20"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/nrcities_le10_0_20",
+    "name": "nrcities_le10_0_20",
+    "dc:description": "Number of cities with at least 10,000 inhabitants located within a 0 – 20km range"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "citypop_le10_0_20"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/citypop_le10_0_20",
+    "name": "citypop_le10_0_20",
+    "dc:description": "Total population of all cities with at least 10,000 inhabitants located within a 0 – 20km range (thousands)"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "nrcities_le10_20_50"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/nrcities_le10_20_50",
+    "name": "nrcities_le10_20_50",
+    "dc:description": "Number of cities with at least 10,000 inhabitants located within a 20 – 50km range"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "citypop_le10_20_50"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/citypop_le10_20_50",
+    "name": "citypop_le10_20_50",
+    "dc:description": "Total population of all cities with at least 10,000 inhabitants located within a 20 – 50km range (thousands)"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "nrcities_le10_50_100"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/nrcities_le10_50_100",
+    "name": "nrcities_le10_50_100",
+    "dc:description": "Number of cities with at least 10,000 inhabitants located within a 50 – 100km range"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "citypop_le10_50_100"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/citypop_le10_50_100",
+    "name": "citypop_le10_50_100",
+    "dc:description": "Total population of all cities with at least 10,000 inhabitants located within a 50 – 100km range (thousands)"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "size_nearest_le10_mus"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/size_nearest_le10_mus",
+    "name": "size_nearest_le10_mus",
+    "dc:description": "Population of the nearest city with at least 10,000 inhabitants falling under Muslim rule (thousands)"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "size_nearest_le10_chr"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/size_nearest_le10_chr",
+    "name": "size_nearest_le10_chr",
+    "dc:description": "Population of the nearest city with at least 10,000 inhabitants falling under Christian rule (thousands)"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "nrcities_le10_0_20_mus"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/nrcities_le10_0_20_mus",
+    "name": "nrcities_le10_0_20_mus",
+    "dc:description": "Number of cities with at least 10,000 inhabitants falling under Muslim rule located within a 0 – 20km range"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "citypop_le10_0_20_mus"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/citypop_le10_0_20_mus",
+    "name": "citypop_le10_0_20_mus",
+    "dc:description": "Total population of all cities with at least 10,000 inhabitants falling under Muslim rule located within a 0 – 20km range (thousands)"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "nrcities_le10_0_20_chr"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/nrcities_le10_0_20_chr",
+    "name": "nrcities_le10_0_20_chr",
+    "dc:description": "Number of cities with at least 10,000 inhabitants falling under Christian rule located within a 0 – 20km range"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "citypop_le10_0_20_chr"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/citypop_le10_0_20_chr",
+    "name": "citypop_le10_0_20_chr",
+    "dc:description": "Total population of all cities with at least 10,000 inhabitants falling under Christian rule located within a 0 – 20km range (thousands)"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "nrcities_le10_20_50_mus"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/nrcities_le10_20_50_mus",
+    "name": "nrcities_le10_20_50_mus",
+    "dc:description": "Number of cities with at least 10,000 inhabitants falling under Muslim rule located within a 20 – 50km range"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "citypop_le10_20_50_mus"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/citypop_le10_20_50_mus",
+    "name": "citypop_le10_20_50_mus",
+    "dc:description": "Total population of all cities with at least 10,000 inhabitants falling under Muslim rule located within a 20 – 50km range (thousands)"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "nrcities_le10_20_50_chr"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/nrcities_le10_20_50_chr",
+    "name": "nrcities_le10_20_50_chr",
+    "dc:description": "Number of cities with at least 10,000 inhabitants falling under Christian rule located within a 20 – 50km range"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "citypop_le10_20_50_chr"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/citypop_le10_20_50_chr",
+    "name": "citypop_le10_20_50_chr",
+    "dc:description": "Total population of all cities with at least 10,000 inhabitants falling under Christian rule located within a 20 – 50km range (thousands)"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "nrcities_le10_50_100_mus"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/nrcities_le10_50_100_mus",
+    "name": "nrcities_le10_50_100_mus",
+    "dc:description": "Number of cities with at least 10,000 inhabitants falling under Muslim rule located within a 50 – 100km range"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "citypop_le10_50_100_mus"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/citypop_le10_50_100_mus",
+    "name": "citypop_le10_50_100_mus",
+    "dc:description": "Total population of all cities with at least 10,000 inhabitants falling under Muslim rule located within a 50 – 100km range (thousands)"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "nrcities_le10_50_100_chr"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/nrcities_le10_50_100_chr",
+    "name": "nrcities_le10_50_100_chr",
+    "dc:description": "Number of cities with at least 10,000 inhabitants falling under Christian rule located within a 50 – 100km range"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "citypop_le10_50_100_chr"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/citypop_le10_50_100_chr",
+    "name": "citypop_le10_50_100_chr",
+    "dc:description": "Total population of all cities with at least 10,000 inhabitants falling under Christian rule located within a 50 – 100km range (thousands)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "parl_act"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/parl_act",
+    "name": "parl_act",
+    "dc:description": "Dummy variable indicating whether or not a city falls under an active parliament"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "madrassa01"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/madrassa01",
+    "name": "madrassa01",
+    "dc:description": "Dummy variable indicating whether or not a city hosts a madrassa"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "D_largestate"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/D_largestate",
+    "name": "D_largestate",
+    "dc:description": "Dummy variable indicating whether or not a city falls under the rule of a large state (see paper for its definition)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "GranadaEmirate"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/GranadaEmirate",
+    "name": "GranadaEmirate",
+    "dc:description": "Dummy variable indicating whether or not a city falls under the Emirate of Granada"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "ottoman"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/ottoman",
+    "name": "ottoman",
+    "dc:description": "Dummy variable indicating whether or not a city falls under Ottoman rule"
+   }
+  ]
+ }
+}
