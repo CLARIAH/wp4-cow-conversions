@@ -210,8 +210,7 @@
     "@id": "https://iisg.amsterdam/resource/siem_long.csv/column/transportloc",
     "name": "transportloc",
     "propertyUrl": "siem:vocab/transportloc",
-    "valueUr": "siem:code/transportloc/{transportloc}",
-    "valueUrl": "siem:code/quality/{% if quality == 'rood' %}proxy{% elif quality == 'cursief' %}imputed{% else %}direct{% endif %}",
+    "valueUrl": "siem:code/transportloc/{transportloc}",
     "dc:description": "First nature geographical characteristics of the city: its fluvial catchment area and whether it was a ‘sea’, ‘river’ or ‘landlocked’ city"
    },
    {
@@ -252,7 +251,9 @@
     "@id": "https://iisg.amsterdam/resource/siem_long.csv/column/quality",
     "name": "quality",
     "propertyUrl": "siem:vocab/quality",
-    "dc:description": "Quality of observation, where 'rood' means derived from a proxy; 'cursief' imputed by the algorithm"
+    "csvw:parseOnEmpty":true,
+    "valueUrl": "siem:code/quality/{% if quality == 'rood' %}proxy{% elif quality == 'cursief' %}imputed{% else %}direct{% endif %}",
+    "dc:description": "Quality of observation, either proxy, imputed, or directly derived from source ('direct')"
    },
    {
     "datatype": "string",
