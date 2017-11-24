@@ -144,14 +144,15 @@
    },
    {
     "virtual": true,
+    "datatype": "int",
     "aboutUrl": "siem:code/uncountrycode/{uncountrycode}",
     "name": "uncountrycode",
         "titles": [
      "uncountrycode"
     ],
     "propertyUrl": "https://iisg.amsterdam/vocab/isoNumber",
-    "valueUrl": "https://iisg.amsterdam/vocab/isoNumber/{uncountrycode}"
-       },
+    "csvw:value": "{uncountrycode}"
+    },
    {
     "datatype": "string",
     "titles": [
@@ -170,7 +171,7 @@
        "titles": ["country"],
    "propertyUrl": "siem:vocab/Country",
    "valueUrl": "siem:code/Country/{country}"
-      },
+   },
    {
     "datatype": "string",
     "titles": [
@@ -209,6 +210,8 @@
     "@id": "https://iisg.amsterdam/resource/siem_long.csv/column/transportloc",
     "name": "transportloc",
     "propertyUrl": "siem:vocab/transportloc",
+    "valueUr": "siem:code/transportloc/{transportloc}",
+    "valueUrl": "siem:code/quality/{% if quality == 'rood' %}proxy{% elif quality == 'cursief' %}imputed{% else %}direct{% endif %}",
     "dc:description": "First nature geographical characteristics of the city: its fluvial catchment area and whether it was a ‘sea’, ‘river’ or ‘landlocked’ city"
    },
    {
