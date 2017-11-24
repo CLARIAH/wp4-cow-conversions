@@ -169,8 +169,8 @@
    "aboutUrl": "siem:code/country/{country}",
    "name": "country",
        "titles": ["country"],
-   "propertyUrl": "siem:vocab/Country",
-   "valueUrl": "siem:code/Country/{country}"
+   "propertyUrl": "sdv:Country",
+   "valueUrl": "sdr:resource/country/{country}"
    },
    {
     "datatype": "string",
