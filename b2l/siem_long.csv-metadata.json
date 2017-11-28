@@ -107,6 +107,7 @@
    "xsd": "http://www.w3.org/2001/XMLSchema#",
    "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
    "siem": "https://iisg.amsterdam/siem/",
+   "geosparql": "http://www.opengis.net/ont/geosparql#",
    "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/"
   }
  ],
@@ -191,6 +192,25 @@
     "name": "longitude",
     "propertyUrl": "siem:vocab/longitude",
     "dc:description": "Longitude"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "siem:code/city/{city}",
+    "propertyUrl": "geosparql:hasGeometry",
+    "valueUrl": "siem:code/genid/{{city}}"
+   },
+   {
+    "virtual": true,
+    "datatype": "geosparql:wktLiteral",
+    "aboutUrl": "siem:code/genid/{{city}}",
+    "propertyUrl": "geosparql:asWKT",
+    "csvw:value": "{{'POINT(' + longitude + ' ' + latitude + ')'}}"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "siem:code/genid/{{city}}",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "geosparql:Geometry"
    },
    {
     "datatype": "integer",
