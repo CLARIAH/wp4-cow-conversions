@@ -1,157 +1,135 @@
 {
- "dialect": {
-  "quoteChar": "\"",
-  "delimiter": ",",
-  "encoding": "utf-8"
- },
- "dcat:keyword": [],
- "dc:license": {
-  "@id": "http://opendefinition.org/licenses/cc-by/"
- },
- "dc:publisher": {
-  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
-  "schema:url": {
-   "@id": "http://datalegend.org"
-  }
- },
- "dc:author": {
-"rdf:type": [
-{
-"@id": "foaf:Person"
-},
-{
-"@id": "prov:Person"
-}
-],
-"foaf:name": ["Bram van den Hout"],
-"foaf:mbox": {
-"@id": "mailto:Bram.van.den.hout@iisg.nl"
-}
-},
-"prov:wasDerivedFrom": [{
-	"@id": "http://www.ministryofsillycodes.com"
-}], 
- "url": "gruber_mosaic_CGOTHO_version5.csv",
- "@context": [
-  "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json",
-  {
-   "@base": "https://iisg.amsterdam/gruber_mosaic/",
-   "@language": "de"
-  },
-  {
-   "owl": "http://www.w3.org/2002/07/owl#",
-   "dbo": "http://dbpedia.org/ontology/",
-   "clioctr": "https://iisg.amsterdam/clio/country/",
-   "hisclass": "https://iisg.amsterdam/hisclass/",
-   "hisco-product": "https://iisg.amsterdam/hisco/product/",
-   "ldp": "http://www.w3.org/ns/ldp#",
-   "clio": "https://iisg.amsterdam/clio/",
-   "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
-   "dbr": "http://dbpedia.org/resource/",
-   "skos": "http://www.w3.org/2004/02/skos/core#",
-   "xml": "http://www.w3.org/XML/1998/namespace/",
-   "bibo": "http://purl.org/ontology/bibo/",
-   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-   "prov": "http://www.w3.org/ns/prov#",
-   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
-   "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/",
-   "hiscam": "https://iisg.amsterdam/hiscam/",
-   "dbpedia": "http://dbpedia.org/resource/",
-   "np": "http://www.nanopub.org/nschema#",
-   "canfam-auke": "https://iisg.amsterdam/canfam/auke/",
-   "dcterms": "http://purl.org/dc/terms/",
-   "schema": "http://schema.org/",
-   "foaf": "http://xmlns.com/foaf/0.1/",
-   "napp": "https://iisg.amsterdam/napp/",
-   "sdv": "https://iisg.amsterdam/vocab/",
-   "hisco": "https://iisg.amsterdam/hisco/",
-   "hisco-code": "https://iisg.amsterdam/hisco/code/",
-   "sdp": "https://iisg.amsterdam/person/",
-   "sdr": "https://iisg.amsterdam/",
-   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-   "time": "http://www.w3.org/2006/time#",
-   "hsn": "https://iisg.amsterdam/hsn2013a/",
-   "dc": "http://purl.org/dc/terms/",
-   "hisco-relation": "https://iisg.amsterdam/hisco/code/relation/",
-   "hisco-status": "https://iisg.amsterdam/hisco/code/status/",
-   "dbp": "http://dbpedia.org/property/",
-   "clioprop": "https://iisg.amsterdam/clio/property/",
-   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
-   "csvw": "http://www.w3.org/ns/csvw#",
-   "clioind": "https://iisg.amsterdam/clio/indicator/",
-   "dc11": "http://purl.org/dc/elements/1.1/",
-   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
-   "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/",
-   "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/",
-   "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/",
-   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
-   "qb": "http://purl.org/linked-data/cube#",
-   "hisclass5": "https://iisg.amsterdam/hisclass5/",
-   "xsd": "http://www.w3.org/2001/XMLSchema#",
-   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
-   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/"
-  }
- ],
- "dc:title": "gruber_mosaic_CGOTHO_version5.csv",
- "@id": "https://iisg.amsterdam/gruber_mosaic_CGOTHO_version5.csv",
- "dc:modified": {
-  "@value": "2017-11-17",
-  "@type": "xsd:date"
- },
- "tableSchema": {
-  "aboutUrl": "{{harmonized}}",
-  "primaryKey": "harmonized",
-  "columns": [
-   {
-    "datatype": "string",
-    "titles": [
-     "harmonized"
-    ],
-    "@id": "https://iisg.amsterdam/gruber_mosaic_CGOTHO_version5.csv/column/harmonized",
-    "name": "harmonized",
-    "dc:description": "Job Description",
-	"propertyUrl": "skos:prefLabel",
-	"csvw:value": "{{harmonized}}",
-	"lang": "de"
+   "@context": [
+      "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json",
+      {
+         "@base": "https://iisg.amsterdam/resource/",
+         "@language": "de"
+      },
+      {
+         "bibo": "http://purl.org/ontology/bibo/",
+         "canfam": "http://iisg.amsterdam/canfam/dataset/canada1901/",
+         "canfam-auke": "http://iisg.amsterdam/canfam/auke/",
+         "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
+         "clio": "http://iisg.amsterdam/clio/",
+         "clioctr": "http://iisg.amsterdam/clio/country/",
+         "clioind": "http://iisg.amsterdam/clio/indicator/",
+         "clioprop": "http://iisg.amsterdam/clio/property/",
+         "csvw": "http://www.w3.org/ns/csvw#",
+         "dbo": "http://dbpedia.org/ontology/",
+         "dbp": "http://dbpedia.org/property/",
+         "dbpedia": "http://dbpedia.org/resource/",
+         "dbr": "http://dbpedia.org/resource/",
+         "dc": "http://purl.org/dc/terms/",
+         "dc11": "http://purl.org/dc/elements/1.1/",
+         "dcterms": "http://purl.org/dc/terms/",
+         "foaf": "http://xmlns.com/foaf/0.1/",
+         "hiscam": "http://iisg.amsterdam/hiscam/",
+         "hisclass": "http://iisg.amsterdam/hisclass/",
+         "hisclass5": "http://iisg.amsterdam/hisclass5/",
+         "hisco": "http://iisg.amsterdam/hisco/",
+         "hisco-product": "http://iisg.amsterdam/hisco/product/",
+         "hisco-relation": "http://iisg.amsterdam/hisco/relation/",
+         "hisco-status": "http://iisg.amsterdam/hisco/status/",
+         "hsn": "http://iisg.amsterdam/hsn2013a/",
+         "ldp": "http://www.w3.org/ns/ldp#",
+         "napp": "http://iisg.amsterdam/napp/",
+         "napp-can91": "http://iisg.amsterdam/napp/dataset/canada1891/",
+         "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/",
+         "napp-eng81": "http://iisg.amsterdam/napp/dataset/englandwales1881/",
+         "napp-sct81": "http://iisg.amsterdam/napp/dataset/scotland1881/",
+         "np": "http://www.nanopub.org/nschema#",
+         "occhisco": "http://iisg.amsterdam/napp/OCCHISCO/",
+         "owl": "http://www.w3.org/2002/07/owl#",
+         "prov": "http://www.w3.org/ns/prov#",
+         "qb": "http://purl.org/linked-data/cube#",
+         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+         "schema": "http://schema.org/",
+         "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+         "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+         "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+         "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+         "sdp": "http://iisg.amsterdam/person/",
+         "sdr": "http://iisg.amsterdam/",
+         "sdv": "http://iisg.amsterdam/vocab/",
+         "skos": "http://www.w3.org/2004/02/skos/core#",
+         "time": "http://www.w3.org/2006/time#",
+         "xml": "http://www.w3.org/XML/1998/namespace/",
+         "xsd": "http://www.w3.org/2001/XMLSchema#"
+      }
+   ],
+   "@id": "https://iisg.amsterdam/resource/gruber_mosaic_CGOTHO_version5.csv",
+   "dc:license": {
+      "@id": "http://opendefinition.org/licenses/cc-by/"
    },
-   {
-    "propertyUrl": "rdf:type",
-    "valueUrl": "skos:Concept"
+   "dc:modified": {
+      "@type": "xsd:date",
+      "@value": "2017-12-08"
    },
-   {
-    "datatype": "string",
-    "titles": [
-     "hisco"
-    ],
-    "@id": "https://iisg.amsterdam/gruber_mosaic_CGOTHO_version5.csv/column/hisco",
-    "name": "hisco",
-    "dc:description": "hisco"
+   "dc:publisher": {
+      "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+      "schema:url": {
+         "@id": "http://datalegend.org"
+      }
    },
-   {
-    "datatype": "string",
-    "titles": [
-     "occhisco"
-    ],
-    "@id": "https://iisg.amsterdam/gruber_mosaic_CGOTHO_version5.csv/column/occhisco",
-    "name": "occhisco",
-    "dc:description": "occhisco"
+   "dc:author": {
+      "rdf:type": [
+         {
+            "@id": "foaf:Person"
+         },
+         {
+            "@id": "prov:Person"
+         }
+      ],
+      "foaf:name": [
+         "Bram van den Hout"
+      ],
+      "foaf:mbox": {
+         "@id": "mailto:Bramvdhout@gmail.com"
+      }
    },
-    {
-    "virtual": true,
-    "aboutUrl": "hisco:jobHoard",
-    "propertyUrl": "skos:member",
-    "valueUrl": "{{harmonized}}"
+   "prov:wasDerivedFrom": {
+      "@id": "http://www.GermanJobsForYou.de/Jobs"
    },
-   {
-    "virtual": true,
-    "aboutUrl": "hisco-code:hisco/{hisco}",
-    "propertyUrl": "skos:member",
-    "valueUrl": "{{harmonized}}"
+   "dc:title": "gruber_mosaic_CGOTHO_version5.csv",
+   "dcat:keyword": [],
+   "dialect": {
+      "delimiter": ",",
+      "encoding": "utf-8",
+      "quoteChar": "\""
    },
-   {
-    "propertyUrl": "prov:wasDerivedFrom",
-    "valueUrl": "http://www.censusmosaic.org/data/mosaic-data-files"
-   }
-  ]
- }
+   "tableSchema": {
+      "aboutUrl": "jobs/{harmonized}",
+      "columns": [
+         {
+            "@id": "https://iisg.amsterdam/resource/gruber_mosaic_CGOTHO_version5.csv/column/harmonized",
+            "datatype": "string",
+            "dc:description": "harmonized",
+            "name": "harmonized",
+            "titles": [
+               "harmonized"
+            ]
+         },
+         {
+            "@id": "https://iisg.amsterdam/resource/gruber_mosaic_CGOTHO_version5.csv/column/hisco",
+            "datatype": "string",
+            "dc:description": "hisco",
+            "name": "hisco",
+            "titles": [
+               "hisco"
+            ]
+         },
+         {
+            "@id": "https://iisg.amsterdam/resource/gruber_mosaic_CGOTHO_version5.csv/column/occhisco",
+            "datatype": "string",
+            "dc:description": "occhisco",
+            "name": "occhisco",
+            "titles": [
+               "occhisco"
+            ]
+         }
+      ],
+      "primaryKey": "harmonized"
+   },
+   "url": "gruber_mosaic_CGOTHO_version5.csv"
 }
