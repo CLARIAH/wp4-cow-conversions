@@ -104,7 +104,7 @@
          {
             "@id": "https://iisg.amsterdam/resource/gruber_mosaic_CGOTHO_version5.csv/column/harmonized",
             "datatype": "string",
-            "dc:description": "harmonized",
+            "dc:description": "Harmonized job titles",
             "name": "harmonized",
             "titles": [
                "harmonized"
