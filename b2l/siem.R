@@ -40,5 +40,6 @@ siem_long[!is.na(as.numeric(quality)), quality := NA]
 
 siem_long[, city_alt := stringi::stri_extract_first_regex(city, "\\(.*\\)")]
 siem_long[, city_short := data.table::tstrsplit(city, "(", fixed = TRUE, keep = 1L)]
+siem_long[, city_safe := tolower(stringi::stri_replace_all_regex(city_short, "[^A-z]", ""))]
 
 data.table::fwrite(siem_long, "dat/siem_long.csv", na = "", quote = TRUE)
