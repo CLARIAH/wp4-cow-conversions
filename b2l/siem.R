@@ -34,6 +34,13 @@ siem_long = data.table::melt(siem,
 siem_long[, year := names(siem)[grep("\\d+y$", names(siem))][year]]
 siem_long[, year := as.integer(stringi::stri_extract_first_regex(year, "\\d+"))]
 
+siem_long[city == "Itri", lat := 41.29044]
+siem_long[city == "Itri", lon := 13.53216]
+siem_long[city == "Lokeren", lat := 51.10234]
+siem_long[city == "Lokeren", lon := 3.994066]
+siem_long[city == "Sighisoara", lat := 46.2197]
+siem_long[city == "Sighisoara", lat := 24.79639]
+
 siem_long[, inhab := as.integer(inhab)]
 siem_long[is.na(as.numeric(quality)), ]
 siem_long[!is.na(as.numeric(quality)), quality := NA]
