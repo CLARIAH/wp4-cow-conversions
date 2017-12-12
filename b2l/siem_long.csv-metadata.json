@@ -294,6 +294,16 @@
     "name": "city_short",
     "propertyUrl": "siem:vocab/city_short",
     "dc:description": "Name of the town or city in modern English spelling"
+   },
+   {
+    "titles": [
+     "city_safe"
+    ],
+    "@id": "https://iisg.amsterdam/resource/siem_long.csv/column/city_safe",
+    "name": "city_safe",
+    "propertyUrl": "siem:vocab/cityid",
+    "dc:description": "city identifier created from short city name and rounded latitude and longitude",
+    "valueUrl": "siem:code/cityid/{{city + latitude|int|string + '_' + longitude|int|string}}"
    }
   ]
  }
