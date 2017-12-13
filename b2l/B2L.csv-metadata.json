@@ -2,7 +2,7 @@
  "dialect": {
   "quoteChar": "\"",
   "delimiter": ";",
-  "encoding": "ascii"
+  "encoding": "utf-8"
  },
  "dcat:keyword": [],
  "dc:license": {
@@ -802,21 +802,21 @@
    {
     "datatype": "string",
     "titles": [
-     "D_largestate"
+     "d_largestate"
     ],
-    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/D_largestate",
-    "name": "D_largestate",
-    "propertyUrl": "B2L:vocab/D_largestate",
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/d_largestate",
+    "name": "d_largestate",
+    "propertyUrl": "B2L:vocab/d_largestate",
     "dc:description": "Dummy variable indicating whether or not a city falls under the rule of a large state (see paper for its definition)"
    },
    {
     "datatype": "string",
     "titles": [
-     "GranadaEmirate"
+     "granadaemirate"
     ],
-    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/GranadaEmirate",
-    "name": "GranadaEmirate",
-    "propertyUrl": "B2L:vocab/GranadaEmirate",
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/granadaemirate",
+    "name": "granadaemirate",
+    "propertyUrl": "B2L:vocab/granadaemirate",
     "dc:description": "Dummy variable indicating whether or not a city falls under the Emirate of Granada"
    },
    {
