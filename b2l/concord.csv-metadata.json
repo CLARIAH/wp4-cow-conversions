@@ -89,7 +89,7 @@
    {
     "virtual": true,
     "dc:description": "Link between b2l and siem datasets",
-    "aboutUrl": "B2L::code/cityid/{{city_safe + latitude_b2l|int|string + '_' + longitude_b2l|int|string}}",
+    "aboutUrl": "B2L:code/cityid/{{city_safe + latitude_b2l|int|string + '_' + longitude_b2l|int|string}}",
     "propertyUrl": "skos:exactMatch",
     "valueUrl": "siem:code/cityid/{{city_safe_tolink + latitude_b2l|int|string + '_' + longitude_b2l|int|string}}"
    },
