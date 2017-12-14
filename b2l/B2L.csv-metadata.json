@@ -828,6 +828,16 @@
     "name": "ottoman",
     "propertyUrl": "B2L:vocab/ottoman",
     "dc:description": "Dummy variable indicating whether or not a city falls under Ottoman rule"
+   },
+   {
+    "titles": [
+     "city_safe"
+    ],
+    "@id": "https://iisg.amsterdam/resource/B2L.csv/column/city_safe",
+    "name": "city_safe",
+    "propertyUrl": "B2L:vocab/cityid",
+    "dc:description": "city identifier",
+    "valueUrl": "B2L:code/cityid/{{city_safe + latitude|int|string + '_' + longitude|int|string}}"
    }
   ]
  }
