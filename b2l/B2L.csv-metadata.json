@@ -165,9 +165,7 @@
    {
    "virtual": true,
    "aboutUrl": "B2L:code/country/{country}",
-   "name": "country",
-       "titles": ["country"],
-   "propertyUrl": "sdv:Country",
+   "propertyUrl": "skos:exactMatch",
    "valueUrl": "sdr:resource/country/{country}"
    },
    {
