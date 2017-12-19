@@ -115,6 +115,7 @@
    "xsd": "http://www.w3.org/2001/XMLSchema#",
    "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
    "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/",
+   "geosparql": "http://www.opengis.net/ont/geosparql#",
    "B2L": "https://iisg.amsterdam/B2L/"
   }
  ],
@@ -208,6 +209,25 @@
     "name": "longitude",
     "propertyUrl": "B2L:vocab/longitude",
     "dc:description": "Longitude-coordinate"
+   },
+    {
+    "virtual": true,
+    "aboutUrl": "B2L:code/city/{city}",
+    "propertyUrl": "geosparql:hasGeometry",
+    "valueUrl": "B2L:code/genid/{{city}}"
+   },
+   {
+    "virtual": true,
+    "datatype": "geosparql:wktLiteral",
+    "aboutUrl": "B2L:code/genid/{{city}}",
+    "propertyUrl": "geosparql:asWKT",
+    "csvw:value": "{{'POINT(' + longitude + ' ' + latitude + ')'}}"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "B2L:code/genid/{{city}}",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "geosparql:Geometry"
    },
    {
     "datatype": "int",
