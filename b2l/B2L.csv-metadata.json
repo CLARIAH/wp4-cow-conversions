@@ -160,7 +160,7 @@
     "name": "country",
     "propertyUrl": "B2L:vocab/country",
     "dc:description": "Country (defined on 1990 boundaries) a city is located in",
-    "valueUrl": "B2L:code/country/{country}"
+    "valueUrl": "B2L:code/country/{% if country == 'UK' %}United Kingdom{% else %} {country} {% endif %}"
    },
    {
    "virtual": true,
