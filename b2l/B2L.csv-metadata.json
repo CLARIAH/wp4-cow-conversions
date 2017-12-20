@@ -175,6 +175,7 @@
     ],
     "@id": "https://iisg.amsterdam/resource/B2L.csv/column/year",
     "name": "year",
+    "csvw:value": "{year:0>4}",
     "dc:description": "Century"
    },
    {
