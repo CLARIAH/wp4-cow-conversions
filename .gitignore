@@ -6,3 +6,4 @@
 *.xls
 *.xlsx
 b2l/design*
+b2l/convert.sh
