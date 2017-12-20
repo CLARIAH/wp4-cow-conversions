@@ -162,7 +162,7 @@
     "@id": "https://iisg.amsterdam/resource/siem_long.csv/column/country",
     "name": "country",
     "propertyUrl": "siem:vocab/country",
-    "valueUrl": "siem:code/country/{% if country == 'UK' %}United Kingdom{% else %} {country} {% endif %}",
+    "valueUrl": "siem:code/country/{% if country == 'UK' %}United Kingdom{% else %}{country}{% endif %}",
     "dc:description": "Name of the country in the year 2000"
    },
    {
