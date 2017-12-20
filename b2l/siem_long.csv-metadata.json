@@ -239,6 +239,7 @@
     "@id": "https://iisg.amsterdam/resource/siem_long.csv/column/year",
     "name": "year",
     "propertyUrl": "siem:vocab/year",
+    "csvw:value": "{year:0>4}",
     "dc:description": "Time window of observation (whole centuries from 700 to 1500, and half centuries from 1500 to 2000)"
    },
    {
