@@ -1,0 +1,400 @@
+{
+ "dialect": {
+  "quoteChar": "\"", 
+  "delimiter": ",", 
+  "encoding": "utf-8"
+ }, 
+ "dcat:keyword": [], 
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ }, 
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend", 
+  "schema:url": {
+   "@id": "http://datalegend.org"
+  }
+ }, 
+ "dc:author": {
+  "rdf:type": [
+    {
+      "@id": "foaf:Person"
+    },
+    {
+      "@id": "prov:Person"
+    }
+  ],
+  "foaf:name": ["Auke Rijpma"]
+},"dc:author": {
+  "rdf:type": [
+    {
+      "@id": "foaf:Person"
+    },
+    {
+      "@id": "prov:Person"
+    }
+  ],
+  "foaf:name": ["Ruben Schalk"]
+},
+"prov:wasDerivedFrom": [{
+  "rdf:type": {
+      "@id": "bibo:Article"
+  },
+  "dc:title": {
+      "@value": "Building life course datasets from population registers by the Historical Sample of the Netherlands (HSN)",
+      "@lang": "en"
+  },
+  "dc:author": ["Mandemakers, K."],
+  "dc:publisher": "Edinburg UP",
+  "dc:date": {"@value":"2006", "@type":"xsd:gYear"},
+  "dc:isPartOf": ["http://www.euppublishing.com/toc/hac/14/1-2"]
+ }],
+ "url": "PKDYNAP.DBF.csv", 
+ "@context": [
+  "http://www.w3.org/ns/csvw", 
+  {
+   "@base": "http://data.socialhistory.org/resource/hsn/",
+   "@language": "en"
+  }, 
+  {
+   "owl": "http://www.w3.org/2002/07/owl#", 
+   "dbo": "http://dbpedia.org/ontology/", 
+   "clioctr": "http://data.socialhistory.org/resource/clio/country/", 
+   "hisclass": "http://data.socialhistory.org/resource/hisclass/", 
+   "hisco-product": "http://data.socialhistory.org/resource/hisco/product/", 
+   "hisco-entry": "http://data.socialhistory.org/resource/hisco/entry/",
+   "hsn": "http://data.socialhistory.org/resource/hsn/",
+   "hsnhisco": "http://data.socialhistory.org/resource/hsn2013a/",
+   "ldp": "http://www.w3.org/ns/ldp#", 
+   "clio": "http://data.socialhistory.org/resource/clio/", 
+   "occhisco": "http://data.socialhistory.org/resource/napp/OCCHISCO/", 
+   "dbr": "http://dbpedia.org/resource/", 
+   "skos": "http://www.w3.org/2004/02/skos/core#", 
+   "xml": "http://www.w3.org/XML/1998/namespace/", 
+   "bibo": "http://purl.org/ontology/bibo/", 
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#", 
+   "prov": "http://www.w3.org/ns/prov#", 
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#", 
+   "napp-can91": "http://data.socialhistory.org/resource/napp/dataset/canada1891/", 
+   "hiscam": "http://data.socialhistory.org/resource/hiscam/", 
+   "dbpedia": "http://dbpedia.org/resource/", 
+   "np": "http://www.nanopub.org/nschema#", 
+   "canfam-auke": "http://data.socialhistory.org/resource/canfam/auke/", 
+   "dcterms": "http://purl.org/dc/terms/", 
+   "schema": "http://schema.org/", 
+   "foaf": "http://xmlns.com/foaf/0.1/", 
+   "napp": "http://data.socialhistory.org/resource/napp/", 
+   "sdv": "http://data.socialhistory.org/vocab/", 
+   "hisco": "http://data.socialhistory.org/resource/hisco/", 
+   "sdp": "http://data.socialhistory.org/resource/person/", 
+   "sdr": "http://data.socialhistory.org/resource/", 
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#", 
+   "time": "http://www.w3.org/2006/time#", 
+   "hsn": "http://data.socialhistory.org/resource/hsn/",
+   "hsnhisco": "http://data.socialhistory.org/resource/hsn2013a/",
+   "dc": "http://purl.org/dc/terms/", 
+   "hisco-relation": "http://data.socialhistory.org/resource/hisco/relation/", 
+   "hisco-status": "http://data.socialhistory.org/resource/hisco/status/", 
+   "dbp": "http://dbpedia.org/property/", 
+   "clioprop": "http://data.socialhistory.org/resource/clio/property/", 
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#", 
+   "csvw": "http://www.w3.org/ns/csvw#", 
+   "clioind": "http://data.socialhistory.org/resource/clio/indicator/", 
+   "dc11": "http://purl.org/dc/elements/1.1/", 
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/", 
+   "napp-eng81": "http://data.socialhistory.org/resource/napp/dataset/englandwales1881/", 
+   "canfam": "http://data.socialhistory.org/resource/canfam/dataset/canada1901/", 
+   "napp-sct81": "http://data.socialhistory.org/resource/napp/dataset/scotland1881/", 
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#", 
+   "qb": "http://purl.org/linked-data/cube#", 
+   "hisclass5": "http://data.socialhistory.org/resource/hisclass5/", 
+   "xsd": "http://www.w3.org/2001/XMLSchema#", 
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#", 
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/"
+  }
+ ], 
+ "dc:title": "PKDYNAP.DBF.csv", 
+ "@id": "http://data.socialhistory.org/resource/PKDYNAP.DBF.csv", 
+ "dc:modified": {
+  "@value": "2017-01-10", 
+  "@type": "xsd:date"
+ }, 
+ "tableSchema": {
+  "aboutUrl": "PKDYNAP/{_row}",
+  "primaryKey": "IDNR", 
+  "columns": [
+   {
+    "datatype": "string",
+    "titles": [
+     "IDNR"
+    ],
+    "@id": "http://data.socialhistory.org/resource/PKDYNAP.DBF.csv/column/IDNRP",
+    "name": "IDNR",
+    "propertyUrl": "hsn:dimension/IDNR",
+    "valueUrl": "hsn:code/IDNR/{IDNR}",
+    "dc:description": "HSN-identificatienummer onderzoekspersoon (OP)"
+   },
+   {
+    "datatype": "int", 
+    "titles": [
+     "FAMVBNR"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKDYNAP.DBF.csv/column/FAMVBNR", 
+    "name": "FAMVBNR", 
+    "propertyUrl": "hsn:dimension/FAMVBNR", 
+    "dc:description": "Volgnummer familieverband per OP"
+   },
+   {
+    "datatype": "string", 
+    "titles": [
+     "FAMVPNR"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKDYNAP.DBF.csv/column/FAMVPNR", 
+    "name": "FAMVPNR", 
+    "propertyUrl": "hsn:dimension/FAMVPNR", 
+    "dc:description": "Volgnummer persoon per familieverband"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "IDNRFMP"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKDYNAP.DBF.csv/column/IDNRFMP", 
+    "name": "IDNRFMP", 
+    "propertyUrl": "hsn:dimension/IDNRFMP", 
+    "valueUrl": "hsn:code/IDNRFMP/{IDNRFMP}", 
+    "dc:description": "Combinatie van idnr, famvbnr en famvpnr (te gebruiken als primaire sleutel in Access)"
+   }, 
+   {
+    "virtual": true,
+    "aboutUrl": "hsn:code/IDNRFM/{{IDNRFMP[:-3]}}",
+    "propertyUrl": "hsn:dimension/containsFamilyMember",
+    "valueUrl": "hsn:code/HSNperson/{{ [IDNR, '_', PERSNR]|join }}",
+    "dc:description": "direct link from fanukues (IDNRFM) to individuals (IDNRFMP)"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hsn:code/HSNperson/{{ [IDNR, '_', PERSNR]|join }}",
+    "propertyUrl": "hsn:dimension/inFamily",
+    "valueUrl": "hsn:code/IDNRFM/{{IDNRFMP[:-3]}}",
+    "dc:description": "direct link from individuals (IDNRFMP) to families (IDNRFM)"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hsn:code/IDNRFM/{{IDNRFMP[:-3]}}",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "hsn:family",
+    "dc:description": "IDNRFM identifies a family in the HSN; note that for one OP multiple families may exist. A family changes when the OP's marital status changes."
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hsn:code/IDNRFMP/{IDNRFMP}",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "hsn:individual",
+    "dc:description": "IDNRFMP identifies an individual within a family in the HSN. Note that the same individual might return in another family of the OP without having the same IDNRFMP"
+   },
+   {
+    "datatype": "string", 
+    "titles": [
+     "PERSNR"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKDYNAP.DBF.csv/column/PERSNR", 
+    "name": "PERSNR", 
+    "propertyUrl": "hsn:dimension/PERSNR", 
+    "dc:description": "Identificatienummer persoon; deze variabele linkt de personen over de verschillende huishoudens voorzover behorende bij een bepaalde OP"
+   }, 
+   {
+    "virtual": true,
+    "aboutUrl": "hsn:code/HSNperson/{{ [IDNR, '_', PERSNR]|join }}",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "hsn:individual"
+   },
+   {
+    "virtual": true,
+    "name": "HSNperson",
+        "titles": [
+     "HSNperson"
+    ],
+    "propertyUrl": "hsn:dimension/HSNperson",
+    "valueUrl": "hsn:code/HSNperson/{{ [IDNR, '_', PERSNR]|join }}",
+    "dc:description": "An individual in the HSN (person can exist in multiple households)"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hsn:code/HSNperson/{{ [IDNR, '_', PERSNR]|join }}",
+    "propertyUrl": "hsn:dimension/individualObservation",
+    "valueUrl": "PKDYNAP/{_row}",
+    "dc:description": "An observation about an individual in the HSN (person can exist in multiple households)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "DYNATYPE"
+    ],
+    "@id": "http://data.socialhistory.org/resource/PKDYNAP.DBF.csv/column/DYNATYPE",
+    "name": "DYNATYPE",
+    "propertyUrl": "hsn:dimension/DYNATYPE",
+    "valueUrl": "hsn:code/DYNATYPE/{DYNATYPE}",
+    "dc:description": "Type dynamisch gegeven"
+   },
+   {
+    "datatype": "int", 
+    "titles": [
+     "DYNAVLGN"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKDYNAP.DBF.csv/column/DYNAVLGN", 
+    "name": "DYNAVLGN", 
+    "propertyUrl": "hsn:dimension/DYNAVLGN", 
+    "dc:description": "Nummer om een chronologische volgorde aan te geven, in het geval van beroep en godsdienst. Deze gegevens zijn op de PK namelijk niet gedateerd. De volgorde is zo goed mogelijk bepaald bij het invoeren van de PK op basis van de vermoedelijke volgorde van doorhalingen. Het eerste beroep of godsdienst kan normaliter op 1 jan. 1940 worden gedateerd. Na 1970 werden er in de regel geen beroepen meer bijgehouden op de PK's."
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "DYNATEXT"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKDYNAP.DBF.csv/column/DYNATEXT", 
+    "name": "DYNATEXT", 
+    "propertyUrl": "hsn:dimension/DYNATEXT", 
+    "dc:description": "Beschrijving dynamische code (uitleg van de variabele dynatype in woorden)"
+   }, 
+      {
+    "virtual": true,
+    "name": "DYNATYPE",
+    "titles": [
+     "DYNATYPE"
+    ],
+    "propertyUrl": "hsn:dimension/relationToHead",
+    "valueUrl": "hsn:code/RELACODE/{{DYNAINHD[:2]|int()}}",
+    "dc:description": "Relatie tot het hoofd. Deze relatie is gedateerd op de startdatum van de periode van inschrijving in het familieverband, dit is dezelfde datum als insdag/insmnd/insjar in de tabel  pkstatp), zie verder bij de Opmerkingen bij dynatype/dynainhd 1/4 hieronder.",
+    "null": ["2", "3", "4", "5", "6", "7"]
+   },
+   {
+    "virtual": true,
+    "name": "DYNATYPE",
+    "titles": [
+     "DYNATYPE"
+    ],
+    "propertyUrl": "hsn:dimension/relationToOP",
+    "valueUrl": "hsn:code/RELACODE/{{DYNAINHD[:2]|int()}}",
+    "dc:description": "Relation to OP (research person). Variable is derived from HSN-relacode.",
+    "null": ["1", "2", "3", "5", "6", "7"]
+   },
+   {
+    "virtual": true,
+    "name": "DYNATYPE",
+    "titles": [
+     "DYNATYPE"
+    ],
+    "propertyUrl": "hsn:dimension/civilStatus",
+    "valueUrl": "hsn:code/civilstatus/{{DYNAINHD.split(' ', 1)[0]}}",
+    "dc:description": "Burgerlijke staat, voor de wijze waarop de data eventueel werden geschat, zie verder bijlage C, bij gerelateerde personen zijn de data van huwelijk en scheiding wederzijds opgenomen (voorzover mogelijk), overlijdensdata van de ene partner zijn verwerkt tot verweduwingsdata bij de andere. Indien er bij een 'nieuwe' inschrijving binnen 50 dagen na dato inschrijving geen burgerlijke staat is vermeld, wordt het vorige gegeven overgenomen, indien afwezig dan wordt dit op 'onbekend' gezet, het dagnummer wordt steeds 40 (toestandscode voor burgerlijke staat bij aanvang van de inschrijving in tegenstelling tot een mutatie in de burgerlijke staat die steeds het normale dagnummer draagt)",
+    "null": ["1", "3", "4", "5", "6", "7"]
+   },
+   {
+    "virtual": true,
+    "name": "DYNATYPE",
+        "titles": [
+     "DYNATYPE"
+    ],
+    "propertyUrl": "hsn:dimension/Kerkgenootschap",
+    "csv:value": "{DYNAINHD}",
+    "null": ["1", "2", "4", "5", "6", "7"]
+   },
+   {
+    "virtual": true,
+    "name": "DYNATYPE",
+        "titles": [
+     "DYNATYPE"
+    ],
+    "propertyUrl": "hsn:dimension/occupationalTitle",
+    "valueUrl": "hsnhisco:occupation/{{DYNAINHD|lower()}}",
+    "null": ["1", "2", "3", "4", "6", "7"]
+   },
+   {
+    "virtual": true,
+    "name": "DYNATYPE",
+    "titles": [
+     "DYNATYPE"
+    ],
+    "propertyUrl": "hsn:dimension/herkomst",
+    "csvw:value": "{DYNAINHD}",
+    "dc:description": "Herkomstgegeven, herkomst- of vertrekgegevens die met een '/' of '&' beginnen hebben betrekking op resp. binnengemeentelijke of administratieve verhuizingen",
+    "null": ["1", "2", "3", "4", "5", "7"]
+   },
+   {
+    "virtual": true,
+    "name": "DYNATYPE",
+    "titles": [
+     "DYNATYPE"
+    ],
+    "propertyUrl": "hsn:dimension/vertrek",
+    "csvw:value": "{DYNAINHD}",
+    "dc:description": "Vertrekgegeven, zie ook bij herkomst",
+    "null": ["1", "2", "3", "4", "5", "6"]
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "INGDAG"
+    ],
+    "@id": "http://data.socialhistory.org/resource/PKDYNAP.DBF.csv/column/INGDAG",
+    "name": "INGDAG",
+    "propertyUrl": "hsn:dimension/INGDAG",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Dagnummer ingangsdatum dynamisch gegeven"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "INGMND"
+    ],
+    "@id": "http://data.socialhistory.org/resource/PKDYNAP.DBF.csv/column/INGMND",
+    "name": "INGMND",
+    "propertyUrl": "hsn:dimension/INGMND",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Maandnummer ingangsdatum dynamisch gegeven"
+   },
+   {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "INGJAR"
+    ],
+    "@id": "http://data.socialhistory.org/resource/PKDYNAP.DBF.csv/column/INGJAR",
+    "name": "INGJAR",
+    "propertyUrl": "hsn:dimension/INGJAR",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Jaar ingangsdatum dynamisch gegeven"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "INGDAT"
+    ],
+    "@id": "http://data.socialhistory.org/resource/PKDYNAP.DBF.csv/column/INGDAT",
+    "name": "INGDAT",
+    "propertyUrl": "hsn:dimension/INGDAT",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Inschrijfdatum als datumveld (jjjj-mm-dd)"
+   },
+   {
+    "datatype": "string", 
+    "titles": [
+     "DYNAINHD"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKDYNAP.DBF.csv/column/DYNAINHD", 
+    "name": "DYNAINHD", 
+    "propertyUrl": "hsn:dimension/DYNAINHD", 
+    "dc:description": "Inhoud van het gegeven (afhankelijk van het dynatype, bijvoorbeeld de beroepstitel, de inhoud van de relatie etc.), beroep en plaatsnamen zijn niet gecodeerd, relaties, burgerlijke stand en kerkgenootschappen zijn wel gebouwd op basis van referentietabellen"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "RELEASE"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKDYNAP.DBF.csv/column/RELEASE", 
+    "name": "RELEASE", 
+    "propertyUrl": "hsn:dimension/RELEASE", 
+    "dc:description": "RELEASE"
+   }
+  ]
+ }
+}

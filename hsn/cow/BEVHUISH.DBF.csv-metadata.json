@@ -1,0 +1,294 @@
+{
+ "dialect": {
+  "quoteChar": "\"",
+  "delimiter": ",",
+  "encoding": "ascii"
+ },
+ "dcat:keyword": ["hsn"],
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+  "schema:url": {
+   "@id": "http://datalegend.org"
+  }
+},
+"dc:author": {
+  "rdf:type": [
+    {
+      "@id": "foaf:Person"
+    },
+    {
+      "@id": "prov:Person"
+    }
+  ],
+  "foaf:name": ["Auke Rijpma"]
+},"dc:author": {
+  "rdf:type": [
+    {
+      "@id": "foaf:Person"
+    },
+    {
+      "@id": "prov:Person"
+    }
+  ],
+  "foaf:name": ["Ruben Schalk"]
+},
+"prov:wasDerivedFrom": [{
+  "rdf:type": {
+      "@id": "bibo:Article"
+  },
+  "dc:title": {
+      "@value": "Building life course datasets from population registers by the Historical Sample of the Netherlands (HSN)",
+      "@lang": "en"
+  },
+  "dc:author": ["Mandemakers, K."],
+  "dc:publisher": "Edinburg UP",
+  "dc:date": {"@value":"2006", "@type":"xsd:gYear"},
+  "dc:isPartOf": ["http://www.euppublishing.com/toc/hac/14/1-2"]
+ }],
+ "url": "BEVHUISH.DBF.csv",
+ "@context": [
+  "http://www.w3.org/ns/csvw",
+  {
+   "@base": "http://data.socialhistory.org/resource/hsn/",
+   "@language": "nl"
+  },
+  {
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "dbo": "http://dbpedia.org/ontology/",
+   "clioctr": "http://data.socialhistory.org/resource/clio/country/",
+   "hisclass": "http://data.socialhistory.org/resource/hisclass/",
+   "hisco-product": "http://data.socialhistory.org/resource/hisco/product/",
+   "hisco-entry": "http://data.socialhistory.org/resource/hisco/entry/",
+   "ldp": "http://www.w3.org/ns/ldp#",
+   "clio": "http://data.socialhistory.org/resource/clio/",
+   "occhisco": "http://data.socialhistory.org/resource/napp/OCCHISCO/",
+   "dbr": "http://dbpedia.org/resource/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "xml": "http://www.w3.org/XML/1998/namespace/",
+   "bibo": "http://purl.org/ontology/bibo/",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "prov": "http://www.w3.org/ns/prov#",
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+   "napp-can91": "http://data.socialhistory.org/resource/napp/dataset/canada1891/",
+   "hiscam": "http://data.socialhistory.org/resource/hiscam/",
+   "dbpedia": "http://dbpedia.org/resource/",
+   "np": "http://www.nanopub.org/nschema#",
+   "canfam-auke": "http://data.socialhistory.org/resource/canfam/auke/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "schema": "http://schema.org/",
+   "foaf": "http://xmlns.com/foaf/0.1/",
+   "napp": "http://data.socialhistory.org/resource/napp/",
+   "sdv": "http://data.socialhistory.org/vocab/",
+   "hisco": "http://data.socialhistory.org/resource/hisco/",
+   "sdp": "http://data.socialhistory.org/resource/person/",
+   "sdr": "http://data.socialhistory.org/resource/",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "time": "http://www.w3.org/2006/time#",
+   "hsn": "http://data.socialhistory.org/resource/hsn/",
+   "hsnhisco": "http://data.socialhistory.org/resource/hsn2013a/",
+   "dc": "http://purl.org/dc/terms/",
+   "hisco-relation": "http://data.socialhistory.org/resource/hisco/relation/",
+   "hisco-status": "http://data.socialhistory.org/resource/hisco/status/",
+   "dbp": "http://dbpedia.org/property/",
+   "clioprop": "http://data.socialhistory.org/resource/clio/property/",
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+   "csvw": "http://www.w3.org/ns/csvw#",
+   "clioind": "http://data.socialhistory.org/resource/clio/indicator/",
+   "dc11": "http://purl.org/dc/elements/1.1/",
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
+   "napp-eng81": "http://data.socialhistory.org/resource/napp/dataset/englandwales1881/",
+   "canfam": "http://data.socialhistory.org/resource/canfam/dataset/canada1901/",
+   "napp-sct81": "http://data.socialhistory.org/resource/napp/dataset/scotland1881/",
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+   "qb": "http://purl.org/linked-data/cube#",
+   "hisclass5": "http://data.socialhistory.org/resource/hisclass5/",
+   "xsd": "http://www.w3.org/2001/XMLSchema#",
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/"
+  }
+ ],
+ "dc:title": "BEVHUISH.DBF.csv",
+ "@id": "http://data.socialhistory.org/resource/BEVHUISH.DBF.csv",
+ "dc:modified": {
+  "@value": "2017-01-10",
+  "@type": "xsd:date"
+   },
+   "tableSchema": {
+    "aboutUrl": "BEVHUISH/{_row}",
+    "primaryKey": "IDNR",
+    "columns": [
+     {
+    "datatype": "string",
+    "titles": [
+     "IDNR"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVSTATP.DBF.csv/column/IDNRP",
+    "name": "IDNR",
+    "propertyUrl": "hsn:dimension/IDNR",
+    "valueUrl": "hsn:code/IDNR/{IDNR}",
+    "dc:description": "HSN-identificatienummer onderzoekspersoon (OP)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "HUISHNR"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVDYNAP.DBF.csv/column/HUISHNR",
+    "name": "HUISHNR",
+    "propertyUrl": "hsn:dimension/HUISHNR",
+    "dc:description": "Volgnummer huishouden per OP"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "IDNRHS"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVSTATP.DBF.csv/column/IDNRHS",
+    "name": "IDNRHS",
+    "propertyUrl": "hsn:dimension/IDNRHS",
+    "valueUrl": "hsn:code/IDNRHS/{IDNRHS}",
+    "dc:description": "Combinatie van Idnr en huishnr (te gebruiken als primaire sleutel in Access)"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hsn:code/IDNRHS/{IDNRHS}",
+    "propertyUrl": "hsn:dimension/householdObservation",
+    "valueUrl": "BEVHUISH/{_row}",
+    "dc:description": "observation about a household in its entirety."
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hsn:code/IDNR/{IDNR}",
+    "propertyUrl": "hsn:dimension/OPHouseholdGroup",
+    "valueUrl": "hsn:code/IDNRHS/{IDNRHS}"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hsn:code/IDNRHS/{IDNRHS}",
+    "propertyUrl": "hsn:dimension/inOPHouseholdGroup",
+    "valueUrl": "hsn:code/IDNR/{IDNR}"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hsn:code/IDNRHS/{IDNRHS}",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "hsn:household",
+    "dc:description": "IDNRHS identifies a household in the HSN; note that for one OP multiple households usually exist. A household changes when the head of the household changes."
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "LINKNR"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVHUISH.DBF.csv/column/LINKNR",
+    "name": "LINKNR",
+    "dc:description": "Sleutel waarmee de huishoudens van verschillende onderzoekspersonen aan elkaar kunnen worden gekoppeld, de sleutel verwijst naar linknr in de tabel LKxxxyyy.dbf"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "ORGHSHNR"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVHUISH.DBF.csv/column/ORGHSHNR",
+    "name": "ORGHSHNR",
+    "dc:description": "Nummer om oorspronkelijke huishoudens te verbinden met daaraan gerelateerde huishoudens"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "OBSDAG"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVHUISH.DBF.csv/column/OBSDAG",
+    "name": "OBSDAG",
+    "dc:description": "Dag start observatie"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "OBSMND"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVHUISH.DBF.csv/column/OBSMND",
+    "name": "OBSMND",
+    "dc:description": "Maand start observatie"
+   },
+   {
+    "datatype": "gYear",
+    "titles": [
+     "OBSJAR"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVHUISH.DBF.csv/column/OBSJAR",
+    "name": "OBSJAR",
+    "dc:description": "Jaar start observatie"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "OBSDAT"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVHUISH.DBF.csv/column/OBSDAT",
+    "name": "OBSDAT",
+    "dc:description": "Datum start observatie als datumveld"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "OBEDAG"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVHUISH.DBF.csv/column/OBEDAG",
+    "name": "OBEDAG",
+    "dc:description": "Dag einde observatie"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "OBEMND"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVHUISH.DBF.csv/column/OBEMND",
+    "name": "OBEMND",
+    "dc:description": "Maand einde observatie"
+   },
+   {
+    "datatype": "gYear",
+    "titles": [
+     "OBEJAR"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVHUISH.DBF.csv/column/OBEJAR",
+    "name": "OBEJAR",
+    "dc:description": "Dag einde observatie"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "OBEDAT"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVHUISH.DBF.csv/column/OBEDAT",
+    "name": "OBEDAT",
+    "dc:description": "Datum einde observatie als datumveld"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "RELEASE"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVADRES.DBF.csv/column/RELEASE",
+    "name": "RELEASE",
+    "propertyUrl": "hsn:dimension/RELEASE",
+    "valueUrl":"hsn:RELEASE/{RELEASE}",
+    "dc:description": "Naam en volgnummer release"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "DATUMCOR"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVDYNAP.DBF.csv/column/DATUMCOR",
+    "name": "DATUMCOR",
+    "propertyUrl": "hsn:dimension/DATUMCOR",
+    "dc:description": "Datum (mm/dd/jj) evt. handmatige correctie van enig gegeven op de record, door de gebruiker in te vullen"
+   }
+  ]
+ }
+}

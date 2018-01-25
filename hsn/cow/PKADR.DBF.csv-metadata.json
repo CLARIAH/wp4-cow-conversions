@@ -1,0 +1,322 @@
+{
+ "dialect": {
+  "quoteChar": "\"", 
+  "delimiter": ",", 
+  "encoding": "utf-8"
+ }, 
+ "dcat:keyword": [], 
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ }, 
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend", 
+  "schema:url": {
+   "@id": "http://datalegend.org"
+  }
+ }, 
+ "dc:author": {
+  "rdf:type": [
+    {
+      "@id": "foaf:Person"
+    },
+    {
+      "@id": "prov:Person"
+    }
+  ],
+  "foaf:name": ["Auke Rijpma"]
+},"dc:author": {
+  "rdf:type": [
+    {
+      "@id": "foaf:Person"
+    },
+    {
+      "@id": "prov:Person"
+    }
+  ],
+  "foaf:name": ["Ruben Schalk"]
+},
+"prov:wasDerivedFrom": [{
+  "rdf:type": {
+      "@id": "bibo:Article"
+  },
+  "dc:title": {
+      "@value": "Building life course datasets from population registers by the Historical Sample of the Netherlands (HSN)",
+      "@lang": "en"
+  },
+  "dc:author": ["Mandemakers, K."],
+  "dc:publisher": "Edinburg UP",
+  "dc:date": {"@value":"2006", "@type":"xsd:gYear"},
+  "dc:isPartOf": ["http://www.euppublishing.com/toc/hac/14/1-2"]
+}],
+ "url": "PKADR.DBF.csv", 
+ "@context": [
+  "http://www.w3.org/ns/csvw", 
+  {
+   "@base": "http://data.socialhistory.org/resource/", 
+   "@language": "en"
+  }, 
+  {
+   "owl": "http://www.w3.org/2002/07/owl#", 
+   "dbo": "http://dbpedia.org/ontology/", 
+   "clioctr": "http://data.socialhistory.org/resource/clio/country/", 
+   "hisclass": "http://data.socialhistory.org/resource/hisclass/", 
+   "hisco-product": "http://data.socialhistory.org/resource/hisco/product/", 
+   "hisco-entry": "http://data.socialhistory.org/resource/hisco/entry/", 
+   "ldp": "http://www.w3.org/ns/ldp#", 
+   "clio": "http://data.socialhistory.org/resource/clio/", 
+   "occhisco": "http://data.socialhistory.org/resource/napp/OCCHISCO/", 
+   "dbr": "http://dbpedia.org/resource/", 
+   "skos": "http://www.w3.org/2004/02/skos/core#", 
+   "xml": "http://www.w3.org/XML/1998/namespace/", 
+   "bibo": "http://purl.org/ontology/bibo/", 
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#", 
+   "prov": "http://www.w3.org/ns/prov#", 
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#", 
+   "napp-can91": "http://data.socialhistory.org/resource/napp/dataset/canada1891/", 
+   "hiscam": "http://data.socialhistory.org/resource/hiscam/", 
+   "dbpedia": "http://dbpedia.org/resource/", 
+   "np": "http://www.nanopub.org/nschema#", 
+   "canfam-auke": "http://data.socialhistory.org/resource/canfam/auke/", 
+   "dcterms": "http://purl.org/dc/terms/", 
+   "schema": "http://schema.org/", 
+   "foaf": "http://xmlns.com/foaf/0.1/", 
+   "napp": "http://data.socialhistory.org/resource/napp/", 
+   "sdv": "http://data.socialhistory.org/vocab/", 
+   "hisco": "http://data.socialhistory.org/resource/hisco/", 
+   "sdp": "http://data.socialhistory.org/resource/person/", 
+   "sdr": "http://data.socialhistory.org/resource/", 
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#", 
+   "time": "http://www.w3.org/2006/time#", 
+   "hsn": "http://data.socialhistory.org/resource/hsn2013a/", 
+   "dc": "http://purl.org/dc/terms/", 
+   "hisco-relation": "http://data.socialhistory.org/resource/hisco/relation/", 
+   "hisco-status": "http://data.socialhistory.org/resource/hisco/status/", 
+   "dbp": "http://dbpedia.org/property/", 
+   "clioprop": "http://data.socialhistory.org/resource/clio/property/", 
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#", 
+   "csvw": "http://www.w3.org/ns/csvw#", 
+   "clioind": "http://data.socialhistory.org/resource/clio/indicator/", 
+   "dc11": "http://purl.org/dc/elements/1.1/", 
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/", 
+   "napp-eng81": "http://data.socialhistory.org/resource/napp/dataset/englandwales1881/", 
+   "canfam": "http://data.socialhistory.org/resource/canfam/dataset/canada1901/", 
+   "napp-sct81": "http://data.socialhistory.org/resource/napp/dataset/scotland1881/", 
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#", 
+   "qb": "http://purl.org/linked-data/cube#", 
+   "hisclass5": "http://data.socialhistory.org/resource/hisclass5/", 
+   "xsd": "http://www.w3.org/2001/XMLSchema#", 
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#", 
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/",
+   "hsn": "http://data.socialhistory.org/resource/hsn/"
+  }
+ ], 
+ "dc:title": "PKADR.DBF.csv", 
+ "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv", 
+ "dc:modified": {
+  "@value": "2017-01-10", 
+  "@type": "xsd:date"
+ }, 
+ "tableSchema": {
+  "aboutUrl": "PKADR/{_row}",
+  "primaryKey": "hsn:IDNR", 
+  "columns": [
+   {
+    "datatype": "string",
+    "titles": [
+     "IDNR"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVSTATP.DBF.csv/column/IDNRP",
+    "name": "IDNR",
+    "propertyUrl": "hsn:dimension/IDNR",
+    "valueUrl": "hsn:code/IDNR/{IDNR}",
+    "dc:description": "HSN-identificatienummer onderzoekspersoon (OP)"
+   },
+   {
+    "datatype": "int", 
+    "titles": [
+     "FAMVBNR"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv/column/FAMVBNR", 
+    "name": "FAMVBNR", 
+    "propertyUrl": "hsn:dimension/FAMVBNR", 
+    "dc:description": "Volgnummer familieverband per OP"
+   },
+   {
+    "datatype": "int", 
+    "titles": [
+     "ADRESDAG"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv/column/ADRESDAG", 
+    "name": "ADRESDAG", 
+    "propertyUrl": "hsn:dimension/ADRESDAG", 
+    "null": ["-1", "-2", "-3", "-4", "32", "33", "61", "62"],
+    "dc:description": "Dagnummer ingangsdatum adres"
+   }, 
+   {
+    "datatype": "int", 
+    "titles": [
+     "ADRESMND"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv/column/ADRESMND", 
+    "name": "ADRESMND", 
+    "propertyUrl": "hsn:dimension/ADRESMND", 
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Maandnummer ingangsdatum adres"
+   }, 
+   {
+    "datatype": "int", 
+    "titles": [
+     "ADRESJAR"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv/column/ADRESJAR", 
+    "name": "ADRESJAR", 
+    "propertyUrl": "hsn:dimension/ADRESJAR", 
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Jaar ingangsdatum adres"
+   }, 
+   {
+    "datatype": "xsd:date", 
+    "titles": [
+     "ADRESDAT"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv/column/ADRESDAT", 
+    "name": "ADRESDAT", 
+    "propertyUrl": "hsn:dimension/ADRESDAT", 
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Adresdatum als datumveld (mm/dd/jj); gecodeerde dagnummers zijn op '15' gesteld (veld adresdag > 31)."
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "IDNRFM"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv/column/IDNRFM", 
+    "name": "IDNRFM", 
+    "propertyUrl": "hsn:dimension/IDNRFM", 
+    "valueUrl": "hsn:code/IDNRFM/{IDNRFM}", 
+    "dc:description": "Combinatie van idnr en famvbnr (te gebruiken als verwijzende sleutel in Access)"
+   }, 
+   {
+    "virtual": true,
+    "aboutUrl": "hsn:code/IDNRFM/{IDNRFM}", 
+    "propertyUrl": "hsn:dimension/familyObservation",
+    "valueUrl": "PKADR/{_row}"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hsn:code/IDNRFM/{IDNRFM}", 
+    "propertyUrl": "rdf:type",
+    "valueUrl": "hsn:family",
+    "dc:description": "IDNRFM identifies a family in the HSN; note that for one OP multiple families may exist. A family changes when the OP's marital status changes."
+   },
+   {
+    "datatype": "string", 
+    "titles": [
+     "ADRESWYZ"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv/column/ADRESWYZ", 
+    "name": "ADRESWYZ", 
+    "propertyUrl": "hsn:dimension/ADRESWYZ", 
+    "valueUrl": "hsn:dimension/code/ADRESWYZ/{ADRESWYZ}", 
+    "dc:description": "Bij het eerste adres van een PK is dit veld altijd leeg, daarna bestaat de inhoud van dit veld uit een van de volgende codes:"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "ADRESOP"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv/column/ADRESOP", 
+    "name": "ADRESOP", 
+    "propertyUrl": "hsn:dimension/ADRESOP", 
+    "valueUrl": "hsn:code/ADRESOP/{ADRESOP}", 
+    "dc:description": "Is het adres afkomstig van de PK/PL van de OP zelf?"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "STRAAT"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv/column/STRAAT", 
+    "name": "STRAAT", 
+    "propertyUrl": "hsn:dimension/STRAAT", 
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Naam van de straat "
+   }, 
+   {
+    "datatype": "int", 
+    "titles": [
+     "HUISNR"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv/column/HUISNR", 
+    "name": "HUISNR", 
+    "propertyUrl": "hsn:dimension/HUISNR", 
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Huisnummer"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "HUISNRTV"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv/column/HUISNRTV", 
+    "name": "HUISNRTV", 
+    "propertyUrl": "hsn:dimension/HUISNRTV", 
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "HUISNRTV"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "POSTKODE"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv/column/POSTKODE", 
+    "name": "POSTKODE", 
+    "propertyUrl": "hsn:dimension/POSTKODE", 
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Bij het adres behorende postcode, alleen opgenomen bij PL's"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "DEELGEM"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv/column/DEELGEM", 
+    "name": "DEELGEM", 
+    "propertyUrl": "hsn:dimension/DEELGEM", 
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Eventuele deelgemeente binnen plaats van vestiging"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "GEMEENTE"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv/column/GEMEENTE", 
+    "name": "GEMEENTE", 
+    "propertyUrl": "hsn:dimension/GEMEENTE", 
+    "valueUrl": "hsn:code/Gemeente/{{GEMEENTE|title()}}", 
+    "dc:description": "Plaats van vestiging"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "LAND"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv/column/LAND", 
+    "name": "LAND", 
+    "propertyUrl": "hsn:dimension/LAND", 
+    "dc:description": "Land van vestiging ['NL' is Nederland ]; niet automatisch te koppelen aan landenclassificatie"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "RELEASE"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv/column/RELEASE", 
+    "name": "RELEASE", 
+    "propertyUrl": "hsn:dimension/RELEASE", 
+    "dc:description": "RELEASE"
+   }
+  ]
+ }
+}

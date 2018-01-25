@@ -1,0 +1,450 @@
+{
+ "dialect": {
+  "quoteChar": "\"",
+  "delimiter": ",",
+  "encoding": "utf-8"
+ },
+ "dcat:keyword": ["hsn"],
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+  "schema:url": {
+   "@id": "http://datalegend.org"
+  }
+},
+"dc:author": {
+  "rdf:type": [
+    {
+      "@id": "foaf:Person"
+    },
+    {
+      "@id": "prov:Person"
+    }
+  ],
+  "foaf:name": ["Auke Rijpma"]
+},"dc:author": {
+  "rdf:type": [
+    {
+      "@id": "foaf:Person"
+    },
+    {
+      "@id": "prov:Person"
+    }
+  ],
+  "foaf:name": ["Ruben Schalk"]
+},
+"prov:wasDerivedFrom": [{
+  "rdf:type": {
+      "@id": "bibo:Article"
+  },
+  "dc:title": {
+      "@value": "Building life course datasets from population registers by the Historical Sample of the Netherlands (HSN)",
+      "@lang": "en"
+  },
+  "dc:author": ["Mandemakers, K."],
+  "dc:publisher": "Edinburg UP",
+  "dc:date": {"@value":"2006", "@type":"xsd:gYear"},
+  "dc:isPartOf": ["http://www.euppublishing.com/toc/hac/14/1-2"]
+ }],
+ "url": "HUWPERS.DBF.csv",
+ "@context": [
+  "http://www.w3.org/ns/csvw",
+  {
+   "@base": "http://data.socialhistory.org/resource/hsn/",
+   "@language": "nl"
+  },
+  {
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "dbo": "http://dbpedia.org/ontology/",
+   "clioctr": "http://data.socialhistory.org/resource/clio/country/",
+   "hisclass": "http://data.socialhistory.org/resource/hisclass/",
+   "hisco-product": "http://data.socialhistory.org/resource/hisco/product/",
+   "hisco-entry": "http://data.socialhistory.org/resource/hisco/entry/",
+   "ldp": "http://www.w3.org/ns/ldp#",
+   "clio": "http://data.socialhistory.org/resource/clio/",
+   "occhisco": "http://data.socialhistory.org/resource/napp/OCCHISCO/",
+   "dbr": "http://dbpedia.org/resource/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "xml": "http://www.w3.org/XML/1998/namespace/",
+   "bibo": "http://purl.org/ontology/bibo/",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "prov": "http://www.w3.org/ns/prov#",
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+   "napp-can91": "http://data.socialhistory.org/resource/napp/dataset/canada1891/",
+   "hiscam": "http://data.socialhistory.org/resource/hiscam/",
+   "dbpedia": "http://dbpedia.org/resource/",
+   "np": "http://www.nanopub.org/nschema#",
+   "canfam-auke": "http://data.socialhistory.org/resource/canfam/auke/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "schema": "http://schema.org/",
+   "foaf": "http://xmlns.com/foaf/0.1/",
+   "napp": "http://data.socialhistory.org/resource/napp/",
+   "sdv": "http://data.socialhistory.org/vocab/",
+   "hisco": "http://data.socialhistory.org/resource/hisco/",
+   "sdp": "http://data.socialhistory.org/resource/person/",
+   "sdr": "http://data.socialhistory.org/resource/",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "time": "http://www.w3.org/2006/time#",
+   "hsn": "http://data.socialhistory.org/resource/hsn/",
+   "hsnhisco": "http://data.socialhistory.org/resource/hsn2013a/",
+   "dc": "http://purl.org/dc/terms/",
+   "hisco-relation": "http://data.socialhistory.org/resource/hisco/relation/",
+   "hisco-status": "http://data.socialhistory.org/resource/hisco/status/",
+   "dbp": "http://dbpedia.org/property/",
+   "clioprop": "http://data.socialhistory.org/resource/clio/property/",
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+   "csvw": "http://www.w3.org/ns/csvw#",
+   "clioind": "http://data.socialhistory.org/resource/clio/indicator/",
+   "dc11": "http://purl.org/dc/elements/1.1/",
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
+   "napp-eng81": "http://data.socialhistory.org/resource/napp/dataset/englandwales1881/",
+   "canfam": "http://data.socialhistory.org/resource/canfam/dataset/canada1901/",
+   "napp-sct81": "http://data.socialhistory.org/resource/napp/dataset/scotland1881/",
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+   "qb": "http://purl.org/linked-data/cube#",
+   "hisclass5": "http://data.socialhistory.org/resource/hisclass5/",
+   "xsd": "http://www.w3.org/2001/XMLSchema#",
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/"
+  }
+ ],
+ "dc:title": "HUWPERS.DBF.csv",
+ "@id": "http://data.socialhistory.org/resource/HUWPERS.DBF.csv",
+ "dc:modified": {
+  "@value": "2017-01-10",
+  "@type": "xsd:date"
+ },
+ "tableSchema": {
+  "aboutUrl": "HUWPERS/{_row}",
+  "primaryKey": "hsn:IDNR",
+  "columns": [
+   {
+    "datatype": "string",
+    "titles": [
+     "IDNR"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVSTATP.DBF.csv/column/IDNRP",
+    "name": "IDNR",
+    "propertyUrl": "hsn:dimension/IDNR",
+    "valueUrl": "hsn:code/IDNR/{IDNR}",
+    "dc:description": "HSN-identificatienummer onderzoekspersoon (OP)"
+   },
+   {
+    "datatype": "gYear",
+    "titles": [
+     "HUWJAR"
+    ],
+    "@id": "http://data.socialhistory.org/resource/HUWPERS.DBF.csv/column/HUWJAR",
+    "name": "HUWJAR",
+    "dc:description": "Jaarnummer huwelijk"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "PRSNR"
+    ],
+    "@id": "http://data.socialhistory.org/resource/HUWPERS.DBF.csv/column/PRSNR",
+    "name": "PRSNR",
+    "dc:description": "Volgnummer om de verschillende personen in de akte uit elkaar te houden"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "IDNRJAR"
+    ],
+    "@id": "http://data.socialhistory.org/resource/HUWPERS.DBF.csv/column/IDNRJAR",
+    "name": "IDNRJAR",
+    "dc:description": "Combinatie van idnr en huwjar (verwijzende sleutel naar huwakte.dbf)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "IDNRJARPRS"
+    ],
+    "@id": "http://data.socialhistory.org/resource/HUWPERS.DBF.csv/column/IDNRJARPRS",
+    "name": "IDNRJARPRS",
+    "dc:description": "Combinatie van idnr, huwjar en volgnr (te gebruiken als primaire sleutel in Access)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "LINKNR"
+    ],
+    "@id": "http://data.socialhistory.org/resource/HUWPERS.DBF.csv/column/LINKNR",
+    "name": "LINKNR",
+    "dc:description": "Sleutel waarmee de huwelijken van de onderzoekspersonen aan de families en aan elkaar kunnen worden gekoppeld, de sleutel verwijst naar linknr in het bestand LINKxxxx.dbf."
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "PERSNR"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVSTATP.DBF.csv/column/PERSNR",
+    "name": "PERSNR",
+    "propertyUrl": "hsn:dimension/PERSNR",
+    "dc:description": "Identificatienummer persoon; deze variabele linkt de personen over de verschillende huwelijksakten voorzover behorende bij een bepaalde OP"
+   },
+   {
+    "virtual": true,
+    "name": "HSNperson",
+        "titles": [
+     "HSNperson"
+    ],
+    "propertyUrl": "hsn:dimension/HSNperson",
+    "valueUrl": "hsn:code/HSNperson/{{ [IDNR, '_', PERSNR]|join }}"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "OPERSNR"
+    ],
+    "@id": "http://data.socialhistory.org/resource/HUWPERS.DBF.csv/column/OPERSNR",
+    "name": "OPERSNR",
+    "dc:description": "Overkoepelend identificatienummer, deze variabele linkt de identificatienummers van de personen die behoren bij de verschillende OP's"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "ROL"
+    ],
+    "@id": "http://data.socialhistory.org/resource/HUWPERS.DBF.csv/column/ROL",
+    "name": "ROL",
+    "propertyUrl": "hsn:dimension/ROL",
+    "valueUrl": "hsn:code/ROL/{ROL}",
+    "dc:description": "Rol die de persoon vervult binnen de akte"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "RELATOP"
+    ],
+    "@id": "http://data.socialhistory.org/resource/HUWPERS.DBF.csv/column/RELATOP",
+    "name": "RELATOP",
+    "propertyUrl": "hsn:dimension/relationToOP",
+    "valueUrl": "hsn:code/RELACODE/{{RELACODE}}",
+    "dc:description": "Relation to OP (research person)."
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "GESLACHT"
+    ],
+    "@id": "http://data.socialhistory.org/resource/HUWPERS.DBF.csv/column/GESLACHT",
+    "name": "GESLACHT",
+    "propertyUrl": "hsn:dimension/GESLACHT",
+    "valueUrl": "hsn:code/GESLACHT/{GESLACHT}",
+    "dc:description": "Geslacht"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "LEEFTIJD"
+    ],
+    "@id": "http://data.socialhistory.org/resource/HUWPERS.DBF.csv/column/LEEFTIJD",
+    "name": "LEEFTIJD",
+    "dc:description": "Leeftijd in jaren"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "HANDTEK"
+    ],
+    "@id": "http://data.socialhistory.org/resource/HUWPERS.DBF.csv/column/HANDTEK",
+    "name": "HANDTEK",
+    "propertyUrl": "hsn:dimension/HANDTEK",
+    "valueUrl": "hsn:code/HANDTEK/{HANDTEK}",
+    "dc:description": "Persoon zet handtekening?"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "BEROEP"
+    ],
+    "@id": "http://data.socialhistory.org/resource/HUWPERS.DBF.csv/column/BEROEP",
+    "name": "BEROEP",
+    "propertyUrl": "hsn:dimension/BEROEP",
+    "valueUrl": "hsn:code/BEROEP/{BEROEP}",
+    "dc:description": "Beroepstitel"
+   },
+   {
+    "virtual": true,
+    "propertyUrl": "hsn:dimension/occupationalTitle",
+    "valueUrl": "hsnhisco:occupation/{{BEROEP|lower()}}"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "WOONPLAATS"
+    ],
+    "@id": "http://data.socialhistory.org/resource/HUWPERS.DBF.csv/column/WOONPLAATS",
+    "name": "WOONPLAATS",
+    "propertyUrl": "hsn:dimension/WOONPLAATS",
+    "valueUrl": "hsn:code/HUWPLAATS/{WOONPLAATS}",
+    "dc:description": "Woonplaats"
+   },
+   {
+    "virtual": true,
+    "propertyUrl": "skos:exactMatch",
+    "valueUrl": "hsn:code/Gemeente/{WOONPLAATS}"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "BURGSTAAT"
+    ],
+    "@id": "http://data.socialhistory.org/resource/HUWPERS.DBF.csv/column/BURGSTAAT",
+    "name": "BURGSTAAT",
+    "propertyUrl": "hsn:dimension/BURGSTAAT",
+    "valueUrl": "hsn:code/BURGSTAAT/{BURGSTAAT}",
+    "dc:description": "Burgerlijke staat vlak voor het huwelijk (alleen bruid/bruidegom)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "LEVOUDER"
+    ],
+    "@id": "http://data.socialhistory.org/resource/HUWPERS.DBF.csv/column/LEVOUDER",
+    "name": "LEVOUDER",
+    "propertyUrl": "hsn:dimension/LEVOUDER",
+    "valueUrl": "hsn:code/LEVOUDER/{LEVOUDER}",
+    "dc:description": "Leeft de vader/moeder nog ten tijde huwelijksvoltrekking?"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "TOESTEM"
+    ],
+    "@id": "http://data.socialhistory.org/resource/HUWPERS.DBF.csv/column/TOESTEM",
+    "name": "TOESTEM",
+    "propertyUrl": "hsn:dimension/TOESTEM",
+    "valueUrl": "hsn:code/TOESTEM/{TOESTEM}",
+    "dc:description": "Geeft de vader/moeder toestemming voor het huwelijk?"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "OVLPLAATS"
+    ],
+    "@id": "http://data.socialhistory.org/resource/HUWPERS.DBF.csv/column/OVLPLAATS",
+    "name": "OVLPLAATS",
+    "propertyUrl": "hsn:dimension/OVLPLAATS",
+    "valueUrl": "hsn:code/OVLPLAATS/{OVLPLAATS}",
+    "dc:description": "Plaats van overlijden (alleen relevant voor niet-aanwezige ouders)"
+   },
+   {
+    "virtual": true,
+    "propertyUrl": "skos:exactMatch",
+    "valueUrl": "hsn:code/Gemeente/{OVLPLAATS}"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "EINDEHUW"
+    ],
+    "@id": "http://data.socialhistory.org/resource/HUWPERS.DBF.csv/column/EINDEHUW",
+    "name": "EINDEHUW",
+    "propertyUrl": "hsn:dimension/EINDEHUW",
+    "valueUrl": "hsn:code/EINDEHUW/{EINDEHUW}",
+    "dc:description": "Reden van de ontbinding van een eerder huwelijk (dit staat bij het huwelijk, er kunnen meerdere vroegere echtgenoten zijn)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "RELATOTWIE"
+    ],
+    "@id": "http://data.socialhistory.org/resource/HUWPERS.DBF.csv/column/RELATOTWIE",
+    "name": "RELATOTWIE",
+    "propertyUrl": "hsn:dimension/RELATOTWIE",
+    "valueUrl": "hsn:code/RELATOTWIE/{RELATOTWIE}",
+    "dc:description": "Bij getuigen is ook opgegeven van wie een bepaalde getuige een relatie is"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "RELATYPE"
+    ],
+    "@id": "http://data.socialhistory.org/resource/HUWPERS.DBF.csv/column/RELATYPE",
+    "name": "RELATYPE",
+    "propertyUrl": "hsn:dimension/RELACODE",
+    "valueUrl": "hsn:code/RELACODE/{RELATYPE}",
+    "dc:description": "Code voor de aard van de relatie"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "FAMNAAM"
+    ],
+    "@id": "http://data.socialhistory.org/resource/HUWPERS.DBF.csv/column/FAMNAAM",
+    "name": "FAMNAAM",
+    "propertyUrl": "hsn:dimension/FAMNAAM",
+    "valueUrl": "hsn:code/FAMNAAM/{FAMNAAM}",
+    "dc:description": "In het geval van getuigen is lang niet altijd een relatie opgegeven en is er ook geen verband gevonden in bevstatp. Door middel van de familienaam kan toch nog een indicatie van een mogelijke relatie worden gegeven."
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "GEBDAG"
+    ],
+    "@id": "http://data.socialhistory.org/resource/HUWPERS.DBF.csv/column/GEBDAG",
+    "name": "GEBDAG",
+    "dc:description": "Dagnummer geboorte voorkinderen"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "GEBMND"
+    ],
+    "@id": "http://data.socialhistory.org/resource/HUWPERS.DBF.csv/column/GEBMND",
+    "name": "GEBMND",
+    "dc:description": "Maandnummer geboorte voorkinderen"
+   },
+   {
+    "datatype": "gYear",
+    "titles": [
+     "GEBJAR"
+    ],
+    "@id": "http://data.socialhistory.org/resource/HUWPERS.DBF.csv/column/GEBJAR",
+    "name": "GEBJAR",
+    "dc:description": "Jaarnummer geboorte voorkinderen"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "GEBDAT"
+    ],
+    "@id": "http://data.socialhistory.org/resource/HUWPERS.DBF.csv/column/GEBDAT",
+    "name": "GEBDAT",
+    "dc:description": "Geboortedatum voorkinderen als datumveld "
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "GEBPLAATS"
+    ],
+    "@id": "http://data.socialhistory.org/resource/HUWPERS.DBF.csv/column/GEBPLAATS",
+    "name": "GEBPLAATS",
+    "propertyUrl": "hsn:dimension/GEBPLAATS",
+    "valueUrl": "hsn:code/GEBPLAATS/{GEBPLAATS}",
+    "dc:description": "Geboorteplaats (alleen voorkinderen en bruid/bruidegom)"
+   },
+   {
+    "virtual": true,
+    "propertyUrl": "skos:exactMatch",
+    "valueUrl": "hsn:code/Gemeente/{GEBPLAATS}"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "RELEASE"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVADRES.DBF.csv/column/RELEASE",
+    "name": "RELEASE",
+    "propertyUrl": "hsn:dimension/RELEASE",
+    "valueUrl":"hsn:RELEASE/{RELEASE}",
+    "dc:description": "Naam en volgnummer release"
+   }
+  ]
+ }
+}

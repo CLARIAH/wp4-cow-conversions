@@ -1,0 +1,318 @@
+{
+ "dialect": {
+  "quoteChar": "\"",
+  "delimiter": ",",
+  "encoding": "utf-8"
+ },
+ "dcat:keyword": ["hsn"],
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+  "schema:url": {
+   "@id": "http://datalegend.org"
+  }
+},
+"dc:author": {
+  "rdf:type": [
+    {
+      "@id": "foaf:Person"
+    },
+    {
+      "@id": "prov:Person"
+    }
+  ],
+  "foaf:name": ["Auke Rijpma"]
+},"dc:author": {
+  "rdf:type": [
+    {
+      "@id": "foaf:Person"
+    },
+    {
+      "@id": "prov:Person"
+    }
+  ],
+  "foaf:name": ["Ruben Schalk"]
+},
+"prov:wasDerivedFrom": [{
+  "rdf:type": {
+      "@id": "bibo:Article"
+  },
+  "dc:title": {
+      "@value": "Building life course datasets from population registers by the Historical Sample of the Netherlands (HSN)",
+      "@lang": "en"
+  },
+  "dc:author": ["Mandemakers, K."],
+  "dc:publisher": "Edinburg UP",
+  "dc:date": {"@value":"2006", "@type":"xsd:gYear"},
+  "dc:isPartOf": ["http://www.euppublishing.com/toc/hac/14/1-2"]
+ }],
+ "url": "BEVOBS.DBF.csv",
+ "@context": [
+  "http://www.w3.org/ns/csvw",
+  {
+   "@base": "http://data.socialhistory.org/resource/hsn/",
+   "@language": "nl"
+  },
+  {
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "dbo": "http://dbpedia.org/ontology/",
+   "clioctr": "http://data.socialhistory.org/resource/clio/country/",
+   "hisclass": "http://data.socialhistory.org/resource/hisclass/",
+   "hisco-product": "http://data.socialhistory.org/resource/hisco/product/",
+   "hisco-entry": "http://data.socialhistory.org/resource/hisco/entry/",
+   "ldp": "http://www.w3.org/ns/ldp#",
+   "clio": "http://data.socialhistory.org/resource/clio/",
+   "occhisco": "http://data.socialhistory.org/resource/napp/OCCHISCO/",
+   "dbr": "http://dbpedia.org/resource/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "xml": "http://www.w3.org/XML/1998/namespace/",
+   "bibo": "http://purl.org/ontology/bibo/",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "prov": "http://www.w3.org/ns/prov#",
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+   "napp-can91": "http://data.socialhistory.org/resource/napp/dataset/canada1891/",
+   "hiscam": "http://data.socialhistory.org/resource/hiscam/",
+   "dbpedia": "http://dbpedia.org/resource/",
+   "np": "http://www.nanopub.org/nschema#",
+   "canfam-auke": "http://data.socialhistory.org/resource/canfam/auke/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "schema": "http://schema.org/",
+   "foaf": "http://xmlns.com/foaf/0.1/",
+   "napp": "http://data.socialhistory.org/resource/napp/",
+   "sdv": "http://data.socialhistory.org/vocab/",
+   "hisco": "http://data.socialhistory.org/resource/hisco/",
+   "sdp": "http://data.socialhistory.org/resource/person/",
+   "sdr": "http://data.socialhistory.org/resource/",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "time": "http://www.w3.org/2006/time#",
+   "hsn": "http://data.socialhistory.org/resource/hsn/",
+   "hsnhisco": "http://data.socialhistory.org/resource/hsn2013a/",
+   "dc": "http://purl.org/dc/terms/",
+   "hisco-relation": "http://data.socialhistory.org/resource/hisco/relation/",
+   "hisco-status": "http://data.socialhistory.org/resource/hisco/status/",
+   "dbp": "http://dbpedia.org/property/",
+   "clioprop": "http://data.socialhistory.org/resource/clio/property/",
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+   "csvw": "http://www.w3.org/ns/csvw#",
+   "clioind": "http://data.socialhistory.org/resource/clio/indicator/",
+   "dc11": "http://purl.org/dc/elements/1.1/",
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
+   "napp-eng81": "http://data.socialhistory.org/resource/napp/dataset/englandwales1881/",
+   "canfam": "http://data.socialhistory.org/resource/canfam/dataset/canada1901/",
+   "napp-sct81": "http://data.socialhistory.org/resource/napp/dataset/scotland1881/",
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+   "qb": "http://purl.org/linked-data/cube#",
+   "hisclass5": "http://data.socialhistory.org/resource/hisclass5/",
+   "xsd": "http://www.w3.org/2001/XMLSchema#",
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/"
+  }
+ ],
+ "dc:title": "BEVOBS.DBF.csv",
+ "@id": "http://data.socialhistory.org/resource/BEVOBS.DBF.csv",
+ "dc:modified": {
+  "@value": "2017-01-10",
+  "@type": "xsd:date"
+ },
+ "tableSchema": {
+  "aboutUrl": "BEVOBS/{_row}",
+  "primaryKey": "IDNR",
+  "columns": [
+   {
+    "datatype": "string",
+    "titles": [
+     "IDNR"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOBS.DBF.csv/column/IDNR",
+    "name": "IDNR",
+    "propertyUrl": "hsn:dimension/IDNR",
+    "valueUrl": "hsn:code/IDNR/{IDNR}",
+    "dc:description": "HSN-identificatienummer onderzoekspersoon (OP)"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hsn:code/HSNperson/{{ [IDNR, '_', PERSNR]|join }}",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "hsn:individual"
+   },
+   {
+    "virtual": true,
+    "name": "HSNperson",
+        "titles": [
+     "HSNperson"
+    ],
+    "propertyUrl": "hsn:dimension/HSNperson",
+    "valueUrl": "hsn:code/HSNperson/{{ [IDNR, '_', PERSNR]|join }}",
+    "dc:description": "An individual in the HSN (person can exist in multiple households)"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hsn:code/HSNperson/{{ [IDNR, '_', PERSNR]|join }}",
+    "propertyUrl": "hsn:dimension/individualObservation",
+    "valueUrl": "BEVOBS/{_row}",
+    "dc:description": "An observation about an individual in the HSN (person can exist in multiple households)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "HUISHNR"
+     ],
+    "@id": "http://data.socialhistory.org/resource/BEVOBS.DBF.csv/column/HUISHNR",
+    "name": "HUISHNR",
+    "propertyUrl": "hsn:dimension/HUISHNR",
+    "dc:description": "Volgnummer huishouden per OP"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "HUISPNR"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOBS.DBF.csv/column/HUISPNR",
+    "name": "HUISPNR",
+    "propertyUrl": "hsn:dimension/HUISPNR",
+    "dc:description": "Volgnummer persoon per huishouden"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "IDNRHSP"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOBS.DBF.csv/column/IDNRHSP",
+    "name": "IDNRHSP",
+    "propertyUrl": "hsn:dimension/IDNRHSP",
+    "valueUrl": "hsn:code/IDNRHSP/{IDNRHSP}",
+    "dc:description": "Combinatie van idnr, huishnr en huispnr (te gebruiken als primaire sleutel in Access)"
+   },
+   {
+   "virtual": true,
+   "aboutUrl": "hsn:code/IDNRHSP/{IDNRHSP}",
+   "propertyUrl": "rdf:type",
+   "valueUrl": "hsn:individual",
+   "dc:description": "IDNRHSP identifies an individual within a houseold in the HSN. Note that the same individual might return in another household of the OP without having the same IDNRHSP"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "PERSNR"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOBS.DBF.csv/column/PERSNR",
+    "name": "PERSNR",
+    "propertyUrl": "hsn:dimension/PERSNR",
+    "dc:description": "Identificatienummer persoon; deze variabele linkt de personen over de verschillende huishoudens voorzover behorende bij een bepaalde OP"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "INSOBDAG"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOBS.DBF.csv/column/INSOBDAG",
+    "name": "INSOBDAG",
+    "dc:description": "Dagnummer ingangsdatum observatie"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "INSOBMND"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOBS.DBF.csv/column/INSOBMND",
+    "name": "INSOBMND",
+    "dc:description": "Maandnummer ingangsdatum observatie"
+   },
+   {
+    "datatype": "gYear",
+    "titles": [
+     "INSOBJAR"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOBS.DBF.csv/column/INSOBJAR",
+    "name": "INSOBJAR",
+    "dc:description": "Jaar ingangsdatum dynamisch observatie"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "INSOBDAT"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOBS.DBF.csv/column/INSOBDAT",
+    "name": "INSOBDAT",
+    "dc:description": "Ingangsdatum als datumveld"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "INSOBCOD"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOBS.DBF.csv/column/INSOBCOD",
+    "name": "INSOBCOD",
+    "dc:description": "Code voor de wijze waarop de ingangsdatum is samengesteld, indien code overeenkomt met het dagnummer dan gaat het om een exacte uit de bron afkomstige datum.  Dagnummers van hoger dan 31 geven een code voor de wijde waarop de data eventueel zijn geschat, zie verder bijlage C. Bij het maken van de datumvelden zijn dagnummers met een code op 15 gezet"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "UITOBDAG"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOBS.DBF.csv/column/UITOBDAG",
+    "name": "UITOBDAG",
+    "dc:description": "Dagnummer einddatum observatie"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "UITOBMND"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOBS.DBF.csv/column/UITOBMND",
+    "name": "UITOBMND",
+    "dc:description": "Maandnummer einddatum observatieD"
+   },
+   {
+    "datatype": "gYear",
+    "titles": [
+     "UITOBJAR"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOBS.DBF.csv/column/UITOBJAR",
+    "name": "UITOBJAR",
+    "dc:description": "Jaar einddatum dynamisch observatie"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "UITOBDAT"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOBS.DBF.csv/column/UITOBDAT",
+    "name": "UITOBDAT",
+    "dc:description": "Einddatum dynamisch gegeven als datumveld"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "UITOBCOD"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOBS.DBF.csv/column/UITOBCOD",
+    "name": "UITOBCOD",
+    "dc:description": "Zie bij insobcod; in het geval dat de uitdatum wordt gebaseerd op de overlijdensakte staat de waarde op 75"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "RELEASE"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOBS.DBF.csv/column/RELEASE",
+    "name": "RELEASE",
+    "propertyUrl": "hsn:dimension/RELEASE",
+    "valueUrl":"hsn:RELEASE/{RELEASE}",
+    "dc:description": "Naam en volgnummer release"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "DATUMCOR"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOBS.DBF.csv/column/DATUMCOR",
+    "name": "DATUMCOR",
+    "propertyUrl": "hsn:dimension/DATUMCOR",
+    "dc:description": "Datum (mm/dd/jj) evt. handmatige correctie van enig gegeven op de record, door de gebruiker in te vullen"
+   }
+  ]
+ }
+}

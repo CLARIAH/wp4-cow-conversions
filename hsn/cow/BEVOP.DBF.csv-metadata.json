@@ -1,0 +1,549 @@
+{
+ "dialect": {
+  "quoteChar": "\"",
+  "delimiter": ",",
+  "encoding": "ascii"
+ },
+ "dcat:keyword": [],
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+"dc:author": {
+  "rdf:type": [
+    {
+      "@id": "foaf:Person"
+    },
+    {
+      "@id": "prov:Person"
+    }
+  ],
+  "foaf:name": ["Auke Rijpma"]
+},"dc:author": {
+  "rdf:type": [
+    {
+      "@id": "foaf:Person"
+    },
+    {
+      "@id": "prov:Person"
+    }
+  ],
+  "foaf:name": ["Ruben Schalk"]
+},
+"prov:wasDerivedFrom": [{
+  "rdf:type": {
+      "@id": "bibo:Article"
+  },
+  "dc:title": {
+      "@value": "Building life course datasets from population registers by the Historical Sample of the Netherlands (HSN)",
+      "@lang": "en"
+  },
+  "dc:author": ["Mandemakers, K."],
+  "dc:publisher": "Edinburg UP",
+  "dc:date": {"@value":"2006", "@type":"xsd:gYear"},
+  "dc:isPartOf": ["http://www.euppublishing.com/toc/hac/14/1-2"]
+}],
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+  "schema:url": {
+   "@id": "http://datalegend.org"
+  }
+ },
+ "url": "BEVOP.DBF.csv",
+ "@context": [
+  "http://www.w3.org/ns/csvw",
+  {
+   "@base": "http://data.socialhistory.org/resource/hsn/",
+   "@language": "nl"
+  },
+  {
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "dbo": "http://dbpedia.org/ontology/",
+   "clioctr": "http://data.socialhistory.org/resource/clio/country/",
+   "hisclass": "http://data.socialhistory.org/resource/hisclass/",
+   "hisco-product": "http://data.socialhistory.org/resource/hisco/product/",
+   "hisco-entry": "http://data.socialhistory.org/resource/hisco/entry/",
+   "ldp": "http://www.w3.org/ns/ldp#",
+   "clio": "http://data.socialhistory.org/resource/clio/",
+   "occhisco": "http://data.socialhistory.org/resource/napp/OCCHISCO/",
+   "dbr": "http://dbpedia.org/resource/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "xml": "http://www.w3.org/XML/1998/namespace/",
+   "bibo": "http://purl.org/ontology/bibo/",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "prov": "http://www.w3.org/ns/prov#",
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+   "napp-can91": "http://data.socialhistory.org/resource/napp/dataset/canada1891/",
+   "hiscam": "http://data.socialhistory.org/resource/hiscam/",
+   "dbpedia": "http://dbpedia.org/resource/",
+   "np": "http://www.nanopub.org/nschema#",
+   "canfam-auke": "http://data.socialhistory.org/resource/canfam/auke/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "schema": "http://schema.org/",
+   "foaf": "http://xmlns.com/foaf/0.1/",
+   "napp": "http://data.socialhistory.org/resource/napp/",
+   "sdv": "http://data.socialhistory.org/vocab/",
+   "hisco": "http://data.socialhistory.org/resource/hisco/",
+   "sdp": "http://data.socialhistory.org/resource/person/",
+   "sdr": "http://data.socialhistory.org/resource/",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "time": "http://www.w3.org/2006/time#",
+   "hsn": "http://data.socialhistory.org/resource/hsn/",
+   "dc": "http://purl.org/dc/terms/",
+   "hisco-relation": "http://data.socialhistory.org/resource/hisco/relation/",
+   "hisco-status": "http://data.socialhistory.org/resource/hisco/status/",
+   "dbp": "http://dbpedia.org/property/",
+   "clioprop": "http://data.socialhistory.org/resource/clio/property/",
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+   "csvw": "http://www.w3.org/ns/csvw#",
+   "clioind": "http://data.socialhistory.org/resource/clio/indicator/",
+   "dc11": "http://purl.org/dc/elements/1.1/",
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
+   "napp-eng81": "http://data.socialhistory.org/resource/napp/dataset/englandwales1881/",
+   "canfam": "http://data.socialhistory.org/resource/canfam/dataset/canada1901/",
+   "napp-sct81": "http://data.socialhistory.org/resource/napp/dataset/scotland1881/",
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+   "qb": "http://purl.org/linked-data/cube#",
+   "hisclass5": "http://data.socialhistory.org/resource/hisclass5/",
+   "xsd": "http://www.w3.org/2001/XMLSchema#",
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/"
+  }
+ ],
+ "dc:title": "BEVOP.DBF.csv",
+ "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv",
+ "dc:modified": {
+  "@value": "2017-01-10",
+  "@type": "xsd:date"
+ },
+ "tableSchema": {
+  "aboutUrl": "BEVOP/{_row}",
+  "primaryKey": "hsn:IDNR",
+  "dc:description": "HSN-identificatienummer onderzoekspersoon (OP)",
+  "columns": [
+      {
+    "datatype": "string",
+    "titles": [
+     "IDNR"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/IDNR",
+    "name": "IDNR",
+    "propertyUrl": "hsn:dimension/IDNR",
+    "valueUrl": "hsn:code/IDNR/{IDNR}",
+    "dc:description": "HSN-identificatienummer onderzoekspersoon (OP)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "PLAATS"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/PLAATS",
+    "name": "PLAATS",
+    "propertyUrl": "hsn:dimension/PLAATS",
+    "dc:description": "Eventuele specificatie van de plaats of regio waar de OP is geboren"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "COHORT"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/COHORT",
+    "name": "COHORT",
+    "propertyUrl": "hsn:dimension/COHORT",
+    "dc:description": "Eventuele specificatie van het cohort waaruit de OP afkomstig is"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "PERSNROP"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/PERSNROP",
+    "name": "PERSNROP",
+    "propertyUrl": "hsn:dimension/PERSNROP",
+    "dc:description": "Intern identificatienummer (persnr) van de Onderzoekspersoon (OP)"
+   },
+   {
+    "virtual": true,
+    "name": "HSNperson",
+        "titles": [
+     "HSNperson"
+    ],
+    "propertyUrl": "hsn:dimension/HSNperson",
+    "valueUrl": "hsn:code/HSNperson/{{ [IDNR, '_', PERSNROP]|join }}"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "PERSOP_V"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/PERSOP_V",
+    "name": "PERSOP_V",
+    "propertyUrl": "hsn:dimension/PERSOP_V",
+    "dc:description": "Intern identificatienummer (persnr) van de vader van de OP"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "PERSOP_M"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/PERSOP_M",
+    "name": "PERSOP_M",
+    "propertyUrl": "hsn:dimension/PERSOP_M",
+    "dc:description": "Intern identificatienummer (persnr) van de moeder van de OP"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "GEBAKTE"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/GEBAKTE",
+    "name": "GEBAKTE",
+    "propertyUrl": "hsn:dimension/GEBAKTE",
+    "valueUrl": "hsn:code/GEBAKTE/{GEBAKTE}",
+    "dc:description": "Dit veld geeft de naam van de tabel met geboorteakten, die (mede) is gebruikt voor de vaststelling van de relatie met de ouders"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "GEBDAGOP"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/GEBDAGOP",
+    "name": "GEBDAGOP",
+    "propertyUrl": "hsn:dimension/GEBDAGOP",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Dagnummer geboorte"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "GEBMNDOP"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/GEBMNDOP",
+    "name": "GEBMNDOP",
+    "propertyUrl": "hsn:dimension/GEBMNDOP",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Maandnummer geboorte"
+   },
+   {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "GEBJAROP"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/GEBJAROP",
+    "name": "GEBJAROP",
+    "propertyUrl": "hsn:dimension/GEBJAROP",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Maandnummer geboorte"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "GEBDATOP"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/GEBDATOP",
+    "name": "GEBDATOP",
+    "propertyUrl": "hsn:dimension/GEBDATOP",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Datum geboorte als datumveld (jjjj-mm-dd)"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "OVLDAGOP"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/OVLDAGOP",
+    "name": "OVLDAGOP",
+    "propertyUrl": "hsn:dimension/OVLDAGOP",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Dagnummer overlijden"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "OVLMNDOP"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/OVLMNDOP",
+    "name": "OVLMNDOP",
+    "propertyUrl": "hsn:dimension/OVLMNDOP",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Maandnummer overlijden"
+   },
+   {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "OVLJAROP"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/OVLJAROP",
+    "name": "OVLJAROP",
+    "propertyUrl": "hsn:dimension/OVLJAROP",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Jaarnummer overlijden"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "OVLDATOP"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/OVLDATOP",
+    "name": "OVLDATOP",
+    "propertyUrl": "hsn:dimension/OVLDATOP",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Datum overlijden als datumveld (jjjj-mm-dd)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "OVLDATBR"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/OVLDATBR",
+    "name": "OVLDATBR",
+    "propertyUrl": "hsn:dimension/OVLDATBR",
+    "valueUrl": "hsn:code/OVLDATBR/{OVLDATBR}",
+    "dc:description": "Bron datum overlijden"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "HUWDAGOP"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/HUWDAGOP",
+    "name": "HUWDAGOP",
+    "propertyUrl": "hsn:dimension/HUWDAGOP",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Dagnummer eerste huwelijk"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "HUWMNDOP"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/HUWMNDOP",
+    "name": "HUWMNDOP",
+    "propertyUrl": "hsn:dimension/HUWMNDOP",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Maandnummer eerste huwelijk"
+   },
+   {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "HUWJAROP"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/HUWJAROP",
+    "name": "HUWJAROP",
+    "propertyUrl": "hsn:dimension/HUWJAROP",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Jaarnummer eerste huwelijk"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "HUWDATOP"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/HUWDATOP",
+    "name": "HUWDATOP",
+    "propertyUrl": "hsn:dimension/HUWDATOP",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Datum huwelijk als datumveld (jjjj-mm-dd)"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "HOBDAGOP"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/HOBDAGOP",
+    "name": "HOBDAGOP",
+    "propertyUrl": "hsn:dimension/HOBDAGOP",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Dagnummer eerste observatie van huwelijk (bij onbekende huwelijksdatum)"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "HOBMNDOP"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/HOBMNDOP",
+    "name": "HOBMNDOP",
+    "propertyUrl": "hsn:dimension/HOBMNDOP",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Maandnummer eerste observatie van huwelijk (bij onbekende huwelijksdatum)"
+   },
+   {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "HOBJAROP"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/HOBJAROP",
+    "name": "HOBJAROP",
+    "propertyUrl": "hsn:dimension/HOBJAROP",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Jaarnummer eerste observatie van huwelijk (bij onbekende huwelijksdatum)"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "HOBDATOP"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/HOBDATOP",
+    "name": "HOBDATOP",
+    "propertyUrl": "hsn:dimension/HOBDATOP",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Datum eerste observatie van huwelijk (bij onbekende huwelijksdatum) als datumveld (jjjj-mm-dd), dagnummer staat standaard op 1"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "PERSNR_P"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/PERSNR_P",
+    "name": "PERSNR_P",
+    "propertyUrl": "hsn:dimension/PERSNR_P",
+    "dc:description": "Intern identificatienummer (persnr) van de eerste partner van de OP"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "SEX_OP"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/SEX_OP",
+    "name": "SEX_OP",
+    "propertyUrl": "hsn:dimension/SEX_OP",
+    "valueUrl": "hsn:code/SEX_OP/{SEX_OP}",
+    "dc:description": "Geslacht van de OP, mogelijke waarden: ‘m’, ‘v’ of ‘o’"
+   },
+   {
+    "virtual": true,
+    "propertyUrl": "sdmx-dimension:sex",
+    "valueUrl": "hsn:code/{SEX_OP}"
+      },
+   {
+    "datatype": "int",
+    "titles": [
+     "OBSDAGOP"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/OBSDAGOP",
+    "name": "OBSDAGOP",
+    "propertyUrl": "hsn:dimension/OBSDAGOP",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Dag start observatie"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "OBSMNDOP"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/OBSMNDOP",
+    "name": "OBSMNDOP",
+    "propertyUrl": "hsn:dimension/OBSMNDOP",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Maand start observatie"
+   },
+   {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "OBSJAROP"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/OBSJAROP",
+    "name": "OBSJAROP",
+    "propertyUrl": "hsn:dimension/OBSJAROP",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Jaar start observatie"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "OBSDATOP"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/OBSDATOP",
+    "name": "OBSDATOP",
+    "propertyUrl": "hsn:dimension/OBSDATOP",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Datum start observatie als datumveld (jjjj-mm-dd)"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "OBEDAGOP"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/OBEDAGOP",
+    "name": "OBEDAGOP",
+    "propertyUrl": "hsn:dimension/OBEDAGOP",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Dag einde observatie"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "OBEMNDOP"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/OBEMNDOP",
+    "name": "OBEMNDOP",
+    "propertyUrl": "hsn:dimension/OBEMNDOP",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Maand einde observatie"
+   },
+   {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "OBEJAROP"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/OBEJAROP",
+    "name": "OBEJAROP",
+    "propertyUrl": "hsn:dimension/OBEJAROP",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Jaar einde observatie"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "OBEDATOP"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/OBEDATOP",
+    "name": "OBEDATOP",
+    "propertyUrl": "hsn:dimension/OBEDATOP",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Datum einde observatie als datumveld (jjjj-mm-dd)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "BREUK_OP"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/BREUK_OP",
+    "name": "BREUK_OP",
+    "propertyUrl": "hsn:dimension/BREUK_OP",
+    "dc:description": "Aantal keren dat er gaten zitten in de observatie-periode. De ontbrekende periode moet minstens 150 dagen bedragen"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "GEEN_OP"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/GEEN_OP",
+    "name": "GEEN_OP",
+    "propertyUrl": "hsn:dimension/GEEN_OP",
+    "valueUrl": "hsn:code/GEEN_OP/{GEEN_OP}",
+    "dc:description": "In sommige gevallen werd de OP nooit of niet meteen ingeschreven in de bevolkingsregisters. Deze variabele scoort een ‘j’ in die situaties, dat de OP bij geboorte niet meteen werd ingeschreven. In het geval dat de OP helemaal niet is ingeschreven wordt op deze variabele een ‘x’ gescoord"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "RELEASE"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/RELEASE",
+    "name": "RELEASE",
+    "propertyUrl": "hsn:dimension/RELEASE",
+    "valueUrl":"hsn:RELEASE/{RELEASE}",
+    "dc:description": "Naam en volgnummer release"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "DATUMCOR"
+    ],
+    "@id": "http://data.socialhistory.org/resource/BEVOP.DBF.csv/column/DATUMCOR",
+    "name": "DATUMCOR",
+    "propertyUrl": "hsn:dimension/DATUMCOR",
+    "dc:description": "Datum (jjjj-mm-dd) evt. handmatige correctie van enig gegeven op de record, door de gebruiker in te vullen"
+   }
+  ]
+ }
+}

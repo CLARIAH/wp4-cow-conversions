@@ -1,0 +1,560 @@
+{
+ "dialect": {
+  "quoteChar": "\"", 
+  "delimiter": ",", 
+  "encoding": "utf-8"
+ }, 
+ "dcat:keyword": [], 
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ }, 
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend", 
+  "schema:url": {
+   "@id": "http://datalegend.org"
+  }
+ }, 
+ "dc:author": {
+  "rdf:type": [
+    {
+      "@id": "foaf:Person"
+    },
+    {
+      "@id": "prov:Person"
+    }
+  ],
+  "foaf:name": ["Auke Rijpma"]
+},"dc:author": {
+  "rdf:type": [
+    {
+      "@id": "foaf:Person"
+    },
+    {
+      "@id": "prov:Person"
+    }
+  ],
+  "foaf:name": ["Ruben Schalk"]
+},
+"prov:wasDerivedFrom": [{
+  "rdf:type": {
+      "@id": "bibo:Article"
+  },
+  "dc:title": {
+      "@value": "Building life course datasets from population registers by the Historical Sample of the Netherlands (HSN)",
+      "@lang": "en"
+  },
+  "dc:author": ["Mandemakers, K."],
+  "dc:publisher": "Edinburg UP",
+  "dc:date": {"@value":"2006", "@type":"xsd:gYear"},
+  "dc:isPartOf": ["http://www.euppublishing.com/toc/hac/14/1-2"]
+ }],
+ "url": "PKSTATP.DBF.csv", 
+ "@context": [
+  "http://www.w3.org/ns/csvw", 
+  {
+   "@base": "http://data.socialhistory.org/resource/hsn/", 
+   "@language": "en"
+  }, 
+  {
+   "owl": "http://www.w3.org/2002/07/owl#", 
+   "dbo": "http://dbpedia.org/ontology/", 
+   "clioctr": "http://data.socialhistory.org/resource/clio/country/", 
+   "hisclass": "http://data.socialhistory.org/resource/hisclass/", 
+   "hisco-product": "http://data.socialhistory.org/resource/hisco/product/", 
+   "hisco-entry": "http://data.socialhistory.org/resource/hisco/entry/", 
+   "ldp": "http://www.w3.org/ns/ldp#", 
+   "clio": "http://data.socialhistory.org/resource/clio/", 
+   "occhisco": "http://data.socialhistory.org/resource/napp/OCCHISCO/", 
+   "dbr": "http://dbpedia.org/resource/", 
+   "skos": "http://www.w3.org/2004/02/skos/core#", 
+   "xml": "http://www.w3.org/XML/1998/namespace/", 
+   "bibo": "http://purl.org/ontology/bibo/", 
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#", 
+   "prov": "http://www.w3.org/ns/prov#", 
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#", 
+   "napp-can91": "http://data.socialhistory.org/resource/napp/dataset/canada1891/", 
+   "hiscam": "http://data.socialhistory.org/resource/hiscam/", 
+   "dbpedia": "http://dbpedia.org/resource/", 
+   "np": "http://www.nanopub.org/nschema#", 
+   "canfam-auke": "http://data.socialhistory.org/resource/canfam/auke/", 
+   "dcterms": "http://purl.org/dc/terms/", 
+   "schema": "http://schema.org/", 
+   "foaf": "http://xmlns.com/foaf/0.1/", 
+   "napp": "http://data.socialhistory.org/resource/napp/", 
+   "sdv": "http://data.socialhistory.org/vocab/", 
+   "hisco": "http://data.socialhistory.org/resource/hisco/", 
+   "sdp": "http://data.socialhistory.org/resource/person/", 
+   "sdr": "http://data.socialhistory.org/resource/", 
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#", 
+   "time": "http://www.w3.org/2006/time#", 
+   "hsn": "http://data.socialhistory.org/resource/hsn/",
+   "hsnhisco": "http://data.socialhistory.org/resource/hsn2013a/",
+   "dc": "http://purl.org/dc/terms/", 
+   "hisco-relation": "http://data.socialhistory.org/resource/hisco/relation/", 
+   "hisco-status": "http://data.socialhistory.org/resource/hisco/status/", 
+   "dbp": "http://dbpedia.org/property/", 
+   "clioprop": "http://data.socialhistory.org/resource/clio/property/", 
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#", 
+   "csvw": "http://www.w3.org/ns/csvw#", 
+   "clioind": "http://data.socialhistory.org/resource/clio/indicator/", 
+   "dc11": "http://purl.org/dc/elements/1.1/", 
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/", 
+   "napp-eng81": "http://data.socialhistory.org/resource/napp/dataset/englandwales1881/", 
+   "canfam": "http://data.socialhistory.org/resource/canfam/dataset/canada1901/", 
+   "napp-sct81": "http://data.socialhistory.org/resource/napp/dataset/scotland1881/", 
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#", 
+   "qb": "http://purl.org/linked-data/cube#", 
+   "hisclass5": "http://data.socialhistory.org/resource/hisclass5/", 
+   "xsd": "http://www.w3.org/2001/XMLSchema#", 
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#", 
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/"
+  }
+ ], 
+ "dc:title": "PKSTATP.DBF.csv", 
+ "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv", 
+ "dc:modified": {
+  "@value": "2017-01-10", 
+  "@type": "xsd:date"
+ }, 
+ "tableSchema": {
+  "aboutUrl": "PKSTATP/{_row}",
+  "primaryKey": "IDNR", 
+  "columns": [
+   {
+    "datatype": "string",
+    "titles": [
+     "IDNR"
+    ],
+    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/IDNRP",
+    "name": "IDNR",
+    "propertyUrl": "hsn:dimension/IDNR",
+    "valueUrl": "hsn:code/IDNR/{IDNR}",
+    "dc:description": "HSN-identificatienummer onderzoekspersoon (OP)"
+   },
+   {
+    "datatype": "int", 
+    "titles": [
+     "FAMVBNR"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/FAMVBNR", 
+    "name": "FAMVBNR", 
+    "propertyUrl": "hsn:dimension/FAMVBNR", 
+    "dc:description": "Volgnummer familieverband per OP"
+   },
+   {
+    "datatype": "string", 
+    "titles": [
+     "FAMVPNR"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/FAMVPNR", 
+    "name": "FAMVPNR", 
+    "propertyUrl": "hsn:dimension/FAMVPNR", 
+    "dc:description": "Volgnummer persoon per familieverband"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "IDNRFMP"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/IDNRFMP", 
+    "name": "IDNRFMP", 
+    "propertyUrl": "hsn:dimension/IDNRFMP", 
+    "valueUrl": "hsn:code/IDNRFMP/{IDNRFMP}", 
+    "dc:description": "Combinatie van idnr, famvbnr en famvpnr (te gebruiken als primaire sleutel in Access)"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "IDNRFM"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/IDNRFM", 
+    "name": "IDNRFM", 
+    "propertyUrl": "hsn:dimension/IDNRFM", 
+    "valueUrl": "hsn:code/IDNRFM/{IDNRFM}", 
+    "dc:description": "Combinatie van idnr en famvbnr (te gebruiken als verwijzende sleutel in Access)"
+   }, 
+   {
+    "virtual": true,
+    "aboutUrl": "hsn:code/IDNRFM/{IDNRFM}",
+    "propertyUrl": "hsn:dimension/containsFamilyMember",
+    "valueUrl": "hsn:code/HSNperson/{{ [IDNR, '_', PERSNR]|join }}",
+    "dc:description": "direct link from fanukues (IDNRFM) to individuals (IDNRFMP)"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hsn:code/HSNperson/{{ [IDNR, '_', PERSNR]|join }}",
+    "propertyUrl": "hsn:dimension/inFamily",
+    "valueUrl": "hsn:code/IDNRFM/{IDNRFM}",
+    "dc:description": "direct link from individuals (IDNRFMP) to families (IDNRFM)"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hsn:code/IDNRFM/{IDNRFM}",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "hsn:family",
+    "dc:description": "IDNRFM identifies a family in the HSN; note that for one OP multiple families may exist. A family changes when the OP's marital status changes."
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hsn:code/IDNRFMP/{IDNRFMP}",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "hsn:individual",
+    "dc:description": "IDNRFMP identifies an individual within a family in the HSN. Note that the same individual might return in another family of the OP without having the same IDNRFMP"
+   },
+   {
+    "datatype": "string", 
+    "titles": [
+     "LINKNR"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/LINKNR", 
+    "name": "LINKNR", 
+    "propertyUrl": "hsn:dimension/LINKNR", 
+    "dc:description": "Sleutel waarmee de families van verschillende onderzoekspersonen aan elkaar kunnen worden gekoppeld, de sleutel verwijst naar het veld linknr in het bestand LINKxxxx.dbf. De invulling van deze variabele is optioneel, zie verder de beschrijving van linknr bij het bestand PKSTATP.dbf (handleiding output bevolkingsregister"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "PERSNR"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/PERSNR", 
+    "name": "PERSNR", 
+    "propertyUrl": "hsn:dimension/PERSNR", 
+    "dc:description": "Identificatienummer persoon; deze variabele linkt de personen over de verschillende huishoudens voorzover behorende bij een bepaalde OP"
+   }, 
+   {
+    "virtual": true,
+    "aboutUrl": "hsn:code/HSNperson/{{ [IDNR, '_', PERSNR]|join }}",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "hsn:individual"
+   },
+   {
+    "virtual": true,
+    "name": "HSNperson",
+        "titles": [
+     "HSNperson"
+    ],
+    "propertyUrl": "hsn:dimension/HSNperson",
+    "valueUrl": "hsn:code/HSNperson/{{ [IDNR, '_', PERSNR]|join }}",
+    "dc:description": "An individual in the HSN (person can exist in multiple households)"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hsn:code/HSNperson/{{ [IDNR, '_', PERSNR]|join }}",
+    "propertyUrl": "hsn:dimension/individualObservation",
+    "valueUrl": "PKSTATP/{_row}",
+    "dc:description": "An observation about an individual in the HSN (person can exist in multiple households)"
+   },
+   {
+    "datatype": "string", 
+    "titles": [
+     "OPERSNR"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/OPERSNR", 
+    "name": "OPERSNR", 
+    "propertyUrl": "hsn:dimension/OPERSNR", 
+    "dc:description": "Overkoepelend identificatienummer, deze variabele linkt de identificatienummers van de personen die behoren bij de verschillende OP's. De invulling van deze variabele is optioneel. Het gaat hierbij dus om een nieuw identificatienummer voor elke persoon. Om deze variabele te kunnen invullen, dient eerst het linknr in alle tabellen van de output van het bevolkingsregister te zijn ingevuld, zie verder de beschrijving van dit veld bij het bestand PKSTATP.dbf (handleiding output bevolkingsregister)."
+   }, 
+   {
+    "datatype": "int",
+    "titles": [
+     "INSDAG"
+    ],
+    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/INSDAG",
+    "name": "INSDAG",
+    "propertyUrl": "hsn:dimension/INSDAG",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Dag inschrijving"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "INSMND"
+    ],
+    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/INSMND",
+    "name": "INSMND",
+    "propertyUrl": "hsn:dimension/INSMND",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Maand inschrijving"
+   },
+   {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "INSJAR"
+    ],
+    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/INSJAR",
+    "name": "INSJAR",
+    "propertyUrl": "hsn:dimension/INSJAR",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Jaar inschrijving"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "INSDAT"
+    ],
+    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/INSDAT",
+    "name": "INSDAT",
+    "propertyUrl": "hsn:dimension/INSDAT",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Datum inschrijving persoon als datumveld (mm/dd/jj)"
+   },   
+   {
+    "datatype": "int", 
+    "titles": [
+     "UITDAG"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/UITDAG", 
+    "name": "UITDAG", 
+    "propertyUrl": "hsn:dimension/UITDAG", 
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Dag uitschrijving"
+   }, 
+   {
+    "datatype": "int", 
+    "titles": [
+     "UITMND"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/UITMND", 
+    "name": "UITMND", 
+    "propertyUrl": "hsn:dimension/UITMND", 
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Maand uitschrijving"
+   }, 
+   {
+    "datatype": "xsd:gYear", 
+    "titles": [
+     "UITJAR"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/UITJAR", 
+    "name": "UITJAR", 
+    "propertyUrl": "hsn:dimension/UITJAR", 
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Jaar uitschrijving"
+   }, 
+   {
+    "datatype": "xsd:date", 
+    "titles": [
+     "UITDAT"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/UITDAT", 
+    "name": "UITDAT", 
+    "propertyUrl": "hsn:dimension/UITDAT", 
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Datum uitschrijving persoon als datumveld (mm/dd/jj)"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "OP"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/OP", 
+    "name": "OP", 
+    "propertyUrl": "hsn:dimension/OP", 
+    "valueUrl": "hsn:code/OP/{OP}", 
+    "dc:description": "Betreft de persoon de onderzoekspersoon (OP)?"
+   },
+   {
+    "virtual": true,
+    "name": "OP", 
+    "titles": [
+     "OP"
+    ], 
+    "aboutUrl": "hsn:code/HSNperson/{{ [IDNR, '_', PERSNR]|join }}",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "hsn:OP",
+    "null": ["n"],
+    "dc:description": "Individual is an OP, research person, for whom the entire life course has been reconstructed."
+   },
+   {
+    "virtual": true,
+    "name": "OP", 
+    "titles": [
+     "OP"
+    ], 
+    "aboutUrl": "hsn:code/HSNperson/{{ [IDNR, '_', PERSNR]|join }}",
+    "propertyUrl": "hsn:dimension/opIDNR",
+    "valueUrl": "hsn:code/opIDNR/{IDNR}",
+    "null": ["n"]
+   },
+   {
+    "datatype": "string", 
+    "titles": [
+     "FUNCTIE"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/FUNCTIE", 
+    "name": "FUNCTIE", 
+    "propertyUrl": "hsn:dimension/FUNCTIE", 
+    "valueUrl": "hsn:code/FUNCTIE/{FUNCTIE}",
+    "dc:description": "Korte aanduiding van relatie tot het hoofd"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "ANAAM"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/ANAAM", 
+    "name": "ANAAM", 
+    "propertyUrl": "hsn:dimension/ANAAM", 
+    "dc:description": "Achternaam (evt. voorvoegsel na komma)"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "VNAAM"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/VNAAM", 
+    "name": "VNAAM", 
+    "propertyUrl": "hsn:dimension/VNAAM", 
+    "dc:description": "Voornamen (gescheiden door spatie)"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "GESLACHT"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/GESLACHT", 
+    "name": "GESLACHT", 
+    "propertyUrl": "hsn:dimension/GESLACHT", 
+    "valueUrl": "hsn:code/GESLACHT/{GESLACHT}", 
+    "dc:description": "Geslacht"
+   }, 
+     {
+    "datatype": "int",
+    "titles": [
+     "GEBDAG"
+    ],
+    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/GEBDAG",
+    "name": "GEBDAG",
+    "propertyUrl": "hsn:dimension/GEBDAG",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Dagnummer geboorte"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "GEBMND"
+    ],
+    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/GEBMND",
+    "name": "GEBMND",
+    "propertyUrl": "hsn:dimension/GEBMND",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Maandnummer geboorte"
+   },
+   {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "GEBJAR"
+    ],
+    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/GEBJAR",
+    "name": "GEBJAR",
+    "propertyUrl": "hsn:dimension/GEBJAR",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Jaar geboorte"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "GEBDAT"
+    ],
+    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/GEBDAT",
+    "name": "GEBDAT",
+    "propertyUrl": "hsn:dimension/GEBDAT",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Geboortedatum als datumveld (jjjj-mm-dd)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "GEBGEM"
+    ],
+    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/GEBGEM",
+    "name": "GEBGEM",
+    "propertyUrl": "hsn:dimension/GEBGEM",
+    "valueUrl": "hsn:code/GEBGEM/{GEBGEM}",
+    "dc:description": "Geboortegemeente, dit is standaard de plaats van de bron indien deze gemeente niet is geëxpliciteerd in het register"
+   },
+   {
+     "virtual": "true",
+    "aboutUrl": "hsn:GEBGEM/{GEBGEM}",
+    "propertyUrl": "skos:exactMatch",
+    "valueUrl": "hsn:code/Gemeenten/{GEBGEM}"
+   },
+      {
+  "valueUrl": "http://data.socialhistory.org/resource/clio/Netherlands/1880/1945",
+  "propertyUrl": "sdmx-dimension:refArea",
+  "virtual": true
+    },
+   {
+    "datatype": "int",
+    "titles": [
+     "OVLDAG"
+    ],
+    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/OVLDAG",
+    "name": "OVLDAG",
+    "propertyUrl": "hsn:dimension/OVLDAG",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Dagnummer overlijden"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "OVLMND"
+    ],
+    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/OVLMND",
+    "name": "OVLMND",
+    "propertyUrl": "hsn:dimension/OVLMND",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Maandnummer overlijden"
+   },
+   {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "OVLJAR"
+    ],
+    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/OVLJAR",
+    "name": "OVLJAR",
+    "propertyUrl": "hsn:dimension/OVLJAR",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Jaar overlijden"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "OVLDAT"
+    ],
+    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/OVLDAT",
+    "name": "OVLDAT",
+    "propertyUrl": "hsn:dimension/OVLDAT",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Overlijdensdatum als datumveld (jjjj-mm-dd)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "OVLGEM"
+    ],
+    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/OVLGEM",
+    "name": "OVLGEM",
+    "propertyUrl": "hsn:dimension/OVLGEM",
+    "valueUrl": "hsn:code/OVLGEM/{OVLGEM}",
+    "dc:description": "Gemeente van overlijden, standaard de plaats van de bron indien deze gemeente niet is geëxpliciteerd"
+   },
+   {
+     "virtual": "true",
+    "aboutUrl": "hsn:OVLGEM/{OVLGEM}",
+    "propertyUrl": "skos:exactMatch",
+    "valueUrl": "hsn:code/Gemeenten/{OVLGEM}"
+   },
+   {
+    "datatype": "string", 
+    "titles": [
+     "RELEASE"
+    ], 
+    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/RELEASE", 
+    "name": "RELEASE", 
+    "propertyUrl": "hsn:dimension/RELEASE", 
+    "dc:description": "RELEASE"
+   }
+  ]
+ }
+}
