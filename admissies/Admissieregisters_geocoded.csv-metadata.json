@@ -133,7 +133,24 @@
   ],
   "@id": "https://iisg.amsterdam/resource/Admissieregisters.csv/column/Date",
   "name": "Date",
+  "propertyUrl": "admissie:vocab/Date",
+  "valueUrl": "admissie:code/Date/{Date}",
   "dc:description": "Date of immigration [dd-mm-yyyy]"
+ },
+ {
+ "virtual": true,
+ "name": "Year",
+ "datatype": "xsd:gYear",
+   "propertyUrl": "admissie:vocab/Year",
+ "valueUrl": "admissie:code/Year/{{Date[6:]}}",
+ "dc:description": "Year of immigration into Haarlem"
+ },
+ {
+ "virtual": true,
+ "name": "Month",
+   "propertyUrl": "admissie:vocab/Month",
+ "valueUrl": "admissie:code/Month/{{Date[3:5]}}",
+ "dc:description": "Month of immigration into Haarlem"
  },
  {
   "datatype": "string",
@@ -308,8 +325,7 @@
   "aboutUrl": "admissie:code/loc_frmtd/{loc_frmtd}",
   "propertyUrl": "rdf:type",
   "valueUrl": "geosparql:Geometry"
-},
-
+}
 ]
 }
 }
