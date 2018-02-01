@@ -140,7 +140,6 @@
  {
  "virtual": true,
  "name": "Year",
- "datatype": "xsd:gYear",
  "propertyUrl": "admissie:vocab/Year",
  "csvw:value": "{{Date[6:]}}",
  "dc:description": "Year of immigration into Haarlem"
