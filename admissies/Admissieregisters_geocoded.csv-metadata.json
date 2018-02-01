@@ -141,15 +141,15 @@
  "virtual": true,
  "name": "Year",
  "datatype": "xsd:gYear",
-   "propertyUrl": "admissie:vocab/Year",
- "valueUrl": "admissie:code/Year/{{Date[6:]}}",
+ "propertyUrl": "admissie:vocab/Year",
+ "csvw:value": "{{Date[6:]}}",
  "dc:description": "Year of immigration into Haarlem"
  },
  {
  "virtual": true,
  "name": "Month",
    "propertyUrl": "admissie:vocab/Month",
- "valueUrl": "admissie:code/Month/{{Date[3:5]}}",
+ "csvw:value": "{{Date[3:5]}}",
  "dc:description": "Month of immigration into Haarlem"
  },
  {
@@ -168,6 +168,8 @@
   ],
   "@id": "https://iisg.amsterdam/resource/Admissieregisters.csv/column/Lastname_man",
   "name": "Lastname_man",
+  "propertyUrl": "admissie:vocab/Lastname_man",
+  "valueUrl": "admissie:code/Lastname_man/{Lastname_man}",
   "dc:description": "Surname of immigrating male"
  },
  {
@@ -199,6 +201,8 @@
   ],
   "@id": "https://iisg.amsterdam/resource/Admissieregisters.csv/column/Fullname_woman",
   "name": "Fullname_woman",
+  "propertyUrl": "admissie:vocab/Fullname_woman",
+  "valueUrl": "admissie:code/Fullname_woman/{Fullname_woman}",
   "dc:description": "Full name of immigrating woman (only recorded when immigrating without husband)"
  },
  {
@@ -270,6 +274,7 @@
   ],
   "@id": "https://iisg.amsterdam/resource/Admissieregisters.csv/column/Pictureno",
   "name": "Pictureno",
+  "propertyUrl": "admissie:/vocab/Pictureno",
   "dc:description": "Reference to digital page number of source online"
 },
   {
@@ -322,7 +327,7 @@
   },
 {
   "virtual": true,
-  "aboutUrl": "admissie:code/loc_frmtd/{loc_frmtd}",
+  "aboutUrl": "admissie:code/Origin/{Origin}",
   "propertyUrl": "rdf:type",
   "valueUrl": "geosparql:Geometry"
 }
