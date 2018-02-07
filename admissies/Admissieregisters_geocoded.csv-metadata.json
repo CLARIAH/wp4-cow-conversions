@@ -1,14 +1,13 @@
 {
  "dialect": {
   "quoteChar": "\"",
-  "delimiter": ";",
+  "delimiter": ",",
   "encoding": "ISO-8859-2"
  },
  "dcat:keyword": [],
  "dc:license": {
   "@id": "http://opendefinition.org/licenses/cc-by/"
- },
- "dc:author": {
+ },"dc:author": {
   "rdf:type": [
     {
       "@id": "foaf:Person"
@@ -93,243 +92,263 @@
    "admissie": "https://iisg.amsterdam/Admissieregisters_geocoded/",
    "geosparql": "http://www.opengis.net/ont/geosparql#"
   }
-],
-"dc:title": "Admissieregisters_geocoded.csv",
-"@id": "https://iisg.amsterdam/resource/Admissieregisters_geocoded.csv",
-"dc:modified": {
-"@value": "2018-01-30",
-"@type": "xsd:date"
-},
-"tableSchema": {
-"aboutUrl": "{ID}",
-"primaryKey": "ID",
-"columns": [
-  {
-  "datatype": "string",
-  "titles": [
-   "Origin"
-  ],
-  "@id": "https://iisg.amsterdam/resource/Admissieregisters_geocoded.csv/column/Origin",
-  "name": "Origin",
-  "propertyUrl": "admissie:vocab/Origin",
-  "valueUrl": "admissie:code/Origin/{Origin}",
-  "dc:description": "Place of last origin"
+ ],
+ "dc:title": "Admissieregisters_geocoded.csv",
+ "@id": "https://iisg.amsterdam/resource/Admissieregisters_geocoded.csv",
+ "dc:modified": {
+  "@value": "2018-02-07",
+  "@type": "xsd:date"
  },
- {
-  "datatype": "string",
-  "titles": [
-   "ID"
-  ],
-  "@id": "https://iisg.amsterdam/resource/Admissieregisters.csv/column/ID",
-  "name": "ID",
-  "propertyUrl": "admissie:vocab/ID",
-  "valueUrl": "admissie:code/ID/{ID}",
-  "dc:description": "ID of immigrant"
- },
- {
-  "datatype": "string",
-  "titles": [
-   "Date"
-  ],
-  "@id": "https://iisg.amsterdam/resource/Admissieregisters.csv/column/Date",
-  "name": "Date",
-  "propertyUrl": "admissie:vocab/Date",
-  "valueUrl": "admissie:code/Date/{Date}",
-  "dc:description": "Date of immigration [dd-mm-yyyy]"
- },
- {
- "virtual": true,
- "name": "Year",
- "propertyUrl": "admissie:vocab/Year",
- "csvw:value": "{{Date[6:]}}",
- "dc:description": "Year of immigration into Haarlem"
- },
- {
- "virtual": true,
- "name": "Month",
-   "propertyUrl": "admissie:vocab/Month",
- "csvw:value": "{{Date[3:5]}}",
- "dc:description": "Month of immigration into Haarlem"
- },
- {
-  "datatype": "string",
-  "titles": [
-   "Firstname_man"
-  ],
-  "@id": "https://iisg.amsterdam/resource/Admissieregisters.csv/column/Firstname_man",
-  "name": "Firstname_man",
-  "dc:description": "First name of immigrating male"
- },
- {
-  "datatype": "string",
-  "titles": [
-   "Lastname_man"
-  ],
-  "@id": "https://iisg.amsterdam/resource/Admissieregisters.csv/column/Lastname_man",
-  "name": "Lastname_man",
-  "propertyUrl": "admissie:vocab/Lastname_man",
-  "valueUrl": "admissie:code/Lastname_man/{Lastname_man}",
-  "dc:description": "Surname of immigrating male"
- },
- {
-  "datatype": "string",
-  "titles": [
-   "Birthplace_man"
-  ],
-  "@id": "https://iisg.amsterdam/resource/Admissieregisters.csv/column/Birthplace_man",
-  "name": "Birthplace_man",
-  "propertyUrl": "admissie:vocab/Birthplace_man",
-  "valueUrl": "admissie:code/Birthplace_man/{Birthplace_man}",
-  "dc:description": "Birthplace man"
- },
- {
-  "datatype": "string",
-  "titles": [
-   "Married"
-  ],
-  "@id": "https://iisg.amsterdam/resource/Admissieregisters.csv/column/Married",
-  "name": "Married",
-  "propertyUrl": "admissie:vocab/Married",
-  "valueUrl": "admissie:code/Married/{Married}",
-  "dc:description": "Married status"
- },
- {
-  "datatype": "string",
-  "titles": [
-   "Fullname_woman"
-  ],
-  "@id": "https://iisg.amsterdam/resource/Admissieregisters.csv/column/Fullname_woman",
-  "name": "Fullname_woman",
-  "propertyUrl": "admissie:vocab/Fullname_woman",
-  "valueUrl": "admissie:code/Fullname_woman/{Fullname_woman}",
-  "dc:description": "Full name of immigrating woman (only recorded when immigrating without husband)"
- },
- {
-  "datatype": "integer",
-  "titles": [
-   "Children"
-  ],
-  "@id": "https://iisg.amsterdam/resource/Admissieregisters.csv/column/Children",
-  "name": "Children",
-  "propertyUrl": "admissie:vocab/Children",
-  "dc:description": "Number of recorded children",
-  "null": ["NA"]
- },
- {
-  "datatype": "string",
-  "titles": [
-   "Occupation_man"
-  ],
-  "@id": "https://iisg.amsterdam/resource/Admissieregisters.csv/column/Occupation_man",
-  "name": "Occupation_man",
-  "propertyUrl": "admissie:vocab/Occupation_man",
-  "valueUrl": "admissie:code/Occupation_man/{Occupation_man}",
-  "dc:description": "Occupation of immigrating male"
- },
- {
-  "virtual": true,
-  "name": "Occupation_man",
+ "tableSchema": {
+  "aboutUrl": "{ID}",
+  "primaryKey": "ID",
+  "columns": [
+    {
+     "datatype": "string",
+     "titles": [
+      "ID"
+     ],
+     "@id": "https://iisg.amsterdam/resource/Admissieregisters.csv/column/ID",
+     "name": "ID",
+     "propertyUrl": "admissie:vocab/ID",
+     "valueUrl": "admissie:code/ID/{ID}",
+     "dc:description": "ID of immigrant"
+    },
+    {
+    "datatype": "string",
+    "titles": [
+     "Origin"
+    ],
+    "@id": "https://iisg.amsterdam/resource/Admissieregisters_geocoded.csv/column/Origin",
+    "name": "Origin",
+    "propertyUrl": "admissie:vocab/Origin",
+    "valueUrl": "admissie:code/Origin/{Origin}",
+    "dc:description": "Place of last origin"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Date"
+    ],
+    "@id": "https://iisg.amsterdam/resource/Admissieregisters.csv/column/Date",
+    "name": "Date",
+    "propertyUrl": "admissie:vocab/Date",
+    "valueUrl": "admissie:code/Date/{Date}",
+    "dc:description": "Date of immigration [dd-mm-yyyy]"
+   },
+   {
+   "virtual": true,
+   "name": "Year",
+   "propertyUrl": "admissie:vocab/Year",
+   "csvw:value": "{{Date[6:]}}",
+   "dc:description": "Year of immigration into Haarlem"
+   },
+   {
+   "virtual": true,
+   "name": "Month",
+     "propertyUrl": "admissie:vocab/Month",
+   "csvw:value": "{{Date[3:5]}}",
+   "dc:description": "Month of immigration into Haarlem"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Firstname_man"
+    ],
+    "@id": "https://iisg.amsterdam/resource/Admissieregisters_geocoded.csv/column/Firstname_man",
+    "name": "Firstname_man",
+    "dc:description": "First name of immigrating male"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Lastname_man"
+    ],
+    "@id": "https://iisg.amsterdam/resource/Admissieregisters.csv/column/Lastname_man",
+    "name": "Lastname_man",
+    "propertyUrl": "admissie:vocab/Lastname_man",
+    "valueUrl": "admissie:code/Lastname_man/{Lastname_man}",
+    "dc:description": "Surname of immigrating male"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Birthplace_man"
+    ],
+    "@id": "https://iisg.amsterdam/resource/Admissieregisters.csv/column/Birthplace_man",
+    "name": "Birthplace_man",
+    "propertyUrl": "admissie:vocab/Birthplace_man",
+    "valueUrl": "admissie:code/Birthplace_man/{Birthplace_man}",
+    "dc:description": "Birthplace man"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Married"
+    ],
+    "@id": "https://iisg.amsterdam/resource/Admissieregisters.csv/column/Married",
+    "name": "Married",
+    "propertyUrl": "admissie:vocab/Married",
+    "valueUrl": "admissie:code/Married/{Married}",
+    "dc:description": "Married status"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "man_or_woman"
+    ],
+    "@id": "https://iisg.amsterdam/resource/Admissieregisters_geocoded.csv/column/man_or_woman",
+    "name": "man_or_woman",
+    "propertyUrl": "admissie:vocab/man_or_woman",
+    "dc:description": "principal immigrant male ==1 female ==2"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Fullname_woman"
+    ],
+    "@id": "https://iisg.amsterdam/resource/Admissieregisters.csv/column/Fullname_woman",
+    "name": "Fullname_woman",
+    "propertyUrl": "admissie:vocab/Fullname_woman",
+    "valueUrl": "admissie:code/Fullname_woman/{Fullname_woman}",
+    "dc:description": "Full name of immigrating woman (only recorded when immigrating without husband)"
+   },
+   {
+    "datatype": "integer",
+    "titles": [
+     "Children"
+    ],
+    "@id": "https://iisg.amsterdam/resource/Admissieregisters.csv/column/Children",
+    "name": "Children",
+    "propertyUrl": "admissie:vocab/Children",
+    "dc:description": "Number of recorded children",
+    "null": ["NA"]
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Occupation_man"
+    ],
+    "@id": "https://iisg.amsterdam/resource/Admissieregisters.csv/column/Occupation_man",
+    "name": "Occupation_man",
+    "propertyUrl": "admissie:vocab/Occupation_man",
+    "valueUrl": "admissie:code/Occupation_man/{Occupation_man}",
+    "dc:description": "Occupation of immigrating male"
+   },
+   {
+    "virtual": true,
+    "name": "Occupation_man",
+        "titles": [
+     "Occupation_man"
+    ],
+    "propertyUrl": "hsn:vocab/occupationalTitle",
+    "valueUrl": "hsn:occupation/{Occupation_man}"
+    },
+    {
+     "datatype": "string",
+     "titles": [
+      "Occupation_wife"
+     ],
+     "@id": "https://iisg.amsterdam/resource/Admissieregisters.csv/column/Occupation_wife",
+     "name": "Occupation_wife",
+     "propertyUrl": "admissie:vocab/Occupation_wife",
+     "valueUrl": "admissie:code/Occupation_wife/{Occupation_wife}",
+     "dc:description": "Occupation of wife"
+    },
+    {
+     "virtual": true,
+     "name": "Occupation_wife",
+         "titles": [
+      "Occupation_wife"
+     ],
+     "propertyUrl": "hsn:vocab/occupationalTitle",
+     "valueUrl": "hsn:occupation/{Occupation_wife}"
+     },
+     {
+      "datatype": "string",
       "titles": [
-   "Occupation_man"
-  ],
-  "propertyUrl": "hsn:vocab/occupationalTitle",
-  "valueUrl": "hsn:occupation/{Occupation_man}"
-  },
- {
-  "datatype": "string",
-  "titles": [
-   "Occupation_wife"
-  ],
-  "@id": "https://iisg.amsterdam/resource/Admissieregisters.csv/column/Occupation_wife",
-  "name": "Occupation_wife",
-  "propertyUrl": "admissie:vocab/Occupation_wife",
-  "valueUrl": "admissie:code/Occupation_wife/{Occupation_wife}",
-  "dc:description": "Occupation of wife"
- },
- {
-  "virtual": true,
-  "name": "Occupation_wife",
+       "Area_of_settlement"
+      ],
+      "@id": "https://iisg.amsterdam/resource/Admissieregisters.csv/column/Area_of_settlement",
+      "name": "Area_of_settlement",
+      "propertyUrl": "admissie:/vocab/Area_of_settlement",
+      "valueUrl": "admissie:code/Area_of_settlement/{Area_of_settlement}",
+      "dc:description": "Neighborhood of settlement in Haarlem"
+     },
+     {
+      "datatype": "integer",
       "titles": [
-   "Occupation_wife"
-  ],
-  "propertyUrl": "hsn:vocab/occupationalTitle",
-  "valueUrl": "hsn:occupation/{Occupation_wife}"
+       "Pictureno"
+      ],
+      "@id": "https://iisg.amsterdam/resource/Admissieregisters.csv/column/Pictureno",
+      "name": "Pictureno",
+      "propertyUrl": "admissie:/vocab/Pictureno",
+      "dc:description": "Reference to digital page number of source online"
+    },
+    {
+    "datatype": "string",
+    "titles": [
+     "lat"
+    ],
+    "@id": "https://iisg.amsterdam/resource/Admissieregisters_geocoded.csv/column/lat",
+    "name": "lat",
+    "propertyUrl": "admissie:vocab/lat",
+    "csvw:value": "{{lat| replace(',' ,'.')}}",
+    "dc:description": "latitude of Origin",
+    "null": ["NA"]
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "lon"
+    ],
+    "@id": "https://iisg.amsterdam/resource/Admissieregisters_geocoded.csv/column/lon",
+    "name": "lon",
+    "propertyUrl": "admissie:vocab/lon",
+    "csvw:value": "{{lon| replace(',' ,'.')}}",
+    "dc:description": "longitude of Origin",
+    "null": ["NA"]
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "loc_frmtd"
+    ],
+    "@id": "https://iisg.amsterdam/resource/Admissieregisters_geocoded.csv/column/loc_frmtd",
+    "name": "loc_frmtd",
+    "propertyUrl": "admissie:vocab/loc_frmtd",
+    "valueUrl": "admissie:code/loc_frmtd/{loc_frmtd}",
+    "dc:description": "Standardized Origin using Google geomatching API",
+    "null": ["NA"]
   },
- {
-  "datatype": "string",
-  "titles": [
-   "Area_of_settlement"
-  ],
-  "@id": "https://iisg.amsterdam/resource/Admissieregisters.csv/column/Area_of_settlement",
-  "name": "Area_of_settlement",
-  "propertyUrl": "admissie:/vocab/Area_of_settlement",
-  "valueUrl": "admissie:code/Area_of_settlement/{Area_of_settlement}",
-  "dc:description": "Neighborhood of settlement in Haarlem"
- },
- {
-  "datatype": "integer",
-  "titles": [
-   "Pictureno"
-  ],
-  "@id": "https://iisg.amsterdam/resource/Admissieregisters.csv/column/Pictureno",
-  "name": "Pictureno",
-  "propertyUrl": "admissie:/vocab/Pictureno",
-  "dc:description": "Reference to digital page number of source online"
-},
   {
-  "datatype": "string",
-  "titles": [
-   "lat"
-  ],
-  "@id": "https://iisg.amsterdam/resource/Admissieregisters_geocoded.csv/column/lat",
-  "name": "lat",
-  "propertyUrl": "admissie:vocab/lat",
-  "csvw:value": "{{lat| replace(',' ,'.')}}",
-  "dc:description": "latitude of Origin",
-  "null": ["NA"]
- },
- {
-  "datatype": "string",
-  "titles": [
-   "lon"
-  ],
-  "@id": "https://iisg.amsterdam/resource/Admissieregisters_geocoded.csv/column/lon",
-  "name": "lon",
-  "propertyUrl": "admissie:vocab/lon",
-  "csvw:value": "{{lon| replace(',' ,'.')}}",
-  "dc:description": "longitude of Origin",
-  "null": ["NA"]
- },
- {
-  "datatype": "string",
-  "titles": [
-   "loc_frmtd"
-  ],
-  "@id": "https://iisg.amsterdam/resource/Admissieregisters_geocoded.csv/column/loc_frmtd",
-  "name": "loc_frmtd",
-  "propertyUrl": "admissie:vocab/loc_frmtd",
-  "valueUrl": "admissie:code/loc_frmtd/{loc_frmtd}",
-  "dc:description": "Standardized Origin using Google geomatching API",
-  "null": ["NA"]
-},
-{
-  "virtual": true,
-  "titles": [
-   "lon"
-  ],
-  "name": "lon",
-  "datatype": "geosparql:wktLiteral",
-  "aboutUrl": "admissie:code/Origin/{Origin}",
-  "propertyUrl": "geosparql:asWKT",
-  "csvw:value": "{{'POINT(' + lon| replace(',' ,'.') + ' ' + lat| replace(',' ,'.') + ')'}}",
-  "null": ["NA"]
+    "virtual": true,
+    "titles": [
+     "lon"
+    ],
+    "name": "lon",
+    "datatype": "geosparql:wktLiteral",
+    "aboutUrl": "admissie:code/Origin/{Origin}",
+    "propertyUrl": "geosparql:asWKT",
+    "csvw:value": "{{'POINT(' + lon| replace(',' ,'.') + ' ' + lat| replace(',' ,'.') + ')'}}",
+    "null": ["NA"]
+    },
+  {
+    "virtual": true,
+    "aboutUrl": "admissie:code/Origin/{Origin}",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "geosparql:Geometry"
   },
-{
-  "virtual": true,
-  "aboutUrl": "admissie:code/Origin/{Origin}",
-  "propertyUrl": "rdf:type",
-  "valueUrl": "geosparql:Geometry"
-}
-]
-}
+   {
+    "datatype": "integer",
+    "titles": [
+     "dist_to_haarlem_rounded"
+    ],
+    "@id": "https://iisg.amsterdam/resource/Admissieregisters_geocoded.csv/column/dist_to_haarlem_rounded",
+    "name": "dist_to_haarlem_rounded",
+    "propertyUrl": "admissie:vocab/dist_to_haarlem_rounded",
+    "dc:description": "Distance between Origin and Haarlem in kilometers (as the crow flies)"
+   }
+  ]
+ }
 }
