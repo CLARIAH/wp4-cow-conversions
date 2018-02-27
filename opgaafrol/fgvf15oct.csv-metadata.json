@@ -1,0 +1,665 @@
+{
+ "dialect": {
+  "quoteChar": "\"", 
+  "delimiter": ",", 
+  "encoding": "windows-1252"
+ }, 
+ "dcat:keyword": [], 
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ }, 
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend", 
+  "schema:url": {
+   "@id": "http://datalegend.net"
+  }
+ }, 
+ "url": "fgvf15oct.csv", 
+ "@context": [
+  "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json", 
+  {
+   "@base": "https://iisg.amsterdam/resource/", 
+   "@language": "en"
+  }, 
+  {
+   "owl": "http://www.w3.org/2002/07/owl#", 
+   "dbo": "http://dbpedia.org/ontology/", 
+   "clioctr": "http://iisg.amsterdam/clio/country/", 
+   "hisclass": "http://iisg.amsterdam/hisclass/", 
+   "hisco-product": "http://iisg.amsterdam/hisco/product/", 
+   "ldp": "http://www.w3.org/ns/ldp#", 
+   "clio": "http://iisg.amsterdam/clio/", 
+   "occhisco": "http://iisg.amsterdam/napp/OCCHISCO/", 
+   "dbr": "http://dbpedia.org/resource/", 
+   "skos": "http://www.w3.org/2004/02/skos/core#", 
+   "xml": "http://www.w3.org/XML/1998/namespace/", 
+   "bibo": "http://purl.org/ontology/bibo/", 
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#", 
+   "prov": "http://www.w3.org/ns/prov#", 
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#", 
+   "napp-can91": "http://iisg.amsterdam/napp/dataset/canada1891/", 
+   "hiscam": "http://iisg.amsterdam/hiscam/", 
+   "dbpedia": "http://dbpedia.org/resource/", 
+   "np": "http://www.nanopub.org/nschema#", 
+   "canfam-auke": "http://iisg.amsterdam/canfam/auke/", 
+   "dcterms": "http://purl.org/dc/terms/", 
+   "schema": "http://schema.org/", 
+   "foaf": "http://xmlns.com/foaf/0.1/", 
+   "napp": "http://iisg.amsterdam/napp/", 
+   "sdv": "https://iisg.amsterdam/vocab/", 
+   "hisco": "http://iisg.amsterdam/hisco/", 
+   "sdp": "https://iisg.amsterdam/person/", 
+   "sdr": "https://iisg.amsterdam/", 
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#", 
+   "time": "http://www.w3.org/2006/time#", 
+   "hsn": "http://iisg.amsterdam/hsn2013a/", 
+   "dc": "http://purl.org/dc/terms/", 
+   "hisco-relation": "http://iisg.amsterdam/hisco/relation/", 
+   "hisco-status": "http://iisg.amsterdam/hisco/status/", 
+   "dbp": "http://dbpedia.org/property/", 
+   "clioprop": "http://iisg.amsterdam/clio/property/", 
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#", 
+   "csvw": "http://www.w3.org/ns/csvw#", 
+   "clioind": "http://iisg.amsterdam/clio/indicator/", 
+   "dc11": "http://purl.org/dc/elements/1.1/", 
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/", 
+   "napp-eng81": "http://iisg.amsterdam/napp/dataset/englandwales1881/", 
+   "canfam": "http://iisg.amsterdam/canfam/dataset/canada1901/", 
+   "napp-sct81": "http://iisg.amsterdam/napp/dataset/scotland1881/", 
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#", 
+   "qb": "http://purl.org/linked-data/cube#", 
+   "hisclass5": "http://iisg.amsterdam/hisclass5/", 
+   "xsd": "http://www.w3.org/2001/XMLSchema#", 
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#", 
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/"
+  }
+ ], 
+ "dc:title": "fgvf15oct.csv", 
+ "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv", 
+ "dc:modified": {
+  "@value": "2018-02-27", 
+  "@type": "xsd:date"
+ }, 
+ "tableSchema": {
+  "aboutUrl": "{_row}", 
+  "primaryKey": "id", 
+  "columns": [
+   {
+    "datatype": "string", 
+    "titles": [
+     "id"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/id", 
+    "name": "id", 
+    "dc:description": "id"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "year"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/year", 
+    "name": "year", 
+    "dc:description": "year"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "source"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/source", 
+    "name": "source", 
+    "dc:description": "source"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "nr"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/nr", 
+    "name": "nr", 
+    "dc:description": "nr"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "lastnamemen"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/lastnamemen", 
+    "name": "lastnamemen", 
+    "dc:description": "lastnamemen"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "firstnamemen"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/firstnamemen", 
+    "name": "firstnamemen", 
+    "dc:description": "firstnamemen"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "lastnamewomen"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/lastnamewomen", 
+    "name": "lastnamewomen", 
+    "dc:description": "lastnamewomen"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "firstnamewomen"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/firstnamewomen", 
+    "name": "firstnamewomen", 
+    "dc:description": "firstnamewomen"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "wid"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/wid", 
+    "name": "wid", 
+    "dc:description": "wid"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "old"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/old", 
+    "name": "old", 
+    "dc:description": "old"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "young"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/young", 
+    "name": "young", 
+    "dc:description": "young"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "question"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/question", 
+    "name": "question", 
+    "dc:description": "question"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "district"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/district", 
+    "name": "district", 
+    "dc:description": "district"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "districtdum"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/districtdum", 
+    "name": "districtdum", 
+    "dc:description": "districtdum"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "settlermen"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/settlermen", 
+    "name": "settlermen", 
+    "dc:description": "settlermen"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "settlerwomen"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/settlerwomen", 
+    "name": "settlerwomen", 
+    "dc:description": "settlerwomen"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "settlersons"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/settlersons", 
+    "name": "settlersons", 
+    "dc:description": "settlersons"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "settlerdaughters"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/settlerdaughters", 
+    "name": "settlerdaughters", 
+    "dc:description": "settlerdaughters"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "settlerchildren"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/settlerchildren", 
+    "name": "settlerchildren", 
+    "dc:description": "settlerchildren"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "settlers"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/settlers", 
+    "name": "settlers", 
+    "dc:description": "settlers"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "knechts"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/knechts", 
+    "name": "knechts", 
+    "dc:description": "knechts"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "khoemen"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/khoemen", 
+    "name": "khoemen", 
+    "dc:description": "khoemen"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "khoesons"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/khoesons", 
+    "name": "khoesons", 
+    "dc:description": "khoesons"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "khoemales"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/khoemales", 
+    "name": "khoemales", 
+    "dc:description": "khoemales"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "khoewomen"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/khoewomen", 
+    "name": "khoewomen", 
+    "dc:description": "khoewomen"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "khoedaughters"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/khoedaughters", 
+    "name": "khoedaughters", 
+    "dc:description": "khoedaughters"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "khoefemales"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/khoefemales", 
+    "name": "khoefemales", 
+    "dc:description": "khoefemales"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "khoe"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/khoe", 
+    "name": "khoe", 
+    "dc:description": "khoe"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "slavemen"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/slavemen", 
+    "name": "slavemen", 
+    "dc:description": "slavemen"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "slavesons"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/slavesons", 
+    "name": "slavesons", 
+    "dc:description": "slavesons"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "slavemales"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/slavemales", 
+    "name": "slavemales", 
+    "dc:description": "slavemales"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "slavewomen"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/slavewomen", 
+    "name": "slavewomen", 
+    "dc:description": "slavewomen"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "slavedaughters"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/slavedaughters", 
+    "name": "slavedaughters", 
+    "dc:description": "slavedaughters"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "slavefemales"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/slavefemales", 
+    "name": "slavefemales", 
+    "dc:description": "slavefemales"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "slaves"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/slaves", 
+    "name": "slaves", 
+    "dc:description": "slaves"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "horseswag"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/horseswag", 
+    "name": "horseswag", 
+    "dc:description": "horseswag"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "horsesbreed"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/horsesbreed", 
+    "name": "horsesbreed", 
+    "dc:description": "horsesbreed"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "horses"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/horses", 
+    "name": "horses", 
+    "dc:description": "horses"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "cattleox"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/cattleox", 
+    "name": "cattleox", 
+    "dc:description": "cattleox"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "cattlebreed"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/cattlebreed", 
+    "name": "cattlebreed", 
+    "dc:description": "cattlebreed"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "cattle"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/cattle", 
+    "name": "cattle", 
+    "dc:description": "cattle"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "sheephamels"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/sheephamels", 
+    "name": "sheephamels", 
+    "dc:description": "sheephamels"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "sheepbreed"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/sheepbreed", 
+    "name": "sheepbreed", 
+    "dc:description": "sheepbreed"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "sheepspanish"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/sheepspanish", 
+    "name": "sheepspanish", 
+    "dc:description": "sheepspanish"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "sheep"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/sheep", 
+    "name": "sheep", 
+    "dc:description": "sheep"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "donkeys"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/donkeys", 
+    "name": "donkeys", 
+    "dc:description": "donkeys"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "goats"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/goats", 
+    "name": "goats", 
+    "dc:description": "goats"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "pigs"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/pigs", 
+    "name": "pigs", 
+    "dc:description": "pigs"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "sownwheat"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/sownwheat", 
+    "name": "sownwheat", 
+    "dc:description": "sownwheat"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "sownbarley"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/sownbarley", 
+    "name": "sownbarley", 
+    "dc:description": "sownbarley"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "sownrye"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/sownrye", 
+    "name": "sownrye", 
+    "dc:description": "sownrye"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "sownoats"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/sownoats", 
+    "name": "sownoats", 
+    "dc:description": "sownoats"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "reapwheat"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/reapwheat", 
+    "name": "reapwheat", 
+    "dc:description": "reapwheat"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "reapbarley"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/reapbarley", 
+    "name": "reapbarley", 
+    "dc:description": "reapbarley"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "reaprye"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/reaprye", 
+    "name": "reaprye", 
+    "dc:description": "reaprye"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "reapoats"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/reapoats", 
+    "name": "reapoats", 
+    "dc:description": "reapoats"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "vines"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/vines", 
+    "name": "vines", 
+    "dc:description": "vines"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "wine"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/wine", 
+    "name": "wine", 
+    "dc:description": "wine"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "brandy"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/brandy", 
+    "name": "brandy", 
+    "dc:description": "brandy"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "waggons"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/waggons", 
+    "name": "waggons", 
+    "dc:description": "waggons"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "carts"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/carts", 
+    "name": "carts", 
+    "dc:description": "carts"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "deadeuro"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/deadeuro", 
+    "name": "deadeuro", 
+    "dc:description": "deadeuro"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "deadkhoe"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/deadkhoe", 
+    "name": "deadkhoe", 
+    "dc:description": "deadkhoe"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "deadslave"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct.csv/column/deadslave", 
+    "name": "deadslave", 
+    "dc:description": "deadslave"
+   }
+  ]
+ }
+}
