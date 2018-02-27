@@ -14,7 +14,7 @@
    "@id": "http://datalegend.org"
   }
  },
- "dc:author": {
+ "dc:creator": {
   "rdf:type": [
     {
       "@id": "foaf:Person"
@@ -27,7 +27,7 @@
   "foaf:mbox":{
 "@id": "mailto:auke.rijpma@gmail.com"
 }},
-"dc:author": {
+"dc:creator": {
   "rdf:type": [
     {
       "@id": "foaf:Person"
@@ -42,7 +42,7 @@
 }
 },
 "prov:wasDerivedFrom": [{
-      "dc:author": ["Eltjo Buringh"],
+      "dc:creator": ["Eltjo Buringh"],
       "@id": "foaf:Person",
       "dc:title": ["The Population of European Cities from 700 to 2000"],
       "foaf:mbox":{

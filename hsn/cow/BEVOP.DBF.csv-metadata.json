@@ -8,7 +8,7 @@
  "dc:license": {
   "@id": "http://opendefinition.org/licenses/cc-by/"
  },
-"dc:author": {
+"dc:creator": {
   "rdf:type": [
     {
       "@id": "foaf:Person"
@@ -18,7 +18,7 @@
     }
   ],
   "foaf:name": ["Auke Rijpma"]
-},"dc:author": {
+},"dc:creator": {
   "rdf:type": [
     {
       "@id": "foaf:Person"
@@ -37,7 +37,7 @@
       "@value": "Building life course datasets from population registers by the Historical Sample of the Netherlands (HSN)",
       "@lang": "en"
   },
-  "dc:author": ["Mandemakers, K."],
+  "dc:creator": ["Mandemakers, K."],
   "dc:publisher": "Edinburg UP",
   "dc:date": {"@value":"2006", "@type":"xsd:gYear"},
   "dc:isPartOf": ["http://www.euppublishing.com/toc/hac/14/1-2"]

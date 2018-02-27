@@ -72,7 +72,7 @@
          "@id": "http://datalegend.org"
       }
    },
-   "dc:author": {
+   "dc:creator": {
       "rdf:type": [
          {
             "@id": "foaf:Person"

@@ -14,7 +14,7 @@
    "@id": "http://datalegend.org"
   }
 },
-"dc:author": {
+"dc:creator": {
   "rdf:type": [
     {
       "@id": "foaf:Person"
@@ -27,7 +27,7 @@
   "foaf:mbox":{
 "@id": "mailto:auke.rijpma@gmail.com"
 }
-},"dc:author": {
+},"dc:creator": {
   "rdf:type": [
     {
       "@id": "foaf:Person"
@@ -49,7 +49,7 @@
       "@value": "From Baghdad to London: Unraveling Urban Development in Europe, the Middle East, and North Africa, 800–1800",
       "@lang": "en"
   },
-  "dc:author": ["M. Bosker","E. Buringh", "J.L. van Zanden"],
+  "dc:creator": ["M. Bosker","E. Buringh", "J.L. van Zanden"],
   "dc:publisher": ["mitpressjournals"],
   "dc:date": {"@value":"2013", "@type":"xsd:gYear"},
   "dc:identifier": ["http://dx.doi.org/10.1162/REST_a_00284"],

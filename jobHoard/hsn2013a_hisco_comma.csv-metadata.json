@@ -14,7 +14,7 @@
    "@id": "http://datalegend.net"
   }
  },
- "dc:author": [{
+ "dc:creator": [{
      "@id": "sdp:richard.zijdeman@gmail.com",
      "rdf:type": [{
          "@id": "foaf:Person"

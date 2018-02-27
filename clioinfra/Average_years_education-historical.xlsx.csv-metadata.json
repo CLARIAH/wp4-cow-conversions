@@ -15,7 +15,7 @@
   "dcat:keyword": [],
   "dc:title": ["Average Years of Education"],
   "url": ["Average_years_education-historical.xlsx.csv"],
-  "dc:author": {
+  "dc:creator": {
     "rdf:type": [
       {
         "@id": "foaf:Person"

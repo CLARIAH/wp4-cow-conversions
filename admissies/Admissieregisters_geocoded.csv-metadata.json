@@ -7,7 +7,7 @@
  "dcat:keyword": [],
  "dc:license": {
   "@id": "http://opendefinition.org/licenses/cc-by/"
- },"dc:author": {
+ },"dc:creator": {
   "rdf:type": [
     {
       "@id": "foaf:Person"

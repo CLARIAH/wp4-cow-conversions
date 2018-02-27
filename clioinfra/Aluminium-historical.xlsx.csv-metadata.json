@@ -12,7 +12,7 @@
     "dcat:keyword": [],
     "dc:title": "Aluminium Production",
     "url": "Aluminium-historical.xlsx.csv",
-    "dc:author": {
+    "dc:creator": {
         "rdf:type": [{
             "@id": "foaf:Person"
         }, {
