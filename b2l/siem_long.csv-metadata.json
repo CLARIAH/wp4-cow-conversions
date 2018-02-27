@@ -172,7 +172,7 @@
    "valueUrl": "sdr:resource/country/{country}"
    },
    {
-    "datatype": "string",
+    "datatype": "xsd:float",
     "titles": [
      "latitude"
     ],
@@ -182,7 +182,7 @@
     "dc:description": "Latitude"
    },
    {
-    "datatype": "string",
+    "datatype": "xsd:float",
         "titles": [
      "longitude"
     ],
