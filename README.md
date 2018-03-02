@@ -11,7 +11,7 @@ URI's used by IISG
 
 # dimension
 - https://iisg.amsterdam/<dataset\>/dimension/<dimension\>/<value\>
-- https://iisg/amsterdam/opgaafrollen/dimension/land/nederland
+- https://iisg.amsterdam/opgaafrollen/dimension/land/nederland
 
 # vocab
 - https://iisg.amsterdam/<dataset\>/vocab/\<term\>
