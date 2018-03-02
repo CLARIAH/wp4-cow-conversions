@@ -11,7 +11,7 @@
  "dc:publisher": {
   "schema:name": "CLARIAH Structured Data Hub - Datalegend", 
   "schema:url": {
-   "@id": "http://datalegend.org"
+   "@id": "http://datalegend.net"
   }
  }, 
  "dc:creator": {
@@ -50,23 +50,23 @@
  }],
  "url": "PKDYNAP.DBF.csv", 
  "@context": [
-  "http://www.w3.org/ns/csvw", 
+  "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json", 
   {
-   "@base": "http://data.socialhistory.org/resource/hsn/",
+   "@base": "https://iisg.amsterdam/hsn/",
    "@language": "en"
   }, 
   {
    "owl": "http://www.w3.org/2002/07/owl#", 
    "dbo": "http://dbpedia.org/ontology/", 
-   "clioctr": "http://data.socialhistory.org/resource/clio/country/", 
-   "hisclass": "http://data.socialhistory.org/resource/hisclass/", 
-   "hisco-product": "http://data.socialhistory.org/resource/hisco/product/", 
-   "hisco-entry": "http://data.socialhistory.org/resource/hisco/entry/",
-   "hsn": "http://data.socialhistory.org/resource/hsn/",
-   "hsnhisco": "http://data.socialhistory.org/resource/hsn2013a/",
+   "clioctr": "https://iisg.amsterdam/clio/country/", 
+   "hisclass": "https://iisg.amsterdam/hisclass/", 
+   "hisco-product": "https://iisg.amsterdam/hisco/product/", 
+   "hisco-entry": "https://iisg.amsterdam/hisco/entry/",
+   "hsn": "https://iisg.amsterdam/hsn/",
+   "hsnhisco": "https://iisg.amsterdam/hsn2013a/",
    "ldp": "http://www.w3.org/ns/ldp#", 
-   "clio": "http://data.socialhistory.org/resource/clio/", 
-   "occhisco": "http://data.socialhistory.org/resource/napp/OCCHISCO/", 
+   "clio": "https://iisg.amsterdam/clio/", 
+   "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/", 
    "dbr": "http://dbpedia.org/resource/", 
    "skos": "http://www.w3.org/2004/02/skos/core#", 
    "xml": "http://www.w3.org/XML/1998/namespace/", 
@@ -74,46 +74,46 @@
    "rdfs": "http://www.w3.org/2000/01/rdf-schema#", 
    "prov": "http://www.w3.org/ns/prov#", 
    "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#", 
-   "napp-can91": "http://data.socialhistory.org/resource/napp/dataset/canada1891/", 
-   "hiscam": "http://data.socialhistory.org/resource/hiscam/", 
+   "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/", 
+   "hiscam": "https://iisg.amsterdam/hiscam/", 
    "dbpedia": "http://dbpedia.org/resource/", 
    "np": "http://www.nanopub.org/nschema#", 
-   "canfam-auke": "http://data.socialhistory.org/resource/canfam/auke/", 
+   "canfam-auke": "https://iisg.amsterdam/canfam/auke/", 
    "dcterms": "http://purl.org/dc/terms/", 
    "schema": "http://schema.org/", 
    "foaf": "http://xmlns.com/foaf/0.1/", 
-   "napp": "http://data.socialhistory.org/resource/napp/", 
+   "napp": "https://iisg.amsterdam/napp/", 
    "sdv": "http://data.socialhistory.org/vocab/", 
-   "hisco": "http://data.socialhistory.org/resource/hisco/", 
-   "sdp": "http://data.socialhistory.org/resource/person/", 
-   "sdr": "http://data.socialhistory.org/resource/", 
+   "hisco": "https://iisg.amsterdam/hisco/", 
+   "sdp": "https://iisg.amsterdam/person/", 
+   "sdr": "https://iisg.amsterdam/", 
    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#", 
    "time": "http://www.w3.org/2006/time#", 
-   "hsn": "http://data.socialhistory.org/resource/hsn/",
-   "hsnhisco": "http://data.socialhistory.org/resource/hsn2013a/",
+   "hsn": "https://iisg.amsterdam/hsn/",
+   "hsnhisco": "https://iisg.amsterdam/hsn2013a/",
    "dc": "http://purl.org/dc/terms/", 
-   "hisco-relation": "http://data.socialhistory.org/resource/hisco/relation/", 
-   "hisco-status": "http://data.socialhistory.org/resource/hisco/status/", 
+   "hisco-relation": "https://iisg.amsterdam/hisco/relation/", 
+   "hisco-status": "https://iisg.amsterdam/hisco/status/", 
    "dbp": "http://dbpedia.org/property/", 
-   "clioprop": "http://data.socialhistory.org/resource/clio/property/", 
+   "clioprop": "https://iisg.amsterdam/clio/property/", 
    "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#", 
-   "csvw": "http://www.w3.org/ns/csvw#", 
-   "clioind": "http://data.socialhistory.org/resource/clio/indicator/", 
+   "csvw": "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json#", 
+   "clioind": "https://iisg.amsterdam/clio/indicator/", 
    "dc11": "http://purl.org/dc/elements/1.1/", 
    "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/", 
-   "napp-eng81": "http://data.socialhistory.org/resource/napp/dataset/englandwales1881/", 
-   "canfam": "http://data.socialhistory.org/resource/canfam/dataset/canada1901/", 
-   "napp-sct81": "http://data.socialhistory.org/resource/napp/dataset/scotland1881/", 
+   "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/", 
+   "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/", 
+   "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/", 
    "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#", 
    "qb": "http://purl.org/linked-data/cube#", 
-   "hisclass5": "http://data.socialhistory.org/resource/hisclass5/", 
+   "hisclass5": "https://iisg.amsterdam/hisclass5/", 
    "xsd": "http://www.w3.org/2001/XMLSchema#", 
    "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#", 
    "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/"
   }
  ], 
  "dc:title": "PKDYNAP.DBF.csv", 
- "@id": "http://data.socialhistory.org/resource/PKDYNAP.DBF.csv", 
+ "@id": "https://iisg.amsterdam/PKDYNAP.DBF.csv", 
  "dc:modified": {
   "@value": "2017-01-10", 
   "@type": "xsd:date"
@@ -127,7 +127,7 @@
     "titles": [
      "IDNR"
     ],
-    "@id": "http://data.socialhistory.org/resource/PKDYNAP.DBF.csv/column/IDNRP",
+    "@id": "https://iisg.amsterdam/PKDYNAP.DBF.csv/column/IDNRP",
     "name": "IDNR",
     "propertyUrl": "hsn:dimension/IDNR",
     "valueUrl": "hsn:code/IDNR/{IDNR}",
@@ -138,7 +138,7 @@
     "titles": [
      "FAMVBNR"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKDYNAP.DBF.csv/column/FAMVBNR", 
+    "@id": "https://iisg.amsterdam/PKDYNAP.DBF.csv/column/FAMVBNR", 
     "name": "FAMVBNR", 
     "propertyUrl": "hsn:dimension/FAMVBNR", 
     "dc:description": "Volgnummer familieverband per OP"
@@ -148,7 +148,7 @@
     "titles": [
      "FAMVPNR"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKDYNAP.DBF.csv/column/FAMVPNR", 
+    "@id": "https://iisg.amsterdam/PKDYNAP.DBF.csv/column/FAMVPNR", 
     "name": "FAMVPNR", 
     "propertyUrl": "hsn:dimension/FAMVPNR", 
     "dc:description": "Volgnummer persoon per familieverband"
@@ -158,7 +158,7 @@
     "titles": [
      "IDNRFMP"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKDYNAP.DBF.csv/column/IDNRFMP", 
+    "@id": "https://iisg.amsterdam/PKDYNAP.DBF.csv/column/IDNRFMP", 
     "name": "IDNRFMP", 
     "propertyUrl": "hsn:dimension/IDNRFMP", 
     "valueUrl": "hsn:code/IDNRFMP/{IDNRFMP}", 
@@ -197,7 +197,7 @@
     "titles": [
      "PERSNR"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKDYNAP.DBF.csv/column/PERSNR", 
+    "@id": "https://iisg.amsterdam/PKDYNAP.DBF.csv/column/PERSNR", 
     "name": "PERSNR", 
     "propertyUrl": "hsn:dimension/PERSNR", 
     "dc:description": "Identificatienummer persoon; deze variabele linkt de personen over de verschillende huishoudens voorzover behorende bij een bepaalde OP"
@@ -230,7 +230,7 @@
     "titles": [
      "DYNATYPE"
     ],
-    "@id": "http://data.socialhistory.org/resource/PKDYNAP.DBF.csv/column/DYNATYPE",
+    "@id": "https://iisg.amsterdam/PKDYNAP.DBF.csv/column/DYNATYPE",
     "name": "DYNATYPE",
     "propertyUrl": "hsn:dimension/DYNATYPE",
     "valueUrl": "hsn:code/DYNATYPE/{DYNATYPE}",
@@ -241,7 +241,7 @@
     "titles": [
      "DYNAVLGN"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKDYNAP.DBF.csv/column/DYNAVLGN", 
+    "@id": "https://iisg.amsterdam/PKDYNAP.DBF.csv/column/DYNAVLGN", 
     "name": "DYNAVLGN", 
     "propertyUrl": "hsn:dimension/DYNAVLGN", 
     "dc:description": "Nummer om een chronologische volgorde aan te geven, in het geval van beroep en godsdienst. Deze gegevens zijn op de PK namelijk niet gedateerd. De volgorde is zo goed mogelijk bepaald bij het invoeren van de PK op basis van de vermoedelijke volgorde van doorhalingen. Het eerste beroep of godsdienst kan normaliter op 1 jan. 1940 worden gedateerd. Na 1970 werden er in de regel geen beroepen meer bijgehouden op de PK's."
@@ -251,7 +251,7 @@
     "titles": [
      "DYNATEXT"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKDYNAP.DBF.csv/column/DYNATEXT", 
+    "@id": "https://iisg.amsterdam/PKDYNAP.DBF.csv/column/DYNATEXT", 
     "name": "DYNATEXT", 
     "propertyUrl": "hsn:dimension/DYNATEXT", 
     "dc:description": "Beschrijving dynamische code (uitleg van de variabele dynatype in woorden)"
@@ -336,7 +336,7 @@
     "titles": [
      "INGDAG"
     ],
-    "@id": "http://data.socialhistory.org/resource/PKDYNAP.DBF.csv/column/INGDAG",
+    "@id": "https://iisg.amsterdam/PKDYNAP.DBF.csv/column/INGDAG",
     "name": "INGDAG",
     "propertyUrl": "hsn:dimension/INGDAG",
     "null": ["-1", "-2", "-3", "-4"],
@@ -347,7 +347,7 @@
     "titles": [
      "INGMND"
     ],
-    "@id": "http://data.socialhistory.org/resource/PKDYNAP.DBF.csv/column/INGMND",
+    "@id": "https://iisg.amsterdam/PKDYNAP.DBF.csv/column/INGMND",
     "name": "INGMND",
     "propertyUrl": "hsn:dimension/INGMND",
     "null": ["-1", "-2", "-3", "-4"],
@@ -358,7 +358,7 @@
     "titles": [
      "INGJAR"
     ],
-    "@id": "http://data.socialhistory.org/resource/PKDYNAP.DBF.csv/column/INGJAR",
+    "@id": "https://iisg.amsterdam/PKDYNAP.DBF.csv/column/INGJAR",
     "name": "INGJAR",
     "propertyUrl": "hsn:dimension/INGJAR",
     "null": ["-1", "-2", "-3", "-4"],
@@ -369,7 +369,7 @@
     "titles": [
      "INGDAT"
     ],
-    "@id": "http://data.socialhistory.org/resource/PKDYNAP.DBF.csv/column/INGDAT",
+    "@id": "https://iisg.amsterdam/PKDYNAP.DBF.csv/column/INGDAT",
     "name": "INGDAT",
     "propertyUrl": "hsn:dimension/INGDAT",
     "null": ["-1", "-2", "-3", "-4"],
@@ -380,7 +380,7 @@
     "titles": [
      "DYNAINHD"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKDYNAP.DBF.csv/column/DYNAINHD", 
+    "@id": "https://iisg.amsterdam/PKDYNAP.DBF.csv/column/DYNAINHD", 
     "name": "DYNAINHD", 
     "propertyUrl": "hsn:dimension/DYNAINHD", 
     "dc:description": "Inhoud van het gegeven (afhankelijk van het dynatype, bijvoorbeeld de beroepstitel, de inhoud van de relatie etc.), beroep en plaatsnamen zijn niet gecodeerd, relaties, burgerlijke stand en kerkgenootschappen zijn wel gebouwd op basis van referentietabellen"
@@ -390,7 +390,7 @@
     "titles": [
      "RELEASE"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKDYNAP.DBF.csv/column/RELEASE", 
+    "@id": "https://iisg.amsterdam/PKDYNAP.DBF.csv/column/RELEASE", 
     "name": "RELEASE", 
     "propertyUrl": "hsn:dimension/RELEASE", 
     "dc:description": "RELEASE"

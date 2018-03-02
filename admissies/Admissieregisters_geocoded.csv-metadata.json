@@ -28,7 +28,7 @@
  "dc:publisher": {
   "schema:name": "CLARIAH Structured Data Hub - Datalegend",
   "schema:url": {
-   "@id": "http://datalegend.org"
+   "@id": "http://datalegend.net"
   }
  },
  "url": "Admissieregisters_geocoded.csv",
@@ -43,7 +43,7 @@
    "dbo": "http://dbpedia.org/ontology/",
    "clioctr": "https://iisg.amsterdam/clio/country/",
    "hisclass": "https://iisg.amsterdam/hisclass/",
-   "hisco-product": "http://iisg.amsterdam/hisco/product/",
+   "hisco-product": "https://iisg.amsterdam/hisco/product/",
    "ldp": "http://www.w3.org/ns/ldp#",
    "clio": "https://iisg.amsterdam/clio/",
    "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
@@ -74,10 +74,10 @@
    "hisco-relation": "https://iisg.amsterdam/hisco/relation/",
    "hisco-status": "https://iisg.amsterdam/hisco/status/",
    "dbp": "http://dbpedia.org/property/",
-   "clioprop": "http://iisg.amsterdam/clio/property/",
+   "clioprop": "https://iisg.amsterdam/clio/property/",
    "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
-   "csvw": "http://www.w3.org/ns/csvw#",
-   "clioind": "http://iisg.amsterdam/clio/indicator/",
+   "csvw": "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json#",
+   "clioind": "https://iisg.amsterdam/clio/indicator/",
    "dc11": "http://purl.org/dc/elements/1.1/",
    "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
    "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/",
@@ -85,7 +85,7 @@
    "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/",
    "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
    "qb": "http://purl.org/linked-data/cube#",
-   "hisclass5": "http://iisg.amsterdam/hisclass5/",
+   "hisclass5": "https://iisg.amsterdam/hisclass5/",
    "xsd": "http://www.w3.org/2001/XMLSchema#",
    "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
    "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/",

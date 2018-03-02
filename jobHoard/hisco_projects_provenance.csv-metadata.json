@@ -30,7 +30,7 @@
    "clioctr": "https://iisg.amsterdam/clio/country/",
    "clioind": "https://iisg.amsterdam/clio/indicator/",
    "clioprop": "https://iisg.amsterdam/clio/property/",
-   "csvw": "http://www.w3.org/ns/csvw#",
+   "csvw": "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json#",
    "dbo": "http://dbpedia.org/ontology/",
    "dbp": "http://dbpedia.org/property/",
    "dbpedia": "http://dbpedia.org/resource/",

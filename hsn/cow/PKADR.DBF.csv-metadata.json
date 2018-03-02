@@ -11,7 +11,7 @@
  "dc:publisher": {
   "schema:name": "CLARIAH Structured Data Hub - Datalegend", 
   "schema:url": {
-   "@id": "http://datalegend.org"
+   "@id": "http://datalegend.net"
   }
  }, 
  "dc:creator": {
@@ -50,21 +50,21 @@
 }],
  "url": "PKADR.DBF.csv", 
  "@context": [
-  "http://www.w3.org/ns/csvw", 
+  "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json", 
   {
-   "@base": "http://data.socialhistory.org/resource/", 
+   "@base": "https://iisg.amsterdam/", 
    "@language": "en"
   }, 
   {
    "owl": "http://www.w3.org/2002/07/owl#", 
    "dbo": "http://dbpedia.org/ontology/", 
-   "clioctr": "http://data.socialhistory.org/resource/clio/country/", 
-   "hisclass": "http://data.socialhistory.org/resource/hisclass/", 
-   "hisco-product": "http://data.socialhistory.org/resource/hisco/product/", 
-   "hisco-entry": "http://data.socialhistory.org/resource/hisco/entry/", 
+   "clioctr": "https://iisg.amsterdam/clio/country/", 
+   "hisclass": "https://iisg.amsterdam/hisclass/", 
+   "hisco-product": "https://iisg.amsterdam/hisco/product/", 
+   "hisco-entry": "https://iisg.amsterdam/hisco/entry/", 
    "ldp": "http://www.w3.org/ns/ldp#", 
-   "clio": "http://data.socialhistory.org/resource/clio/", 
-   "occhisco": "http://data.socialhistory.org/resource/napp/OCCHISCO/", 
+   "clio": "https://iisg.amsterdam/clio/", 
+   "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/", 
    "dbr": "http://dbpedia.org/resource/", 
    "skos": "http://www.w3.org/2004/02/skos/core#", 
    "xml": "http://www.w3.org/XML/1998/namespace/", 
@@ -72,46 +72,46 @@
    "rdfs": "http://www.w3.org/2000/01/rdf-schema#", 
    "prov": "http://www.w3.org/ns/prov#", 
    "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#", 
-   "napp-can91": "http://data.socialhistory.org/resource/napp/dataset/canada1891/", 
-   "hiscam": "http://data.socialhistory.org/resource/hiscam/", 
+   "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/", 
+   "hiscam": "https://iisg.amsterdam/hiscam/", 
    "dbpedia": "http://dbpedia.org/resource/", 
    "np": "http://www.nanopub.org/nschema#", 
-   "canfam-auke": "http://data.socialhistory.org/resource/canfam/auke/", 
+   "canfam-auke": "https://iisg.amsterdam/canfam/auke/", 
    "dcterms": "http://purl.org/dc/terms/", 
    "schema": "http://schema.org/", 
    "foaf": "http://xmlns.com/foaf/0.1/", 
-   "napp": "http://data.socialhistory.org/resource/napp/", 
+   "napp": "https://iisg.amsterdam/napp/", 
    "sdv": "http://data.socialhistory.org/vocab/", 
-   "hisco": "http://data.socialhistory.org/resource/hisco/", 
-   "sdp": "http://data.socialhistory.org/resource/person/", 
-   "sdr": "http://data.socialhistory.org/resource/", 
+   "hisco": "https://iisg.amsterdam/hisco/", 
+   "sdp": "https://iisg.amsterdam/person/", 
+   "sdr": "https://iisg.amsterdam/", 
    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#", 
    "time": "http://www.w3.org/2006/time#", 
-   "hsn": "http://data.socialhistory.org/resource/hsn2013a/", 
+   "hsn": "https://iisg.amsterdam/hsn2013a/", 
    "dc": "http://purl.org/dc/terms/", 
-   "hisco-relation": "http://data.socialhistory.org/resource/hisco/relation/", 
-   "hisco-status": "http://data.socialhistory.org/resource/hisco/status/", 
+   "hisco-relation": "https://iisg.amsterdam/hisco/relation/", 
+   "hisco-status": "https://iisg.amsterdam/hisco/status/", 
    "dbp": "http://dbpedia.org/property/", 
-   "clioprop": "http://data.socialhistory.org/resource/clio/property/", 
+   "clioprop": "https://iisg.amsterdam/clio/property/", 
    "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#", 
-   "csvw": "http://www.w3.org/ns/csvw#", 
-   "clioind": "http://data.socialhistory.org/resource/clio/indicator/", 
+   "csvw": "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json#", 
+   "clioind": "https://iisg.amsterdam/clio/indicator/", 
    "dc11": "http://purl.org/dc/elements/1.1/", 
    "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/", 
-   "napp-eng81": "http://data.socialhistory.org/resource/napp/dataset/englandwales1881/", 
-   "canfam": "http://data.socialhistory.org/resource/canfam/dataset/canada1901/", 
-   "napp-sct81": "http://data.socialhistory.org/resource/napp/dataset/scotland1881/", 
+   "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/", 
+   "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/", 
+   "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/", 
    "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#", 
    "qb": "http://purl.org/linked-data/cube#", 
-   "hisclass5": "http://data.socialhistory.org/resource/hisclass5/", 
+   "hisclass5": "https://iisg.amsterdam/hisclass5/", 
    "xsd": "http://www.w3.org/2001/XMLSchema#", 
    "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#", 
    "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/",
-   "hsn": "http://data.socialhistory.org/resource/hsn/"
+   "hsn": "https://iisg.amsterdam/hsn/"
   }
  ], 
  "dc:title": "PKADR.DBF.csv", 
- "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv", 
+ "@id": "https://iisg.amsterdam/PKADR.DBF.csv", 
  "dc:modified": {
   "@value": "2017-01-10", 
   "@type": "xsd:date"
@@ -125,7 +125,7 @@
     "titles": [
      "IDNR"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVSTATP.DBF.csv/column/IDNRP",
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/IDNRP",
     "name": "IDNR",
     "propertyUrl": "hsn:dimension/IDNR",
     "valueUrl": "hsn:code/IDNR/{IDNR}",
@@ -136,7 +136,7 @@
     "titles": [
      "FAMVBNR"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv/column/FAMVBNR", 
+    "@id": "https://iisg.amsterdam/PKADR.DBF.csv/column/FAMVBNR", 
     "name": "FAMVBNR", 
     "propertyUrl": "hsn:dimension/FAMVBNR", 
     "dc:description": "Volgnummer familieverband per OP"
@@ -146,7 +146,7 @@
     "titles": [
      "ADRESDAG"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv/column/ADRESDAG", 
+    "@id": "https://iisg.amsterdam/PKADR.DBF.csv/column/ADRESDAG", 
     "name": "ADRESDAG", 
     "propertyUrl": "hsn:dimension/ADRESDAG", 
     "null": ["-1", "-2", "-3", "-4", "32", "33", "61", "62"],
@@ -157,7 +157,7 @@
     "titles": [
      "ADRESMND"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv/column/ADRESMND", 
+    "@id": "https://iisg.amsterdam/PKADR.DBF.csv/column/ADRESMND", 
     "name": "ADRESMND", 
     "propertyUrl": "hsn:dimension/ADRESMND", 
     "null": ["-1", "-2", "-3", "-4"],
@@ -168,7 +168,7 @@
     "titles": [
      "ADRESJAR"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv/column/ADRESJAR", 
+    "@id": "https://iisg.amsterdam/PKADR.DBF.csv/column/ADRESJAR", 
     "name": "ADRESJAR", 
     "propertyUrl": "hsn:dimension/ADRESJAR", 
     "null": ["-1", "-2", "-3", "-4"],
@@ -179,7 +179,7 @@
     "titles": [
      "ADRESDAT"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv/column/ADRESDAT", 
+    "@id": "https://iisg.amsterdam/PKADR.DBF.csv/column/ADRESDAT", 
     "name": "ADRESDAT", 
     "propertyUrl": "hsn:dimension/ADRESDAT", 
     "null": ["-1", "-2", "-3", "-4"],
@@ -190,7 +190,7 @@
     "titles": [
      "IDNRFM"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv/column/IDNRFM", 
+    "@id": "https://iisg.amsterdam/PKADR.DBF.csv/column/IDNRFM", 
     "name": "IDNRFM", 
     "propertyUrl": "hsn:dimension/IDNRFM", 
     "valueUrl": "hsn:code/IDNRFM/{IDNRFM}", 
@@ -214,7 +214,7 @@
     "titles": [
      "ADRESWYZ"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv/column/ADRESWYZ", 
+    "@id": "https://iisg.amsterdam/PKADR.DBF.csv/column/ADRESWYZ", 
     "name": "ADRESWYZ", 
     "propertyUrl": "hsn:dimension/ADRESWYZ", 
     "valueUrl": "hsn:dimension/code/ADRESWYZ/{ADRESWYZ}", 
@@ -225,7 +225,7 @@
     "titles": [
      "ADRESOP"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv/column/ADRESOP", 
+    "@id": "https://iisg.amsterdam/PKADR.DBF.csv/column/ADRESOP", 
     "name": "ADRESOP", 
     "propertyUrl": "hsn:dimension/ADRESOP", 
     "valueUrl": "hsn:code/ADRESOP/{ADRESOP}", 
@@ -236,7 +236,7 @@
     "titles": [
      "STRAAT"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv/column/STRAAT", 
+    "@id": "https://iisg.amsterdam/PKADR.DBF.csv/column/STRAAT", 
     "name": "STRAAT", 
     "propertyUrl": "hsn:dimension/STRAAT", 
     "null": ["-1", "-2", "-3", "-4"],
@@ -247,7 +247,7 @@
     "titles": [
      "HUISNR"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv/column/HUISNR", 
+    "@id": "https://iisg.amsterdam/PKADR.DBF.csv/column/HUISNR", 
     "name": "HUISNR", 
     "propertyUrl": "hsn:dimension/HUISNR", 
     "null": ["-1", "-2", "-3", "-4"],
@@ -258,7 +258,7 @@
     "titles": [
      "HUISNRTV"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv/column/HUISNRTV", 
+    "@id": "https://iisg.amsterdam/PKADR.DBF.csv/column/HUISNRTV", 
     "name": "HUISNRTV", 
     "propertyUrl": "hsn:dimension/HUISNRTV", 
     "null": ["-1", "-2", "-3", "-4"],
@@ -269,7 +269,7 @@
     "titles": [
      "POSTKODE"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv/column/POSTKODE", 
+    "@id": "https://iisg.amsterdam/PKADR.DBF.csv/column/POSTKODE", 
     "name": "POSTKODE", 
     "propertyUrl": "hsn:dimension/POSTKODE", 
     "null": ["-1", "-2", "-3", "-4"],
@@ -280,7 +280,7 @@
     "titles": [
      "DEELGEM"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv/column/DEELGEM", 
+    "@id": "https://iisg.amsterdam/PKADR.DBF.csv/column/DEELGEM", 
     "name": "DEELGEM", 
     "propertyUrl": "hsn:dimension/DEELGEM", 
     "null": ["-1", "-2", "-3", "-4"],
@@ -291,7 +291,7 @@
     "titles": [
      "GEMEENTE"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv/column/GEMEENTE", 
+    "@id": "https://iisg.amsterdam/PKADR.DBF.csv/column/GEMEENTE", 
     "name": "GEMEENTE", 
     "propertyUrl": "hsn:dimension/GEMEENTE", 
     "valueUrl": "hsn:code/Gemeente/{{GEMEENTE|title()}}", 
@@ -302,7 +302,7 @@
     "titles": [
      "LAND"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv/column/LAND", 
+    "@id": "https://iisg.amsterdam/PKADR.DBF.csv/column/LAND", 
     "name": "LAND", 
     "propertyUrl": "hsn:dimension/LAND", 
     "dc:description": "Land van vestiging ['NL' is Nederland ]; niet automatisch te koppelen aan landenclassificatie"
@@ -312,7 +312,7 @@
     "titles": [
      "RELEASE"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKADR.DBF.csv/column/RELEASE", 
+    "@id": "https://iisg.amsterdam/PKADR.DBF.csv/column/RELEASE", 
     "name": "RELEASE", 
     "propertyUrl": "hsn:dimension/RELEASE", 
     "dc:description": "RELEASE"

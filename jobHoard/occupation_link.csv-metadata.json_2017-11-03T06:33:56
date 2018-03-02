@@ -115,7 +115,7 @@
             "hisco:": "https://iisg.amsterdam/hisco/",
             "hisco-code": "https://iisg.amsterdam/hisco/code/",
             "hisco-dimension": "https://iisg.amsterdam/hisco/dimension/",
-            "csvw": "<http://www.w3.org/ns/csvw#>",
+            "csvw": "<http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json#>",
             "": "https://iisg.amsterdam/hisco/jobHoard/",
             "sdmx-code": "<http://purl.org/linked-data/sdmx/2009/code#>"
         }

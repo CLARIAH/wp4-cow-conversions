@@ -11,7 +11,7 @@
  "dc:publisher": {
   "schema:name": "CLARIAH Structured Data Hub - Datalegend",
   "schema:url": {
-   "@id": "http://datalegend.org"
+   "@id": "http://datalegend.net"
   }
 },
 "dc:creator": {
@@ -50,21 +50,21 @@
  }],
  "url": "BEVHUISH.DBF.csv",
  "@context": [
-  "http://www.w3.org/ns/csvw",
+  "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json",
   {
-   "@base": "http://data.socialhistory.org/resource/hsn/",
+   "@base": "https://iisg.amsterdam/hsn/",
    "@language": "nl"
   },
   {
    "owl": "http://www.w3.org/2002/07/owl#",
    "dbo": "http://dbpedia.org/ontology/",
-   "clioctr": "http://data.socialhistory.org/resource/clio/country/",
-   "hisclass": "http://data.socialhistory.org/resource/hisclass/",
-   "hisco-product": "http://data.socialhistory.org/resource/hisco/product/",
-   "hisco-entry": "http://data.socialhistory.org/resource/hisco/entry/",
+   "clioctr": "https://iisg.amsterdam/clio/country/",
+   "hisclass": "https://iisg.amsterdam/hisclass/",
+   "hisco-product": "https://iisg.amsterdam/hisco/product/",
+   "hisco-entry": "https://iisg.amsterdam/hisco/entry/",
    "ldp": "http://www.w3.org/ns/ldp#",
-   "clio": "http://data.socialhistory.org/resource/clio/",
-   "occhisco": "http://data.socialhistory.org/resource/napp/OCCHISCO/",
+   "clio": "https://iisg.amsterdam/clio/",
+   "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
    "dbr": "http://dbpedia.org/resource/",
    "skos": "http://www.w3.org/2004/02/skos/core#",
    "xml": "http://www.w3.org/XML/1998/namespace/",
@@ -72,46 +72,46 @@
    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
    "prov": "http://www.w3.org/ns/prov#",
    "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
-   "napp-can91": "http://data.socialhistory.org/resource/napp/dataset/canada1891/",
-   "hiscam": "http://data.socialhistory.org/resource/hiscam/",
+   "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/",
+   "hiscam": "https://iisg.amsterdam/hiscam/",
    "dbpedia": "http://dbpedia.org/resource/",
    "np": "http://www.nanopub.org/nschema#",
-   "canfam-auke": "http://data.socialhistory.org/resource/canfam/auke/",
+   "canfam-auke": "https://iisg.amsterdam/canfam/auke/",
    "dcterms": "http://purl.org/dc/terms/",
    "schema": "http://schema.org/",
    "foaf": "http://xmlns.com/foaf/0.1/",
-   "napp": "http://data.socialhistory.org/resource/napp/",
+   "napp": "https://iisg.amsterdam/napp/",
    "sdv": "http://data.socialhistory.org/vocab/",
-   "hisco": "http://data.socialhistory.org/resource/hisco/",
-   "sdp": "http://data.socialhistory.org/resource/person/",
-   "sdr": "http://data.socialhistory.org/resource/",
+   "hisco": "https://iisg.amsterdam/hisco/",
+   "sdp": "https://iisg.amsterdam/person/",
+   "sdr": "https://iisg.amsterdam/",
    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
    "time": "http://www.w3.org/2006/time#",
-   "hsn": "http://data.socialhistory.org/resource/hsn/",
-   "hsnhisco": "http://data.socialhistory.org/resource/hsn2013a/",
+   "hsn": "https://iisg.amsterdam/hsn/",
+   "hsnhisco": "https://iisg.amsterdam/hsn2013a/",
    "dc": "http://purl.org/dc/terms/",
-   "hisco-relation": "http://data.socialhistory.org/resource/hisco/relation/",
-   "hisco-status": "http://data.socialhistory.org/resource/hisco/status/",
+   "hisco-relation": "https://iisg.amsterdam/hisco/relation/",
+   "hisco-status": "https://iisg.amsterdam/hisco/status/",
    "dbp": "http://dbpedia.org/property/",
-   "clioprop": "http://data.socialhistory.org/resource/clio/property/",
+   "clioprop": "https://iisg.amsterdam/clio/property/",
    "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
-   "csvw": "http://www.w3.org/ns/csvw#",
-   "clioind": "http://data.socialhistory.org/resource/clio/indicator/",
+   "csvw": "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json#",
+   "clioind": "https://iisg.amsterdam/clio/indicator/",
    "dc11": "http://purl.org/dc/elements/1.1/",
    "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
-   "napp-eng81": "http://data.socialhistory.org/resource/napp/dataset/englandwales1881/",
-   "canfam": "http://data.socialhistory.org/resource/canfam/dataset/canada1901/",
-   "napp-sct81": "http://data.socialhistory.org/resource/napp/dataset/scotland1881/",
+   "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/",
+   "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/",
+   "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/",
    "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
    "qb": "http://purl.org/linked-data/cube#",
-   "hisclass5": "http://data.socialhistory.org/resource/hisclass5/",
+   "hisclass5": "https://iisg.amsterdam/hisclass5/",
    "xsd": "http://www.w3.org/2001/XMLSchema#",
    "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
    "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/"
   }
  ],
  "dc:title": "BEVHUISH.DBF.csv",
- "@id": "http://data.socialhistory.org/resource/BEVHUISH.DBF.csv",
+ "@id": "https://iisg.amsterdam/BEVHUISH.DBF.csv",
  "dc:modified": {
   "@value": "2017-01-10",
   "@type": "xsd:date"
@@ -125,7 +125,7 @@
     "titles": [
      "IDNR"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVSTATP.DBF.csv/column/IDNRP",
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/IDNRP",
     "name": "IDNR",
     "propertyUrl": "hsn:dimension/IDNR",
     "valueUrl": "hsn:code/IDNR/{IDNR}",
@@ -136,7 +136,7 @@
     "titles": [
      "HUISHNR"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVDYNAP.DBF.csv/column/HUISHNR",
+    "@id": "https://iisg.amsterdam/BEVDYNAP.DBF.csv/column/HUISHNR",
     "name": "HUISHNR",
     "propertyUrl": "hsn:dimension/HUISHNR",
     "dc:description": "Volgnummer huishouden per OP"
@@ -146,7 +146,7 @@
     "titles": [
      "IDNRHS"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVSTATP.DBF.csv/column/IDNRHS",
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/IDNRHS",
     "name": "IDNRHS",
     "propertyUrl": "hsn:dimension/IDNRHS",
     "valueUrl": "hsn:code/IDNRHS/{IDNRHS}",
@@ -183,7 +183,7 @@
     "titles": [
      "LINKNR"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVHUISH.DBF.csv/column/LINKNR",
+    "@id": "https://iisg.amsterdam/BEVHUISH.DBF.csv/column/LINKNR",
     "name": "LINKNR",
     "dc:description": "Sleutel waarmee de huishoudens van verschillende onderzoekspersonen aan elkaar kunnen worden gekoppeld, de sleutel verwijst naar linknr in de tabel LKxxxyyy.dbf"
    },
@@ -192,7 +192,7 @@
     "titles": [
      "ORGHSHNR"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVHUISH.DBF.csv/column/ORGHSHNR",
+    "@id": "https://iisg.amsterdam/BEVHUISH.DBF.csv/column/ORGHSHNR",
     "name": "ORGHSHNR",
     "dc:description": "Nummer om oorspronkelijke huishoudens te verbinden met daaraan gerelateerde huishoudens"
    },
@@ -201,7 +201,7 @@
     "titles": [
      "OBSDAG"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVHUISH.DBF.csv/column/OBSDAG",
+    "@id": "https://iisg.amsterdam/BEVHUISH.DBF.csv/column/OBSDAG",
     "name": "OBSDAG",
     "dc:description": "Dag start observatie"
    },
@@ -210,7 +210,7 @@
     "titles": [
      "OBSMND"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVHUISH.DBF.csv/column/OBSMND",
+    "@id": "https://iisg.amsterdam/BEVHUISH.DBF.csv/column/OBSMND",
     "name": "OBSMND",
     "dc:description": "Maand start observatie"
    },
@@ -219,7 +219,7 @@
     "titles": [
      "OBSJAR"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVHUISH.DBF.csv/column/OBSJAR",
+    "@id": "https://iisg.amsterdam/BEVHUISH.DBF.csv/column/OBSJAR",
     "name": "OBSJAR",
     "dc:description": "Jaar start observatie"
    },
@@ -228,7 +228,7 @@
     "titles": [
      "OBSDAT"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVHUISH.DBF.csv/column/OBSDAT",
+    "@id": "https://iisg.amsterdam/BEVHUISH.DBF.csv/column/OBSDAT",
     "name": "OBSDAT",
     "dc:description": "Datum start observatie als datumveld"
    },
@@ -237,7 +237,7 @@
     "titles": [
      "OBEDAG"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVHUISH.DBF.csv/column/OBEDAG",
+    "@id": "https://iisg.amsterdam/BEVHUISH.DBF.csv/column/OBEDAG",
     "name": "OBEDAG",
     "dc:description": "Dag einde observatie"
    },
@@ -246,7 +246,7 @@
     "titles": [
      "OBEMND"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVHUISH.DBF.csv/column/OBEMND",
+    "@id": "https://iisg.amsterdam/BEVHUISH.DBF.csv/column/OBEMND",
     "name": "OBEMND",
     "dc:description": "Maand einde observatie"
    },
@@ -255,7 +255,7 @@
     "titles": [
      "OBEJAR"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVHUISH.DBF.csv/column/OBEJAR",
+    "@id": "https://iisg.amsterdam/BEVHUISH.DBF.csv/column/OBEJAR",
     "name": "OBEJAR",
     "dc:description": "Dag einde observatie"
    },
@@ -264,7 +264,7 @@
     "titles": [
      "OBEDAT"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVHUISH.DBF.csv/column/OBEDAT",
+    "@id": "https://iisg.amsterdam/BEVHUISH.DBF.csv/column/OBEDAT",
     "name": "OBEDAT",
     "dc:description": "Datum einde observatie als datumveld"
    },
@@ -273,7 +273,7 @@
     "titles": [
      "RELEASE"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVADRES.DBF.csv/column/RELEASE",
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/RELEASE",
     "name": "RELEASE",
     "propertyUrl": "hsn:dimension/RELEASE",
     "valueUrl":"hsn:RELEASE/{RELEASE}",
@@ -284,7 +284,7 @@
     "titles": [
      "DATUMCOR"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVDYNAP.DBF.csv/column/DATUMCOR",
+    "@id": "https://iisg.amsterdam/BEVDYNAP.DBF.csv/column/DATUMCOR",
     "name": "DATUMCOR",
     "propertyUrl": "hsn:dimension/DATUMCOR",
     "dc:description": "Datum (mm/dd/jj) evt. handmatige correctie van enig gegeven op de record, door de gebruiker in te vullen"

@@ -11,7 +11,7 @@
  "dc:publisher": {
   "schema:name": "CLARIAH Structured Data Hub - Datalegend", 
   "schema:url": {
-   "@id": "http://datalegend.org"
+   "@id": "http://datalegend.net"
   }
  }, 
  "dc:creator": {
@@ -50,21 +50,21 @@
  }],
  "url": "PKSTATP.DBF.csv", 
  "@context": [
-  "http://www.w3.org/ns/csvw", 
+  "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json", 
   {
-   "@base": "http://data.socialhistory.org/resource/hsn/", 
+   "@base": "https://iisg.amsterdam/hsn/", 
    "@language": "en"
   }, 
   {
    "owl": "http://www.w3.org/2002/07/owl#", 
    "dbo": "http://dbpedia.org/ontology/", 
-   "clioctr": "http://data.socialhistory.org/resource/clio/country/", 
-   "hisclass": "http://data.socialhistory.org/resource/hisclass/", 
-   "hisco-product": "http://data.socialhistory.org/resource/hisco/product/", 
-   "hisco-entry": "http://data.socialhistory.org/resource/hisco/entry/", 
+   "clioctr": "https://iisg.amsterdam/clio/country/", 
+   "hisclass": "https://iisg.amsterdam/hisclass/", 
+   "hisco-product": "https://iisg.amsterdam/hisco/product/", 
+   "hisco-entry": "https://iisg.amsterdam/hisco/entry/", 
    "ldp": "http://www.w3.org/ns/ldp#", 
-   "clio": "http://data.socialhistory.org/resource/clio/", 
-   "occhisco": "http://data.socialhistory.org/resource/napp/OCCHISCO/", 
+   "clio": "https://iisg.amsterdam/clio/", 
+   "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/", 
    "dbr": "http://dbpedia.org/resource/", 
    "skos": "http://www.w3.org/2004/02/skos/core#", 
    "xml": "http://www.w3.org/XML/1998/namespace/", 
@@ -72,46 +72,46 @@
    "rdfs": "http://www.w3.org/2000/01/rdf-schema#", 
    "prov": "http://www.w3.org/ns/prov#", 
    "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#", 
-   "napp-can91": "http://data.socialhistory.org/resource/napp/dataset/canada1891/", 
-   "hiscam": "http://data.socialhistory.org/resource/hiscam/", 
+   "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/", 
+   "hiscam": "https://iisg.amsterdam/hiscam/", 
    "dbpedia": "http://dbpedia.org/resource/", 
    "np": "http://www.nanopub.org/nschema#", 
-   "canfam-auke": "http://data.socialhistory.org/resource/canfam/auke/", 
+   "canfam-auke": "https://iisg.amsterdam/canfam/auke/", 
    "dcterms": "http://purl.org/dc/terms/", 
    "schema": "http://schema.org/", 
    "foaf": "http://xmlns.com/foaf/0.1/", 
-   "napp": "http://data.socialhistory.org/resource/napp/", 
+   "napp": "https://iisg.amsterdam/napp/", 
    "sdv": "http://data.socialhistory.org/vocab/", 
-   "hisco": "http://data.socialhistory.org/resource/hisco/", 
-   "sdp": "http://data.socialhistory.org/resource/person/", 
-   "sdr": "http://data.socialhistory.org/resource/", 
+   "hisco": "https://iisg.amsterdam/hisco/", 
+   "sdp": "https://iisg.amsterdam/person/", 
+   "sdr": "https://iisg.amsterdam/", 
    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#", 
    "time": "http://www.w3.org/2006/time#", 
-   "hsn": "http://data.socialhistory.org/resource/hsn/",
-   "hsnhisco": "http://data.socialhistory.org/resource/hsn2013a/",
+   "hsn": "https://iisg.amsterdam/hsn/",
+   "hsnhisco": "https://iisg.amsterdam/hsn2013a/",
    "dc": "http://purl.org/dc/terms/", 
-   "hisco-relation": "http://data.socialhistory.org/resource/hisco/relation/", 
-   "hisco-status": "http://data.socialhistory.org/resource/hisco/status/", 
+   "hisco-relation": "https://iisg.amsterdam/hisco/relation/", 
+   "hisco-status": "https://iisg.amsterdam/hisco/status/", 
    "dbp": "http://dbpedia.org/property/", 
-   "clioprop": "http://data.socialhistory.org/resource/clio/property/", 
+   "clioprop": "https://iisg.amsterdam/clio/property/", 
    "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#", 
-   "csvw": "http://www.w3.org/ns/csvw#", 
-   "clioind": "http://data.socialhistory.org/resource/clio/indicator/", 
+   "csvw": "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json#", 
+   "clioind": "https://iisg.amsterdam/clio/indicator/", 
    "dc11": "http://purl.org/dc/elements/1.1/", 
    "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/", 
-   "napp-eng81": "http://data.socialhistory.org/resource/napp/dataset/englandwales1881/", 
-   "canfam": "http://data.socialhistory.org/resource/canfam/dataset/canada1901/", 
-   "napp-sct81": "http://data.socialhistory.org/resource/napp/dataset/scotland1881/", 
+   "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/", 
+   "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/", 
+   "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/", 
    "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#", 
    "qb": "http://purl.org/linked-data/cube#", 
-   "hisclass5": "http://data.socialhistory.org/resource/hisclass5/", 
+   "hisclass5": "https://iisg.amsterdam/hisclass5/", 
    "xsd": "http://www.w3.org/2001/XMLSchema#", 
    "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#", 
    "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/"
   }
  ], 
  "dc:title": "PKSTATP.DBF.csv", 
- "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv", 
+ "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv", 
  "dc:modified": {
   "@value": "2017-01-10", 
   "@type": "xsd:date"
@@ -125,7 +125,7 @@
     "titles": [
      "IDNR"
     ],
-    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/IDNRP",
+    "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv/column/IDNRP",
     "name": "IDNR",
     "propertyUrl": "hsn:dimension/IDNR",
     "valueUrl": "hsn:code/IDNR/{IDNR}",
@@ -136,7 +136,7 @@
     "titles": [
      "FAMVBNR"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/FAMVBNR", 
+    "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv/column/FAMVBNR", 
     "name": "FAMVBNR", 
     "propertyUrl": "hsn:dimension/FAMVBNR", 
     "dc:description": "Volgnummer familieverband per OP"
@@ -146,7 +146,7 @@
     "titles": [
      "FAMVPNR"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/FAMVPNR", 
+    "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv/column/FAMVPNR", 
     "name": "FAMVPNR", 
     "propertyUrl": "hsn:dimension/FAMVPNR", 
     "dc:description": "Volgnummer persoon per familieverband"
@@ -156,7 +156,7 @@
     "titles": [
      "IDNRFMP"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/IDNRFMP", 
+    "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv/column/IDNRFMP", 
     "name": "IDNRFMP", 
     "propertyUrl": "hsn:dimension/IDNRFMP", 
     "valueUrl": "hsn:code/IDNRFMP/{IDNRFMP}", 
@@ -167,7 +167,7 @@
     "titles": [
      "IDNRFM"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/IDNRFM", 
+    "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv/column/IDNRFM", 
     "name": "IDNRFM", 
     "propertyUrl": "hsn:dimension/IDNRFM", 
     "valueUrl": "hsn:code/IDNRFM/{IDNRFM}", 
@@ -206,7 +206,7 @@
     "titles": [
      "LINKNR"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/LINKNR", 
+    "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv/column/LINKNR", 
     "name": "LINKNR", 
     "propertyUrl": "hsn:dimension/LINKNR", 
     "dc:description": "Sleutel waarmee de families van verschillende onderzoekspersonen aan elkaar kunnen worden gekoppeld, de sleutel verwijst naar het veld linknr in het bestand LINKxxxx.dbf. De invulling van deze variabele is optioneel, zie verder de beschrijving van linknr bij het bestand PKSTATP.dbf (handleiding output bevolkingsregister"
@@ -216,7 +216,7 @@
     "titles": [
      "PERSNR"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/PERSNR", 
+    "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv/column/PERSNR", 
     "name": "PERSNR", 
     "propertyUrl": "hsn:dimension/PERSNR", 
     "dc:description": "Identificatienummer persoon; deze variabele linkt de personen over de verschillende huishoudens voorzover behorende bij een bepaalde OP"
@@ -249,7 +249,7 @@
     "titles": [
      "OPERSNR"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/OPERSNR", 
+    "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv/column/OPERSNR", 
     "name": "OPERSNR", 
     "propertyUrl": "hsn:dimension/OPERSNR", 
     "dc:description": "Overkoepelend identificatienummer, deze variabele linkt de identificatienummers van de personen die behoren bij de verschillende OP's. De invulling van deze variabele is optioneel. Het gaat hierbij dus om een nieuw identificatienummer voor elke persoon. Om deze variabele te kunnen invullen, dient eerst het linknr in alle tabellen van de output van het bevolkingsregister te zijn ingevuld, zie verder de beschrijving van dit veld bij het bestand PKSTATP.dbf (handleiding output bevolkingsregister)."
@@ -259,7 +259,7 @@
     "titles": [
      "INSDAG"
     ],
-    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/INSDAG",
+    "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv/column/INSDAG",
     "name": "INSDAG",
     "propertyUrl": "hsn:dimension/INSDAG",
     "null": ["-1", "-2", "-3", "-4"],
@@ -270,7 +270,7 @@
     "titles": [
      "INSMND"
     ],
-    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/INSMND",
+    "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv/column/INSMND",
     "name": "INSMND",
     "propertyUrl": "hsn:dimension/INSMND",
     "null": ["-1", "-2", "-3", "-4"],
@@ -281,7 +281,7 @@
     "titles": [
      "INSJAR"
     ],
-    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/INSJAR",
+    "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv/column/INSJAR",
     "name": "INSJAR",
     "propertyUrl": "hsn:dimension/INSJAR",
     "null": ["-1", "-2", "-3", "-4"],
@@ -292,7 +292,7 @@
     "titles": [
      "INSDAT"
     ],
-    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/INSDAT",
+    "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv/column/INSDAT",
     "name": "INSDAT",
     "propertyUrl": "hsn:dimension/INSDAT",
     "null": ["-1", "-2", "-3", "-4"],
@@ -303,7 +303,7 @@
     "titles": [
      "UITDAG"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/UITDAG", 
+    "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv/column/UITDAG", 
     "name": "UITDAG", 
     "propertyUrl": "hsn:dimension/UITDAG", 
     "null": ["-1", "-2", "-3", "-4"],
@@ -314,7 +314,7 @@
     "titles": [
      "UITMND"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/UITMND", 
+    "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv/column/UITMND", 
     "name": "UITMND", 
     "propertyUrl": "hsn:dimension/UITMND", 
     "null": ["-1", "-2", "-3", "-4"],
@@ -325,7 +325,7 @@
     "titles": [
      "UITJAR"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/UITJAR", 
+    "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv/column/UITJAR", 
     "name": "UITJAR", 
     "propertyUrl": "hsn:dimension/UITJAR", 
     "null": ["-1", "-2", "-3", "-4"],
@@ -336,7 +336,7 @@
     "titles": [
      "UITDAT"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/UITDAT", 
+    "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv/column/UITDAT", 
     "name": "UITDAT", 
     "propertyUrl": "hsn:dimension/UITDAT", 
     "null": ["-1", "-2", "-3", "-4"],
@@ -347,7 +347,7 @@
     "titles": [
      "OP"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/OP", 
+    "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv/column/OP", 
     "name": "OP", 
     "propertyUrl": "hsn:dimension/OP", 
     "valueUrl": "hsn:code/OP/{OP}", 
@@ -381,7 +381,7 @@
     "titles": [
      "FUNCTIE"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/FUNCTIE", 
+    "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv/column/FUNCTIE", 
     "name": "FUNCTIE", 
     "propertyUrl": "hsn:dimension/FUNCTIE", 
     "valueUrl": "hsn:code/FUNCTIE/{FUNCTIE}",
@@ -392,7 +392,7 @@
     "titles": [
      "ANAAM"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/ANAAM", 
+    "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv/column/ANAAM", 
     "name": "ANAAM", 
     "propertyUrl": "hsn:dimension/ANAAM", 
     "dc:description": "Achternaam (evt. voorvoegsel na komma)"
@@ -402,7 +402,7 @@
     "titles": [
      "VNAAM"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/VNAAM", 
+    "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv/column/VNAAM", 
     "name": "VNAAM", 
     "propertyUrl": "hsn:dimension/VNAAM", 
     "dc:description": "Voornamen (gescheiden door spatie)"
@@ -412,7 +412,7 @@
     "titles": [
      "GESLACHT"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/GESLACHT", 
+    "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv/column/GESLACHT", 
     "name": "GESLACHT", 
     "propertyUrl": "hsn:dimension/GESLACHT", 
     "valueUrl": "hsn:code/GESLACHT/{GESLACHT}", 
@@ -423,7 +423,7 @@
     "titles": [
      "GEBDAG"
     ],
-    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/GEBDAG",
+    "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv/column/GEBDAG",
     "name": "GEBDAG",
     "propertyUrl": "hsn:dimension/GEBDAG",
     "null": ["-1", "-2", "-3", "-4"],
@@ -434,7 +434,7 @@
     "titles": [
      "GEBMND"
     ],
-    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/GEBMND",
+    "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv/column/GEBMND",
     "name": "GEBMND",
     "propertyUrl": "hsn:dimension/GEBMND",
     "null": ["-1", "-2", "-3", "-4"],
@@ -445,7 +445,7 @@
     "titles": [
      "GEBJAR"
     ],
-    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/GEBJAR",
+    "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv/column/GEBJAR",
     "name": "GEBJAR",
     "propertyUrl": "hsn:dimension/GEBJAR",
     "null": ["-1", "-2", "-3", "-4"],
@@ -456,7 +456,7 @@
     "titles": [
      "GEBDAT"
     ],
-    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/GEBDAT",
+    "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv/column/GEBDAT",
     "name": "GEBDAT",
     "propertyUrl": "hsn:dimension/GEBDAT",
     "null": ["-1", "-2", "-3", "-4"],
@@ -467,7 +467,7 @@
     "titles": [
      "GEBGEM"
     ],
-    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/GEBGEM",
+    "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv/column/GEBGEM",
     "name": "GEBGEM",
     "propertyUrl": "hsn:dimension/GEBGEM",
     "valueUrl": "hsn:code/GEBGEM/{GEBGEM}",
@@ -480,7 +480,7 @@
     "valueUrl": "hsn:code/Gemeenten/{GEBGEM}"
    },
       {
-  "valueUrl": "http://data.socialhistory.org/resource/clio/Netherlands/1880/1945",
+  "valueUrl": "https://iisg.amsterdam/clio/Netherlands/1880/1945",
   "propertyUrl": "sdmx-dimension:refArea",
   "virtual": true
     },
@@ -489,7 +489,7 @@
     "titles": [
      "OVLDAG"
     ],
-    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/OVLDAG",
+    "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv/column/OVLDAG",
     "name": "OVLDAG",
     "propertyUrl": "hsn:dimension/OVLDAG",
     "null": ["-1", "-2", "-3", "-4"],
@@ -500,7 +500,7 @@
     "titles": [
      "OVLMND"
     ],
-    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/OVLMND",
+    "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv/column/OVLMND",
     "name": "OVLMND",
     "propertyUrl": "hsn:dimension/OVLMND",
     "null": ["-1", "-2", "-3", "-4"],
@@ -511,7 +511,7 @@
     "titles": [
      "OVLJAR"
     ],
-    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/OVLJAR",
+    "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv/column/OVLJAR",
     "name": "OVLJAR",
     "propertyUrl": "hsn:dimension/OVLJAR",
     "null": ["-1", "-2", "-3", "-4"],
@@ -522,7 +522,7 @@
     "titles": [
      "OVLDAT"
     ],
-    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/OVLDAT",
+    "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv/column/OVLDAT",
     "name": "OVLDAT",
     "propertyUrl": "hsn:dimension/OVLDAT",
     "null": ["-1", "-2", "-3", "-4"],
@@ -533,7 +533,7 @@
     "titles": [
      "OVLGEM"
     ],
-    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/OVLGEM",
+    "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv/column/OVLGEM",
     "name": "OVLGEM",
     "propertyUrl": "hsn:dimension/OVLGEM",
     "valueUrl": "hsn:code/OVLGEM/{OVLGEM}",
@@ -550,7 +550,7 @@
     "titles": [
      "RELEASE"
     ], 
-    "@id": "http://data.socialhistory.org/resource/PKSTATP.DBF.csv/column/RELEASE", 
+    "@id": "https://iisg.amsterdam/PKSTATP.DBF.csv/column/RELEASE", 
     "name": "RELEASE", 
     "propertyUrl": "hsn:dimension/RELEASE", 
     "dc:description": "RELEASE"

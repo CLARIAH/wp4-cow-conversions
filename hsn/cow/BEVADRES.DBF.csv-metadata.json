@@ -11,7 +11,7 @@
  "dc:publisher": {
   "schema:name": "CLARIAH Structured Data Hub - Datalegend",
   "schema:url": {
-   "@id": "http://datalegend.org"
+   "@id": "http://datalegend.net"
   }
 },
 "dc:creator": {
@@ -50,21 +50,21 @@
 }],
  "url": "BEVADRES.DBF.csv",
  "@context": [
-  "http://www.w3.org/ns/csvw",
+  "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json",
   {
-   "@base": "http://data.socialhistory.org/resource/hsn/",
+   "@base": "https://iisg.amsterdam/hsn/",
    "@language": "nl"
   },
   {
    "owl": "http://www.w3.org/2002/07/owl#",
    "dbo": "http://dbpedia.org/ontology/",
-   "clioctr": "http://data.socialhistory.org/resource/clio/country/",
-   "hisclass": "http://data.socialhistory.org/resource/hisclass/",
-   "hisco-product": "http://data.socialhistory.org/resource/hisco/product/",
-   "hisco-entry": "http://data.socialhistory.org/resource/hisco/entry/",
+   "clioctr": "https://iisg.amsterdam/clio/country/",
+   "hisclass": "https://iisg.amsterdam/hisclass/",
+   "hisco-product": "https://iisg.amsterdam/hisco/product/",
+   "hisco-entry": "https://iisg.amsterdam/hisco/entry/",
    "ldp": "http://www.w3.org/ns/ldp#",
-   "clio": "http://data.socialhistory.org/resource/clio/",
-   "occhisco": "http://data.socialhistory.org/resource/napp/OCCHISCO/",
+   "clio": "https://iisg.amsterdam/clio/",
+   "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
    "dbr": "http://dbpedia.org/resource/",
    "skos": "http://www.w3.org/2004/02/skos/core#",
    "xml": "http://www.w3.org/XML/1998/namespace/",
@@ -72,45 +72,45 @@
    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
    "prov": "http://www.w3.org/ns/prov#",
    "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
-   "napp-can91": "http://data.socialhistory.org/resource/napp/dataset/canada1891/",
-   "hiscam": "http://data.socialhistory.org/resource/hiscam/",
+   "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/",
+   "hiscam": "https://iisg.amsterdam/hiscam/",
    "dbpedia": "http://dbpedia.org/resource/",
    "np": "http://www.nanopub.org/nschema#",
-   "canfam-auke": "http://data.socialhistory.org/resource/canfam/auke/",
+   "canfam-auke": "https://iisg.amsterdam/canfam/auke/",
    "dcterms": "http://purl.org/dc/terms/",
    "schema": "http://schema.org/",
    "foaf": "http://xmlns.com/foaf/0.1/",
-   "napp": "http://data.socialhistory.org/resource/napp/",
+   "napp": "https://iisg.amsterdam/napp/",
    "sdv": "http://data.socialhistory.org/vocab/",
-   "hisco": "http://data.socialhistory.org/resource/hisco/",
-   "sdp": "http://data.socialhistory.org/resource/person/",
-   "sdr": "http://data.socialhistory.org/resource/",
+   "hisco": "https://iisg.amsterdam/hisco/",
+   "sdp": "https://iisg.amsterdam/person/",
+   "sdr": "https://iisg.amsterdam/",
    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
    "time": "http://www.w3.org/2006/time#",
-   "hsn": "http://data.socialhistory.org/resource/hsn/",
+   "hsn": "https://iisg.amsterdam/hsn/",
    "dc": "http://purl.org/dc/terms/",
-   "hisco-relation": "http://data.socialhistory.org/resource/hisco/relation/",
-   "hisco-status": "http://data.socialhistory.org/resource/hisco/status/",
+   "hisco-relation": "https://iisg.amsterdam/hisco/relation/",
+   "hisco-status": "https://iisg.amsterdam/hisco/status/",
    "dbp": "http://dbpedia.org/property/",
-   "clioprop": "http://data.socialhistory.org/resource/clio/property/",
+   "clioprop": "https://iisg.amsterdam/clio/property/",
    "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
-   "csvw": "http://www.w3.org/ns/csvw#",
-   "clioind": "http://data.socialhistory.org/resource/clio/indicator/",
+   "csvw": "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json#",
+   "clioind": "https://iisg.amsterdam/clio/indicator/",
    "dc11": "http://purl.org/dc/elements/1.1/",
    "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
-   "napp-eng81": "http://data.socialhistory.org/resource/napp/dataset/englandwales1881/",
-   "canfam": "http://data.socialhistory.org/resource/canfam/dataset/canada1901/",
-   "napp-sct81": "http://data.socialhistory.org/resource/napp/dataset/scotland1881/",
+   "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/",
+   "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/",
+   "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/",
    "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
    "qb": "http://purl.org/linked-data/cube#",
-   "hisclass5": "http://data.socialhistory.org/resource/hisclass5/",
+   "hisclass5": "https://iisg.amsterdam/hisclass5/",
    "xsd": "http://www.w3.org/2001/XMLSchema#",
    "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
    "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/"
   }
  ],
  "dc:title": "BEVADRES.DBF.csv",
- "@id": "http://data.socialhistory.org/resource/BEVADRES.DBF.csv",
+ "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv",
  "dc:modified": {
   "@value": "2017-01-10",
   "@type": "xsd:date"
@@ -125,7 +125,7 @@
     "titles": [
      "HUISHNR"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVADRES.DBF.csv/column/HUISHNR",
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/HUISHNR",
     "name": "HUISHNR",
     "propertyUrl": "hsn:dimension/HUISHNR",
     "dc:description": "Volgnummer huishouden per OP"
@@ -135,7 +135,7 @@
     "titles": [
      "IDNR"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVSTATP.DBF.csv/column/IDNR",
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/IDNR",
     "name": "IDNR",
     "propertyUrl": "hsn:dimension/IDNR",
     "valueUrl": "hsn:code/IDNR/{IDNR}",
@@ -146,7 +146,7 @@
     "titles": [
      "IDNRHS"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVSTATP.DBF.csv/column/IDNRHSP",
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/IDNRHSP",
     "name": "IDNRHS",
     "propertyUrl": "hsn:dimension/IDNRHS",
     "valueUrl": "hsn:code/IDNRHS/{IDNRHS}",
@@ -183,7 +183,7 @@
     "titles": [
      "VERSIE"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVADRES.DBF.csv/column/VERSIE",
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/VERSIE",
     "name": "VERSIE",
     "propertyUrl": "hsn:dimension/VERSIE",
     "dc:description": "Ingevoerd met versie 4.02 of hoger, indien gevuld met de letters ‘NW’, anders leeg"
@@ -193,7 +193,7 @@
     "titles": [
      "ADRESDAG"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVADRES.DBF.csv/column/ADRESDAG",
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/ADRESDAG",
     "name": "ADRESDAG",
     "propertyUrl": "hsn:dimension/ADRESDAG",
     "null": ["-1", "-2", "-3", "-4", "32", "33", "61", "62"],
@@ -204,7 +204,7 @@
     "titles": [
      "ADRESMND"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVADRES.DBF.csv/column/ADRESMND",
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/ADRESMND",
     "name": "ADRESMND",
     "propertyUrl": "hsn:dimension/ADRESMND",
     "null": ["-1", "-2", "-3", "-4"],
@@ -215,7 +215,7 @@
     "titles": [
      "ADRESJAR"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVADRES.DBF.csv/column/ADRESJAR",
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/ADRESJAR",
     "name": "ADRESJAR",
     "propertyUrl": "hsn:dimension/ADRESJAR",
     "null": ["-1", "-2", "-3", "-4"],
@@ -226,7 +226,7 @@
     "titles": [
      "ADRESDAT"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVADRES.DBF.csv/column/ADRESDAT",
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/ADRESDAT",
     "name": "ADRESDAT",
     "propertyUrl": "hsn:dimension/ADRESDAT",
     "null": ["-1", "-2", "-3", "-4"],
@@ -237,7 +237,7 @@
     "titles": [
      "ADRESVLG"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVADRES.DBF.csv/column/ADRESVLG",
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/ADRESVLG",
     "name": "ADRESVLG",
     "propertyUrl": "hsn:dimension/ADRESVLG",
     "dc:description": "Nummer voor de chronologische volgorde van het adres (per huishouden)"
@@ -247,7 +247,7 @@
     "titles": [
      "ADUITDAG"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVADRES.DBF.csv/column/ADUITDAG",
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/ADUITDAG",
     "name": "ADUITDAG",
     "propertyUrl": "hsn:dimension/ADUITDAG",
     "null": ["-1", "-2", "-3", "-4"],
@@ -258,7 +258,7 @@
     "titles": [
      "ADUITMND"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVADRES.DBF.csv/column/ADUITMND",
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/ADUITMND",
     "name": "ADUITMND",
     "propertyUrl": "hsn:dimension/ADUITMND",
     "null": ["-1", "-2", "-3", "-4"],
@@ -269,7 +269,7 @@
     "titles": [
      "ADUITJAR"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVADRES.DBF.csv/column/ADUITJAR",
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/ADUITJAR",
     "name": "ADUITJAR",
     "propertyUrl": "hsn:dimension/ADUITJAR",
     "null": ["-1", "-2", "-3", "-4"],
@@ -280,7 +280,7 @@
     "titles": [
      "ADUITDAT"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVADRES.DBF.csv/column/ADUITDAT",
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/ADUITDAT",
     "name": "ADUITDAT",
     "propertyUrl": "hsn:dimension/ADUITDAT",
     "null": ["-1", "-2", "-3", "-4"],
@@ -291,7 +291,7 @@
     "titles": [
      "PERSNR"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVADRES.DBF.csv/column/PERSNR",
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/PERSNR",
     "name": "PERSNR",
     "propertyUrl": "hsn:dimension/PERSNR",
     "dc:description": "Indien in dit veld een '0' is ingevuld heeft het adres betrekking op het gehele huishouden. In andere gevallen heeft het adres slechts betrekking op een bepaalde persoon in het onderhavige huishouden en verwijst het nummer naar de waarde op het veld persnr in bevstatp van de record van deze persoon. "
@@ -310,7 +310,7 @@
     "titles": [
      "STRAAT"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVADRES.DBF.csv/column/STRAAT",
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/STRAAT",
     "name": "STRAAT",
     "propertyUrl": "hsn:dimension/STRAAT",
     "dc:description": "Naam van de straat"
@@ -320,7 +320,7 @@
     "titles": [
      "HUISNR"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVADRES.DBF.csv/column/HUISNR",
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/HUISNR",
     "name": "HUISNR",
     "propertyUrl": "hsn:dimension/HUISNR",
     "dc:description": "Huisnummer"
@@ -330,7 +330,7 @@
     "titles": [
      "HUISNRTV"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVADRES.DBF.csv/column/HUISNRTV",
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/HUISNRTV",
     "name": "HUISNRTV",
     "propertyUrl": "hsn:dimension/HUISNRTV",
     "dc:description": "Eventuele toevoeging aan het huisnummer"
@@ -340,7 +340,7 @@
     "titles": [
      "WIJK"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVADRES.DBF.csv/column/WIJK",
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/WIJK",
     "name": "WIJK",
     "propertyUrl": "hsn:dimension/WIJK",
     "dc:description": "Letter, nummer of naam van de wijk, veelal voorafgegaan door de term 'wijk'"
@@ -350,7 +350,7 @@
     "titles": [
      "WIJKHSNR"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVADRES.DBF.csv/column/WIJKHSNR",
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/WIJKHSNR",
     "name": "WIJKHSNR",
     "propertyUrl": "hsn:dimension/WIJKHSNR",
     "dc:description": "Huisnummer in de wijk of deelgemeente, alleen gebruikt als  het veld wijk of deelgem ook zijn gevuld"
@@ -360,7 +360,7 @@
     "titles": [
      "WIJKHSTV"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVADRES.DBF.csv/column/WIJKHSTV",
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/WIJKHSTV",
     "name": "WIJKHSTV",
     "propertyUrl": "hsn:dimension/WIJKHSTV",
     "dc:description": "Eventuele toevoeging aan het huisnummer in de wijk, zie verder aldaar"
@@ -370,7 +370,7 @@
     "titles": [
      "VERNUM"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVADRES.DBF.csv/column/VERNUM",
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/VERNUM",
     "name": "VERNUM",
     "propertyUrl": "hsn:dimension/VERNUM",
     "valueUrl": "hsn:code/VERNUM/{VERNUM}",
@@ -381,7 +381,7 @@
     "titles": [
      "KOSTBAAS"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVADRES.DBF.csv/column/KOSTBAAS",
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/KOSTBAAS",
     "name": "KOSTBAAS",
     "propertyUrl": "hsn:dimension/KOSTBAAS",
     "dc:description": "Standaard worden door de HSN in het geval van inwoning van de HSN-onderzoekspersoon als een niet-verwante ouder dan twaalf jaar, alleen de naam en gegevens van de kostbaas of werkgever overgenomen"
@@ -391,7 +391,7 @@
     "titles": [
      "GESTICHT"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVADRES.DBF.csv/column/GESTICHT",
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/GESTICHT",
     "name": "GESTICHT",
     "propertyUrl": "hsn:dimension/GESTICHT",
     "dc:description": "Naam van de instelling waarin de persoon verbleef"
@@ -401,7 +401,7 @@
     "titles": [
      "BOOT"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVADRES.DBF.csv/column/BOOT",
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/BOOT",
     "name": "BOOT",
     "propertyUrl": "hsn:dimension/BOOT",
     "dc:description": "Het adres kan ook een woonboot of een schip betreffen, hier naam van de boot"
@@ -411,7 +411,7 @@
     "titles": [
      "LIGPLAATS"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVADRES.DBF.csv/column/LIGPLAATS",
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/LIGPLAATS",
     "name": "LIGPLAATS",
     "propertyUrl": "hsn:dimension/LIGPLAATS",
     "dc:description": "Ligplaats van de boot, dit wordt lang niet altijd vermeld. In het geval van een ligplaats bij een bepaalde straat is dit vermeld onder de straatnaam"
@@ -421,7 +421,7 @@
     "titles": [
      "DEELGEM"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVADRES.DBF.csv/column/DEELGEM",
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/DEELGEM",
     "name": "DEELGEM",
     "propertyUrl": "hsn:dimension/DEELGEM",
     "dc:description": "Eventuele deelgemeente of locatie binnen plaats van vestiging"
@@ -431,7 +431,7 @@
     "titles": [
      "GEMEENTE"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVADRES.DBF.csv/column/GEMEENTE",
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/GEMEENTE",
     "name": "GEMEENTE",
     "propertyUrl": "hsn:dimension/GEMEENTE",
     "valueUrl": "hsn:code/Gemeente/{GEMEENTE}",
@@ -443,7 +443,7 @@
     "valueUrl": "hsn:code/Gemeente/{GEMEENTE}"
    },
   {
-    "valueUrl": "http://data.socialhistory.org/resource/clio/Netherlands/1880/1945",
+    "valueUrl": "https://iisg.amsterdam/clio/Netherlands/1880/1945",
     "propertyUrl": "sdmx-dimension:refArea",
     "virtual": true
   },
@@ -452,7 +452,7 @@
     "titles": [
      "RELEASE"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVADRES.DBF.csv/column/RELEASE",
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/RELEASE",
     "name": "RELEASE",
     "propertyUrl": "hsn:dimension/RELEASE",
     "valueUrl":"hsn:RELEASE/{RELEASE}",
@@ -463,7 +463,7 @@
     "titles": [
      "DATUMCOR"
     ],
-    "@id": "http://data.socialhistory.org/resource/BEVADRES.DBF.csv/column/DATUMCOR",
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/DATUMCOR",
     "name": "DATUMCOR",
     "propertyUrl": "hsn:dimension/DATUMCOR",
     "dc:description": "Datum evt. handmatige correctie van enig gegeven op de record, door de gebruiker in te vullen"
