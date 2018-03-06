@@ -116,7 +116,8 @@
    "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
    "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/",
    "geosparql": "http://www.opengis.net/ont/geosparql#",
-   "B2L": "https://iisg.amsterdam/B2L/"
+   "B2L": "https://iisg.amsterdam/B2L/",
+   "siem": "https://iisg.amsterdam/siem/"
   }
  ],
  "dc:title": "B2L.csv",
@@ -856,7 +857,7 @@
     "@id": "https://iisg.amsterdam/resource/B2L.csv/column/city_safe",
     "name": "city_safe",
     "propertyUrl": "B2L:vocab/cityid",
-    "dc:description": "city identifier",
+    "dc:description": "city identifier created from short city name and rounded latitude and longitude",
     "valueUrl": "B2L:code/cityid/{{city_safe + latitude|int|string + '_' + longitude|int|string}}"
    }
   ]
