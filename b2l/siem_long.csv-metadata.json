@@ -106,9 +106,10 @@
    "hisclass5": "https://iisg.amsterdam/hisclass5/",
    "xsd": "http://www.w3.org/2001/XMLSchema#",
    "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
-   "siem": "https://iisg.amsterdam/siem/",
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/",
    "geosparql": "http://www.opengis.net/ont/geosparql#",
-   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/"
+   "B2L": "https://iisg.amsterdam/B2L/",
+   "siem": "https://iisg.amsterdam/siem/"
   }
  ],
  "dc:title": "siem_long.csv",
