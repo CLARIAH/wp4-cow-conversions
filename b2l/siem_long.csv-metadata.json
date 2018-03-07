@@ -303,7 +303,7 @@
     "name": "city_safe",
     "propertyUrl": "siem:vocab/cityid",
     "dc:description": "city identifier created from short city name and rounded latitude and longitude",
-    "valueUrl": "siem:code/cityid/{{city + latitude|int|string + '_' + longitude|int|string}}"
+    "valueUrl": "siem:code/cityid/{{city|lower + latitude|int|string + '_' + longitude|int|string}}"
    }
   ]
  }

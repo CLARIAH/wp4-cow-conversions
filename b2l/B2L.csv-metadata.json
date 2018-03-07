@@ -858,7 +858,7 @@
     "name": "city_safe",
     "propertyUrl": "B2L:vocab/cityid",
     "dc:description": "city identifier created from short city name and rounded latitude and longitude",
-    "valueUrl": "B2L:code/cityid/{{city_safe + latitude|int|string + '_' + longitude|int|string}}"
+    "valueUrl": "B2L:code/cityid/{{city_safe|lower + latitude|int|string + '_' + longitude|int|string}}"
    }
   ]
  }
