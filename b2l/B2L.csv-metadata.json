@@ -102,7 +102,7 @@
    "dbp": "http://dbpedia.org/property/",
    "clioprop": "https://iisg.amsterdam/clio/property/",
    "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
-   "csvw": "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json#",
+   "csvw": "http://www.w3.org/ns/csvw#",
    "clioind": "https://iisg.amsterdam/clio/indicator/",
    "dc11": "http://purl.org/dc/elements/1.1/",
    "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",

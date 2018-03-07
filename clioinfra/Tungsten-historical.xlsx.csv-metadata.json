@@ -14,7 +14,7 @@
             "clioctr": "http://data.socialhistory.org/ns/resource/clio/country/",
             "clioind": "http://data.socialhistory.org/ns/resource/clio/indicator/",
             "clioprop": "http://data.socialhistory.org/ns/resource/clio/property/",
-            "csvw": "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json#",
+            "csvw": "http://www.w3.org/ns/csvw#",
             "dbpedia": "http://dbpedia.org/resource/",
             "dc": "http://purl.org/dc/terms/",
             "dc11": "http://purl.org/dc/elements/1.1/",
