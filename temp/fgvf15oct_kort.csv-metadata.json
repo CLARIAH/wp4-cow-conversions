@@ -1,0 +1,679 @@
+{
+ "dialect": {
+  "quoteChar": "\"", 
+  "delimiter": ",", 
+  "encoding": "ascii"
+ }, 
+ "dcat:keyword": [], 
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ }, 
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend", 
+  "schema:url": {
+   "@id": "http://datalegend.net"
+  }
+ }, 
+ "dc:creator": {
+"rdf:type": [
+{
+"@id": "foaf:Person"
+},
+{
+"@id": "prov:Person"
+}
+],
+"foaf:name": ["Bram van den Hout"],
+"foaf:mbox": {
+"@id": "mailto:bram.van.den.hout@iisg.nl"
+}
+},
+ "url": "fgvf15oct_kort.csv", 
+ "@context": [
+  "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json", 
+  {
+   "@base": "https://iisg.amsterdam/", 
+   "@language": "en"
+  }, 
+  {
+   "owl": "http://www.w3.org/2002/07/owl#", 
+   "dbo": "http://dbpedia.org/ontology/", 
+   "clioctr": "http://iisg.amsterdam/clio/country/", 
+   "hisclass": "http://iisg.amsterdam/hisclass/", 
+   "hisco-product": "http://iisg.amsterdam/hisco/product/", 
+   "ldp": "http://www.w3.org/ns/ldp#", 
+   "clio": "http://iisg.amsterdam/clio/", 
+   "occhisco": "http://iisg.amsterdam/napp/OCCHISCO/", 
+   "dbr": "http://dbpedia.org/resource/", 
+   "skos": "http://www.w3.org/2004/02/skos/core#", 
+   "xml": "http://www.w3.org/XML/1998/namespace/", 
+   "bibo": "http://purl.org/ontology/bibo/", 
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#", 
+   "prov": "http://www.w3.org/ns/prov#", 
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#", 
+   "napp-can91": "http://iisg.amsterdam/napp/dataset/canada1891/", 
+   "hiscam": "http://iisg.amsterdam/hiscam/", 
+   "dbpedia": "http://dbpedia.org/resource/", 
+   "np": "http://www.nanopub.org/nschema#", 
+   "canfam-auke": "http://iisg.amsterdam/canfam/auke/", 
+   "dcterms": "http://purl.org/dc/terms/", 
+   "schema": "http://schema.org/", 
+   "foaf": "http://xmlns.com/foaf/0.1/", 
+   "napp": "http://iisg.amsterdam/napp/", 
+   "sdv": "https://iisg.amsterdam/vocab/", 
+   "hisco": "http://iisg.amsterdam/hisco/", 
+   "sdp": "https://iisg.amsterdam/person/", 
+   "sdr": "https://iisg.amsterdam/", 
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#", 
+   "time": "http://www.w3.org/2006/time#", 
+   "hsn": "http://iisg.amsterdam/hsn2013a/", 
+   "dc": "http://purl.org/dc/terms/", 
+   "hisco-relation": "http://iisg.amsterdam/hisco/relation/", 
+   "hisco-status": "http://iisg.amsterdam/hisco/status/", 
+   "dbp": "http://dbpedia.org/property/", 
+   "clioprop": "http://iisg.amsterdam/clio/property/", 
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#", 
+   "csvw": "http://www.w3.org/ns/csvw#", 
+   "clioind": "http://iisg.amsterdam/clio/indicator/", 
+   "dc11": "http://purl.org/dc/elements/1.1/", 
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/", 
+   "napp-eng81": "http://iisg.amsterdam/napp/dataset/englandwales1881/", 
+   "canfam": "http://iisg.amsterdam/canfam/dataset/canada1901/", 
+   "napp-sct81": "http://iisg.amsterdam/napp/dataset/scotland1881/", 
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#", 
+   "qb": "http://purl.org/linked-data/cube#", 
+   "hisclass5": "http://iisg.amsterdam/hisclass5/", 
+   "xsd": "http://www.w3.org/2001/XMLSchema#", 
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#", 
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/"
+  }
+ ], 
+ "dc:title": "fgvf15oct_kort.csv", 
+ "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv", 
+ "dc:modified": {
+  "@value": "2018-03-05", 
+  "@type": "xsd:date"
+ }, 
+ "tableSchema": {
+  "aboutUrl": "id/{id}", 
+  "primaryKey": "id", 
+  "columns": [
+   {
+    "datatype": "string", 
+    "titles": [
+     "id"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/id", 
+    "name": "id", 
+    "dc:description": "id"
+   }, 
+   {
+    "datatype": "xsd:gYear", 
+    "titles": [
+     "year"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/year", 
+    "name": "year", 
+    "dc:description": "Year of recording"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "source"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/source", 
+    "name": "source", 
+    "dc:description": "source"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "nr"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/nr", 
+    "name": "nr", 
+    "dc:description": "nr"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "lastnamemen"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/lastnamemen", 
+    "name": "lastnamemen", 
+    "dc:description": "Surname of the men"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "firstnamemen"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/firstnamemen", 
+    "name": "firstnamemen", 
+    "dc:description": "First name of the men"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "lastnamewomen"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/lastnamewomen", 
+    "name": "lastnamewomen", 
+    "dc:description": "Last name of the women"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "firstnamewomen"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/firstnamewomen", 
+    "name": "firstnamewomen", 
+    "dc:description": "First name of the women"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "wid"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/wid", 
+    "name": "wid", 
+    "dc:description": "Binary if window"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "old"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/old", 
+    "name": "old", 
+    "dc:description": "Possibly binary if they're old, but has not been recorded"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "young"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/young", 
+    "name": "young", 
+    "dc:description": "Possibly binary if they're young, but has not been recorded"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "question"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/question", 
+    "name": "question", 
+    "dc:description": "Possibly field for questions by data processor, but empty"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "district"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/district", 
+    "name": "district", 
+    "dc:description": "Which district the person resides in"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "districtdum"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/districtdum", 
+    "name": "districtdum", 
+    "dc:description": "Unclear, Auke?"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "settlermen"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/settlermen", 
+    "name": "settlermen", 
+    "dc:description": "Amount of male settlers"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "settlerwomen"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/settlerwomen", 
+    "name": "settlerwomen", 
+    "dc:description": "Amount of female settlers"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "settlersons"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/settlersons", 
+    "name": "settlersons", 
+    "dc:description": "Amount of sons of settler"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "settlerdaughters"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/settlerdaughters", 
+    "name": "settlerdaughters", 
+    "dc:description": "Aumount of daughters of settler"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "settlerchildren"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/settlerchildren", 
+    "name": "settlerchildren", 
+    "dc:description": "Amount of children of settler"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "settlers"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/settlers", 
+    "name": "settlers", 
+    "dc:description": "Total amount of settlers"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "knechts"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/knechts", 
+    "name": "knechts", 
+    "dc:description": "Amount of knechts"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "khoemen"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/khoemen", 
+    "name": "khoemen", 
+    "dc:description": "Amount of adult male Khoesan"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "khoesons"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/khoesons", 
+    "name": "khoesons", 
+    "dc:description": "Amount of sons of Khoesan"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "khoemales"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/khoemales", 
+    "name": "khoemales", 
+    "dc:description": "Total Amount of male Khoesan"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "khoewomen"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/khoewomen", 
+    "name": "khoewomen", 
+    "dc:description": "Amount of adult female Khoesan"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "khoedaughters"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/khoedaughters", 
+    "name": "khoedaughters", 
+    "dc:description": "Amount of daughters of Khoesan"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "khoefemales"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/khoefemales", 
+    "name": "khoefemales", 
+    "dc:description": "Total Amount of female Khoesan"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "khoe"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/khoe", 
+    "name": "khoe", 
+    "dc:description": "Total Amount of Khoesan"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "slavemen"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/slavemen", 
+    "name": "slavemen", 
+    "dc:description": "Amount of adult male slaves"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "slavesons"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/slavesons", 
+    "name": "slavesons", 
+    "dc:description": "Amount of sons of slaves"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "slavemales"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/slavemales", 
+    "name": "slavemales", 
+    "dc:description": "Total Amount of male slaves"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "slavewomen"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/slavewomen", 
+    "name": "slavewomen", 
+    "dc:description": "Amount of adult female slaves"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "slavedaughters"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/slavedaughters", 
+    "name": "slavedaughters", 
+    "dc:description": "Amount of daughters of slaves"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "slavefemales"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/slavefemales", 
+    "name": "slavefemales", 
+    "dc:description": "Total Amount of female slaves"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "slaves"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/slaves", 
+    "name": "slaves", 
+    "dc:description": "Ttoal Amount of slaves"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "horseswag"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/horseswag", 
+    "name": "horseswag", 
+    "dc:description": "Possiblyyy: Amount of horse-drawn wagons. Not sure though"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "horsesbreed"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/horsesbreed", 
+    "name": "horsesbreed", 
+    "dc:description": "Unclear what this stands for. Amount of horses bred in the last year?"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "horses"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/horses", 
+    "name": "horses", 
+    "dc:description": "Total Amount of horses"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "cattleox"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/cattleox", 
+    "name": "cattleox", 
+    "dc:description": "Amount of cattle: oxen"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "cattlebreed"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/cattlebreed", 
+    "name": "cattlebreed", 
+    "dc:description": "Not sure what this stands for"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "cattle"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/cattle", 
+    "name": "cattle", 
+    "dc:description": "Total Amount of cattle"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "sheephamels"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/sheephamels", 
+    "name": "sheephamels", 
+    "dc:description": "Amount of castrated rams (hamel)"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "sheepbreed"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/sheepbreed", 
+    "name": "sheepbreed", 
+    "dc:description": "Not sure what this stands for"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "sheepspanish"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/sheepspanish", 
+    "name": "sheepspanish", 
+    "dc:description": "Not sure what this stands for"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "sheep"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/sheep", 
+    "name": "sheep", 
+    "dc:description": "Total Amount of sheep"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "donkeys"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/donkeys", 
+    "name": "donkeys", 
+    "dc:description": "Amount of donkeys"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "goats"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/goats", 
+    "name": "goats", 
+    "dc:description": "Amount of goats"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "pigs"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/pigs", 
+    "name": "pigs", 
+    "dc:description": "Amount of pigs"
+   }, 
+   {
+    "datatype": "xsd:float", 
+    "titles": [
+     "sownwheat"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/sownwheat", 
+    "name": "sownwheat", 
+    "dc:description": "Amount of sown wheat"
+   }, 
+   {
+    "datatype": "xsd:float", 
+    "titles": [
+     "sownbarley"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/sownbarley", 
+    "name": "sownbarley", 
+    "dc:description": "Amount of sown barley"
+   }, 
+   {
+    "datatype": "xsd:float", 
+    "titles": [
+     "sownrye"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/sownrye", 
+    "name": "sownrye", 
+    "dc:description": "Amount of sown rye"
+   }, 
+   {
+    "datatype": "xsd:float", 
+    "titles": [
+     "sownoats"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/sownoats", 
+    "name": "sownoats", 
+    "dc:description": "Amount of sown oats"
+   }, 
+   {
+    "datatype": "xsd:float", 
+    "titles": [
+     "reapwheat"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/reapwheat", 
+    "name": "reapwheat", 
+    "dc:description": "Amount of reaped wheat"
+   }, 
+   {
+    "datatype": "xsd:float", 
+    "titles": [
+     "reapbarley"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/reapbarley", 
+    "name": "reapbarley", 
+    "dc:description": "Amount of reaped barley"
+   }, 
+   {
+    "datatype": "xsd:float", 
+    "titles": [
+     "reaprye"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/reaprye", 
+    "name": "reaprye", 
+    "dc:description": "Amount of reraped rye"
+   }, 
+   {
+    "datatype": "xsd:float", 
+    "titles": [
+     "reapoats"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/reapoats", 
+    "name": "reapoats", 
+    "dc:description": "Amount of reaped oats"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "vines"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/vines", 
+    "name": "vines", 
+    "dc:description": "Amount of vines"
+   }, 
+   {
+    "datatype": "xsd:float", 
+    "titles": [
+     "wine"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/wine", 
+    "name": "wine", 
+    "dc:description": "Amount of wine"
+   }, 
+   {
+    "datatype": "xsd:float", 
+    "titles": [
+     "brandy"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/brandy", 
+    "name": "brandy", 
+    "dc:description": "Amount of brandy"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "waggons"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/waggons", 
+    "name": "waggons", 
+    "dc:description": "Amount of waggons"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "carts"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/carts", 
+    "name": "carts", 
+    "dc:description": "Amount of waggons"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "deadeuro"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/deadeuro", 
+    "name": "deadeuro", 
+    "dc:description": "Amount of Europeans that died during the year"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "deadkhoe"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/deadkhoe", 
+    "name": "deadkhoe", 
+    "dc:description": "Amount of Khoesan that died during the year"
+   }, 
+   {
+    "datatype": "xsd:integer", 
+    "titles": [
+     "deadslave"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/fgvf15oct_kort.csv/column/deadslave", 
+    "name": "deadslave", 
+    "dc:description": "Amount of slaves that died during the year"
+   }
+  ]
+ }
+}
