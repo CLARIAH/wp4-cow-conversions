@@ -1,0 +1,11 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix siemvoc:  <https://iisg.amsterdam/siem/vocab/>
+prefix b2lvoc:  <https://iisg.amsterdam/B2L/vocab/>
+
+SELECT AVG(xsd:FLOAT(?lat)) AVG(xsd:FLOAT(?lon))
+WHERE {
+  ?b2lobs siemvoc:latitude ?lat . # expect 46.96272
+  ?b2lobs siemvoc:longitude ?lon . # expect 11.22947
+} 
+LIMIT 10

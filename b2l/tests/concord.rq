@@ -1,0 +1,19 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+prefix siemvoc:  <https://iisg.amsterdam/siem/vocab/>
+prefix b2lvoc:  <https://iisg.amsterdam/B2L/vocab/>
+
+# this currently fails
+
+SELECT * WHERE {
+  ?b2lobs b2lvoc:cityid/skos:exactMatch ?siemmatched .
+  BIND(LCASE(STR(?siemmatched)) as ?siemcitystring) .
+  ?siemobs siemvoc:cityid ?siemcityid .
+  BIND(LCASE(STR(?siemcityid)) as ?siemcitystring)
+  ?b2lobs b2lvoc:latitude ?b2llat .
+    ?siemobs siemvoc:latitude ?siemlat .
+  
+} 
+LIMIT 10

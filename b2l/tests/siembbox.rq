@@ -1,0 +1,12 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix siemvoc:  <https://iisg.amsterdam/siem/vocab/>
+prefix b2lvoc:  <https://iisg.amsterdam/B2L/vocab/>
+
+SELECT MAX(xsd:FLOAT(?lat)) MAX(xsd:FLOAT(?lon)) MIN(xsd:FLOAT(?lat)) MIN(xsd:FLOAT(?lon))
+WHERE {
+  ?b2lobs siemvoc:latitude ?lat . # expect 59.97 68.97
+  ?b2lobs siemvoc:longitude ?lon . # expect -25.67 28.10
+} 
+LIMIT 10
+
