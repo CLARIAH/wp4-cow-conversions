@@ -1,1 +1,470 @@
-{"http://datasets.socialhistory.org/api/access/datafile/214": {"comment": "in thousands", "title": "Total Urban Population", "filename": "Urban_population-historical.xlsx", "dataset": "http://hdl.handle.net/10622/KICLW5"}, "http://datasets.socialhistory.org/api/access/datafile/108": {"comment": "Government bond yield (%)", "title": "Long-Term Government Bond Yield", "filename": "Long-Term_Government_Bond_Yield-historical.xlsx", "dataset": "http://hdl.handle.net/10622/CYRM1P"}, "http://datasets.socialhistory.org/api/access/datafile/150": {"comment": "autocracy-democracy on a -10 to 10 scale", "title": "Polity2 Index", "filename": "polity-historical.xlsx", "dataset": "http://hdl.handle.net/10622/HOPFWK"}, "http://datasets.socialhistory.org/api/access/datafile/157": {"comment": "Ratio of girls to boys aged 0\u20135 by country and decade", "title": "Sex Ratio", "filename": "sex_ratio-historical.xlsx", "dataset": "http://hdl.handle.net/10622/RVRFKS"}, "http://datasets.socialhistory.org/api/access/datafile/238": {"comment": "Exchange Rates to 1 Unit of Currency of UK", "title": "Exchange Rates to UK Pound", "filename": "Exchange_Rates_UK-historicalV2.xlsx", "dataset": "http://hdl.handle.net/10622/N6BLB8"}, "http://datasets.socialhistory.org/api/access/datafile/154": {"comment": "positive value with 0 as lowest", "title": "Polyarchy", "filename": "polyarchy-historical.xlsx", "dataset": "http://hdl.handle.net/10622/OS5A57"}, "http://datasets.socialhistory.org/api/access/datafile/226": {"comment": "scale from 1 (fixed) to 3 (selection)", "title": "Competitiveness of Executive Recruitment (XRCOMP)", "filename": "xrcomp-historical.xlsx", "dataset": "http://hdl.handle.net/10622/2EM9DE"}, "http://datasets.socialhistory.org/api/access/datafile/174": {"comment": "1000 metric tons of C", "title": "Total CO2 Emissions", "filename": "Total_CO2_Emissions-historical.xlsx", "dataset": "http://hdl.handle.net/10622/CCYQY7"}, "http://datasets.socialhistory.org/api/access/datafile/91": {"comment": "consumer prices, annual percentage", "title": "Inflation", "filename": "Inflation-historical.xlsx", "dataset": "http://hdl.handle.net/10622/UJ3H1Q"}, "http://datasets.socialhistory.org/api/access/datafile/97": {"comment": "Iron Ore Mine production (in million metric tons)", "title": "Iron Ore Production", "filename": "Iron_Ore-historical.xlsx", "dataset": "http://hdl.handle.net/10622/2KHSYM"}, "http://datasets.socialhistory.org/api/access/datafile/219": {"comment": "%", "title": "Share of Women in Parliament", "filename": "Women_Parliament-historical.xlsx", "dataset": "http://hdl.handle.net/10622/NMYPT2"}, "http://datasets.socialhistory.org/api/access/datafile/78": {"comment": "A higher score means less gender equality in favour of women.", "title": "Historical Gender Equality Index", "filename": "Historical_Gender_Equality_Index-historical.xlsx", "dataset": "http://hdl.handle.net/10622/VHYIAT"}, "http://datasets.socialhistory.org/api/access/datafile/13": {"comment": "years of formal schooling", "title": "Average Years of Education", "filename": "Average_years_education-historical.xlsx", "dataset": "http://hdl.handle.net/10622/KCBMKI"}, "http://datasets.socialhistory.org/api/access/datafile/223": {"comment": "scale from 1 (unlimited authority) to 7 (executive parity)", "title": "Executive Constraints (XCONST)", "filename": "xconst-historical.xlsx", "dataset": "http://hdl.handle.net/10622/UEALPE"}, "http://datasets.socialhistory.org/api/access/datafile/217": {"comment": "urban population as a percentage of total population", "title": "Urbanization Ratio", "filename": "Urbanization_ratio-historical.xlsx", "dataset": "http://hdl.handle.net/10622/LZ0Y36"}, "http://datasets.socialhistory.org/api/access/datafile/231": {"comment": "scale from 1 (unregulated) to 3 (regulated)", "title": "Regulation of Chief Executive Recruitment (XRREG)", "filename": "xrreg-historical.xlsx", "dataset": "http://hdl.handle.net/10622/IHPUXP"}, "http://datasets.socialhistory.org/api/access/datafile/16": {"comment": "Bauxite Mine production (in thousand metric tons)", "title": "Bauxite Production", "filename": "Bauxite-historical.xlsx", "dataset": "http://hdl.handle.net/10622/SPBP7D"}, "http://datasets.socialhistory.org/api/access/datafile/205": {"comment": "Tungsten Mine production (in 1000 metric tons)", "title": "Tungsten Production", "filename": "Tungsten-historical.xlsx", "dataset": "http://hdl.handle.net/10622/RV5NJG"}, "http://datasets.socialhistory.org/api/access/datafile/210": {"comment": "number of universities founded in a year", "title": "Universities Founded", "filename": "universities-historical.xlsx", "dataset": "http://hdl.handle.net/10622/KVRJPW"}, "http://datasets.socialhistory.org/api/access/datafile/18": {"comment": "Unique booktitles per million inhabitants", "title": "Book Titles per Capita", "filename": "Book_titles_capita-historical.xlsx", "dataset": "http://hdl.handle.net/10622/AOQMAZ"}, "http://datasets.socialhistory.org/api/access/datafile/133": {"comment": "ABCC index (%)", "title": "Numeracy (Total)", "filename": "Numeracy(Total)-historical.xlsx", "dataset": "http://hdl.handle.net/10622/GEQKCG"}, "http://datasets.socialhistory.org/api/access/datafile/190": {"comment": "x 1000", "title": "Total Number of Sheep", "filename": "Total_Number_Sheep-historical.xlsx", "dataset": "http://hdl.handle.net/10622/W7GOD6"}, "http://datasets.socialhistory.org/api/access/datafile/482": {"comment": "in thousands", "title": "Total Urban Population", "filename": "topics.tab", "dataset": "http://hdl.handle.net/10622/QBACC4"}, "http://datasets.socialhistory.org/api/access/datafile/39": {"comment": "ha/cap", "title": "Cropland per Capita", "filename": "Cropland_Capita-historical.xlsx", "dataset": "http://hdl.handle.net/10622/DONJXY"}, "http://datasets.socialhistory.org/api/access/datafile/181": {"comment": "years", "title": "Life Expectancy at Birth (Total)", "filename": "Total_life_expectancy-historical.xlsx", "dataset": "http://hdl.handle.net/10622/LKYT53"}, "http://datasets.socialhistory.org/api/access/datafile/76": {"comment": "Gini", "title": "Height Gini", "filename": "Height_Gini-historical.xlsx", "dataset": "http://hdl.handle.net/10622/HKZPR9"}, "http://datasets.socialhistory.org/api/access/datafile/184": {"comment": "x 1000", "title": "Total Number of Goats", "filename": "Total_Number_Goats-historical.xlsx", "dataset": "http://hdl.handle.net/10622/NKAQPL"}, "http://datasets.socialhistory.org/api/access/datafile/70": {"comment": "Binary: 1 if a country in a particular year had gold standard, 0 otherwise", "title": "Gold Standard", "filename": "gold_standard-historical.xlsx", "dataset": "http://hdl.handle.net/10622/MX7AIJ"}, "http://datasets.socialhistory.org/api/access/datafile/73": {"comment": "cm", "title": "Height", "filename": "Height-historical.xlsx", "dataset": "http://hdl.handle.net/10622/IAEKLA"}, "http://datasets.socialhistory.org/api/access/datafile/58": {"comment": "average years of education women/average years of education men", "title": "Gender Equality Years of Education", "filename": "Gender_equality_education-historical.xlsx", "dataset": "http://hdl.handle.net/10622/OTHFUK"}, "http://datasets.socialhistory.org/api/access/datafile/196": {"comment": "%", "title": "Total Gross Central Government Debt as a Percentage of GDP", "filename": "Total_Percentage_Debt_GDP-historical.xlsx", "dataset": "http://hdl.handle.net/10622/YXFPRL"}, "http://datasets.socialhistory.org/api/access/datafile/30": {"comment": "1 if there was a conflict in a given year, 0 otherwise", "title": "Armed conflicts (Internal)", "filename": "conflicts_domestic-historical.xlsx", "dataset": "http://hdl.handle.net/10622/ORW1HI"}, "http://datasets.socialhistory.org/api/access/datafile/33": {"comment": "1 if there was a conflict in a given year, 0 otherwise", "title": "Armed Conflicts (International)", "filename": "conflicts_international-historical.xlsx", "dataset": "http://hdl.handle.net/10622/JQJIP6"}, "http://datasets.socialhistory.org/api/access/datafile/52": {"comment": "expected years of life at birth", "title": "Female life expectancy at Birth", "filename": "Female_Life_Expectancy_Birth-historical.xlsx", "dataset": "http://hdl.handle.net/10622/G5L8IO"}, "http://datasets.socialhistory.org/api/access/datafile/37": {"comment": "Copper Mine production (in 1000 metric tons, copper content)", "title": "Copper Production", "filename": "Copper-historical.xlsx", "dataset": "http://hdl.handle.net/10622/GI7D06"}, "http://datasets.socialhistory.org/api/access/datafile/123": {"comment": "Total number of days not worked ", "title": "Number of Days Lost in Labour Disputes", "filename": "Number_Days_Lost_Labour_Conflicts-historical.xlsx", "dataset": "http://hdl.handle.net/10622/NJ9PTI"}, "http://datasets.socialhistory.org/api/access/datafile/120": {"comment": "Nickel mine production (1000 metric tons)", "title": "Nickel Production", "filename": "Nickel-historical.xlsx", "dataset": "http://hdl.handle.net/10622/ZGRJQY"}, "http://datasets.socialhistory.org/api/access/datafile/126": {"comment": "Total number of labour conflicts ", "title": "Number of Labour Disputes", "filename": "Number_Labour_Conflicts-historical.xlsx", "dataset": "http://hdl.handle.net/10622/H4C6B7"}, "http://datasets.socialhistory.org/api/access/datafile/237": {"comment": "webmapper system", "title": "Geocoder", "filename": "geocoder.xlsx", "dataset": "http://hdl.handle.net/10622/QZQOAO"}, "http://datasets.socialhistory.org/api/access/datafile/177": {"comment": "x1000 ha", "title": "Total Cropland", "filename": "Total_Cropland-historical.xlsx", "dataset": "http://hdl.handle.net/10622/UQV70P"}, "http://datasets.socialhistory.org/api/access/datafile/88": {"comment": "number of deaths of children under one year of age per 1000 live births", "title": "Infant Mortality", "filename": "Infant_mortality-historical.xlsx", "dataset": "http://hdl.handle.net/10622/H83HEV"}, "http://datasets.socialhistory.org/api/access/datafile/145": {"comment": "ha/cap", "title": "Pasture per Capita", "filename": "Pasture_Capita-historical.xlsx", "dataset": "http://hdl.handle.net/10622/ACOPHR"}, "http://datasets.socialhistory.org/api/access/datafile/201": {"comment": " Gg SO2 air pollution", "title": "Total SO2 Emissions", "filename": "Total_SO2_Emissions-historical.xlsx", "dataset": "http://hdl.handle.net/10622/RPUJDO"}, "http://datasets.socialhistory.org/api/access/datafile/147": {"comment": "head/cap", "title": "Pigs per Capita", "filename": "Pigs_Capita-historical.xlsx", "dataset": "http://hdl.handle.net/10622/KRWHME"}, "http://datasets.socialhistory.org/api/access/datafile/111": {"comment": "expected years of life at birth", "title": "Male life Expectancy at Birth", "filename": "Male_Life_Expectancy_Birth-historical.xlsx", "dataset": "http://hdl.handle.net/10622/K879JA"}, "http://datasets.socialhistory.org/api/access/datafile/142": {"comment": "0%-100%", "title": "Political Participation", "filename": "participation-historical.xlsx", "dataset": "http://hdl.handle.net/10622/UOKWUF"}, "http://datasets.socialhistory.org/api/access/datafile/169": {"comment": "Tin mine production (1000 metric tons)", "title": "Tin Production", "filename": "Tin-historical.xlsx", "dataset": "http://hdl.handle.net/10622/WOTROV"}, "http://datasets.socialhistory.org/api/access/datafile/100": {"comment": "Number of daily subsistence baskets that a daily wage buys", "title": "Labourers Real Wage", "filename": "Labourers_wage-historical.xlsx", "dataset": "http://hdl.handle.net/10622/QK8VRF"}, "http://datasets.socialhistory.org/api/access/datafile/81": {"comment": "Homicides per 100,000 inhabitants", "title": "Homicide Rates", "filename": "Homicide_rates-historical.xlsx", "dataset": "http://hdl.handle.net/10622/FMI6L9"}, "http://datasets.socialhistory.org/api/access/datafile/102": {"comment": "unitless measure", "title": "Latent Democracy Variable", "filename": "Latent_Democracy-historical.xlsx", "dataset": "http://hdl.handle.net/10622/XYJ2H2"}, "http://datasets.socialhistory.org/api/access/datafile/208": {"comment": "dimensionless, standardized score", "title": "Unifid Democracy Scores (UDS)", "filename": "UDS-historical.xlsx", "dataset": "http://hdl.handle.net/10622/Y9G2ZV"}, "http://datasets.socialhistory.org/api/access/datafile/162": {"comment": "Silver Mine production (in metric tons)", "title": "Silver Production", "filename": "Silver-historical.xlsx", "dataset": "http://hdl.handle.net/10622/OX6FCP"}, "http://datasets.socialhistory.org/api/access/datafile/85": {"comment": "Gini points", "title": "Income Inequality", "filename": "income_inequality-historical.xlsx", "dataset": "http://hdl.handle.net/10622/6OHMDS"}, "http://datasets.socialhistory.org/api/access/datafile/106": {"comment": "Lead mine production (in 1000 metric tons, lead content)", "title": "Lead Production", "filename": "Lead-historical.xlsx", "dataset": "http://hdl.handle.net/10622/LKWIXZ"}, "http://datasets.socialhistory.org/api/access/datafile/27": {"comment": "(0%-100%) ", "title": "Political Competition", "filename": "competition-historical.xlsx", "dataset": "http://hdl.handle.net/10622/4ZDPWP"}, "http://datasets.socialhistory.org/api/access/datafile/24": {"comment": "CO2 Emissions per Capita ", "title": "CO2 Emissions per Capita", "filename": "CO2_Emissions_Capita-historical.xlsx", "dataset": "http://hdl.handle.net/10622/DG654S"}, "http://datasets.socialhistory.org/api/access/datafile/160": {"comment": "head/cap", "title": "Sheep per Capita", "filename": "Sheep_Capita-historical.xlsx", "dataset": "http://hdl.handle.net/10622/EPD5LB"}, "http://datasets.socialhistory.org/api/access/datafile/228": {"comment": "scale from 1 (closed) to 4 (open)", "title": "Openness of Executive Recruitment (XROPEN)", "filename": "xropen-historical.xlsx", "dataset": "http://hdl.handle.net/10622/PU9ETX"}, "http://datasets.socialhistory.org/api/access/datafile/21": {"comment": "head/cap", "title": "Cattle per Capita", "filename": "Cattle_Capita-historical.xlsx", "dataset": "http://hdl.handle.net/10622/SO62N5"}, "http://datasets.socialhistory.org/api/access/datafile/66": {"comment": "Gold mine production (tonnes)", "title": "Gold Production", "filename": "Gold_production-historical.xlsx", "dataset": "http://hdl.handle.net/10622/MRQ2XJ"}, "http://datasets.socialhistory.org/api/access/datafile/94": {"comment": "1=yes, 0=no", "title": "Gender-equal Inheritance", "filename": "inheritance-historical.xlsx", "dataset": "http://hdl.handle.net/10622/Z5HDBU"}, "http://datasets.socialhistory.org/api/access/datafile/61": {"comment": "(female whipple index- male whipple index)/male whipple index", "title": "Gender Equality of Numeracy", "filename": "Gender_Equality_Numeracy-historical.xlsx", "dataset": "http://hdl.handle.net/10622/T2BLXB"}, "http://datasets.socialhistory.org/api/access/datafile/48": {"comment": "Exchange Rates to 1 Unit of Currency of the US", "title": "Exchange Rates to US Dollar", "filename": "Exchange_Rates_USA-historical.xlsx", "dataset": "http://hdl.handle.net/10622/KC0ZHV"}, "http://datasets.socialhistory.org/api/access/datafile/186": {"comment": "x 1000", "title": "Total Number of Pigs", "filename": "Total_Number_Pigs-historical.xlsx", "dataset": "http://hdl.handle.net/10622/FHU70A"}, "http://datasets.socialhistory.org/api/access/datafile/64": {"comment": "head/cap", "title": "Goats per Capita", "filename": "Goats_Capita-historical.xlsx", "dataset": "http://hdl.handle.net/10622/BSS0NQ"}, "http://datasets.socialhistory.org/api/access/datafile/198": {"comment": "in thousands", "title": "Total Population", "filename": "Total_Population-historical.xlsx", "dataset": "http://hdl.handle.net/10622/SNETZV"}, "http://datasets.socialhistory.org/api/access/datafile/166": {"comment": "air pollution, in Gg SO2", "title": "SO2 Emissions per Capita", "filename": "SO2_Emissions_Capita-historical.xlsx", "dataset": "http://hdl.handle.net/10622/IRT0YU"}, "http://datasets.socialhistory.org/api/access/datafile/192": {"comment": "x 1000 ha", "title": "Total Pasture", "filename": "Total_Pasture-historical.xlsx", "dataset": "http://hdl.handle.net/10622/KN40ZF"}, "http://datasets.socialhistory.org/api/access/datafile/43": {"comment": "Gini", "title": "Educational Inequality Gini Coefficient", "filename": "Educational_Gini-historical.xlsx", "dataset": "http://hdl.handle.net/10622/KORKQW"}, "http://datasets.socialhistory.org/api/access/datafile/117": {"comment": "Mean species abundance index", "title": "Biodiversity - naturalness", "filename": "Naturalness-historical.xlsx", "dataset": "http://hdl.handle.net/10622/VCTVKE"}, "http://datasets.socialhistory.org/api/access/datafile/130": {"comment": "number workers per year", "title": "Number of Workers Involved in Labour Disputes", "filename": "Number_Workers_Labour_Conflicts-historical.xlsx", "dataset": "http://hdl.handle.net/10622/M0PI4D"}, "http://datasets.socialhistory.org/api/access/datafile/115": {"comment": "Manganese Mine production (in 1000 metric tons)", "title": "Manganese Production", "filename": "Manganese-historical.xlsx", "dataset": "http://hdl.handle.net/10622/RA3SLU"}, "http://datasets.socialhistory.org/api/access/datafile/171": {"comment": "x1000", "title": "Total Cattle", "filename": "Total_Cattle-historical.xlsx", "dataset": "http://hdl.handle.net/10622/W2CS9J"}, "http://datasets.socialhistory.org/api/access/datafile/9": {"comment": "Aluminium primary smelter and refinery production (thousand tonnes)", "title": "Aluminium Production", "filename": "Aluminium-historical.xlsx", "dataset": "http://hdl.handle.net/10622/XNGK4X"}, "http://datasets.socialhistory.org/api/access/datafile/136": {"comment": "scale 1 (unregulated) to 4 (restricted)", "title": "Competitiveness of Participations (PARCOMP)", "filename": "parcomp-historical.xlsx", "dataset": "http://hdl.handle.net/10622/9J8MJG"}, "http://datasets.socialhistory.org/api/access/datafile/139": {"comment": "scale from 1 (unregulated) to 5 (regulated)", "title": "Regulation of Participation (PARREG)", "filename": "parreg-historical.xlsx", "dataset": "http://hdl.handle.net/10622/V6AEFF"}, "http://datasets.socialhistory.org/api/access/datafile/55": {"comment": "in 1990 international Geary-Khamis dollars", "title": "GDP per Capita", "filename": "GDP_Capita-historical.xlsx", "dataset": "http://hdl.handle.net/10622/8FCYOX"}, "http://datasets.socialhistory.org/api/access/datafile/234": {"comment": "Zinc mine production (in 1000 metric tons, zinc content)", "title": "Zinc Production", "filename": "Zinc-historical.xlsx", "dataset": "http://hdl.handle.net/10622/EXA3CI"}}
+{
+    "http://datasets.socialhistory.org/api/access/datafile/100": {
+        "comment": "Number of daily subsistence baskets that a daily wage buys",
+        "dataset": "http://hdl.handle.net/10622/QK8VRF",
+        "filename": "Labourers_wage-historical.xlsx",
+        "title": "Labourers Real Wage"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/102": {
+        "comment": "unitless measure",
+        "dataset": "http://hdl.handle.net/10622/XYJ2H2",
+        "filename": "Latent_Democracy-historical.xlsx",
+        "title": "Latent Democracy Variable"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/106": {
+        "comment": "Lead mine production (in 1000 metric tons, lead content)",
+        "dataset": "http://hdl.handle.net/10622/LKWIXZ",
+        "filename": "Lead-historical.xlsx",
+        "title": "Lead Production"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/108": {
+        "comment": "Government bond yield (%)",
+        "dataset": "http://hdl.handle.net/10622/CYRM1P",
+        "filename": "Long-Term_Government_Bond_Yield-historical.xlsx",
+        "title": "Long-Term Government Bond Yield"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/111": {
+        "comment": "expected years of life at birth",
+        "dataset": "http://hdl.handle.net/10622/K879JA",
+        "filename": "Male_Life_Expectancy_Birth-historical.xlsx",
+        "title": "Male life Expectancy at Birth"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/115": {
+        "comment": "Manganese Mine production (in 1000 metric tons)",
+        "dataset": "http://hdl.handle.net/10622/RA3SLU",
+        "filename": "Manganese-historical.xlsx",
+        "title": "Manganese Production"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/117": {
+        "comment": "Mean species abundance index",
+        "dataset": "http://hdl.handle.net/10622/VCTVKE",
+        "filename": "Naturalness-historical.xlsx",
+        "title": "Biodiversity - naturalness"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/120": {
+        "comment": "Nickel mine production (1000 metric tons)",
+        "dataset": "http://hdl.handle.net/10622/ZGRJQY",
+        "filename": "Nickel-historical.xlsx",
+        "title": "Nickel Production"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/123": {
+        "comment": "Total number of days not worked ",
+        "dataset": "http://hdl.handle.net/10622/NJ9PTI",
+        "filename": "Number_Days_Lost_Labour_Conflicts-historical.xlsx",
+        "title": "Number of Days Lost in Labour Disputes"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/126": {
+        "comment": "Total number of labour conflicts ",
+        "dataset": "http://hdl.handle.net/10622/H4C6B7",
+        "filename": "Number_Labour_Conflicts-historical.xlsx",
+        "title": "Number of Labour Disputes"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/13": {
+        "comment": "years of formal schooling",
+        "dataset": "http://hdl.handle.net/10622/KCBMKI",
+        "filename": "Average_years_education-historical.xlsx",
+        "title": "Average Years of Education"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/130": {
+        "comment": "number workers per year",
+        "dataset": "http://hdl.handle.net/10622/M0PI4D",
+        "filename": "Number_Workers_Labour_Conflicts-historical.xlsx",
+        "title": "Number of Workers Involved in Labour Disputes"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/133": {
+        "comment": "ABCC index (%)",
+        "dataset": "http://hdl.handle.net/10622/GEQKCG",
+        "filename": "Numeracy(Total)-historical.xlsx",
+        "title": "Numeracy (Total)"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/136": {
+        "comment": "scale 1 (unregulated) to 4 (restricted)",
+        "dataset": "http://hdl.handle.net/10622/9J8MJG",
+        "filename": "parcomp-historical.xlsx",
+        "title": "Competitiveness of Participations (PARCOMP)"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/139": {
+        "comment": "scale from 1 (unregulated) to 5 (regulated)",
+        "dataset": "http://hdl.handle.net/10622/V6AEFF",
+        "filename": "parreg-historical.xlsx",
+        "title": "Regulation of Participation (PARREG)"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/142": {
+        "comment": "0%-100%",
+        "dataset": "http://hdl.handle.net/10622/UOKWUF",
+        "filename": "participation-historical.xlsx",
+        "title": "Political Participation"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/145": {
+        "comment": "ha/cap",
+        "dataset": "http://hdl.handle.net/10622/ACOPHR",
+        "filename": "Pasture_Capita-historical.xlsx",
+        "title": "Pasture per Capita"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/147": {
+        "comment": "head/cap",
+        "dataset": "http://hdl.handle.net/10622/KRWHME",
+        "filename": "Pigs_Capita-historical.xlsx",
+        "title": "Pigs per Capita"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/150": {
+        "comment": "autocracy-democracy on a -10 to 10 scale",
+        "dataset": "http://hdl.handle.net/10622/HOPFWK",
+        "filename": "polity-historical.xlsx",
+        "title": "Polity2 Index"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/154": {
+        "comment": "positive value with 0 as lowest",
+        "dataset": "http://hdl.handle.net/10622/OS5A57",
+        "filename": "polyarchy-historical.xlsx",
+        "title": "Polyarchy"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/157": {
+        "comment": "Ratio of girls to boys aged 0\u20135 by country and decade",
+        "dataset": "http://hdl.handle.net/10622/RVRFKS",
+        "filename": "sex_ratio-historical.xlsx",
+        "title": "Sex Ratio"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/16": {
+        "comment": "Bauxite Mine production (in thousand metric tons)",
+        "dataset": "http://hdl.handle.net/10622/SPBP7D",
+        "filename": "Bauxite-historical.xlsx",
+        "title": "Bauxite Production"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/160": {
+        "comment": "head/cap",
+        "dataset": "http://hdl.handle.net/10622/EPD5LB",
+        "filename": "Sheep_Capita-historical.xlsx",
+        "title": "Sheep per Capita"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/162": {
+        "comment": "Silver Mine production (in metric tons)",
+        "dataset": "http://hdl.handle.net/10622/OX6FCP",
+        "filename": "Silver-historical.xlsx",
+        "title": "Silver Production"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/166": {
+        "comment": "air pollution, in Gg SO2",
+        "dataset": "http://hdl.handle.net/10622/IRT0YU",
+        "filename": "SO2_Emissions_Capita-historical.xlsx",
+        "title": "SO2 Emissions per Capita"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/169": {
+        "comment": "Tin mine production (1000 metric tons)",
+        "dataset": "http://hdl.handle.net/10622/WOTROV",
+        "filename": "Tin-historical.xlsx",
+        "title": "Tin Production"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/171": {
+        "comment": "x1000",
+        "dataset": "http://hdl.handle.net/10622/W2CS9J",
+        "filename": "Total_Cattle-historical.xlsx",
+        "title": "Total Cattle"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/174": {
+        "comment": "1000 metric tons of C",
+        "dataset": "http://hdl.handle.net/10622/CCYQY7",
+        "filename": "Total_CO2_Emissions-historical.xlsx",
+        "title": "Total CO2 Emissions"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/177": {
+        "comment": "x1000 ha",
+        "dataset": "http://hdl.handle.net/10622/UQV70P",
+        "filename": "Total_Cropland-historical.xlsx",
+        "title": "Total Cropland"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/18": {
+        "comment": "Unique booktitles per million inhabitants",
+        "dataset": "http://hdl.handle.net/10622/AOQMAZ",
+        "filename": "Book_titles_capita-historical.xlsx",
+        "title": "Book Titles per Capita"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/181": {
+        "comment": "years",
+        "dataset": "http://hdl.handle.net/10622/LKYT53",
+        "filename": "Total_life_expectancy-historical.xlsx",
+        "title": "Life Expectancy at Birth (Total)"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/184": {
+        "comment": "x 1000",
+        "dataset": "http://hdl.handle.net/10622/NKAQPL",
+        "filename": "Total_Number_Goats-historical.xlsx",
+        "title": "Total Number of Goats"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/186": {
+        "comment": "x 1000",
+        "dataset": "http://hdl.handle.net/10622/FHU70A",
+        "filename": "Total_Number_Pigs-historical.xlsx",
+        "title": "Total Number of Pigs"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/190": {
+        "comment": "x 1000",
+        "dataset": "http://hdl.handle.net/10622/W7GOD6",
+        "filename": "Total_Number_Sheep-historical.xlsx",
+        "title": "Total Number of Sheep"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/192": {
+        "comment": "x 1000 ha",
+        "dataset": "http://hdl.handle.net/10622/KN40ZF",
+        "filename": "Total_Pasture-historical.xlsx",
+        "title": "Total Pasture"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/196": {
+        "comment": "%",
+        "dataset": "http://hdl.handle.net/10622/YXFPRL",
+        "filename": "Total_Percentage_Debt_GDP-historical.xlsx",
+        "title": "Total Gross Central Government Debt as a Percentage of GDP"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/198": {
+        "comment": "in thousands",
+        "dataset": "http://hdl.handle.net/10622/SNETZV",
+        "filename": "Total_Population-historical.xlsx",
+        "title": "Total Population"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/201": {
+        "comment": " Gg SO2 air pollution",
+        "dataset": "http://hdl.handle.net/10622/RPUJDO",
+        "filename": "Total_SO2_Emissions-historical.xlsx",
+        "title": "Total SO2 Emissions"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/205": {
+        "comment": "Tungsten Mine production (in 1000 metric tons)",
+        "dataset": "http://hdl.handle.net/10622/RV5NJG",
+        "filename": "Tungsten-historical.xlsx",
+        "title": "Tungsten Production"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/208": {
+        "comment": "dimensionless, standardized score",
+        "dataset": "http://hdl.handle.net/10622/Y9G2ZV",
+        "filename": "UDS-historical.xlsx",
+        "title": "Unifid Democracy Scores (UDS)"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/21": {
+        "comment": "head/cap",
+        "dataset": "http://hdl.handle.net/10622/SO62N5",
+        "filename": "Cattle_Capita-historical.xlsx",
+        "title": "Cattle per Capita"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/210": {
+        "comment": "number of universities founded in a year",
+        "dataset": "http://hdl.handle.net/10622/KVRJPW",
+        "filename": "universities-historical.xlsx",
+        "title": "Universities Founded"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/214": {
+        "comment": "in thousands",
+        "dataset": "http://hdl.handle.net/10622/KICLW5",
+        "filename": "Urban_population-historical.xlsx",
+        "title": "Total Urban Population"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/217": {
+        "comment": "urban population as a percentage of total population",
+        "dataset": "http://hdl.handle.net/10622/LZ0Y36",
+        "filename": "Urbanization_ratio-historical.xlsx",
+        "title": "Urbanization Ratio"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/219": {
+        "comment": "%",
+        "dataset": "http://hdl.handle.net/10622/NMYPT2",
+        "filename": "Women_Parliament-historical.xlsx",
+        "title": "Share of Women in Parliament"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/223": {
+        "comment": "scale from 1 (unlimited authority) to 7 (executive parity)",
+        "dataset": "http://hdl.handle.net/10622/UEALPE",
+        "filename": "xconst-historical.xlsx",
+        "title": "Executive Constraints (XCONST)"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/226": {
+        "comment": "scale from 1 (fixed) to 3 (selection)",
+        "dataset": "http://hdl.handle.net/10622/2EM9DE",
+        "filename": "xrcomp-historical.xlsx",
+        "title": "Competitiveness of Executive Recruitment (XRCOMP)"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/228": {
+        "comment": "scale from 1 (closed) to 4 (open)",
+        "dataset": "http://hdl.handle.net/10622/PU9ETX",
+        "filename": "xropen-historical.xlsx",
+        "title": "Openness of Executive Recruitment (XROPEN)"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/231": {
+        "comment": "scale from 1 (unregulated) to 3 (regulated)",
+        "dataset": "http://hdl.handle.net/10622/IHPUXP",
+        "filename": "xrreg-historical.xlsx",
+        "title": "Regulation of Chief Executive Recruitment (XRREG)"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/234": {
+        "comment": "Zinc mine production (in 1000 metric tons, zinc content)",
+        "dataset": "http://hdl.handle.net/10622/EXA3CI",
+        "filename": "Zinc-historical.xlsx",
+        "title": "Zinc Production"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/237": {
+        "comment": "webmapper system",
+        "dataset": "http://hdl.handle.net/10622/QZQOAO",
+        "filename": "geocoder.xlsx",
+        "title": "Geocoder"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/238": {
+        "comment": "Exchange Rates to 1 Unit of Currency of UK",
+        "dataset": "http://hdl.handle.net/10622/N6BLB8",
+        "filename": "Exchange_Rates_UK-historicalV2.xlsx",
+        "title": "Exchange Rates to UK Pound"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/24": {
+        "comment": "CO2 Emissions per Capita ",
+        "dataset": "http://hdl.handle.net/10622/DG654S",
+        "filename": "CO2_Emissions_Capita-historical.xlsx",
+        "title": "CO2 Emissions per Capita"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/27": {
+        "comment": "(0%-100%) ",
+        "dataset": "http://hdl.handle.net/10622/4ZDPWP",
+        "filename": "competition-historical.xlsx",
+        "title": "Political Competition"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/30": {
+        "comment": "1 if there was a conflict in a given year, 0 otherwise",
+        "dataset": "http://hdl.handle.net/10622/ORW1HI",
+        "filename": "conflicts_domestic-historical.xlsx",
+        "title": "Armed conflicts (Internal)"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/33": {
+        "comment": "1 if there was a conflict in a given year, 0 otherwise",
+        "dataset": "http://hdl.handle.net/10622/JQJIP6",
+        "filename": "conflicts_international-historical.xlsx",
+        "title": "Armed Conflicts (International)"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/37": {
+        "comment": "Copper Mine production (in 1000 metric tons, copper content)",
+        "dataset": "http://hdl.handle.net/10622/GI7D06",
+        "filename": "Copper-historical.xlsx",
+        "title": "Copper Production"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/39": {
+        "comment": "ha/cap",
+        "dataset": "http://hdl.handle.net/10622/DONJXY",
+        "filename": "Cropland_Capita-historical.xlsx",
+        "title": "Cropland per Capita"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/43": {
+        "comment": "Gini",
+        "dataset": "http://hdl.handle.net/10622/KORKQW",
+        "filename": "Educational_Gini-historical.xlsx",
+        "title": "Educational Inequality Gini Coefficient"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/48": {
+        "comment": "Exchange Rates to 1 Unit of Currency of the US",
+        "dataset": "http://hdl.handle.net/10622/KC0ZHV",
+        "filename": "Exchange_Rates_USA-historical.xlsx",
+        "title": "Exchange Rates to US Dollar"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/482": {
+        "comment": "in thousands",
+        "dataset": "http://hdl.handle.net/10622/QBACC4",
+        "filename": "topics.tab",
+        "title": "Total Urban Population"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/52": {
+        "comment": "expected years of life at birth",
+        "dataset": "http://hdl.handle.net/10622/G5L8IO",
+        "filename": "Female_Life_Expectancy_Birth-historical.xlsx",
+        "title": "Female life expectancy at Birth"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/55": {
+        "comment": "in 1990 international Geary-Khamis dollars",
+        "dataset": "http://hdl.handle.net/10622/8FCYOX",
+        "filename": "GDP_Capita-historical.xlsx",
+        "title": "GDP per Capita"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/58": {
+        "comment": "average years of education women/average years of education men",
+        "dataset": "http://hdl.handle.net/10622/OTHFUK",
+        "filename": "Gender_equality_education-historical.xlsx",
+        "title": "Gender Equality Years of Education"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/61": {
+        "comment": "(female whipple index- male whipple index)/male whipple index",
+        "dataset": "http://hdl.handle.net/10622/T2BLXB",
+        "filename": "Gender_Equality_Numeracy-historical.xlsx",
+        "title": "Gender Equality of Numeracy"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/64": {
+        "comment": "head/cap",
+        "dataset": "http://hdl.handle.net/10622/BSS0NQ",
+        "filename": "Goats_Capita-historical.xlsx",
+        "title": "Goats per Capita"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/66": {
+        "comment": "Gold mine production (tonnes)",
+        "dataset": "http://hdl.handle.net/10622/MRQ2XJ",
+        "filename": "Gold_production-historical.xlsx",
+        "title": "Gold Production"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/70": {
+        "comment": "Binary: 1 if a country in a particular year had gold standard, 0 otherwise",
+        "dataset": "http://hdl.handle.net/10622/MX7AIJ",
+        "filename": "gold_standard-historical.xlsx",
+        "title": "Gold Standard"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/73": {
+        "comment": "cm",
+        "dataset": "http://hdl.handle.net/10622/IAEKLA",
+        "filename": "Height-historical.xlsx",
+        "title": "Height"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/76": {
+        "comment": "Gini",
+        "dataset": "http://hdl.handle.net/10622/HKZPR9",
+        "filename": "Height_Gini-historical.xlsx",
+        "title": "Height Gini"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/78": {
+        "comment": "A higher score means less gender equality in favour of women.",
+        "dataset": "http://hdl.handle.net/10622/VHYIAT",
+        "filename": "Historical_Gender_Equality_Index-historical.xlsx",
+        "title": "Historical Gender Equality Index"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/81": {
+        "comment": "Homicides per 100,000 inhabitants",
+        "dataset": "http://hdl.handle.net/10622/FMI6L9",
+        "filename": "Homicide_rates-historical.xlsx",
+        "title": "Homicide Rates"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/85": {
+        "comment": "Gini points",
+        "dataset": "http://hdl.handle.net/10622/6OHMDS",
+        "filename": "income_inequality-historical.xlsx",
+        "title": "Income Inequality"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/88": {
+        "comment": "number of deaths of children under one year of age per 1000 live births",
+        "dataset": "http://hdl.handle.net/10622/H83HEV",
+        "filename": "Infant_mortality-historical.xlsx",
+        "title": "Infant Mortality"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/9": {
+        "comment": "Aluminium primary smelter and refinery production (thousand tonnes)",
+        "dataset": "http://hdl.handle.net/10622/XNGK4X",
+        "filename": "Aluminium-historical.xlsx",
+        "title": "Aluminium Production"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/91": {
+        "comment": "consumer prices, annual percentage",
+        "dataset": "http://hdl.handle.net/10622/UJ3H1Q",
+        "filename": "Inflation-historical.xlsx",
+        "title": "Inflation"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/94": {
+        "comment": "1=yes, 0=no",
+        "dataset": "http://hdl.handle.net/10622/Z5HDBU",
+        "filename": "inheritance-historical.xlsx",
+        "title": "Gender-equal Inheritance"
+    },
+    "http://datasets.socialhistory.org/api/access/datafile/97": {
+        "comment": "Iron Ore Mine production (in million metric tons)",
+        "dataset": "http://hdl.handle.net/10622/2KHSYM",
+        "filename": "Iron_Ore-historical.xlsx",
+        "title": "Iron Ore Production"
+    }
+}
