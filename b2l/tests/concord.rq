@@ -5,15 +5,9 @@ PREFIX geo: <http://www.opengis.net/ont/geosparql#>
 prefix siemvoc:  <https://iisg.amsterdam/siem/vocab/>
 prefix b2lvoc:  <https://iisg.amsterdam/B2L/vocab/>
 
-# this currently fails
-
-SELECT * WHERE {
-  ?b2lobs b2lvoc:cityid/skos:exactMatch ?siemmatched .
-  BIND(LCASE(STR(?siemmatched)) as ?siemcitystring) .
-  ?siemobs siemvoc:cityid ?siemcityid .
-  BIND(LCASE(STR(?siemcityid)) as ?siemcitystring)
+SELECT (AVG(?b2llat - ?siemlat) AS ?avgdist) WHERE {
+  ?b2lobs b2lvoc:cityid/skos:exactMatch/^siemvoc:cityid ?siemobs .
   ?b2lobs b2lvoc:latitude ?b2llat .
-    ?siemobs siemvoc:latitude ?siemlat .
-  
+  ?siemobs siemvoc:latitude ?siemlat .
 } 
 LIMIT 10
