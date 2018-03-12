@@ -14,7 +14,7 @@
    "@id": "http://datalegend.net"
   }
 },
-"dc:creator": {
+"dc:creator": [{
   "rdf:type": [
     {
       "@id": "foaf:Person"
@@ -27,7 +27,8 @@
   "foaf:mbox":{
 "@id": "mailto:auke.rijpma@gmail.com"
 }
-},"dc:creator": {
+},
+{
   "rdf:type": [
     {
       "@id": "foaf:Person"
@@ -40,7 +41,7 @@
   "foaf:mbox":{
 "@id": "mailto:r.schalk@uu.nl"
 }
-},
+}],
 "prov:wasDerivedFrom": [{
   "rdf:type": {
       "@id": "bibo:Article"
@@ -181,18 +182,25 @@
     "dc:description": "Century"
    },
    {
-    "datatype": "string",
+    "datatype": "int",
     "titles": [
      "arab_peninsula"
     ],
     "@id": "https://iisg.amsterdam/resource/B2L.csv/column/arab_peninsula",
     "name": "arab_peninsula",
     "propertyUrl": "B2L:vocab/arab_peninsula",
-    "dc:description": "Dummy variable indicating whether or not a city is located on the Arabian Peninsula",
-    "valueUrl": "B2L:code/arab_peninsula/{arab_peninsula}"
+    "dc:description": "Dummy variable indicating whether or not a city is located on the Arabian Peninsula"
+   },
+    {
+    "virtual": true,
+    "name": "arab_peninsula",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "B2L:ArabPenisularCity",
+    "null": ["0"],
+    "description": "Is the city located on the Arab Peninsula? Derived from arab_peninsula variable"
    },
    {
-    "datatype": "string",
+    "datatype": "float",
     "titles": [
      "latitude"
     ],
@@ -202,7 +210,7 @@
     "dc:description": "Latitude-coordinate"
        },
    {
-    "datatype": "string",
+    "datatype": "float",
     "titles": [
      "longitude"
     ],
@@ -251,7 +259,7 @@
     "dc:description": "City population in 1000s, only reported when the city has at least 5,000 inhabitants"
    },
    {
-    "datatype": "string",
+    "datatype": "int",
     "titles": [
      "sea"
     ],
@@ -261,7 +269,15 @@
     "dc:description": "Dummy variable indicating whether or not a city is located at sea"
    },
    {
-    "datatype": "string",
+    "virtual": true,
+    "name": "sea",
+    "propertyUrl": "rdf:type",
+    "propertyUrl": "B2L:seaLocationCity",
+    "null": ["0"],
+    "dc:description": "City is located at sea"
+   },
+   {
+    "datatype": "int",
     "titles": [
      "river"
     ],
@@ -271,7 +287,15 @@
     "dc:description": "Dummy variable indicating whether or not a city is located at a river"
    },
    {
-    "datatype": "string",
+    "virtual": true,
+    "name": "river",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "B2L:riverLocationCity",
+    "null": ["0"],
+    "dc:description": "City is located at a river"
+   },
+   {
+    "datatype": "int",
     "titles": [
      "hub_3rr"
     ],
@@ -281,7 +305,15 @@
     "dc:description": "Dummy variable indicating whether or not a city is located on a crossing of at least two roman roads"
    },
    {
-    "datatype": "string",
+    "virtual": true,
+    "name": "hub_3rr",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "B2L:RomanRoadCrossingCity",
+    "null": ["0"],
+    "dc:description": "City  located on a crossing of at least two roman roads"
+   },
+   {
+    "datatype": "int",
     "titles": [
      "rom_road_nohub"
     ],
@@ -291,7 +323,15 @@
     "dc:description": "Dummy variable indicating whether or not a city is located on a roman road (and is not a hub)"
    },
    {
-    "datatype": "string",
+    "virtual": true,
+    "name": "rom_road_nohub",
+    "valueUrl": "rdf:type",
+    "propertyUrl": "B2L:RomanRoadNoHubCity",
+    "null": ["0"],
+    "dc:description": "City located on a roman road (and is not a hub)"
+   },
+   {
+    "datatype": "int",
     "titles": [
      "caravan_hub"
     ],
@@ -301,7 +341,15 @@
     "dc:description": "Dummy variable indicating whether or not a city is located on a crossing of at least two caravan routes"
    },
    {
-    "datatype": "string",
+    "virtual": true,
+    "name": "caravan_hub",
+    "propertyUrl": "rdf:type",
+    "propertyUrl": "B2L:caravanHubCity",
+    "null": ["0"],
+    "dc:description": "City is located on a crossing of at least two caravan routes"
+   },
+   {
+    "datatype": "int",
     "titles": [
      "caravan_nohub"
     ],
@@ -309,6 +357,14 @@
     "name": "caravan_nohub",
     "propertyUrl": "B2L:vocab/caravan_nohub",
     "dc:description": "Dummy variable indicating whether or not a city is located on a caravan route (and is not a caravan hub)"
+   },
+   {
+    "virtual": true,
+    "name": "caravan_nohub",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "B2L:caravanNoHubCity",
+    "null": ["0"],
+    "dc:description": "City located on a caravan route (and is not a caravan hub)"
    },
    {
     "datatype": "integer",
@@ -331,7 +387,7 @@
     "dc:description": "Standard deviation of the elevation of the terrain within a 10km radius in meters"
    },
    {
-    "datatype": "string",
+    "datatype": "int",
     "titles": [
      "bishop"
     ],
@@ -341,7 +397,15 @@
     "dc:description": "Dummy variable indicating whether or not a city is the seat of a bishop"
    },
    {
-    "datatype": "string",
+    "virtual": true,
+    "name": "bishop",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "B2L:bishopCity",
+    "null": ["0"],
+    "dc:description": "City is the seat of a bishop"
+   },
+   {
+    "datatype": "int",
     "titles": [
      "archbishop"
     ],
@@ -351,7 +415,15 @@
     "dc:description": "Dummy variable indicating whether or not a city is the seat of an archbishop"
    },
    {
-    "datatype": "string",
+    "virtual": true,
+    "null": ["0"],
+    "name": "archbishop",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "B2L:archbishopCity",
+    "dc:description": "City is the seat of an archbishop"
+   },
+   {
+    "datatype": "int",
     "titles": [
      "capital"
     ],
@@ -361,7 +433,15 @@
     "dc:description": "Dummy variable indicating whether or not a city is a capital city"
    },
    {
-    "datatype": "string",
+    "virtual": true,
+    "null": ["0"],
+    "name": "capital",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "B2L:capitalCity",
+    "dc:description": "City is a capital city"
+   },
+   {
+    "datatype": "int",
     "titles": [
      "university"
     ],
@@ -371,7 +451,15 @@
     "dc:description": "Dummy variable indicating whether or not a city hosts a university"
    },
    {
-    "datatype": "string",
+    "virtual": true,
+    "null": ["0"],
+    "name": "university",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "B2L:universityCity",
+    "dc:description": "City hosts a university"
+   },
+   {
+    "datatype": "int",
     "titles": [
      "muslim"
     ],
@@ -381,7 +469,15 @@
     "dc:description": "Dummy variable indicating whether or not a city falls under muslim rule"
    },
    {
-    "datatype": "string",
+    "virtual": true,
+    "null": ["0"],
+    "name": "muslim",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "B2L:muslimCity",
+    "dc:description": "Dummy variable indicating whether or not a city falls under muslim rule"
+   },
+   {
+    "datatype": "int",
     "titles": [
      "me_na"
     ],
@@ -391,7 +487,15 @@
     "dc:description": "Dummy variable indicating whether or not a city is located in the Middle East or North Africa (including Turkey)"
    },
    {
-    "datatype": "string",
+    "virtual": true,
+    "null": ["0"],
+    "name": "me_na",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "B2L:MENACity",
+    "dc:description": "Dummy variable indicating whether or not a city is located in the Middle East or North Africa (including Turkey)"
+   },
+   {
+    "datatype": "int",
     "titles": [
      "muslim_holy_city"
     ],
@@ -401,7 +505,15 @@
     "dc:description": "Dummy variable indicating whether or not a city is one of the four holiest cities in Islam (Jerusalem, Damascus, Mecca or Medina)"
    },
    {
-    "datatype": "string",
+    "virtual": true,
+    "null": ["0"],
+    "name": "muslim_holy_city",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "B2L:MuslimHolyCity",
+    "dc:description": "City is one of the four holiest cities in Islam (Jerusalem, Damascus, Mecca or Medina)"
+   },
+   {
+    "datatype": "int",
     "titles": [
      "plundered"
     ],
@@ -418,17 +530,25 @@
     "@id": "https://iisg.amsterdam/resource/B2L.csv/column/soilquality",
     "name": "soilquality",
     "propertyUrl": "B2L:vocab/soilquality",
-    "dc:description": "Dummy variable indicating the soil quality of the fields surrounding a city"
+    "dc:description": "Variable indicating the soil quality of the fields surrounding a city"
    },
    {
-    "datatype": "string",
+    "datatype": "int",
     "titles": [
      "commune"
     ],
     "@id": "https://iisg.amsterdam/resource/B2L.csv/column/commune",
     "name": "commune",
-    "propertyUrl": "B2L:vocab/commune",
+    "propertyUrl": "B2L:vocab/Commune",
     "dc:description": "Dummy variable indicating whether or not a city has a form of self-governance"
+   },
+   {
+    "virtual": true,
+    "null": ["0"],
+    "name": "commune",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "B2L:communeCity",
+    "dc:description": "City has a form of self-governance"
    },
    {
     "datatype": "string",
@@ -438,10 +558,11 @@
     "@id": "https://iisg.amsterdam/resource/B2L.csv/column/ecozones",
     "name": "ecozones",
     "propertyUrl": "B2L:vocab/ecozones",
-    "dc:description": "Dummy variable indicating in which ecozone a city is located"
+    "valueUrl": "B2L:code/ecozones/{ecozones}",
+    "dc:description": "Variable indicating in which ecozone a city is located"
    },
    {
-    "datatype": "string",
+    "datatype": "int",
     "titles": [
      "free_prince_dls"
     ],
@@ -449,6 +570,14 @@
     "name": "free_prince_dls",
     "propertyUrl": "B2L:vocab/free_prince_dls",
     "dc:description": "Dummy variable indicating whether or not a city is located in a country that is classified as “free” (=1) or “prince” (=0) according to DeLong and Shleifer (1993)s"
+   },
+   {
+    "virtual": true,
+    "null": ["0"],
+    "name": "free_prince_dls",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "B2L:princeRuledCity",
+    "dc:description": "City is located in a country that is classified as “prince” according to DeLong and Shleifer (1993)"
    },
    {
     "datatype": "integer",
@@ -538,7 +667,7 @@
     "@id": "https://iisg.amsterdam/resource/B2L.csv/column/fup",
     "name": "fup",
     "propertyUrl": "B2L:vocab/fup",
-    "dc:description": "A city’s “foreign urban potential” – see our paper for its full definition"
+    "dc:description": "A city’s “foreign urban potential” – see Bosker et al. paper for its full definition"
    },
    {
     "datatype": "float",
@@ -548,7 +677,7 @@
     "@id": "https://iisg.amsterdam/resource/B2L.csv/column/musfup",
     "name": "musfup",
     "propertyUrl": "B2L:vocab/musfup",
-    "dc:description": "A city’s “Muslim foreign urban potential” – see our paper for its full definition"
+    "dc:description": "A city’s “Muslim foreign urban potential” – see Bosker et al. for its full definition"
    },
    {
     "datatype": "float",
@@ -558,7 +687,7 @@
     "@id": "https://iisg.amsterdam/resource/B2L.csv/column/chrfup",
     "name": "chrfup",
     "propertyUrl": "B2L:vocab/chrfup",
-    "dc:description": "A city’s “Christian foreign urban potential” – see our paper for its full definition"
+    "dc:description": "A city’s “Christian foreign urban potential” – see Bosker et al. for its full definition"
    },
    {
     "datatype": "float",
@@ -568,7 +697,7 @@
     "@id": "https://iisg.amsterdam/resource/B2L.csv/column/musfup_devries",
     "name": "musfup_devries",
     "propertyUrl": "B2L:vocab/musfup_devries",
-    "dc:description": "A city’s “Muslim foreign urban potential” taking account of differences in transportation mode following De Vries (1984) – see our paper for its full definition"
+    "dc:description": "A city’s “Muslim foreign urban potential” taking account of differences in transportation mode following De Vries (1984) – see Bosker et al. paper for its full definition"
    },
    {
     "datatype": "float",
@@ -578,7 +707,7 @@
     "@id": "https://iisg.amsterdam/resource/B2L.csv/column/chrfup_devries",
     "name": "chrfup_devries",
     "propertyUrl": "B2L:vocab/chrfup_devries",
-    "dc:description": "A city’s “Christian foreign urban potential” taking account of differences in transportation mode following De Vries (1984) – see our paper for its full definition"
+    "dc:description": "A city’s “Christian foreign urban potential” taking account of differences in transportation mode following De Vries (1984) – see Bosker et al. paper for its full definition"
    },
    {
     "datatype": "float",
@@ -801,7 +930,7 @@
     "dc:description": "Total population of all cities with at least 10,000 inhabitants falling under Christian rule located within a 50 – 100km range (thousands)"
    },
    {
-    "datatype": "string",
+    "datatype": "int",
     "titles": [
      "parl_act"
     ],
@@ -811,7 +940,15 @@
     "dc:description": "Dummy variable indicating whether or not a city falls under an active parliament"
    },
    {
-    "datatype": "string",
+    "virtual": true,
+    "null": ["0"],
+    "name": "parl_act",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "B2L:parliamentActiveCity",
+    "dc:description": "City falls under an active parliament"
+   },
+   {
+    "datatype": "int",
     "titles": [
      "madrassa01"
     ],
@@ -821,7 +958,15 @@
     "dc:description": "Dummy variable indicating whether or not a city hosts a madrassa"
    },
    {
-    "datatype": "string",
+    "virtual": true,
+    "null": ["0"],
+    "name": "madrassa01",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "B2L:madrassaCity",
+    "dc:description": "City hosts a madrassa"
+   },
+   {
+    "datatype": "int",
     "titles": [
      "d_largestate"
     ],
@@ -831,7 +976,15 @@
     "dc:description": "Dummy variable indicating whether or not a city falls under the rule of a large state (see paper for its definition)"
    },
    {
-    "datatype": "string",
+    "virtual": true,
+    "null": ["0"],
+    "name": "d_largestate",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "B2L:largeStateCity",
+    "dc:description": "City falls under the rule of a large state (see paper for its definition)"
+   },
+   {
+    "datatype": "int",
     "titles": [
      "granadaemirate"
     ],
@@ -841,7 +994,15 @@
     "dc:description": "Dummy variable indicating whether or not a city falls under the Emirate of Granada"
    },
    {
-    "datatype": "string",
+    "virtual": true,
+    "null": ["0"],
+    "name": "granadaemirate",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "B2L:GranadaEmirateCity",
+    "dc:description": "Dummy variable indicating whether or not a city falls under the Emirate of Granada"
+   },
+   {
+    "datatype": "int",
     "titles": [
      "ottoman"
     ],
@@ -849,6 +1010,14 @@
     "name": "ottoman",
     "propertyUrl": "B2L:vocab/ottoman",
     "dc:description": "Dummy variable indicating whether or not a city falls under Ottoman rule"
+   },
+   {
+    "virtual": true,
+    "null": ["0"],
+    "name": "ottoman",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "B2L:OttomanEmpireCity",
+    "dc:description": "City falls under Ottoman rule"
    },
    {
     "titles": [
