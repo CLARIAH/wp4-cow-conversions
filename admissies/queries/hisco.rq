@@ -9,8 +9,8 @@ prefix hsn: <https://iisg.amsterdam/hsn2013a/>
 SELECT ?ID ?sex ?origin ?year ?month ?occman ?occwife ?hisclass ?hisconr ?distance ?geoloc  WHERE {
   ?sub admissie:ID ?ID .
   ?sub admissie:Origin ?origin .
-  ?sub admissie:dist_to_haarlem_rounded ?distance . 
-  ?sub admissie:man_or_woman ?sex .
+  ?sub admissie:dist_to_haarlem ?distance . 
+  ?sub admissie:Sex_principal ?sex .
   ?sub admissie:Year ?year .
   ?sub admissie:Month ?month .
   ?sub admissie:Origin ?origin .
