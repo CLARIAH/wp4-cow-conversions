@@ -1,0 +1,19 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+
+prefix admissie: <https://iisg.amsterdam/Admissieregisters_Haarlem/vocab/>
+
+
+
+SELECT * WHERE {
+
+ ?city geo:asWKT ?wkt .
+
+ BIND(bif:st_distance(?wkt, bif:st_point(4.637324, 52.381014)) AS ?dist_to_haarlem) .
+
+ ?city ^admissie:Origin / admissie:dist_to_haarlem_rounded ?haarlem_orig .
+
+} 
