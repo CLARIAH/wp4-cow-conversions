@@ -1,0 +1,49 @@
+prefix admis: <https://iisg.amsterdam/Admissieregisters_Haarlem/vocab/>
+
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+
+select ?n ?wkt ?wktColor {
+
+ # What is the largest value for n?  Store it in max.
+
+ {
+
+   select (max(?n) as ?max) {
+
+     {
+
+       select ?origin ?wkt (count(?origin) as ?n) {
+
+         ?s admis:Origin ?origin .
+
+         ?origin geo:asWKT ?wkt .
+
+       }
+
+     }
+
+   }
+
+ }
+
+ # Now that we know the max, we can use it to normalize specific values of n.
+
+ {
+
+   select ?wkt (count(?origin)  as ?n) {
+
+     ?s admis:Origin ?origin .
+
+     ?origin geo:asWKT ?wkt .
+
+   }
+
+   group by ?wkt
+
+ }
+
+ bind (concat('viridis,', bif:log(xsd:float(?n)) / bif:log(?max)) as ?wktColor)
+
+}
+
+order by desc(?n)
