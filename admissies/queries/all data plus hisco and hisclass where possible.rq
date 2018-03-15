@@ -25,7 +25,7 @@ SELECT * WHERE {
   OPTIONAL {
     ?sub admissie:origin_standard ?origin ;
 		 admissie:origin_lat ?lat_origin ;
-    	 admissie:origin_lat ?long_origin ;
+    	 admissie:origin_long ?long_origin ;
     	 admissie:dist_to_haarlem ?distance_origin_haarlem
   }
 
