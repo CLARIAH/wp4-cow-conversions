@@ -2,7 +2,7 @@
   "dialect": {
   "quoteChar": "\"",
   "delimiter": ",",
-  "encoding": "ISO-8859-2"
+  "encoding": "utf-8"
  },
  "dcat:keyword": [],
  "dc:license": {
