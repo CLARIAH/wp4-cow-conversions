@@ -30,9 +30,13 @@ SELECT * WHERE {
   }
 
   OPTIONAL {?sub admissie:Birthplace ?birthplace} .
+ 
   OPTIONAL {?sub admissie:dist_birth_origin ?distance_birth_origin}.
-
-  OPTIONAL{?sub hsnvocab:occupationalTitle ?occ2 .
+  
+  OPTIONAL {?sub admissie:Children ?children}.
+  
+  OPTIONAL{
+    ?sub hsnvocab:occupationalTitle ?occ2 .
      ?hisco skos:member ?occ2 .
      ?hisco skos:inScheme ?scheme .
      ?hisco skos:notation ?hisconr.}
@@ -41,4 +45,6 @@ SELECT * WHERE {
  # ?sub admissie:Origin ?origin .
  # ?origin geo:asWKT ?geoloc. 
   
+
   }
+order by ASC(?ID)
