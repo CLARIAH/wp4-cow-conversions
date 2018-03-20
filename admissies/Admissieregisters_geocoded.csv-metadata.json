@@ -126,19 +126,20 @@
     "dc:description": "Place of last origin"
    },
    {
-    "datatype": "string",
+    "datatype": "xsd:date",
     "titles": [
      "Date"
     ],
     "@id": "https://iisg.amsterdam/resource/Admissieregisters.csv/column/Date",
     "name": "Date",
     "propertyUrl": "admissie:vocab/Date",
-    "valueUrl": "admissie:code/Date/{Date}",
+    "csvw:value": "{{Date[6:] + '-' + Date[3:4] + '-' + Date[0:1]}}",
     "dc:description": "Date of immigration [dd-mm-yyyy]"
    },
    {
    "virtual": true,
    "name": "Year",
+   "datatype": "xsd:gYear",
    "propertyUrl": "admissie:vocab/Year",
    "csvw:value": "{{Date[6:]}}",
    "dc:description": "Year of immigration into Haarlem"
@@ -146,7 +147,7 @@
    {
    "virtual": true,
    "name": "Month",
-     "propertyUrl": "admissie:vocab/Month",
+   "propertyUrl": "admissie:vocab/Month",
    "csvw:value": "{{Date[3:5]}}",
    "dc:description": "Month of immigration into Haarlem"
    },
@@ -200,6 +201,7 @@
     "@id": "https://iisg.amsterdam/resource/Admissieregisters_geocoded.csv/column/man_or_woman",
     "name": "man_or_woman",
     "propertyUrl": "admissie:vocab/man_or_woman",
+    "valueUrl": "admissie:code/{male_or_woman}",
     "dc:description": "principal immigrant male ==1 female ==2"
    },
    {
@@ -286,7 +288,7 @@
       "dc:description": "Reference to digital page number of source online"
     },
     {
-    "datatype": "string",
+    "datatype": "float",
     "titles": [
      "lat"
     ],
@@ -298,7 +300,7 @@
     "null": ["NA"]
    },
    {
-    "datatype": "string",
+    "datatype": "float",
     "titles": [
      "lon"
     ],
@@ -323,6 +325,12 @@
   },
   {
     "virtual": true,
+    "aboutUrl": "admissie:code/Origin/{Origin}",
+    "propertyUrl": "geosparql:hasGeometry",
+    "valueUrl": "admissie:/genid/{Origin}",
+  },
+  {
+    "virtual": true,
     "titles": [
      "lon"
     ],
@@ -332,14 +340,14 @@
     "propertyUrl": "geosparql:asWKT",
     "csvw:value": "{{'POINT(' + lon| replace(',' ,'.') + ' ' + lat| replace(',' ,'.') + ')'}}",
     "null": ["NA"]
-    },
+  },
   {
     "virtual": true,
-    "aboutUrl": "admissie:code/Origin/{Origin}",
+    "aboutUrl": "admissie:/genid/{Origin}",
     "propertyUrl": "rdf:type",
     "valueUrl": "geosparql:Geometry"
   },
-   {
+  {
     "datatype": "integer",
     "titles": [
      "dist_to_haarlem_rounded"
