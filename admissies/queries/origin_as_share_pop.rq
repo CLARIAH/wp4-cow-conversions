@@ -1,0 +1,25 @@
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix admis: <https://iisg.amsterdam/Admissieregisters_Haarlem/vocab/>
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix siemvoc: <https://iisg.amsterdam/siem/vocab/>
+
+select ?origin ?city ?inhab ?wkt ?wktColor ?n (?n / ?inhab as ?share){
+  {
+    SELECT ?city ?inhab ?siemcitycoords WHERE {
+      ?sub siemvoc:city ?city .
+      ?sub siemvoc:year ?year .
+      ?sub siemvoc:inhab ?inhab .
+      FILTER(?year = "1750-01-01"^^xsd:gYear && ?inhab > 5) .
+      ?city geo:hasGeometry / geo:asWKT ?siemcitycoords .
+    }
+  }
+  {
+    select ?origin ?wkt (count(?origin) as ?n) {
+      ?s admis:Origin ?origin .
+      ?origin geo:hasGeometry / geo:asWKT ?wkt .
+    }
+  }
+  filter(bif:st_within(?siemcitycoords, ?wkt, 5))
+  bind (concat('viridis,', xsd:float(?n) / (?inhab * 2.3)) as ?wktColor)
+}
+order by desc(?share)
