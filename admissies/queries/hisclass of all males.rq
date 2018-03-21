@@ -1,0 +1,15 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix admissie: <https://iisg.amsterdam/Admissieregisters_Haarlem/vocab/>
+prefix hsnvocab: <https://iisg.amsterdam/hsn2013a/vocab/>
+prefix hsn: <https://iisg.amsterdam/hsn2013a/>
+
+SELECT ?hisclass (COUNT(?hisclass) as ?total) WHERE {
+
+  ?sub admissie:Sex_principal <https://iisg.amsterdam/Admissieregisters_Haarlem/code/Sex_principal/male> . 
+  ?sub admissie:Occupation_man ?occ .
+  ?sub hsnvocab:occupationalTitle ?occ2 .
+  ?occ2 hsn:hisclass ?hisclass 
+} 
+ORDER BY DESC(?total)
