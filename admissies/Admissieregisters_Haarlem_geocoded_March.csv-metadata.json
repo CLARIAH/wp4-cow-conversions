@@ -260,7 +260,7 @@
     "dc:description": "Full name of immigrating woman (only recorded when immigrating without husband)"
    },
    {
-    "datatype": "string",
+    "datatype": "integer",
     "titles": [
      "Children"
     ],
