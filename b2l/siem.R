@@ -1,4 +1,6 @@
-# todo: check city names with original baghdad2london
+# todo: city_safe not unique, nor is city, city+country
+# rounding errors screw up city + lat + lon
+
 
 rm(list = ls())
 setwd("~/repos/wp4-cow-conversions/b2l/")
@@ -22,14 +24,16 @@ comm = comm[, lapply(.SD, stringi::stri_replace_all_fixed, '\n', ' - ')]
 all.equal(siem$city, comm$city)
 all.equal(siem$city, lbls$city)
 
-siem = merge(siem, comm[, grep("city|\\d+y", names(comm)), with = F], by = 'city', suffixes = c("", "_comment"))
-siem = merge(siem, lbls[, grep("city|\\d+y", names(lbls)), with = F], by = 'city', suffixes = c("", "_quality"))
+siem = merge(siem, comm[, grep("city|country|\\d+y", names(comm)), with = F], by = c('city', 'country'), suffixes = c("", "_comment"))
+siem = merge(siem, lbls[, grep("city|country|\\d+y", names(lbls)), with = F], by = c('city', 'country'), suffixes = c("", "_quality"))
 siem = siem[, -5]
 
 siem_long = data.table::melt(siem, 
     id.vars = c("city", "uncountrycode", "country", "latitude", "longitude", "elevation", "transportloc"),
     variable.name = 'year', value.name = c("inhab", "comment", "quality"),
     measure.vars = data.table:::patterns("\\d+y$", "comment$", "quality$", cols = names(siem)))
+
+siem_long[, .N, by = list(city, country)][, unique(N)]
 
 siem_long[, year := names(siem)[grep("\\d+y$", names(siem))][year]]
 siem_long[, year := as.integer(stringi::stri_extract_first_regex(year, "\\d+"))]
@@ -54,5 +58,11 @@ siem_long[!is.na(as.numeric(quality)), quality := NA]
 siem_long[, city_alt := stringi::stri_extract_first_regex(city, "\\(.*\\)")]
 siem_long[, city_short := data.table::tstrsplit(city, "(", fixed = TRUE, keep = 1L)]
 siem_long[, city_safe := tolower(stringi::stri_replace_all_regex(city_short, "[^A-z]", ""))]
+
+siem_long[, .N, by = list(city_safe, country)][, unique(N)]
+siem_long[year == 1500, city_safe[duplicated(city_safe)], by = country]
+
+siem_long[, distfromlond := round(sp::spDistsN1(cbind(longitude, latitude), c(0, 50)), -1)]
+siem_long[year == 1500, paste0(city_safe, distfromlond)[duplicated(paste0(city_safe, distfromlond))], by = country]
 
 data.table::fwrite(siem_long, "dat/siem_long.csv", na = "", quote = TRUE)

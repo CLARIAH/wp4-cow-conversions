@@ -1,22 +1,14 @@
 #+ summary: compare calculated distances with geosparql computed distances
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
-
 PREFIX admissie: <https://iisg.amsterdam/Admissieregisters_Haarlem/vocab/>
 
-
-
 SELECT ?city ?dist ?dist_computed WHERE {
- ?origin admissie:Origin ?city .
- ?origin admissie:dist_to_haarlem ?dist .
- ?city geo:asWKT ?wkt .
+    ?origin admissie:Origin ?city .
+    ?origin admissie:dist_to_haarlem ?dist .
+    ?city geo:hasGeometry / geo:asWKT ?wkt .
 
-  BIND(bif:st_distance(?wkt, bif:st_point(4.637324, 52.381014)) AS ?dist_computed) .
-
-#  ?city ^admissie:Origin / admissie:dist_to_haarlem ?dist_computed .
-
+    BIND(bif:st_distance(?wkt, bif:st_point(4.637324, 52.381014)) AS ?dist_computed) .
 } 

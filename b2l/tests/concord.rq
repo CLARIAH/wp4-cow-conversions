@@ -5,7 +5,7 @@ PREFIX geo: <http://www.opengis.net/ont/geosparql#>
 prefix siemvoc:  <https://iisg.amsterdam/siem/vocab/>
 prefix b2lvoc:  <https://iisg.amsterdam/B2L/vocab/>
 
-SELECT (AVG(?b2llat - ?siemlat) AS ?avgdist) WHERE {
+SELECT (AVG(?b2llat - ?siemlat) AS ?avgdist) WHERE { # expect ~=0
   ?b2lobs b2lvoc:cityid/skos:exactMatch/^siemvoc:cityid ?siemobs .
   ?b2lobs b2lvoc:latitude ?b2llat .
   ?siemobs siemvoc:latitude ?siemlat .
