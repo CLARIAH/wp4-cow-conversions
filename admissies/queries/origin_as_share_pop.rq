@@ -3,7 +3,7 @@ prefix admis: <https://iisg.amsterdam/Admissieregisters_Haarlem/vocab/>
 prefix geo: <http://www.opengis.net/ont/geosparql#>
 prefix siemvoc: <https://iisg.amsterdam/siem/vocab/>
 
-select ?origin ?city ?inhab ?origincoords ?wktColor ?n {
+select ?origin ?city ?inhab ?origincoords ?origincoordsColor ?n {
   # get inhabitants and coords for all cities > 5k in 1750
   {
     SELECT ?city ?inhab ?siemcitycoords WHERE {
@@ -24,6 +24,6 @@ select ?origin ?city ?inhab ?origincoords ?wktColor ?n {
   # keep only if origin_coords are within 5 km of city
   filter(bif:st_within(?siemcitycoords, ?origincoords, 5))
   
-  bind (concat('viridis,', xsd:float(?n) / (?inhab * 2.3)) as ?wktColor)
+  bind (concat('viridis,', xsd:float(?n) / (?inhab)) as ?origincoordsColor)
 }
 order by desc(?share)
