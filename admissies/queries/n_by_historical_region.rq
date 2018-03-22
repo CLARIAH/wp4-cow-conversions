@@ -1,0 +1,28 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix admis: <https://iisg.amsterdam/Admissieregisters_Haarlem/vocab/>
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix mint: <https://iisg.amsterdam/vocab/>
+
+SELECT ?region (count(?origin) as ?n) WHERE {
+    {
+    select ?wkt ?origin {
+      ?s admis:Origin ?origin .
+      ?origin geo:hasGeometry / geo:asWKT ?wkt .
+    }
+  }
+  {
+    SELECT ?region ?regionwkt WHERE {
+      ?region a mint:Authority .
+      ?region geo:hasGeometry ?geo .
+      ?geo mint:end ?end .
+      ?geo mint:begin ?begin .
+      filter(?end > "1750"^^xsd:gYear && ?begin < "1750"^^xsd:gYear)
+      ?geo geo:asWKT ?regionwkt .
+  }
+  }
+  filter(bif:st_intersects(?wkt, ?regionwkt)).
+} 
+group by ?region 
+order by desc(?n)
+
