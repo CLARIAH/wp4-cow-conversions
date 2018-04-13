@@ -180,7 +180,7 @@
                 "datatype": "string",
                 "dc:description": "Start year of this country",
                 "name": "start_year",
-                "propertyUrl": "clio:dimension/start_year",
+                "propertyUrl": "clio:vocab/start_year",
                 "virtual": true
             },
             {
@@ -188,7 +188,7 @@
                 "datatype": "xsd:gYear",
                 "dc:description": "End year of this country",
                 "name": "end_year",
-                "propertyUrl": "clio:dimension/end_year",
+                "propertyUrl": "clio:vocab/end_year",
                 "virtual": true
             },
             {
@@ -213,8 +213,8 @@
             },
             {
                 "aboutUrl": "{country_name}/{start_year}/{end_year}",
-                "propertyUrl": "clio:dimension/webmapper_code",
-                "valueUrl": "clio:{Webmapper_code}",
+                "propertyUrl": "clio:vocab/webmapper_code",
+                "valueUrl": "clio:code/{Webmapper_code}",
                 "virtual": true
             },
             {
