@@ -177,7 +177,7 @@
             },
             {
                 "aboutUrl": "clio:{country_name}/{start_year}/{end_year}",
-                "datatype": "string",
+                "datatype": "xsd:gYear",
                 "dc:description": "Start year of this country",
                 "name": "start_year",
                 "propertyUrl": "clio:vocab/start_year",
