@@ -5,5 +5,7 @@
 *.docx
 *.xls
 *.xlsx
+*.gz
+*.zip
 b2l/design*
 b2l/convert.sh
