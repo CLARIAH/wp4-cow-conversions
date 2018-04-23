@@ -54,8 +54,6 @@
             "time": "http://www.w3.org/2006/time#",
             "xml": "http://www.w3.org/XML/1998/namespace/",
             "xsd": "http://www.w3.org/2001/XMLSchema#",
-            "sdmx-": "http://purl.org/linked-data/sdmx/2009/#",
-            "napp-": "http://data.socialhistory.org/vocab/napp//",
             "geosparql": "http://www.opengis.net/ont/geosparql#",
             "B2L": "https://iisg.amsterdam/B2L/",
             "siem": "https://iisg.amsterdam/siem/"
@@ -255,7 +253,7 @@
                 "datatype": "xsd:gYear",
                 "dc:description": "The year this value was measured",
                 "name": "year",
-                "propertyUrl": "sdmx-:refPeriod"
+                "propertyUrl": "sdmx-dimension:refPeriod"
             },
             {
                 "datatype": "xsd:decimal",
