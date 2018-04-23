@@ -54,7 +54,7 @@
          "qb": "http://purl.org/linked-data/cube#",
          "hisclass5": "https://iisg.amsterdam/hisclass5/",
          "xsd": "http://www.w3.org/2001/XMLSchema#",
-         "sdmx-": "http://purl.org/linked-data/sdmx/2009/#",
+         "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
          "napp-": "http://data.socialhistory.org/vocab/napp//",
          "geosparql": "http://www.opengis.net/ont/geosparql#",
          "B2L": "https://iisg.amsterdam/B2L/",
@@ -254,7 +254,7 @@
                 "datatype": "xsd:gYear",
                 "dc:description": "The year this value was measured",
                 "name": "year",
-                "propertyUrl": "sdmx-:refPeriod"
+                "propertyUrl": "sdmx-dimension:refPeriod"
             },
             {
                 "datatype": "xsd:decimal",
