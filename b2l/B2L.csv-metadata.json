@@ -15,6 +15,7 @@
   }
 },
 "dc:creator": [{
+  "@id": "sdp:auke.rijpma@gmail.com",
   "rdf:type": [
     {
       "@id": "foaf:Person"
@@ -25,10 +26,10 @@
   ],
   "foaf:name": ["Auke Rijpma"],
   "foaf:mbox":{
-"@id": "mailto:auke.rijpma@gmail.com"
 }
 },
 {
+  "@id": "sdp:r.schalk@uu.nl",
   "rdf:type": [
     {
       "@id": "foaf:Person"
@@ -39,10 +40,10 @@
   ],
   "foaf:name": ["Ruben Schalk"],
   "foaf:mbox":{
-"@id": "mailto:r.schalk@uu.nl"
 }
 }],
 "prov:wasDerivedFrom": [{
+  "@id": "http://dx.doi.org/10.1162/REST_a_00284",
   "rdf:type": {
       "@id": "bibo:Article"
   },
