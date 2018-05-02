@@ -132,7 +132,7 @@
         }
     ],
     "qb:structure": {
-        "@id": "http:////iisg.amsterdam//clio/structure/Average_Years_of_Education",
+        "@id": "http://iisg.amsterdam/clio/structure/Average_Years_of_Education",
         "@type": [
             "qb:DataStructureDefinition"
         ],
@@ -153,7 +153,7 @@
                     }
                 ],
                 "qb:measure": {
-                    "@id": "http:////iisg.amsterdam//clio/measure/Average_Years_of_Education",
+                    "@id": "https://iisg.amsterdam/clio/measure/Average_Years_of_Education",
                     "@type": [
                         "qb:MeasureProperty",
                         "owl:DatatypeProperty"
@@ -175,17 +175,17 @@
         "columns": [
             {
                 "propertyUrl": "qb:dataSet",
-                "valueUrl": "https:////iisg.amsterdam//clio/Average_Years_of_Education",
+                "valueUrl": "https://iisg.amsterdam/clio/Average_Years_of_Education",
                 "virtual": true
             },
             {
-                "aboutUrl": "https:////iisg.amsterdam//clio/Average_Years_of_Education",
+                "aboutUrl": "https://iisg.amsterdam/clio/Average_Years_of_Education",
                 "propertyUrl": "qb:structure",
-                "valueUrl": "https:////iisg.amsterdam//clio/structure/Average_Years_of_Education",
+                "valueUrl": "https://iisg.amsterdam/clio/structure/Average_Years_of_Education",
                 "virtual": true
             },
             {
-                "aboutUrl": "https:////iisg.amsterdam//clio/Average_Years_of_Education",
+                "aboutUrl": "https://iisg.amsterdam/clio/Average_Years_of_Education",
                 "propertyUrl": "rdf:type",
                 "valueUrl": "qb:DataSet",
                 "virtual": true

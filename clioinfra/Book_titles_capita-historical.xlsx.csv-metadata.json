@@ -130,7 +130,7 @@
         }
     ],
     "qb:structure": {
-        "@id": "http:////iisg.amsterdam//clio/structure/Book_Titles_per_Capita",
+        "@id": "http://iisg.amsterdam/clio/structure/Book_Titles_per_Capita",
         "@type": "qb:DataStructureDefinition",
         "qb:component": [
             {
@@ -148,7 +148,7 @@
                     }
                 ],
                 "qb:measure": {
-                    "@id": "http:////iisg.amsterdam//clio/measure/Book_Titles_per_Capita",
+                    "@id": "http://iisg.amsterdam/clio/measure/Book_Titles_per_Capita",
                     "@type": [
                         "qb:MeasureProperty",
                         "owl:DatatypeProperty"
@@ -171,17 +171,17 @@
         "columns": [
             {
                 "propertyUrl": "qb:dataSet",
-                "valueUrl": "https:////iisg.amsterdam//clio/Book_Titles_per_Capita",
+                "valueUrl": "https://iisg.amsterdam/clio/Book_Titles_per_Capita",
                 "virtual": true
             },
             {
-                "aboutUrl": "https:////iisg.amsterdam//clio/Book_Titles_per_Capita",
+                "aboutUrl": "https://iisg.amsterdam/clio/Book_Titles_per_Capita",
                 "propertyUrl": "qb:structure",
-                "valueUrl": "https:////iisg.amsterdam//clio/structure/Book_Titles_per_Capita",
+                "valueUrl": "https://iisg.amsterdam/clio/structure/Book_Titles_per_Capita",
                 "virtual": true
             },
             {
-                "aboutUrl": "https:////iisg.amsterdam//clio/Book_Titles_per_Capita",
+                "aboutUrl": "https://iisg.amsterdam/clio/Book_Titles_per_Capita",
                 "propertyUrl": "rdf:type",
                 "valueUrl": "qb:DataSet",
                 "virtual": true

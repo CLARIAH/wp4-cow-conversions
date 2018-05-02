@@ -130,7 +130,7 @@
         }
     ],
     "qb:structure": {
-        "@id": "http:////iisg.amsterdam//clio/structure/Aluminium_Production",
+        "@id": "http://iisg.amsterdam/clio/structure/Aluminium_Production",
         "@type": "qb:DataStructureDefinition",
         "qb:component": [
             {
@@ -148,7 +148,7 @@
                     }
                 ],
                 "qb:measure": {
-                    "@id": "http:////iisg.amsterdam//clio/measure/Aluminium_Production",
+                    "@id": "http://iisg.amsterdam/clio/measure/Aluminium_Production",
                     "@type": [
                         "qb:MeasureProperty",
                         "owl:DatatypeProperty"
@@ -171,17 +171,17 @@
         "columns": [
             {
                 "propertyUrl": "qb:dataSet",
-                "valueUrl": "https:////iisg.amsterdam//clio/Aluminium_Production",
+                "valueUrl": "https://iisg.amsterdam/clio/Aluminium_Production",
                 "virtual": true
             },
             {
-                "aboutUrl": "https:////iisg.amsterdam//clio/Aluminium_Production",
+                "aboutUrl": "https://iisg.amsterdam/clio/Aluminium_Production",
                 "propertyUrl": "qb:structure",
-                "valueUrl": "https:////iisg.amsterdam//clio/structure/Aluminium_Production",
+                "valueUrl": "https://iisg.amsterdam/clio/structure/Aluminium_Production",
                 "virtual": true
             },
             {
-                "aboutUrl": "https:////iisg.amsterdam//clio/Aluminium_Production",
+                "aboutUrl": "https://iisg.amsterdam/clio/Aluminium_Production",
                 "propertyUrl": "rdf:type",
                 "valueUrl": "qb:DataSet",
                 "virtual": true
