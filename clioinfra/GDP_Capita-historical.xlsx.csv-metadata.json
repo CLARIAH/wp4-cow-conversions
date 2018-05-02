@@ -57,29 +57,45 @@
             "geosparql": "http://www.opengis.net/ont/geosparql#",
             "B2L": "https://iisg.amsterdam/B2L/",
             "siem": "https://iisg.amsterdam/siem/"
-
-        }
-    ],
-    "dc:creator": {
-        "@id": "sdp:rjhoekstr@gmail.com",
-        "foaf:familyName": "Hoekstra",
-        "foaf:givenName": "Rinke",
-        "foaf:mbox": {
-            "@id": "mailto:rinke.hoekstra@vu.nl"
-        },
-        "foaf:name": "Rinke Hoekstra",
-        "owl:sameAs": {
-            "@id": "http://orcid.org/0000-0001-7076-9083"
-        },
-        "rdf:type": [
-            {
-                "@id": "foaf:Person"
+          }
+        ],
+        "dc:creator": {
+            "@id": "sdp:rjhoekstr@gmail.com",
+            "foaf:familyName": "Hoekstra",
+            "foaf:givenName": "Rinke",
+            "foaf:mbox": {
+                "@id": "mailto:rinke.hoekstra@vu.nl"
             },
-            {
-                "@id": "prov:Person"
-            }
-        ]
-    },
+            "foaf:name": "Rinke Hoekstra",
+            "owl:sameAs": {
+                "@id": "http://orcid.org/0000-0001-7076-9083"
+            },
+            "rdf:type": [
+                {
+                    "@id": "foaf:Person"
+                },
+                {
+                    "@id": "prov:Person"
+                }
+            ]
+        },
+        "dc:creator": {
+            "@id": "sdp:rubenschalk1@gmail.com",
+            "foaf:familyName": "Schalk",
+            "foaf:givenName": "Ruben",
+            "foaf:mbox": {
+                "@id": "mailto:rubenschalk1@gmail.com"
+            },
+            "foaf:name": "Ruben Schalk",
+                    "rdf:type": [
+                {
+                    "@id": "foaf:Person"
+                },
+                {
+                    "@id": "prov:Person"
+                }
+            ]
+        },
     "dc:description": [
         "The Maddison Project, initiated in March 2010 by a group of close colleagues of Angus Maddison, aims to develop an effective way of cooperation between scholars to continue Maddison\u2019s work on measuring economic performance in the world economy. This paper is a first product of the project. Its goal is to inventory recent research on historical national accounts, to briefly discuss some of the problems related to these historical statistics and to extend and where necessary revise the estimates published by Maddison in his recent overviews (2001; 2003; 2007) (also made available on his website at http://www.ggdc.net/MADDISON/oriindex.htm)."
     ],
@@ -112,7 +128,7 @@
         }
     ],
     "qb:structure": {
-        "@id": "http:////iisg.amsterdam//clio/structure/Aluminium_Production",
+        "@id": "https://iisg.amsterdam/clio/structure/GDP_per_Capita",
         "@type": "qb:DataStructureDefinition",
         "qb:component": [
             {
