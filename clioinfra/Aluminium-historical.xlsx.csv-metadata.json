@@ -81,6 +81,23 @@
             }
         ]
     },
+    "dc:creator": {
+        "@id": "sdp:rubenschalk1@gmail.com",
+        "foaf:familyName": "Schalk",
+        "foaf:givenName": "Ruben",
+        "foaf:mbox": {
+            "@id": "mailto:rubenschalk1@gmail.com"
+        },
+        "foaf:name": "Ruben Schalk",
+                "rdf:type": [
+            {
+                "@id": "foaf:Person"
+            },
+            {
+                "@id": "prov:Person"
+            }
+        ]
+    },
     "dc:description": [
         "Aluminum is the second most abundant metallic element in the Earth's crust after silicon, yet it is a comparatively new industrial metal that has been produced in commercial quantities for just over 100 years. It weighs about one-third as much as steel or copper; is malleable, ductile, and easily machined and cast; and has excellent corrosion resistance and durability. Measured either in quantity or value, aluminum's use exceeds that of any other metal except iron, and it is important in virtually all segments of the world economy. Some of the many uses for aluminum are in transportation (automobiles, airplanes, trucks, railcars, marine vessels, etc.), packaging (cans, foil, etc.), construction (windows, doors, siding, etc), consumer durables (appliances, cooking utensils, etc.), electrical transmission lines, machinery, and many other applications. (..)"
     ],
@@ -154,17 +171,17 @@
         "columns": [
             {
                 "propertyUrl": "qb:dataSet",
-                "valueUrl": "http:////iisg.amsterdam//clio/Aluminium_Production",
+                "valueUrl": "https:////iisg.amsterdam//clio/Aluminium_Production",
                 "virtual": true
             },
             {
-                "aboutUrl": "http:////iisg.amsterdam//clio/Aluminium_Production",
+                "aboutUrl": "https:////iisg.amsterdam//clio/Aluminium_Production",
                 "propertyUrl": "qb:structure",
-                "valueUrl": "http:////iisg.amsterdam//clio/structure/Aluminium_Production",
+                "valueUrl": "https:////iisg.amsterdam//clio/structure/Aluminium_Production",
                 "virtual": true
             },
             {
-                "aboutUrl": "http:////iisg.amsterdam//clio/Aluminium_Production",
+                "aboutUrl": "https:////iisg.amsterdam//clio/Aluminium_Production",
                 "propertyUrl": "rdf:type",
                 "valueUrl": "qb:DataSet",
                 "virtual": true
@@ -240,7 +257,7 @@
                 "valueUrl": "sdr:resource/country/{{country_name| replace(' ','-')}}/{start_year}"
               },
             {
-                "propertyUrl": "sdmx-:refArea",
+                "propertyUrl": "sdmx-dimension:refArea",
                 "valueUrl": "{country_name}/{start_year}/{end_year}",
                 "virtual": true
             },
