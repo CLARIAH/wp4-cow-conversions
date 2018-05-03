@@ -60,6 +60,7 @@
       "canfam-auke": "http://iisg.amsterdam/canfam/auke/",
       "dcterms": "http://purl.org/dc/terms/",
       "schema": "http://schema.org/",
+      "Igdo": "http://linkedgeodata.org/ontology/",
       "foaf": "http://xmlns.com/foaf/0.1/",
       "napp": "http://iisg.amsterdam/napp/",
       "sdv": "https://iisg.amsterdam/vocab/",
@@ -97,7 +98,7 @@
     "@type": "xsd:date"
   },
   "tableSchema": {
-    "aboutUrl": "id/{id}{source}{nr}",
+    "aboutUrl": "{_row}", 
     "primaryKey": "id",
     "columns": [
       {
@@ -138,22 +139,35 @@
       },
       {   
         "virtual": true,
-          "propertyUrl" : "skos:member",
-          "valueUrl" : "person/{id}{source}{nr}m"
+        "propertyUrl" : "skos:member",
+        "valueUrl" : "person/{id}{source}{nr}m"
       },
-       {   
+      {
         "virtual": true,
-          "propertyUrl" : "skos:member",
-          "valueUrl" : "person/{id}{source}{nr}f"
+        "propertyUrl" : "skos:membervirtual        "valueUrl" : "household/{id}{source}{nr}HH"
+      },
+      {
+        "virtual": true,
+        "datatype": "xsd:string",
+        "aboutUrl" : "household/{id}{source}{nr}HH",
+        "propertyUrl" : "Igdo:Household",
+        "language" : "nl",
+        "dc:description": "Identifier household",
+        "csvw:value": "{{id + source + nr}}"
+      },
+      {   
+        "virtual": true,
+        "propertyUrl" : "skos:member",
+        "valueUrl" : "person/{id}{source}{nr}f"
       },
       {
         "virtual": true,
         "datatype": "xsd:string",
         "aboutUrl" : "person/{id}{source}{nr}m",
-        "propertyUrl" : "foaf:name",
+        "propertyUrl" : "foaf:name",           
         "language" : "nl",
         "dc:description": "Male member of the household",
-        "csvw:value": "{{firstnamemen + lastnamemen}}"
+        "csvw:value": "{{firstnamemen +  lastnamemen}}"
       },
       {
         "virtual": true,
@@ -164,7 +178,42 @@
         "dc:description": "Female member of the household",
         "csvw:value": "{{firstnamewomen + lastnamewomen}}"
       },
-
+      {
+        "virtual": true,
+        "datatype": "xsd:string",
+        "aboutUrl" : "person/{id}{source}{nr}m",
+        "propertyUrl" : "foaf:firstName",
+        "language" : "nl",
+        "dc:description": "First name of man of the household",
+        "csvw:value": "{firstnamemen}"
+      },
+        {
+        "virtual": true,
+        "datatype": "xsd:string",
+        "aboutUrl" : "person/{id}{source}{nr}m",
+        "propertyUrl" : "foaf:surname",
+        "language" : "nl",
+        "dc:description": "Surname of man of the household",
+        "csvw:value": "{lastnamemen}"
+      },
+      {
+        "virtual": true,
+        "datatype": "xsd:string",
+        "aboutUrl" : "person/{id}{source}{nr}f",
+        "propertyUrl" : "foaf:firstName",
+        "language" : "nl",
+        "dc:description": "First name of woman of the household",
+        "csvw:value": "{firstnamewomen}"
+      },
+       {
+        "virtual": true,
+        "datatype": "xsd:string",
+        "aboutUrl" : "person/{id}{source}{nr}f",
+        "propertyUrl" : "foaf:surname",
+        "language" : "nl",
+        "dc:description": "Surname of woman of the household",
+        "csvw:value": "{lastnamewomen}"
+      },  
       {
         "datatype": "xsd:string",
         "titles": [
