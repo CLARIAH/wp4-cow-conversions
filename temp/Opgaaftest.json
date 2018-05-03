@@ -144,7 +144,8 @@
       },
       {
         "virtual": true,
-        "propertyUrl" : "skos:membervirtual        "valueUrl" : "household/{id}{source}{nr}HH"
+        "propertyUrl" : "skos:membervirtual",        
+        "valueUrl" : "household/{id}{source}{nr}HH"
       },
       {
         "virtual": true,
