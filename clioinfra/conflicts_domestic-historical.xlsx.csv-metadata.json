@@ -130,7 +130,7 @@
         }
     ],
     "qb:structure": {
-        "@id": "http://data.socialhistory.org/ns/resource/clio/structure/Armed_Conflicts_Internal",
+        "@id": "https://iisg.amsterdam/clio/structure/Armed_Conflicts_Internal",
         "@type": "qb:DataStructureDefinition",
         "qb:component": [
             {
@@ -148,7 +148,7 @@
                     }
                 ],
                 "qb:measure": {
-                    "@id": "http:////iisg.amsterdam/clio/measure/Armed_Conflicts_Internal",
+                    "@id": "https://iisg.amsterdam/clio/measure/Armed_Conflicts_Internal",
                     "@type": [
                         "qb:MeasureProperty",
                         "owl:DatatypeProperty"
@@ -171,17 +171,17 @@
         "columns": [
             {
                 "propertyUrl": "qb:dataSet",
-                "valueUrl": "http:////iisg.amsterdam//clio/Armed_Conflicts_Internal",
+                "valueUrl": "https://iisg.amsterdam/clio/Armed_Conflicts_Internal",
                 "virtual": true
             },
             {
-                "aboutUrl": "http:////iisg.amsterdam//clio/Armed_Conflicts_Internal",
+                "aboutUrl": "https://iisg.amsterdam/clio/Armed_Conflicts_Internal",
                 "propertyUrl": "qb:structure",
-                "valueUrl": "http:////iisg.amsterdam//clio/structure/Armed_Conflicts_Internal",
+                "valueUrl": "https://iisg.amsterdam/clio/structure/Armed_Conflicts_Internal",
                 "virtual": true
             },
             {
-                "aboutUrl": "http:////iisg.amsterdam/clio/Armed_Conflicts_Internal",
+                "aboutUrl": "https://iisg.amsterdam/clio//Armed_Conflicts_Internal",
                 "propertyUrl": "rdf:type",
                 "valueUrl": "qb:DataSet",
                 "virtual": true

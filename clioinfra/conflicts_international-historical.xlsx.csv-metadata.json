@@ -130,7 +130,7 @@
         }
     ],
     "qb:structure": {
-        "@id": "http:////iisg.amsterdam//clio/structure/Armed_Conflicts_International",
+        "@id": "https://iisg.amsterdam/clio/structure/Armed_Conflicts_International",
         "@type": "qb:DataStructureDefinition",
         "qb:component": [
             {
@@ -148,7 +148,7 @@
                     }
                 ],
                 "qb:measure": {
-                    "@id": "http:////iisg.amsterdam//clio/measure/Armed_Conflicts_International",
+                    "@id": "https://iisg.amsterdam/clio/measure/Armed_Conflicts_International",
                     "@type": [
                         "qb:MeasureProperty",
                         "owl:DatatypeProperty"
@@ -171,17 +171,17 @@
         "columns": [
             {
                 "propertyUrl": "qb:dataSet",
-                "valueUrl": "https:////iisg.amsterdam/clio/Armed_Conflicts_International",
+                "valueUrl": "https://iisg.amsterdam/clio/Armed_Conflicts_International",
                 "virtual": true
             },
             {
-                "aboutUrl": "https:////iisg.amsterdam/clio/Armed_Conflicts_International",
+                "aboutUrl": "https://iisg.amsterdam/clio/Armed_Conflicts_International",
                 "propertyUrl": "qb:structure",
-                "valueUrl": "https:////iisg.amsterdam/clio/structure/Armed_Conflicts_International",
+                "valueUrl": "https://iisg.amsterdam/clio/structure/Armed_Conflicts_International",
                 "virtual": true
             },
             {
-                "aboutUrl": "https:////iisg.amsterdam/clio/Armed_Conflicts_International",
+                "aboutUrl": "https://iisg.amsterdam/clio/Armed_Conflicts_International",
                 "propertyUrl": "rdf:type",
                 "valueUrl": "qb:DataSet",
                 "virtual": true

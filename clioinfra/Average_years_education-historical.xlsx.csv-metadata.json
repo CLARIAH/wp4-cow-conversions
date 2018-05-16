@@ -132,7 +132,7 @@
         }
     ],
     "qb:structure": {
-        "@id": "http://iisg.amsterdam/clio/structure/Average_Years_of_Education",
+        "@id": "https://iisg.amsterdam/clio/structure/Average_Years_of_Education",
         "@type": [
             "qb:DataStructureDefinition"
         ],

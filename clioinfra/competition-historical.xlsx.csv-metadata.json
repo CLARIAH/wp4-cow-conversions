@@ -130,7 +130,7 @@
         }
     ],
     "qb:structure": {
-        "@id": "http:////iisg.amsterdam//clio/structure/Political_Competition",
+        "@id": "https://iisg.amsterdam/clio/structure/Political_Competition",
         "@type": "qb:DataStructureDefinition",
         "qb:component": [
             {
@@ -148,7 +148,7 @@
                     }
                 ],
                 "qb:measure": {
-                    "@id": "http:////iisg.amsterdam//clio/measure/Political_Competition",
+                    "@id": "https://iisg.amsterdam/clio/measure/Political_Competition",
                     "@type": [
                         "qb:MeasureProperty",
                         "owl:DatatypeProperty"
@@ -171,17 +171,17 @@
         "columns": [
             {
                 "propertyUrl": "qb:dataSet",
-                "valueUrl": "https:////iisg.amsterdam//clio/Political_Competition",
+                "valueUrl": "https://iisg.amsterdam/clio/Political_Competition",
                 "virtual": true
             },
             {
-                "aboutUrl": "https:////iisg.amsterdam//clio/Political_Competition",
+                "aboutUrl": "https://iisg.amsterdam/clio/Political_Competition",
                 "propertyUrl": "qb:structure",
-                "valueUrl": "https:////iisg.amsterdam//clio/structure/Political_Competition",
+                "valueUrl": "https://iisg.amsterdam/clio/structure/Political_Competition",
                 "virtual": true
             },
             {
-                "aboutUrl": "https:////iisg.amsterdam//clio/Political_Competition",
+                "aboutUrl": "https://iisg.amsterdam/clio/Political_Competition",
                 "propertyUrl": "rdf:type",
                 "valueUrl": "qb:DataSet",
                 "virtual": true

@@ -130,7 +130,7 @@
         }
     ],
     "qb:structure": {
-        "@id": "http://iisg.amsterdam/clio/structure/Aluminium_Production",
+        "@id": "https://iisg.amsterdam/clio/structure/Aluminium_Production",
         "@type": "qb:DataStructureDefinition",
         "qb:component": [
             {
@@ -148,7 +148,7 @@
                     }
                 ],
                 "qb:measure": {
-                    "@id": "http://iisg.amsterdam/clio/measure/Aluminium_Production",
+                    "@id": "https://iisg.amsterdam/clio/measure/Aluminium_Production",
                     "@type": [
                         "qb:MeasureProperty",
                         "owl:DatatypeProperty"

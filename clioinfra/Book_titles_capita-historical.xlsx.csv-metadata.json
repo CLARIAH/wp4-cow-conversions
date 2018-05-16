@@ -130,7 +130,7 @@
         }
     ],
     "qb:structure": {
-        "@id": "http://iisg.amsterdam/clio/structure/Book_Titles_per_Capita",
+        "@id": "https://iisg.amsterdam/clio/structure/Book_Titles_per_Capita",
         "@type": "qb:DataStructureDefinition",
         "qb:component": [
             {
@@ -148,7 +148,7 @@
                     }
                 ],
                 "qb:measure": {
-                    "@id": "http://iisg.amsterdam/clio/measure/Book_Titles_per_Capita",
+                    "@id": "https://iisg.amsterdam/clio/measure/Book_Titles_per_Capita",
                     "@type": [
                         "qb:MeasureProperty",
                         "owl:DatatypeProperty"

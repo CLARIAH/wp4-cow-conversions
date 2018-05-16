@@ -6,54 +6,60 @@
             "@language": "en"
         },
         {
-            "bibo": "http://purl.org/ontology/bibo/",
-            "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/",
-            "canfam-auke": "https://iisg.amsterdam/canfam/auke/",
-            "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
-            "clio": "https://iisg.amsterdam/clio/",
-            "clioctr": "https://iisg.amsterdam/clio/country/",
-            "clioind": "https://iisg.amsterdam/clio/indicator/",
-            "clioprop": "https://iisg.amsterdam/clio/property/",
-            "csvw": "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json#",
-            "dc": "http://purl.org/dc/terms/",
-            "dc11": "http://purl.org/dc/elements/1.1/",
-            "dcterms": "http://purl.org/dc/terms/",
-            "foaf": "http://xmlns.com/foaf/0.1/",
-            "hiscam": "https://iisg.amsterdam/hiscam/",
-            "hisclass": "https://iisg.amsterdam/hisclass/",
-            "hisclass5": "https://iisg.amsterdam/hisclass5/",
-            "hisco": "https://iisg.amsterdam/hisco/",
-            "hisco-entry": "https://iisg.amsterdam/hisco/entry/",
-            "hisco-product": "https://iisg.amsterdam/hisco/product/",
-            "hisco-relation": "https://iisg.amsterdam/hisco/relation/",
-            "hisco-status": "https://iisg.amsterdam/hisco/status/",
-            "hsn": "https://iisg.amsterdam/hsn2013a/",
-            "ldp": "http://www.w3.org/ns/ldp#",
-            "napp": "https://iisg.amsterdam/napp/",
-            "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/",
-            "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/",
-            "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/",
-            "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/",
-            "np": "http://www.nanopub.org/nschema#",
-            "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
-            "owl": "http://www.w3.org/2002/07/owl#",
-            "prov": "http://www.w3.org/ns/prov#",
-            "qb": "http://purl.org/linked-data/cube#",
-            "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-            "schema": "http://schema.org/",
-            "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
-            "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
-            "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
-            "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
-            "sdp": "https://iisg.amsterdam/person/",
-            "sdr": "https://iisg.amsterdam/",
-            "sdv": "http://data.socialhistory.org/vocab/",
-            "skos": "http://www.w3.org/2004/02/skos/core#",
-            "time": "http://www.w3.org/2006/time#",
-            "xml": "http://www.w3.org/XML/1998/namespace/",
-            "xsd": "http://www.w3.org/2001/XMLSchema#"
-        }
+         "owl": "http://www.w3.org/2002/07/owl#",
+         "dbo": "http://dbpedia.org/ontology/",
+         "clioctr": "https://iisg.amsterdam/clio/country/",
+         "hisclass": "https://iisg.amsterdam/hisclass/",
+         "hisco-product": "https://iisg.amsterdam/hisco/product/",
+         "ldp": "http://www.w3.org/ns/ldp#",
+         "clio": "https://iisg.amsterdam/clio/",
+         "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
+         "dbr": "http://dbpedia.org/resource/",
+         "skos": "http://www.w3.org/2004/02/skos/core#",
+         "xml": "http://www.w3.org/XML/1998/namespace/",
+         "bibo": "http://purl.org/ontology/bibo/",
+         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+         "prov": "http://www.w3.org/ns/prov#",
+         "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+         "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/",
+         "hiscam": "https://iisg.amsterdam/hiscam/",
+         "dbpedia": "http://dbpedia.org/resource/",
+         "np": "http://www.nanopub.org/nschema#",
+         "canfam-auke": "https://iisg.amsterdam/canfam/auke/",
+         "dcterms": "http://purl.org/dc/terms/",
+         "schema": "http://schema.org/",
+         "foaf": "http://xmlns.com/foaf/0.1/",
+         "napp": "https://iisg.amsterdam/napp/",
+         "sdv": "https://iisg.amsterdam/vocab/",
+         "hisco": "https://iisg.amsterdam/hisco/",
+         "sdp": "https://iisg.amsterdam/person/",
+         "sdr": "https://iisg.amsterdam/",
+         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+         "time": "http://www.w3.org/2006/time#",
+         "hsn": "https://iisg.amsterdam/hsn2013a/",
+         "dc": "http://purl.org/dc/terms/",
+         "hisco-relation": "https://iisg.amsterdam/hisco/relation/",
+         "hisco-status": "https://iisg.amsterdam/hisco/status/",
+         "dbp": "http://dbpedia.org/property/",
+         "clioprop": "https://iisg.amsterdam/clio/property/",
+         "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+         "csvw": "http://www.w3.org/ns/csvw#",
+         "clioind": "https://iisg.amsterdam/clio/indicator/",
+         "dc11": "http://purl.org/dc/elements/1.1/",
+         "canfam-": "http://data.socialhistory.org/vocab/canfam//",
+         "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/",
+         "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/",
+         "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/",
+         "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+         "qb": "http://purl.org/linked-data/cube#",
+         "hisclass5": "https://iisg.amsterdam/hisclass5/",
+         "xsd": "http://www.w3.org/2001/XMLSchema#",
+         "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+         "napp-": "http://data.socialhistory.org/vocab/napp//",
+         "geosparql": "http://www.opengis.net/ont/geosparql#",
+         "B2L": "https://iisg.amsterdam/B2L/",
+         "siem": "https://iisg.amsterdam/siem/"
+      }
     ],
     "dc:creator": {
         "@id": "sdp:rjhoekstr@gmail.com",
@@ -75,8 +81,25 @@
             }
         ]
     },
+    "dc:creator": {
+        "@id": "sdp:rubenschalk1@gmail.com",
+        "foaf:familyName": "Schalk",
+        "foaf:givenName": "Ruben",
+        "foaf:mbox": {
+            "@id": "mailto:rubenschalk1@gmail.com"
+        },
+        "foaf:name": "Ruben Schalk",
+                "rdf:type": [
+            {
+                "@id": "foaf:Person"
+            },
+            {
+                "@id": "prov:Person"
+            }
+        ]
+    },
     "dc:description": [
-        "index file with indicator names for clio-infra. It will allow the indictaors to be recognised by the front end and Data Processing Engine (DPE). If an additional variable needs to be added to clio-infra, just add it to this file and upload it as a new version."
+        "Index file with indicator names for clio-infra. It will allow the indictaors to be recognised by the front end and Data Processing Engine (DPE). If an additional variable needs to be added to clio-infra, just add it to this file and upload it as a new version."
     ],
     "dc:license": {
         "@id": "http://opendefinition.org/licenses/cc-by/"
@@ -187,6 +210,12 @@
                 "virtual": true
             },
             {
+              "virtual": true,
+              "aboutUrl": "{country\\ name}/{start\\ year}/{end\\ year}",
+              "propertyUrl": "skos:exactMatch",
+              "valueUrl": "sdr:resource/country/{{country_name| replace(' ','-')}}/{start_year}"
+            },
+            {
                 "aboutUrl": "{country\\ name}/{start\\ year}/{end\\ year}",
                 "propertyUrl": "rdf:type",
                 "valueUrl": "clio:Country",
@@ -207,7 +236,7 @@
                 "datatype": "xsd:double",
                 "dc:description": "The value of this measured property",
                 "name": "value",
-                "propertyUrl": "https://iisg.amsterdam/clio/measure/index_file_clio-infra"
+                "propertyUrl": "vocab/index_file_clio-infra"
             }
         ],
         "primaryKey": null

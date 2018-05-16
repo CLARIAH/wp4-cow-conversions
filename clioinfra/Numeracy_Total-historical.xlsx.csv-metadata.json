@@ -99,7 +99,7 @@
         ]
     },
     "dc:description": [
-        "This dataset provides the annual number of Labour conflicts in a number of countries since 1927. Data is derived from the ILO publications Yearbook of Labour Statistics and the digital publications on www.ilo.org. The Yearbooks up to 1969 were digitized by the IISH by manually entering data into a spreadsheet. The ultimate aim of the dataset is to cover the entire world for the period 1850-2010. "
+        "Age data frequently display excess frequencies at attractive numbers, such as multiples of five. We use this \u201cage heaping\u201d to measure cognitive ability in quantitative reasoning, or \u201cnumeracy\u201d. We construct a database of age heaping-based estimates of basic numeracy with exceptional geographic and temporal coverage"
     ],
     "dc:license": {
         "@id": "http://opendefinition.org/licenses/cc-by/"
@@ -114,7 +114,7 @@
             "@id": "http://datalegend.net"
         }
     },
-    "dc:title": "Number of Workers Involved in Labour Disputes",
+    "dc:title": "Numeracy Total",
     "dcat:keyword": [],
     "dialect": {
         "delimiter": ",",
@@ -123,14 +123,14 @@
     },
     "prov:wasDerivedFrom": [
         {
-            "@id": "http://hdl.handle.net/10622/M0PI4D"
+            "@id": "http://hdl.handle.net/10622/GEQKCG"
         },
         {
-            "@id": "http://datasets.socialhistory.org/api/access/datafile/130"
+            "@id": "http://datasets.socialhistory.org/api/access/datafile/133"
         }
     ],
     "qb:structure": {
-        "@id": "https://iisg.amsterdam/clio/structure/Number_of_Workers_Involved_in_Labour_Disputes",
+        "@id": "https://iisg.amsterdam/clio/structure/Numeracy_Total",
         "@type": "qb:DataStructureDefinition",
         "qb:component": [
             {
@@ -148,40 +148,40 @@
                     }
                 ],
                 "qb:measure": {
-                    "@id": "https://iisg.amsterdam/clio/measure/Number_of_Workers_Involved_in_Labour_Disputes",
+                    "@id": "https://iisg.amsterdam/clio/measure/Numeracy_Total",
                     "@type": [
                         "qb:MeasureProperty",
                         "owl:DatatypeProperty"
                     ],
                     "rdfs:label": [
-                        "This dataset provides the annual number of Labour conflicts in a number of countries since 1927. Data is derived from the ILO publications Yearbook of Labour Statistics and the digital publications on www.ilo.org. The Yearbooks up to 1969 were digitized by the IISH by manually entering data into a spreadsheet. The ultimate aim of the dataset is to cover the entire world for the period 1850-2010. "
+                        "Age data frequently display excess frequencies at attractive numbers, such as multiples of five. We use this \u201cage heaping\u201d to measure cognitive ability in quantitative reasoning, or \u201cnumeracy\u201d. We construct a database of age heaping-based estimates of basic numeracy with exceptional geographic and temporal coverage"
                     ],
                     "rdfs:range": {
                         "@id": "xsd:decimal"
                     },
-                    "skos:note": "number workers per year"
+                    "skos:note": "ABCC index (%)"
                 }
             }
         ],
-        "rdfs:comment": "Datastructure definition for CLIO file Number_Workers_Labour_Conflicts-historical.xlsx.csv"
+        "rdfs:comment": "Datastructure definition for CLIO file NumeracyTotal-historical.xlsx.csv"
     },
-    "skos:note": "number workers per year",
+    "skos:note": "ABCC index (%)",
     "tableSchema": {
         "aboutUrl": "{country_name}/{start_year}/{end_year}/{year}",
         "columns": [
             {
                 "propertyUrl": "qb:dataSet",
-                "valueUrl": "https://iisg.amsterdam/clio/Number_of_Workers_Involved_in_Labour_Disputes",
+                "valueUrl": "https://iisg.amsterdam/clio/Numeracy_Total",
                 "virtual": true
             },
             {
-                "aboutUrl": "https://iisg.amsterdam/clio/Number_of_Workers_Involved_in_Labour_Disputes",
+                "aboutUrl": "https://iisg.amsterdam/clio/Numeracy_Total",
                 "propertyUrl": "qb:structure",
-                "valueUrl": "https://iisg.amsterdam/clio/structure/Number_of_Workers_Involved_in_Labour_Disputes",
+                "valueUrl": "https://iisg.amsterdam/clio/structure/Numeracy_Total",
                 "virtual": true
             },
             {
-                "aboutUrl": "https://iisg.amsterdam/clio/Number_of_Workers_Involved_in_Labour_Disputes",
+                "aboutUrl": "https://iisg.amsterdam/clio/Numeracy_Total",
                 "propertyUrl": "rdf:type",
                 "valueUrl": "qb:DataSet",
                 "virtual": true
@@ -277,10 +277,10 @@
                 "datatype": "xsd:decimal",
                 "dc:description": "The value of this measured property",
                 "name": "value",
-                "propertyUrl": "vocab/Number_of_Workers_Involved_in_Labour_Disputes"
+                "propertyUrl": "vocab/Numeracy_Total"
             }
         ],
         "primaryKey": null
     },
-    "url": "Number_Workers_Labour_Conflicts-historical.xlsx.csv"
+    "url": "Numeracy_Total-historical.xlsx.csv"
 }
