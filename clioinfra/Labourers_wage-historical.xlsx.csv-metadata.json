@@ -186,7 +186,7 @@
                 "valueUrl": "qb:DataSet",
                 "virtual": true
             },
-
+            {
                 "aboutUrl": "https://iisg.amsterdam/clio/Aluminium_Production",
                 "propertyUrl": "rdf:type",
                 "valueUrl": "qb:DataSet",
