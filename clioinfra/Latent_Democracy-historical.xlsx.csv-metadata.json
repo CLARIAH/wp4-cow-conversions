@@ -258,7 +258,7 @@
               },
               {
                 "virtual": true,
-                "aboutUrl": "clio:{country_name}/{start_year}",
+                "aboutUrl": "{country_name}/{start_year}/{end_year}",
                 "propertyUrl": "skos:exactMatch",
                 "valueUrl": "sdr:resource/country/{{country_name| replace(' ','-')}}/{start_year}"
               },
