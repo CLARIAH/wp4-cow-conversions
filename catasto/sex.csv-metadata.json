@@ -1,0 +1,170 @@
+{
+ "dialect": {
+  "quoteChar": "\"", 
+  "delimiter": ",", 
+  "encoding": "utf-8"
+ }, 
+ "dcat:keyword": [], 
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ }, 
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend", 
+  "schema:url": {
+   "@id": "http://datalegend.org"
+  }
+ }, 
+ "dc:author": {
+  "rdf:type": [
+    {
+      "@id": "foaf:Person"
+    },
+    {
+      "@id": "prov:Person"
+    }
+  ],
+  "foaf:name": ["Auke Rijpma"]
+},
+"prov:wasDerivedFrom": [{
+  "rdf:type": {
+      "@id": "bibo:Book"
+  },
+  "dc:title": {
+      "@value": "Les Toscans et leurs familles. Le catasto florentin de 1427",
+      "@lang": "fr"
+  },
+  "dc:author": ["Herlihy, David"],
+  "dc:author": ["Klapisch-Zuber, Christiane"],
+  "dc:publisher": "Presses de la Fondation Nationale des Sciences Politiques/École des Hautes Études en Sciences Sociales",
+  "dc:date": {"@value":"1978", "@type":"xsd:gYear"}
+},
+{
+  "rdf:type": {
+      "@id": "bibo:Book"
+  },
+  "dc:title": {
+      "@value": "Tuscans and their families: a study of the Florentine catasto of 1427",
+      "@lang": "en"
+  },
+  "dc:author": ["Herlihy, David"],
+  "dc:author": ["Klapisch-Zuber, Christiane"],
+  "dc:publisher": "Yale University Press",
+  "dc:date": {"@value":"1985", "@type":"xsd:gYear"}
+},
+{
+  "@id": "https://acrh.revues.org/7465"
+},
+{
+  "@id": "http://www.disc.wisc.edu/archive/catasto/index.html"
+},
+{
+  "@id": "https://acrh.revues.org/7458"
+}], 
+ "url": "sex.csv", 
+ "@context": [
+  "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json", 
+  {
+   "@base": "http://data.socialhistory.org/resource/catasto/", 
+   "@language": "en"
+  }, 
+  {
+   "owl": "http://www.w3.org/2002/07/owl#", 
+   "dbo": "http://dbpedia.org/ontology/", 
+   "clioctr": "http://data.socialhistory.org/resource/clio/country/", 
+   "hisclass": "http://data.socialhistory.org/resource/hisclass/", 
+   "hisco-product": "http://data.socialhistory.org/resource/hisco/product/", 
+   "hisco-entry": "http://data.socialhistory.org/resource/hisco/entry/", 
+   "ldp": "http://www.w3.org/ns/ldp#", 
+   "clio": "http://data.socialhistory.org/resource/clio/", 
+   "occhisco": "http://data.socialhistory.org/resource/napp/OCCHISCO/", 
+   "dbr": "http://dbpedia.org/resource/", 
+   "skos": "http://www.w3.org/2004/02/skos/core#", 
+   "xml": "http://www.w3.org/XML/1998/namespace/", 
+   "bibo": "http://purl.org/ontology/bibo/", 
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#", 
+   "prov": "http://www.w3.org/ns/prov#", 
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#", 
+   "napp-can91": "http://data.socialhistory.org/resource/napp/dataset/canada1891/", 
+   "hiscam": "http://data.socialhistory.org/resource/hiscam/", 
+   "dbpedia": "http://dbpedia.org/resource/", 
+   "np": "http://www.nanopub.org/nschema#", 
+   "canfam-auke": "http://data.socialhistory.org/resource/canfam/auke/", 
+   "dcterms": "http://purl.org/dc/terms/", 
+   "schema": "http://schema.org/", 
+   "foaf": "http://xmlns.com/foaf/0.1/", 
+   "napp": "http://data.socialhistory.org/resource/napp/", 
+   "sdv": "http://data.socialhistory.org/vocab/", 
+   "hisco": "http://data.socialhistory.org/resource/hisco/", 
+   "sdp": "http://data.socialhistory.org/resource/person/", 
+   "sdr": "http://data.socialhistory.org/resource/", 
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#", 
+   "time": "http://www.w3.org/2006/time#", 
+   "hsn": "http://data.socialhistory.org/resource/hsn2013a/", 
+   "dc": "http://purl.org/dc/terms/", 
+   "hisco-relation": "http://data.socialhistory.org/resource/hisco/relation/", 
+   "hisco-status": "http://data.socialhistory.org/resource/hisco/status/", 
+   "dbp": "http://dbpedia.org/property/", 
+   "clioprop": "http://data.socialhistory.org/resource/clio/property/", 
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#", 
+   "csvw": "http://www.w3.org/ns/csvw#", 
+   "clioind": "http://data.socialhistory.org/resource/clio/indicator/", 
+   "dc11": "http://purl.org/dc/elements/1.1/", 
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/", 
+   "napp-eng81": "http://data.socialhistory.org/resource/napp/dataset/englandwales1881/", 
+   "canfam": "http://data.socialhistory.org/resource/canfam/dataset/canada1901/", 
+   "napp-sct81": "http://data.socialhistory.org/resource/napp/dataset/scotland1881/", 
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#", 
+   "qb": "http://purl.org/linked-data/cube#", 
+   "hisclass5": "http://data.socialhistory.org/resource/hisclass5/", 
+   "xsd": "http://www.w3.org/2001/XMLSchema#", 
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#", 
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/",
+   "catasto": "http://data.socialhistory.org/resource/catasto/"
+  }
+ ], 
+ "dc:title": "sex.csv", 
+ "@id": "https://iisg.amsterdam/resource/sex.csv", 
+ "dc:modified": {
+  "@value": "2017-06-29", 
+  "@type": "xsd:date"
+ }, 
+ "tableSchema": {
+  "aboutUrl": "code/sex/{sex}", 
+  "primaryKey": "sex", 
+  "columns": [
+   {
+    "datatype": "string", 
+    "titles": [
+     "sex"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/sex.csv/column/sex", 
+    "name": "sex", 
+    "propertyUrl": "rdf:type",
+    "valueUrl": "skos:concept",
+    "dc:description": "sex"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "fr"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/sex.csv/column/fr", 
+    "name": "fr", 
+    "lang": "fr", 
+    "propertyUrl": "skos:prefLabel",
+    "dc:description": "fr"
+   }, 
+   {
+    "datatype": "string", 
+    "titles": [
+     "en"
+    ], 
+    "@id": "https://iisg.amsterdam/resource/sex.csv/column/en", 
+    "name": "en", 
+    "lang": "en", 
+    "propertyUrl": "skos:prefLabel",
+    "dc:description": "en"
+   }
+  ]
+ }
+}
