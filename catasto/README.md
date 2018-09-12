@@ -16,3 +16,9 @@ Codebook:
     * Fix relate mess: relationToHead is not actually relationToHead.
     * Fix dimensions in URIs household/individual.
     * Check NUMSER role in locations.
+    * check if resource/code/betail rather than resource/catasto/code/betail (as subject)
+    * check if resource/code/numser rather than resource/catasto/code/numser (as object)
+    * check if resource/NUMSER resource/catasto/dimension/NUMSER (as predicate)
+    * check if resource/catasto/age resource/catasto/dimension/AGE (as predicate)
+    * check if resource/catasto/comment resource/catasto/dimension/COMMENT (as predicate)
+    * maybe also for maison and metier ?
