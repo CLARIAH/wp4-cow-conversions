@@ -1,0 +1,99 @@
+1 Head of the family and wife
+2 1st Joint-head of the family and wife, brother of 1
+3 2nd Joint-head of the family and wife, brother of 1
+4 3rd Joint-head of the family and wife, brother of 1
+5 4th Co-head of the family and wife, not brother
+6 Unmarried sisters and minor brothers (18 or younger) of head
+7 Married sister of head with husband
+8 Child raised 'for the love of God'
+9 Unmarried adult-brother (18 or over) of household head
+10 Celibate or single child of 50
+11 Celibate or single child of 1
+12 Celibate or single child of 2
+13 Celibate or single child of 3
+14 Celibate or single child of 4
+15 Celibate or single child of 5
+16 Father and mother of head 1
+17 Father and mother of wife of head 1
+18 Grandfather and grandmother of head
+19 Grandfather and grandmother of the wife of head 1
+20 First son married (or widowed with children) and his wife, head 50
+21 First son married (or widowed with children) and his wife, head 1
+22 First son married (or widowed with children) and his wife, head 2
+23 First son married (or widowed with children) and his wife, head 3
+24 First son married (or widowed with children) and his wife, head 4
+25 First son married (or widowed with children) and his wife, head 5
+26 Father and mother of head 2
+27 Father and mother of wife of head 2
+28 step-brother or step-sister of 2
+29 Grandfather and grandmother of the wife of head 2
+30 Second son married (or widowed with children) and his wife, head 50
+31 Second son married (or widowed with children) and his wife, head 1
+32 Second son married (or widowed with children) and his wife, head 2
+33 Second son married (or widowed with children) and his wife, head 3
+34 Second son married (or widowed with children) and his wife, head 4
+35 Second son married (or widowed with children) and his wife, head 5
+36 Father and mother of head 3
+37 Father and mother of wife of head 3
+38 Step-brother or step-sister of head 3
+39 Grandfather and grandmother of the wife of head 3
+40 Third son married (or widowed with children) and his wife, head 50
+41 Third son married (or widowed with children) and his wife, head 1
+42 Third son married (or widowed with children) and his wife, head 2
+43 Third son married (or widowed with children) and his wife, head 3
+44 Fourth son married (or widowed with children) and his wife, head 1 [sic]
+45 Third son married (or widowed with children) and his wife, head 5
+46 Father and mother of head 4
+47 Father and mother of wife of head 4
+48 Step-brother or step-sister of head 4
+49 Grandfather and grandmother of the wife of head 4
+50 Co-head of the family and wife, relationship with heads 1-5 unknown
+51 Daughter (married or widowed with children) and her husband, head 1
+52 Daughter (married or widowed with children) and her husband, head 2
+53 Daughter (married or widowed with children) and her husband, head 3
+54 Daughter (married or widowed with children) and her husband, head 4
+55 Daughter (married or widowed with children) and her husband, head 5
+56 Father and mother of head 5
+57 Father and mother of wife of head 5
+
+59 Grandfather and grandmother of the wife of head 5
+
+61 All grandchildren, sons or daughters of 21, head 1
+62 All grandchildren, sons or daughters of 22, head 2
+63 All grandchildren, sons or daughters of 23, head 3
+64 All grandchildren, sons or daughters of 24, head 4
+65 All grandchildren, sons or daughters of 25, head 5
+66 Uncle or aunt of 01, 02, 03 and 04
+67 Servants, employees
+68 Step-brother or step-sister of 1
+
+
+71 All grandchildren, sons or daughters of 31, head 1
+72 All grandchildren, sons or daughters of 32, head 2
+73 All grandchildren, sons or daughters of 33, head 3
+74 All grandchildren, sons or daughters of 34, head 4
+75 All grandchildren, sons or daughters of 35, head 5
+76 Uncle or aunt of 5
+77 Apprentices
+78 Step-brother or step-sister of 5
+
+78 Step-brother or step-sister of 5
+81 All grandchildren, sons or daughters of 41, head 1
+82 All grandchildren, sons or daughters of 42, head 2
+83 All grandchildren, sons or daughters of 43, head 3
+84 All grandchildren, sons or daughters of 44, head 4
+85 All grandchildren, sons or daughters of 45, head 5
+86 Children of 66 and 76 (cousins)
+87 Nurses
+
+
+
+91 All grandchildren, sons or daughters of 51, head 1
+92 All grandchildren, sons or daughters of 52, head 2
+93 All grandchildren, sons or daughters of 53, head 3
+94 All grandchildren, sons or daughters of 44 [sic], head 4
+95 All grandchildren, sons or daughters of 55, head 5
+
+97 Slaves
+98 More distant relatives
+99 Unknown

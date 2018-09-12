@@ -1,0 +1,99 @@
+1 Peasant landlord, working own property. The declaration should expressly say that he works the land "a sua mano", or he should be allowed a deduction of one-half the value of the property "pro sua fatica".
+2 Peasant leasing land (he may also own land of his own). However, lands held under a perpetual rent are considered to be owned and not leased. For purposes of determining occupation, the payment of perpetual rents is ignored.
+3 Mezzadro or share-cropper. He may also own land of his own. Even in the absence of an explicit title, a peasant may be identified as a mezzadro if he is described as having an "oste", to which he owe s money prestanza), but which the tax officials refuse to recognize as a deductable liability. It was quite common for mezzadri to be in debt to their landlords, but these debts were usually excluded by the tax officials in computing liabilities.
+4 Agricultural laborer, without lands of his own which he himself farms.
+5 Shepherd
+6 Pescatore (fisherman).
+7 Ortolano (grocer). 
+8 Treccone (sellers of fruits and vegetables).
+9 Bambaciaio (one who sells cotton to manufacturers, must be considere d a wholesaler).
+10 Marianaio (sailor). Calafato (caulker). Copertoaio (installs decks on ship). All those occupied with building, servicing or sailing ships.
+11 Servant of private family. Fante (servant). Fattore ( factor, literally, a clerk of a business office). Someone who "stays with" (sta con) someone else for a salary.
+12 Servant of ecclesiastical institution. Spedaliere (administered a hospital but was not a knight). The category includes all laymen employed in the administration of ecclesiastical or charitable institutions.
+13 Employee of commune. Vigilaio (fireman). Piffero (fife player employed by the commune to provide music for civic celebrations). Meziere (carried the city's standards). Corriere (messenger or town crier). Messo (messenger or town crier). All non-military governmen t servants.
+14 Soldier. All military government servants. This and category 13 includes all ranks.
+15 Employee of guild (includes persons employed by the guild administration).
+16 Cuoco (cook).
+17 Becchino (gravedigger).
+18 Scribe (scribe). Factor in contracts. Attore di pupilli (plaintiff or ward). Bullettafo (all persons not professionally notaries who drew up letters for persons, especially the illiterate).
+19 Miscellaneous. Catch-all category for those professions not covered b y the other 98.
+20 Vetturale (transporter of persons or goods). Carretaio (carter). Portatore (carrier of goods). 'Carradore (carter). Legatore (someone who bound bundles for transport). Persons occupied with transporting goods over land.
+21 Guidice (judge) e notaio (notary). Usually identified by the title , "ser, " which, however, could also be used by priests. In instances when a notary is.explicitly given another occupation, that other occupation is preferred. For example, a "ser" who teaches school is identified as a school teacher rather than as a notary.
+22 Mercatante (a great merchant, although few of the great commercial houses actually identify themselves as such). Members of the guild of Calimala (specifically concerned with sale of wool cloth).
+23 Cambiatore (money changer). Banchiere. Tavoliere. Members of th e guild of Cambio (change). The changing of money was a professio n closely akin to banking and essential for commerce in a period when scores of cities had their own mints.
+24 Lanaio (wool manufacturer or merchant). Ritagliatore (retailer of wool cloth). Pannelaio (seller of wool cloth). Drappiere (drapper). Members of the Art della Lana (wool guild).
+25 Setaiolo (silk merchant, silk weaver). Members of the guild of Por S.Maria.
+26 Medico e speziale (seller of spices). Saponaio (soap-maker). Dealer s in spices.
+27 Vaiaio (furrier dealing in "vaire," a very high-priced fur) e pellicciaio (furrier). Members of the furriers' guild.
+28 Beccaio (butcher). Polaiolo (butcher in chickens). Carnaiolo (handler of meat). Members of the butchers' guild. All have to do with meat processing.
+29 Calzolaio (shoemaker). Stampatore (artisan who makes holes in leather for manufacturing shoes). Members of the shoemakers' guild.
+30 Fabbro ("smith," exclusively a worker in iron).
+31 Rigattiere e linaiuolo (dealers in linen cloth, second in second-hand clothing )
+32 Maestro (medical doctor). This was a title that could be_used for man y professions, but here most commonly applied to.medical doctors.
+33 Vinattiere. Mescitore di vino. (wine dealers, both wholesale and retail).
+34 Albergatore. Tavernaio. Oste. (innkeeper).
+35 Oliandolo (oil merchant). Candelaio (candle-maker). Sevaiolo (dealt in tallow, commonly used in candles).
+36 Galgaio (tanner). 
+37 Correggiaio (belt-maker).
+38 Corazzaio (maker of armor plating).
+39 Chiavaiolo (keymaker). Toppaiolo (doorlockmaker). Makers of locks and keys.
+40 Legnaio (carpenter). Tornaio. Tavolacciaio (table maker). Cassetaio (maker of chests of drawers). Cofinaio (maker of caskets). Segatore (man who saws). Masters in the art of carpentry and makers of furniture.
+41 Fornaio (baker).
+42 Mugnaio (miller).
+43 Tintore. Curandaio (cloth bleacher). (dyers)
+44 Barbiere (barber). 
+45 Scardassiere (wool carder).
+46 Tessitore di lana (weaver of wool). Weavers of linen and silk are under 64. When there is not explicit evidence of what type is involved, this category (46) is used.
+47 Pizzicagnolo. Cacciaiuolo (literally, cheese salesman). Those who sold prepared foods. The delicatessen is the closest thing we have to the shop of a pizzicagnolo.
+48 Bottaio. Barattolaio. Bartlettaio. Makers of barrels and smaller containers for liquids.
+49 Orafo (goldsmith). Giolliere (jeweller). Intagliatore (engraver, sculptor). Orpellaio (maker of tinsel). Workers in gold and jewels.
+50 Manovale. Urban laborer not further identified as to occupation.
+51 Scodellaio (bowl-maker). Stovigliaio (earthenware dealer). Fiaschiaio (flask-maker). Orciolaio (potter). Bicchiere (glass-maker). Merchants and makers of dishes, glasses, jars, and so forth.
+52 Merciaio (peddler).
+53 Purgatore (one who cleaned and washed raw wool prior to spinning).
+54 Muratore (brick layer). Lastraiolo (flag-stone worker). Scarpellatore (sculptor). Workers in stone. Masons. Workers in processing and finishing stone.
+55 Bastiere (pack-saddle maker). Brigliaio (bridle-maker). Selaio (saddler). Speranaio. Bastaio (pack-saddle-maker). Gainaio. Workers producing or selling leather harnesses, reins and sheaths. Cartolaio (stationer). 
+56 Cartaio (paper-maker). Paper dealers.
+57 Maliscalco (blacksmith).
+58 Farsettaio (doublet maker).
+59 Fornaciaio (kiln maker). Stufaiolo (oven worker). Operators of furnaces for baking brick and tile. Also those who manufacture glass.
+60 Riveditore (technical term for persons who finished the wool cloth).
+61 Pettinatore (combed raw wool). Carditore (carder). Scegliattore d i lana (selector of wool). Apennichino. Those who comb, card and sort wool.
+62 Climatore (shearers). "Finished" the wool cloth by raising the knap and cutting it with large shears.
+63 Borsaio. Maker of purses and containers.
+64 Tessitore di seta e di lino (weaver of silk and linen).
+65 Piannellaio (slipper-maker).
+66 Pesatore. Staderaio. Bilanciaio. (weigher, maker or seller o f scales).
+67 Sarto (tailor).
+68 Guarnaio (maker of cloaks and dressing gowns).
+69 Bandettaio. Banditore. (town crier, auctioneer).
+70 Priest.
+71 Religious. Commesso and Commessa ("committed to a religious life").
+72 Begger. Ward of Church.
+73 Cuoaio (leather seller, saddler).
+74 Cappellaio (hat maker).
+75 Ottonaio (brass worker). Stagaio (tinsmith). Calderaio (coppersmith). Dealers in nonferrous metal goods.
+76 Ferratore (ironworker). Ferravecchio (dealer in old iron). Dealers in iron products.
+77 Teacher of letters or abbacus. Student.
+78 Conciatore dijelle. Pelacane. (leather tanner, leather dresser). 
+79 Sensale (broker, middleman).
+80 Stamaiolo (thread maker). Filatoiaio (spinner).
+81 Pezzaio (type ofleather worker).
+82 Pinzochera (lady who took religious vows while remaining at her home).
+83 Musician. Cimbalaio (player of cimbles, musician). Buffone (buffoon , jester).
+84 Lava panni (washer of cloths).
+85 Coltellaio. Forbiciaio. (cutter, cutler).
+86 Mulatiere (mule driver). Presta-ronzini. Cavallaio (horse dealer). Asinaio (ass dealer).
+87 Rimendatore (sewer of wool cloth). Ricamatore (embroiderer). Refaiulo (threader). Pattiere (sewer of wool cloth). Sewers.
+88 Employee of mint. "Sta al saggio."
+89 Rural noble.
+90 Ebreo (Jew).
+91 Tiratore (stretcher). He stretched the wet wool after fulling so that i t would dry and would not be warped by uneven shrinking.
+92 Materassaio. Coltriciaio. Pagliaiolo. (mattress maker, bed maker).
+93 Lanino (wool manufacturer).
+94 Spadaio (sword-maker). Balestiere (cross bow maker). Armaiolo (armor). Forbelarme (burnishers). Schermidore (fencer). Workers in weapons.
+95 Dipintore (artist-painter). Miniatore (miniature-maker). Ceraiuolo (Someone who made wax votive images to be placed in church). Dealers in paintings and artistic works.
+96 Biadaiolo (fodder merchant, corn dealer). Grain dealers.
+97 Cordatore (rope maker). Funaiolo (bag maker). Saccaio. "Fa la stoppa."
+98 Verghegiatore. Scamatino. Divettino. All these beat the raw wool in order to clean it.
+99 Messere. Used for knights, bishops and high ecclesiastics, and those who held a university degree.
