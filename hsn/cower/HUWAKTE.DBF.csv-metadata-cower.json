@@ -1,0 +1,334 @@
+{
+ "dialect": {
+  "quoteChar": "\"",
+  "delimiter": ",",
+  "encoding": "utf-8"
+ },
+ "dcat:keyword": ["hsn"],
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+  "schema:url": {
+   "@id": "http://datalegend.net"
+  }
+},
+"dc:author": [{
+  "@id": "sdp:auke.rijpma@gmail.com",
+  "rdf:type": [
+    {
+      "@id": "foaf:Person"
+    },
+    {
+      "@id": "prov:Person"
+    }
+  ],
+  "foaf:name": ["Auke Rijpma"]
+},
+{
+  "@id": "sdp:r.schalk@uu.nl",
+  "rdf:type": [
+    {
+      "@id": "foaf:Person"
+    },
+    {
+      "@id": "prov:Person"
+    }
+  ],
+  "foaf:name": ["Ruben Schalk"]
+}],
+"prov:wasDerivedFrom": [{
+  "rdf:type": {
+      "@id": "bibo:Article"
+  },
+  "dc:title": {
+      "@value": "Building life course datasets from population registers by the Historical Sample of the Netherlands (HSN)",
+      "@lang": "en"
+  },
+  "dc:author": ["Mandemakers, K."],
+  "dc:publisher": "Edinburg UP",
+  "dc:date": {"@value":"2006", "@type":"xsd:gYear"},
+  "dc:isPartOf": ["http://www.euppublishing.com/toc/hac/14/1-2"]
+ }],
+ "url": "HUWAKTE.DBF.csv",
+ "@context": [
+  "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json",
+  {
+   "@base": "https://iisg.amsterdam/hsn/",
+   "@language": "nl"
+  },
+  {
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "dbo": "http://dbpedia.org/ontology/",
+   "clioctr": "https://iisg.amsterdam/clio/country/",
+   "hisclass": "https://iisg.amsterdam/hisclass/",
+   "hisco-product": "https://iisg.amsterdam/hisco/product/",
+   "hisco-entry": "https://iisg.amsterdam/hisco/entry/",
+   "ldp": "http://www.w3.org/ns/ldp#",
+   "clio": "https://iisg.amsterdam/clio/",
+   "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
+   "dbr": "http://dbpedia.org/resource/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "xml": "http://www.w3.org/XML/1998/namespace/",
+   "bibo": "http://purl.org/ontology/bibo/",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "prov": "http://www.w3.org/ns/prov#",
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+   "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/",
+   "hiscam": "https://iisg.amsterdam/hiscam/",
+   "dbpedia": "http://dbpedia.org/resource/",
+   "np": "http://www.nanopub.org/nschema#",
+   "canfam-auke": "https://iisg.amsterdam/canfam/auke/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "schema": "http://schema.org/",
+   "foaf": "http://xmlns.com/foaf/0.1/",
+   "napp": "https://iisg.amsterdam/napp/",
+   "sdv": "http://data.socialhistory.org/vocab/",
+   "hisco": "https://iisg.amsterdam/hisco/",
+   "sdp": "https://iisg.amsterdam/person/",
+   "sdr": "https://iisg.amsterdam/",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "time": "http://www.w3.org/2006/time#",
+   "hsn": "https://iisg.amsterdam/hsn/",
+   "dc": "http://purl.org/dc/terms/",
+   "hisco-relation": "https://iisg.amsterdam/hisco/relation/",
+   "hisco-status": "https://iisg.amsterdam/hisco/status/",
+   "dbp": "http://dbpedia.org/property/",
+   "clioprop": "https://iisg.amsterdam/clio/property/",
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+   "csvw": "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json#",
+   "clioind": "https://iisg.amsterdam/clio/indicator/",
+   "dc11": "http://purl.org/dc/elements/1.1/",
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
+   "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/",
+   "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/",
+   "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/",
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+   "qb": "http://purl.org/linked-data/cube#",
+   "hisclass5": "https://iisg.amsterdam/hisclass5/",
+   "xsd": "http://www.w3.org/2001/XMLSchema#",
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/"
+  }
+ ],
+ "dc:title": "HUWAKTE.DBF.csv",
+ "@id": "https://iisg.amsterdam/HUWAKTE.DBF.csv",
+ "dc:modified": {
+  "@value": "2017-01-10",
+  "@type": "xsd:date"
+ },
+ "tableSchema": {
+  "aboutUrl": "HUWAKTE/{_row}",
+  "primaryKey": "hsn:IDNR",
+  "columns": [
+    {
+    "datatype": "string",
+    "titles": [
+     "IDNR"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/IDNRP",
+    "name": "IDNR",
+    "propertyUrl": "hsn:dimension/IDNR",
+    "valueUrl": "hsn:code/IDNR/{IDNR}",
+    "dc:description": "HSN-identificatienummer onderzoekspersoon (OP)"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "HUWDAG"
+    ],
+    "@id": "https://iisg.amsterdam/HUWAKTE.DBF.csv/column/HUWDAG",
+    "name": "HUWDAG",
+    "dc:description": "Dagnummer huwelijk"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "HUWMND"
+    ],
+    "@id": "https://iisg.amsterdam/HUWAKTE.DBF.csv/column/HUWMND",
+    "name": "HUWMND",
+    "dc:description": "Maandnummer huwelijk"
+   },
+   {
+    "datatype": "gYear",
+    "titles": [
+     "HUWJAR"
+    ],
+    "@id": "https://iisg.amsterdam/HUWAKTE.DBF.csv/column/HUWJAR",
+    "name": "HUWJAR",
+    "dc:description": "Jaarnummer huwelijk"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "LINKNR"
+    ],
+    "@id": "https://iisg.amsterdam/HUWAKTE.DBF.csv/column/LINKNR",
+    "name": "LINKNR",
+    "dc:description": "Sleutel waarmee de huwelijken van de onderzoekspersonen aan de families en aan elkaar kunnen worden gekoppeld, de sleutel verwijst naar linknr in het bestand LINKxxxx.dbf."
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "HUWDAT"
+    ],
+    "@id": "https://iisg.amsterdam/HUWAKTE.DBF.csv/column/HUWDAT",
+    "name": "HUWDAT",
+    "dc:description": "Datum huwelijk als datumveld"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "IDNRJAR"
+    ],
+    "@id": "https://iisg.amsterdam/HUWAFKON.DBF.csv/column/IDNRJAR",
+    "name": "IDNRJAR",
+    "propertyUrl": "hsn:dimension/IDNRJAR",
+    "valueUrl": "hsn:code/IDNRJAR/{IDNRJAR}",
+    "dc:description": "Combinatie van idnr en huwjar (verwijzende sleutel naar huwakte.dbf)"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "HUWUUR"
+    ],
+    "@id": "https://iisg.amsterdam/HUWAKTE.DBF.csv/column/HUWUUR",
+    "name": "HUWUUR",
+    "dc:description": "Uur waarop het huwelijk plaats vond"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "HUWPLAATS"
+    ],
+    "@id": "https://iisg.amsterdam/HUWAKTE.DBF.csv/column/HUWPLAATS",
+    "name": "HUWPLAATS",
+    "propertyUrl": "hsn:dimension/HUWPLAATS",
+    "valueUrl": "hsn:code/HUWPLAATS/{HUWPLAATS}",
+    "dc:description": "Plaats van huwelijk"
+   },
+   {
+    "virtual": true,
+    "propertyUrl": "skos:exactMatch",
+    "valueUrl": "hsn:code/Gemeente/{HUWPLAATS}"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "SCHDAG"
+    ],
+    "@id": "https://iisg.amsterdam/HUWAKTE.DBF.csv/column/SCHDAG",
+    "name": "SCHDAG",
+    "dc:description": "Dagnummer echtscheidingsvonnis"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "SCHMND"
+    ],
+    "@id": "https://iisg.amsterdam/HUWAKTE.DBF.csv/column/SCHMND",
+    "name": "SCHMND",
+    "dc:description": "Maandnummer echtscheidingsvonnis "
+   },
+   {
+    "datatype": "gYear",
+    "titles": [
+     "SCHJAR"
+    ],
+    "@id": "https://iisg.amsterdam/HUWAKTE.DBF.csv/column/SCHJAR",
+    "name": "SCHJAR",
+    "dc:description": "Jaarnummer echtscheidingsvonnis "
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "SCHDAT"
+    ],
+    "@id": "https://iisg.amsterdam/HUWAKTE.DBF.csv/column/SCHDAT",
+    "name": "SCHDAT",
+    "dc:description": "Datum vonnis als datumveld"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "SCHGEM"
+    ],
+    "@id": "https://iisg.amsterdam/HUWAKTE.DBF.csv/column/SCHGEM",
+    "name": "SCHGEM",
+    "propertyUrl": "hsn:dimension/SCHGEM",
+    "valueUrl": "hsn:code/SCHGEM/{SCHGEM}",
+    "dc:description": "Gemeente rechtbank echtscheidingsvonnis"
+   },
+   {
+    "virtual": true,
+    "propertyUrl": "skos:exactMatch",
+    "valueUrl": "hsn:code/Gemeente/{SCHGEM}"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "INSDAG"
+    ],
+    "@id": "https://iisg.amsterdam/HUWAKTE.DBF.csv/column/INSDAG",
+    "name": "INSDAG",
+    "dc:description": "Dagnummer inschrijving echtscheidingsvonnis "
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "INSMND"
+    ],
+    "@id": "https://iisg.amsterdam/HUWAKTE.DBF.csv/column/INSMND",
+    "name": "INSMND",
+    "dc:description": "Maandnummer inschrijving echtscheidingsvonnis "
+   },
+   {
+    "datatype": "gYear",
+    "titles": [
+     "INSJAR"
+    ],
+    "@id": "https://iisg.amsterdam/HUWAKTE.DBF.csv/column/INSJAR",
+    "name": "INSJAR",
+    "dc:description": "Jaarnummer inschrijving echtscheidingsvonnis "
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "INSDAT"
+    ],
+    "@id": "https://iisg.amsterdam/HUWAKTE.DBF.csv/column/INSDAT",
+    "name": "INSDAT",
+    "dc:description": "Datum inschrijving vonnis als datumveld "
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "INSGEM"
+    ],
+    "@id": "https://iisg.amsterdam/HUWAKTE.DBF.csv/column/INSGEM",
+    "name": "INSGEM",
+    "propertyUrl": "hsn:dimension/INSGEM",
+    "valueUrl": "hsn:code/INSGEM/{INSGEM}",
+    "dc:description": "Gemeente rechtbank inschrijving echtscheidingsvonnis"
+   },
+   {
+    "virtual": true,
+    "propertyUrl": "skos:exactMatch",
+    "valueUrl": "hsn:code/Gemeente/{INSGEM}"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "RELEASE"
+    ],
+    "@id": "https://iisg.amsterdam/HUWAFKON.DBF.csv/column/RELEASE",
+    "name": "RELEASE",
+    "propertyUrl": "hsn:dimension/RELEASE",
+    "valueUrl":"hsn:RELEASE/{RELEASE}",
+    "dc:description": "Naam en volgnummer release"
+     }
+  ]
+ }
+}

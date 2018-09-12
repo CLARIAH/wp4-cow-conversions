@@ -1,0 +1,621 @@
+{
+ "dialect": {
+  "quoteChar": "\"",
+  "delimiter": ",",
+  "encoding": "utf-8"
+ },
+ "dcat:keyword": ["hsn"],
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+  "schema:url": {
+   "@id": "http://datalegend.net"
+  }
+ },
+ "dc:creator": [{
+    "@id": "sdp:auke.rijpma@gmail.com",
+    "rdf:type": [
+      {
+        "@id": "foaf:Person"
+      },
+      {
+        "@id": "prov:Person"
+      }
+    ],
+    "foaf:name": ["Auke Rijpma"]
+  },
+  {
+    "@id": "sdp:r.schalk@uu.nl",
+    "rdf:type": [
+      {
+        "@id": "foaf:Person"
+      },
+      {
+        "@id": "prov:Person"
+      }
+    ],
+    "foaf:name": ["Ruben Schalk"]
+  }],
+ "prov:wasDerivedFrom": [{
+   "rdf:type": {
+       "@id": "bibo:Article"
+   },
+   "dc:title": {
+       "@value": "Building life course datasets from population registers by the Historical Sample of the Netherlands (HSN)",
+       "@lang": "en"
+   },
+   "dc:creator": ["Mandemakers, K."],
+   "dc:publisher": "Edinburg UP",
+   "dc:date": {"@value":"2006", "@type":"xsd:gYear"},
+   "dc:isPartOf": ["http://www.euppublishing.com/toc/hac/14/1-2"]
+}],
+ "url": "BEVSTATP.DBF.csv",
+ "@context": [
+  "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json",
+  {
+   "@base": "https://iisg.amsterdam/hsn/",
+   "@language": "nl"
+  },
+  {
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "dbo": "http://dbpedia.org/ontology/",
+   "clioctr": "https://iisg.amsterdam/clio/country/",
+   "hisclass": "https://iisg.amsterdam/hisclass/",
+   "hisco-product": "https://iisg.amsterdam/hisco/product/",
+   "hisco-entry": "https://iisg.amsterdam/hisco/entry/",
+   "ldp": "http://www.w3.org/ns/ldp#",
+   "clio": "https://iisg.amsterdam/clio/",
+   "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
+   "dbr": "http://dbpedia.org/resource/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "xml": "http://www.w3.org/XML/1998/namespace/",
+   "bibo": "http://purl.org/ontology/bibo/",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "prov": "http://www.w3.org/ns/prov#",
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+   "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/",
+   "hiscam": "https://iisg.amsterdam/hiscam/",
+   "dbpedia": "http://dbpedia.org/resource/",
+   "np": "http://www.nanopub.org/nschema#",
+   "canfam-auke": "https://iisg.amsterdam/canfam/auke/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "schema": "http://schema.org/",
+   "foaf": "http://xmlns.com/foaf/0.1/",
+   "napp": "https://iisg.amsterdam/napp/",
+   "sdv": "http://data.socialhistory.org/vocab/",
+   "hisco": "https://iisg.amsterdam/hisco/",
+   "sdp": "https://iisg.amsterdam/person/",
+   "sdr": "https://iisg.amsterdam/",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "time": "http://www.w3.org/2006/time#",
+   "dc": "http://purl.org/dc/terms/",
+   "hisco-relation": "https://iisg.amsterdam/hisco/relation/",
+   "hisco-status": "https://iisg.amsterdam/hisco/status/",
+   "dbp": "http://dbpedia.org/property/",
+   "clioprop": "https://iisg.amsterdam/clio/property/",
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+   "csvw": "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json#",
+   "clioind": "https://iisg.amsterdam/clio/indicator/",
+   "dc11": "http://purl.org/dc/elements/1.1/",
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
+   "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/",
+   "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/",
+   "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/",
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+   "qb": "http://purl.org/linked-data/cube#",
+   "hisclass5": "https://iisg.amsterdam/hisclass5/",
+   "xsd": "http://www.w3.org/2001/XMLSchema#",
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/",
+   "hsn": "https://iisg.amsterdam/hsn/"
+  }
+ ],
+ "dc:title": "BEVSTATP.DBF.csv",
+ "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv",
+ "dc:modified": {
+  "@value": "2017-01-10",
+  "@type": "xsd:date"
+ },
+ "tableSchema": {
+  "aboutUrl": "BEVSTATP/{_row}",
+  "primaryKey": "hsn:IDNR",
+  "dc:description": "HSN-identificatienummer onderzoekspersoon (OP)",
+  "columns": [
+        {
+    "datatype": "string",
+    "titles": [
+     "IDNR"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/IDNRP",
+    "name": "IDNR",
+    "propertyUrl": "hsn:dimension/IDNR",
+    "valueUrl": "hsn:code/IDNR/{IDNR}",
+    "dc:description": "HSN-identificatienummer onderzoekspersoon (OP)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "HUISHNR"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/HUISHNR",
+    "name": "HUISHNR",
+    "propertyUrl": "hsn:dimension/HUISHNR",
+    "dc:description": "Volgnummer huishouden per OP"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "IDNRHS"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/IDNRHS",
+    "name": "IDNRHS",
+    "propertyUrl": "hsn:dimension/IDNRHS",
+    "valueUrl": "hsn:code/IDNRHS/{IDNRHS}",
+    "dc:description": "Combinatie van IDNR en HUISHNR"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "HUISPNR"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/HUISPNR",
+    "name": "HUISPNR",
+    "propertyUrl": "hsn:dimension/HUISPNR",
+    "dc:description": "Volgnummer persoon per huishouden"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "IDNRHSP"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/IDNRHSP",
+    "name": "IDNRHSP",
+    "propertyUrl": "hsn:dimension/IDNRHSP",
+    "valueUrl": "hsn:code/IDNRHSP/{IDNRHSP}",
+    "dc:description": "Combinatie van idnr, huishnr en huispnr (te gebruiken als primaire sleutel in Access)"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hsn:code/IDNRHS/{IDNRHS}",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "hsn:household",
+    "dc:description": "IDNRHS identifies a household in the HSN; note that for one OP multiple households usually exist. A household changes when the head of the household changes."
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hsn:code/IDNRHS/{{IDNRHS}}",
+    "propertyUrl": "hsn:dimension/containsHouseholdMember",
+    "valueUrl": "hsn:code/HSNperson/{{ stringi::stri_join(IDNR, '_', PERSNR) }}",
+    "dc:description": "direct link from households (IDNRHS) to individuals (IDNRHSP)"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hsn:code/HSNperson/{{ stringi::stri_join(IDNR, '_', PERSNR) }}",
+    "propertyUrl": "hsn:dimension/inHousehold",
+    "valueUrl": "hsn:code/IDNRHS/{{IDNRHS}}",
+    "dc:description": "direct link from individuals (IDNRHSP) to households (IDNRHS)"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hsn:code/IDNR/{IDNR}",
+    "propertyUrl": "hsn:dimension/OPHouseholdGroup",
+    "valueUrl": "hsn:code/IDNRHS/{IDNRHS}"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hsn:code/IDNRHS/{IDNRHS}",
+    "propertyUrl": "hsn:dimension/inOPHouseholdGroup",
+    "valueUrl": "hsn:code/IDNR/{IDNR}"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hsn:code/IDNRHSP/{IDNRHSP}",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "hsn:individual",
+    "dc:description": "IDNRHSP identifies an individual within a houseold in the HSN. Note that the same individual might return in another household of the OP without having the same IDNRHSP"
+   },
+   {
+    "virtual": true,
+    "name": "FUNCTIE",
+    "titles": [
+     "FUNCTIE"
+    ],
+    "aboutUrl": "hsn:code/IDNRHSP/{IDNRHSP}",
+    "propertyUrl": "hsn:dimension/opIDNR",
+    "valueUrl": "hsn:code/opIDNR/{IDNR}",
+    "null": ["ALLEENST", "HOOFD", "overig", "VROUW"],
+    "dc:description": "IDNR identifies individuals who are OP, research persons, for whom the entire life course has been reconstructed."
+   },
+   {
+    "virtual": true,
+    "name": "FUNCTIE",
+    "titles": [
+     "FUNCTIE"
+    ],
+    "aboutUrl": "hsn:code/IDNRHSP/{IDNRHSP}",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "hsn:OP",
+    "null": ["ALLEENST", "HOOFD", "overig", "VROUW"],
+    "dc:description": "Individual is an OP, research person, for whom the entire life course has been reconstructed."
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "LINKNR"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/LINKNR",
+    "name": "LINKNR",
+    "propertyUrl": "hsn:dimension/LINKNR",
+    "dc:description": "Sleutel waarmee de huishoudens van meerdere onderzoekspersonen aan elkaar kan worden gekoppeld, de sleutel verwijst naar linknr in LKxxxyyy.dbf"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "PERSNR"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/PERSNR",
+    "name": "PERSNR",
+    "propertyUrl": "hsn:dimension/PERSNR",
+    "dc:description": "Identificatienummer persoon; deze variabele linkt de personen over de verschillende huishoudens voorzover behorende bij een bepaalde OP"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hsn:code/HSNperson/{{ stringi::stri_join(IDNR, '_', PERSNR) }}",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "hsn:individual"
+   },
+   {
+    "virtual": true,
+    "name": "HSNperson",
+        "titles": [
+     "HSNperson"
+    ],
+    "propertyUrl": "hsn:dimension/HSNperson",
+    "valueUrl": "hsn:code/HSNperson/{{ stringi::stri_join(IDNR, '_', PERSNR) }}",
+    "dc:description": "An individual in the HSN (person can exist in multiple households)"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hsn:code/HSNperson/{{ stringi::stri_join(IDNR, '_', PERSNR) }}",
+    "propertyUrl": "hsn:dimension/individualObservation",
+    "valueUrl": "BEVSTATP/{_row}",
+    "dc:description": "An observation about an individual in the HSN (person can exist in multiple households)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "PERSNR_V"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/PERSNR_V",
+    "name": "PERSNR_V",
+    "propertyUrl": "hsn:dimension/PERSNR_V",
+    "dc:description": "Identificatienummer (PERSNR) van de vader van de persoon (zie verder bij de definitie van PERSNR)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "PERSNRVX"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/PERSNRVX",
+    "name": "PERSNRVX",
+    "propertyUrl": "hsn:dimension/PERSNRVX",
+    "dc:description": "Variabele om aan te geven, of de relatie met de vader wel zeker is"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "PERSNR_M"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/PERSNR_M",
+    "name": "PERSNR_M",
+    "propertyUrl": "hsn:dimension/PERSNR_M",
+    "dc:description": "Identificatienummer (PERSNR) van de moeder van de persoon (zie verder bij de definitie van PERSNR)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "PERSNRMX"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/PERSNRMX",
+    "name": "PERSNRMX",
+    "propertyUrl": "hsn:dimension/PERSNRMX",
+    "dc:description": "Variabele om aan te geven, of de relatie met de moeder wel zeker is"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "OPERSNR"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/OPERSNR",
+    "name": "OPERSNR",
+    "propertyUrl": "hsn:dimension/OPERSNR",
+    "dc:description": "Overkoepelend identificatienummer, deze variabele linkt de identificatienummers van de personen die behoren bij de verschillende OP's"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "INSDAG"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/INSDAG",
+    "name": "INSDAG",
+    "propertyUrl": "hsn:dimension/INSDAG",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Dagnummer start observatieperiode in huishouden"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "INSMND"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/INSMND",
+    "name": "INSMND",
+    "propertyUrl": "hsn:dimension/INSMND",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Maandnummer start observatieperiode in huishouden"
+   },
+   {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "INSJAR"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/INSJAR",
+    "name": "INSJAR",
+    "propertyUrl": "hsn:dimension/INSJAR",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Jaarnummer start observatieperiode in huishouden"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "INSDAT"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/INSDAT",
+    "name": "INSDAT",
+    "propertyUrl": "hsn:dimension/INSDAT",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Datum start observatieperiode persoon als datumveld (jjjj-mm-dd)"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "UITDAG"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/UITDAG",
+    "name": "UITDAG",
+    "propertyUrl": "hsn:dimension/UITDAG",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Dagnummer einde observatieperiode in huishouden"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "UITMND"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/UITMND",
+    "name": "UITMND",
+    "propertyUrl": "hsn:dimension/UITMND",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Maandnummer einde observatieperiode in huishouden"
+   },
+   {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "UITJAR"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/UITJAR",
+    "name": "UITJAR",
+    "propertyUrl": "hsn:dimension/UITJAR",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Jaarnummer einde observatieperiode in huishouden"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "UITDAT"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/UITDAT",
+    "name": "UITDAT",
+    "propertyUrl": "hsn:dimension/UITDAT",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Datum einde observatieperiode persoon als datumveld (jjjj-mm-dd)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "FUNCTIE"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/FUNCTIE",
+    "name": "FUNCTIE",
+    "propertyUrl": "hsn:dimension/FUNCTIE",
+    "valueUrl": "hsn:code/FUNCTIE/{FUNCTIE}",
+    "dc:description": "Korte aanduiding van relatie tot het hoofd"
+   },
+      {
+    "datatype": "string",
+    "titles": [
+     "ANAAM"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/ANAAM",
+    "name": "ANAAM",
+    "propertyUrl": "hsn:dimension/ANAAM",
+    "dc:description": "Achternaam (evt. voorvoegsel na komma)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "VNAAM"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/VNAAM",
+    "name": "VNAAM",
+    "propertyUrl": "hsn:dimension/VNAAM",
+    "dc:description": "Voornamen (gescheiden door spatie)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "GESLACHT"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/GESLACHT",
+    "name": "GESLACHT",
+    "propertyUrl": "hsn:dimension/GESLACHT",
+    "valueUrl": "hsn:code/GESLACHT/{GESLACHT}",
+    "dc:description": "Geslacht"
+   },
+   {
+    "virtual": true,
+    "propertyUrl": "sdmx-dimension:sex",
+    "valueUrl": "hsn:code/{GESLACHT}"
+  },
+     {
+    "datatype": "int",
+    "titles": [
+     "GEBDAG"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/GEBDAG",
+    "name": "GEBDAG",
+    "propertyUrl": "hsn:dimension/GEBDAG",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Dagnummer geboorte"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "GEBMND"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/GEBMND",
+    "name": "GEBMND",
+    "propertyUrl": "hsn:dimension/GEBMND",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Maandnummer geboorte"
+   },
+   {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "GEBJAR"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/GEBJAR",
+    "name": "GEBJAR",
+    "propertyUrl": "hsn:dimension/GEBJAR",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Jaar geboorte"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "GEBDAT"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/GEBDAT",
+    "name": "GEBDAT",
+    "propertyUrl": "hsn:dimension/GEBDAT",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Geboortedatum als datumveld (jjjj-mm-dd)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "GEBGEM"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/GEBGEM",
+    "name": "GEBGEM",
+    "propertyUrl": "hsn:dimension/GEBGEM",
+    "valueUrl": "hsn:code/GEBGEM/{GEBGEM}",
+    "dc:description": "Geboortegemeente, dit is standaard de plaats van de bron indien deze gemeente niet is geëxpliciteerd in het register"
+   },
+   {
+     "virtual": "true",
+    "aboutUrl": "hsn:GEBGEM/{GEBGEM}",
+    "propertyUrl": "skos:exactMatch",
+    "valueUrl": "hsn:code/Gemeenten/{GEBGEM}"
+   },
+   {
+    "valueUrl": "https://iisg.amsterdam/clio/Netherlands/1880/1945",
+    "propertyUrl": "sdmx-dimension:refArea",
+    "virtual": true
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "OVLDAG"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/OVLDAG",
+    "name": "OVLDAG",
+    "propertyUrl": "hsn:dimension/OVLDAG",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Dagnummer overlijden"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "OVLMND"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/OVLMND",
+    "name": "OVLMND",
+    "propertyUrl": "hsn:dimension/OVLMND",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Maandnummer overlijden"
+   },
+   {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "OVLJAR"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/OVLJAR",
+    "name": "OVLJAR",
+    "propertyUrl": "hsn:dimension/OVLJAR",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Jaar overlijden"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "OVLDAT"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/OVLDAT",
+    "name": "OVLDAT",
+    "propertyUrl": "hsn:dimension/OVLDAT",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Overlijdensdatum als datumveld (jjjj-mm-dd)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "OVLGEM"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/OVLGEM",
+    "name": "OVLGEM",
+    "propertyUrl": "hsn:dimension/OVLGEM",
+    "valueUrl": "hsn:code/OVLGEM/{OVLGEM}",
+    "dc:description": "Gemeente van overlijden, standaard de plaats van de bron indien deze gemeente niet is geëxpliciteerd"
+   },
+   {
+     "virtual": "true",
+    "aboutUrl": "hsn:OVLGEM/{OVLGEM}",
+    "propertyUrl": "skos:exactMatch",
+    "valueUrl": "hsn:code/Gemeenten/{OVLGEM}"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "RELEASE"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/RELEASE",
+    "name": "RELEASE",
+    "propertyUrl": "hsn:dimension/RELEASE",
+    "valueUrl":"hsn:RELEASE/{RELEASE}",
+    "dc:description": "Naam en volgnummer release"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "DATUMCOR"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/DATUMCOR",
+    "name": "DATUMCOR",
+    "propertyUrl": "hsn:dimension/DATUMCOR",
+    "dc:description": "Datum (mm/dd/jj) van een eventuele handmatige correctie van enig gegeven op de record, door de gebruiker in te vullen"
+   }
+  ]
+ }
+}

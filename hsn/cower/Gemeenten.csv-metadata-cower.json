@@ -1,0 +1,266 @@
+{
+ "dialect": {
+  "quoteChar": "\"",
+  "delimiter": ",",
+  "encoding": "ISO-8859-2"
+ },
+ "dcat:keyword": [],
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+  "schema:url": {
+   "@id": "http://datalegend.net"
+  }
+ },
+  "dc:author": [{
+  "@id": "sdp:auke.rijpma@gmail.com",
+  "rdf:type": [
+    {
+      "@id": "foaf:Person"
+    },
+    {
+      "@id": "prov:Person"
+    }
+  ],
+  "foaf:name": ["Auke Rijpma"]
+},
+{
+  "@id": "sdp:r.schalk@uu.nl",
+  "rdf:type": [
+    {
+      "@id": "foaf:Person"
+    },
+    {
+      "@id": "prov:Person"
+    }
+  ],
+  "foaf:name": ["Ruben Schalk"]
+}],
+"prov:wasDerivedFrom": [{
+  "rdf:type": {
+      "@id": "bibo:Article"
+  },
+  "dc:title": {
+      "@value": "Building life course datasets from population registers by the Historical Sample of the Netherlands (HSN)",
+      "@lang": "en"
+  },
+  "dc:author": ["Mandemakers, K."],
+  "dc:publisher": "Edinburg UP",
+  "dc:date": {"@value":"2006", "@type":"xsd:gYear"},
+  "dc:isPartOf": ["http://www.euppublishing.com/toc/hac/14/1-2"]
+ }],
+  "url": "Gemeenten.csv",
+ "@context": [
+  "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json",
+  {
+   "@base": "https://iisg.amsterdam/hsn/",
+   "@language": "nl"
+  },
+  {
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "dbo": "http://dbpedia.org/ontology/",
+   "clioctr": "https://iisg.amsterdam/clio/country/",
+   "hisclass": "https://iisg.amsterdam/hisclass/",
+   "hisco-product": "https://iisg.amsterdam/hisco/product/",
+   "hisco-entry": "https://iisg.amsterdam/hisco/entry/",
+   "ldp": "http://www.w3.org/ns/ldp#",
+   "clio": "https://iisg.amsterdam/clio/",
+   "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
+   "dbr": "http://dbpedia.org/resource/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "xml": "http://www.w3.org/XML/1998/namespace/",
+   "bibo": "http://purl.org/ontology/bibo/",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "prov": "http://www.w3.org/ns/prov#",
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+   "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/",
+   "hiscam": "https://iisg.amsterdam/hiscam/",
+   "dbpedia": "http://dbpedia.org/resource/",
+   "np": "http://www.nanopub.org/nschema#",
+   "canfam-auke": "https://iisg.amsterdam/canfam/auke/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "schema": "http://schema.org/",
+   "foaf": "http://xmls.com/foaf/0.1/",
+   "napp": "https://iisg.amsterdam/napp/",
+   "sdv": "http://data.socialhistory.org/vocab/",
+   "hisco": "https://iisg.amsterdam/hisco/",
+   "sdp": "https://iisg.amsterdam/person/",
+   "sdr": "https://iisg.amsterdam/",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "time": "http://www.w3.org/2006/time#",
+   "hsn": "https://iisg.amsterdam/hsn/",
+   "dc": "http://purl.org/dc/terms/",
+   "hisco-relation": "https://iisg.amsterdam/hisco/relation/",
+   "hisco-status": "https://iisg.amsterdam/hisco/status/",
+   "dbp": "http://dbpedia.org/property/",
+   "clioprop": "https://iisg.amsterdam/clio/property/",
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+   "csvw": "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json#",
+   "clioind": "https://iisg.amsterdam/clio/indicator/",
+   "dc11": "http://purl.org/dc/elements/1.1/",
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
+   "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/",
+   "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/",
+   "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/",
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+   "qb": "http://purl.org/linked-data/cube#",
+   "hisclass5": "https://iisg.amsterdam/hisclass5/",
+   "xsd": "http://www.w3.org/2001/XMLSchema#",
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/"
+  }
+ ],
+ "dc:title": "Gemeenten.csv",
+ "@id": "https://iisg.amsterdam/hsn/Gemeenten.csv",
+ "dc:modified": {
+  "@value": "2017-01-26",
+  "@type": "xsd:date"
+ },
+ "tableSchema": {
+  "aboutUrl": "Gemeenten/{_row}",
+  "primaryKey": "hsn:Gemeente",
+  "valueUrl": "hsn:code/Gemeente/{Gemeente}",
+  "dc:description": "Gemeente",
+  "columns": [
+      {
+    "datatype": "string",
+    "titles": [
+     "toponiem"
+    ],
+    "name": "toponiem",
+    "propertyUrl": "hsn:dimension/toponiem",
+    "valueUrl": "hsn:code/toponiem/{toponiem}",
+    "dc:description": "Toponiem (stad,dorp,buurtschap)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Gemeente"
+    ],
+    "name": "Gemeente",
+    "propertyUrl": "hsn:dimension/Gemeente",
+    "valueUrl": "hsn:code/Gemeente/{Gemeente}",
+    "dc:description": "Gemeente"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Provincie"
+    ],
+    "name": "Provincie",
+    "propertyUrl": "hsn:dimension/Provincie",
+    "valueUrl": "hsn:code/Provincie/{Provincie}",
+    "dc:description": "Provincie"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Provincie"
+    ],
+    "name": "Provincie",
+    "propertyUrl": "hsn:dimension/Provincie",
+    "valueUrl": "hsn:code/Provincie/{Provincie}",
+    "dc:description": "Provincie"
+   },
+   {
+    "datatype": "float",
+    "titles": [
+     "latitude"
+    ],
+    "name": "latitude",
+    "propertyUrl": "hsn:dimension/latitude",
+    "csw:value": "{{ latitude / 1000 }}",
+    "dc:description": "lattitude (3 dec.graden)"
+   },
+   {
+    "datatype": "float",
+    "titles": [
+     "longitude"
+    ],
+    "name": "longitude",
+    "propertyUrl": "hsn:dimension/longitude",
+    "csw:value": "{{ longitude / 1000}}",
+    "dc:description": "longitude (3 dec.graden)"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "gem_start_date"
+    ],
+    "name": "gem_start_date",
+    "propertyUrl": "hsn:dimension/gem_start_date",
+    "dc:description": "bij gem van JJJJMMDD"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "gem_end_date"
+    ],
+    "name": "gem_end_date",
+    "propertyUrl": "hsn:dimension/gem_end_date",
+    "dc:description": "bij gem tot JJJJMMDD"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "lower_postcode_range"
+    ],
+    "name": "lower_postcode_range",
+    "propertyUrl": "hsn:dimension/lower_postcode_range",
+    "dc:description": "begin postcoderange CCCC"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "upper_postcode_range"
+    ],
+    "name": "upper_postcode_range",
+    "propertyUrl": "hsn:dimension/upper_postcode_range",
+    "dc:description": "eind postcoderange CCCC"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "netnummer"
+    ],
+    "name": "netnummer",
+    "propertyUrl": "hsn:dimension/netnummer",
+    "dc:description": "tel.netnr (0)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "gemeenterecord"
+    ],
+    "name": "gemeenterecord",
+    "propertyUrl": "hsn:dimension/gemeenterecord",
+    "dc:description": "gemeenterecord"
+   },
+   {
+    "titles": [
+     "amsterdamse_code"
+    ],
+    "name": "amsterdamse_code",
+    "propertyUrl": "hsn:dimension/amsterdamse_code",
+    "valueUrl": "hsn:code/amsterdamse_code/{amsterdamse_code}",
+    "dc:description": "Amsterdamse code"
+   },
+    {
+    "virtual": true,
+    "propertyUrl": "skos:exactMatch",
+    "valueUrl": "http://www.gemeentegeschiedenis.nl/amco/{amsterdamse_code}"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "comments"
+    ],
+    "name": "comments",
+    "propertyUrl": "comments",
+    "dc:description": "opmerkingen o.a. voorkeurspelling NL,Fr"
+   }
+  ]
+ }
+}

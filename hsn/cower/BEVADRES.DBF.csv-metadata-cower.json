@@ -1,0 +1,476 @@
+{
+ "dialect": {
+  "quoteChar": "\"",
+  "delimiter": ",",
+  "encoding": "utf-8"
+ },
+ "dcat:keyword": ["hsn"],
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+  "schema:url": {
+   "@id": "http://datalegend.net"
+  }
+},
+"dc:author": [{
+  "@id": "sdp:auke.rijpma@gmail.com",
+  "rdf:type": [
+    {
+      "@id": "foaf:Person"
+    },
+    {
+      "@id": "prov:Person"
+    }
+  ],
+  "foaf:name": ["Auke Rijpma"]
+},
+{
+  "@id": "sdp:r.schalk@uu.nl",
+  "rdf:type": [
+    {
+      "@id": "foaf:Person"
+    },
+    {
+      "@id": "prov:Person"
+    }
+  ],
+  "foaf:name": ["Ruben Schalk"]
+}],
+"prov:wasDerivedFrom": [{
+  "rdf:type": {
+      "@id": "bibo:Article"
+  },
+  "dc:title": {
+      "@value": "Building life course datasets from population registers by the Historical Sample of the Netherlands (HSN)",
+      "@lang": "en"
+  },
+  "dc:author": ["Mandemakers, K."],
+  "dc:publisher": "Edinburg UP",
+  "dc:date": {"@value":"2006", "@type":"xsd:gYear"},
+  "dc:isPartOf": ["http://www.euppublishing.com/toc/hac/14/1-2"]
+ }],
+ "url": "BEVADRES.DBF.csv",
+ "@context": [
+  "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json",
+  {
+   "@base": "https://iisg.amsterdam/hsn/",
+   "@language": "nl"
+  },
+  {
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "dbo": "http://dbpedia.org/ontology/",
+   "clioctr": "https://iisg.amsterdam/clio/country/",
+   "hisclass": "https://iisg.amsterdam/hisclass/",
+   "hisco-product": "https://iisg.amsterdam/hisco/product/",
+   "hisco-entry": "https://iisg.amsterdam/hisco/entry/",
+   "ldp": "http://www.w3.org/ns/ldp#",
+   "clio": "https://iisg.amsterdam/clio/",
+   "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
+   "dbr": "http://dbpedia.org/resource/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "xml": "http://www.w3.org/XML/1998/namespace/",
+   "bibo": "http://purl.org/ontology/bibo/",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "prov": "http://www.w3.org/ns/prov#",
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+   "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/",
+   "hiscam": "https://iisg.amsterdam/hiscam/",
+   "dbpedia": "http://dbpedia.org/resource/",
+   "np": "http://www.nanopub.org/nschema#",
+   "canfam-auke": "https://iisg.amsterdam/canfam/auke/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "schema": "http://schema.org/",
+   "foaf": "http://xmlns.com/foaf/0.1/",
+   "napp": "https://iisg.amsterdam/napp/",
+   "sdv": "http://data.socialhistory.org/vocab/",
+   "hisco": "https://iisg.amsterdam/hisco/",
+   "sdp": "https://iisg.amsterdam/person/",
+   "sdr": "https://iisg.amsterdam/",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "time": "http://www.w3.org/2006/time#",
+   "hsn": "https://iisg.amsterdam/hsn/",
+   "dc": "http://purl.org/dc/terms/",
+   "hisco-relation": "https://iisg.amsterdam/hisco/relation/",
+   "hisco-status": "https://iisg.amsterdam/hisco/status/",
+   "dbp": "http://dbpedia.org/property/",
+   "clioprop": "https://iisg.amsterdam/clio/property/",
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+   "csvw": "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json#",
+   "clioind": "https://iisg.amsterdam/clio/indicator/",
+   "dc11": "http://purl.org/dc/elements/1.1/",
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
+   "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/",
+   "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/",
+   "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/",
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+   "qb": "http://purl.org/linked-data/cube#",
+   "hisclass5": "https://iisg.amsterdam/hisclass5/",
+   "xsd": "http://www.w3.org/2001/XMLSchema#",
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/"
+  }
+ ],
+ "dc:title": "BEVADRES.DBF.csv",
+ "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv",
+ "dc:modified": {
+  "@value": "2017-01-10",
+  "@type": "xsd:date"
+ },
+ "tableSchema": {
+  "aboutUrl": "BEVADRES/{_row}",
+  "primaryKey": "hsn:IDNR",
+  "dc:description": "HSN-identificatienummer onderzoekspersoon",
+  "columns": [
+   {
+    "datatype": "string",
+    "titles": [
+     "HUISHNR"
+    ],
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/HUISHNR",
+    "name": "HUISHNR",
+    "propertyUrl": "hsn:dimension/HUISHNR",
+    "dc:description": "Volgnummer huishouden per OP"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "IDNR"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/IDNR",
+    "name": "IDNR",
+    "propertyUrl": "hsn:dimension/IDNR",
+    "valueUrl": "hsn:code/IDNR/{IDNR}",
+    "dc:description": "HSN-identificatienummer onderzoekspersoon (OP)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "IDNRHS"
+    ],
+    "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/IDNRHSP",
+    "name": "IDNRHS",
+    "propertyUrl": "hsn:dimension/IDNRHS",
+    "valueUrl": "hsn:code/IDNRHS/{IDNRHS}",
+    "dc:description": "Combinatie van Idnr en huishnr (te gebruiken als verwijzende sleutel in Access)"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hsn:code/IDNRHS/{IDNRHS}",
+    "propertyUrl": "hsn:dimension/householdObservation",
+    "valueUrl": "BEVADRES/{_row}",
+    "dc:description": "observation about a household in its entirety."
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hsn:code/IDNR/{IDNR}",
+    "propertyUrl": "hsn:dimension/OPHouseholdGroup",
+    "valueUrl": "hsn:code/IDNRHS/{IDNRHS}"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hsn:code/IDNRHS/{IDNRHS}",
+    "propertyUrl": "hsn:dimension/inOPHouseholdGroup",
+    "valueUrl": "hsn:code/IDNR/{IDNR}"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hsn:code/IDNRHS/{IDNRHS}",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "hsn:household",
+    "dc:description": "IDNRHS identifies a household in the HSN; note that for one OP multiple households usually exist. A household changes when the head of the household changes."
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "VERSIE"
+    ],
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/VERSIE",
+    "name": "VERSIE",
+    "propertyUrl": "hsn:dimension/VERSIE",
+    "dc:description": "Ingevoerd met versie 4.02 of hoger, indien gevuld met de letters ‘NW’, anders leeg"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "ADRESDAG"
+    ],
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/ADRESDAG",
+    "name": "ADRESDAG",
+    "propertyUrl": "hsn:dimension/ADRESDAG",
+    "null": ["-1", "-2", "-3", "-4", "32", "33", "61", "62"],
+    "dc:description": "Dagnummer ingangsdatum adres"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "ADRESMND"
+    ],
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/ADRESMND",
+    "name": "ADRESMND",
+    "propertyUrl": "hsn:dimension/ADRESMND",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Maandnummer ingangsdatum adres"
+   },
+   {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "ADRESJAR"
+    ],
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/ADRESJAR",
+    "name": "ADRESJAR",
+    "propertyUrl": "hsn:dimension/ADRESJAR",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Jaar ingangsdatum adres"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "ADRESDAT"
+    ],
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/ADRESDAT",
+    "name": "ADRESDAT",
+    "propertyUrl": "hsn:dimension/ADRESDAT",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Adresdatum als datumveld (jjjj-mm-dd)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "ADRESVLG"
+    ],
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/ADRESVLG",
+    "name": "ADRESVLG",
+    "propertyUrl": "hsn:dimension/ADRESVLG",
+    "dc:description": "Nummer voor de chronologische volgorde van het adres (per huishouden)"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "ADUITDAG"
+    ],
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/ADUITDAG",
+    "name": "ADUITDAG",
+    "propertyUrl": "hsn:dimension/ADUITDAG",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Dagnummer einddatum adres"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "ADUITMND"
+    ],
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/ADUITMND",
+    "name": "ADUITMND",
+    "propertyUrl": "hsn:dimension/ADUITMND",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Maandnummer einddatum adres"
+   },
+   {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "ADUITJAR"
+    ],
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/ADUITJAR",
+    "name": "ADUITJAR",
+    "propertyUrl": "hsn:dimension/ADUITJAR",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Jaar einddatum adres"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "ADUITDAT"
+    ],
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/ADUITDAT",
+    "name": "ADUITDAT",
+    "propertyUrl": "hsn:dimension/ADUITDAT",
+    "null": ["-1", "-2", "-3", "-4"],
+    "dc:description": "Einddatum adres als datumveld (jjjj-mm-dd)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "PERSNR"
+    ],
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/PERSNR",
+    "name": "PERSNR",
+    "propertyUrl": "hsn:dimension/PERSNR",
+    "dc:description": "Indien in dit veld een '0' is ingevuld heeft het adres betrekking op het gehele huishouden. In andere gevallen heeft het adres slechts betrekking op een bepaalde persoon in het onderhavige huishouden en verwijst het nummer naar de waarde op het veld persnr in bevstatp van de record van deze persoon. "
+   },
+   {
+    "virtual": true,
+    "name": "HSNperson",
+        "titles": [
+     "HSNperson"
+    ],
+    "propertyUrl": "hsn:dimension/HSNperson",
+    "valueUrl": "hsn:code/HSNperson/{{ stringi::stri_join(IDNR, '_', PERSNR) }}"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "STRAAT"
+    ],
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/STRAAT",
+    "name": "STRAAT",
+    "propertyUrl": "hsn:dimension/STRAAT",
+    "dc:description": "Naam van de straat"
+   },
+   {
+    "datatype": "int",
+    "titles": [
+     "HUISNR"
+    ],
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/HUISNR",
+    "name": "HUISNR",
+    "propertyUrl": "hsn:dimension/HUISNR",
+    "dc:description": "Huisnummer"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "HUISNRTV"
+    ],
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/HUISNRTV",
+    "name": "HUISNRTV",
+    "propertyUrl": "hsn:dimension/HUISNRTV",
+    "dc:description": "Eventuele toevoeging aan het huisnummer"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "WIJK"
+    ],
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/WIJK",
+    "name": "WIJK",
+    "propertyUrl": "hsn:dimension/WIJK",
+    "dc:description": "Letter, nummer of naam van de wijk, veelal voorafgegaan door de term 'wijk'"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "WIJKHSNR"
+    ],
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/WIJKHSNR",
+    "name": "WIJKHSNR",
+    "propertyUrl": "hsn:dimension/WIJKHSNR",
+    "dc:description": "Huisnummer in de wijk of deelgemeente, alleen gebruikt als  het veld wijk of deelgem ook zijn gevuld"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "WIJKHSTV"
+    ],
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/WIJKHSTV",
+    "name": "WIJKHSTV",
+    "propertyUrl": "hsn:dimension/WIJKHSTV",
+    "dc:description": "Eventuele toevoeging aan het huisnummer in de wijk, zie verder aldaar"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "VERNUM"
+    ],
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/VERNUM",
+    "name": "VERNUM",
+    "propertyUrl": "hsn:dimension/VERNUM",
+    "valueUrl": "hsn:code/VERNUM/{VERNUM}",
+    "dc:description": "Met name in de negentiende eeuw vonden veel vernummeringen plaats, of werden de straatnamen veranderd"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "KOSTBAAS"
+    ],
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/KOSTBAAS",
+    "name": "KOSTBAAS",
+    "propertyUrl": "hsn:dimension/KOSTBAAS",
+    "dc:description": "Standaard worden door de HSN in het geval van inwoning van de HSN-onderzoekspersoon als een niet-verwante ouder dan twaalf jaar, alleen de naam en gegevens van de kostbaas of werkgever overgenomen"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "GESTICHT"
+    ],
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/GESTICHT",
+    "name": "GESTICHT",
+    "propertyUrl": "hsn:dimension/GESTICHT",
+    "dc:description": "Naam van de instelling waarin de persoon verbleef"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "BOOT"
+    ],
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/BOOT",
+    "name": "BOOT",
+    "propertyUrl": "hsn:dimension/BOOT",
+    "dc:description": "Het adres kan ook een woonboot of een schip betreffen, hier naam van de boot"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "LIGPLAATS"
+    ],
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/LIGPLAATS",
+    "name": "LIGPLAATS",
+    "propertyUrl": "hsn:dimension/LIGPLAATS",
+    "dc:description": "Ligplaats van de boot, dit wordt lang niet altijd vermeld. In het geval van een ligplaats bij een bepaalde straat is dit vermeld onder de straatnaam"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "DEELGEM"
+    ],
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/DEELGEM",
+    "name": "DEELGEM",
+    "propertyUrl": "hsn:dimension/DEELGEM",
+    "dc:description": "Eventuele deelgemeente of locatie binnen plaats van vestiging"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "GEMEENTE"
+    ],
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/GEMEENTE",
+    "name": "GEMEENTE",
+    "propertyUrl": "hsn:dimension/GEMEENTE",
+    "valueUrl": "hsn:code/Gemeente/{GEMEENTE}",
+    "dc:description": "Plaats van vestiging (op basis van  de gemeente van het register)"
+   },
+   {
+    "virtual": true,
+    "propertyUrl": "skos:exactMatch",
+    "valueUrl": "hsn:code/Gemeente/{GEMEENTE}"
+   },
+  {
+    "valueUrl": "https://iisg.amsterdam/clio/Netherlands/1880/1945",
+    "propertyUrl": "sdmx-dimension:refArea",
+    "virtual": true
+  },
+  {
+    "datatype": "string",
+    "titles": [
+     "RELEASE"
+    ],
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/RELEASE",
+    "name": "RELEASE",
+    "propertyUrl": "hsn:dimension/RELEASE",
+    "valueUrl":"hsn:RELEASE/{RELEASE}",
+    "dc:description": "Naam en volgnummer release"
+  },
+  {
+    "datatype": "xsd:date",
+    "titles": [
+     "DATUMCOR"
+    ],
+    "@id": "https://iisg.amsterdam/BEVADRES.DBF.csv/column/DATUMCOR",
+    "name": "DATUMCOR",
+    "propertyUrl": "hsn:dimension/DATUMCOR",
+    "dc:description": "Datum evt. handmatige correctie van enig gegeven op de record, door de gebruiker in te vullen"
+   }
+  ]
+ }
+}

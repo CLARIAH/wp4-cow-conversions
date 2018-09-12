@@ -1,0 +1,206 @@
+{
+ "dialect": {
+  "quoteChar": "\"",
+  "delimiter": ",",
+  "encoding": "ISO-8859-2"
+ },
+ "dcat:keyword": [],
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+  "schema:url": {
+   "@id": "http://datalegend.net"
+  }
+ },
+ "url": "Map1.csv",
+ "@context": [
+  "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json",
+  {
+   "@base": "https://iisg.amsterdam/hsn/",
+   "@language": "nl"
+  },
+  {
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "dbo": "http://dbpedia.org/ontology/",
+   "clioctr": "https://iisg.amsterdam/clio/country/",
+   "hisclass": "https://iisg.amsterdam/hisclass/",
+   "hisco-product": "https://iisg.amsterdam/hisco/product/",
+   "hisco-entry": "https://iisg.amsterdam/hisco/entry/",
+   "ldp": "http://www.w3.org/ns/ldp#",
+   "clio": "https://iisg.amsterdam/clio/",
+   "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
+   "dbr": "http://dbpedia.org/resource/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "xml": "http://www.w3.org/XML/1998/namespace/",
+   "bibo": "http://purl.org/ontology/bibo/",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "prov": "http://www.w3.org/ns/prov#",
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+   "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/",
+   "hiscam": "https://iisg.amsterdam/hiscam/",
+   "dbpedia": "http://dbpedia.org/resource/",
+   "np": "http://www.nanopub.org/nschema#",
+   "canfam-auke": "https://iisg.amsterdam/canfam/auke/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "schema": "http://schema.org/",
+   "foaf": "http://xmls.com/foaf/0.1/",
+   "napp": "https://iisg.amsterdam/napp/",
+   "sdv": "http://data.socialhistory.org/vocab/",
+   "hisco": "https://iisg.amsterdam/hisco/",
+   "sdp": "https://iisg.amsterdam/person/",
+   "sdr": "https://iisg.amsterdam/",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "time": "http://www.w3.org/2006/time#",
+   "hsn": "https://iisg.amsterdam/hsn/",
+   "dc": "http://purl.org/dc/terms/",
+   "hisco-relation": "https://iisg.amsterdam/hisco/relation/",
+   "hisco-status": "https://iisg.amsterdam/hisco/status/",
+   "dbp": "http://dbpedia.org/property/",
+   "clioprop": "https://iisg.amsterdam/clio/property/",
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+   "csvw": "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json#",
+   "clioind": "https://iisg.amsterdam/clio/indicator/",
+   "dc11": "http://purl.org/dc/elements/1.1/",
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
+   "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/",
+   "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/",
+   "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/",
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+   "qb": "http://purl.org/linked-data/cube#",
+   "hisclass5": "https://iisg.amsterdam/hisclass5/",
+   "xsd": "http://www.w3.org/2001/XMLSchema#",
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/"
+  }
+ ],
+ "dc:title": "Toponiemen.csv",
+ "@id": "https://iisg.amsterdam/hsn/Toponiemen.csv",
+ "dc:modified": {
+  "@value": "2017-01-26",
+  "@type": "xsd:date"
+ },
+ "tableSchema": {
+  "aboutUrl": "code/{Toponiem (stad,dorp,buurtschap)}",
+  "primaryKey": "Toponiem (stad,dorp,buurtschap)",
+  "dc:description": "Toponiem (stad,dorp,buurtschap)",
+  "columns": [
+      {
+    "datatype": "string",
+    "titles": [
+     "Gemeente"
+    ],
+    "name": "Gemeente",
+    "propertyUrl": "dimension/Gemeente",
+    "dc:description": "Gemeente"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Provincie"
+    ],
+    "name": "Provincie",
+    "propertyUrl": "dimension/Provincie",
+    "dc:description": "Provincie"
+   },
+   {
+    "datatype": "float",
+    "titles": [
+     "lattitude (3 dec.graden)"
+    ],
+    "name": "lattitude (3 dec.graden)",
+    "propertyUrl": "dimension/lattitude",
+    "dc:description": "lattitude (3 dec.graden)"
+   },
+   {
+    "datatype": "float",
+    "titles": [
+     "longitude (3 dec.graden)"
+    ],
+    "name": "longitude (3 dec.graden)",
+    "propertyUrl": "dimension/longitude",
+    "dc:description": "longitude (3 dec.graden)"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "bij gem van JJJJMMDD"
+    ],
+    "name": "bij gem van JJJJMMDD",
+    "propertyUrl": "dimension/bij gem van JJJJMMDD",
+    "dc:description": "bij gem van JJJJMMDD"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "bij gem tot JJJJMMDD"
+    ],
+    "name": "bij gem tot JJJJMMDD",
+    "propertyUrl": "dimension/bij gem tot JJJJMMDD",
+    "dc:description": "bij gem tot JJJJMMDD"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "begin postcoderange CCCC"
+    ],
+    "name": "begin postcoderange CCCC",
+    "propertyUrl": "dimension/begin postcoderange CCCC",
+    "dc:description": "begin postcoderange CCCC"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "eind postcoderange CCCC"
+    ],
+    "name": "eind postcoderange CCCC",
+    "propertyUrl": "dimension/eind postcoderange CCCC",
+    "dc:description": "eind postcoderange CCCC"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "tel.netnr (0)"
+    ],
+    "name": "tel.netnr (0)",
+    "propertyUrl": "dimension/tel.netner(0)",
+    "dc:description": "tel.netnr (0)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "gemeenterecord"
+    ],
+    "name": "gemeenterecord",
+    "propertyUrl": "dimension/gemeenterecord",
+    "dc:description": "gemeenterecord"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Amsterdamse code"
+    ],
+    "name": "Amsterdamse code",
+    "propertyUrl": "dimension/Amsterdamse code",
+    "valueUrl": "code/Amsterdamse code/{Amsterdamse code}",
+    "dc:description": "Amsterdamse code"
+   },
+   {
+     "virtual": "true",
+    "aboutUrl": "Amsterdamse code/{Amsterdamse code}",
+    "propertyUrl": "skos:exactMatch",
+    "valueUrl": "http://www.gemeentegeschiedenis.nl/amco/{Amsterdamse code}"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "opmerkingen o.a. voorkeurspelling NL,Fr"
+    ],
+    "name": "opmerkingen o.a. voorkeurspelling NL,Fr",
+    "propertyUrl": "opmerkingen o.a. voorkeurspelling NL,Fr",
+    "dc:description": "opmerkingen o.a. voorkeurspelling NL,Fr"
+   }
+  ]
+ }
+}
