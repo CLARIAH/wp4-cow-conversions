@@ -1,0 +1,81 @@
+   {
+    "virtual": true,
+    "name": "S11", 
+    "aboutUrl": "catasto:individual/{{_row|string + '_' + '11'}}",
+    "propertyUrl": "catasto:sex",
+    "valueUrl": "catasto:sex/{S11}",
+    "dc:description": "Sex of individual",
+    "null": [""]
+   }, 
+   {
+    "datatype": "int", 
+    "virtual": true,
+    "name": "A11", 
+    "aboutUrl": "catasto:individual/{{_row|string + '_' + '11'}}",
+    "propertyUrl": "catasto:age",
+    "csvw:value": "{% if A11 == '89' %}0{% else %}{A11}{% endif %}",
+    "dc:description": "Age of individual. Note: 81 covers both ages 81 and 79 to cover for null values, 89 is recoded to zero, 91 also covers age 89, and age 99 might also be older.",
+    "null": ["79"]
+   }, 
+   {
+    "virtual": true,
+    "name": "E11", 
+    "aboutUrl": "catasto:individual/{{_row|string + '_' + '11'}}",
+    "propertyUrl": "catasto:maritalStatus",
+    "valueUrl": "catasto:maritalStatus/{E11}",
+    "dc:description": "Marital status of individual",
+    "null": [""]
+   }, 
+   {
+    "virtual": true,
+    "name": "P11", 
+    "aboutUrl": "catasto:individual/{{_row|string + '_' + '11'}}",
+    "propertyUrl": "catasto:relationToHead",
+    "valueUrl": "catasto:relationToHead/{P11}",
+    "dc:description": "Relation to head for individual",
+    "null": [""]
+   }, 
+   {
+    "virtual": true,
+    "name": "C11", 
+    "aboutUrl": "catasto:individual/{{_row|string + '_' + '11'}}",
+    "propertyUrl": "catasto:commentary",
+    "valueUrl": "catasto:commentary/{C11}",
+    "dc:description": "Commentary for individual",
+    "null": [""]
+   },
+   {
+    "virtual": true,
+    "name": "S11", 
+    "aboutUrl": "catasto:individual/{{_row|string + '_' + '11'}}",
+    "propertyUrl": "catasto:inHousehold",
+    "valueUrl": "catasto:household/{{_row}}",
+    "dc:description": "Commentary for individual",
+    "null": [""]
+   },
+   {
+    "virtual": true,
+    "name": "S11", 
+    "aboutUrl": "catasto:household/{{_row}}",
+    "propertyUrl": "catasto:householdMember",
+    "valueUrl": "catasto:individual/{{_row|string + '_' + '11'}}",
+    "dc:description": "Commentary for individual",
+    "null": [""]
+   },
+   {
+    "virtual": true,
+    "name": "S11", 
+    "aboutUrl": "catasto:household/{{_row}}",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "catasto:household",
+    "dc:description": "Commentary for individual",
+    "null": [""]
+   },
+   {
+    "virtual": true,
+    "name": "S11", 
+    "aboutUrl": "catasto:individual/{{_row|string + '_' + '11'}}",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "catasto:individual",
+    "null": [""]
+   },
