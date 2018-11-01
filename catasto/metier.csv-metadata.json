@@ -4,7 +4,7 @@
   "delimiter": ",",
   "encoding": "utf-8"
  },
- "dcat:keyword": [],
+ "dcat:keyword": ["catasto"],
  "dc:license": {
   "@id": "http://opendefinition.org/licenses/cc-by/"
  },
@@ -166,7 +166,18 @@
     "lang": "en",
     "propertyUrl": "skos:prefLabel",
     "dc:description": "en"
-   }
+  },
+  {
+   "datatype": "string",
+   "titles": [
+    "en_short"
+   ],
+   "@id": "https://iisg.amsterdam/resource/metier.csv/column/en_short",
+   "name": "en_short",
+   "lang": "en",
+   "propertyUrl": "skos:altLabel",
+   "dc:description": "en_short"
+  }
   ]
  }
 }
