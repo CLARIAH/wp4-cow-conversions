@@ -1,0 +1,592 @@
+{
+ "dialect": {
+  "quoteChar": "\"",
+  "delimiter": ",",
+  "encoding": "utf-8"
+ },
+ "dcat:keyword": [],
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+  "schema:url": {
+   "@id": "http://datalegend.net"
+  }
+ },
+ "url": "spanjestrijders-170516.csv",
+ "@context": [
+  "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json",
+  {
+   "@base": "https://iisg.amsterdam/spanjestrijders/",
+   "@language": "nl"
+  },
+  {
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/",
+   "dbo": "http://dbpedia.org/ontology/",
+   "clioctr": "https://iisg.amsterdam/clio/country/",
+   "hisclass": "https://iisg.amsterdam/hisclass/",
+   "hisco-product": "https://iisg.amsterdam/hisco/product/",
+   "ldp": "http://www.w3.org/ns/ldp#",
+   "clio": "https://iisg.amsterdam/clio/",
+   "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
+   "dbr": "http://dbpedia.org/resource/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "xml": "http://www.w3.org/XML/1998/namespace/",
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+   "napp": "https://iisg.amsterdam/napp/",
+   "prov": "http://www.w3.org/ns/prov#",
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+   "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/",
+   "hiscam": "https://iisg.amsterdam/hiscam/",
+   "dbpedia": "http://dbpedia.org/resource/",
+   "np": "http://www.nanopub.org/nschema#",
+   "hisclass5": "https://iisg.amsterdam/hisclass5/",
+   "canfam-auke": "https://iisg.amsterdam/canfam/auke/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "schema": "http://schema.org/",
+   "foaf": "http://xmlns.com/foaf/0.1/",
+   "sdv": "https://iisg.amsterdam/vocab/",
+   "hisco": "https://iisg.amsterdam/hisco/",
+   "bibo": "http://purl.org/ontology/bibo/",
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+   "hsn": "https://iisg.amsterdam/hsn2013a/",
+   "dc": "http://purl.org/dc/terms/",
+   "hisco-relation": "https://iisg.amsterdam/hisco/relation/",
+   "hisco-status": "https://iisg.amsterdam/hisco/status/",
+   "dbp": "http://dbpedia.org/property/",
+   "clioprop": "https://iisg.amsterdam/clio/property/",
+   "csvw": "http://www.w3.org/ns/csvw#",
+   "clioind": "https://iisg.amsterdam/clio/indicator/",
+   "dc11": "http://purl.org/dc/elements/1.1/",
+   "qb": "http://purl.org/linked-data/cube#",
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/",
+   "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/",
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "sdr": "https://iisg.amsterdam/",
+   "xsd": "http://www.w3.org/2001/XMLSchema#",
+   "time": "http://www.w3.org/2006/time#",
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/",
+   "spanjestrijders": "https://iisg.amsterdam/spanjestrijders/",
+   "hg": "http://rdf.histograph.io/",
+   "gg": "http://www.gemeentegeschiedenis.nl/"
+  }
+ ],
+ "dc:title": "spanjestrijders-170516.csv",
+ "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv",
+ "dc:modified": {
+  "@value": "2018-11-02",
+  "@type": "xsd:date"
+ },
+ "tableSchema": {
+  "aboutUrl": "spanjestrijders:ID/{_row}",
+  "primaryKey": "{_row}",
+  "columns": [
+    {
+     "datatype": "string",
+     "titles": ["Achternaam"     ],
+     "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Achternaam",
+     "name": "Achternaam",
+     "propertyUrl": "spanjestrijders:dimension/Achternaam",
+     "valueUrl": "spanjestrijders:code/Achternaam/{{Achternaam|trim()}}",
+     "dc:description": "Achternaam"
+    },
+      {
+    "datatype": "string",
+    "titles": [
+     "Tussenvoegsel"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Tussenvoegsel",
+    "name": "Tussenvoegsel",
+    "propertyUrl": "spanjestrijders:dimension/Tussenvoegsel",
+    "dc:description": "Tussenvoegsel"
+   },
+     {
+    "datatype": "string",
+    "titles": [
+     "Voornamen"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Voornamen",
+    "name": "Voornamen",
+    "propertyUrl": "spanjestrijders:dimension/Voornamen",
+    "dc:description": "Voornamen"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Sekse"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Sekse",
+    "name": "Sekse",
+    "propertyUrl": "spanjestrijders:dimension/Sekse",
+    "valueUrl": "spanjestrijders:code/Sekse/{Sekse}",
+    "dc:description": "Sekse"
+   },
+   {
+   "virtual":true,
+   "name": "Sekse",
+   "propertyUrl": "sdmx-dimension:sex",
+   "valueUrl": "sdmx-code:{% if Sekse == 'man' %}sex-M{% else %}sex-F{% endif %}",
+   "dc:description": "Sdmx-sex"
+ },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "Geboortedatum"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Geboortedatum",
+    "name": "Geboortedatum",
+    "propertyUrl": "spanjestrijders:dimension/Geboortedatum",
+    "dc:description": "Geboortedatum"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "Geboortedatum_onvolledig"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Geboortedatum_onvolledig",
+    "name": "Geboortedatum_onvolledig",
+    "propertyUrl": "spanjestrijders:dimension/Geboortedatum_onvolledig",
+    "dc:description": "Geboortedatum onvolledig"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Geboorteplaats"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Geboorteplaats",
+    "name": "Geboorteplaats",
+    "propertyUrl": "spanjestrijders:dimension/Geboorteplaats",
+    "valueUrl": "spanjestrijders:code/Geboorteplaats/{Geboorteplaats}",
+    "dc:description": "Geboorteplaats"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "spanjestrijders:code/Geboorteplaats/{Geboorteplaats}",
+    "titles": [
+     "Geboorteplaats"
+    ],
+    "name": "Geboorteplaats",
+    "propertyUrl": "hg:Place",
+    "valueUrl": "dbr:{Geboorteplaats}"
+     },
+   {
+    "datatype": "string",
+    "titles": [
+     "Geboorteland"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Geboorteland",
+    "name": "Geboorteland",
+    "propertyUrl": "spanjestrijders:dimension/Geboorteland",
+    "dc:description": "Geboorteland"
+   },
+   {
+    "virtual": true,
+    "name": "Geboorteland",
+    "aboutUrl": "spanjestrijders:code/Geboorteland/{Geboorteland}",
+    "propertyUrl": "hg:Country",
+    "valueUrl": "dbr:{% if Geboorteland == 'Nederlands Indië'%}Dutch_East_Indies{% else %}{Geboorteland}{% endif %}"
+     },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "Sterfdatum"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Sterfdatum",
+    "name": "Sterfdatum",
+    "propertyUrl": "spanjestrijders:dimension/Sterfdatum",
+    "dc:description": "Sterfdatum"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Sterfdatum_onvolledig"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Sterfdatum_onvolledig",
+    "name": "Sterfdatum_onvolledig",
+    "propertyUrl": "spanjestrijders:dimension/Sterfdatum Sterfdatum_onvolledig",
+    "dc:description": "Sterfdatum onvolledig"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Sterfplaats"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Sterfplaats",
+    "name": "Sterfplaats",
+    "propertyUrl": "spanjestrijders:dimension/Sterfplaats",
+    "valueUrl": "spanjestrijders:code/Sterfplaats/{Sterfplaats}",
+    "dc:description": "Sterfplaats"
+   },
+    {
+    "datatype": "string",
+    "titles": [
+     "Sterfland"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Sterfland",
+    "name": "Sterfland",
+    "propertyUrl": "spanjestrijders:dimension/Sterfland",
+    "valueUrl": "spanjestrijders:code/Sterfland/{Sterfland}",
+    "dc:description": "Sterfland"
+   },
+   {
+    "virtual": true,
+    "name": "Sterfland",
+    "aboutUrl": "spanjestrijders:code/Sterfland/{Sterfland}",
+    "propertyUrl": "hg:Country",
+    "valueUrl": "dbr:{% if Sterfland == 'DDR'%}East_Germany{% else %}{Sterfland}{% endif %}"
+     },
+   {
+    "datatype": "string",
+    "titles": [
+     "Verantwoording_portret"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Verantwoording_portret",
+    "name": "Verantwoording_portret",
+    "propertyUrl": "spanjestrijders:dimension/Verantwoording_portret",
+    "dc:description": "Verantwoording portret"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Adres"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Adres",
+    "name": "Adres",
+    "propertyUrl": "spanjestrijders:dimension/Adres",
+    "dc:description": "Adres"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Woonplaats"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Woonplaats",
+    "name": "Woonplaats",
+    "propertyUrl": "spanjestrijders:dimension/Woonplaats",
+    "valueUrl": "spanjestrijders:code/Woonplaats/{Woonplaats}",
+    "dc:description": "Woonplaats"
+   },
+   {
+     "virtual": true,
+     "aboutUrl": "spanjestrijders:code/Woonplaats/{Woonplaats}",
+     "name":"Woonplaats",
+     "propertyUrl": "skos:exactMatch",
+     "valueUrl": "gg:gemeentenaam/{Woonplaats}"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Woonland"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Woonland",
+    "name": "Woonland",
+    "propertyUrl": "spanjestrijders:dimension/Woonland",
+    "valueUrl": "spanjestrijders:code/Woonland/{Woonland}",
+    "dc:description": "Woonland"
+   },
+   {
+    "virtual": true,
+    "name": "Woonland",
+    "aboutUrl": "spanjestrijders:code/Woonland/{Woonland}",
+    "propertyUrl": "hg:Country",
+    "valueUrl": "dbr:{% if Woonland == 'Nederlands Indië'%}Dutch_East_Indies{% else %}{Woonland}{% endif %}"
+     },
+   {
+    "datatype": "string",
+    "titles": [
+     "Beroep"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Beroep",
+    "name": "Beroep",
+    "propertyUrl": "spanjestrijders:dimension/Beroep",
+    "valueUrl": "spanjestrijders:code/Beroep/{Beroep}",
+    "dc:description": "Beroep"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "spanjestrijders:code/Beroep/{Beroep}",
+    "name": "Beroep",
+    "propertyUrl": "skos:exactMatch",
+    "valueUrl": "hsn:occupation/{{Beroep|lower()}}"
+    },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "Datum_vertrek_Nederland/aankomst_Spanje"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Datum_vertrek_Nederland/aankomst_Spanje",
+    "name": "Datum_vertrek_Nederland/aankomst_Spanje",
+    "propertyUrl": "spanjestrijders:dimension/Datum_vertrek_Nederland",
+    "dc:description": "Datum vertrek Nederland/aankomst Spanje"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "Datum_terugkeer"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Datum_terugkeer",
+    "name": "Datum_terugkeer",
+    "propertyUrl": "spanjestrijders:dimension/Datum_terugkeer",
+    "dc:description": "Datum terugkeer"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Functie"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Functie",
+    "name": "Functie",
+    "propertyUrl": "spanjestrijders:dimension/Functie",
+    "valueUrl": "spanjestrijders:code/Functie/{Functie}",
+    "dc:description": "Functie"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Overtuiging"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Overtuiging",
+    "name": "Overtuiging",
+    "propertyUrl": "spanjestrijders:dimension/Overtuiging",
+    "valueUrl": "spanjestrijders:code/Overtuiging/{Overtuiging}",
+    "dc:description": "Overtuiging"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Gewond"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Gewond",
+    "name": "Gewond",
+    "propertyUrl": "spanjestrijders:dimension/Gewond",
+    "valueUrl": "spanjestrijders:code/Gewond/{Gewond}",
+    "dc:description": "Gewond"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Gesneuveld"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Gesneuveld",
+    "name": "Gesneuveld",
+    "propertyUrl": "spanjestrijders:dimension/Gesneuveld",
+    "valueUrl": "spanjestrijders:code/Gesneuveld/{Gesneuveld}",
+    "dc:description": "Gesneuveld"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Nederlanderschap afgenomen"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Nederlanderschap_afgenomen",
+    "name": "Nederlanderschap afgenomen",
+    "propertyUrl": "spanjestrijders:dimension/Nederlanderschap_afgenomen",
+    "valueUrl": "spanjestrijders:code/Nederlanderschap_afgenomen/{Nederlanderschap afgenomen}",
+    "dc:description": "Nederlanderschap afgenomen"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "Nederlanderschap_teruggegeven"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Nederlanderschap_teruggegeven",
+    "name": "Nederlanderschap teruggegeven",
+    "propertyUrl": "spanjestrijders:dimension/Nederlanderschap_teruggegeven",
+    "dc:description": "Nederlanderschap teruggegeven"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Vader"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Vader",
+    "name": "Vader",
+    "propertyUrl": "spanjestrijders:dimension/Vader",
+    "dc:description": "Vader"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Beroep_vader"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Beroep_vader",
+    "name": "Beroep_vader",
+    "propertyUrl": "spanjestrijders:dimension/Beroep_vader",
+    "valueUrl": "spanjestrijders:code/Beroep_vader/{Beroep_vader}",
+    "dc:description": "Beroep vader"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "spanjestrijders:code/Beroep_vader/{Beroep_vader}",
+    "name": "Beroep_vader",
+    "propertyUrl": "skos:exactMatch",
+    "valueUrl": "hsn:occupation/{{Beroep_vader|lower()}}"
+    },
+   {
+    "datatype": "string",
+    "titles": [
+     "Moeder"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Moeder",
+    "name": "Moeder",
+    "propertyUrl": "spanjestrijders:dimension/Moeder",
+    "dc:description": "Moeder"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Beroep_moeder"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Beroep_moeder",
+    "name": "Beroep_moeder",
+    "propertyUrl": "spanjestrijders:dimension/Beroep_moeder",
+    "valueUrl": "spanjestrijders:code/Beroep_moeder/{Beroep_moeder}",
+    "dc:description": "Beroep moeder"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "spanjestrijders:code/Beroep_moeder/{Beroep_moeder}",
+    "name": "Beroep_moeder",
+    "propertyUrl": "skos:exactMatch",
+    "valueUrl": "hsn:occupation/{{Beroep_moeder|lower()}}"
+    },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "Datum_getrouwd"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Datum_getrouwd",
+    "name": "Datum_getrouwd",
+    "propertyUrl": "spanjestrijders:dimension/Datum_getrouwd",
+    "dc:description": "Datum getrouwd"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Partner"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Partner",
+    "name": "Partner",
+    "propertyUrl": "spanjestrijders:dimension/Partner",
+    "dc:description": "Partner"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Kinderen"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Kinderen",
+    "name": "Kinderen",
+    "propertyUrl": "spanjestrijders:dimension/Kinderen",
+    "dc:description": "Kinderen"
+   },
+   {
+    "virtual": true,
+    "datatype": "int",
+    "name": "Aantal_kinderen",
+        "titles": [
+     "Aantal_kinderen"
+    ],
+    "propertyUrl": "spanjestrijders:dimension/Aantal_kinderen",
+    "csvw:value": "{{Kinderen|first()}}",
+    "dc:description": "Aantal kinderen"
+},
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "Datum_getrouwd_2"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Datum_getrouwd_2",
+    "name": "Datum_getrouwd_2",
+    "propertyUrl": "spanjestrijders:dimension/Datum_getrouwd_2",
+    "dc:description": "Datum getrouwd 2"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Partner_2"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Partner_2",
+    "name": "Partner_2",
+    "propertyUrl": "spanjestrijders:dimension/Partner_2",
+    "dc:description": "Partner 2"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Kinderen_2"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Kinderen_2",
+    "name": "Kinderen_2",
+    "propertyUrl": "spanjestrijders:dimension/Kinderen_2",
+    "dc:description": "Kinderen 2"
+   },
+   {
+    "virtual": true,
+    "datatype": "int",
+    "name": "Aantal_kinderen_2",
+        "titles": [
+     "Aantal_kinderen_2"
+    ],
+    "propertyUrl": "spanjestrijders:dimension/Aantal_kinderen_2",
+    "csvw:value": "{{Kinderen_2|first()}}",
+    "dc:description": "Aantal kinderen 2"
+},
+   {
+    "datatype": "string",
+    "titles": [
+     "Levensbeschrijving"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Levensbeschrijving",
+    "name": "Levensbeschrijving",
+    "propertyUrl": "spanjestrijders:dimension/Levensbeschrijving",
+    "dc:description": "Levensbeschrijving"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Documenten"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Documenten",
+    "name": "Documenten",
+    "propertyUrl": "spanjestrijders:dimension/Documenten",
+    "dc:description": "Documenten"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Bronnen"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Bronnen",
+    "name": "Bronnen",
+    "propertyUrl": "spanjestrijders:dimension/Bronnen",
+    "dc:description": "Bronnen"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "Auteur"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Auteur",
+    "name": "Auteur",
+    "propertyUrl": "spanjestrijders:dimension/Auteur",
+    "dc:description": "Auteur"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "Laatst_gewijzigd"
+    ],
+    "@id": "https://iisg.amsterdam/spanjestrijders-170516.csv/column/Laatst_gewijzigd",
+    "name": "Laatst_gewijzigd",
+    "propertyUrl": "spanjestrijders:dimension/Laatst_gewijzigd",
+    "dc:description": "Laatst gewijzigd"
+   }
+  ]
+ }
+}
