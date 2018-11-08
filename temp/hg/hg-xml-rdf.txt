@@ -8,34 +8,23 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 
-<owl:Ontology rdf:about="https://rdf.histograph.io">
-<rdf:type rdf:resource="https://rdf.histograph.io#Vocabulary"/><vann:preferredNamespacePrefix>hg</vann:preferredNamespacePrefix> <vann:preferredNamespaceUri>https://rdf.histograph.io#</vann:preferredNamespaceUri>
-</owl:Ontology>
-
-<owl:Ontology rdf:about="https://rdf.histograph.io">
-  <dc:title xml:lang="en">Histograph</dc:title>
-  <dc:description xml:lang="en">A vocabulary for temporal description of space (objects / Places in Time)</dc:description>
-  <dc:description xml:lang="nl">Een vocabulaire voor tijdsspecifieke beschrijving van objecten en plaatsen (Plaats in Tijd)</dc:description>
-  <dc:issued>rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-05-08</dc:issued>
-  <dc:modified>rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-06-22</dc:modified>
-  <rdfs:comment xml:lang="en">-Versioning via github (https://github.com/histograph/schemas). So no version 'numbers'</rdf:comment>
-  <dc:rights>Copyright © 2015 Waag Society at http://waag.org/</dc:rights>
-  <cc:license rdf:resource="https://opensource.org/licenses/MIT"/> </cc:license>
-  <dc:contributor>
-<foaf:Person rdf:about="https://www.linkedin.com/in/denengelse/?originalSubdomain=nl"/> </dc:contributor>
-<dc:contributor>
-<foaf:Person rdf:about="http://orcid.org/0000-0003-3902-3720"/>
-     </dc:contributor>
-     <dc:creator>
-<foaf:Person rdf:about="https://bertspaan.nl"/> </dc:creator>
-<dc:publisher>
-<foaf:Organization rdf:about="http://waag.org/"/>
-     </dc:publisher>
-</owl:Ontology>
-
-
 <http://rdf.histograph.io/> rdf:type owl:Ontology;
-    owl:imports <http://www.opengis.net/ont/geosparql>, <http://www.w3.org/2006/time>, <http://www.w3.org/ns/prov>.
+    owl:imports <http://www.opengis.net/ont/geosparql>, <http://www.w3.org/2006/time>, <http://www.w3.org/ns/prov>;
+    vann:preferredNamespacePrefix "hg";
+    vann:preferredNamespaceUri><https://rdf.histograph.io#>;
+    dc:title "Histograph"^^@en;
+    dc:description "A vocabulary for temporal description of space (objects / Places in Time)"@en;
+    dc:description "Een vocabulaire voor tijdsspecifieke beschrijving van objecten en plaatsen (Plaats in Tijd)"@nl;
+    dc:issued "20150508"^^xsd:date;
+    dc:modified "20150622"^^xsd:date;
+    rdfs:comment "-Versioning via github (https://github.com/histograph/schemas). So no version 'numbers'"@en;
+    dc:rights "Copyright © 2015 Waag Society at http://waag.org/"@en;
+    cc:license <https://opensource.org/licenses/MIT>;
+    dc:contributor <https://www.linkedin.com/in/denengelse/?originalSubdomain=nl>;
+    dc:contributor <http://orcid.org/0000-0003-3902-3720>;
+    dc:creator <https://bertspaan.nl>;
+    dc:publisher <http://waag.org/>.
+
 hg:PlaceInTime rdf:type owl:Class;
     rdfs:subClassOf owl:Thing.
 hg:Address rdf:type hg:PlaceInTimeType;
