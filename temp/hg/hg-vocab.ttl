@@ -11,7 +11,7 @@
 <http://rdf.histograph.io/> rdf:type owl:Ontology;
     owl:imports <http://www.opengis.net/ont/geosparql>, <http://www.w3.org/2006/time>, <http://www.w3.org/ns/prov>;
     vann:preferredNamespacePrefix "hg";
-    vann:preferredNamespaceUri><https://rdf.histograph.io#>;
+    vann:preferredNamespaceUri <https://rdf.histograph.io#>;
     dc:title "Histograph"^^@en;
     dc:description "A vocabulary for temporal description of space (objects / Places in Time)"@en;
     dc:description "Een vocabulaire voor tijdsspecifieke beschrijving van objecten en plaatsen (Plaats in Tijd)"@nl;
