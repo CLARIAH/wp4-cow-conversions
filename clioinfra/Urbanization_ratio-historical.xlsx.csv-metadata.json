@@ -197,7 +197,7 @@
                 "datatype": "xsd:gYear",
                 "dc:description": "Start year of this country",
                 "name": "start_year",
-                "propertyUrl": "clio:vocab/start_year",
+                "propertyUrl": "clio:dimension/start_year",
                 "virtual": true
             },
             {
@@ -205,14 +205,14 @@
                 "datatype": "xsd:gYear",
                 "dc:description": "End year of this country",
                 "name": "end_year",
-                "propertyUrl": "clio:vocab/end_year",
+                "propertyUrl": "clio:dimension/end_year",
                 "virtual": true
             },
             {
                 "aboutUrl": "{country_name}/{start_year}/{end_year}",
                 "datatype": "xsd:gYear",
                 "dc:description": "ISO numeric country code",
-                "propertyUrl": "clio:vocab/ccode",
+                "propertyUrl": "clio:dimension/ccode",
                 "valueUrl": "code/country/{{ccode |int}}",
                 "virtual": true
             },
@@ -230,7 +230,7 @@
             },
             {
                 "aboutUrl": "{country_name}/{start_year}/{end_year}",
-                "propertyUrl": "clio:vocab/webmapper_code",
+                "propertyUrl": "clio:dimension/webmapper_code",
                 "valueUrl": "clio:code/{Webmapper_code}",
                 "virtual": true
             },
@@ -238,7 +238,7 @@
                 "aboutUrl": "{country_name}/{start_year}/{end_year}",
                 "datatype": "string",
                 "name": "Webmapper_numeric_code",
-                "propertyUrl": "clio:vocab/webmapper_numeric_code",
+                "propertyUrl": "clio:dimension/webmapper_numeric_code",
                 "virtual": true
             },
             {
@@ -247,7 +247,7 @@
                 "aboutUrl": "{country_name}/{start_year}/{end_year}",
                 "name": "uncountrycode",
                 "titles": ["uncountrycode"],
-                "propertyUrl": "https://iisg.amsterdam/vocab/isoNumber",
+                "propertyUrl": "https://iisg.amsterdam/dimension/isoNumber",
                 "csvw:value": "{ccode}"
               },
               {
@@ -277,7 +277,7 @@
                 "datatype": "xsd:decimal",
                 "dc:description": "The value of this measured property",
                 "name": "value",
-                "propertyUrl": "vocab/Urbanization_Ratio"
+                "propertyUrl": "dimension/Urbanization_Ratio"
             }
         ],
         "primaryKey": null

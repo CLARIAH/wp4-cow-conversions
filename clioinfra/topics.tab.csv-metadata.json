@@ -236,7 +236,7 @@
                 "datatype": "xsd:double",
                 "dc:description": "The value of this measured property",
                 "name": "value",
-                "propertyUrl": "vocab/index_file_clio-infra"
+                "propertyUrl": "dimension/index_file_clio-infra"
             }
         ],
         "primaryKey": null

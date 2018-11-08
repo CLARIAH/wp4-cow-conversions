@@ -9,7 +9,7 @@
             "bibo": "http://purl.org/ontology/bibo/",
             "canfam": "http://data.socialhistory.org/ns/resource/canfam/dataset/canada1901/",
             "canfam-auke": "http://data.socialhistory.org/ns/resource/canfam/auke/",
-            "canfam-dimension": "http://data.socialhistory.org/ns/vocab/canfam/dimension/",
+            "canfam-dimension": "http://data.socialhistory.org/ns/dimension/canfam/dimension/",
             "clio": "https://iisg.amsterdam/clio/",
             "clioctr": "http://data.socialhistory.org/ns/resource/clio/country/",
             "clioind": "http://data.socialhistory.org/ns/resource/clio/indicator/",
@@ -32,7 +32,7 @@
             "ldp": "http://www.w3.org/ns/ldp#",
             "napp": "http://data.socialhistory.org/ns/resource/napp/",
             "napp-can91": "http://data.socialhistory.org/ns/resource/napp/dataset/canada1891/",
-            "napp-dimension": "http://data.socialhistory.org/ns/vocab/napp/dimension/",
+            "napp-dimension": "http://data.socialhistory.org/ns/dimension/napp/dimension/",
             "napp-eng81": "http://data.socialhistory.org/ns/resource/napp/dataset/englandwales1881/",
             "napp-sct81": "http://data.socialhistory.org/ns/resource/napp/dataset/scotland1881/",
             "np": "http://www.nanopub.org/nschema#",
@@ -49,7 +49,7 @@
             "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
             "sdp": "http://data.socialhistory.org/ns/resource/person/",
             "sdr": "http://data.socialhistory.org/ns/resource/",
-            "sdv": "http://data.socialhistory.org/ns/vocab/",
+            "sdv": "http://data.socialhistory.org/ns/dimension/",
             "skos": "http://www.w3.org/2004/02/skos/core#",
             "time": "http://www.w3.org/2006/time#",
             "xml": "http://www.w3.org/XML/1998/namespace/",
@@ -195,7 +195,7 @@
                 "datatype": "xsd:gYear",
                 "dc:description": "Start year of this country",
                 "name": "start_year",
-                "propertyUrl": "clio:vocab/start_year",
+                "propertyUrl": "clio:dimension/start_year",
                 "virtual": true
             },
             {
@@ -203,14 +203,14 @@
                 "datatype": "xsd:gYear",
                 "dc:description": "End year of this country",
                 "name": "end_year",
-                "propertyUrl": "clio:vocab/end_year",
+                "propertyUrl": "clio:dimension/end_year",
                 "virtual": true
             },
             {
                 "aboutUrl": "{country_name}/{start_year}/{end_year}",
                 "datatype": "xsd:gYear",
                 "dc:description": "ISO numeric country code",
-                "propertyUrl": "clio:vocab/ccode",
+                "propertyUrl": "clio:dimension/ccode",
                 "valueUrl": "clio:code/country/{{ccode | int}}",
                 "virtual": true
             },
@@ -228,7 +228,7 @@
             },
             {
                 "aboutUrl": "{country_name}/{start_year}/{end_year}",
-                "propertyUrl": "clio:vocab/webmapper_code",
+                "propertyUrl": "clio:dimension/webmapper_code",
                 "valueUrl": "clio:code/{Webmapper_code}",
                 "virtual": true
             },
@@ -236,7 +236,7 @@
                 "aboutUrl": "{country_name}/{start_year}/{end_year}",
                 "datatype": "string",
                 "name": "Webmapper_numeric_code",
-                "propertyUrl": "clio:vocab/webmapper_numeric_code",
+                "propertyUrl": "clio:dimension/webmapper_numeric_code",
                 "virtual": true
             },
             {
@@ -245,7 +245,7 @@
                 "aboutUrl": "{country_name}/{start_year}/{end_year}",
                 "name": "uncountrycode",
                 "titles": ["uncountrycode"],
-                "propertyUrl": "https://iisg.amsterdam/vocab/isoNumber",
+                "propertyUrl": "https://iisg.amsterdam/dimension/isoNumber",
                 "csvw:value": "{ccode}"
             },
             {
@@ -275,7 +275,7 @@
                 "datatype": "xsd:decimal",
                 "dc:description": "The value of this measured property",
                 "name": "value",
-                "propertyUrl": "https://iisg.amsterdam/clio/vocab/GDP_per_Capita"
+                "propertyUrl": "https://iisg.amsterdam/clio/dimension/GDP_per_Capita"
             }
         ],
         "primaryKey": null
