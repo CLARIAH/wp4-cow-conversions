@@ -20,6 +20,9 @@ library("cower")
 # hsn_person -> OP seems broken
 # add adres
 
+
+# cower does not put the filename or anything in the graph name
+
 cower(csv_path = "/Users/auke/repos/sdh-private-hsn/hsndbf/VERNUM.csv",
     json_path = "/Users/auke/repos/wp4-cow-conversions/hsn/cower/VERNUM.csv-metadata-cower.json",
     nquad_path = "/Users/auke/repos/sdh-private-hsn/hsndbf/VERNUM.csv.nq.gz",
@@ -233,6 +236,7 @@ cower(csv_path = "/Users/auke/repos/sdh-private-hsn/hsndbf/BEVSTATP.DBF.csv",
     compress = TRUE, 
     batch_size = 1e6)
 # here hsn:OP refers to idnrhsp, elsewhere hsnperson
+# fixed
 
 cower(csv_path = "/Users/auke/repos/sdh-private-hsn/hsndbf/BEVADRES.DBF.csv",
     json_path = "/Users/auke/repos/wp4-cow-conversions/hsn/cower/BEVADRES.DBF.csv-metadata-cower.json",

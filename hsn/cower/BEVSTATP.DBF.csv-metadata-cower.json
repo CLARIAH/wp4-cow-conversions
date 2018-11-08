@@ -234,7 +234,7 @@
     "titles": [
      "FUNCTIE"
     ],
-    "aboutUrl": "hsn:code/IDNRHSP/{IDNRHSP}",
+    "aboutUrl": "hsn:code/HSNperson/{{ stringi::stri_join(IDNR, '_', PERSNR) }}",
     "propertyUrl": "rdf:type",
     "valueUrl": "hsn:OP",
     "null": ["ALLEENST", "HOOFD", "overig", "VROUW"],
@@ -564,7 +564,7 @@
     "@id": "https://iisg.amsterdam/BEVSTATP.DBF.csv/column/OVLJAR",
     "name": "OVLJAR",
     "propertyUrl": "hsn:dimension/OVLJAR",
-    "null": ["-1", "-2", "-3", "-4"],
+    "null": ["0", "-1", "-2", "-3", "-4"],
     "dc:description": "Jaar overlijden"
    },
    {
