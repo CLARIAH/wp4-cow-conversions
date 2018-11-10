@@ -17,7 +17,7 @@
     dc:description "Een vocabulaire voor tijdsspecifieke beschrijving van objecten en plaatsen (Plaats in Tijd)"@nl;
     dc:issued "20150508"^^xsd:date;
     dc:modified "20150622"^^xsd:date;
-    rdfs:comment "-Versioning via github (https://github.com/histograph/schemas). So no version 'numbers'"@en;
+    rdfs:comment "Versioning via github (https://github.com/histograph/schemas). So no version 'numbers'"@en;
     dc:rights "Copyright © 2015 Waag Society at http://waag.org/"@en;
     cc:license <https://opensource.org/licenses/MIT>;
     dc:contributor <https://www.linkedin.com/in/denengelse/?originalSubdomain=nl>;
