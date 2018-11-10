@@ -9,76 +9,90 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 
 <http://rdf.histograph.io/> rdf:type owl:Ontology;
-    owl:imports <http://www.opengis.net/ont/geosparql>, <http://www.w3.org/2006/time>, <http://www.w3.org/ns/prov>.
-    hg:PlaceInTime rdf:type owl:Class;
-    rdfs:subClassOf owl:Thing.
+    owl:imports <http://www.opengis.net/ont/geosparql>, <http://www.w3.org/2006/time>, <http://www.w3.org/ns/prov>;
+    vann:preferredNamespacePrefix "hg"@en;
+    vann:preferredNamespaceUri <https://rdf.histograph.io#>;
+    dc:title "Histograph"@en;
+    dc:description "A vocabulary for temporal description of space (objects / Places in Time)"@en;
+    dc:description "Een vocabulaire voor tijdsspecifieke beschrijving van objecten en plaatsen (Plaats in Tijd)"@nl;
+    dc:issued "20150508"^^xsd:date;
+    dc:modified "20150622"^^xsd:date;
+    rdfs:comment "-Versioning via github (https://github.com/histograph/schemas). So no version 'numbers'"@en;
+    dc:rights "Copyright © 2015 Waag Society at http://waag.org/"@en;
+    cc:license <https://opensource.org/licenses/MIT>;
+    dc:contributor <https://www.linkedin.com/in/denengelse/?originalSubdomain=nl>;
+    dc:contributor <http://orcid.org/0000-0003-3902-3720>;
+    dc:creator <https://bertspaan.nl>;
+    dc:publisher <http://waag.org/> . 
+hg:PlaceInTime rdf:type owl:Class;
+    rdfs:subClassOf owl:Thing .
 hg:Address rdf:type hg:PlaceInTimeType;
-    rdfs:label "Address".
+    rdfs:label "Address"@en .
 hg:Building rdf:type hg:PlaceInTimeType;
-    rdfs:label "Building".
+    rdfs:label "Building"@en .
 hg:Monument rdf:type hg:PlaceInTimeType;
-    rdfs:label "Monument".
+    rdfs:label "Monument"@en .
 hg:Fort rdf:type hg:PlaceInTimeType;
-    rdfs:label "Fort".
+    rdfs:label "Fort"@en .
 hg:Street rdf:type hg:PlaceInTimeType;
-    rdfs:label "Street".
+    rdfs:label "Street"@en .
 hg:Neighbourhood rdf:type hg:PlaceInTimeType;
-    rdfs:label "Neighbourhood".
+    rdfs:label "Neighbourhood"@en .
 hg:Borough rdf:type hg:PlaceInTimeType;
-    rdfs:label "Borough".
+    rdfs:label "Borough"@en .
 hg:Place rdf:type hg:PlaceInTimeType;
-    rdfs:label "Place".
+    rdfs:label "Place"@en .
 hg:Municipality rdf:type hg:PlaceInTimeType;
-    rdfs:label "Municipality".
+    rdfs:label "Municipality"@en .
 hg:Water rdf:type hg:PlaceInTimeType;
-    rdfs:label "Water".
+    rdfs:label "Water"@en .
 hg:Polder rdf:type hg:PlaceInTimeType;
-    rdfs:label "Polder".
+    rdfs:label "Polder"@nl .
 hg:Area rdf:type hg:PlaceInTimeType;
-    rdfs:label "Area".
+    rdfs:label "Area"@en .
 hg:Region rdf:type hg:PlaceInTimeType;
-    rdfs:label "Region".
+    rdfs:label "Region"@en .
 hg:Province rdf:type hg:PlaceInTimeType;
-    rdfs:label "Province".
+    rdfs:label "Province"@en .
 hg:Baljuwschap rdf:type hg:PlaceInTimeType;
-    rdfs:label "Baljuwschap".
+    rdfs:label "Baljuwschap"@nl .
 hg:Barony rdf:type hg:PlaceInTimeType;
-    rdfs:label "Barony".
+    rdfs:label "Barony"@en .
 hg:Departement rdf:type hg:PlaceInTimeType;
-    rdfs:label "Departement".
+    rdfs:label "Departement"@en .
 hg:Countship rdf:type hg:PlaceInTimeType;
-    rdfs:label "Countship".
+    rdfs:label "Countship"@en .
 hg:Heerlijkheid rdf:type hg:PlaceInTimeType;
-    rdfs:label "Heerlijkheid".
+    rdfs:label "Heerlijkheid"@nl .
 hg:Country rdf:type hg:PlaceInTimeType;
-    rdfs:label "Country".
+    rdfs:label "Country"@en .
 hg:sameHgConcept rdf:type owl:ObjectProperty;
     rdfs:domain hg:PlaceInTime;
-    rdfs:range hg:PlaceInTime.
+    rdfs:range hg:PlaceInTime .
 hg:containsHgConcept rdf:type owl:ObjectProperty;
     rdfs:domain hg:PlaceInTime;
-    rdfs:range hg:PlaceInTime.
+    rdfs:range hg:PlaceInTime .
 hg:withinHgConcept rdf:type owl:ObjectProperty;
     rdfs:domain hg:PlaceInTime;
-    rdfs:range hg:PlaceInTime.
+    rdfs:range hg:PlaceInTime .
 hg:intersectsHgConcept rdf:type owl:ObjectProperty;
     rdfs:domain hg:PlaceInTime;
-    rdfs:range hg:PlaceInTime.
+    rdfs:range hg:PlaceInTime .
 hg:absorbed rdf:type owl:ObjectProperty;
     rdfs:domain hg:PlaceInTime;
-    rdfs:range hg:PlaceInTime.
+    rdfs:range hg:PlaceInTime .
 hg:absorbedBy rdf:type owl:ObjectProperty;
     rdfs:domain hg:PlaceInTime;
-    rdfs:range hg:PlaceInTime.
+    rdfs:range hg:PlaceInTime .
 hg:originated rdf:type owl:ObjectProperty;
     rdfs:domain hg:PlaceInTime;
-    rdfs:range hg:PlaceInTime.
+    rdfs:range hg:PlaceInTime .
 hg:originatedFrom rdf:type owl:ObjectProperty;
     rdfs:domain hg:PlaceInTime;
-    rdfs:range hg:PlaceInTime.
+    rdfs:range hg:PlaceInTime .
 hg:contains rdf:type owl:ObjectProperty;
     rdfs:domain hg:PlaceInTime;
-    rdfs:range hg:PlaceInTime.
+    rdfs:range hg:PlaceInTime .
 hg:liesIn rdf:type owl:ObjectProperty;
     rdfs:domain hg:PlaceInTime;
-    rdfs:range hg:PlaceInTime.
+    rdfs:range hg:PlaceInTime .
