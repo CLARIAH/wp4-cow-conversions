@@ -10,20 +10,7 @@
 
 <http://rdf.histograph.io/> rdf:type owl:Ontology;
     owl:imports <http://www.opengis.net/ont/geosparql>, <http://www.w3.org/2006/time>, <http://www.w3.org/ns/prov>;
-    vann:preferredNamespacePrefix "hg";
-    vann:preferredNamespaceUri <https://rdf.histograph.io#>;
-    dc:title "Histograph"@en;
-    dc:description "A vocabulary for temporal description of space (objects / Places in Time)"@en;
-    dc:description "Een vocabulaire voor tijdsspecifieke beschrijving van objecten en plaatsen (Plaats in Tijd)"@nl;
-    dc:issued "20150508"^^xsd:date;
-    dc:modified "20150622"^^xsd:date;
-    rdfs:comment "-Versioning via github (https://github.com/histograph/schemas). So no version 'numbers'"@en;
-    dc:rights "Copyright © 2015 Waag Society at http://waag.org/"@en;
-    cc:license <https://opensource.org/licenses/MIT>;
-    dc:contributor <https://www.linkedin.com/in/denengelse/?originalSubdomain=nl>;
-    dc:contributor <http://orcid.org/0000-0003-3902-3720>;
-    dc:creator <https://bertspaan.nl>;
-    dc:publisher <http://waag.org/>.
+    dc:publisher <http://waag.org/> .
 hg:PlaceInTime rdf:type owl:Class;
     rdfs:subClassOf owl:Thing.
 hg:Address rdf:type hg:PlaceInTimeType;
