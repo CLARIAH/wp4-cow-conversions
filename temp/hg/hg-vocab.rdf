@@ -9,9 +9,8 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 
 <http://rdf.histograph.io/> rdf:type owl:Ontology;
-    owl:imports <http://www.opengis.net/ont/geosparql>, <http://www.w3.org/2006/time>, <http://www.w3.org/ns/prov>;
-    dc:publisher <http://waag.org/> .
-hg:PlaceInTime rdf:type owl:Class;
+    owl:imports <http://www.opengis.net/ont/geosparql>, <http://www.w3.org/2006/time>, <http://www.w3.org/ns/prov>.
+    hg:PlaceInTime rdf:type owl:Class;
     rdfs:subClassOf owl:Thing.
 hg:Address rdf:type hg:PlaceInTimeType;
     rdfs:label "Address".
