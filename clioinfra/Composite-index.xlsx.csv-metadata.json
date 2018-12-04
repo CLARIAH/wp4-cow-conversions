@@ -1,0 +1,287 @@
+{
+    "@context": [
+        "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json",
+        {
+            "@base": "https://iisg.amsterdam/clio/",
+            "@language": "en"
+        },
+        {
+         "owl": "http://www.w3.org/2002/07/owl#",
+         "dbo": "http://dbpedia.org/ontology/",
+         "clioctr": "https://iisg.amsterdam/clio/country/",
+         "hisclass": "https://iisg.amsterdam/hisclass/",
+         "hisco-product": "https://iisg.amsterdam/hisco/product/",
+         "ldp": "http://www.w3.org/ns/ldp#",
+         "clio": "https://iisg.amsterdam/clio/",
+         "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
+         "dbr": "http://dbpedia.org/resource/",
+         "skos": "http://www.w3.org/2004/02/skos/core#",
+         "xml": "http://www.w3.org/XML/1998/namespace/",
+         "bibo": "http://purl.org/ontology/bibo/",
+         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+         "prov": "http://www.w3.org/ns/prov#",
+         "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+         "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/",
+         "hiscam": "https://iisg.amsterdam/hiscam/",
+         "dbpedia": "http://dbpedia.org/resource/",
+         "np": "http://www.nanopub.org/nschema#",
+         "canfam-auke": "https://iisg.amsterdam/canfam/auke/",
+         "dcterms": "http://purl.org/dc/terms/",
+         "schema": "http://schema.org/",
+         "foaf": "http://xmlns.com/foaf/0.1/",
+         "napp": "https://iisg.amsterdam/napp/",
+         "sdv": "https://iisg.amsterdam/vocab/",
+         "hisco": "https://iisg.amsterdam/hisco/",
+         "sdp": "https://iisg.amsterdam/person/",
+         "sdr": "https://iisg.amsterdam/",
+         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+         "time": "http://www.w3.org/2006/time#",
+         "hsn": "https://iisg.amsterdam/hsn2013a/",
+         "dc": "http://purl.org/dc/terms/",
+         "hisco-relation": "https://iisg.amsterdam/hisco/relation/",
+         "hisco-status": "https://iisg.amsterdam/hisco/status/",
+         "dbp": "http://dbpedia.org/property/",
+         "clioprop": "https://iisg.amsterdam/clio/property/",
+         "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+         "csvw": "http://www.w3.org/ns/csvw#",
+         "clioind": "https://iisg.amsterdam/clio/indicator/",
+         "dc11": "http://purl.org/dc/elements/1.1/",
+         "canfam-": "http://data.socialhistory.org/vocab/canfam//",
+         "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/",
+         "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/",
+         "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/",
+         "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+         "qb": "http://purl.org/linked-data/cube#",
+         "hisclass5": "https://iisg.amsterdam/hisclass5/",
+         "xsd": "http://www.w3.org/2001/XMLSchema#",
+         "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+         "napp-": "http://data.socialhistory.org/vocab/napp//",
+         "geosparql": "http://www.opengis.net/ont/geosparql#",
+         "B2L": "https://iisg.amsterdam/B2L/",
+         "siem": "https://iisg.amsterdam/siem/"
+      }
+    ],
+    "dc:creator": {
+        "@id": "sdp:rjhoekstr@gmail.com",
+        "foaf:familyName": "Hoekstra",
+        "foaf:givenName": "Rinke",
+        "foaf:mbox": {
+            "@id": "mailto:rinke.hoekstra@vu.nl"
+        },
+        "foaf:name": "Rinke Hoekstra",
+        "owl:sameAs": {
+            "@id": "http://orcid.org/0000-0001-7076-9083"
+        },
+        "rdf:type": [
+            {
+                "@id": "foaf:Person"
+            },
+            {
+                "@id": "prov:Person"
+            }
+        ]
+    },
+    "dc:creator": {
+        "@id": "sdp:rubenschalk1@gmail.com",
+        "foaf:familyName": "Schalk",
+        "foaf:givenName": "Ruben",
+        "foaf:mbox": {
+            "@id": "mailto:rubenschalk1@gmail.com"
+        },
+        "foaf:name": "Ruben Schalk",
+                "rdf:type": [
+            {
+                "@id": "foaf:Person"
+            },
+            {
+                "@id": "prov:Person"
+            }
+        ]
+    },
+    "dc:description": [
+        "The composite measure of wellbeing is a linear combination of the 9 variables created through a latent variable model. In the Bayesian implementation of the latent variable model, missing data is handled by the model. This provides estimates even for countries for which there is very little information."
+    ],
+    "dc:license": {
+        "@id": "http://opendefinition.org/licenses/cc-by/"
+    },
+    "dc:modified": {
+        "@type": "xsd:date",
+        "@value": "2018-12-04"
+    },
+    "dc:publisher": {
+        "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+        "schema:url": {
+            "@id": "http://datalegend.net"
+        }
+    },
+    "dc:title": "Composite Measure of Wellbeing",
+    "dcat:keyword": [],
+    "dialect": {
+        "delimiter": ",",
+        "encoding": "utf-8",
+        "quoteChar": "\""
+    },
+    "prov:wasDerivedFrom": [
+        {
+            "@id": "http://hdl.handle.net/10622/XNGK4X"
+        },
+        {
+            "@id": "http://datasets.socialhistory.org/api/access/datafile/9"
+        }
+    ],
+    "qb:structure": {
+        "@id": "https://iisg.amsterdam/clio/structure/Composite_Measure_Wellbeing",
+        "@type": "qb:DataStructureDefinition",
+        "qb:component": [
+            {
+                "qb:": [
+                    {
+                        "@id": "sdmx-:refPeriod",
+                        "@type": "qb:Property",
+                        "rdfs:range": {
+                            "@id": "time:Interval"
+                        }
+                    },
+                    {
+                        "@id": "sdmx-:refArea",
+                        "@type": "qb:Property"
+                    }
+                ],
+                "qb:measure": {
+                    "@id": "https://iisg.amsterdam/clio/measure/Composite_Measure_Wellbeing",
+                    "@type": [
+                        "qb:MeasureProperty",
+                        "owl:DatatypeProperty"
+                    ],
+                    "rdfs:label": [
+                        "The composite measure of wellbeing is a linear combination of the 9 variables created through a latent variable model. In the Bayesian implementation of the latent variable model, missing data is handled by the model. This provides estimates even for countries for which there is very little information."
+                    ],
+                    "rdfs:range": {
+                        "@id": "xsd:float"
+                    },
+                    "skos:note": "This is a composite measure of wellbeing constructed from 9 variables from the Clio-Infra projected presented in the How was life report."
+                }
+            }
+        ],
+        "rdfs:comment": "Datastructure definition for CLIO file Composite-index.xlsx.csv"
+    },
+    "skos:note": "This is a composite measure of wellbeing constructed from 9 variables from the Clio-Infra projected presented in the How was life report",
+    "tableSchema": {
+        "aboutUrl": "{country_name}/{start_year}/{end_year}/{year}",
+        "columns": [
+            {
+                "propertyUrl": "qb:dataSet",
+                "valueUrl": "https://iisg.amsterdam/clio/Composite_Measure_Wellbeing",
+                "virtual": true
+            },
+            {
+                "aboutUrl": "https://iisg.amsterdam/clio/Composite_Measure_Wellbeing",
+                "propertyUrl": "qb:structure",
+                "valueUrl": "https://iisg.amsterdam/clio/structure/Composite_Measure_Wellbeing",
+                "virtual": true
+            },
+            {
+                "aboutUrl": "https://iisg.amsterdam/clio/Composite_Measure_Wellbeing",
+                "propertyUrl": "rdf:type",
+                "valueUrl": "qb:DataSet",
+                "virtual": true
+            },
+            {
+                "aboutUrl": "clio:{country_name}/{start_year}/{end_year}",
+                "propertyUrl": "rdf:type",
+                "valueUrl": "qb:Observation",
+                "virtual": true
+            },
+            {
+                "aboutUrl": "clio:{country_name}/{start_year}/{end_year}",
+                "datatype": "xsd:gYear",
+                "dc:description": "Start year of this country",
+                "name": "start_year",
+                "propertyUrl": "clio:dimension/start_year",
+                "virtual": true
+            },
+            {
+                "aboutUrl": "clio:{country_name}/{start_year}/{end_year}",
+                "datatype": "xsd:gYear",
+                "dc:description": "End year of this country",
+                "name": "end_year",
+                "propertyUrl": "clio:dimension/end_year",
+                "virtual": true
+            },
+            {
+                "aboutUrl": "{country_name}/{start_year}/{end_year}",
+                "datatype": "xsd:gYear",
+                "dc:description": "ISO numeric country code",
+                "propertyUrl": "clio:dimension/ccode",
+                "valueUrl": "code/country/{{ccode |int}}",
+                "virtual": true
+            },
+            {
+                "aboutUrl": "{country_name}/{start_year}/{end_year}",
+                "propertyUrl": "rdf:type",
+                "valueUrl": "dbpedia:Country",
+                "virtual": true
+            },
+            {
+                "aboutUrl": "{country_name}/{start_year}/{end_year}",
+                "propertyUrl": "skos:closeMatch",
+                "valueUrl": "http://dbpedia.org/resource/{country_name}",
+                "virtual": true
+            },
+            {
+                "aboutUrl": "{country_name}/{start_year}/{end_year}",
+                "propertyUrl": "clio:dimension/webmapper_code",
+                "valueUrl": "clio:code/{Webmapper_code}",
+                "virtual": true
+            },
+            {
+                "aboutUrl": "{country_name}/{start_year}/{end_year}",
+                "datatype": "string",
+                "name": "Webmapper_numeric_code",
+                "propertyUrl": "clio:dimension/webmapper_numeric_code",
+                "virtual": true
+            },
+            {
+                "virtual": true,
+                "datatype": "int",
+                "aboutUrl": "{country_name}/{start_year}/{end_year}",
+                "name": "uncountrycode",
+                "titles": ["uncountrycode"],
+                "propertyUrl": "https://iisg.amsterdam/dimension/isoNumber",
+                "csvw:value": "{ccode}"
+              },
+              {
+                "virtual": true,
+                "aboutUrl": "{country_name}/{start_year}/{end_year}",
+                "propertyUrl": "skos:exactMatch",
+                "valueUrl": "sdr:resource/country/{{country_name| replace(' ','-')}}/{start_year}"
+              },
+            {
+                "propertyUrl": "sdmx-dimension:refArea",
+                "valueUrl": "{country_name}/{start_year}/{end_year}",
+                "virtual": true
+            },
+            {
+                "csvw:value": "Values for {country_name} with borders {start_year}-{end_year} as measured in {year}",
+                "lang": "en",
+                "propertyUrl": "skos:note",
+                "virtual": true
+            },
+            {
+                "datatype": "xsd:gYear",
+                "dc:description": "The year this value was measured",
+                "name": "year",
+                "propertyUrl": "sdmx-dimension:refPeriod"
+            },
+            {
+                "aboutUrl": "{country_name}/{start_year}/{end_year}/{year}",
+                "datatype": "xsd:float",
+                "dc:description": "The value of this measured property",
+                "name": "value",
+                "propertyUrl": "dimension/Composite_Measure_Wellbeing"
+            }
+        ],
+        "primaryKey": null
+    },
+    "url": "Aluminium-historical.xlsx.csv"
+}
