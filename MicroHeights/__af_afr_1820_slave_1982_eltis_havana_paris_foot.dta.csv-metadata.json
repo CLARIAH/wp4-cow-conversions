@@ -4,7 +4,7 @@
   "delimiter": ",",
   "encoding": "utf-8"
  },
- "dcat:keyword": ["heights"],
+ "dcat:keyword": ["microheights"],
  "dc:license": {
   "@id": "http://opendefinition.org/licenses/cc-by/"
  },
@@ -40,7 +40,7 @@
    "dc:creator": ["Nwokeji, G. U"],
    "dc:title": ["Characteristics of Captives Leaving the Cameroons for the Americas, 1822-37"],
    "dcterms:bibliographicCitation": ["The Journal of African History, 43(2): 191–210."],
-   "dc:description": ["This dataset was created by David Eltis (2002) and covers the heights of liberated slaves born in various African countries who were freed (and documented) in the Cuban capital of Havana. The dataset is available online, on the website slavevoyages.org, jointly within an even larger dataset on liberated slaves in Sierra Leone (and some smaller places, such as Saint Helena and the Bahamas). We have chosen the Havana dataset because the age statements were quite likely done by the slaves themselves, allowing insights into their potential selectivity by studying age-rounding and hence numeracy (Eltis and Nwokeji 2002, Baten and Cappelli 2016). The dataset contains the most likely country or group of countries where the slaves came from based on their ports of origin; this was suggested by David Eltis as a rough identification possibility, although there is clearly a measurement issue with the slaves who were transported over further distances to each port, as he mentions. David Eltis and his colleagues also undertook large efforts to identify the ethnic origins of these individuals by their names; sometimes the African ethnic group was mentioned, but in a less systematic way, hence these are not covered in the dataset provided here. The period roughly covers the birth decades from the 1780s to the 1830s. Selectivity issues are carefully discussed in the paper by Eltis and Nwokeji (2002). The conclusion is that several positive and negative selectivity issues about height were not very substantial, and cancelled each other out. The most commonly used measure in Cuba during this period, for this kind of purpose, was the Paris foot measure according to Baten and Blum (2014)"],
+   "dc:description": ["This dataset was created by David Eltis (2002) and covers the microheights of liberated slaves born in various African countries who were freed (and documented) in the Cuban capital of Havana. The dataset is available online, on the website slavevoyages.org, jointly within an even larger dataset on liberated slaves in Sierra Leone (and some smaller places, such as Saint Helena and the Bahamas). We have chosen the Havana dataset because the age statements were quite likely done by the slaves themselves, allowing insights into their potential selectivity by studying age-rounding and hence numeracy (Eltis and Nwokeji 2002, Baten and Cappelli 2016). The dataset contains the most likely country or group of countries where the slaves came from based on their ports of origin; this was suggested by David Eltis as a rough identification possibility, although there is clearly a measurement issue with the slaves who were transported over further distances to each port, as he mentions. David Eltis and his colleagues also undertook large efforts to identify the ethnic origins of these individuals by their names; sometimes the African ethnic group was mentioned, but in a less systematic way, hence these are not covered in the dataset provided here. The period roughly covers the birth decades from the 1780s to the 1830s. Selectivity issues are carefully discussed in the paper by Eltis and Nwokeji (2002). The conclusion is that several positive and negative selectivity issues about height were not very substantial, and cancelled each other out. The most commonly used measure in Cuba during this period, for this kind of purpose, was the Paris foot measure according to Baten and Blum (2014)"],
    "dcterms:issued": {"@value":"2002"},
    "dc:isPartOf": ["https://www.jstor.org/stable/4100505"]
         }],
@@ -48,7 +48,7 @@
  "@context": [
   "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json",
   {
-   "@base": "https://iisg.amsterdam/heights/",
+   "@base": "https://iisg.amsterdam/micromicroheights/",
    "@language": "en"
   },
   {
@@ -100,7 +100,9 @@
    "sdr": "https://iisg.amsterdam/",
    "xsd": "http://www.w3.org/2001/XMLSchema#",
    "time": "http://www.w3.org/2006/time#",
-   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/"
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/",
+   "microheights": "https://iisg.amsterdam/micromicroheights/"
+
   }
  ],
  "dc:title": "af_afr_1820_slave_1982_eltis_havana_paris_foot.dta.csv",
@@ -110,7 +112,7 @@
   "@type": "xsd:date"
  },
  "tableSchema": {
-  "aboutUrl": "https://iisg.amsterdam/heights/africa/africa/1820_slave/{_row}",
+  "aboutUrl": "https://iisg.amsterdam/microheights/af_afr_1820/{_row}",
   "primaryKey": "No_",
   "columns": [
    {
@@ -120,8 +122,15 @@
     ],
     "@id": "https://iisg.amsterdam/af_afr_1820_slave_1982_eltis_havana_paris_foot.dta.csv/column/No_",
     "name": "No_",
+    "propertyUrl": "microheights:dimension/No_",
     "dc:description": "No_"
    },
+   {
+   "aboutUrl": "https://iisg.amsterdam/microheights/af_afr_1820/{_row}",
+   "virtual": true,
+   "propertyUrl": "rdf:type",
+   "valueUrl": "microheights:individual"
+ },
    {
     "datatype": "integer",
     "titles": [
@@ -129,7 +138,7 @@
     ],
     "@id": "https://iisg.amsterdam/af_afr_1820_slave_1982_eltis_havana_paris_foot.dta.csv/column/age",
     "name": "age",
-    "propertyUrl": "https://iisg.amsterdam/heights/dimension/age",
+    "propertyUrl": "microheights:dimension/age",
     "dc:description": "age"
    },
    {
@@ -139,7 +148,7 @@
     ],
     "@id": "https://iisg.amsterdam/af_afr_1820_slave_1982_eltis_havana_paris_foot.dta.csv/column/bdec",
     "name": "bdec",
-    "propertyUrl": "https://iisg.amsterdam/heights/dimension/bdec",
+    "propertyUrl": "microheights:dimension/bdec",
     "dc:description": "birth decade"
    },
    {
@@ -149,7 +158,7 @@
     ],
     "@id": "https://iisg.amsterdam/af_afr_1820_slave_1982_eltis_havana_paris_foot.dta.csv/column/byear",
     "name": "byear",
-    "propertyUrl": "https://iisg.amsterdam/heights/dimension/byear",
+    "propertyUrl": "microheights:dimension/byear",
     "dc:description": "birth year"
    },
    {
@@ -159,13 +168,13 @@
     ],
     "@id": "https://iisg.amsterdam/af_afr_1820_slave_1982_eltis_havana_paris_foot.dta.csv/column/female",
     "name": "female",
-    "propertyUrl": "https://iisg.amsterdam/heights/dimension/female",
+    "propertyUrl": "microheights:dimension/female",
     "dc:description": "1, if female (otherwise male)"
    },
    {
    "virtual": true,
-   "propertyUrl": "https://iisg.amsterdam/heights/dimension/sex",
-   "valueUrl": "https://iisg.amsterdam/heights/code/sex/{% if female == '0' %}male{% elif female == '1' %}female{% endif %}"
+   "propertyUrl": "microheights:dimension/sex",
+   "valueUrl": "microheights:code/sex/{% if female == '0' %}male{% elif female == '1' %}female{% endif %}"
     },
     {
     "virtual": true,
@@ -179,7 +188,7 @@
     ],
     "@id": "https://iisg.amsterdam/af_afr_1820_slave_1982_eltis_havana_paris_foot.dta.csv/column/ht_cm",
     "name": "ht_cm",
-    "propertyUrl": "https://iisg.amsterdam/heights/dimension/ht_cm",
+    "propertyUrl": "microheights:dimension/ht_cm",
     "dc:description": "height in centimeters"
    },
    {
@@ -189,7 +198,7 @@
     ],
     "@id": "https://iisg.amsterdam/af_afr_1820_slave_1982_eltis_havana_paris_foot.dta.csv/column/ht_inch",
     "name": "ht_inch",
-    "propertyUrl": "https://iisg.amsterdam/heights/dimension/ht_inch",
+    "propertyUrl": "microheights:dimension/ht_inch",
     "dc:description": "height in inch"
    },
    {
@@ -199,7 +208,7 @@
     ],
     "@id": "https://iisg.amsterdam/af_afr_1820_slave_1982_eltis_havana_paris_foot.dta.csv/column/original_measure",
     "name": "original_measure",
-    "propertyUrl": "https://iisg.amsterdam/heights/dimension/original_measure",
+    "propertyUrl": "microheights:dimension/original_measure",
     "dc:description": "original measure"
    },
    {
@@ -209,7 +218,7 @@
     ],
     "@id": "https://iisg.amsterdam/af_afr_1820_slave_1982_eltis_havana_paris_foot.dta.csv/column/qyear",
     "name": "qyear",
-    "propertyUrl": "https://iisg.amsterdam/heights/dimension/qyear",
+    "propertyUrl": "microheights:dimension/qyear",
     "dc:description": "year, in which height was recorded"
    },
    {
@@ -217,23 +226,54 @@
     "titles": [
      "rco"
     ],
-    "propertyUrl": "https://iisg.amsterdam/heights/rco",
     "@id": "https://iisg.amsterdam/af_afr_1820_slave_1982_eltis_havana_paris_foot.dta.csv/column/rco",
     "name": "rco",
-    "propertyUrl": "https://iisg.amsterdam/heights/dimension/rco",
-    "valueUrl": "https://iisg.amsterdam/heights/code/rco/{rco}",
+    "propertyUrl": "microheights:dimension/rco",
+    "valueUrl": "microheights:code/rco/{rco}",
     "dc:description": "country of residence (if distinguished)"
   },
     {
     "virtual": true,
-    "aboutUrl": "https://iisg.amsterdam/heights/code/rco/{rco}",
+    "aboutUrl": "microheights:code/rco/{rco}",
     "datatype": "string",
     "titles": ["rco"],
     "name": "rco",
     "propertyUrl": "https://iisg.amsterdam/vocab/isoAlpha2",
     "csvw:value": "{% if rco == 'ng-e' %}NG{% elif rco == 'ng-w' %}NG{% else %}{{rco|upper()}}{% endif %}",
     "dc:description": "isoAlpha2 code of country of residence (if distinguished)"
-  }
+  },
+  {
+  "virtual": true,
+  "propertyUrl": "microheights:dimension/country_measurement",
+  "valueUrl": "microheights:code/country_measurement/Cuba",
+  "dc:description": "isoAlpha2 code of country where height was recorded"
+},
+{
+  "virtual": true,
+  "aboutUrl": "microheights:code/country_measurement/Cuba",
+  "propertyUrl": "https://iisg.amsterdam/vocab/isoAlpha2",
+  "datatype": "string",
+  "csvw:value": "CU"
+  },
+{
+  "virtual": true,
+  "propertyUrl": "microheights:dimension/sample_type",
+  "valueUrl": "microheights:code/sample_type/slaves",
+  "dc:description": "type of sample used for constructing the database"
+},
+{
+  "virtual": true,
+  "propertyUrl": "microheights:dimension/sample_type",
+  "valueUrl": "microheights:code/sample_type/slaves",
+  "dc:description": "type of sample used for constructing the database"
+},
+  {
+  "virtual": true,
+  "propertyUrl": "microheights:dimension/qdec",
+  "csvw:value": "1820",
+  "datatype": "xsd:gYear",
+  "dc:description": "decade, in which height was recorded"
+}
   ]
  }
 }
