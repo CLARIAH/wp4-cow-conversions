@@ -101,7 +101,7 @@
    "xsd": "http://www.w3.org/2001/XMLSchema#",
    "time": "http://www.w3.org/2006/time#",
    "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/",
-   "microheights": "https://iisg.amsterdam/micromicroheights/"
+   "microheights": "https://iisg.amsterdam/microheights/"
 
   }
  ],
