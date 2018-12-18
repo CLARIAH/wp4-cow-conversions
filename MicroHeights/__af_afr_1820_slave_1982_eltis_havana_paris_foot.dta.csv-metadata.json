@@ -208,7 +208,7 @@
     "@id": "https://iisg.amsterdam/af_afr_1820_slave_1982_eltis_havana_paris_foot.dta.csv/column/original_measure",
     "name": "original_measure",
     "propertyUrl": "microheights:dimension/original_measure",
-    "dc:description": "original measure"
+    "dc:description": "measure in which the height was originally taken"
    },
    {
     "datatype": "xsd:gYear",
@@ -218,7 +218,7 @@
     "@id": "https://iisg.amsterdam/af_afr_1820_slave_1982_eltis_havana_paris_foot.dta.csv/column/qyear",
     "name": "qyear",
     "propertyUrl": "microheights:dimension/qyear",
-    "dc:description": "year, in which height was recorded"
+    "dc:description": "year in which height was recorded"
    },
    {
     "datatype": "string",
@@ -239,7 +239,7 @@
     "name": "rco",
     "propertyUrl": "microheights:dimension/isoAlpha2",
     "csvw:value": "{% if rco == 'ng-e' %}NG{% elif rco == 'ng-w' %}NG{% else %}{{rco|upper()}}{% endif %}",
-    "dc:description": "standerdized isoAlpha2 code of country of residence (if distinguished)"
+    "dc:description": "standardized isoAlpha2 code of country"
   },
   {
   "virtual": true,
@@ -253,7 +253,7 @@
   "propertyUrl": "microheights:dimension/isoAlpha2",
   "datatype": "string",
   "csvw:value": "CU",
-  "dc:description": "isoAlpha2 code of country where height was recorded"
+  "dc:description": "standardized isoAlpha2 code of country"
   },
 {
   "virtual": true,
@@ -266,7 +266,7 @@
   "propertyUrl": "microheights:dimension/qdec",
   "csvw:value": "1820",
   "datatype": "xsd:gYear",
-  "dc:description": "decade, in which height was recorded"
+  "dc:description": "decade in which height was recorded"
 }
   ]
  }
