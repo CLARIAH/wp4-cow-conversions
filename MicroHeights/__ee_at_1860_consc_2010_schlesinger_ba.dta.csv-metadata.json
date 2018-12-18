@@ -1,0 +1,275 @@
+{
+ "dialect": {
+  "quoteChar": "\"",
+  "delimiter": ",",
+  "encoding": "utf-8"
+ },
+ "dcat:keyword": ["microheights"],
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+  "schema:url": {"@id": "http://datalegend.net"}
+},
+"dc:creator": {
+        "foaf:mbox": {
+        "@id": "mailto:auke.rijpma@gmail.com"
+    },
+    "foaf:name": "Auke Rijpma",
+        "rdf:type": [{
+            "@id": "foaf:Person"
+        },
+        {"@id": "prov:Person"
+        }
+    ]
+},
+"dc:creator": {
+          "foaf:mbox": {
+        "@id": "mailto:rubenschalk1@gmail.com"},
+    "foaf:name": "Ruben Schalk",
+            "rdf:type": [
+        {   "@id": "foaf:Person"},
+        {    "@id": "prov:Person"}
+    ]
+},
+   "prov:wasDerivedFrom": [{
+   "@id": "",
+   "rdf:type": {"@id": "bibo:Thesis"},
+   "dc:creator": ["C. Schlesiger"],
+   "dc:title": ["Regionale Unterschiede von Lebensstandard und Humankapital in Österreich"],
+   "dcterms:bibliographicCitation": ["Unpublished BA thesis, Univ. Tuebingen"],
+   "dc:description": ["A modestly sized conscript dataset on Austria was collected by Christian Schlesiger (2016). It contains height measurements between 1878 and 1911. The ages of the conscripts were between 20 and 22 years. The birth years covered range from 1857 to 1890. Austrian conscription covered the whole population with very few exceptions at that time. The geographic coverage includes parts of lower Austria as well as Styria and Carinthia. Although occupations were recorded in the original lists, they did not follow a consistent convention. Since Schlesiger did not record the occupations in large numbers, we did not include them in the public access dataset. As the heights of the recruits were recorded before the military selection process, selectivity is most likely not a strong issue in this dataset."],
+   "dcterms:issued": {"@value":"2016"},
+   "dc:isPartOf": [""]
+        }],
+ "url": "__ee_at_1860_consc_2010_schlesinger_ba.dta.csv",
+ "@context": [
+  "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json",
+  {
+   "@base": "https://iisg.amsterdam/microheights/",
+   "@language": "en"
+  },
+  {
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/",
+   "dbo": "http://dbpedia.org/ontology/",
+   "clioctr": "https://iisg.amsterdam/clio/country/",
+   "hisclass": "https://iisg.amsterdam/hisclass/",
+   "hisco-product": "https://iisg.amsterdam/hisco/product/",
+   "ldp": "http://www.w3.org/ns/ldp#",
+   "clio": "https://iisg.amsterdam/clio/",
+   "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
+   "dbr": "http://dbpedia.org/resource/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "xml": "http://www.w3.org/XML/1998/namespace/",
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+   "napp": "https://iisg.amsterdam/napp/",
+   "prov": "http://www.w3.org/ns/prov#",
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+   "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/",
+   "hiscam": "https://iisg.amsterdam/hiscam/",
+   "dbpedia": "http://dbpedia.org/resource/",
+   "np": "http://www.nanopub.org/nschema#",
+   "hisclass5": "https://iisg.amsterdam/hisclass5/",
+   "canfam-auke": "https://iisg.amsterdam/canfam/auke/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "schema": "http://schema.org/",
+   "microheights": "https://iisg.amsterdam/microheights/",
+   "sdv": "https://iisg.amsterdam/vocab/",
+   "hisco": "https://iisg.amsterdam/hisco/",
+   "bibo": "http://purl.org/ontology/bibo/",
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+   "hsn": "https://iisg.amsterdam/hsn2013a/",
+   "dc": "http://purl.org/dc/terms/",
+   "hisco-relation": "https://iisg.amsterdam/hisco/relation/",
+   "hisco-status": "https://iisg.amsterdam/hisco/status/",
+   "dbp": "http://dbpedia.org/property/",
+   "clioprop": "https://iisg.amsterdam/clio/property/",
+   "csvw": "http://www.w3.org/ns/csvw#",
+   "clioind": "https://iisg.amsterdam/clio/indicator/",
+   "dc11": "http://purl.org/dc/elements/1.1/",
+   "sdr": "https://iisg.amsterdam/",
+   "qb": "http://purl.org/linked-data/cube#",
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/",
+   "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/",
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "foaf": "http://xmlns.com/foaf/0.1/",
+   "xsd": "http://www.w3.org/2001/XMLSchema#",
+   "time": "http://www.w3.org/2006/time#",
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/"
+  }
+ ],
+ "dc:title": "__ee_at_1860_consc_2010_schlesinger_ba.dta.csv",
+ "@id": "https://iisg.amsterdam/__ee_at_1860_consc_2010_schlesinger_ba.dta.csv",
+ "dc:modified": {
+  "@value": "2018-12-18",
+  "@type": "xsd:date"
+ },
+ "tableSchema": {
+  "aboutUrl": "https://iisg.amsterdam/microheights/ee_at_1860/{_row}",
+  "primaryKey": "{_row}",
+  "columns": [
+   {
+    "datatype": "integer",
+    "titles": [
+     "age"
+    ],
+    "@id": "https://iisg.amsterdam/__ee_at_1860_consc_2010_schlesinger_ba.dta.csv/column/age",
+    "name": "age",
+    "propertyUrl": "microheights:dimension/age",
+    "dc:description": "age"
+   },
+   {
+   "aboutUrl": "https://iisg.amsterdam/microheights/ee_at_1860/{_row}",
+   "virtual": true,
+   "propertyUrl": "rdf:type",
+   "valueUrl": "microheights:individual"
+ },
+   {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "bdec"
+    ],
+    "@id": "https://iisg.amsterdam/__ee_at_1860_consc_2010_schlesinger_ba.dta.csv/column/bdec",
+    "name": "bdec",
+    "propertyUrl": "microheights:dimension/bdec",
+    "dc:description": "birth decade"
+   },
+   {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "byear"
+    ],
+    "@id": "https://iisg.amsterdam/__ee_at_1860_consc_2010_schlesinger_ba.dta.csv/column/byear",
+    "name": "byear",
+    "propertyUrl": "microheights:dimension/byear",
+    "dc:description": "birth year"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "female"
+    ],
+    "@id": "https://iisg.amsterdam/__ee_at_1860_consc_2010_schlesinger_ba.dta.csv/column/female",
+    "name": "female",
+    "propertyUrl": "microheights:dimension/female",
+    "dc:description": "1, if female (otherwise male)"
+   },
+   {
+   "virtual": true,
+   "propertyUrl": "microheights:dimension/sex",
+   "valueUrl": "microheights:code/sex/{% if female == '0' %}male{% elif female == '1' %}female{% endif %}"
+    },
+    {
+    "virtual": true,
+    "propertyUrl": "sdmx-dimension:sex",
+    "valueUrl": "sdmx-code:{% if female == '0' %}sex-M{% elif female == '1' %}sex-F{% endif %}"
+  },
+   {
+    "datatype": "xsd:double",
+    "titles": [
+     "ht_cm"
+    ],
+    "@id": "https://iisg.amsterdam/__ee_at_1860_consc_2010_schlesinger_ba.dta.csv/column/ht_cm",
+    "name": "ht_cm",
+    "propertyUrl": "microheights:dimension/ht_cm",
+    "dc:description": "height in centimeters"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "original_measurement"
+    ],
+    "@id": "https://iisg.amsterdam/__ee_at_1860_consc_2010_schlesinger_ba.dta.csv/column/original_measurement",
+    "name": "original_measurement",
+    "propertyUrl": "microheights:dimension/original_measure",
+    "dc:description": "measure in which the height was originally taken"
+   },
+   {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "qyear"
+    ],
+    "@id": "https://iisg.amsterdam/__ee_at_1860_consc_2010_schlesinger_ba.dta.csv/column/qyear",
+    "name": "qyear",
+    "propertyUrl": "microheights:dimension/qyear",
+    "dc:description": "year in which height was recorded"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "rco"
+    ],
+    "@id": "https://iisg.amsterdam/__ee_at_1860_consc_2010_schlesinger_ba.dta.csv/column/rco",
+    "name": "rco",
+    "propertyUrl": "microheights:dimension/countryOfResidence",
+    "valueUrl": "microheights:code/country/{rco}",
+    "dc:description": "country of residence (if distinguished), in lower case isoAlpha2 code"
+  },
+  {
+  "virtual": true,
+  "aboutUrl": "microheights:code/country/{rco}",
+  "datatype": "string",
+  "titles": ["rco"],
+  "name": "rco",
+  "propertyUrl": "microheights:dimension/isoAlpha2",
+  "csvw:value": "{{rco|upper()}}",
+  "dc:description": "standardized isoAlpha2 code of country"
+},
+   {
+    "datatype": "string",
+    "titles": [
+     "regional_intermediate"
+    ],
+    "@id": "https://iisg.amsterdam/__ee_at_1860_consc_2010_schlesinger_ba.dta.csv/column/regional_intermediate",
+    "name": "regional_intermediate",
+    "propertyUrl": "microheights:dimension/regional_intermediate",
+    "valueUrl": "microheights:code/regional_intermediate/{regional_intermediate}",
+    "dc:description": "name of regional unit in breg or rreg (if region available)"
+  },
+   {
+    "datatype": "string",
+    "titles": [
+     "rreg"
+    ],
+    "@id": "https://iisg.amsterdam/__ee_at_1860_consc_2010_schlesinger_ba.dta.csv/column/rreg",
+    "name": "rreg",
+    "propertyUrl": "microheights:dimension/residenceRegions",
+    "valueUrl": "microheights:code/residenceRegions/{rreg}",
+    "dc:description": "residence regions"
+  },
+  {
+    "virtual": true,
+    "propertyUrl": "microheights:dimension/sample_type",
+    "valueUrl": "microheights:code/sample_type/conscripts",
+    "dc:description": "type of sample used for constructing the database"
+  },
+  {
+    "virtual": true,
+    "propertyUrl": "microheights:dimension/countryOfMeasurement",
+    "valueUrl": "microheights:code/country/Austria",
+    "dc:description": "country where height was recorded"
+  },
+  {
+    "virtual": true,
+    "aboutUrl": "microheights:code/country/Austria",
+    "propertyUrl": "microheights:dimension/isoAlpha2",
+    "datatype": "string",
+    "csvw:value": "AT",
+    "dc:description": "standardized isoAlpha2 code of country"
+  },
+  {
+  "virtual": true,
+  "propertyUrl": "microheights:dimension/qdec",
+  "csvw:value": "{{[qyear[0:3],'0']|join }}",
+  "datatype": "xsd:gYear",
+  "null": {"@list": [{"name": "qyear", "null": ""}]},
+  "dc:description": "decade in which height was recorded"
+}
+  ]
+ }
+}
