@@ -130,7 +130,7 @@
    "valueUrl": "microheights:individual"
   },
    {
-    "datatype": "string",
+    "datatype": "integer",
     "titles": [
      "age"
     ],
@@ -149,6 +149,14 @@
     "propertyUrl": "microheights:dimension/byear",
     "dc:description": "birth year"
      },
+     {
+     "virtual": true,
+     "propertyUrl": "microheights:dimension/bdec",
+     "csvw:value": "{{[byear[0:3],'0']|join }}",
+     "datatype": "xsd:gYear",
+     "null": {"@list": [{"name": "byear", "null": ""}]},
+     "dc:description": "decade in which birth was recorded"
+   },
    {
     "datatype": "string",
     "titles": [
