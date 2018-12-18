@@ -1,0 +1,302 @@
+{
+ "dialect": {
+  "quoteChar": "\"",
+  "delimiter": ",",
+  "encoding": "utf-8"
+ },
+ "dcat:keyword": ["microheights"],
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+  "schema:url": {"@id": "http://datalegend.net"}
+},
+"dc:creator": {
+        "foaf:mbox": {
+        "@id": "mailto:auke.rijpma@gmail.com"
+    },
+    "foaf:name": "Auke Rijpma",
+        "rdf:type": [{
+            "@id": "foaf:Person"
+        },
+        {"@id": "prov:Person"
+        }
+    ]
+},
+"dc:creator": {
+          "foaf:mbox": {
+        "@id": "mailto:rubenschalk1@gmail.com"},
+    "foaf:name": "Ruben Schalk",
+            "rdf:type": [
+        {   "@id": "foaf:Person"},
+        {    "@id": "prov:Person"}
+    ]
+},
+   "prov:wasDerivedFrom": [{
+   "@id": "https://doi.org/10.1017/S0022050709001107",
+   "rdf:type": {"@id": "bibo:Article"},
+   "dc:creator": ["Moradi, A."],
+   "dc:title": ["Towards an objective account of nutrition and health in colonial Kenya: A study of stature in African army recruits and civilians, 1880–1980"],
+   "dcterms:bibliographicCitation": ["The Journal of Economic History, 69(3): 719–754."],
+   "dc:description": ["Moradi’s military height dataset from Kenya is derived from military records from the headquarters of the Kenyan Armed Forces in Nairobi. It records 1,845 recruits with birth decades between 1890 and 1940, aged between 16 and 52. The dataset also includes the place of birth for each soldier, their religion and the years in which they were enlisted. The dataset includes some young soldiers with the potential to grow further. Further, selectivity must be considered when dealing with military data, as soldiers are usually taller than the rest of the population, on average. Moradi (2009) analysed these issues carefully and concluded that selectivity is much less of an issue for the cohorts recruited during WWII, when 20% of the wage labour force was part of the armed forces (whereas during peacetime, recruitment was limited and focused on the so-called “martial races”, i.e., native tribes with a greater reputation for combat, and otherwise low incomes). The original measurements were taken in British inches."],
+   "dcterms:issued": {"@value":"2009"},
+   "dc:isPartOf": ["https://www.cambridge.org/core/journals/journal-of-economic-history/article/towards-an-objective-account-of-nutrition-and-health-in-colonial-kenya-a-study-of-stature-in-african-army-recruits-and-civilians-18801980/E6E592325DEA3C4275EF09585EEE87D1/share/0a5e691ce227dd2a86dc401ea32c7180a8e0e511"]
+        }],
+ "url": "__af_ke_1890_milit_2009_moradi.dta.csv",
+ "@context": [
+  "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json",
+  {
+   "@base": "https://iisg.amsterdam/microheights/",
+   "@language": "en"
+  },
+  {
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/",
+   "dbo": "http://dbpedia.org/ontology/",
+   "microheights": "https://iisg.amsterdam/microheights/",
+   "clioctr": "https://iisg.amsterdam/clio/country/",
+   "hisclass": "https://iisg.amsterdam/hisclass/",
+   "hisco-product": "https://iisg.amsterdam/hisco/product/",
+   "ldp": "http://www.w3.org/ns/ldp#",
+   "clio": "https://iisg.amsterdam/clio/",
+   "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
+   "dbr": "http://dbpedia.org/resource/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "xml": "http://www.w3.org/XML/1998/namespace/",
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+   "napp": "https://iisg.amsterdam/napp/",
+   "prov": "http://www.w3.org/ns/prov#",
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+   "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/",
+   "hiscam": "https://iisg.amsterdam/hiscam/",
+   "dbpedia": "http://dbpedia.org/resource/",
+   "np": "http://www.nanopub.org/nschema#",
+   "hisclass5": "https://iisg.amsterdam/hisclass5/",
+   "canfam-auke": "https://iisg.amsterdam/canfam/auke/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "schema": "http://schema.org/",
+   "foaf": "http://xmlns.com/foaf/0.1/",
+   "sdv": "https://iisg.amsterdam/vocab/",
+   "hisco": "https://iisg.amsterdam/hisco/",
+   "bibo": "http://purl.org/ontology/bibo/",
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+   "hsn": "https://iisg.amsterdam/hsn2013a/",
+   "dc": "http://purl.org/dc/terms/",
+   "hisco-relation": "https://iisg.amsterdam/hisco/relation/",
+   "hisco-status": "https://iisg.amsterdam/hisco/status/",
+   "dbp": "http://dbpedia.org/property/",
+   "clioprop": "https://iisg.amsterdam/clio/property/",
+   "csvw": "http://www.w3.org/ns/csvw#",
+   "clioind": "https://iisg.amsterdam/clio/indicator/",
+   "dc11": "http://purl.org/dc/elements/1.1/",
+   "qb": "http://purl.org/linked-data/cube#",
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/",
+   "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/",
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "sdr": "https://iisg.amsterdam/",
+   "xsd": "http://www.w3.org/2001/XMLSchema#",
+   "time": "http://www.w3.org/2006/time#",
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/"
+  }
+ ],
+ "dc:title": "__af_ke_1890_milit_2009_moradi.dta.csv",
+ "@id": "https://iisg.amsterdam/__af_ke_1890_milit_2009_moradi.dta.csv",
+ "dc:modified": {
+  "@value": "2018-12-12",
+  "@type": "xsd:date"
+ },
+ "tableSchema": {
+  "aboutUrl": "https://iisg.amsterdam/microheights/af_ke_1890/{_row}",
+  "primaryKey": "No_",
+  "columns": [
+    {
+     "datatype": "string",
+     "titles": [
+      "No_"
+     ],
+     "@id": "https://iisg.amsterdam/__af_ke_1890_milit_2009_moradi.dta.csv/column/No_",
+     "name": "No_",
+     "propertyUrl": "microheights:dimension/No_",
+     "dc:description": "No_"
+    },
+    {
+    "aboutUrl": "https://iisg.amsterdam/microheights/af_ke_1890/{_row}",
+    "virtual": true,
+    "propertyUrl": "rdf:type",
+    "valueUrl": "microheights:individual"
+  },
+    {
+     "datatype": "integer",
+     "titles": [
+      "age"
+     ],
+     "@id": "https://iisg.amsterdam/__af_ke_1890_milit_2009_moradi.dta.csv/column/age",
+     "name": "age",
+     "propertyUrl": "microheights:dimension/age",
+     "dc:description": "age"
+    },
+    {
+     "datatype": "xsd:gYear",
+     "titles": [
+      "bdec"
+     ],
+     "@id": "https://iisg.amsterdam/__af_ke_1890_milit_2009_moradi.dta.csv/column/bdec",
+     "name": "bdec",
+     "propertyUrl": "microheights:dimension/bdec",
+     "dc:description": "birth decade"
+    },
+   {
+    "datatype": "string",
+    "titles": [
+     "bpl"
+    ],
+    "@id": "https://iisg.amsterdam/__af_ke_1890_milit_2009_moradi.dta.csv/column/bpl",
+    "name": "bpl",
+    "propertyUrl": "microheights:dimension/birthPlace",
+    "valueUrl": "microheights:code/birthPlace/{bpl}",
+    "dc:description": "birth place"
+   },
+   {
+   "virtual": true,
+   "propertyUrl": "microheights:dimension/sex",
+   "valueUrl": "microheights:code/sex/male"
+    },
+    {
+    "virtual": true,
+    "propertyUrl": "sdmx-dimension:sex",
+    "valueUrl": "sdmx-code:sex-M"
+  },
+  {
+   "datatype": "xsd:gYear",
+   "titles": [
+    "byear"
+   ],
+   "@id": "https://iisg.amsterdam/__af_ke_1890_milit_2009_moradi.dta.csv/column/byear",
+   "name": "byear",
+   "propertyUrl": "microheights:dimension/byear",
+   "dc:description": "birth year"
+  },
+   {
+    "datatype": "xsd:integer",
+    "titles": [
+     "ht_feet"
+    ],
+    "@id": "https://iisg.amsterdam/__af_ke_1890_milit_2009_moradi.dta.csv/column/ht_feet",
+    "name": "ht_feet",
+    "propertyUrl": "microheights:dimension/ht_feet",
+    "null": ["999"],
+    "dc:description": "height in feet"
+   },
+   {
+    "datatype": "xsd:double",
+    "titles": [
+     "ht_inch"
+    ],
+    "@id": "https://iisg.amsterdam/__af_ke_1890_milit_2009_moradi.dta.csv/column/ht_inch",
+    "name": "ht_inch",
+    "propertyUrl": "microheights:dimension/ht_inch",
+    "null": ["999"],
+    "dc:description": "height in inch"
+   },
+   {
+     "virtual": true,
+    "datatype": "xsd:double",
+    "titles": [
+     "ht_cm"
+    ],
+    "name": "ht_cm",
+    "propertyUrl": "microheights:dimension/ht_cm",
+    "csvw:value": "{{ht_feet|float() * 30.48 + ht_inch|float() * 2.54}}",
+    "null": {"@list": [{"name": "ht_inch", "null": "999"}]},
+    "dc:description": "height in centimeters"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "original_measurement"
+    ],
+    "@id": "https://iisg.amsterdam/__af_ke_1890_milit_2009_moradi.dta.csv/column/original_measurement",
+    "name": "original_measurement",
+    "propertyUrl": "microheights:dimension/original_measure",
+    "dc:description": "measure in which the height was originally taken"
+   },
+       {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "qyear"
+    ],
+    "@id": "https://iisg.amsterdam/__af_ke_1890_milit_2009_moradi.dta.csv/column/qyear",
+    "name": "qyear",
+    "propertyUrl": "microheights:dimension/qyear",
+    "null": ["999", ""],
+    "dc:description": "year in which height was recorded"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "rco"
+    ],
+    "@id": "https://iisg.amsterdam/__af_ke_1890_milit_2009_moradi.dta.csv/column/rco",
+    "name": "rco",
+    "propertyUrl": "microheights:dimension/countryOfResidence",
+    "valueUrl": "microheights:code/country/{rco}",
+    "dc:description": "country of residence (if distinguished), in lower case isoAlpha2 code"
+  },
+  {
+  "virtual": true,
+  "aboutUrl": "microheights:code/country/{rco}",
+  "datatype": "string",
+  "titles": ["rco"],
+  "name": "rco",
+  "propertyUrl": "microheights:dimension/isoAlpha2",
+  "csvw:value": "{{rco|upper()}}",
+  "dc:description": "standardized isoAlpha2 code of country"
+},
+{
+  "virtual": true,
+  "propertyUrl": "microheights:dimension/countryOfMeasurement",
+  "valueUrl": "microheights:code/country/Kenia",
+  "dc:description": "country where height was recorded"
+},
+{
+  "virtual": true,
+  "aboutUrl": "microheights:code/country/Kenia",
+  "propertyUrl": "microheights:dimension/isoAlpha2",
+  "datatype": "string",
+  "csvw:value": "KE",
+  "dc:description": "standardized isoAlpha2 code of country"
+},
+   {
+    "datatype": "string",
+    "titles": [
+     "religion"
+    ],
+    "@id": "https://iisg.amsterdam/__af_ke_1890_milit_2009_moradi.dta.csv/column/religion",
+    "name": "religion",
+    "propertyUrl": "microheights:dimension/religion",
+    "valueUrl": "microheights:code/religion/{religion}",
+    "lang": "en",
+    "null": ["999"],
+    "dc:description": "religion"
+  },
+  {
+    "virtual": true,
+    "propertyUrl": "microheights:dimension/sample_type",
+    "valueUrl": "microheights:code/sample_type/military",
+    "dc:description": "type of sample used for constructing the database"
+  },
+    {
+    "virtual": true,
+    "propertyUrl": "microheights:dimension/qdec",
+    "csvw:value": "{{[qyear[0:3],'0']|join }}",
+    "datatype": "xsd:gYear",
+    "null": {"@list": [{"name": "qyear", "null": ["999"]}, {"name": "qyear", "null": [""]}]},
+    "dc:description": "decade in which height was recorded"
+  }
+  ]
+ }
+}
