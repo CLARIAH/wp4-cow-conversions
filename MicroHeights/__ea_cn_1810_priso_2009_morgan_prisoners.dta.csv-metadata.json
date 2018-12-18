@@ -130,7 +130,7 @@
    "valueUrl": "microheights:individual"
  },
    {
-    "datatype": "string",
+    "datatype": "integer",
     "titles": [
      "age"
     ],
@@ -139,6 +139,14 @@
     "propertyUrl": "microheights:dimension/age",
     "dc:description": "age"
    },
+   {
+   "virtual": true,
+   "propertyUrl": "microheights:dimension/bdec",
+   "csvw:value": "{{[byear[0:3],'0']|join }}",
+   "datatype": "xsd:gYear",
+   "null": {"@list": [{"name": "byear", "null": ""}]},
+   "dc:description": "decade in which birth was recorded"
+ },
      {
     "datatype": "string",
     "titles": [
@@ -158,7 +166,7 @@
      "name": "bco",
      "propertyUrl": "microheights:dimension/isoAlpha2",
      "csvw:value": "{{bco|upper()}}",
-     "dc:description": "standardized isoAlpha2 code of country (if distinguished)"
+     "dc:description": "standardized isoAlpha2 code of country"
    },
    {
     "datatype": "string",
