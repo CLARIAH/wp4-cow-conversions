@@ -178,7 +178,6 @@
     ],
     "@id": "https://iisg.amsterdam/__ea_cn_1810_priso_2009_morgan_prisoners.dta.csv/column/byear",
     "name": "byear",
-    "name": "byear",
     "propertyUrl": "microheights:dimension/byear",
     "dc:description": "birth year"
      },
