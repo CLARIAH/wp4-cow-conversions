@@ -136,7 +136,6 @@
     ],
     "@id": "https://iisg.amsterdam/__ea_cn_1810_priso_2009_morgan_prisoners.dta.csv/column/age",
     "name": "age",
-    "name": "age",
     "propertyUrl": "microheights:dimension/age",
     "dc:description": "age"
    },
