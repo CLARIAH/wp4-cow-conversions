@@ -48,7 +48,7 @@
  "@context": [
   "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json",
   {
-   "@base": "https://iisg.amsterdam/micromicroheights/",
+   "@base": " ",
    "@language": "en"
   },
   {
@@ -102,8 +102,7 @@
    "time": "http://www.w3.org/2006/time#",
    "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/",
    "microheights": "https://iisg.amsterdam/microheights/"
-
-  }
+    }
  ],
  "dc:title": "af_afr_1820_slave_1982_eltis_havana_paris_foot.dta.csv",
  "@id": "https://iisg.amsterdam/af_afr_1820_slave_1982_eltis_havana_paris_foot.dta.csv",
@@ -228,39 +227,34 @@
     ],
     "@id": "https://iisg.amsterdam/af_afr_1820_slave_1982_eltis_havana_paris_foot.dta.csv/column/rco",
     "name": "rco",
-    "propertyUrl": "microheights:dimension/rco",
-    "valueUrl": "microheights:code/rco/{rco}",
-    "dc:description": "country of residence (if distinguished)"
+    "propertyUrl": "microheights:dimension/countryOfResidence",
+    "valueUrl": "microheights:code/country/{rco}",
+    "dc:description": "country of residence (if distinguished), in lower case isoAlpha2 code"
   },
     {
     "virtual": true,
-    "aboutUrl": "microheights:code/rco/{rco}",
+    "aboutUrl": "microheights:code/country/{rco}",
     "datatype": "string",
     "titles": ["rco"],
     "name": "rco",
-    "propertyUrl": "https://iisg.amsterdam/vocab/isoAlpha2",
+    "propertyUrl": "microheights:dimension/isoAlpha2",
     "csvw:value": "{% if rco == 'ng-e' %}NG{% elif rco == 'ng-w' %}NG{% else %}{{rco|upper()}}{% endif %}",
-    "dc:description": "isoAlpha2 code of country of residence (if distinguished)"
+    "dc:description": "standerdized isoAlpha2 code of country of residence (if distinguished)"
   },
   {
   "virtual": true,
-  "propertyUrl": "microheights:dimension/country_measurement",
-  "valueUrl": "microheights:code/country_measurement/Cuba",
-  "dc:description": "isoAlpha2 code of country where height was recorded"
+  "propertyUrl": "microheights:dimension/countryOfMeasurement",
+  "valueUrl": "microheights:code/country/Cuba",
+  "dc:description": "country where height was recorded"
 },
 {
   "virtual": true,
-  "aboutUrl": "microheights:code/country_measurement/Cuba",
-  "propertyUrl": "https://iisg.amsterdam/vocab/isoAlpha2",
+  "aboutUrl": "microheights:code/country/Cuba",
+  "propertyUrl": "microheights:dimension/isoAlpha2",
   "datatype": "string",
-  "csvw:value": "CU"
+  "csvw:value": "CU",
+  "dc:description": "isoAlpha2 code of country where height was recorded"
   },
-{
-  "virtual": true,
-  "propertyUrl": "microheights:dimension/sample_type",
-  "valueUrl": "microheights:code/sample_type/slaves",
-  "dc:description": "type of sample used for constructing the database"
-},
 {
   "virtual": true,
   "propertyUrl": "microheights:dimension/sample_type",
