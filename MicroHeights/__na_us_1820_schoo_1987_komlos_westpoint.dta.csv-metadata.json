@@ -157,7 +157,7 @@
     "@id": "https://iisg.amsterdam/__na_us_1820_schoo_1987_komlos_westpoint.dta.csv/column/breg",
     "name": "breg",
     "propertyUrl": "microheights:dimension/birthRegion",
-    "valueUrl": "microheights:code/birthRegion/{breg}",
+    "valueUrl": "microheights:code/birthRegion/{{breg|trim}}",
     "dc:description": "birth region"
    },
    {
