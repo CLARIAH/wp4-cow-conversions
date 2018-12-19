@@ -35,7 +35,7 @@
 },
    "prov:wasDerivedFrom": [{
    "@id": "https://doi.org/10.1006/exeh.1997.0680",
-   "rdf:type": {"@id": "bibo:Chapter"},
+   "rdf:type": {"@id": "bibo:Article"},
    "dc:creator": ["J. Komlos"],
    "dc:creator": ["P. Coclanis"],
    "dc:title": ["On the puzzling cycle in the biological standard of living: the case of antebellum Georgia"],
