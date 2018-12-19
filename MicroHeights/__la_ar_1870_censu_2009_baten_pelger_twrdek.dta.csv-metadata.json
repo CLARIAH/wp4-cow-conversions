@@ -136,7 +136,7 @@
     "dc:description": "age"
    },
    {
-   "aboutUrl": "https://iisg.amsterdam/microheights/la_ar_1870/{{_row + 450}}",
+   "aboutUrl": "https://iisg.amsterdam/microheights/la_ar_1870/{_row}",
    "virtual": true,
    "propertyUrl": "rdf:type",
    "valueUrl": "microheights:individual"
