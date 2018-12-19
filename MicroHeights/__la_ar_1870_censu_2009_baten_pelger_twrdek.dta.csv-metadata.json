@@ -113,19 +113,9 @@
  },
  "tableSchema": {
   "aboutUrl": "https://iisg.amsterdam/microheights/la_ar_1870/{_row}",
-  "primaryKey": "No_",
+  "primaryKey": "{_row}",
   "columns": [
-   {
-    "datatype": "string",
-    "titles": [
-     "No_"
-    ],
-    "@id": "https://iisg.amsterdam/__la_ar_1870_censu_2009_baten_pelger_twrdek.dta.csv/column/No_",
-    "name": "No_",
-    "propertyUrl": "microheights:dimension/No_",
-    "dc:description": "No_"
-   },
-   {
+     {
     "datatype": "integer",
     "titles": [
      "age"
