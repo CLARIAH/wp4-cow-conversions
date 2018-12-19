@@ -209,7 +209,7 @@
     "@id": "https://iisg.amsterdam/__ee_cz_1850_priso_2009_stegl_baten_pankrac.dta.csv/column/occ",
     "name": "occ",
     "propertyUrl": "microheights:dimension/occupation",
-    "valueUrl": "microheights:code/occupation/{{occ|trim()}}",
+    "valueUrl": "microheights:code/occupation/{{occ|lower()}}",
     "lang": "de",
     "dc:description": "occupation or occupational group"
    },
