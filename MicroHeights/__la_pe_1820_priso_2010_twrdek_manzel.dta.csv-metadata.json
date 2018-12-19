@@ -1,0 +1,348 @@
+{
+ "dialect": {
+  "quoteChar": "\"",
+  "delimiter": ",",
+  "encoding": "utf-8"
+ },
+ "dcat:keyword": ["microheights"],
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+  "schema:url": {"@id": "http://datalegend.net"}
+},
+"dc:creator": {
+        "foaf:mbox": {
+        "@id": "mailto:auke.rijpma@gmail.com"
+    },
+    "foaf:name": "Auke Rijpma",
+        "rdf:type": [{
+            "@id": "foaf:Person"
+        },
+        {"@id": "prov:Person"
+        }
+    ]
+},
+"dc:creator": {
+          "foaf:mbox": {
+        "@id": "mailto:rubenschalk1@gmail.com"},
+    "foaf:name": "Ruben Schalk",
+            "rdf:type": [
+        {   "@id": "foaf:Person"},
+        {    "@id": "prov:Person"}
+    ]
+},
+   "prov:wasDerivedFrom": [{
+   "@id": "https://doi.org/10.1016/j.ehb.2010.05.012",
+   "rdf:type": {"@id": "bibo:Article"},
+   "dc:creator": ["L. Twrdek"],
+   "dc:creator": ["K. Manzel"],
+   "dc:title": ["The seed of abundance and misery: Peruvian living standards from the early republican period to the end of the guano era (1820–1880)"],
+   "dcterms:bibliographicCitation": ["Economics & Human Biology, 8(2): 145–152."],
+   "dc:description": ["The dataset by Twrdek and Manzel (2010) is a dataset which was created for two prisons, in Lima and Guadalupe, between 1866 and 1909. It contains evidence on prisoners who committed common crimes such as fraud and theft, but also, very prominently, homicide and other forms of violence. It covers the birth decades between the 1820s and 1880s. A large share of foreigners was included (28%) and while there are many more male prisoners (3,889), there are also 503 female prisoners among the total of 4392 prisoners.  The regional focus is on the capital and the coastal zones of Peru, although 20 percent of the prisoners come from the other regions. Typical prison selectivity needs to be studied, but the authors have already compared the occupational composition of the prisoners with one of the Peruvian national occupational censuses. They find that farmers, for example, are underrepresented and that black individuals are over-represented by far. For Peru, it is more difficult to compare selectivity over time, as no heights from other sources have been mobilized so far."],
+   "dcterms:issued": {"@value":"2010"},
+   "dc:isPartOf": ["https://www.sciencedirect.com/science/article/pii/S1570677X10000377"]
+   }],
+ "url": "__la_pe_1820_priso_2010_twrdek_manzel.dta.csv",
+ "@context": [
+  "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json",
+  {
+   "@base": "https://iisg.amsterdam/microheights/",
+   "@language": "en"
+  },
+  {
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/",
+   "dbo": "http://dbpedia.org/ontology/",
+   "clioctr": "https://iisg.amsterdam/clio/country/",
+   "hisclass": "https://iisg.amsterdam/hisclass/",
+   "hisco-product": "https://iisg.amsterdam/hisco/product/",
+   "ldp": "http://www.w3.org/ns/ldp#",
+   "clio": "https://iisg.amsterdam/clio/",
+   "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
+   "dbr": "http://dbpedia.org/resource/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "xml": "http://www.w3.org/XML/1998/namespace/",
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+   "napp": "https://iisg.amsterdam/napp/",
+   "prov": "http://www.w3.org/ns/prov#",
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+   "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/",
+   "hiscam": "https://iisg.amsterdam/hiscam/",
+   "dbpedia": "http://dbpedia.org/resource/",
+   "np": "http://www.nanopub.org/nschema#",
+   "hisclass5": "https://iisg.amsterdam/hisclass5/",
+   "canfam-auke": "https://iisg.amsterdam/canfam/auke/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "schema": "http://schema.org/",
+   "microheights": "https://iisg.amsterdam/microheights/",
+   "sdv": "https://iisg.amsterdam/vocab/",
+   "hisco": "https://iisg.amsterdam/hisco/",
+   "bibo": "http://purl.org/ontology/bibo/",
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+   "hsn": "https://iisg.amsterdam/hsn2013a/",
+   "dc": "http://purl.org/dc/terms/",
+   "hisco-relation": "https://iisg.amsterdam/hisco/relation/",
+   "hisco-status": "https://iisg.amsterdam/hisco/status/",
+   "dbp": "http://dbpedia.org/property/",
+   "clioprop": "https://iisg.amsterdam/clio/property/",
+   "csvw": "http://www.w3.org/ns/csvw#",
+   "clioind": "https://iisg.amsterdam/clio/indicator/",
+   "dc11": "http://purl.org/dc/elements/1.1/",
+   "sdr": "https://iisg.amsterdam/",
+   "qb": "http://purl.org/linked-data/cube#",
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/",
+   "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/",
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "foaf": "http://xmlns.com/foaf/0.1/",
+   "xsd": "http://www.w3.org/2001/XMLSchema#",
+   "time": "http://www.w3.org/2006/time#",
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/"
+  }
+ ],
+ "dc:title": "__la_pe_1820_priso_2010_twrdek_manzel.dta.csv",
+ "@id": "https://iisg.amsterdam/__la_pe_1820_priso_2010_twrdek_manzel.dta.csv",
+ "dc:modified": {
+  "@value": "2018-12-19",
+  "@type": "xsd:date"
+ },
+ "tableSchema": {
+  "aboutUrl": "https://iisg.amsterdam/microheights/la_pe_1820/{_row}",
+  "primaryKey": "No_",
+  "columns": [
+   {
+    "datatype": "string",
+    "titles": [
+     "No_"
+    ],
+    "@id": "https://iisg.amsterdam/__la_pe_1820_priso_2010_twrdek_manzel.dta.csv/column/No_",
+    "name": "No_",
+    "propertyUrl": "microheights:dimension/No_",
+    "dc:description": "No_"
+   },
+   {
+   "aboutUrl": "https://iisg.amsterdam/microheights/la_cu_1870/{_row}",
+   "virtual": true,
+   "propertyUrl": "rdf:type",
+   "valueUrl": "microheights:individual"
+ },
+   {
+    "datatype": "integer",
+    "titles": [
+     "age"
+    ],
+    "@id": "https://iisg.amsterdam/__la_pe_1820_priso_2010_twrdek_manzel.dta.csv/column/age",
+    "name": "age",
+    "propertyUrl": "microheights:dimension/age",
+    "dc:description": "age"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "bco"
+    ],
+    "@id": "https://iisg.amsterdam/__la_pe_1820_priso_2010_twrdek_manzel.dta.csv/column/bco",
+    "name": "bco",
+    "propertyUrl": "microheights:dimension/countryOfBirth",
+    "valueUrl": "microheights:code/country/{bco}",
+    "dc:description": "country of birth (if distinguished), in lower case isoAlpha2 code"
+     },
+     {
+     "virtual": true,
+     "aboutUrl": "microheights:code/country/{bco}",
+     "datatype": "string",
+     "titles": ["bco"],
+     "name": "bco",
+     "propertyUrl": "microheights:dimension/isoAlpha2",
+     "csvw:value": "{{bco|upper()}}",
+     "dc:description": "standardized isoAlpha2 code of country"
+   },
+   {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "bdec"
+    ],
+    "@id": "https://iisg.amsterdam/__la_pe_1820_priso_2010_twrdek_manzel.dta.csv/column/bdec",
+    "name": "bdec",
+    "propertyUrl": "microheights:dimension/bdec",
+    "dc:description": "birth decade"
+   },
+   {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "byear"
+    ],
+    "@id": "https://iisg.amsterdam/__la_pe_1820_priso_2010_twrdek_manzel.dta.csv/column/byear",
+    "name": "byear",
+    "propertyUrl": "microheights:dimension/byear",
+    "dc:description": "birth year"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "female"
+    ],
+    "@id": "https://iisg.amsterdam/__la_pe_1820_priso_2010_twrdek_manzel.dta.csv/column/female",
+    "name": "female",
+    "propertyUrl": "microheights:dimension/female",
+    "dc:description": "1, if female (otherwise male)"
+   },
+   {
+   "virtual": true,
+   "propertyUrl": "microheights:dimension/sex",
+   "valueUrl": "microheights:code/sex/{% if female == '0' %}male{% elif female == '1' %}female{% endif %}"
+    },
+    {
+    "virtual": true,
+    "propertyUrl": "sdmx-dimension:sex",
+    "valueUrl": "sdmx-code:{% if female == '0' %}sex-M{% elif female == '1' %}sex-F{% endif %}"
+  },
+   {
+    "datatype": "xsd:double",
+    "titles": [
+     "ht_cm"
+    ],
+    "@id": "https://iisg.amsterdam/__la_pe_1820_priso_2010_twrdek_manzel.dta.csv/column/ht_cm",
+    "name": "ht_cm",
+    "propertyUrl": "microheights:dimension/ht_cm",
+    "dc:description": "height in centimeters"
+   },
+   {
+    "datatype": "integer",
+    "titles": [
+     "ht_lineas"
+    ],
+    "@id": "https://iisg.amsterdam/__la_pe_1820_priso_2010_twrdek_manzel.dta.csv/column/ht_lineas",
+    "name": "ht_lineas",
+    "propertyUrl": "microheights:dimension/ht_lineas",
+    "dc:description": "height in lineas"
+   },
+   {
+    "datatype": "integer",
+    "titles": [
+     "ht_pulgadas"
+    ],
+    "@id": "https://iisg.amsterdam/__la_pe_1820_priso_2010_twrdek_manzel.dta.csv/column/ht_pulgadas",
+    "name": "ht_pulgadas",
+    "propertyUrl": "microheights:dimension/ht_pulgadas",
+    "dc:description": "height in pulgadas"
+   },
+   {
+    "datatype": "integer",
+    "titles": [
+     "ht_varas"
+    ],
+    "@id": "https://iisg.amsterdam/__la_pe_1820_priso_2010_twrdek_manzel.dta.csv/column/ht_varas",
+    "name": "ht_varas",
+    "propertyUrl": "microheights:dimension/ht_varas",
+    "dc:description": "height in varas"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "occ"
+    ],
+    "@id": "https://iisg.amsterdam/__la_pe_1820_priso_2010_twrdek_manzel.dta.csv/column/occ",
+    "name": "occ",
+    "propertyUrl": "microheights:dimension/occupation",
+    "valueUrl": "microheights:code/occupation/{occ}",
+    "lang": "es",
+    "dc:description": "occupation or occupational group"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "original_measurement"
+    ],
+    "@id": "https://iisg.amsterdam/__la_pe_1820_priso_2010_twrdek_manzel.dta.csv/column/original_measurement",
+    "name": "original_measurement",
+    "propertyUrl": "microheights:dimension/original_measure",
+    "dc:description": "measure in which the height was originally taken"
+   },
+   {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "qyear"
+    ],
+    "@id": "https://iisg.amsterdam/__la_pe_1820_priso_2010_twrdek_manzel.dta.csv/column/qyear",
+    "name": "qyear",
+    "propertyUrl": "microheights:dimension/qyear",
+    "dc:description": "year in which height was recorded"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "rco"
+    ],
+    "@id": "https://iisg.amsterdam/__la_pe_1820_priso_2010_twrdek_manzel.dta.csv/column/rco",
+    "name": "rco",
+    "propertyUrl": "microheights:dimension/countryOfResidence",
+    "valueUrl": "microheights:code/country/{rco}",
+    "dc:description": "country of residence (if distinguished), in lower case isoAlpha2 code"
+  },
+    {
+    "virtual": true,
+    "aboutUrl": "microheights:code/country/{rco}",
+    "datatype": "string",
+    "titles": ["rco"],
+    "name": "rco",
+    "propertyUrl": "microheights:dimension/isoAlpha2",
+    "csvw:value": "{{rco|upper()}}",
+    "dc:description": "standardized isoAlpha2 code of country"
+  },
+   {
+    "datatype": "string",
+    "titles": [
+     "regional_intermediate"
+    ],
+    "@id": "https://iisg.amsterdam/__la_pe_1820_priso_2010_twrdek_manzel.dta.csv/column/regional_intermediate",
+    "name": "regional_intermediate",
+    "propertyUrl": "microheights:dimension/regional_intermediate",
+    "valueUrl": "microheights:code/regional_intermediate/{regional_intermediate}",
+    "dc:description": "name of regional unit in breg or rreg (if region available)"
+  },
+   {
+    "datatype": "string",
+    "titles": [
+     "rreg"
+    ],
+    "@id": "https://iisg.amsterdam/__la_pe_1820_priso_2010_twrdek_manzel.dta.csv/column/rreg",
+    "name": "rreg",
+    "propertyUrl": "microheights:dimension/residenceRegions",
+    "valueUrl": "microheights:code/residenceRegions/{rreg}",
+    "dc:description": "residence regions"
+  },
+  {
+  "virtual": true,
+  "propertyUrl": "microheights:dimension/qdec",
+  "csvw:value": "{{[qyear[0:3],'0']|join }}",
+  "datatype": "xsd:gYear",
+  "dc:description": "decade in which height was recorded"
+},
+{
+  "virtual": true,
+  "propertyUrl": "microheights:dimension/sample_type",
+  "valueUrl": "microheights:code/sample_type/prisoners",
+  "dc:description": "type of sample used for constructing the database"
+},
+{
+  "virtual": true,
+  "propertyUrl": "microheights:dimension/countryOfMeasurement",
+  "valueUrl": "microheights:code/country/Peru",
+  "dc:description": "country where height was recorded"
+},
+{
+  "virtual": true,
+  "aboutUrl": "microheights:code/country/Peru",
+  "propertyUrl": "microheights:dimension/isoAlpha2",
+  "datatype": "string",
+  "csvw:value": "PE",
+  "dc:description": "standardized isoAlpha2 code of country"
+}
+  ]
+ }
+}
