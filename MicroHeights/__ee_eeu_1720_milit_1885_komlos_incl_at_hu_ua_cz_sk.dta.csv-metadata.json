@@ -291,7 +291,7 @@
 },
 {
   "virtual": true,
-  "aboutUrl": "microheights:code/country/United_States",
+  "aboutUrl": "microheights:code/country/Hungary",
   "propertyUrl": "microheights:dimension/isoAlpha2",
   "datatype": "string",
   "csvw:value": "HU",
