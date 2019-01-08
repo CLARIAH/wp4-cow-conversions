@@ -1,0 +1,317 @@
+{
+ "dialect": {
+  "quoteChar": "\"",
+  "delimiter": ",",
+  "encoding": "utf-8"
+ },
+ "dcat:keyword": ["microheights"],
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+  "schema:url": {"@id": "http://datalegend.net"}
+},
+"dc:creator": {
+        "foaf:mbox": {
+        "@id": "mailto:auke.rijpma@gmail.com"
+    },
+    "foaf:name": "Auke Rijpma",
+        "rdf:type": [{
+            "@id": "foaf:Person"
+        },
+        {"@id": "prov:Person"
+        }
+    ]
+},
+"dc:creator": {
+          "foaf:mbox": {
+        "@id": "mailto:rubenschalk1@gmail.com"},
+    "foaf:name": "Ruben Schalk",
+            "rdf:type": [
+        {   "@id": "foaf:Person"},
+        {    "@id": "prov:Person"}
+    ]
+},
+"prov:wasDerivedFrom": [{
+"@id": "",
+"rdf:type": {"@id": "bibo:Thesis"},
+"dc:creator": ["J. Baten"],
+"dc:title": ["Ernährung und wirtschaftliche Entwicklung in Bayern, 1730-1880"],
+"dcterms:bibliographicCitation": ["Doctoral thesis, University of Munich, Munich"],
+"dc:description": ["The two prison datasets Kaisheim and Wasserburg cover male and female prison inmates in southern Germany. The usual selectivity problems of prison records should be taken into account. However, Baten (1997) intensively discusses how selective-on-observables the prison records were by comparing the share of occupations with the census distribution of these occupations, and also finds that, while covering a less skilled share of the population, quite a variety of different occupations are included. The trends in height are also similar to (non-selective) military conscript data covering the same region of Germany (see the discussion of the Bavarian conscripts, Baten 2000a and 2000b), which suggests that selection on unobservables does not play a substantial role. The regional differentiation is by Bavarian districts, “Regierungsbezirk”, of which about 300 existed in Bavaria, as well as some foreign prisoners. The dataset covers the intermediate period of the 19th century, from the 1810s to the 1870s."],
+"dcterms:issued": {"@value":"1976"},
+"dc:isPartOf": [""]
+     }],
+ "url": "__we_de_1830_priso_1997_baten_kaisr.dta.csv",
+ "@context": [
+  "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json",
+  {
+   "@base": "https://iisg.amsterdam/",
+   "@language": "en"
+  },
+  {
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/",
+   "dbo": "http://dbpedia.org/ontology/",
+   "clioctr": "https://iisg.amsterdam/clio/country/",
+   "hisclass": "https://iisg.amsterdam/hisclass/",
+   "hisco-product": "https://iisg.amsterdam/hisco/product/",
+   "ldp": "http://www.w3.org/ns/ldp#",
+   "clio": "https://iisg.amsterdam/clio/",
+   "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
+   "dbr": "http://dbpedia.org/resource/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "xml": "http://www.w3.org/XML/1998/namespace/",
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+   "napp": "https://iisg.amsterdam/napp/",
+   "prov": "http://www.w3.org/ns/prov#",
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+   "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/",
+   "hiscam": "https://iisg.amsterdam/hiscam/",
+   "dbpedia": "http://dbpedia.org/resource/",
+   "np": "http://www.nanopub.org/nschema#",
+   "hisclass5": "https://iisg.amsterdam/hisclass5/",
+   "canfam-auke": "https://iisg.amsterdam/canfam/auke/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "schema": "http://schema.org/",
+   "microheights": "https://iisg.amsterdam/microheights/",
+   "sdv": "https://iisg.amsterdam/vocab/",
+   "hisco": "https://iisg.amsterdam/hisco/",
+   "bibo": "http://purl.org/ontology/bibo/",
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+   "hsn": "https://iisg.amsterdam/hsn2013a/",
+   "dc": "http://purl.org/dc/terms/",
+   "hisco-relation": "https://iisg.amsterdam/hisco/relation/",
+   "hisco-status": "https://iisg.amsterdam/hisco/status/",
+   "dbp": "http://dbpedia.org/property/",
+   "clioprop": "https://iisg.amsterdam/clio/property/",
+   "csvw": "http://www.w3.org/ns/csvw#",
+   "clioind": "https://iisg.amsterdam/clio/indicator/",
+   "dc11": "http://purl.org/dc/elements/1.1/",
+   "sdr": "https://iisg.amsterdam/",
+   "qb": "http://purl.org/linked-data/cube#",
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/",
+   "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/",
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "foaf": "http://xmlns.com/foaf/0.1/",
+   "xsd": "http://www.w3.org/2001/XMLSchema#",
+   "time": "http://www.w3.org/2006/time#",
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/"
+  }
+ ],
+ "dc:title": "__we_de_1830_priso_1997_baten_kaisr.dta.csv",
+ "@id": "https://iisg.amsterdam/__we_de_1830_priso_1997_baten_kaisr.dta.csv",
+ "dc:modified": {
+  "@value": "2019-01-08",
+  "@type": "xsd:date"
+ },
+ "tableSchema": {
+   "aboutUrl": "https://iisg.amsterdam/microheights/we_de_1830/{_row}",
+   "primaryKey": "{_row}",
+   "columns": [
+    {
+     "datatype": "integer",
+     "titles": [
+      "age"
+     ],
+    "@id": "https://iisg.amsterdam/__we_de_1830_priso_1997_baten_kaisr.dta.csv/column/age",
+    "name": "age",
+    "propertyUrl": "microheights:dimension/age",
+    "dc:description": "age"
+  },
+   {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "bdec"
+    ],
+    "@id": "https://iisg.amsterdam/__we_de_1830_priso_1997_baten_kaisr.dta.csv/column/bdec",
+    "name": "bdec",
+    "propertyUrl": "microheights:dimension/bdec",
+    "dc:description": "birth decade"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "breg"
+    ],
+    "@id": "https://iisg.amsterdam/__we_de_1830_priso_1997_baten_kaisr.dta.csv/column/breg",
+    "name": "breg",
+    "propertyUrl": "microheights:dimension/birthRegion",
+    "valueUrl": "microheights:code/birthRegion/{{breg|capitalize()}}",
+    "dc:description": "Birth region"
+   },
+   {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "byear"
+    ],
+    "@id": "https://iisg.amsterdam/__we_de_1830_priso_1997_baten_kaisr.dta.csv/column/byear",
+    "name": "byear",
+    "propertyUrl": "microheights:dimension/byear",
+    "dc:description": "birth year"
+  },
+   {
+    "datatype": "string",
+    "titles": [
+     "crime"
+    ],
+    "@id": "https://iisg.amsterdam/__we_de_1830_priso_1997_baten_kaisr.dta.csv/column/crime",
+    "name": "crime",
+    "propertyUrl": "microheights:dimension/crime",
+    "valueUrl": "microheights:code/crime/{crime}",
+    "dc:description": "if crime is included in the data set (for prison samples)"
+   },
+   {
+   "virtual": true,
+   "propertyUrl": "microheights:dimension/sex",
+   "valueUrl": "microheights:code/sex/male"
+    },
+    {
+    "virtual": true,
+    "propertyUrl": "sdmx-dimension:sex",
+    "valueUrl": "sdmx-code:sex-M"
+  },
+   {
+   "aboutUrl": "https://iisg.amsterdam/microheights/we_de_1830/{_row}",
+   "virtual": true,
+   "propertyUrl": "rdf:type",
+   "valueUrl": "microheights:individual"
+ },
+   {
+    "datatype": "xsd:double",
+    "titles": [
+     "ht_cm"
+    ],
+    "@id": "https://iisg.amsterdam/__we_de_1830_priso_1997_baten_kaisr.dta.csv/column/ht_cm",
+    "name": "ht_cm",
+    "propertyUrl": "microheights:dimension/ht_cm",
+    "dc:description": "height in centimeters"
+   },
+   {
+    "datatype": "integer",
+    "titles": [
+     "ht_foot"
+    ],
+    "@id": "https://iisg.amsterdam/__we_de_1830_priso_1997_baten_kaisr.dta.csv/column/ht_foot",
+    "name": "ht_foot",
+    "propertyUrl": "microheights:dimension/ht_foot",
+    "dc:description": "height in foot"
+   },
+   {
+    "datatype": "integer",
+    "titles": [
+     "ht_inch"
+    ],
+    "@id": "https://iisg.amsterdam/__we_de_1830_priso_1997_baten_kaisr.dta.csv/column/ht_inch",
+    "name": "ht_inch",
+    "propertyUrl": "microheights:dimension/ht_inch",
+    "dc:description": "height in inches"
+   },
+   {
+    "datatype": "integer",
+    "titles": [
+     "ht_line"
+    ],
+    "@id": "https://iisg.amsterdam/__we_de_1830_priso_1997_baten_kaisr.dta.csv/column/ht_line",
+    "name": "ht_line",
+    "propertyUrl": "microheights:dimension/ht_lines",
+    "dc:description": "height in lines"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "occ"
+    ],
+    "@id": "https://iisg.amsterdam/__we_de_1830_priso_1997_baten_kaisr.dta.csv/column/occ",
+    "name": "occ",
+    "propertyUrl": "microheights:dimension/occupation",
+    "valueUrl": "microheights:code/occupation/{occ}",
+    "lang": "de",
+    "dc:description": "occupation or occupational group"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "original_measure"
+    ],
+    "@id": "https://iisg.amsterdam/__we_de_1830_priso_1997_baten_kaisr.dta.csv/column/original_measure",
+    "name": "original_measure",
+    "propertyUrl": "microheights:dimension/original_measure",
+    "dc:description": "measure in which the height was originally taken"
+   },
+   {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "qyear"
+    ],
+    "@id": "https://iisg.amsterdam/__we_de_1830_priso_1997_baten_kaisr.dta.csv/column/qyear",
+    "name": "qyear",
+    "propertyUrl": "microheights:dimension/qyear",
+    "dc:description": "year in which height was recorded"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "rco"
+    ],
+    "@id": "https://iisg.amsterdam/__we_de_1830_priso_1997_baten_kaisr.dta.csv/column/rco",
+    "propertyUrl": "microheights:dimension/countryOfResidence",
+    "name": "rco",
+    "valueUrl": "microheights:code/country/{rco}",
+    "dc:description": "country of residence (if distinguished), in lower case isoAlpha2 code"
+  },
+  {
+  "virtual": true,
+  "aboutUrl": "microheights:code/country/{rco}",
+  "datatype": "string",
+  "titles": ["rco"],
+  "name": "rco",
+  "propertyUrl": "microheights:dimension/isoAlpha2",
+  "csvw:value": "{{rco|upper()}}",
+  "dc:description": "standardized isoAlpha2 code of country"
+},
+   {
+    "datatype": "string",
+    "titles": [
+     "regional_intermediate"
+    ],
+    "@id": "https://iisg.amsterdam/__we_de_1830_priso_1997_baten_kaisr.dta.csv/column/regional_intermediate",
+    "name": "regional_intermediate",
+    "propertyUrl": "microheights:dimension/regional_intermediate",
+    "valueUrl": "microheights:code/regional_intermediate/{regional_intermediate}",
+    "dc:description": "name of regional unit in breg or rreg (if region available)"
+  },
+  {
+  "virtual": true,
+  "propertyUrl": "microheights:dimension/qdec",
+  "csvw:value": "{{[qyear[0:3],'0']|join }}",
+  "datatype": "xsd:gYear",
+  "dc:description": "decade in which height was recorded"
+},
+{
+  "virtual": true,
+  "propertyUrl": "microheights:dimension/sample_type",
+  "valueUrl": "microheights:code/sample_type/prisoners",
+  "dc:description": "type of sample used for constructing the database"
+},
+{
+  "virtual": true,
+  "propertyUrl": "microheights:dimension/countryOfMeasurement",
+  "valueUrl": "microheights:code/country/Germany",
+  "dc:description": "country where height was recorded"
+},
+{
+  "virtual": true,
+  "aboutUrl": "microheights:code/country/Germany",
+  "propertyUrl": "microheights:dimension/isoAlpha2",
+  "datatype": "string",
+  "csvw:value": "DE",
+  "dc:description": "standardized isoAlpha2 code of country"
+}
+  ]
+ }
+}
