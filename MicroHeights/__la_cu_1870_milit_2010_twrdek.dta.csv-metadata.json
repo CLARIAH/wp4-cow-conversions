@@ -209,7 +209,7 @@
     "@id": "https://iisg.amsterdam/__la_cu_1870_milit_2010_twrdek.dta.csv/column/occ",
     "name": "occ",
     "propertyUrl": "microheights:dimension/skillCategory",
-    "valueUrl": "microheights:code/skillCa/{occ}",
+    "valueUrl": "microheights:code/skillCategory/{occ}",
     "dc:description": "Armstrong skill category"
    },
    {
