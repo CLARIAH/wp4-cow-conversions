@@ -39,9 +39,9 @@
    "dc:creator": ["J. Komlos"],
       "dc:title": ["Nutrition and Economic Development in the Eighteenth Century Habsburg Monarchy. An Anthropometric History"],
    "dcterms:bibliographicCitation": ["Princeton, NJ: Princeton University Press"],
-   "dc:description": [""],
+   "dc:description": ["Komlos collected a very large sample on soldiers in the Habsburg Empire who were born during the 18th and early 19th centuries. The observations from the 18th century are primarily characterised by volunteer recruits, so the trend has to be scrutinised for potential selectivity. Komlos (1985, 1989) did this by comparing the results obtained from volunteer data to those from various alternative datasets from other institutional contexts and other years of height measurement to make sure that the observed trends were not caused by the specific institutional and labour market contexts of the sample. The data set covers observations on Hungary, Lower Austria, Galicia, Bohemia and Moravia (=today’s Czech Republic). The occupational coding is done by the large occupational groups. The original measurements were performed in Austrian inches, birth decades run from 1720s – 1840s."],
    "dcterms:issued": {"@value":"1989"},
-   "dc:isPartOf": ["Komlos collected a very large sample on soldiers in the Habsburg Empire who were born during the 18th and early 19th centuries. The observations from the 18th century are primarily characterised by volunteer recruits, so the trend has to be scrutinised for potential selectivity. Komlos (1985, 1989) did this by comparing the results obtained from volunteer data to those from various alternative datasets from other institutional contexts and other years of height measurement to make sure that the observed trends were not caused by the specific institutional and labour market contexts of the sample. The data set covers observations on Hungary, Lower Austria, Galicia, Bohemia and Moravia (=today’s Czech Republic). The occupational coding is done by the large occupational groups. The original measurements were performed in Austrian inches, birth decades run from 1720s – 1840s."]
+   "dc:isPartOf": [""]
         }],
  "url": "__ee_eeu_1720_milit_1885_komlos_incl_at_hu_ua_cz_sk.dta.csv",
  "@context": [
@@ -164,12 +164,12 @@
    "virtual": true,
    "name": "bco",
    "propertyUrl": "microheights:dimension/countryOfBirth",
-   "valueUrl": "microheights:code/country/{% if breg == '7' %}Hungary{% elif breg == '1' %}Czech Republic{% elif breg == '2' %}Czech Republic{% elif breg == '4' %}Ukraine{% elif breg == '9' %}Austria{% endif %}",
+   "valueUrl": "microheights:code/country/{% if breg == '7' %}hu{% elif breg == '1' %}cz{% elif breg == '2' %}cz{% elif breg == '4' %}ua{% elif breg == '9' %}at{% endif %}",
    "dc:description": "country of birth (if distinguished), in lower case isoAlpha2 code"
     },
     {
     "virtual": true,
-    "aboutUrl": "microheights:code/country/{% if breg == '7' %}Hungary{% elif breg == '1' %}Czech Republic{% elif breg == '2' %}Czech Republic{% elif breg == '4' %}Ukrainea{% elif breg == '9' %}Austria{% endif %}",
+    "aboutUrl": "microheights:code/country/{% if breg == '7' %}hu{% elif breg == '1' %}cz{% elif breg == '2' %}cz{% elif breg == '4' %}ua{% elif breg == '9' %}at{% endif %}",
     "datatype": "string",
     "titles": ["bco"],
     "name": "bco",
