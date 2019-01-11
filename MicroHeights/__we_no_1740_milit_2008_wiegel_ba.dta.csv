@@ -259,6 +259,7 @@
   "propertyUrl": "microheights:dimension/qdec",
   "csvw:value": "{{[qyear[0:3],'0']|join }}",
   "datatype": "xsd:gYear",
+  "null": {"@list": [{"name": "qyear", "null": [""]}]},
   "dc:description": "decade in which height was recorded"
   },
   {
