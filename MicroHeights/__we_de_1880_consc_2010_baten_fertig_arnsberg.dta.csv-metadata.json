@@ -41,8 +41,8 @@
 "dc:title": ["Did the Railway Increase Inequality? A Micro-Regional Analysis of Heights in the Hinterland of the Booming Ruhr Area During the Late 19th Century"],
 "dcterms:bibliographicCitation": ["The Journal of European Economic History, 38(2): 263–299"],
 "dc:description": ["This dataset covers military conscripts from the Prussian army of northwestern Germany and, in particular, the Sauerland region to the south of the Ruhr area. It was collected in order to study the development of a rural, agricultural region next to the rapidly industrializing Ruhr district. There are no selectivity issues present because recruitment officials inspected all males of this age group. Regionally, a broad mix of districts is available, making the data set representative for this region of Germany. The dataset covers the second half of the 19th century or, to be more precise, two years of the late 19th century as well as a limited number of observations in between."],
-"dcterms:issued": {"@value":"1976"},
-"dc:isPartOf": [""]
+"dcterms:issued": {"@value":"2019"},
+"dc:isPartOf": ["http://www.istitutodatini.it/biblio/riviste/g-k/journal4.htm"]
      }],
  "url": "__we_de_1880_consc_2010_baten_fertig_arnsberg.dta.csv",
  "@context": [
