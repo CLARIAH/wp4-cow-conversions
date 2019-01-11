@@ -1,0 +1,299 @@
+{
+ "dialect": {
+  "quoteChar": "\"",
+  "delimiter": ",",
+  "encoding": "utf-8"
+ },
+ "dcat:keyword": ["microheights"],
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+  "schema:url": {"@id": "http://datalegend.net"}
+},
+"dc:creator": {
+        "foaf:mbox": {
+        "@id": "mailto:auke.rijpma@gmail.com"
+    },
+    "foaf:name": "Auke Rijpma",
+        "rdf:type": [{
+            "@id": "foaf:Person"
+        },
+        {"@id": "prov:Person"
+        }
+    ]
+},
+"dc:creator": {
+          "foaf:mbox": {
+        "@id": "mailto:rubenschalk1@gmail.com"},
+    "foaf:name": "Ruben Schalk",
+            "rdf:type": [
+        {   "@id": "foaf:Person"},
+        {    "@id": "prov:Person"}
+    ]
+},
+"prov:wasDerivedFrom": [{
+"@id": "https://www.jstor.org/stable/41363222",
+"rdf:type": {"@id": "bibo:Article"},
+"dc:creator": ["J. Komlos"],
+"dc:creator": ["M. Hau"],
+"dc:creator": ["N. Bourguinat"],
+"dc:title": ["An anthropometric history of early-modern France"],
+"dcterms:bibliographicCitation": ["European Review of Economic History 7(2): 159–189"],
+"dc:description": ["Michel Hau and Nicolas Bourguinat collected a dataset on the French army that covers a very early period, namely the 1670s up to the 1770s. The dataset is a classical volunteer army dataset. Komlos et al. (2003) discuss potential effects of supply and demand for recruits during various periods of boom and crisis (crisis enlistment of taller soldiers, relative to normal or boom periods), but they do not assign much weight to labour market selectivities. The – not strictly applied – minimum height requirement changed over time. It was, for example, 6.2 feet in 1763. The birth regions of French soldiers are quite comprehensive, hence there is no regional selectivity, but social selectivity and labour market selectivity are carefully studied by the authors. The regional disaggregation is by place (for cities, sometimes including surrounding rural areas) and governments and occupations are also included in the dataset."],
+"dcterms:issued": {"@value":"2003"},
+"dc:isPartOf": [""]
+     }],
+ "url": "__we_fr_1670_milit_2003_komlos_hau.dta.csv",
+ "@context": [
+  "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json",
+  {
+   "@base": "https://iisg.amsterdam/",
+   "@language": "en"
+  },
+  {
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/",
+   "dbo": "http://dbpedia.org/ontology/",
+   "clioctr": "https://iisg.amsterdam/clio/country/",
+   "hisclass": "https://iisg.amsterdam/hisclass/",
+   "hisco-product": "https://iisg.amsterdam/hisco/product/",
+   "ldp": "http://www.w3.org/ns/ldp#",
+   "clio": "https://iisg.amsterdam/clio/",
+   "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
+   "dbr": "http://dbpedia.org/resource/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "xml": "http://www.w3.org/XML/1998/namespace/",
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+   "napp": "https://iisg.amsterdam/napp/",
+   "prov": "http://www.w3.org/ns/prov#",
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+   "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/",
+   "hiscam": "https://iisg.amsterdam/hiscam/",
+   "dbpedia": "http://dbpedia.org/resource/",
+   "np": "http://www.nanopub.org/nschema#",
+   "hisclass5": "https://iisg.amsterdam/hisclass5/",
+   "canfam-auke": "https://iisg.amsterdam/canfam/auke/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "schema": "http://schema.org/",
+   "microheights": "https://iisg.amsterdam/microheights/",
+   "sdv": "https://iisg.amsterdam/vocab/",
+   "hisco": "https://iisg.amsterdam/hisco/",
+   "bibo": "http://purl.org/ontology/bibo/",
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+   "hsn": "https://iisg.amsterdam/hsn2013a/",
+   "dc": "http://purl.org/dc/terms/",
+   "hisco-relation": "https://iisg.amsterdam/hisco/relation/",
+   "hisco-status": "https://iisg.amsterdam/hisco/status/",
+   "dbp": "http://dbpedia.org/property/",
+   "clioprop": "https://iisg.amsterdam/clio/property/",
+   "csvw": "http://www.w3.org/ns/csvw#",
+   "clioind": "https://iisg.amsterdam/clio/indicator/",
+   "dc11": "http://purl.org/dc/elements/1.1/",
+   "sdr": "https://iisg.amsterdam/",
+   "qb": "http://purl.org/linked-data/cube#",
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/",
+   "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/",
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "foaf": "http://xmlns.com/foaf/0.1/",
+   "xsd": "http://www.w3.org/2001/XMLSchema#",
+   "time": "http://www.w3.org/2006/time#",
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/"
+  }
+ ],
+ "dc:title": "__we_fr_1670_milit_2003_komlos_hau.dta.csv",
+ "@id": "https://iisg.amsterdam/__we_fr_1670_milit_2003_komlos_hau.dta.csv",
+ "dc:modified": {
+  "@value": "2019-01-11",
+  "@type": "xsd:date"
+ },
+ "tableSchema": {
+  "aboutUrl": "https://iisg.amsterdam/microheights/we_fr_1670/{_row}",
+  "primaryKey": "{_row}",
+  "columns": [
+   {
+    "datatype": "integer",
+    "titles": [
+     "age"
+    ],
+    "@id": "https://iisg.amsterdam/__we_fr_1670_milit_2003_komlos_hau.dta.csv/column/age",
+    "name": "age",
+    "propertyUrl": "microheights:dimension/age",
+    "dc:description": "age"
+  },
+   {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "bdec"
+    ],
+    "@id": "https://iisg.amsterdam/__we_fr_1670_milit_2003_komlos_hau.dta.csv/column/bdec",
+    "name": "bdec",
+    "propertyUrl": "microheights:dimension/bdec",
+    "dc:description": "birth decade"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "bpl"
+    ],
+    "@id": "https://iisg.amsterdam/__we_fr_1670_milit_2003_komlos_hau.dta.csv/column/bpl",
+    "name": "bpl",
+    "propertyUrl": "microheights:dimension/birthPlace",
+    "valueUrl": "microheights:code/birthPlace/{{bpl|capitalize()}}",
+    "dc:description": "birth place"
+   },
+   {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "byear"
+    ],
+    "@id": "https://iisg.amsterdam/__we_fr_1670_milit_2003_komlos_hau.dta.csv/column/byear",
+    "name": "byear",
+    "propertyUrl": "microheights:dimension/byear",
+    "dc:description": "birth year"
+  },
+   {
+    "datatype": "string",
+    "titles": [
+     "female"
+    ],
+    "@id": "https://iisg.amsterdam/__we_fr_1670_milit_2003_komlos_hau.dta.csv/column/female",
+    "name": "female",
+    "propertyUrl": "microheights:dimension/female",
+    "dc:description": "1, if female (otherwise male)"
+   },
+   {
+   "virtual": true,
+   "propertyUrl": "microheights:dimension/sex",
+   "valueUrl": "microheights:code/sex/{% if female == '0' %}male{% elif female == '1' %}female{% endif %}"
+    },
+    {
+    "virtual": true,
+    "propertyUrl": "sdmx-dimension:sex",
+    "valueUrl": "sdmx-code:{% if female == '0' %}sex-M{% elif female == '1' %}sex-F{% endif %}"
+  },
+  {
+  "aboutUrl": "https://iisg.amsterdam/microheights/we_fr_1670/{_row}",
+  "virtual": true,
+  "propertyUrl": "rdf:type",
+  "valueUrl": "microheights:individual"
+},
+   {
+    "datatype": "xsd:double",
+    "titles": [
+     "ht_inch"
+    ],
+    "@id": "https://iisg.amsterdam/__we_fr_1670_milit_2003_komlos_hau.dta.csv/column/ht_inch",
+    "name": "ht_inch",
+    "propertyUrl": "microheights:dimension/ht_inch",
+    "dc:description": "height in inches"
+   },
+   {
+     "virtual": true,
+    "datatype": "xsd:double",
+    "titles": [
+     "ht_cm"
+    ],
+    "name": "ht_cm",
+    "propertyUrl": "microheights:dimension/ht_cm",
+    "csvw:value": "{{ht_inch|float() * 2.54}}",
+    "dc:description": "height in centimeters"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "occ"
+    ],
+    "@id": "https://iisg.amsterdam/__we_fr_1670_milit_2003_komlos_hau.dta.csv/column/occ",
+    "name": "occ",
+    "propertyUrl": "microheights:dimension/occupation",
+    "valueUrl": "microheights:code/occupation/{{occ|lower()}}",
+    "lang": "fr",
+    "dc:description": "occupation or occupational group"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "occ_par"
+    ],
+    "@id": "https://iisg.amsterdam/__we_fr_1670_milit_2003_komlos_hau.dta.csv/column/occ_par",
+    "name": "occ_par",
+    "propertyUrl": "microheights:dimension/occupationParents",
+    "valueUrl": "microheights:code/occupation/{{occ_par|lower()}}",
+    "lang": "fr",
+    "dc:description": "occupation of parent(s)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "original_measurement"
+    ],
+    "@id": "https://iisg.amsterdam/__we_fr_1670_milit_2003_komlos_hau.dta.csv/column/original_measurement",
+    "name": "original_measurement",
+    "propertyUrl": "microheights:dimension/original_measure",
+    "dc:description": "measure in which the height was originally taken"
+   },
+   {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "qyear"
+    ],
+    "@id": "https://iisg.amsterdam/__we_fr_1670_milit_2003_komlos_hau.dta.csv/column/qyear",
+    "name": "qyear",
+    "propertyUrl": "microheights:dimension/qyear",
+    "dc:description": "year in which height was recorded"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "rco"
+    ],
+    "@id": "https://iisg.amsterdam/__we_fr_1670_milit_2003_komlos_hau.dta.csv/column/rco",
+    "propertyUrl": "microheights:dimension/countryOfResidence",
+    "valueUrl": "microheights:code/country/{rco}",
+    "dc:description": "country of residence (if distinguished), in lower case isoAlpha2 code"
+  },
+  {
+  "virtual": true,
+  "aboutUrl": "microheights:code/country/{rco}",
+  "datatype": "string",
+  "titles": ["rco"],
+  "name": "rco",
+  "propertyUrl": "microheights:dimension/isoAlpha2",
+  "csvw:value": "{{rco|upper()}}",
+  "dc:description": "standardized isoAlpha2 code of country"
+},
+{
+"virtual": true,
+"propertyUrl": "microheights:dimension/qdec",
+"csvw:value": "{{[qyear[0:3],'0']|join }}",
+"datatype": "xsd:gYear",
+"dc:description": "decade in which height was recorded"
+},
+{
+"virtual": true,
+"propertyUrl": "microheights:dimension/sample_type",
+"valueUrl": "microheights:code/sample_type/military_applicants",
+"dc:description": "type of sample used for constructing the database"
+},
+{
+"virtual": true,
+"propertyUrl": "microheights:dimension/countryOfMeasurement",
+"valueUrl": "microheights:code/country/France",
+"dc:description": "country where height was recorded"
+},
+{
+"virtual": true,
+"aboutUrl": "microheights:code/country/Germany",
+"propertyUrl": "microheights:dimension/isoAlpha2",
+"datatype": "string",
+"csvw:value": "FR",
+"dc:description": "standardized isoAlpha2 code of country"
+}
+  ]
+ }
+}
