@@ -265,7 +265,7 @@
 {
   "virtual": true,
   "propertyUrl": "microheights:dimension/sample_type",
-  "valueUrl": "microheights:code/sample_type/ethnographic_survey ",
+  "valueUrl": "microheights:code/sample_type/ethnographic_survey",
   "dc:description": "type of sample used for constructing the database"
 },
 {
