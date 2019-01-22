@@ -83,8 +83,8 @@
   "@type": "xsd:date"
  },
  "tableSchema": {
-  "aboutUrl": "https://iisg.amsterdam/admissiesdh/{_row}",
-  "primaryKey": "{_row}",
+  "aboutUrl": "https://iisg.amsterdam/admissiesdh/{id}",
+  "primaryKey": "{id}",
   "columns": [
    {
     "datatype": "string",
@@ -147,7 +147,7 @@
     "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/pob_modern",
     "name": "pob_modern",
     "propertyUrl": "admissiesdh:dimension/pob_modern",
-    "valueUrl": "admissiesdh:code/pob_modern/{pob_modern}",
+    "valueUrl": "admissiesdh:code/pob_modern/{{pob_modern|trim()}}",
     "dc:description": "PoB"
    },
    {
@@ -201,6 +201,7 @@
     "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/dist_pob_denhaag",
     "name": "dist_pob_denhaag",
     "propertyUrl": "admissiesdh:dimension/dist_pob_denhaag",
+    "csvw:value": "{{dist_pob_denhaag| replace(',' ,'.')}}",
     "dc:description": "dist_pob_denhaag"
    },
    {
@@ -277,6 +278,7 @@
     "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/dist_origin_denhaag",
     "name": "dist_origin_denhaag",
     "propertyUrl": "admissiesdh:dimension/dist_origin_denhaag",
+    "csvw:value": "{{dist_origin_denhaag| replace(',' ,'.')}}",
     "dc:description": "dist_origin_denhaag"
    },
    {
@@ -287,6 +289,7 @@
     "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/dist_pob_origin",
     "name": "dist_pob_origin",
     "propertyUrl": "admissiesdh:dimension/dist_pob_origin",
+    "csvw:value": "{{dist_pob_origin| replace(',' ,'.')}}",
     "dc:description": "dist_pob_origin"
    },
    {
@@ -468,6 +471,7 @@
     "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/length_stay_if_left",
     "name": "length_stay_if_left",
     "propertyUrl": "admissiesdh:dimension/length_stay_if_left",
+    "csvw:value": "{{length_stay_if_left| replace(',' ,'.')}}",
     "dc:description": "length_stay_if_left"
    },
    {
@@ -497,7 +501,7 @@
     ],
     "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/date_settlement",
     "name": "date_settlement",
-    "propertyUrl": "admissiesdh:dimension/date_settlementn",
+    "propertyUrl": "admissiesdh:dimension/date_settlement",
     "dc:description": "date_settlement"
    },
    {
@@ -528,6 +532,7 @@
     "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/min_length_stay_if_settlement",
     "name": "min_length_stay_if_settlement",
     "propertyUrl": "admissiesdh:dimension/min_length_stay_if_settlement",
+    "csvw:value": "{{min_length_stay_if_settlement| replace(',' ,'.')}}",
     "dc:description": "min_length_stay_if_settlement"
    },
    {
