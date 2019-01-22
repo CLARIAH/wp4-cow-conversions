@@ -1,0 +1,585 @@
+{
+ "dialect": {
+  "quoteChar": "\"",
+  "delimiter": ",",
+  "encoding": "utf-8"
+ },
+ "dcat:keyword": [],
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+  "schema:url": {
+   "@id": "http://datalegend.net"
+  }
+ },
+ "url": "admissieregisters_january_geocoded_occ.csv",
+ "@context": [
+  "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json",
+  {
+   "@base": "https://iisg.amsterdam/admissiesdh/",
+   "@language": "en"
+  },
+  {
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/",
+   "dbo": "http://dbpedia.org/ontology/",
+   "clioctr": "https://iisg.amsterdam/clio/country/",
+   "hisclass": "https://iisg.amsterdam/hisclass/",
+   "hisco-product": "https://iisg.amsterdam/hisco/product/",
+   "ldp": "http://www.w3.org/ns/ldp#",
+   "clio": "https://iisg.amsterdam/clio/",
+   "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
+   "dbr": "http://dbpedia.org/resource/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "xml": "http://www.w3.org/XML/1998/namespace/",
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+   "napp": "https://iisg.amsterdam/napp/",
+   "prov": "http://www.w3.org/ns/prov#",
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+   "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/",
+   "hiscam": "https://iisg.amsterdam/hiscam/",
+   "dbpedia": "http://dbpedia.org/resource/",
+   "np": "http://www.nanopub.org/nschema#",
+   "hisclass5": "https://iisg.amsterdam/hisclass5/",
+   "canfam-auke": "https://iisg.amsterdam/canfam/auke/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "schema": "http://schema.org/",
+   "microheights": "https://iisg.amsterdam/microheights/",
+   "sdv": "https://iisg.amsterdam/vocab/",
+   "hisco": "https://iisg.amsterdam/hisco/",
+   "bibo": "http://purl.org/ontology/bibo/",
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+   "hsn": "https://iisg.amsterdam/hsn2013a/",
+   "dc": "http://purl.org/dc/terms/",
+   "hisco-relation": "https://iisg.amsterdam/hisco/relation/",
+   "hisco-status": "https://iisg.amsterdam/hisco/status/",
+   "dbp": "http://dbpedia.org/property/",
+   "clioprop": "https://iisg.amsterdam/clio/property/",
+   "csvw": "http://www.w3.org/ns/csvw#",
+   "clioind": "https://iisg.amsterdam/clio/indicator/",
+   "dc11": "http://purl.org/dc/elements/1.1/",
+   "sdr": "https://iisg.amsterdam/",
+   "qb": "http://purl.org/linked-data/cube#",
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/",
+   "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/",
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "foaf": "http://xmlns.com/foaf/0.1/",
+   "xsd": "http://www.w3.org/2001/XMLSchema#",
+   "time": "http://www.w3.org/2006/time#",
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/",
+   "admissiesdh": "https://iisg.amsterdam/admissiesdh/",
+   "geosparql": "http://www.opengis.net/ont/geosparql#"
+  }
+ ],
+ "dc:title": "admissieregisters_january_geocoded_occ.csv",
+ "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv",
+ "dc:modified": {
+  "@value": "2019-01-22",
+  "@type": "xsd:date"
+ },
+ "tableSchema": {
+  "aboutUrl": "https://iisg.amsterdam/admissiesdh/{_row}",
+  "primaryKey": "{_row}",
+  "columns": [
+   {
+    "datatype": "string",
+    "titles": [
+     "id"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/id",
+    "name": "id",
+    "propertyUrl": "admissiesdh:dimension/id",
+    "valueUrl": "admissiesdh:code/id/{id}",
+    "dc:description": "ID"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "surname"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/surname",
+    "name": "surname",
+    "propertyUrl": "admissiesdh:dimension/surname",
+    "dc:description": "surname"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "last_name"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/last_name",
+    "name": "last_name",
+    "propertyUrl": "admissiesdh:dimension/last_name",
+    "dc:description": "last_name"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "sex"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/sex",
+    "name": "sex",
+    "propertyUrl": "admissiesdh:dimension/sex",
+    "valueUrl": "admissiesdh:code/sex/{sex}",
+    "dc:description": "Sex"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "pob"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/pob",
+    "name": "pob",
+    "propertyUrl": "admissiesdh:dimension/pob",
+    "valueUrl": "admissiesdh:code/pob/{pob}",
+    "dc:description": "PoB"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "pob_modern"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/pob_modern",
+    "name": "pob_modern",
+    "propertyUrl": "admissiesdh:dimension/pob_modern",
+    "valueUrl": "admissiesdh:code/pob_modern/{pob_modern}",
+    "dc:description": "PoB"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "openrefine_pob_match"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/openrefine_pob_match",
+    "name": "openrefine_pob_match",
+    "dc:description": "openrefine_pob_match"
+   },
+   {
+    "datatype": "xsd:double",
+    "titles": [
+     "pob_lat"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/pob_lat",
+    "name": "pob_lat",
+    "propertyUrl": "admissiesdh:dimension/pob_lat",
+    "csvw:value": "{{pob_lat| replace(',' ,'.')}}",
+    "dc:description": "pob_lat"
+   },
+   {
+    "datatype": "xsd:double",
+    "titles": [
+     "pob_long"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/pob_long",
+    "name": "pob_long",
+    "propertyUrl": "admissiesdh:dimension/pob_long",
+    "csvw:value": "{{pob_long| replace(',' ,'.')}}",
+    "dc:description": "pob_long"
+   },
+   {
+  "virtual": true,
+  "titles": [
+   "pob_long"
+  ],
+  "name": "pob_long",
+  "datatype": "geosparql:wktLiteral",
+  "aboutUrl": "admissiesdh:code/pob_modern/{{pob_modern|trim()}}",
+  "propertyUrl": "geosparql:asWKT",
+  "csvw:value": "{{'POINT(' + pob_long| replace(',' ,'.') + ' ' + pob_lat| replace(',' ,'.') + ')'}}",
+  "null": {"@list": [{"name": "pob_long", "null": [""]}, {"name": "pob_lat", "null": [""]}]}
+  },
+   {
+    "datatype": "xsd:double",
+    "titles": [
+     "dist_pob_denhaag"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/dist_pob_denhaag",
+    "name": "dist_pob_denhaag",
+    "propertyUrl": "admissiesdh:dimension/dist_pob_denhaag",
+    "dc:description": "dist_pob_denhaag"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "origin"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/origin",
+    "name": "origin",
+    "propertyUrl": "admissiesdh:dimension/origin",
+    "valueUrl": "admissiesdh:code/origin/{{origin|trim()}}",
+    "dc:description": "Origin"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "openrefine_origin_match"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/openrefine_origin_match",
+    "name": "openrefine_origin_match",
+    "dc:description": "openrefine_origin_match"
+   },
+   {
+    "datatype": "xsd:double",
+    "titles": [
+     "origin_lat"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/origin_lat",
+    "name": "origin_lat",
+    "propertyUrl": "admissiesdh:dimension/origin_lat",
+    "csvw:value": "{{origin_lat| replace(',' ,'.')}}",
+    "dc:description": "origin_lat"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "origin_long"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/origin_long",
+    "name": "origin_long",
+    "propertyUrl": "admissiesdh:dimension/origin_long",
+    "csvw:value": "{{origin_long| replace(',' ,'.')}}",
+    "dc:description": "origin_long"
+   },
+   {
+     "virtual": true,
+     "titles": [
+      "lon"
+     ],
+     "name": "lon",
+     "datatype": "geosparql:wktLiteral",
+     "aboutUrl": "admissiesdh:code/origin/{{origin|trim()}}",
+     "propertyUrl": "geosparql:asWKT",
+     "csvw:value": "{{'POINT(' + origin_long| replace(',' ,'.') + ' ' + origin_lat| replace(',' ,'.') + ')'}}",
+     "null": {"@list": [{"name": "origin_long", "null": [""]}, {"name": "origin_lat", "null": [""]}]}
+     },
+     {
+       "virtual": true,
+       "aboutUrl": "admissiesdh:code/pob_modern/{{pob_modern|trim()}}",
+       "propertyUrl": "rdf:type",
+       "valueUrl": "geosparql:Geometry"
+     },
+     {
+       "virtual": true,
+       "aboutUrl": "admissiesdh:code/origin/{{origin|trim()}}",
+       "propertyUrl": "rdf:type",
+       "valueUrl": "geosparql:Geometry"
+     },
+   {
+    "datatype": "xsd:double",
+    "titles": [
+     "dist_origin_denhaag"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/dist_origin_denhaag",
+    "name": "dist_origin_denhaag",
+    "propertyUrl": "admissiesdh:dimension/dist_origin_denhaag",
+    "dc:description": "dist_origin_denhaag"
+   },
+   {
+    "datatype": "xsd:double",
+    "titles": [
+     "dist_pob_origin"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/dist_pob_origin",
+    "name": "dist_pob_origin",
+    "propertyUrl": "admissiesdh:dimension/dist_pob_origin",
+    "dc:description": "dist_pob_origin"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "religion"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/religion",
+    "name": "religion",
+    "propertyUrl": "admissiesdh:dimension/religion",
+    "valueUrl": "admissiesdh:code/religion/{religion}",
+    "dc:description": "religion"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "marital_status"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/marital_status",
+    "name": "marital_status",
+    "propertyUrl": "admissiesdh:dimension/marital_status",
+    "valueUrl": "admissiesdh:code/marital_status/{marital_status}",
+    "dc:description": "marital_status"
+   },
+   {
+    "datatype": "integer",
+    "titles": [
+     "children"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/children",
+    "name": "children",
+    "propertyUrl": "admissiesdh:dimension/children",
+    "dc:description": "children"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "occupation"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/occupation",
+    "name": "occupation",
+    "propertyUrl": "admissiesdh:dimension/occupation",
+    "valueUrl": "admissiesdh:code/occupation/{occupation}",
+    "dc:description": "Occupation of immigrating male"
+   },
+   {
+    "virtual": true,
+    "name": "occupation",
+        "titles": [
+     "occupation"
+    ],
+    "propertyUrl": "hsn:vocab/occupationalTitle",
+    "valueUrl": "hsn:occupation/{occupation}"
+    },
+   {
+    "datatype": "string",
+    "titles": [
+     "occ_hsn"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/occ_hsn",
+    "name": "occ_hsn",
+    "dc:description": "occ_hsn"
+   },
+   {
+    "datatype": "integer",
+    "titles": [
+     "hisconr"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/hisconr",
+    "name": "hisconr",
+    "propertyUrl": "admissiesdh:dimension/hisconr",
+    "dc:description": "hisconr"
+   },
+   {
+    "datatype": "integer",
+    "titles": [
+     "hisco_minor"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/hisco_minor",
+    "name": "hisco_minor",
+    "propertyUrl": "admissiesdh:dimension/hisco_minor",
+    "dc:description": "hisco_minor"
+   },
+   {
+    "datatype": "integer",
+    "titles": [
+     "hisclass"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/hisclass",
+    "name": "hisclass",
+    "propertyUrl": "admissiesdh:dimension/hisclass",
+    "dc:description": "hisclass"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "skill_type"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/skill_type",
+    "name": "skill_type",
+    "propertyUrl": "admissiesdh:dimension/skill_type",
+    "dc:description": "skill_type (manual or non-manual)"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "skill_level"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/skill_level",
+    "name": "skill_level",
+    "propertyUrl": "admissiesdh:dimension/skill_level",
+    "dc:description": "skill_level"
+   },
+   {
+    "datatype": "xsd:double",
+    "titles": [
+     "hiscam"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/hiscam",
+    "name": "hiscam",
+    "propertyUrl": "admissiesdh:dimension/hiscam",
+    "dc:description": "hiscam"
+   },
+   {
+    "datatype": "xsd:date_arrival",
+    "titles": [
+     "date_arrival"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/date_arrival",
+    "name": "date_arrival",
+    "propertyUrl": "admissiesdh:dimension/date_arrival",
+    "dc:description": "date_arrival"
+   },
+   {
+    "datatype": "integer",
+    "titles": [
+     "month_arrival"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/month_arrival",
+    "name": "month_arrival",
+    "propertyUrl": "admissiesdh:dimension/month_arrival",
+    "dc:description": "month_arrival"
+   },
+   {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "year_arrival"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/year_arrival",
+    "name": "year_arrival",
+    "propertyUrl": "admissiesdh:dimension/year_arrival",
+    "dc:description": "year_arrival"
+   },
+   {
+    "datatype": "xsd:double",
+    "titles": [
+     "allowed_stay_months"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/allowed_stay_months",
+    "name": "allowed_stay_months",
+    "propertyUrl": "admissiesdh:dimension/allowed_stay_months",
+    "dc:description": "allowed_stay_months"
+   },
+   {
+    "datatype": "xsd:data",
+    "titles": [
+     "date_leaving"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/date_leaving",
+    "name": "date_leaving",
+    "propertyUrl": "admissiesdh:dimension/date_leaving",
+    "dc:description": "date_leaving"
+   },
+   {
+    "datatype": "xsd:double",
+    "titles": [
+     "length_stay_if_left"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/length_stay_if_left",
+    "name": "length_stay_if_left",
+    "propertyUrl": "admissiesdh:dimension/length_stay_if_left",
+    "dc:description": "length_stay_if_left"
+   },
+   {
+    "datatype": "integer",
+    "titles": [
+     "left_dummy"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/left_dummy",
+    "name": "left_dummy",
+    "propertyUrl": "admissiesdh:dimension/left_dummy",
+    "dc:description": "left_dummy"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "settlement_type"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/settlement_type",
+    "name": "settlement_type",
+    "propertyUrl": "admissiesdh:dimension/settlement_type",
+    "dc:description": "settlement_type"
+   },
+   {
+    "datatype": "xsd:date",
+    "titles": [
+     "date_settlement"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/date_settlement",
+    "name": "date_settlement",
+    "propertyUrl": "admissiesdh:dimension/date_settlementn",
+    "dc:description": "date_settlement"
+   },
+   {
+    "datatype": "integer",
+    "titles": [
+     "month_settlement"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/month_settlement",
+    "name": "month_settlement",
+    "propertyUrl": "admissiesdh:dimension/month_settlement",
+    "dc:description": "month_settlement"
+   },
+   {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "year_settlement"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/year_settlement",
+    "name": "year_settlement",
+    "propertyUrl": "admissiesdh:dimension/year_settlement",
+    "dc:description": "year_settlement"
+   },
+   {
+    "datatype": "xsd:double",
+    "titles": [
+     "min_length_stay_if_settlement"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/min_length_stay_if_settlement",
+    "name": "min_length_stay_if_settlement",
+    "propertyUrl": "admissiesdh:dimension/min_length_stay_if_settlement",
+    "dc:description": "min_length_stay_if_settlement"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "destination"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/destination",
+    "name": "destination",
+    "propertyUrl": "admissiesdh:dimension/destination",
+    "dc:description": "destination"
+   },
+   {
+    "datatype": "integer",
+    "titles": [
+     "pdf_page"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/pdf_page",
+    "name": "pdf_page",
+    "propertyUrl": "admissiesdh:dimension/pdf_page",
+    "dc:description": "pdf_page"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "source"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/source",
+    "name": "source",
+    "propertyUrl": "admissiesdh:dimension/source",
+    "dc:description": "source"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "remark"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/remark",
+    "name": "remark",
+    "propertyUrl": "admissiesdh:dimension/remark",
+    "dc:description": "remark"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "entered_by"
+    ],
+    "@id": "https://iisg.amsterdam/admissieregisters_january_geocoded_occ.csv/column/entered_by",
+    "name": "entered_by",
+    "propertyUrl": "admissiesdh:dimension/entered_by",
+    "dc:description": "entered_by"
+   }
+  ]
+ }
+}
