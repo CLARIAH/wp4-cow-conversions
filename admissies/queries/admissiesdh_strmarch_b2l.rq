@@ -3,23 +3,22 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
 PREFIX admissiedim: <https://iisg.amsterdam/admissiesdh/dimension/>
 PREFIX sex: <https://iisg.amsterdam/admissiesdh/code/sex/>
-PREFIX b2lvoc: <https://iisg.amsterdam/B2L/dimension/>
+PREFIX siem: <https://iisg.amsterdam/siem/dimension/>
 PREFIX fn: <http://www.w3.org/2005/xpath-functions#>
 
 
-SELECT distinct ?pob ?pob2 ?city_b2l ?cityb2 ?pop_1700 WHERE {
+SELECT distinct ?id ?pob ?pob2 ?city_b2l ?cityb2 ?pop_1750 ?match WHERE {
     ?sub admissiedim:id ?id .
-    ?sub admissiedim:pob_modern ?pob .
+  optional{  ?sub admissiedim:pob_modern ?pob .}
  
-  	?city b2lvoc:city ?city_b2l .
- 	?city b2lvoc:year "1700"^^xsd:gYear .
- 	?city b2lvoc:citypop_le5 ?pop_1700.
+ optional{ 	?city siem:city ?city_b2l .
+ 	?city siem:year "1750"^^xsd:gYear .
+    ?city siem:inhab ?pop_1750.}
   
   
   BIND(REPLACE(STR(?city_b2l),"[. - _ ( ) ,]"," ") AS ?cityb)
   BIND(STR(STRAFTER(STR(?pob), "https://iisg.amsterdam/admissiesdh/code/pob_modern/")) as ?pob2)
-  BIND(STR(STRAFTER(STR(?cityb), "https://iisg amsterdam/B2L/code/city/")) as ?cityb2)
+  BIND(STR(STRAFTER(STR(?cityb), "https://iisg amsterdam/siem/code/city/")) as ?cityb2)
  
   FILTER(fn:contains(?cityb2, ?pob2))
 }
-#LIMIT 100
