@@ -31,12 +31,13 @@ ind_occs[, date := stri_join(Year, "-",
     stri_pad_left(Day, width = 2, pad = 0))]
 
 ind_occs[, Id_I := uriref(Id_I, ..pers_base)]
-ind_occs[, ID := uriref(ID, base = occ_base)]
+ind_occs[, ID_occgroup := .GRP, by = list(Id_I, date)]
+ind_occs[, ID_occgroup := uriref(ID_occgroup, base = occ_base)]
 
 out = ind_occs[, .(
     sub = Id_I,
     pred = uriref("individualObservation", base = dim_base),
-    obj = ID,
+    obj = ID_occgroup,
     graph = occ_graph_names['assertion']
 )]
 nqwrite(dat = out[complete.cases(out)], 
@@ -45,7 +46,7 @@ nqwrite(dat = out[complete.cases(out)],
 
 # occnode to
 out = ind_occs[Type == "OCCUPATION_STANDARD", .(
-    sub = ID,
+    sub = ID_occgroup,
     pred = uriref("occupationalTitle", base = dim_base),
     obj = cower::literal(Value, datatype = uriref("string", namespaces("xsd"))),
     graph = occ_graph_names['assertion']
@@ -55,7 +56,7 @@ nqwrite(dat = out[complete.cases(out)],
     append = TRUE)
 
 out = ind_occs[Type == "OCCUPATION_HISCO", .(
-    sub = ID,
+    sub = ID_occgroup,
     pred = uriref("hisco", base = dim_base),
     obj = cower::uriref(Value, base = "https://iisg.amsterdam/hisco/code/hisco/"),
     graph = occ_graph_names['assertion']
@@ -65,7 +66,7 @@ nqwrite(dat = out[complete.cases(out)],
     append = TRUE)
 
 out = ind_occs[Type == "OCCUPATION_HISCAM_U1", .(
-    sub = ID, 
+    sub = ID_occgroup, 
     pred = uriref("u1", base = "https://iisg.amsterdam/hiscam/v131/"),
     obj = cower::literal(Value, datatype = uriref("decimal", namespaces("xsd"))),
     graph = occ_graph_names['assertion']
@@ -75,7 +76,7 @@ nqwrite(dat = out[complete.cases(out)],
     append = TRUE)
 
 out = ind_occs[Type == "OCCUPATION_HISCLASS", .(
-    sub = ID,
+    sub = ID_occgroup,
     pred = uriref("hisclass", base = dim_base),
     obj = cower::uriref(Value, base = "https://iisg.amsterdam/hisclass/code/"),
     graph = occ_graph_names['assertion']
@@ -85,7 +86,7 @@ nqwrite(dat = out[complete.cases(out)],
     append = TRUE)
 
 out = ind_occs[Type == "OCCUPATION_SOCPO", .(
-    sub = ID,
+    sub = ID_occgroup,
     pred = uriref("socpo", base = dim_base),
     obj = cower::uriref(Value, base = "https://iisg.amsterdam/socpo/"),
     graph = occ_graph_names['assertion']
@@ -95,7 +96,7 @@ nqwrite(dat = out[complete.cases(out)],
     append = TRUE)
 
 out = ind_occs[, .(
-    sub = ID,
+    sub = ID_occgroup,
     pred = uriref("date", base = dim_base),
     obj = cower::literal(date, datatype = uriref("date", namespaces("xsd"))),
     graph = occ_graph_names['assertion']
