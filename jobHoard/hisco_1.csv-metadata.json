@@ -70,7 +70,7 @@
  "@context": [
   "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json",
   {
-   "@base": "https://iisg.amsterdam/",
+   "@base": "https://iisg.amsterdam/resource/hisco/",
    "@language": "en"
   },
   {
@@ -106,7 +106,7 @@
    "time": "http://www.w3.org/2006/time#",
    "hsn": "https://iisg.amsterdam/hsn2013a/",
    "dc": "http://purl.org/dc/terms/",
-   "hisco-code": "https://iisg.amsterdam/hisco/code/",   
+   "hisco-code": "https://iisg.amsterdam/hisco/code/",
    "hisco-relation": "https://iisg.amsterdam/hisco/relation/",
    "hisco-status": "https://iisg.amsterdam/hisco/status/",
    "dbp": "http://dbpedia.org/property/",
