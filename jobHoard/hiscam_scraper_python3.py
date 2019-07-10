@@ -9,4 +9,4 @@ for version in hiscamVersion:
     page = 'http://www.camsis.stir.ac.uk/hiscam/v1_3_1/hiscam_' + version + '.dat'
     df = pd.read_csv(page, sep='\t')
     df['version'] = version
-    df.to_csv('./hiscam_'+ version + '.csv')
+    df.to_csv('./hiscam_'+ version + '.csv', index = False, sep = '\t')
