@@ -11,8 +11,9 @@
     },
     "url": "hiscam_de.csv",
     "dialect": {
-        "delimiter": "\t",
-        "encoding": "latin"
+      "quoteChar": "\"",
+      "delimiter": "\t",
+      "encoding": "ascii"
     },
     "@context": [
         "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json", {
@@ -51,7 +52,7 @@
           "time": "http://www.w3.org/2006/time#",
           "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/",
           "hiscam": "https://iisg.amsterdam/resource/hiscam/",
-          "hiscam-be": "https://iisg.amsterdam/resource/hiscam/de/",
+          "hiscam-de": "https://iisg.amsterdam/resource/hiscam/de/",
           "": "https://iisg.amsterdam/resource/hiscam/v131/"
         }
     ],
@@ -93,7 +94,7 @@
             ],
             "name": "hisco",
             "propertyUrl": "hiscam:hisco",
-            "valueUrl": "hisco-code:hisco/{hisco:0>5}",
+            "valueUrl": "hisco-code:{hisco:0>5}",
             "dc:description": "hisco"
         }, {
             "datatype": "decimal",
@@ -110,7 +111,7 @@
             "dc:description": "The reference area for this HISCAM value (Germany)"
         }, {
             "virtual": true,
-            "aboutUrl": "hisco-code:hisco/{hisco:0>5}",
+            "aboutUrl": "hisco-code:{hisco:0>5}",
             "propertyUrl": "hiscam:de",
             "datatype": "decimal",
             "csvw:value": "{hiscam}"

@@ -11,8 +11,9 @@
     },
     "url": "hiscam_be.csv",
     "dialect": {
-        "delimiter": "\t",
-        "encoding": "latin"
+      "quoteChar": "\"",
+      "delimiter": "\t",
+      "encoding": "ascii"
     },
     "@context": [
         "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json", {
@@ -93,7 +94,7 @@
             ],
             "name": "hisco",
             "propertyUrl": "hiscam:hisco",
-            "valueUrl": "hisco-code:hisco/{hisco:0>5}",
+            "valueUrl": "hisco-code:{hisco:0>5}",
             "dc:description": "hisco"
         }, {
             "datatype": "decimal",
@@ -110,7 +111,7 @@
             "dc:description": "The reference area for this HISCAM value (Belgium)"
         }, {
             "virtual": true,
-            "aboutUrl": "hisco-code:hisco/{hisco:0>5}",
+            "aboutUrl": "hisco-code:{hisco:0>5}",
             "propertyUrl": "hiscam:be",
             "datatype": "decimal",
             "csvw:value": "{hiscam}"
