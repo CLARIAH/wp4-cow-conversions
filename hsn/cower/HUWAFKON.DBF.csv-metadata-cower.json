@@ -141,6 +141,7 @@
     ],
     "@id": "https://iisg.amsterdam/HUWAFKON.DBF.csv/column/HUWJAR",
     "name": "HUWJAR",
+    "propertyUrl": "hsn:dimension/HUWJAR",
     "dc:description": "Jaarnummer eerste huwelijk  "
    },
    {
@@ -150,6 +151,7 @@
     ],
     "@id": "https://iisg.amsterdam/HUWAFKON.DBF.csv/column/AFKNR",
     "name": "AFKNR",
+    "propertyUrl": "hsn:dimension/AFKNR",
     "dc:description": "Volgnummer om de verschillende afkondigingen in de akte uit elkaar te houden"
    },
    {
@@ -181,6 +183,7 @@
     ],
     "@id": "https://iisg.amsterdam/HUWAFKON.DBF.csv/column/AFKDAG",
     "name": "AFKDAG",
+    "propertyUrl": "hsn:dimension/AFKDAG",
     "dc:description": "Dagnummer afkondiging"
    },
    {
@@ -190,6 +193,7 @@
     ],
     "@id": "https://iisg.amsterdam/HUWAFKON.DBF.csv/column/AFKMND",
     "name": "AFKMND",
+    "propertyUrl": "hsn:dimension/AFKMND",
     "dc:description": "Maandnummer afkondiging"
    },
    {
@@ -199,6 +203,7 @@
     ],
     "@id": "https://iisg.amsterdam/HUWAFKON.DBF.csv/column/AFKJAR",
     "name": "AFKJAR",
+    "propertyUrl": "hsn:dimension/AFKJAR",
     "dc:description": "Jaarnummer afkondiging"
    },
    {
@@ -208,6 +213,7 @@
     ],
     "@id": "https://iisg.amsterdam/HUWAFKON.DBF.csv/column/AFKDAT",
     "name": "AFKDAT",
+    "propertyUrl": "hsn:dimension/AFKDAT",
     "dc:description": "Datum afkondiging als datumveld"
    },
    {
