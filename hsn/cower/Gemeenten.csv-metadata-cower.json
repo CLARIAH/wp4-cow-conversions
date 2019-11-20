@@ -191,6 +191,7 @@
     ],
     "name": "gem_start_date",
     "propertyUrl": "hsn:dimension/gem_start_date",
+    "csvw:value": "{{ anytime::anydate(gem_start_date) }}",
     "dc:description": "bij gem van JJJJMMDD"
    },
    {
@@ -200,6 +201,7 @@
     ],
     "name": "gem_end_date",
     "propertyUrl": "hsn:dimension/gem_end_date",
+    "csvw:value": "{{ anytime::anydate(gem_end_date) }}",
     "dc:description": "bij gem tot JJJJMMDD"
    },
    {
