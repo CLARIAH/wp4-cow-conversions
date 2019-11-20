@@ -55,7 +55,7 @@
  "@context": [
   "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json", 
   {
-   "@base": "https://iisg.amsterdam/", 
+   "@base": "https://iisg.amsterdam/hsn/", 
    "@language": "en"
   }, 
   {
