@@ -300,15 +300,6 @@
     "dc:description": "Indien in dit veld een '0' is ingevuld heeft het adres betrekking op het gehele huishouden. In andere gevallen heeft het adres slechts betrekking op een bepaalde persoon in het onderhavige huishouden en verwijst het nummer naar de waarde op het veld persnr in bevstatp van de record van deze persoon. "
    },
    {
-    "virtual": true,
-    "name": "HSNperson",
-        "titles": [
-     "HSNperson"
-    ],
-    "propertyUrl": "hsn:dimension/HSNperson",
-    "valueUrl": "hsn:code/HSNperson/{{ stringi::stri_join(IDNR, '_', PERSNR) }}"
-   },
-   {
     "datatype": "string",
     "titles": [
      "STRAAT"
