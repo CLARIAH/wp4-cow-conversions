@@ -1,18 +1,17 @@
 rm(list = ls())
 
 library("data.table")
-library("stringi")
 
 bevdynap = data.table::fread("gunzip -c /Users/auke/repos/sdh-private-hsn/hsndbf/BEVDYNAP.DBF.csv.gz")
 setnames(bevdynap, names(bevdynap), tolower(names(bevdynap)))
 
-bevdynap[, person := stringi::stri_join(idnr, '_', persnr)]
+bevdynap[, person := paste0(idnr, '_', persnr)]
 
 rel2head = bevdynap[dynatype == 1]
 rel2op = bevdynap[dynatype == 4]
 
 rel2head[, 
-    households_head := first(person[relacode %in% c(1, 105:107, 111:120)]), 
+    households_head := unique(person[relacode %in% c(1, 105:107, 111:120)]), 
     by = list(idnr, huishnr)]
 rel2head[is.na(households_head), unique(dynainhd)]
 
@@ -41,4 +40,4 @@ rel2op[relacode %in% c(12, 22),
     # parentOf
     # grandchildOf
     # grandparentOf
-    # livesWith (cartprod within household? Or just for OP)
+    # livesWith (so everyone x everyone )
