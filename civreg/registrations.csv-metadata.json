@@ -1,0 +1,226 @@
+{
+ "dialect": {
+  "quoteChar": "\"",
+  "delimiter": ";",
+  "encoding": "ascii"
+ },
+ "dcat:keyword": [],
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+  "schema:url": {
+    "@id": "http://datalegend.net"
+   }
+  },
+  "dc:creator": {
+    "rdf:type": [
+      {
+        "@id": "foaf:Person"
+      },
+      {
+        "@id": "prov:Person"
+      }
+    ],
+    "foaf:name": ["Auke Rijpma"]
+  },"dc:creator": {
+    "rdf:type": [
+      {
+        "@id": "foaf:Person"
+      },
+      {
+        "@id": "prov:Person"
+      }
+    ],
+    "foaf:name": ["Joe Raad"]
+  },
+  "dc:creator": {
+    "rdf:type": [
+      {
+        "@id": "foaf:Person"
+      },
+      {
+        "@id": "prov:Person"
+      }
+    ],
+    "foaf:name": ["Richard Zijdeman"]
+  },
+  "prov:wasDerivedFrom": [{
+    "rdf:type": {
+        "@id": "bibo:Article"
+    },
+    "dc:title": {
+        "@value": " Linking System for historical family reconstruction (LINKS) ",
+        "@lang": "en"
+    },
+    "dc:creator": ["Mandemakers, K."],
+    "dc:publisher": "Edinburg UP",
+    "dc:date": {"@value":"2014", "@type":"xsd:gYear"},
+    "dc:isPartOf": ["http://www.euppublishing.com/toc/hac/14/1-2"]
+ }],
+ "url": "registrations.csv",
+ "@context": [
+  "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json",
+  {
+   "@base": "https://iisg.amsterdam/links_zeeland/",
+   "@language": "en"
+  },
+  {
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/",
+   "dbo": "http://dbpedia.org/ontology/",
+   "clioctr": "https://iisg.amsterdam/clio/country/",
+   "hisclass": "https://iisg.amsterdam/hisclass/",
+   "hisco-product": "https://iisg.amsterdam/hisco/product/",
+   "ldp": "http://www.w3.org/ns/ldp#",
+   "clio": "https://iisg.amsterdam/clio/",
+   "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
+   "dbr": "http://dbpedia.org/resource/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "xml": "http://www.w3.org/XML/1998/namespace/",
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+   "napp": "https://iisg.amsterdam/napp/",
+   "prov": "http://www.w3.org/ns/prov#",
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+   "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/",
+   "hiscam": "https://iisg.amsterdam/hiscam/",
+   "dbpedia": "http://dbpedia.org/resource/",
+   "np": "http://www.nanopub.org/nschema#",
+   "hisclass5": "https://iisg.amsterdam/hisclass5/",
+   "canfam-auke": "https://iisg.amsterdam/canfam/auke/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "schema": "http://schema.org/",
+   "microheights": "https://iisg.amsterdam/microheights/",
+   "sdv": "https://iisg.amsterdam/vocab/",
+   "hisco": "https://iisg.amsterdam/hisco/",
+   "bibo": "http://purl.org/ontology/bibo/",
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+   "hsn": "https://iisg.amsterdam/hsn2013a/",
+   "dc": "http://purl.org/dc/terms/",
+   "hisco-relation": "https://iisg.amsterdam/hisco/relation/",
+   "hisco-status": "https://iisg.amsterdam/hisco/status/",
+   "dbp": "http://dbpedia.org/property/",
+   "clioprop": "https://iisg.amsterdam/clio/property/",
+   "csvw": "http://www.w3.org/ns/csvw#",
+   "clioind": "https://iisg.amsterdam/clio/indicator/",
+   "dc11": "http://purl.org/dc/elements/1.1/",
+   "sdr": "https://iisg.amsterdam/",
+   "qb": "http://purl.org/linked-data/cube#",
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/",
+   "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/",
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "foaf": "http://xmlns.com/foaf/0.1/",
+   "xsd": "http://www.w3.org/2001/XMLSchema#",
+   "time": "http://www.w3.org/2006/time#",
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/"
+  }
+ ],
+ "dc:title": "Zeeland Registrations",
+ "@id": "https://iisg.amsterdam/links_zeeland/registrations.csv",
+ "dc:modified": {
+  "@value": "2019-02-22",
+  "@type": "xsd:date"
+ },
+ "tableSchema": {
+  "aboutUrl": "certificate/{id_registration}",
+  "primaryKey": "id_registration",
+  "columns": [
+   {
+    "datatype": "int",
+    "propertyUrl": "vocab/registration_id",
+    "csvw:value":"{{id_registration}}"
+   },
+   {
+    "propertyUrl": "rdf:type",
+    "valueUrl": "{% if registration_type =='g' or registration_maintype=='1' %}vocab/Birth_Certificate{% elif registration_type =='h' or registration_maintype=='2' %}vocab/Marriage_Certificate{% elif registration_type =='o'  or registration_maintype=='3' %}vocab/Death_Certificate{% elif registration_type =='s' or registration_maintype=='2'%}vocab/Divorce_Certificate{% endif %}"
+   },
+   {
+     "virtual": "true",
+    "aboutUrl":"vocab/Birth_Certificate",
+     "propertyUrl": "rdfs:subClassOf",
+     "valueUrl":"vocab/Civil_Certificate"
+    },
+    {
+    "virtual": "true",
+    "aboutUrl":"vocab/Marriage_Certificate",
+     "propertyUrl": "rdfs:subClassOf",
+     "valueUrl":"vocab/Civil_Certificate"
+    },
+    {
+    "virtual": "true",
+    "aboutUrl":"vocab/Death_Certificate",
+     "propertyUrl": "rdfs:subClassOf",
+     "valueUrl":"vocab/Civil_Certificate"
+    },
+    {
+     "virtual": "true",
+     "aboutUrl":"vocab/Divorce_Certificate",
+     "propertyUrl": "rdfs:subClassOf",
+     "valueUrl":"vocab/Civil_Certificate"
+    },
+    {
+     "virtual": "true",
+     "datatype": "string",
+    "aboutUrl":"vocab/Birth_Certificate",
+     "propertyUrl": "rdfs:label",
+     "csvw:value":"birth certificate"
+    },
+    {
+     "virtual": "true",
+     "datatype": "string",
+    "aboutUrl":"vocab/Marriage_Certificate",
+     "propertyUrl": "rdfs:label",
+     "csvw:value":"marriage certificate"
+    },
+    {
+     "virtual": "true",
+     "datatype": "string",
+    "aboutUrl":"vocab/Death_Certificate",
+     "propertyUrl": "rdfs:label",
+     "csvw:value":"death certificate"
+    },
+    {
+     "virtual": "true",
+     "datatype": "string",
+    "aboutUrl":"vocab/Divorce_Certificate",
+     "propertyUrl": "rdfs:label",
+     "csvw:value":"divorce certificate"
+    },
+    {
+     "virtual": "true",
+     "datatype": "string",
+    "aboutUrl":"vocab/Civil_Certificate",
+     "propertyUrl": "rdfs:label",
+     "csvw:value":"civil certificate"
+    },
+    {
+     "virtual": "true",
+     "datatype": "string",
+     "aboutUrl":"vocab/Civil_Certificate",
+     "propertyUrl": "rdfs:comment",
+     "csvw:value":"a civil certificate can be either a birth, marriage, divorce or a death certificate"
+    },
+    {
+        "datatype": "date",
+        "propertyUrl": "vocab/registration_date",
+        "csvw:value":"{{registration_year}}-{{registration_month}}-{{registration_day}}"
+    },
+    {
+      "propertyUrl": "vocab/registration_location",
+      "valueUrl": "location/{registration_location}"
+    },
+    {
+      "datatype": "string",
+      "name": "registration_seq"
+    },
+    {
+     "datatype": "string",
+     "name": "registration_flag"
+    }
+  ]
+ }
+ }
