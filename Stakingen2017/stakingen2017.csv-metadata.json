@@ -1,0 +1,297 @@
+{
+ "@id": "https://iisg.amsterdam/stakingen2017.csv",
+ "@context": [
+  "https://raw.githubusercontent.com/CLARIAH/COW/master/csvw.json",
+  {
+   "@language": "nl",
+   "@base": "https://iisg.amsterdam/"
+  },
+  {
+   "bibo": "http://purl.org/ontology/bibo/",
+   "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/",
+   "canfam-auke": "https://iisg.amsterdam/canfam/auke/",
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
+   "clio": "https://iisg.amsterdam/clio/",
+   "clioctr": "https://iisg.amsterdam/clio/country/",
+   "clioind": "https://iisg.amsterdam/clio/indicator/",
+   "clioprop": "https://iisg.amsterdam/clio/property/",
+   "csvw": "http://www.w3.org/ns/csvw#",
+   "dbo": "http://dbpedia.org/ontology/",
+   "dbp": "http://dbpedia.org/property/",
+   "dbpedia": "http://dbpedia.org/resource/",
+   "dbr": "http://dbpedia.org/resource/",
+   "dc": "http://purl.org/dc/terms/",
+   "dc11": "http://purl.org/dc/elements/1.1/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "foaf": "http://xmlns.com/foaf/0.1/",
+   "hiscam": "https://iisg.amsterdam/hiscam/",
+   "hisclass": "https://iisg.amsterdam/hisclass/",
+   "hisclass5": "https://iisg.amsterdam/hisclass5/",
+   "hisco": "https://iisg.amsterdam/hisco/",
+   "hisco-product": "https://iisg.amsterdam/hisco/product/",
+   "hisco-relation": "https://iisg.amsterdam/hisco/relation/",
+   "hisco-status": "https://iisg.amsterdam/hisco/status/",
+   "stakingen": "https://iisg.amsterdam/vocab/stakingen2017/",
+   "hsn": "https://iisg.amsterdam/hsn2013a/",
+   "ldp": "http://www.w3.org/ns/ldp#",
+   "microheights": "https://iisg.amsterdam/microheights/",
+   "napp": "https://iisg.amsterdam/napp/",
+   "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/",
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/",
+   "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/",
+   "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/",
+   "np": "http://www.nanopub.org/nschema#",
+   "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "prov": "http://www.w3.org/ns/prov#",
+   "qb": "http://purl.org/linked-data/cube#",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "schema": "http://schema.org/",
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+   "sdr": "https://iisg.amsterdam/",
+   "sdv": "https://iisg.amsterdam/vocab/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "time": "http://www.w3.org/2006/time#",
+   "xml": "http://www.w3.org/XML/1998/namespace/",
+   "xsd": "http://www.w3.org/2001/XMLSchema#"
+  }
+ ],
+ "url": "stakingen2017.csv",
+ "dialect": {
+  "delimiter": ";",
+  "encoding": "utf-8",
+  "quoteChar": "\""
+ },
+ "dc:creator": {
+    "rdf:type": [
+    {
+    "@id": "foaf:Person"
+    },
+    {
+    "@id": "prov:Person"
+    }
+    ],
+    "foaf:name": ["Bram van den Hout"],
+    "foaf:mbox": {
+    "@id": "mailto:bram.van.den.hout@iisg.nl"
+    }
+    },
+ "dc:title": "stakingen2017.csv",
+ "dcat:keyword": [],
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+  "schema:url": {
+   "@id": "http://datalegend.net"
+  }
+ },
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+ "dc:modified": {
+  "@value": "2019-12-05",
+  "@type": "xsd:date"
+ },
+ "tableSchema": {
+  "columns": [
+   {
+    "@id": "https://iisg.amsterdam/stakingen2017.csv/column/ID",
+    "name": "ID",
+    "titles": [
+     "ID"
+    ],
+    "dc:description": "ID van de staking",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/stakingen2017.csv/column/Year",
+    "name": "Year",
+    "titles": [
+     "Year"
+    ],
+    "dc:description": "Jaar waarin de staking plaats vond",
+    "datatype": "xsd:gYear"
+   },
+   {
+    "@id": "https://iisg.amsterdam/stakingen2017.csv/column/Month",
+    "name": "Month",
+    "titles": [
+     "Month"
+    ],
+    "dc:description": "Month",
+    "datatype": "xsd:gMonth"
+   },
+   {
+    "@id": "https://iisg.amsterdam/stakingen2017.csv/column/Day",
+    "name": "Day",
+    "titles": [
+     "Day"
+    ],
+    "dc:description": "Day",
+    "datatype": "xsd:gDay"
+   },
+   {
+    "@id": "https://iisg.amsterdam/stakingen2017.csv/column/Date",
+    "name": "Date",
+    "titles": [
+     "Date"
+    ],
+    "dc:description": "Date",
+    "datatype": "xsd:date"
+   },
+   {
+    "@id": "https://iisg.amsterdam/stakingen2017.csv/column/Duration",
+    "name": "Duration",
+    "titles": [
+     "Duration"
+    ],
+    "dc:description": "Duration",
+    "propertyUrl": "schema:duration",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/stakingen2017.csv/column/Description",
+    "name": "Description",
+    "titles": [
+     "Description"
+    ],
+    "dc:description": "Description",
+    "propertyUrl": "schema:description",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/stakingen2017.csv/column/Character",
+    "name": "Character",
+    "titles": [
+     "Character"
+    ],
+    "dc:description": "Character",
+    "propertyUrl": "stakingen:character",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/stakingen2017.csv/column/TypeOfStrike",
+    "name": "TypeOfStrike",
+    "titles": [
+     "TypeOfStrike"
+    ],
+    "dc:description": "TypeOfStrike",
+    "propertyUrl": "stakingen:striketype",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/stakingen2017.csv/column/Result",
+    "name": "Result",
+    "titles": [
+     "Result"
+    ],
+    "dc:description": "Result",
+    "propertyUrl": "stakingen:Result",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/stakingen2017.csv/column/Sector",
+    "name": "Sector",
+    "titles": [
+     "Sector"
+    ],
+    "dc:description": "Sector",
+    "propertyUrl": "stakingen:sector",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/stakingen2017.csv/column/Action",
+    "name": "Action",
+    "titles": [
+     "Action"
+    ],
+    "dc:description": "Action",
+    "propertyUrl": "stakingen:action",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/stakingen2017.csv/column/SpecificationOfAction",
+    "name": "SpecificationOfAction",
+    "titles": [
+     "SpecificationOfAction"
+    ],
+    "dc:description": "SpecificationOfAction",
+    "propertyUrl": "stakingen:actionspecification",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/stakingen2017.csv/column/Company",
+    "name": "Company",
+    "titles": [
+     "Company"
+    ],
+    "dc:description": "Company",
+    "propertyUrl": "schema:Organization",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/stakingen2017.csv/column/Place",
+    "name": "Place",
+    "titles": [
+     "Place"
+    ],
+    "dc:description": "Place",
+    "propertyUrl": "schema:place",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/stakingen2017.csv/column/Place_uri",
+    "name": "Place_uri",
+    "titles": [
+     "Place_uri"
+    ],
+    "dc:description": "Place_uri",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/stakingen2017.csv/column/Place_all",
+    "name": "Place_all",
+    "titles": [
+     "Place_all"
+    ],
+    "dc:description": "Place_all",
+    "propertyUrl": "stakingen:place_all",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/stakingen2017.csv/column/Occupation",
+    "name": "Occupation",
+    "titles": [
+     "Occupation"
+    ],
+    "dc:description": "Occupation",
+    "propertyUrl": "stakingen:occupation",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/stakingen2017.csv/column/Total_days",
+    "name": "Total_days",
+    "titles": [
+     "Total_days"
+    ],
+    "dc:description": "Total_days",
+    "datatype": "string"
+   },
+   {
+    "@id": "https://iisg.amsterdam/stakingen2017.csv/column/Totals",
+    "name": "Totals",
+    "titles": [
+     "Totals"
+    ],
+    "dc:description": "Totals",
+    "propertyUrl": "stakingen:totals",
+    "datatype": "integer"
+   }
+  ],
+  "primaryKey": "ID",
+  "aboutUrl": "{_row}"
+ }
+}
