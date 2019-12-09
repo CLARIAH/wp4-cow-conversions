@@ -6,7 +6,7 @@ library("cower")
 # bevolkingsregisters
 
 bevdynap = data.table::fread("gunzip -c /Users/auke/repos/sdh-private-hsn/hsndbf/BEVDYNAP.DBF.csv.gz")
-setnames(bevdynap, names(bevdynap), tolower(names(bevdynap)))
+data.table::setnames(bevdynap, names(bevdynap), tolower(names(bevdynap)))
 
 # consistent cross-household identifier
 bevdynap[, person := paste0(idnr, '_', persnr)]
@@ -17,11 +17,11 @@ rel2op = bevdynap[dynatype == 4]
 # using first() because there are 22 cases where there's a second head in the hh
 # this seems unrelated to the first household
 rel2head[, 
-    household_head := first(person[relacode %in% c(1, 105:107, 111:120)]), 
+    household_head := data.table::first(person[relacode %in% c(1, 105:107, 111:120)]), 
     by = list(idnr, huishnr)]
 
 rel2op[, 
-    op := first(person[relacode %in% 997:999]),
+    op := data.table::first(person[relacode %in% 997:999]),
     by = list(idnr, huishnr)]
 
 bevlist_head = list(
@@ -74,7 +74,7 @@ bevlist_op = list(
 
 # persoonskaarten
 
-pkdyn = fread("~/repos/sdh-private-hsn/hsndbf/PKDYNAP.DBF.csv")
+pkdyn = data.table::fread("~/repos/sdh-private-hsn/hsndbf/PKDYNAP.DBF.csv")
 setnames(pkdyn, names(pkdyn), tolower(names(pkdyn)))
 
 # consistent cross-household identifier
@@ -88,11 +88,11 @@ rel2head = pkdyn[dynatype == 1]
 rel2op = pkdyn[dynatype == 4]
 
 rel2head[, 
-    household_head := first(person[relacode %in% c(1)]), 
+    household_head := data.table::first(person[relacode %in% c(1)]), 
     by = list(idnr, famvbnr)]
 
 rel2op[, 
-    op := first(person[relacode %in% 997:999]),
+    op := data.table::first(person[relacode %in% 997:999]),
     by = list(idnr, famvbnr)]
 
 pklist_head = list(
@@ -139,23 +139,23 @@ pklist_op = list(
     rel2op[relacode %in% c(12, 22),
         list(sibling1 = person, "siblingOf", sibling2 = op)])
 
-bev_op = rbindlist(bevlist_op, use.names = FALSE)
-bev_head = rbindlist(bevlist_head, use.names = FALSE)
-pk_op = rbindlist(pklist_op, use.names = FALSE)
-pk_head = rbindlist(pklist_head, use.names = FALSE)
+bev_op = data.table::rbindlist(bevlist_op, use.names = FALSE)
+bev_head = data.table::rbindlist(bevlist_head, use.names = FALSE)
+pk_op = data.table::rbindlist(pklist_op, use.names = FALSE)
+pk_head = data.table::rbindlist(pklist_head, use.names = FALSE)
 
-bev_op[, graph := uriref("direct_relations_bev_op", "https://iisg.amsterdam/hsn/")]
-bev_head[, graph := uriref("direct_relations_bev_head", "https://iisg.amsterdam/hsn/")]
-pk_op[, graph := uriref("direct_relations_pk_op", "https://iisg.amsterdam/hsn/")]
-pk_head[, graph := uriref("direct_relations_pk_head", "https://iisg.amsterdam/hsn/")]
+bev_op[, graph := cower::uriref("direct_relations_bev_op", "https://iisg.amsterdam/hsn/")]
+bev_head[, graph := cower::uriref("direct_relations_bev_head", "https://iisg.amsterdam/hsn/")]
+pk_op[, graph := cower::uriref("direct_relations_pk_op", "https://iisg.amsterdam/hsn/")]
+pk_head[, graph := cower::uriref("direct_relations_pk_head", "https://iisg.amsterdam/hsn/")]
 
 out = rbindlist(list(bev_op, bev_head, pk_op, pk_head))
 setnames(out, names(out), c("sub", "pred", "obj", "graph"))
 
-out[, sub := uriref(sub, "https://iisg.amsterdam/hsn/code/HSNperson/")]
-out[, obj := uriref(obj, "https://iisg.amsterdam/hsn/code/HSNperson/")]
-out[, pred := uriref(pred, "https://vocab.org/relationship/")]
+out[, sub := cower::uriref(sub, "https://iisg.amsterdam/hsn/code/HSNperson/")]
+out[, obj := cower::uriref(obj, "https://iisg.amsterdam/hsn/code/HSNperson/")]
+out[, pred := cower::uriref(pred, "https://vocab.org/relationship/")]
 
 # some missing value due to missing household heads
-nqwrite(na.omit(unique(out)), 
+cower::nqwrite(na.omit(unique(out)), 
     nquadpath = "~/repos/sdh-private-hsn/hsndbf/hsnrelations.nq.gz")
