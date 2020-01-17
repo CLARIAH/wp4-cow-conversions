@@ -1,0 +1,275 @@
+{
+ "dialect": {
+  "quoteChar": "\"",
+  "delimiter": ";",
+  "encoding": "ascii"
+ },
+ "dcat:keyword": [],
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+  "schema:url": {
+   "@id": "http://datalegend.net"
+  }
+},
+"dc:author": {
+  "rdf:type": [
+    {
+      "@id": "foaf:Person"
+    },
+    {
+      "@id": "prov:Person"
+    }
+  ],
+  "foaf:name": ["Rick Mourits"]
+},"dc:author": {
+  "rdf:type": [
+    {
+      "@id": "foaf:Person"
+    },
+    {
+      "@id": "prov:Person"
+    }
+  ],
+  "foaf:name": ["Ruben Schalk"]
+},
+"prov:wasDerivedFrom": [{
+  "dc:title": {
+      "@value": "Historische Database Nederlandse Gemeenten",
+      "@lang": "nl",
+      "url": "https://datasets.iisg.amsterdam/dataset.xhtml?persistentId=hdl:10622/RPBVK4"
+  },
+  "dc:identifier": "https://hdl.handle.net/10622/RPBVK4",
+  "dc:contributor": ["Boonstra, O."],
+  "dc:contributor": ["Beekink, E."],
+  "dc:contributor": ["Engelen, T."],
+  "dc:contributor": ["Knippenberg, H."],
+  "dc:description": "This dataset contains all files from the HDNG (Historical Database of Dutch Municipalities) as were received from Onno Boonstra, PI on the HASH project generating data and improving quality of the Historical Ecological Database (HED).",
+  "skos:note": "This database has been published on, in: Erik Beekink, Onno Boonstra, Theo Engelen & Hans Knippenberg (red.), Nederland in verandering. Maatschappelijke ontwikkelingen in kaart gebracht, 1800-2000 (Aksant, Amsterdam, 2003), ISBN: 90-5260-122-4, 185 blz. met cd-rom, € 20,-. [ http://www.volkstellingen.nl/nl/nieuwsarchief/hdng_publicatie/]"
+   }],
+ "url": "hdng.csv",
+ "@context": [
+  "https://raw.githubusercontent.com/CLARIAH/COW/master/csvw.json",
+  {
+   "@base": "https://iisg.amsterdam/hdng/",
+   "@language": "nl"
+  },
+  {
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/",
+   "dbo": "http://dbpedia.org/ontology/",
+   "clioctr": "https://iisg.amsterdam/clio/country/",
+   "hisclass": "https://iisg.amsterdam/hisclass/",
+   "hisco-product": "https://iisg.amsterdam/hisco/product/",
+   "ldp": "http://www.w3.org/ns/ldp#",
+   "clio": "https://iisg.amsterdam/clio/",
+   "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
+   "dbr": "http://dbpedia.org/resource/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "xml": "http://www.w3.org/XML/1998/namespace/",
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+   "napp": "https://iisg.amsterdam/napp/",
+   "prov": "http://www.w3.org/ns/prov#",
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+   "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/",
+   "hiscam": "https://iisg.amsterdam/hiscam/",
+   "dbpedia": "http://dbpedia.org/resource/",
+   "np": "http://www.nanopub.org/nschema#",
+   "hisclass5": "https://iisg.amsterdam/hisclass5/",
+   "canfam-auke": "https://iisg.amsterdam/canfam/auke/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "schema": "http://schema.org/",
+   "microheights": "https://iisg.amsterdam/microheights/",
+   "sdv": "https://iisg.amsterdam/vocab/",
+   "hisco": "https://iisg.amsterdam/hisco/",
+   "bibo": "http://purl.org/ontology/bibo/",
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+   "hsn": "https://iisg.amsterdam/hsn2013a/",
+   "dc": "http://purl.org/dc/terms/",
+   "hisco-relation": "https://iisg.amsterdam/hisco/relation/",
+   "hisco-status": "https://iisg.amsterdam/hisco/status/",
+   "dbp": "http://dbpedia.org/property/",
+   "clioprop": "https://iisg.amsterdam/clio/property/",
+   "csvw": "http://www.w3.org/ns/csvw#",
+   "clioind": "https://iisg.amsterdam/clio/indicator/",
+   "dc11": "http://purl.org/dc/elements/1.1/",
+   "sdr": "https://iisg.amsterdam/",
+   "qb": "http://purl.org/linked-data/cube#",
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/",
+   "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/",
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "foaf": "http://xmlns.com/foaf/0.1/",
+   "xsd": "http://www.w3.org/2001/XMLSchema#",
+   "time": "http://www.w3.org/2006/time#",
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/",
+   "hdng": "https://iisg.amsterdam/hdng/",
+   "gemeentegeschiedenis": "http://www.gemeentegeschiedenis.nl/"
+  }
+ ],
+ "dc:title": "hdng_sample.csv",
+ "@id": "https://iisg.amsterdam/hdng_sample.csv",
+ "dc:modified": {
+  "@value": "2020-01-14",
+  "@type": "xsd:date"
+ },
+ "tableSchema": {
+  "aboutUrl": "hdng:observation/{NAAM}_{year}",
+  "primaryKey": "{_row}",
+  "columns": [
+   {
+    "datatype": "integer",
+    "virtual": true,
+    "titles": [
+     "CBSNR"
+    ],
+    "@id": "https://iisg.amsterdam/hdng_sample.csv/column/CBSNR",
+    "name": "CBSNR",
+    "aboutUrl": "hdng:gemeente/{NAAM}",
+    "propertyUrl": "hdng:dimension/CBSNR",
+    "valueUrl": "hdng:code/CBSNR/{CBSNR}",
+    "dc:description": "CBSNR"
+   },
+   {
+   "virtual": true,
+   "aboutUrl": "hdng:code/CBSNR/{CBSNR}",
+   "propertyUrl": "skos:exactMatch",
+   "valueUrl": "http://www.gemeentegeschiedenis.nl/cbscode/{{CBSNR.zfill(4)}}"
+   },
+   {
+    "datatype": "integer",
+    "virtual": true,
+    "titles": [
+     "ACODE"
+    ],
+    "@id": "https://iisg.amsterdam/hdng_sample.csv/column/ACODE",
+    "name": "ACODE",
+    "aboutUrl": "hdng:gemeente/{NAAM}",
+    "propertyUrl": "hdng:dimension/ACODE",
+    "valueUrl": "hdng:code/ACODE/{ACODE}",
+    "dc:description": "ACODE"
+   },
+   {
+   "virtual": true,
+   "aboutUrl": "hdng:code/ACODE/{ACODE}",
+   "propertyUrl": "skos:exactMatch",
+   "valueUrl": "gemeentegeschiedenis:amco/{ACODE}"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "NAAM"
+    ],
+    "@id": "https://iisg.amsterdam/hdng_sample.csv/column/NAAM",
+    "name": "NAAM",
+    "propertyUrl": "hdng:gemeente",
+    "valueUrl": "hdng:gemeente/{NAAM}",
+    "dc:description": "NAAM"
+   },
+   {
+    "datatype": "integer",
+    "titles": [
+     "variable"
+    ],
+    "@id": "https://iisg.amsterdam/hdng_sample.csv/column/variable",
+    "name": "variable",
+    "propertyUrl": "hdng:variable/{suffix}",
+    "csvw:value": "{value}",
+    "dc:description": "variable"
+   },
+      {
+    "datatype": "xsd:gYear",
+    "titles": [
+     "year"
+    ],
+    "@id": "https://iisg.amsterdam/hdng_sample.csv/column/year",
+    "name": "year",
+    "propertyUrl": "hdng:dimension/year",
+    "dc:description": "year"
+  },
+  {
+    "virtual": true,
+    "datatype": "xsd:gYear",
+    "aboutUrl": "hdng:gemeente/{NAAM}",
+    "propertyUrl": "hdng:dimension/year",
+    "name": "year"
+  },
+  {
+    "virtual": true,
+    "datatype": "string",
+    "aboutUrl": "hdng:gemeente/{NAAM}",
+    "propertyUrl": "schema:variableMeasured",
+    "valueUrl": "hdng:variable/{suffix}"
+  },
+  {
+  "virtual": true,
+  "aboutUrl": "hdng:variable/{suffix}",
+  "propertyUrl": "schema:hasObservation",
+  "valueUrl": "hdng:observation/{NAAM}_{year}"
+},
+{
+"virtual": true,
+"aboutUrl": "hdng:gemeente/{NAAM}",
+"propertyUrl": "schema:hasObservation",
+"valueUrl": "hdng:observation/{NAAM}_{year}"
+},
+{
+"virtual": true,
+"aboutUrl": "hdng:variable/{suffix}",
+"propertyUrl": "hdng:dimension/variable_name",
+"valueUrl": "hdng:code/variable_name/{variable_name}"
+},
+{
+"virtual": true,
+"aboutUrl": "hdng:variable/{suffix}",
+"propertyUrl": "hdng:dimension/sex",
+"valueUrl": "hdng:code/sex/{sex}",
+"null": ""
+},
+{
+"virtual": true,
+"aboutUrl": "hdng:variable/{suffix}",
+"propertyUrl": "hdng:dimension/topic",
+"valueUrl": "hdng:code/topic/{topic}"
+},
+{
+"virtual": true,
+"aboutUrl": "hdng:variable/{suffix}",
+"propertyUrl": "hdng:dimension/sources",
+"name": "sources"
+},
+{
+"virtual": true,
+"aboutUrl": "hdng:variable/{suffix}",
+"propertyUrl": "hdng:dimension/remark_1",
+"name": "remark_1",
+"null": ""
+},
+{
+"virtual": true,
+"aboutUrl": "hdng:variable/{suffix}",
+"propertyUrl": "hdng:dimension/remark_2",
+"name": "remark_2",
+"null": ""
+},
+{
+"virtual": true,
+"aboutUrl": "hdng:variable/{suffix}",
+"propertyUrl": "hdng:dimension/remark_3",
+"name": "remark_3",
+"null": ""
+},
+{
+"virtual": true,
+"aboutUrl": "hdng:variable/{suffix}",
+"propertyUrl": "hdng:dimension/remark_4",
+"name": "remark_4",
+"null": ""
+}
+    ]
+ }
+}
