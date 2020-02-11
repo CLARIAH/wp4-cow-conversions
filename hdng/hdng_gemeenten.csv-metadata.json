@@ -112,18 +112,18 @@
     "valueUrl": "hdng:code/ACODE/{ACODE}",
     "dc:description": "ACODE"
    },
-  {
-  "datatype": "string",
-  "virtual": true,
-  "titles": [
-   "suffix"
-  ],
-  "name": "suffix",
-  "aboutUrl": "hdng:gemeente/{NAAM}",
-  "propertyUrl": "hdng:vocab/SANR",
-  "valueUrl": "hdng:code/SANR/{% if suffix == 'SANR' %}{{value}}{% endif %}",
-  "dc:description": "Schoolarrondissementsnummer"
-},
+   {
+   "datatype": "string",
+   "virtual": true,
+   "titles": [
+    "suffix"
+   ],
+   "name": "suffix",
+   "aboutUrl": "hdng:gemeente/{NAAM}",
+   "propertyUrl": "hdng:vocab/SANR",
+   "valueUrl": "hdng:code/SANR/{% if suffix == 'SANR' %}{{value}}{% endif %}",
+   "dc:description": "Schoolarrondissementsnummer"
+ },
    {
    "virtual": true,
    "aboutUrl": "hdng:code/ACODE/{ACODE}",
@@ -198,7 +198,7 @@
 {
     "virtual": true,
     "aboutUrl": "hdng:variable/{suffix}",
-    "propertyUrl": "sdmx-vocab:sex",
+    "propertyUrl": "sdmx-dimension:sex",
     "valueUrl": "sdmx-code:{% if sex == 'M' %}sex-M{% elif sex == 'V' %}sex-F{% endif %}",
     "null": ""
   },
