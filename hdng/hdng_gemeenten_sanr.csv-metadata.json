@@ -76,8 +76,8 @@
    "gemeentegeschiedenis": "http://www.gemeentegeschiedenis.nl/"
   }
  ],
- "dc:title": "hdng_sample.csv",
- "@id": "https://iisg.amsterdam/hdng_sample.csv",
+ "dc:title": "hdng_gemeenten_sanr.csv",
+ "@id": "https://iisg.amsterdam/hdng_gemeenten_sanr.csv",
  "dc:modified": {
   "@value": "2020-01-14",
   "@type": "xsd:date"
@@ -92,7 +92,7 @@
     "titles": [
      "CBSNR"
     ],
-    "@id": "https://iisg.amsterdam/hdng_sample.csv/column/CBSNR",
+    "@id": "https://iisg.amsterdam/hdng_gemeenten_sanr.csv/column/CBSNR",
     "name": "CBSNR",
     "aboutUrl": "hdng:gemeente/{NAAM}",
     "propertyUrl": "hdng:vocab/CBSNR",
@@ -105,7 +105,7 @@
     "titles": [
      "ACODE"
     ],
-    "@id": "https://iisg.amsterdam/hdng_sample.csv/column/ACODE",
+    "@id": "https://iisg.amsterdam/hdng_gemeenten_sanr.csv/column/ACODE",
     "name": "ACODE",
     "aboutUrl": "hdng:gemeente/{NAAM}",
     "propertyUrl": "hdng:vocab/ACODE",
@@ -118,11 +118,11 @@
   "titles": [
    "SANR"
   ],
-  "@id": "https://iisg.amsterdam/hdng_sample.csv/column/SANR",
+  "@id": "https://iisg.amsterdam/hdng_gemeenten_sanr.csv/column/SANR",
   "name": "SANR",
   "aboutUrl": "hdng:gemeente/{NAAM}",
   "propertyUrl": "hdng:vocab/SANR",
-  "valueUrl": "hdng:code/ACODE/{SANR}",
+  "valueUrl": "hdng:code/SANR/{SANR}",
   "dc:description": "Schoolarrondissementsnummer"
  },
    {
@@ -136,7 +136,7 @@
     "titles": [
      "NAAM"
     ],
-    "@id": "https://iisg.amsterdam/hdng_sample.csv/column/NAAM",
+    "@id": "https://iisg.amsterdam/hdng_gemeenten_sanr.csv/column/NAAM",
     "name": "NAAM",
     "propertyUrl": "hdng:gemeente",
     "valueUrl": "hdng:gemeente/{NAAM}",
@@ -147,7 +147,7 @@
     "titles": [
      "variable"
     ],
-    "@id": "https://iisg.amsterdam/hdng_sample.csv/column/variable",
+    "@id": "https://iisg.amsterdam/hdng_gemeenten_sanr.csv/column/variable",
     "name": "variable",
     "propertyUrl": "hdng:variable/{suffix}",
     "csvw:value": "{value}",
@@ -158,7 +158,7 @@
     "titles": [
      "year"
     ],
-    "@id": "https://iisg.amsterdam/hdng_sample.csv/column/year",
+    "@id": "https://iisg.amsterdam/hdng_gemeenten_sanr.csv/column/year",
     "name": "year",
     "propertyUrl": "hdng:vocab/year",
     "dc:description": "year"
