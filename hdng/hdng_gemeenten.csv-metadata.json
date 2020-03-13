@@ -2,7 +2,7 @@
  "dialect": {
   "quoteChar": "\"",
   "delimiter": ";",
-  "encoding": "utf-8"
+  "encoding": "ascii"
  },
  "dcat:keyword": [],
  "dc:license": {
@@ -14,7 +14,7 @@
    "@id": "http://datalegend.net"
   }
  },
- "url": "hdng_gemeenten_sanr.csv",
+ "url": "hdng_sample.csv",
  "@context": [
   "https://raw.githubusercontent.com/CLARIAH/COW/master/csvw.json",
   {
@@ -76,8 +76,8 @@
    "gemeentegeschiedenis": "http://www.gemeentegeschiedenis.nl/"
   }
  ],
- "dc:title": "hdng_gemeenten_sanr.csv",
- "@id": "https://iisg.amsterdam/hdng_gemeenten_sanr.csv",
+ "dc:title": "hdng_gemeenten.csv",
+ "@id": "https://iisg.amsterdam/hdng_gemeenten.csv",
  "dc:modified": {
   "@value": "2020-01-14",
   "@type": "xsd:date"
@@ -92,11 +92,11 @@
     "titles": [
      "CBSNR"
     ],
-    "@id": "https://iisg.amsterdam/hdng_gemeenten_sanr.csv/column/CBSNR",
+    "@id": "https://iisg.amsterdam/hdng_gemeenten.csv/column/CBSNR",
     "name": "CBSNR",
     "aboutUrl": "hdng:gemeente/{NAAM}",
     "propertyUrl": "hdng:vocab/CBSNR",
-    "valueUrl": "hdng:code/CBSNR/{CBSNR}",
+    "valueUrl": "{CBSNR}",
     "dc:description": "CBSNR"
    },
      {
@@ -105,28 +105,28 @@
     "titles": [
      "ACODE"
     ],
-    "@id": "https://iisg.amsterdam/hdng_gemeenten_sanr.csv/column/ACODE",
+    "@id": "https://iisg.amsterdam/hdng_gemeenten.csv/column/ACODE",
     "name": "ACODE",
     "aboutUrl": "hdng:gemeente/{NAAM}",
     "propertyUrl": "hdng:vocab/ACODE",
-    "valueUrl": "hdng:code/ACODE/{ACODE}",
+    "valueUrl": "{ACODE}",
     "dc:description": "ACODE"
    },
+  {
+  "datatype": "string",
+  "virtual": true,
+  "titles": [
+   "suffix"
+  ],
+  "name": "suffix",
+  "aboutUrl": "hdng:gemeente/{NAAM}",
+  "propertyUrl": "hdng:vocab/SANR",
+  "csvw:value": "{% if suffix == 'SANR' %}{{value}}{% endif %}",
+  "dc:description": "Schoolarrondissementsnummer"
+},
    {
-   "datatype": "string",
    "virtual": true,
-   "titles": [
-    "suffix"
-   ],
-   "name": "suffix",
-   "aboutUrl": "hdng:gemeente/{NAAM}",
-   "propertyUrl": "hdng:vocab/SANR",
-   "valueUrl": "hdng:code/SANR/{% if suffix == 'SANR' %}{{value}}{% endif %}",
-   "dc:description": "Schoolarrondissementsnummer"
- },
-   {
-   "virtual": true,
-   "aboutUrl": "hdng:code/ACODE/{ACODE}",
+   "aboutUrl": "{ACODE}",
    "propertyUrl": "skos:exactMatch",
    "valueUrl": "gemeentegeschiedenis:amco/{ACODE}"
    },
@@ -135,7 +135,7 @@
     "titles": [
      "NAAM"
     ],
-    "@id": "https://iisg.amsterdam/hdng_gemeenten_sanr.csv/column/NAAM",
+    "@id": "https://iisg.amsterdam/hdng_gemeenten.csv/column/NAAM",
     "name": "NAAM",
     "propertyUrl": "hdng:gemeente",
     "valueUrl": "hdng:gemeente/{NAAM}",
@@ -143,21 +143,23 @@
    },
    {
     "datatype": "integer",
+    "virtual": true,
     "titles": [
-     "variable"
+     "suffix"
     ],
-    "@id": "https://iisg.amsterdam/hdng_gemeenten_sanr.csv/column/variable",
-    "name": "variable",
+    "name": "suffix",
+    "@id": "https://iisg.amsterdam/hdng_gemeenten.csv/column/suffix",
     "propertyUrl": "hdng:variable/{suffix}",
-    "csvw:value": "{value}",
-    "dc:description": "variable"
+    "dc:description": "variable code",
+    "csvw:value": "{% if suffix != 'SANR' %}{{value}}{% endif %}",
+    "null": {"@list": [{"name": "suffix", "null": ["SANR"]}]}
    },
       {
     "datatype": "xsd:gYear",
     "titles": [
      "year"
     ],
-    "@id": "https://iisg.amsterdam/hdng_gemeenten_sanr.csv/column/year",
+    "@id": "https://iisg.amsterdam/hdng_gemeenten.csv/column/year",
     "name": "year",
     "propertyUrl": "hdng:vocab/year",
     "dc:description": "year"
@@ -177,6 +179,12 @@
     "valueUrl": "hdng:variable/{suffix}"
   },
   {
+    "virtual": true,
+    "aboutUrl": "hdng:variable/{suffix}",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "hdng:variable"
+   },
+  {
   "virtual": true,
   "aboutUrl": "hdng:variable/{suffix}",
   "propertyUrl": "schema:hasObservation",
@@ -184,21 +192,46 @@
 },
 {
 "virtual": true,
+"aboutUrl": "hdng:observation/{NAAM}_{year}",
+"propertyUrl": "rdf:type",
+"valueUrl": "hdng:observation"
+},
+{
+"datatype": "string",
+"virtual": true,
 "aboutUrl": "hdng:variable/{suffix}",
 "propertyUrl": "hdng:vocab/variable_name",
-"valueUrl": "hdng:code/variable_name/{variable_name}"
+"name": "variable_name"
+},
+{
+"virtual": true,
+"aboutUrl": "hdng:variable/{suffix}",
+"propertyUrl": "hdng:vocab/category",
+"valueUrl": "hdng:category/{description}"
+},
+{
+  "virtual": true,
+  "aboutUrl": "hdng:category/{description}",
+  "propertyUrl": "rdf:type",
+  "valueUrl": "hdng:category"
+ },
+{
+"virtual": true,
+"aboutUrl": "hdng:category/{description}",
+"propertyUrl": "skos:narrower",
+"valueUrl": "hdng:specification/{information}"
 },
 {
 "virtual": true,
 "aboutUrl": "hdng:variable/{suffix}",
 "propertyUrl": "hdng:vocab/sex",
-"valueUrl": "hdng:code/sex/{sex}",
+"valueUrl": "hdng:sex/{sex}",
 "null": ""
 },
 {
     "virtual": true,
     "aboutUrl": "hdng:variable/{suffix}",
-    "propertyUrl": "sdmx-dimension:sex",
+    "propertyUrl": "sdmx-vocab:sex",
     "valueUrl": "sdmx-code:{% if sex == 'M' %}sex-M{% elif sex == 'V' %}sex-F{% endif %}",
     "null": ""
   },
@@ -206,7 +239,7 @@
 "virtual": true,
 "aboutUrl": "hdng:variable/{suffix}",
 "propertyUrl": "hdng:vocab/topic",
-"valueUrl": "hdng:code/topic/{topic}"
+"valueUrl": "hdng:topic/{topic}"
 },
 {
 "virtual": true,
