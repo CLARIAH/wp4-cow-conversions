@@ -108,26 +108,26 @@
     "@id": "https://iisg.amsterdam/hdng_gemeenten.csv/column/ACODE",
     "name": "ACODE",
     "aboutUrl": "hdng:gemeente/{NAAM}",
-    "propertyUrl": "hdng:vocab/ACODE",
-    "valueUrl": "{ACODE}",
+    "propertyUrl": "hdng:vocab/AMCO",
+    "valueUrl": "hdng:AMCO/{ACODE}",
     "dc:description": "ACODE"
    },
-  {
-  "datatype": "string",
-  "virtual": true,
-  "titles": [
-   "suffix"
-  ],
-  "name": "suffix",
-  "aboutUrl": "hdng:gemeente/{NAAM}",
-  "propertyUrl": "hdng:vocab/SANR",
-  "csvw:value": "{% if suffix == 'SANR' %}{{value}}{% endif %}",
-  "dc:description": "Schoolarrondissementsnummer"
-},
+   {
+   "datatype": "string",
+   "virtual": true,
+   "titles": [
+    "suffix"
+   ],
+   "name": "suffix",
+   "aboutUrl": "hdng:gemeente/{NAAM}",
+   "propertyUrl": "hdng:vocab/SANR",
+   "valueUrl": "hdng:SANR/{% if suffix == 'SANR' %}{{value}}{% endif %}",
+   "dc:description": "Schoolarrondissementsnummer"
+ },
    {
    "virtual": true,
-   "aboutUrl": "{ACODE}",
-   "propertyUrl": "skos:exactMatch",
+   "aboutUrl": "hdng:gemeente/{NAAM}",
+   "propertyUrl": "gemeentegeschiedenis/gg-schema#amsterdamCode",
    "valueUrl": "gemeentegeschiedenis:amco/{ACODE}"
    },
    {
@@ -192,15 +192,27 @@
 },
 {
 "virtual": true,
+"aboutUrl": "hdng:gemeente/{NAAM}",
+"propertyUrl": "schema:hasObservation",
+"valueUrl": "hdng:observation/{NAAM}_{year}"
+},
+{
+"virtual": true,
 "aboutUrl": "hdng:observation/{NAAM}_{year}",
 "propertyUrl": "rdf:type",
 "valueUrl": "hdng:observation"
 },
 {
+"virtual": true,
+"aboutUrl": "hdng:gemeente/{NAAM}",
+"propertyUrl": "rdf:type",
+"valueUrl": "hdng:gemeente"
+},
+{
 "datatype": "string",
 "virtual": true,
 "aboutUrl": "hdng:variable/{suffix}",
-"propertyUrl": "hdng:vocab/variable_name",
+"propertyUrl": "hdng:vocab/variableName",
 "name": "variable_name"
 },
 {
@@ -217,8 +229,8 @@
  },
 {
 "virtual": true,
-"aboutUrl": "hdng:category/{description}",
-"propertyUrl": "skos:narrower",
+"aboutUrl": "hdng:variable/{suffix}",
+"propertyUrl": "hdng:vocab/specification",
 "valueUrl": "hdng:specification/{information}"
 },
 {
