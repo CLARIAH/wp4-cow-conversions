@@ -108,8 +108,8 @@
     "@id": "https://iisg.amsterdam/hdng_gemeenten.csv/column/ACODE",
     "name": "ACODE",
     "aboutUrl": "hdng:gemeente/{NAAM}",
-    "propertyUrl": "hdng:vocab/AMCO",
-    "valueUrl": "hdng:AMCO/{ACODE}",
+    "propertyUrl": "hdng:vocab/ACODE",
+    "valueUrl": "hdng:ACODE/{ACODE}",
     "dc:description": "ACODE"
    },
    {
@@ -127,8 +127,8 @@
    {
    "virtual": true,
    "aboutUrl": "hdng:gemeente/{NAAM}",
-   "propertyUrl": "gemeentegeschiedenis/gg-schema#amsterdamCode",
-   "valueUrl": "gemeentegeschiedenis:amco/{ACODE}"
+   "propertyUrl": "http://www.gemeentegeschiedenis.nl/gg-schema#amsterdamCode",
+   "valueUrl": "http://www.gemeentegeschiedenis.nl/amco/{ACODE}"
    },
    {
     "datatype": "string",
