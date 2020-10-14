@@ -87,7 +87,7 @@
      "virtual": "true",
      "datatype": "int",
      "propertyUrl": "vocab/personID",
-     "csvw:value":"{_row}"
+     "csvw:value":"{{ ['10_', _row]|join }}"
    },
    {
     "propertyUrl": "rdf:type",
@@ -222,13 +222,6 @@
 },
 {
   "virtual": "true",
-  "datatype": "int",
-  "aboutUrl": "person/{{ ['3_', _row]|join }}",
-  "propertyUrl": "vocab/personID",
-  "csvw:value":"{{ ['3_', _row]|join }}"
-},
-{
-  "virtual": "true",
  "propertyUrl": "rdf:type",
  "aboutUrl": "person/{{ ['2_', _row]|join }}",
  "valueUrl": "schema:Person"
@@ -319,6 +312,12 @@
  "aboutUrl":"death/{clarid}",
  "propertyUrl": "vocab/event_location",
  "valueUrl": "place/{EVENT_PLACE_ST}"
+},
+{
+"virtual": "true",
+"aboutUrl":"death/{clarid}",
+"propertyUrl": "vocab/event_remark",
+"csvw:value": "{SOURCE_REMARK}"
 },
 {
   "virtual": "true",
