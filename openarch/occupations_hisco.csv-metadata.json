@@ -1,0 +1,140 @@
+{
+ "dialect": {
+  "quoteChar": "\"",
+  "delimiter": ";",
+  "encoding": "utf-8"
+ },
+ "dcat:keyword": [],
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+  "schema:url": {
+   "@id": "http://datalegend.net"
+  }
+ },
+ "url": "deaths_occupations_hisco.csv",
+ "@context": [
+  "https://raw.githubusercontent.com/CLARIAH/COW/master/csvw.json",
+  {
+   "@base": "https://iisg.amsterdam/openarchdeaths/",
+   "@language": "en"
+  },
+  {
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/",
+   "dbo": "http://dbpedia.org/ontology/",
+   "clioctr": "https://iisg.amsterdam/clio/country/",
+   "hisclass": "https://iisg.amsterdam/hisclass/",
+   "hisco-product": "https://iisg.amsterdam/hisco/product/",
+   "ldp": "http://www.w3.org/ns/ldp#",
+   "clio": "https://iisg.amsterdam/clio/",
+   "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
+   "dbr": "http://dbpedia.org/resource/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "xml": "http://www.w3.org/XML/1998/namespace/",
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+   "napp": "https://iisg.amsterdam/napp/",
+   "prov": "http://www.w3.org/ns/prov#",
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+   "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/",
+   "hiscam": "https://iisg.amsterdam/hiscam/",
+   "dbpedia": "http://dbpedia.org/resource/",
+   "np": "http://www.nanopub.org/nschema#",
+   "hisclass5": "https://iisg.amsterdam/hisclass5/",
+   "canfam-auke": "https://iisg.amsterdam/canfam/auke/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "schema": "http://schema.org/",
+   "microheights": "https://iisg.amsterdam/microheights/",
+   "sdv": "https://iisg.amsterdam/vocab/",
+   "hisco": "https://iisg.amsterdam/hisco/",
+   "bibo": "http://purl.org/ontology/bibo/",
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+   "hsn": "https://iisg.amsterdam/hsn2013a/",
+   "dc": "http://purl.org/dc/terms/",
+   "hisco-relation": "https://iisg.amsterdam/hisco/relation/",
+   "hisco-status": "https://iisg.amsterdam/hisco/status/",
+   "dbp": "http://dbpedia.org/property/",
+   "clioprop": "https://iisg.amsterdam/clio/property/",
+   "csvw": "http://www.w3.org/ns/csvw#",
+   "clioind": "https://iisg.amsterdam/clio/indicator/",
+   "dc11": "http://purl.org/dc/elements/1.1/",
+   "sdr": "https://iisg.amsterdam/",
+   "qb": "http://purl.org/linked-data/cube#",
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/",
+   "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/",
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "foaf": "http://xmlns.com/foaf/0.1/",
+   "xsd": "http://www.w3.org/2001/XMLSchema#",
+   "time": "http://www.w3.org/2006/time#",
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/"
+  }
+ ],
+ "dc:title": "deaths_occupations_hisco.csv",
+ "@id": "https://iisg.amsterdam/deaths_occupations_hisco.csv",
+ "dc:modified": {
+  "@value": "2020-08-20",
+  "@type": "xsd:date"
+ },
+ "tableSchema": {
+  "aboutUrl": "occupation/{{occupation}}",
+  "primaryKey": "{{occupation}}",
+  "columns": [
+    {
+    "datatype": "string",
+    "titles": [
+     "HISCO"
+    ],
+    "@id": "https://iisg.amsterdam/deaths_occupations_hisco.csv/column/HISCO",
+    "name": "HISCO",
+    "propertyUrl": "schema:categoryCode",
+    "valueUrl": "https://iisg.amsterdam/hisco/code/hisco/{{HISCO}}",
+    "dc:description": "HISCO"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "HISCLASS"
+    ],
+    "propertyUrl": "https://iisg.amsterdam/openarchdeath/vocab/hisclass",
+    "@id": "https://iisg.amsterdam/deaths_occupations_hisco.csv/column/HISCLASS",
+    "name": "HISCLASS",
+    "dc:description": "HISCLASS"
+   },
+   {
+    "datatype": "integer",
+    "titles": [
+     "HISCLASS_5"
+    ],
+    "propertyUrl": "https://iisg.amsterdam/openarchdeath/vocab/hisclass_5",
+    "@id": "https://iisg.amsterdam/deaths_occupations_hisco.csv/column/HISCLASS_5",
+    "name": "HISCLASS_5",
+    "dc:description": "HISCLASS_5"
+   },
+   {
+    "datatype": "xsd:decimal",
+    "titles": [
+     "HISCAM_NL"
+    ],
+    "propertyUrl": "https://iisg.amsterdam/openarchdeath/vocab/hiscam_nl",
+    "@id": "https://iisg.amsterdam/deaths_occupations_hisco.csv/column/HISCAM_NL",
+    "name": "HISCAM_NL",
+    "dc:description": "HISCAM_NL"
+  },
+  {
+   "datatype": "integer",
+   "titles": [
+    "OCC1950"
+   ],
+   "propertyUrl": "https://iisg.amsterdam/openarchdeath/vocab/occ1950",
+   "@id": "https://iisg.amsterdam/deaths_occupations_hisco.csv/column/OCC1950",
+   "name": "OCC1950",
+   "dc:description": "OCC1950"
+  }
+  ]
+ }
+}
