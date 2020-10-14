@@ -4,7 +4,7 @@
   "https://raw.githubusercontent.com/CLARIAH/COW/master/csvw.json",
   {
    "@language": "en",
-   "@base": "https://iisg.amsterdam/"
+   "@base": "https://iisg.amsterdam/openarchdeaths/"
   },
   {
    "bibo": "http://purl.org/ontology/bibo/",
