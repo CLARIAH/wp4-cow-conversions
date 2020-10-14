@@ -317,7 +317,7 @@
 "virtual": "true",
 "aboutUrl":"death/{clarid}",
 "propertyUrl": "vocab/event_remark",
-"csvw:value": "{SOURCE_REMARK}"
+"csvw:value": "{EVENT_REMARK}"
 },
 {
   "virtual": "true",
