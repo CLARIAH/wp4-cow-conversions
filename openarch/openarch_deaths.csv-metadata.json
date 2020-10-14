@@ -1,0 +1,348 @@
+{
+ "@id": "https://iisg.amsterdam/jsontest.csv",
+ "@context": [
+  "https://raw.githubusercontent.com/CLARIAH/COW/master/csvw.json",
+  {
+   "@language": "en",
+   "@base": "https://iisg.amsterdam/"
+  },
+  {
+   "bibo": "http://purl.org/ontology/bibo/",
+   "bio": "http://purl.org/vocab/bio/0.1/",
+   "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/",
+   "canfam-auke": "https://iisg.amsterdam/canfam/auke/",
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
+   "clio": "https://iisg.amsterdam/clio/",
+   "clioctr": "https://iisg.amsterdam/clio/country/",
+   "clioind": "https://iisg.amsterdam/clio/indicator/",
+   "clioprop": "https://iisg.amsterdam/clio/property/",
+   "csvw": "http://www.w3.org/ns/csvw#",
+   "dbo": "http://dbpedia.org/ontology/",
+   "dbp": "http://dbpedia.org/property/",
+   "dbpedia": "http://dbpedia.org/resource/",
+   "dbr": "http://dbpedia.org/resource/",
+   "dc": "http://purl.org/dc/terms/",
+   "dc11": "http://purl.org/dc/elements/1.1/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "foaf": "http://xmlns.com/foaf/0.1/",
+   "hiscam": "https://iisg.amsterdam/hiscam/",
+   "hisclass": "https://iisg.amsterdam/hisclass/",
+   "hisclass5": "https://iisg.amsterdam/hisclass5/",
+   "hisco": "https://iisg.amsterdam/hisco/",
+   "hisco-product": "https://iisg.amsterdam/hisco/product/",
+   "hisco-relation": "https://iisg.amsterdam/hisco/relation/",
+   "hisco-status": "https://iisg.amsterdam/hisco/status/",
+   "hsn": "https://iisg.amsterdam/hsn2013a/",
+   "ldp": "http://www.w3.org/ns/ldp#",
+   "microheights": "https://iisg.amsterdam/microheights/",
+   "napp": "https://iisg.amsterdam/napp/",
+   "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/",
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/",
+   "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/",
+   "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/",
+   "np": "http://www.nanopub.org/nschema#",
+   "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "prov": "http://www.w3.org/ns/prov#",
+   "qb": "http://purl.org/linked-data/cube#",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "schema": "http://schema.org/",
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+   "sdr": "https://iisg.amsterdam/",
+   "sdv": "https://iisg.amsterdam/vocab/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "time": "http://www.w3.org/2006/time#",
+   "xml": "http://www.w3.org/XML/1998/namespace/",
+   "xsd": "http://www.w3.org/2001/XMLSchema#"
+  }
+ ],
+ "url": "jsontest.csv",
+ "dialect": {
+  "delimiter": ";",
+  "encoding": "utf-8",
+  "quoteChar": "\""
+ },
+ "dc:title": "jsontest.csv",
+ "dcat:keyword": [],
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+  "schema:url": {
+   "@id": "http://datalegend.net"
+  }
+ },
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+ "dc:modified": {
+  "@value": "2020-10-14",
+  "@type": "xsd:date"
+ },
+ "tableSchema": {
+  "columns": [
+   {
+     "virtual": "true",
+     "datatype": "int",
+     "propertyUrl": "vocab/personID",
+     "csvw:value":"{_row}"
+   },
+   {
+    "propertyUrl": "rdf:type",
+    "valueUrl": "schema:Person"
+   },
+   {
+    "virtual": "true",
+    "datatype": "string",
+    "name": "PR_NAME_GN",
+    "propertyUrl": "schema:givenName",
+    "csvw:value": "{{PR_NAME_GN|lower()}}",
+    "null": [""]
+   },
+   {
+    "virtual": "true",
+    "datatype": "string",
+    "name": "PR_NAME_SPRE",
+    "propertyUrl": "vocab/prefixFamilyName",
+    "csvw:value": "{{PR_NAME_SPRE|lower()}}",
+    "null": [""]
+   },
+   {
+    "virtual": "true",
+    "datatype": "string",
+    "name": "PR_NAME_SURN",
+    "propertyUrl": "vocab/familyName",
+    "csvw:value": "{{PR_NAME_SURN|lower()}}",
+    "null": [""]
+   },
+     {
+    "virtual": "true",
+    "datatype": "string",
+    "propertyUrl": "schema:gender",
+    "name": "PR_GENDER",
+    "valueUrl": "schema/{% if PR_GENDER =='m' %}Male{% elif Gender =='f' %}Female{% endif %}",
+    "null": [""]
+   },
+   {
+  "virtual": "true",
+  "datatype": "xsd:date",
+  "name": "PR_BIR_YEAR",
+  "propertyUrl": "schema:birthDate",
+  "csvw:value": "{{['%04d'| format(PR_BIR_YEAR|int),'-','%02d' | format(PR_BIR_MONTH|int),'-','%02d'|format(PR_BIR_DAY|int)]|join}}",
+  "null": [""]
+ },
+ {
+"virtual": "true",
+"name": "PR_BIR_PLACE",
+"datatype": "string",
+"propertyUrl": "schema:birthPlace",
+"null": [""]
+},
+ {
+ "virtual": "true",
+ "datatype": "string",
+ "name": "PR_OCCUPATION",
+ "propertyUrl": "schema:hasOccupation",
+ "valueUrl": "occupation/{{PR_OCCUPATION}}",
+ "null": [""]
+},
+   {
+   "name": "PR_AGE",
+   "datatype": "int",
+   "propertyUrl": "vocab/ageYears",
+   "csvw:value":"{PR_AGE}",
+   "null": [""]
+ },
+ {
+   "virtual": "true",
+   "datatype": "int",
+   "aboutUrl": "person/{{ ['3_', _row]|join }}",
+   "propertyUrl": "vocab/personID",
+   "csvw:value":"{{ ['3_', _row]|join }}"
+ },
+ {
+   "virtual": "true",
+  "propertyUrl": "rdf:type",
+  "aboutUrl": "person/{{ ['3_', _row]|join }}",
+  "valueUrl": "schema:Person"
+ },
+ {
+  "virtual": "true",
+  "aboutUrl": "person/{{ ['3_', _row]|join }}",
+  "datatype": "string",
+  "name": "PR_FTHR_NAME_GN",
+  "propertyUrl": "schema:givenName",
+  "csvw:value": "{{PR_FTHR_NAME_GN|lower()}}",
+  "null": [""]
+ },
+ {
+  "virtual": "true",
+  "datatype": "string",
+  "aboutUrl": "person/{{ ['3_', _row]|join }}",
+  "name": "PR_FTHR_NAME_SPRE",
+  "propertyUrl": "vocab/prefixFamilyName",
+  "csvw:value": "{{PR_FTHR_NAME_SPRE|lower()}}",
+  "null": [""]
+ },
+ {
+  "virtual": "true",
+  "datatype": "string",
+  "aboutUrl": "person/{{ ['3_', _row]|join }}",
+  "name": "PR_FTHR_NAME_SURN",
+  "propertyUrl": "vocab/familyName",
+  "csvw:value": "{{PR_FTHR_NAME_SURN|lower()}}",
+  "null": [""]
+ },
+   {
+  "virtual": "true",
+  "datatype": "string",
+  "aboutUrl": "person/{{ ['3_', _row]|join }}",
+  "propertyUrl": "schema:gender",
+  "valueUrl": "schema/Male"
+  },
+ {
+  "virtual": "true",
+ "name": "PR_FTHR_AGE",
+ "aboutUrl": "person/{{ ['3_', _row]|join }}",
+ "datatype": "int",
+ "propertyUrl": "vocab/ageYears",
+ "csvw:value":"{PR_FTHR_AGE}",
+ "null": [""]
+},
+{
+"virtual": "true",
+"datatype": "string",
+"aboutUrl": "person/{{ ['3_', _row]|join }}",
+"name": "PR_FTHR_OCCUPATION",
+"propertyUrl": "schema:hasOccupation",
+"valueUrl": "occupation/{{PR_FTHR_OCCUPATION}}",
+"null": [""]
+},
+{
+  "virtual": "true",
+  "datatype": "int",
+  "aboutUrl": "person/{{ ['3_', _row]|join }}",
+  "propertyUrl": "vocab/personID",
+  "csvw:value":"{{ ['3_', _row]|join }}"
+},
+{
+  "virtual": "true",
+ "propertyUrl": "rdf:type",
+ "aboutUrl": "person/{{ ['2_', _row]|join }}",
+ "valueUrl": "schema:Person"
+},
+{
+ "virtual": "true",
+ "aboutUrl": "person/{{ ['2_', _row]|join }}",
+ "datatype": "string",
+ "name": "PR_MTHR_NAME_GN",
+ "propertyUrl": "schema:givenName",
+ "csvw:value": "{{PR_MTHR_NAME_GN|lower()}}",
+ "null": [""]
+},
+{
+ "virtual": "true",
+ "datatype": "string",
+ "aboutUrl": "person/{{ ['2_', _row]|join }}",
+ "name": "PR_MTHR_NAME_SPRE",
+ "propertyUrl": "vocab/prefixFamilyName",
+ "csvw:value": "{{PR_MTHR_NAME_SPRE|lower()}}",
+ "null": [""]
+},
+{
+ "virtual": "true",
+ "datatype": "string",
+ "aboutUrl": "person/{{ ['2_', _row]|join }}",
+ "name": "PR_MTHR_NAME_SURN",
+ "propertyUrl": "vocab/familyName",
+ "csvw:value": "{{PR_MTHR_NAME_SURN|lower()}}"
+},
+  {
+ "virtual": "true",
+ "datatype": "string",
+ "aboutUrl": "person/{{ ['2_', _row]|join }}",
+ "propertyUrl": "schema:gender",
+ "valueUrl": "schema/Female"
+ },
+{
+"name": "PR_MTHR_AGE",
+"aboutUrl": "person/{{ ['2_', _row]|join }}",
+"datatype": "int",
+"propertyUrl": "vocab/ageYears",
+"csvw:value":"{PR_MTHR_AGE}",
+"null": [""]
+},
+ {
+   "virtual": "true",
+   "aboutUrl":"death/{clarid}",
+   "propertyUrl": "vocab/deceased",
+   "valueUrl": "person/{{ ['10_', _row]|join }}"
+ },
+ {
+   "virtual": "true",
+   "aboutUrl":"death/{clarid}",
+   "propertyUrl": "vocab/father",
+   "valueUrl": "person/{{ ['3_', _row]|join }}"
+ },
+ {
+   "virtual": "true",
+   "aboutUrl":"death/{clarid}",
+   "propertyUrl": "vocab/mother",
+   "valueUrl": "person/{{ ['2_', _row]|join }}"
+ },
+ {
+   "virtual": "true",
+   "datatype": "int",
+   "aboutUrl": "person/{{ ['2_', _row]|join }}",
+   "propertyUrl": "vocab/personID",
+   "csvw:value":"{{ ['2_', _row]|join }}"
+ },
+ {
+   "virtual": "true",
+   "aboutUrl":"death/{clarid}",
+   "propertyUrl": "rdf:type",
+   "valueUrl": "bio:Death"
+ },
+ {
+   "virtual": "true",
+   "datatype": "date",
+   "name": "EVENT_YEAR",
+   "aboutUrl":"death/{clarid}",
+   "propertyUrl": "bio:date",
+   "csvw:value": "{{['%04d'| format(EVENT_YEAR|int),'-','%02d' | format(EVENT_MONTH|int),'-','%02d'|format(EVENT_DAY|int)]|join}}",
+   "null": [""]
+ },
+  {
+ "virtual": "true",
+ "aboutUrl":"death/{clarid}",
+ "propertyUrl": "vocab/event_location",
+ "valueUrl": "place/{EVENT_PLACE_ST}"
+},
+{
+  "virtual": "true",
+  "name": "SOURCE_DIGITAL_ORIGINAL",
+  "datatype": "xsd:anyURI",
+  "aboutUrl":"death/{clarid}",
+  "propertyUrl": "vocab/LinkOpenArch",
+  "valueUrl": "{SOURCE_DIGITAL_ORIGINAL}"
+},
+{
+"virtual": "true",
+"aboutUrl": "place/{EVENT_PLACE_ST}",
+"propertyUrl": "http://www.gemeentegeschiedenis.nl/gg-schema#amsterdamCode",
+"valueUrl": "http://www.gemeentegeschiedenis.nl/amco/{amco}"
+},
+{
+"virtual": "true",
+"aboutUrl": "place/{EVENT_PLACE_ST}",
+"propertyUrl": "vocab/placeMatch",
+"csvw:value": "{match}",
+"description": "number refers to how place name was matched, see documentation"
+}
+  ],
+  "primaryKey": "_row",
+  "aboutUrl": "person/{{ ['10_', _row]|join }}"
+ }
+}
