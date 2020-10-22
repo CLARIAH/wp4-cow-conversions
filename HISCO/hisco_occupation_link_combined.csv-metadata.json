@@ -1,0 +1,175 @@
+{
+ "dialect": {
+  "quoteChar": "\"",
+  "delimiter": ",",
+  "encoding": "utf-8"
+ },
+ "dcat:keyword": [],
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+  "schema:url": {
+   "@id": "http://datalegend.net"
+  }
+ },
+ "url": "hisco_occupation_link_combined.csv",
+ "@context": [
+  "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json",
+  {
+   "@base": "https://iisg.amsterdam/hisco/",
+   "@language": "en"
+  },
+  {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "dbo": "http://dbpedia.org/ontology/",
+    "hisclass": "https://iisg.amsterdam/resource/hisclass/",
+    "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
+    "dbr": "http://dbpedia.org/resource/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "xml": "http://www.w3.org/XML/1998/namespace/",
+    "bibo": "http://purl.org/ontology/bibo/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "hiscam": "https://iisg.amsterdam/resource/hiscam/",
+    "dbpedia": "http://dbpedia.org/resource/",
+    "np": "http://www.nanopub.org/nschema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "http://schema.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "sdv": "https://iisg.amsterdam/vocab/",
+    "sdr": "https://iisg.amsterdam/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "time": "http://www.w3.org/2006/time#",
+    "hsn": "https://iisg.amsterdam/resource/hsn2013a/",
+    "dc": "http://purl.org/dc/terms/",
+    "hisco": "https://iisg.amsterdam/hisco/",
+    "hisco-code": "https://iisg.amsterdam/hisco/code/hisco/",
+    "hisco-status": "https://iisg.amsterdam/code/status/",
+    "hisco-relation": "https://iisg.amsterdam/code/relation/",
+    "hisco-product": "https://iisg.amsterdam/hisco/code/product/",
+    "jobHoard": "https://iisg.amsterdam/jobHoard/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dbp": "http://dbpedia.org/property/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc11": "http://purl.org/dc/elements/1.1/",
+    "qb": "http://purl.org/linked-data/cube#",
+    "hisclass5": "https://iisg.amsterdam/resource/hisclass5/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "sdmx": "http://purl.org/linked-data/sdmx#",
+    "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+    "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+    "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+    "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+    "bibo": "http://purl.org/ontology/bibo/",
+    "xkos": "http://rdf-vocabulary.ddialliance.org/xkos#",
+    "gnd": "http://d-nb.info/standards/elementset/gnd#"
+  }
+ ],
+ "dc:title": "hisco_occupation_link_combined.csv",
+ "@id": "https://iisg.amsterdam/hisco_occupation_link_combined.csv",
+ "dc:modified": {
+  "@value": "2019-04-10",
+  "@type": "xsd:date"
+ },
+ "tableSchema": {
+  "aboutUrl": "label",
+  "primaryKey": "occupation_id",
+  "columns": [
+   {
+    "titles": [
+     "label"
+    ],
+    "@id": "https://iisg.amsterdam/hisco_occupation_link_combined.csv/column/label",
+    "name": "label",
+    "dc:description": "job title",
+    "virtual":true,
+    "aboutUrl": "{provenance}/{label}",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "gnd:professionOrOccupationAsLiteral"
+   },
+   {
+     "virtual": true,
+     "datatype": "string",
+     "lang": "{cl}",
+     "aboutUrl": "{provenance}/{label}",
+     "propertyUrl": "schema:name",
+     "csvw:value": "{label}"
+   },
+   {
+     "virtual": true,
+     "datatype": "string",
+     "lang": "en-GB",
+     "aboutUrl": "{provenance}/{label}",
+     "propertyUrl": "schema:name",
+     "csvw:value": "{english_translation}"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "status_id"
+    ],
+    "@id": "https://iisg.amsterdam/hisco_occupation_link_combined.csv/column/status_id",
+    "name": "status_id",
+    "null": "0",
+    "dc:description": "HISCO status code",
+    "propertyUrl": "schema:hasCategoryCode",
+    "valueUrl": "hisco-status:{status_id}"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "relation_id"
+    ],
+    "@id": "https://iisg.amsterdam/hisco_occupation_link_combined.csv/column/relation_id",
+    "name": "relation_id",
+    "null": "0",
+    "dc:description": "HISCO relation code",
+    "propertyUrl": "schema:hasCategoryCode",
+    "valueUrl": "hisco-relation:{relation_id}"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "product_id"
+    ],
+    "@id": "https://iisg.amsterdam/hisco_occupation_link_combined.csv/column/product_id",
+    "name": "product_id",
+    "null": "0",
+    "dc:description": "HISCO product code",
+    "propertyUrl": "schema:hasCategoryCode",
+    "valueUrl": "hisco-product:{product_id}"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "hisco_id"
+    ],
+    "@id": "https://iisg.amsterdam/hisco_occupation_link_combined.csv/column/hisco_id",
+    "name": "hisco_id",
+    "dc:description": "HISCO category",
+    "virtual": true,
+    "propertyUrl": "schema:occupationalCategory",
+    "aboutUrl": "{provenance}/{label}",
+    "valueUrl": "hisco-code:{% if not hisco_id in ['-1','-3','-2']%}{hisco_id:0>5}{% else %}{hisco_id}{% endif %}"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "{provenance}/{label}",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "hisco-code:{% if not hisco_id in ['-1','-3','-2']%}{hisco_id:0>5}{% else %}{hisco_id}{% endif %}"
+   },
+   {
+    "datatype": "string",
+    "titles": [
+     "provenance"
+    ],
+    "@id": "https://iisg.amsterdam/hisco_occupation_link_combined.csv/column/provenance",
+    "name": "provenance",
+    "dc:description": "Project ID labels of original HISCO data projects",
+    "propertyUrl": "prov:wasDerivedFrom"
+   }
+  ]
+ }
+}
