@@ -1,0 +1,270 @@
+{
+ "dialect": {
+  "quoteChar": "\"",
+  "delimiter": ",",
+  "encoding": "utf-8"
+ },
+ "dcat:keyword": [],
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+  "schema:url": {
+   "@id": "http://datalegend.net"
+  }
+ },
+ "url": "hisco_45_full_02.csv",
+ "@context": [
+  "https://raw.githubusercontent.com/CLARIAH/COW/master/csvw.json",
+  {
+   "@base": "https://iisg.amsterdam/",
+   "@language": "en"
+  },
+  {
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "hisclass": "https://iisg.amsterdam/hisclass/",
+   "hisco": "https://iisg.amsterdam/resource/hisco/",
+   "hisco-code": "https://iisg.amsterdam/hisco/code/hisco/",
+   "hisco-product": "https://iisg.amsterdam/hisco/code/product/",
+   "hisco-relation": "https://iisg.amsterdam/hisco/code/relation/",
+   "hisco-status": "https://iisg.amsterdam/hisco/code/status/",
+   "schema": "http://schema.org/",
+   "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "xml": "http://www.w3.org/XML/1998/namespace/",
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+   "napp": "https://iisg.amsterdam/napp/",
+   "prov": "http://www.w3.org/ns/prov#",
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+   "hiscam": "https://iisg.amsterdam/hiscam/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "sdv": "https://iisg.amsterdam/vocab/",
+   "hsn": "https://iisg.amsterdam/hsn2013a/",
+   "dc": "http://purl.org/dc/terms/",
+   "dbp": "http://dbpedia.org/property/",
+   "clioprop": "https://iisg.amsterdam/clio/property/",
+   "csvw": "http://www.w3.org/ns/csvw#",
+   "clioind": "https://iisg.amsterdam/clio/indicator/",
+   "dc11": "http://purl.org/dc/elements/1.1/",
+   "sdr": "https://iisg.amsterdam/",
+   "qb": "http://purl.org/linked-data/cube#",
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  }
+ ],
+ "dc:title": "hisco_45_full_02.csv",
+ "@id": "https://iisg.amsterdam/hisco_45_full_02.csv",
+ "dc:modified": {
+  "@value": "2019-11-11",
+  "@type": "xsd:date"
+ },
+ "tableSchema": {
+  "aboutUrl": "hisco-code:{hisco_full_id:0>5}",
+  "primaryKey": "hisco_full_id",
+  "columns": [
+    {
+     "virtual": true,
+     "aboutUrl": "hisco:HISCO",
+     "propertyUrl": "rdf:type",
+     "valueUrl": "schema:CategoryCodeSet"
+    },{
+     "virtual": true,
+     "aboutUrl": "hisco:MajorGroup",
+     "propertyUrl": "rdf:type",
+     "valueUrl": "owl:Class"
+    },
+    {
+     "virtual": true,
+     "aboutUrl": "hisco:MinorGroup",
+     "propertyUrl": "rdf:type",
+     "valueUrl": "owl:Class"
+    },
+    {
+     "virtual": true,
+     "aboutUrl": "hisco:UnitGroup",
+     "propertyUrl": "rdf:type",
+     "valueUrl": "owl:Class"
+    },
+    {
+     "virtual": true,
+     "aboutUrl": "hisco:MicroGroup",
+     "propertyUrl": "rdf:type",
+     "valueUrl": "owl:Class"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hisco-code:{hisco_1_id}{hisco_2_id}",
+    "propertyUrl": "rdfs:subClassOf",
+    "valueUrl": "hisco-code:{hisco_1_id}"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hisco-code:{hisco_1_id}{hisco_2_id}{hisco_3_id}",
+    "propertyUrl": "rdfs:subClassOf",
+    "valueUrl": "hisco-code:{hisco_1_id}{hisco_2_id}"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hisco-code:{hisco_1_id}{hisco_2_id}{hisco_3_id}{hisco_45_id}",
+    "propertyUrl": "rdfs:subClassOf",
+    "valueUrl": "hisco-code:{hisco_1_id}{hisco_2_id}{hisco_3_id}"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hisco-code:{hisco_1_id}",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "hisco:MajorGroup"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hisco-code:{hisco_1_id}{hisco_2_id}",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "hisco:MinorGroup"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hisco-code:{hisco_1_id}{hisco_2_id}{hisco_3_id}",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "hisco:UnitGroup"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hisco-code:{hisco_1_id}{hisco_2_id}{hisco_3_id}{hisco_45_id}",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "hisco:MicroGroup"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hisco-code:{hisco_1_id}",
+    "propertyUrl": "schema:inCodeSet",
+    "valueUrl": "hisco:HISCO"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hisco-code:{hisco_1_id}{hisco_2_id}",
+    "propertyUrl": "schema:inCodeSet",
+    "valueUrl": "hisco:HISCO"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hisco-code:{hisco_1_id}{hisco_2_id}{hisco_3_id}",
+    "propertyUrl": "schema:inCodeSet",
+    "valueUrl": "hisco:HISCO"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hisco-code:{hisco_1_id}{hisco_2_id}{hisco_3_id}{hisco_45_id}",
+    "propertyUrl": "schema:inCodeSet",
+    "valueUrl": "hisco:HISCO"
+   },
+   {
+    "virtual": true,
+    "datatype": "string",
+    "lang": "en",
+    "aboutUrl": "hisco-code:{hisco_1_id}",
+    "propertyUrl": "schema:name",
+    "csvw:value": "{label1}"
+   },
+   {
+    "virtual": true,
+    "datatype": "string",
+    "lang": "en",
+    "aboutUrl": "hisco-code:{hisco_1_id}{hisco_2_id}",
+    "propertyUrl": "schema:name",
+    "csvw:value": "{label2}"
+   },
+   {
+    "virtual": true,
+    "datatype": "string",
+    "lang": "en",
+    "aboutUrl": "hisco-code:{hisco_1_id}{hisco_2_id}{hisco_3_id}",
+    "propertyUrl": "schema:name",
+    "csvw:value": "{label3}"
+   },
+   {
+    "virtual": true,
+    "datatype": "string",
+    "lang": "en",
+    "aboutUrl": "hisco-code:{hisco_1_id}{hisco_2_id}{hisco_3_id}{hisco_45_id}",
+    "propertyUrl": "schema:name",
+    "csvw:value": "{label45}"
+   },
+   {
+    "virtual": true,
+    "datatype": "string",
+    "lang": "en",
+    "aboutUrl": "hisco-code:{hisco_1_id}",
+    "propertyUrl": "schema:description",
+    "csvw:value": "{description1}"
+   },
+   {
+    "virtual": true,
+    "datatype": "string",
+    "lang": "en",
+    "aboutUrl": "hisco-code:{hisco_1_id}{hisco_2_id}",
+    "propertyUrl": "schema:description",
+    "csvw:value": "{description2}"
+   },
+   {
+    "virtual": true,
+    "datatype": "string",
+    "lang": "en",
+    "aboutUrl": "hisco-code:{hisco_1_id}{hisco_2_id}{hisco_3_id}",
+    "propertyUrl": "schema:description",
+    "csvw:value": "{description3}"
+   },
+   {
+    "virtual": true,
+    "datatype": "string",
+    "lang": "en",
+    "aboutUrl": "hisco-code:{hisco_1_id}{hisco_2_id}{hisco_3_id}{hisco_45_id}",
+    "propertyUrl": "schema:description",
+    "csvw:value": "{description45}"
+   },
+   {
+    "virtual": true,
+    "datatype": "string",
+    "aboutUrl": "hisco-code:{hisco_1_id}{hisco_2_id}{hisco_3_id}{hisco_45_id}",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "schema:CategoryCode"
+   },
+   {
+    "virtual": true,
+    "datatype": "string",
+    "aboutUrl": "hisco-code:{hisco_1_id}",
+    "propertyUrl": "schema:codeValue",
+    "csvw:value": "{hisco_1_id}"
+   },
+   {
+    "virtual": true,
+    "datatype": "string",
+    "aboutUrl": "hisco-code:{hisco_1_id}{hisco_2_id}",
+    "propertyUrl": "schema:codeValue",
+    "csvw:value": "{{hisco_1_id ~ '-' ~ hisco_2_id}}"
+   },
+   {
+    "virtual": true,
+    "datatype": "string",
+    "aboutUrl": "hisco-code:{hisco_1_id}{hisco_2_id}{hisco_3_id}",
+    "propertyUrl": "schema:codeValue",
+    "csvw:value": "{{hisco_1_id ~ '-' ~ hisco_2_id ~ '.' ~ hisco_3_id}}"
+   },
+   {
+    "virtual": true,
+    "datatype": "string",
+    "aboutUrl": "hisco-code:{hisco_1_id}{hisco_2_id}{hisco_3_id}{hisco_45_id}",
+    "propertyUrl": "schema:codeValue",
+    "csvw:value": "{hisco_full_id_pretty}"
+   },
+   {
+    "virtual": true,
+    "datatype": "integer",
+    "aboutUrl": "hisco-code:{hisco_1_id}{hisco_2_id}{hisco_3_id}{hisco_45_id}",
+    "propertyUrl": "schema:value",
+    "csvw:value": "{{hisco_1_id|replace('0','')}}{hisco_2_id}{hisco_3_id}{hisco_45_id}"
+   }
+  ]
+ }
+}

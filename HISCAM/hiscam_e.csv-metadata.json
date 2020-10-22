@@ -1,0 +1,192 @@
+{
+ "@id": "https://iisg.amsterdam/hiscam_e.csv",
+ "@context": [
+  "https://raw.githubusercontent.com/CLARIAH/COW/master/csvw.json",
+  {
+   "@language": "en",
+   "@base": "https://iisg.amsterdam/"
+  },
+  {
+   "bibo": "http://purl.org/ontology/bibo/",
+   "bio": "http://purl.org/vocab/bio/0.1/",
+   "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/",
+   "canfam-auke": "https://iisg.amsterdam/canfam/auke/",
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
+   "clio": "https://iisg.amsterdam/clio/",
+   "clioctr": "https://iisg.amsterdam/clio/country/",
+   "clioind": "https://iisg.amsterdam/clio/indicator/",
+   "clioprop": "https://iisg.amsterdam/clio/property/",
+   "csvw": "http://www.w3.org/ns/csvw#",
+   "dbo": "http://dbpedia.org/ontology/",
+   "dbp": "http://dbpedia.org/property/",
+   "dbpedia": "http://dbpedia.org/resource/",
+   "dbr": "http://dbpedia.org/resource/",
+   "dc": "http://purl.org/dc/terms/",
+   "dc11": "http://purl.org/dc/elements/1.1/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "foaf": "http://xmlns.com/foaf/0.1/",
+   "hiscam": "https://iisg.amsterdam/hiscam/",
+   "early": "https://iisg.amsterdam/hiscam/E/",
+   "hisclass": "https://iisg.amsterdam/hisclass/",
+   "hisclass5": "https://iisg.amsterdam/hisclass5/",
+   "hisco": "https://iisg.amsterdam/hisco/",
+   "hisco-code": "https://iisg.amsterdam/hisco/code/hisco/",
+   "hisco-product": "https://iisg.amsterdam/hisco/code/product/",
+   "hisco-relation": "https://iisg.amsterdam/hisco/code/relation/",
+   "hisco-status": "https://iisg.amsterdam/hisco/code/status/",
+   "hsn": "https://iisg.amsterdam/hsn2013a/",
+   "ldp": "http://www.w3.org/ns/ldp#",
+   "microheights": "https://iisg.amsterdam/microheights/",
+   "napp": "https://iisg.amsterdam/napp/",
+   "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/",
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/",
+   "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/",
+   "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/",
+   "np": "http://www.nanopub.org/nschema#",
+   "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "prov": "http://www.w3.org/ns/prov#",
+   "qb": "http://purl.org/linked-data/cube#",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "schema": "http://schema.org/",
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+   "sdr": "https://iisg.amsterdam/",
+   "sdv": "https://iisg.amsterdam/vocab/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "time": "http://www.w3.org/2006/time#",
+   "xml": "http://www.w3.org/XML/1998/namespace/",
+   "xsd": "http://www.w3.org/2001/XMLSchema#"
+  }
+ ],
+ "url": "hiscam_e.csv",
+ "dialect": {
+  "delimiter": "\t",
+  "encoding": "ascii",
+  "quoteChar": "\""
+ },
+ "dc:title": "hiscam_e.csv",
+ "dcat:keyword": [],
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+  "schema:url": {
+   "@id": "http://datalegend.net"
+  }
+ },
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+ "dc:modified": {
+  "@value": "2020-10-16",
+  "@type": "xsd:date"
+ },
+  "qb:structure": {
+        "@id": "hisco:structure",
+        "@type": "qb:DataStructureDefinition",
+        "rdfs:comment": "Datastructure definition for HISCO to HISCAM mapping files",
+        "qb:component": [{
+            "qb:dimension": [{
+                "@id": "sdmx-dimension:refPeriod",
+                "@type": "qb:DimensionProperty",
+                "rdfs:range": {
+                    "@id": "time:Interval"
+                }
+            }, {
+                "@id": "sdmx-dimension:sex",
+                "@type": "qb:DimensionProperty"
+            }],
+            "qb:measure": {
+                "@id": "early:value",
+                "@type": ["qb:MeasureProperty", "owl:DatatypeProperty"],
+                "rdfs:range": {
+                    "@id": "xsd:decimal"
+                },
+                "rdfs:label": "The HISCAM value for the HISCO score in this reference period"
+            }
+        }]
+  },
+ "tableSchema": {
+  "columns": [
+   {
+    "@id": "https://iisg.amsterdam/hiscam_e.csv/column/hisco",
+    "name": "hisco",
+    "titles": [
+     "hisco"
+    ],
+    "dc:description": "hisco",
+    "datatype": "string",
+    "propertyUrl": "hiscam:hisco",
+    "valueUrl": "hisco-code:{{'%05d'|format(hisco|int)}}"
+   },
+   {
+    "@id": "https://iisg.amsterdam/hiscam_e.csv/column/hiscam",
+    "name": "hiscam",
+    "titles": [
+     "hiscam"
+    ],
+    "dc:description": "A HISCAM scale score",
+    "datatype": "decimal",
+    "propertyUrl": "hiscam:score"
+   },
+   {
+    "virtual": true,
+    "propertyUrl": "rdf:type",
+    "valueUrl": "hiscam:ScaleScore"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hiscam:ScaleScore",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "owl:Class"
+   },
+   {
+    "virtual": true,
+    "propertyUrl": "owl:partOf",
+    "valueUrl": "hiscam:E"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hiscam:E",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "hiscam:Scale"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hiscam:Scale",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "owl:Class"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hiscam:E",
+    "propertyUrl": "sdmx-dimension:sex",
+    "valueUrl": "sdmx-code:sex-T",
+    "dc:description": "The sex to which this HISCAM scale applies (1800-1938)"
+   }, 
+   {
+    "virtual": true,
+    "aboutUrl": "hiscam:E",
+    "propertyUrl": "sdmx-dimension:refPeriod",
+    "valueUrl": "http://reference.data.gov.uk/id/gregorian-interval/1800-01-01T00:00:00/P91Y",
+    "dc:description": "The reference period for this HISCAM value (1800-1890)"
+   }, 
+   {
+    "virtual": true,
+    "aboutUrl": "hiscam:E",
+    "propertyUrl": "rdfs:seeAlso",
+    "valueUrl": "http://www.camsis.stir.ac.uk/hiscam/"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "hisco-code:{{'%05d'|format(hisco|int)}}",
+    "propertyUrl": "hiscam:e",
+    "valueUrl": "early:{{'%05d'|format(hisco|int)}}"
+   }
+  ],
+  "primaryKey": "hisco",
+  "aboutUrl": "early:{{'%05d'|format(hisco|int)}}"
+ }
+}

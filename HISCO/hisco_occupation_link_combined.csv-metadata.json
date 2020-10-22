@@ -18,7 +18,7 @@
  "@context": [
   "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json",
   {
-   "@base": "https://iisg.amsterdam/resource/hisco/",
+   "@base": "https://iisg.amsterdam/hisco/",
    "@language": "en"
   },
   {
@@ -44,12 +44,13 @@
     "time": "http://www.w3.org/2006/time#",
     "hsn": "https://iisg.amsterdam/resource/hsn2013a/",
     "dc": "http://purl.org/dc/terms/",
-    "hisco": "https://iisg.amsterdam/resource/hisco/",
-    "hisco-code": "https://iisg.amsterdam/resource/hisco/code/hisco/",
-    "hisco-status": "https://iisg.amsterdam/hisco/code/status/",
-    "hisco-relation": "https://iisg.amsterdam/hisco/code/relation/",
-    "hisco-product": "https://iisg.amsterdam/resource/hisco/code/product/",
-    "jobHoard": "https://iisg.amsterdam/resource/jobHoard/",
+    "hisco": "https://iisg.amsterdam/hisco/",
+    "hisco-code": "https://iisg.amsterdam/hisco/code/hisco/",
+    "hisco-status": "https://iisg.amsterdam/code/status/",
+    "hisco-relation": "https://iisg.amsterdam/code/relation/",
+    "hisco-product": "https://iisg.amsterdam/hisco/code/product/",
+    "jobHoard": "https://iisg.amsterdam/jobHoard/",
+    "prov": "http://www.w3.org/ns/prov#",
     "dbp": "http://dbpedia.org/property/",
     "csvw": "http://www.w3.org/ns/csvw#",
     "dc11": "http://purl.org/dc/elements/1.1/",
@@ -63,18 +64,17 @@
     "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
     "bibo": "http://purl.org/ontology/bibo/",
     "xkos": "http://rdf-vocabulary.ddialliance.org/xkos#",
-    "gnd": "http://d-nb.info/standards/elementset/gnd#",
-    "gn": "http://www.geonames.org/ontology#"
+    "gnd": "http://d-nb.info/standards/elementset/gnd#"
   }
  ],
  "dc:title": "hisco_occupation_link_combined.csv",
- "@id": "https://iisg.amsterdam/resource/hisco/hisco_occupation_link_combined.csv",
+ "@id": "https://iisg.amsterdam/hisco_occupation_link_combined.csv",
  "dc:modified": {
   "@value": "2019-04-10",
   "@type": "xsd:date"
  },
  "tableSchema": {
-  "aboutUrl": "{provenance}/{label|lower}",
+  "aboutUrl": "label",
   "primaryKey": "occupation_id",
   "columns": [
    {
@@ -87,19 +87,18 @@
     "virtual":true,
     "aboutUrl": "{provenance}/{label}",
     "propertyUrl": "rdf:type",
-    "valueUrl": "schema:Occupation"
+    "valueUrl": "gnd:professionOrOccupationAsLiteral"
    },
    {
      "virtual": true,
      "datatype": "string",
-     "lang": "{lc}",
+     "lang": "{cl}",
      "aboutUrl": "{provenance}/{label}",
      "propertyUrl": "schema:name",
      "csvw:value": "{label}"
    },
    {
      "virtual": true,
-     "null": "",
      "datatype": "string",
      "lang": "en-GB",
      "aboutUrl": "{provenance}/{label}",
@@ -115,7 +114,7 @@
     "name": "status_id",
     "null": "0",
     "dc:description": "HISCO status code",
-    "propertyUrl": "schema:categoryCode",
+    "propertyUrl": "schema:hasCategoryCode",
     "valueUrl": "hisco-status:{status_id}"
    },
    {
@@ -127,7 +126,7 @@
     "name": "relation_id",
     "null": "0",
     "dc:description": "HISCO relation code",
-    "propertyUrl": "schema:categoryCode",
+    "propertyUrl": "schema:hasCategoryCode",
     "valueUrl": "hisco-relation:{relation_id}"
    },
    {
@@ -139,7 +138,7 @@
     "name": "product_id",
     "null": "0",
     "dc:description": "HISCO product code",
-    "propertyUrl": "schema:categoryCode",
+    "propertyUrl": "schema:hasCategoryCode",
     "valueUrl": "hisco-product:{product_id}"
    },
    {
@@ -149,9 +148,16 @@
     ],
     "@id": "https://iisg.amsterdam/hisco_occupation_link_combined.csv/column/hisco_id",
     "name": "hisco_id",
-    "dc:description": "HISCO MicroGroup",
+    "dc:description": "HISCO category",
     "virtual": true,
-    "propertyUrl": "schema:categoryCode",
+    "propertyUrl": "schema:occupationalCategory",
+    "aboutUrl": "{provenance}/{label}",
+    "valueUrl": "hisco-code:{% if not hisco_id in ['-1','-3','-2']%}{hisco_id:0>5}{% else %}{hisco_id}{% endif %}"
+   },
+   {
+    "virtual": true,
+    "aboutUrl": "{provenance}/{label}",
+    "propertyUrl": "rdf:type",
     "valueUrl": "hisco-code:{% if not hisco_id in ['-1','-3','-2']%}{hisco_id:0>5}{% else %}{hisco_id}{% endif %}"
    },
    {
@@ -162,15 +168,8 @@
     "@id": "https://iisg.amsterdam/hisco_occupation_link_combined.csv/column/provenance",
     "name": "provenance",
     "dc:description": "Project ID labels of original HISCO data projects",
-    "propertyUrl": "prov:wasDerivedFrom",
-    "valueUrl": "hisco:{provenance}"
-   }, {
-    "virtual": true,
-    "aboutUrl": "hisco:{provenance}",
-    "propertyUrl": "gn:countryCode",
-    "csvw:value": "{cc}"
+    "propertyUrl": "prov:wasDerivedFrom"
    }
-
   ]
  }
 }
