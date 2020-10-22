@@ -1,93 +1,102 @@
 {
- "dcat:keyword": [],
- "dc:license": {
-  "@id": "http://opendefinition.org/licenses/cc-by/"
+ "@id": "https://iisg.amsterdam/se_CEDAR_HISCO.csv",
+ "@context": [
+  "https://raw.githubusercontent.com/CLARIAH/COW/master/csvw.json",
+  {
+   "@language": "en",
+   "@base": "https://iisg.amsterdam/CEDAR-Sweden/"
+  },
+  {
+   "bibo": "http://purl.org/ontology/bibo/",
+   "bio": "http://purl.org/vocab/bio/0.1/",
+   "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/",
+   "canfam-auke": "https://iisg.amsterdam/canfam/auke/",
+   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
+   "clio": "https://iisg.amsterdam/clio/",
+   "clioctr": "https://iisg.amsterdam/clio/country/",
+   "clioind": "https://iisg.amsterdam/clio/indicator/",
+   "clioprop": "https://iisg.amsterdam/clio/property/",
+   "csvw": "http://www.w3.org/ns/csvw#",
+   "dbo": "http://dbpedia.org/ontology/",
+   "dbp": "http://dbpedia.org/property/",
+   "dbpedia": "http://dbpedia.org/resource/",
+   "dbr": "http://dbpedia.org/resource/",
+   "dc": "http://purl.org/dc/terms/",
+   "dc11": "http://purl.org/dc/elements/1.1/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "foaf": "http://xmlns.com/foaf/0.1/",
+   "hiscam": "https://iisg.amsterdam/hiscam/",
+   "hisclass": "https://iisg.amsterdam/hisclass/",
+   "hisclass5": "https://iisg.amsterdam/hisclass5/",
+   "hisco": "https://iisg.amsterdam/hisco/",
+   "hisco-code": "https://iisg.amsterdam/hisco/code/hisco/",
+   "hisco-product": "https://iisg.amsterdam/hisco/code/product/",
+   "hisco-relation": "https://iisg.amsterdam/hisco/code/relation/",
+   "hisco-status": "https://iisg.amsterdam/hisco/code/status/",
+   "hsn": "https://iisg.amsterdam/hsn2013a/",
+   "ldp": "http://www.w3.org/ns/ldp#",
+   "microheights": "https://iisg.amsterdam/microheights/",
+   "napp": "https://iisg.amsterdam/napp/",
+   "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/",
+   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/",
+   "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/",
+   "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/",
+   "np": "http://www.nanopub.org/nschema#",
+   "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "prov": "http://www.w3.org/ns/prov#",
+   "qb": "http://purl.org/linked-data/cube#",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "schema": "http://schema.org/",
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+   "sdr": "https://iisg.amsterdam/",
+   "sdv": "https://iisg.amsterdam/vocab/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "time": "http://www.w3.org/2006/time#",
+   "xml": "http://www.w3.org/XML/1998/namespace/",
+   "xsd": "http://www.w3.org/2001/XMLSchema#"
+  }
+ ],
+ "url": "se_CEDAR_HISCO.csv",
+ "dialect": {
+  "delimiter": ";",
+  "encoding": "utf-8",
+  "quoteChar": "\""
  },
+ "dc:title": "se_CEDAR_HISCO.csv",
+ "dcat:keyword": [],
  "dc:publisher": {
   "schema:name": "CLARIAH Structured Data Hub - Datalegend",
   "schema:url": {
    "@id": "http://datalegend.net"
   }
  },
- "url": "se_CEDAR_HISCO.csv",
- "dialect": {
-     "delimiter": ";",
-     "encoding": "iso-8859-1"
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
  },
- "@context": [
-  "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json",
-  {
-   "@base": "https://iisg.amsterdam/resource/seCEDAR/",
-   "@language": "en"
-  },
-  {
-   "owl": "http://www.w3.org/2002/07/owl#",
-   "clioctr": "https://iisg.amsterdam/resource/clio/country/",
-   "hisclass": "https://iisg.amsterdam/resource/hisclass/",
-   "ldp": "http://www.w3.org/ns/ldp#",
-   "clio": "https://iisg.amsterdam/resource/clio/",
-   "occhisco": "https://iisg.amsterdam/resource/napp/OCCHISCO/",
-   "skos": "http://www.w3.org/2004/02/skos/core#",
-   "xml": "http://www.w3.org/XML/1998/namespace/",
-   "bibo": "http://purl.org/ontology/bibo/",
-   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-   "prov": "http://www.w3.org/ns/prov#",
-   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
-   "napp-can91": "https://iisg.amsterdam/resource/napp/dataset/canada1891/",
-   "hiscam": "https://iisg.amsterdam/resource/hiscam/",
-   "np": "http://www.nanopub.org/nschema#",
-   "canfam-auke": "https://iisg.amsterdam/resource/canfam/auke/",
-   "dcterms": "http://purl.org/dc/terms/",
-   "schema": "http://schema.org/",
-   "foaf": "http://xmlns.com/foaf/0.1/",
-   "napp": "https://iisg.amsterdam/resource/napp/",
-   "sdv": "http://data.socialhistory.org/vocab/",
-   "hisco": "https://iisg.amsterdam/resource/hisco/",
-   "hisco-code": "https://iisg.amsterdam/resource/hisco/code/hisco/",
-   "sdp": "https://iisg.amsterdam/resource/person/",
-   "sdr": "https://iisg.amsterdam/resource/",
-   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-   "time": "http://www.w3.org/2006/time#",
-   "hsn": "https://iisg.amsterdam/resource/hsn2013a/",
-   "dc": "http://purl.org/dc/terms/",
-   "clioprop": "https://iisg.amsterdam/resource/clio/property/",
-   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
-   "csvw": "http://www.w3.org/ns/csvw#",
-   "clioind": "https://iisg.amsterdam/resource/clio/indicator/",
-   "dc11": "http://purl.org/dc/elements/1.1/",
-   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
-   "napp-eng81": "https://iisg.amsterdam/resource/napp/dataset/englandwales1881/",
-   "canfam": "https://iisg.amsterdam/resource/canfam/dataset/canada1901/",
-   "napp-sct81": "https://iisg.amsterdam/resource/napp/dataset/scotland1881/",
-   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
-   "qb": "http://purl.org/linked-data/cube#",
-   "hisclass5": "https://iisg.amsterdam/resource/hisclass5/",
-   "xsd": "http://www.w3.org/2001/XMLSchema#",
-   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
-   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/",
-   "": "https://iisg.amsterdam/resource/seCEDAR/",
-   "se-cedar": "https://iisg.amsterdam/resource/seCEDAR/"
-  }
- ],
- "dc:title": "se_CEDAR_HISCO.csv",
  "dc:modified": {
-  "@value": "2016-08-16",
+  "@value": "2020-10-22",
   "@type": "xsd:date"
  },
  "tableSchema": {
-  "aboutUrl": "{{OCCUPATION|lower}}",
   "columns": [
    {
-    "datatype": "string",
+    "@id": "https://iisg.amsterdam/se_CEDAR_HISCO.csv/column/OCCUPATION",
+    "name": "OCCUPATION",
     "titles": [
      "OCCUPATION"
     ],
-    "propertyUrl": "rdfs:label",
-    "csvw:value": "{{OCCUPATION|lower}}",
+    "dc:description": "OCCUPATION",
+    "datatype": "string",
     "lang": "sv",
-    "dc:description": "OCCUPATION"
+    "propertyUrl": "schema:name",
+    "csvw:value": "{{OCCUPATION|lower}}"
    },
-   {
+{
     "virtual": true,
     "propertyUrl": "rdf:type",
     "valueUrl": "schema:Occupation"
@@ -105,28 +114,33 @@
     },
     {
         "virtual": true,
+        "aboutUrl": "http://hdl.handle.net/10622/KNGX6B",
         "propertyUrl": "sdmx-dimension:refPeriod",
         "valueUrl": "http://reference.data.gov.uk/id/gregorian-interval/1700-01-01T00:00:00/P151Y",
         "dc:description": "The reference period for this HISCAM value (1700-1950)"
     },
     {
         "virtual": true,
+        "aboutUrl": "http://hdl.handle.net/10622/KNGX6B",
         "propertyUrl": "sdmx-dimension:refArea",
         "valueUrl": "http://sws.geonames.org/2661886/",
         "dc:description": "The reference area for this HISCAM value (Sweden)"
     },
     {
         "virtual": true,
+        "aboutUrl": "http://hdl.handle.net/10622/KNGX6B",
         "datatype": "string",
         "lang": "en",
-        "propertyUrl": "rdfs:comment",
-        "csvw:value": "These are Swedish Occupational Titles as encountered by the CEDAR project, that were coded into HISCO (see notes and http://www.cedar.umu.se/english/?languageId=1). The occupations originate from documents from c 1700 – c 1950 for Skellefteå region and C 1700-1900 for Sundsvall, Linköping, Northern Inland, and C 1900-1950 for Umeå region. The overarching Swedish regions are thus Skellefteå, Umeå, Northern Inland, Linköping, Sundsvall."
+        "propertyUrl": "schema:comment",
+        "csvw:value": "These are Swedish Occupational Titles as encountered by the CEDAR project, that were coded into HISCO. The occupations originate from documents from c 1700 – c 1950 for Skellefteå region and C 1700-1900 for Sundsvall, Linköping, Northern Inland, and C 1900-1950 for Umeå region. The overarching Swedish regions are thus Skellefteå, Umeå, Northern Inland, Linköping, Sundsvall."
     },
     {
         "virtual": true,
         "propertyUrl": "schema:uri",
-        "valueUrl": "http://www.cedar.umu.se/english/?languageId=1"
+        "valueUrl": "https://www.umu.se/en/centre-for-demographic-and-ageing-research/databases/"
       }
-    ]
-  }
+  ],
+  "primaryKey": "OCCUPATION",
+  "aboutUrl": "{{OCCUPATION|lower}}"
+ }
 }
