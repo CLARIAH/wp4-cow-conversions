@@ -1,0 +1,263 @@
+{
+ "@id": "https://iisg.amsterdam/HSN_HISCO_release_2020_02.csv",
+ "@context": [
+  "https://raw.githubusercontent.com/CLARIAH/COW/master/csvw.json",
+  {
+   "@language": "en",
+   "@base": "https://iisg.amsterdam/hsn/occupation/"
+  },
+  {
+   "aat": "http://vocab.getty.edu/aat/",
+   "bibo": "http://purl.org/ontology/bibo/",
+   "bio": "http://purl.org/vocab/bio/0.1/",
+   "cidoc": "http://www.cidoc-crm.org/cidoc-crm/",
+   "csvw": "http://www.w3.org/ns/csvw#",
+   "dbo": "http://dbpedia.org/ontology/",
+   "dc": "http://purl.org/dc/terms/",
+   "dc11": "http://purl.org/dc/elements/1.1/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "ecpo": "http://purl.org/ontology/ecpo#",
+   "foaf": "http://xmlns.com/foaf/0.1/",
+   "frbr": "http://purl.org/spar/frbr/core#",
+   "geo": "http://www.opengis.net/ont/geosparql#",
+   "geonames": "http://www.geonames.org/ontology#",
+   "gvp": "http://vocab.getty.edu/ontology#'",
+   "juso": "http://http://rdfs.co/juso/",
+   "hisco-code": "https://iisg.amsterdam/hisco/code/hisco/",
+   "hisco-status": "https://iisg.amsterdam/hisco/code/status/",
+   "hisco-relation": "https://iisg.amsterdam/hisco/code/relation/",
+   "hisco-product": "https://iisg.amsterdam/hisco/code/product/",
+   "np": "http://www.nanopub.org/nschema#",
+   "lemon": "http://lemon-model.net/lemon#",
+   "midi": "http://purl.org/midi-ld/midi#",
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "periodo": "http://n2t.net/ark:/99152/p0v#",
+   "pnv": "https://www.lodewijkpetram.nl/vocab/pnv/doc/",
+   "prov": "http://www.w3.org/ns/prov#",
+   "qb": "http://purl.org/linked-data/cube#",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "schema": "http://schema.org/",
+   "sem": "http://semanticweb.cs.vu.nl/2009/11/sem/",
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+   "sdr": "https://iisg.amsterdam/",
+   "sdv": "https://iisg.amsterdam/vocab/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "time": "http://www.w3.org/2006/time#",
+   "ulan": "http://vocab.getty.edu/ulan/",
+   "wgs84": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+   "xml": "http://www.w3.org/XML/1998/namespace/",
+   "xsd": "http://www.w3.org/2001/XMLSchema#"
+  }
+ ],
+ "url": "HSN_HISCO_release_2020_02.csv",
+ "dialect": {
+  "delimiter": ",",
+  "encoding": "utf-8",
+  "quoteChar": "\""
+ },
+ "dc:title": "HSN_HISCO_release_2020_02.csv",
+ "dcat:keyword": [],
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+  "schema:url": {
+   "@id": "http://datalegend.net"
+  }
+ },
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+ "dc:modified": {
+  "@value": "2020-11-14",
+  "@type": "xsd:date"
+ },
+ "tableSchema": {
+  "columns": [
+   {
+    "virtual": true,
+    "name":  "Original",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "schema:Occupation"
+   },
+   {
+    "@id": "https://iisg.amsterdam/HSN_HISCO_release_2020_02.csv/column/Id",
+    "name": "Id",
+    "titles": [
+     "Id"
+    ],
+    "dc:description": "Id",
+    "datatype": "string",
+    "propertyUrl": "schema:identifier"
+   },
+   {
+    "@id": "https://iisg.amsterdam/HSN_HISCO_release_2020_02.csv/column/Original",
+    "name": "Original",
+    "titles": [
+     "Original"
+    ],
+    "dc:description": "Original",
+    "datatype": "string",
+    "lang": "nl",
+    "propertyUrl": "schema:name"
+   },
+   {
+    "@id": "https://iisg.amsterdam/HSN_HISCO_release_2020_02.csv/column/Standard",
+    "name": "Standard",
+    "titles": [
+     "Standard"
+    ],
+    "dc:description": "Standard",
+    "datatype": "string",
+    "lang": "nl",
+    "propertyUrl": "schema:name"
+   },
+   {
+    "@id": "https://iisg.amsterdam/HSN_HISCO_release_2020_02.csv/column/Organisation",
+    "name": "Organisation",
+    "titles": [
+     "Organisation"
+    ],
+    "dc:description": "Organisation",
+    "datatype": "string",
+    "lang": "nl",
+    "propertyUrl": "organisationInOccupationalTitle"
+   },
+   {
+    "virtual": true,
+    "name": "Organisation",
+    "aboutUrl": "https://iisg.amsterdam/hsn/organisation/{Organisation}",
+    "propertyUrl": "rdf:type",
+    "valueUrl": "schema:Organization"
+   },
+   {
+    "@id": "https://iisg.amsterdam/HSN_HISCO_release_2020_02.csv/column/Double_occ",
+    "name": "Double_occ",
+    "titles": [
+     "Double_occ"
+    ],
+    "dc:description": "Double_occ",
+    "datatype": "string",
+    "lang": "en",
+    "propertyUrl": "containsMultipleOccupations",
+    "csvw:value": "{% if Double_occ == 'y' %}yes{% else %}no{% endif %}"
+   },
+   {
+    "@id": "https://iisg.amsterdam/HSN_HISCO_release_2020_02.csv/column/HISCO",
+    "name": "HISCO",
+    "titles": [
+     "HISCO"
+    ],
+    "dc:description": "HISCO",
+    "propertyUrl": "schema:occupationalCategory",
+    "valueUrl": "hisco-code:{HISCO}"
+   },
+   {
+    "@id": "https://iisg.amsterdam/HSN_HISCO_release_2020_02.csv/column/STATUS",
+    "name": "STATUS",
+    "titles": [
+     "STATUS"
+    ],
+    "dc:description": "STATUS",
+    "propertyUrl": "schema:occupationalCategory",
+    "valueUrl": "hisco-status:{STATUS}"
+   },
+   {
+    "@id": "https://iisg.amsterdam/HSN_HISCO_release_2020_02.csv/column/RELATION",
+    "name": "RELATION",
+    "titles": [
+     "RELATION"
+    ],
+    "dc:description": "RELATION",
+    "propertyUrl": "schema:occupationalCategory",
+    "valueUrl": "hisco-relation:{RELATION}"
+   },
+   {
+    "@id": "https://iisg.amsterdam/HSN_HISCO_release_2020_02.csv/column/PRODUCT",
+    "name": "PRODUCT",
+    "titles": [
+     "PRODUCT"
+    ],
+    "dc:description": "PRODUCT",
+    "propertyUrl": "schema:occupationalCategory",
+    "valueUrl": "hisco-product:{PRODUCT}"
+   },
+   {
+    "@id": "https://iisg.amsterdam/HSN_HISCO_release_2020_02.csv/column/HISCLASS",
+    "name": "HISCLASS",
+    "titles": [
+     "HISCLASS"
+    ],
+    "dc:description": "HISCLASS",
+    "datatype": "xsd:integer",
+    "propertyUrl": "vocab/code/hisclass"
+   },
+   {
+    "@id": "https://iisg.amsterdam/HSN_HISCO_release_2020_02.csv/column/HISCLASS_5",
+    "name": "HISCLASS_5",
+    "titles": [
+     "HISCLASS_5"
+    ],
+    "dc:description": "HISCLASS_5",
+    "datatype": "xsd:integer",
+    "propertyUrl": "vocab/code/hisclass5"
+   },
+   {
+    "@id": "https://iisg.amsterdam/HSN_HISCO_release_2020_02.csv/column/HISCAM_U1",
+    "name": "HISCAM_U1",
+    "titles": [
+     "HISCAM_U1"
+    ],
+    "dc:description": "HISCAM_U1",
+    "datatype": "xsd:float",
+    "propertyUrl": "vocab/code/hiscam_U1"
+   },
+   {
+    "@id": "https://iisg.amsterdam/HSN_HISCO_release_2020_02.csv/column/HISCAM_NL",
+    "name": "HISCAM_NL",
+    "titles": [
+     "HISCAM_NL"
+    ],
+    "dc:description": "HISCAM_NL",
+    "datatype": "xsd:float",
+    "propertyUrl": "vocab/code/hiscam_NL"
+   },
+   {
+    "@id": "https://iisg.amsterdam/HSN_HISCO_release_2020_02.csv/column/SOCPO",
+    "name": "SOCPO",
+    "titles": [
+     "SOCPO"
+    ],
+    "dc:description": "SOCPO",
+    "datatype": "xsd:integer",
+    "propertyUrl": "vocab/code/socpo"
+   },
+   {
+    "@id": "https://iisg.amsterdam/HSN_HISCO_release_2020_02.csv/column/OCC1950",
+    "name": "OCC1950",
+    "titles": [
+     "OCC1950"
+    ],
+    "dc:description": "OCC1950",
+    "datatype": "string",
+    "propertyUrl": "vocab/code/occ1950"
+   },
+   {
+    "@id": "https://iisg.amsterdam/short.csv/column/HISCO_ALT",
+    "name": "HISCO_ALT",
+    "titles": [
+     "HISCO_ALT"
+    ],
+    "dc:description": "HISCO_ALT",
+    "propertyUrl": "vocab/code/alternateHISCO",
+    "valueUrl": "hisco-code:{% if not HISCO_ALT in ['-1','-2','-3','-4'] %}{{'%05d'|format(HISCO_ALT|int)}}{% else %}{HISCO_ALT}{% endif %}"
+   },
+  {
+   "virtual": true,
+   "propertyUrl":  "prov:wasDerivedFrom",
+   "valueUrl": "https://hdl.handle.net/10622/88ZXD8"
+  }
+  ],
+  "primaryKey": "Id",
+  "aboutUrl": "{Original}"
+ }
+}
