@@ -1,4 +1,5 @@
 # ignore all files of type:
+*.DS_Store
 *.csv
 *.nq
 *.doc
@@ -6,6 +7,7 @@
 *.xls
 *.xlsx
 *.gz
+*.swp
 *.zip
 b2l/design*
 b2l/convert.sh
