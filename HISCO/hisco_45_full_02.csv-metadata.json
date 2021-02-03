@@ -1,51 +1,36 @@
 {
- "dialect": {
-  "quoteChar": "\"",
-  "delimiter": ",",
-  "encoding": "utf-8"
- },
- "dcat:keyword": [],
- "dc:license": {
-  "@id": "http://opendefinition.org/licenses/cc-by/"
- },
- "dc:publisher": {
-  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
-  "schema:url": {
-   "@id": "http://datalegend.net"
-  }
- },
- "url": "hisco_45_full_02.csv",
+ "@id": "https://iisg.amsterdam/hisco_45_full_02.csv",
  "@context": [
   "https://raw.githubusercontent.com/CLARIAH/COW/master/csvw.json",
   {
-   "@base": "https://iisg.amsterdam/",
-   "@language": "en"
+   "@language": "en",
+   "@base": "https://iisg.amsterdam/resource/"
   },
   {
    "owl": "http://www.w3.org/2002/07/owl#",
-   "hisclass": "https://iisg.amsterdam/hisclass/",
+   "hisclass": "https://iisg.amsterdam/resource/hisclass/",
    "hisco": "https://iisg.amsterdam/resource/hisco/",
-   "hisco-code": "https://iisg.amsterdam/hisco/code/hisco/",
-   "hisco-product": "https://iisg.amsterdam/hisco/code/product/",
-   "hisco-relation": "https://iisg.amsterdam/hisco/code/relation/",
-   "hisco-status": "https://iisg.amsterdam/hisco/code/status/",
+   "hisco-code": "https://iisg.amsterdam/resource/hisco/code/hisco/",
+   "hisco-product": "https://iisg.amsterdam/resource/hisco/code/product/",
+   "hisco-relation": "https://iisg.amsterdam/resource/hisco/code/relation/",
+   "hisco-status": "https://iisg.amsterdam/resource/hisco/code/status/",
    "schema": "http://schema.org/",
-   "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
+   "occhisco": "https://iisg.amsterdam/resource/napp/OCCHISCO/",
    "skos": "http://www.w3.org/2004/02/skos/core#",
    "xml": "http://www.w3.org/XML/1998/namespace/",
    "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
-   "napp": "https://iisg.amsterdam/napp/",
+   "napp": "https://iisg.amsterdam/resource/napp/",
    "prov": "http://www.w3.org/ns/prov#",
    "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
-   "hiscam": "https://iisg.amsterdam/hiscam/",
+   "hiscam": "https://iisg.amsterdam/resource/hiscam/",
    "dcterms": "http://purl.org/dc/terms/",
    "sdv": "https://iisg.amsterdam/vocab/",
-   "hsn": "https://iisg.amsterdam/hsn2013a/",
+   "hsn": "https://iisg.amsterdam/resource/hsn2013a/",
    "dc": "http://purl.org/dc/terms/",
    "dbp": "http://dbpedia.org/property/",
-   "clioprop": "https://iisg.amsterdam/clio/property/",
+   "clioprop": "https://iisg.amsterdam/resource/clio/property/",
    "csvw": "http://www.w3.org/ns/csvw#",
-   "clioind": "https://iisg.amsterdam/clio/indicator/",
+   "clioind": "https://iisg.amsterdam/resource/clio/indicator/",
    "dc11": "http://purl.org/dc/elements/1.1/",
    "sdr": "https://iisg.amsterdam/",
    "qb": "http://purl.org/linked-data/cube#",
@@ -54,10 +39,25 @@
    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   }
  ],
+ "url": "hisco_45_full_02.csv",
+ "dialect": {
+  "delimiter": ",",
+  "encoding": "utf-8",
+  "quoteChar": "\""
+ },
  "dc:title": "hisco_45_full_02.csv",
- "@id": "https://iisg.amsterdam/hisco_45_full_02.csv",
+ "dcat:keyword": [],
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+  "schema:url": {
+   "@id": "http://datalegend.net"
+  }
+ },
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
  "dc:modified": {
-  "@value": "2019-11-11",
+  "@value": "2020-10-10",
   "@type": "xsd:date"
  },
  "tableSchema": {
@@ -265,6 +265,8 @@
     "propertyUrl": "schema:value",
     "csvw:value": "{{hisco_1_id|replace('0','')}}{hisco_2_id}{hisco_3_id}{hisco_45_id}"
    }
-  ]
+  ],
+  "primaryKey": "hisco_1_id",
+  "aboutUrl": "{_row}"
  }
 }
