@@ -1,21 +1,14 @@
 {
- "@id": "https://iisg.amsterdam/se_CEDAR_HISCO.csv",
+ "@id": "https://iisg.amsterdam/resource/CEDAR-Sweden/se_CEDAR_HISCO.csv",
  "@context": [
   "https://raw.githubusercontent.com/CLARIAH/COW/master/csvw.json",
   {
    "@language": "en",
-   "@base": "https://iisg.amsterdam/CEDAR-Sweden/"
+   "@base": "https://iisg.amsterdam/resource/CEDAR-Sweden/"
   },
   {
    "bibo": "http://purl.org/ontology/bibo/",
    "bio": "http://purl.org/vocab/bio/0.1/",
-   "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/",
-   "canfam-auke": "https://iisg.amsterdam/canfam/auke/",
-   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
-   "clio": "https://iisg.amsterdam/clio/",
-   "clioctr": "https://iisg.amsterdam/clio/country/",
-   "clioind": "https://iisg.amsterdam/clio/indicator/",
-   "clioprop": "https://iisg.amsterdam/clio/property/",
    "csvw": "http://www.w3.org/ns/csvw#",
    "dbo": "http://dbpedia.org/ontology/",
    "dbp": "http://dbpedia.org/property/",
@@ -26,23 +19,17 @@
    "dcterms": "http://purl.org/dc/terms/",
    "foaf": "http://xmlns.com/foaf/0.1/",
    "hiscam": "https://iisg.amsterdam/hiscam/",
-   "hisclass": "https://iisg.amsterdam/hisclass/",
-   "hisclass5": "https://iisg.amsterdam/hisclass5/",
-   "hisco": "https://iisg.amsterdam/hisco/",
-   "hisco-code": "https://iisg.amsterdam/hisco/code/hisco/",
-   "hisco-product": "https://iisg.amsterdam/hisco/code/product/",
-   "hisco-relation": "https://iisg.amsterdam/hisco/code/relation/",
-   "hisco-status": "https://iisg.amsterdam/hisco/code/status/",
-   "hsn": "https://iisg.amsterdam/hsn2013a/",
+   "hisclass": "https://iisg.amsterdam/resource/hisclass/",
+   "hisclass5": "https://iisg.amsterdam/resource/hisclass5/",
+   "hisco": "https://iisg.amsterdam/resource/hisco/",
+   "hisco-code": "https://iisg.amsterdam/resource/hisco/code/hisco/",
+   "hisco-product": "https://iisg.amsterdam/resource/hisco/code/product/",
+   "hisco-relation": "https://iisg.amsterdam/resource/hisco/code/relation/",
+   "hisco-status": "https://iisg.amsterdam/resource/hisco/code/status/",
+   "hsn": "https://iisg.amsterdam/resource/hsn2013a/",
    "ldp": "http://www.w3.org/ns/ldp#",
-   "microheights": "https://iisg.amsterdam/microheights/",
-   "napp": "https://iisg.amsterdam/napp/",
-   "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/",
-   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/",
-   "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/",
-   "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/",
    "np": "http://www.nanopub.org/nschema#",
-   "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
+   "occhisco": "https://iisg.amsterdam/resource/napp/OCCHISCO/",
    "owl": "http://www.w3.org/2002/07/owl#",
    "prov": "http://www.w3.org/ns/prov#",
    "qb": "http://purl.org/linked-data/cube#",
@@ -53,7 +40,7 @@
    "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
    "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
    "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
-   "sdr": "https://iisg.amsterdam/",
+   "sdr": "https://iisg.amsterdam/resource/",
    "sdv": "https://iisg.amsterdam/vocab/",
    "skos": "http://www.w3.org/2004/02/skos/core#",
    "time": "http://www.w3.org/2006/time#",
@@ -85,7 +72,7 @@
  "tableSchema": {
   "columns": [
    {
-    "@id": "https://iisg.amsterdam/se_CEDAR_HISCO.csv/column/OCCUPATION",
+    "@id": "https://iisg.amsterdam/resource/CEDAR-Sweden/se_CEDAR_HISCO.csv/column/OCCUPATION",
     "name": "OCCUPATION",
     "titles": [
      "OCCUPATION"

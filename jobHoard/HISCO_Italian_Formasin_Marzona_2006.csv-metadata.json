@@ -1,169 +1,108 @@
 {
+ "@id": "https://iisg.amsterdam/resource/ForMarHISCO/HISCO_Italian_Formasin_Marzona_2006.csv",
+ "@context": [
+  "https://raw.githubusercontent.com/CLARIAH/COW/master/csvw.json",
+  {
+   "@language": "en",
+   "@base": "https://iisg.amsterdam/resource/ForMarHISCO/"
+  },
+  {
+   "bibo": "http://purl.org/ontology/bibo/",
+   "bio": "http://purl.org/vocab/bio/0.1/",
+   "csvw": "http://www.w3.org/ns/csvw#",
+   "dbo": "http://dbpedia.org/ontology/",
+   "dbp": "http://dbpedia.org/property/",
+   "dbpedia": "http://dbpedia.org/resource/",
+   "dbr": "http://dbpedia.org/resource/",
+   "dc": "http://purl.org/dc/terms/",
+   "dc11": "http://purl.org/dc/elements/1.1/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "foaf": "http://xmlns.com/foaf/0.1/",
+   "formar": "https://iisg.amsterdam/resource/ForMarHISCO/",
+   "hiscam": "https://iisg.amsterdam/resource/hiscam/",
+   "hisclass": "https://iisg.amsterdam/resource/hisclass/",
+   "hisclass5": "https://iisg.amsterdam/resource/hisclass5/",
+   "hisco": "https://iisg.amsterdam/resource/hisco/",
+   "hisco-code": "https://iisg.amsterdam/resource/hisco/code/hisco/",
+   "hisco-product": "https://iisg.amsterdam/resource/hisco/product/",
+   "hisco-relation": "https://iisg.amsterdam/resource/hisco/relation/",
+   "hisco-status": "https://iisg.amsterdam/resource/hisco/status/",
+   "hsn": "https://iisg.amsterdam/resource/hsn2013a/",
+   "ldp": "http://www.w3.org/ns/ldp#",
+   "microheights": "https://iisg.amsterdam/resource/microheights/",
+   "np": "http://www.nanopub.org/nschema#",
+   "occhisco": "https://iisg.amsterdam/resource/napp/OCCHISCO/",
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "prov": "http://www.w3.org/ns/prov#",
+   "qb": "http://purl.org/linked-data/cube#",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "schema": "http://schema.org/",
+   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
+   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
+   "sdr": "https://iisg.amsterdam/resource/",
+   "sdv": "https://iisg.amsterdam/vocab/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "time": "http://www.w3.org/2006/time#",
+   "xml": "http://www.w3.org/XML/1998/namespace/",
+   "xsd": "http://www.w3.org/2001/XMLSchema#"
+  }
+ ],
+ "url": "HISCO_Italian_Formasin_Marzona_2006.csv",
  "dialect": {
-  "quoteChar": "\"",
-  "delimiter": ",",
-  "encoding": "iso-8859-1"
+  "delimiter": ";",
+  "encoding": "Windows-1252",
+  "quoteChar": "\""
  },
+ "dc:title": "HISCO_Italian_Formasin_Marzona_2006.csv",
  "dcat:keyword": [],
- "dc:license": {
-  "@id": "http://opendefinition.org/licenses/cc-by/"
- },
  "dc:publisher": {
   "schema:name": "CLARIAH Structured Data Hub - Datalegend",
   "schema:url": {
    "@id": "http://datalegend.net"
   }
  },
- "dc:creator": [{
-     "@id": "sdp:richard.zijdeman@iisg.nl",
-     "rdf:type": [{
-         "@id": "foaf:Person"
-     }, {
-         "@id": "prov:Person"
-     }],
-     "owl:sameAs": [{
-         "@id": "http://orcid.org/0000-0003-0782-2704"
-     }, {
-         "@id": "info:eu-repo/dai/nl/304832960"
-     }, {
-         "@id": "http://isni.org/isni/000000010711579X"
-     }],
-     "foaf:name": "Richard Zijdeman",
-     "foaf:givenName": "Richard",
-     "foaf:familyName": "Zijdeman",
-     "foaf:mbox": {
-         "@id": "mailto:richard.zijdeman@iisg.nl"
-     }
- }, {
-     "@id": "sdp:r.hoekstra@elsevier.com",
-     "rdf:type": [{
-         "@id": "foaf:Person"
-     }, {
-         "@id": "prov:Person"
-     }],
-     "owl:sameAs": {
-         "@id": "http://orcid.org/0000-0001-7076-9083"
-     },
-     "foaf:familyName": "Hoekstra",
-     "foaf:name": "Rinke Hoekstra",
-     "foaf:givenName": "Rinke",
-     "foaf:mbox": {
-         "@id": "mailto:r.hoekstra@elsevier.com"
-     }
- }],
- "url": "HISCO_Italian_Formasin_Marzona_2006.csv",
- "@context": [
-  "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json",
-  {
-   "@base": "https://iisg.amsterdam/ForMarHISCO/",
-   "@language": "en"
-  },
-  {
-   "owl": "http://www.w3.org/2002/07/owl#",
-   "dbo": "http://dbpedia.org/ontology/",
-   "clioctr": "https://iisg.amsterdam/clio/country/",
-   "hisclass": "https://iisg.amsterdam/hisclass/",
-   "hisco-product": "https://iisg.amsterdam/hisco/product/",
-   "hisco-entry": "https://iisg.amsterdam/hisco/entry/",
-   "ldp": "http://www.w3.org/ns/ldp#",
-   "clio": "https://iisg.amsterdam/clio/",
-   "occhisco": "https://iisg.amsterdam/napp/OCCHISCO/",
-   "dbr": "http://dbpedia.org/resource/",
-   "skos": "http://www.w3.org/2004/02/skos/core#",
-   "xml": "http://www.w3.org/XML/1998/namespace/",
-   "bibo": "http://purl.org/ontology/bibo/",
-   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-   "prov": "http://www.w3.org/ns/prov#",
-   "sdmx-code": "http://purl.org/linked-data/sdmx/2009/code#",
-   "napp-can91": "https://iisg.amsterdam/napp/dataset/canada1891/",
-   "hiscam": "https://iisg.amsterdam/hiscam/",
-   "dbpedia": "http://dbpedia.org/resource/",
-   "np": "http://www.nanopub.org/nschema#",
-   "canfam-auke": "https://iisg.amsterdam/canfam/auke/",
-   "dcterms": "http://purl.org/dc/terms/",
-   "schema": "http://schema.org/",
-   "foaf": "http://xmlns.com/foaf/0.1/",
-   "napp": "https://iisg.amsterdam/napp/",
-   "sdv": "http://data.socialhistory.org/vocab/",
-   "hisco": "https://iisg.amsterdam/hisco/",
-   "sdp": "https://iisg.amsterdam/person/",
-   "sdr": "https://iisg.amsterdam/",
-   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-   "time": "http://www.w3.org/2006/time#",
-   "hsn": "https://iisg.amsterdam/hsn2013a/",
-   "dc": "http://purl.org/dc/terms/",
-   "hisco-relation": "https://iisg.amsterdam/hisco/code/relation/",
-   "hisco-status": "https://iisg.amsterdam/hisco/code/status/",
-   "hisco-code": "https://iisg.amsterdam/hisco/code/hisco/",
-   "dbp": "http://dbpedia.org/property/",
-   "clioprop": "https://iisg.amsterdam/clio/property/",
-   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
-   "csvw": "http://csvw.clariah-sdh.eculture.labs.vu.nl/csvw.json#",
-   "clioind": "https://iisg.amsterdam/clio/indicator/",
-   "dc11": "http://purl.org/dc/elements/1.1/",
-   "canfam-dimension": "http://data.socialhistory.org/vocab/canfam/dimension/",
-   "napp-eng81": "https://iisg.amsterdam/napp/dataset/englandwales1881/",
-   "canfam": "https://iisg.amsterdam/canfam/dataset/canada1901/",
-   "napp-sct81": "https://iisg.amsterdam/napp/dataset/scotland1881/",
-   "sdmx-measure": "http://purl.org/linked-data/sdmx/2009/measure#",
-   "qb": "http://purl.org/linked-data/cube#",
-   "hisclass5": "https://iisg.amsterdam/hisclass5/",
-   "xsd": "http://www.w3.org/2001/XMLSchema#",
-   "sdmx-dimension": "http://purl.org/linked-data/sdmx/2009/dimension#",
-   "napp-dimension": "http://data.socialhistory.org/vocab/napp/dimension/",
-   "": "https://iisg.amsterdam/ForMarHISCO/",
-   "fm-hisco": "https://iisg.amsterdam/ForMarHISCO/"
-  }
- ],
- "dc:title": "HISCO_Italian_Formasin_Marzona_2006.csv",
- "@id": "https://iisg.amsterdam/HISCO_Italian_Formasin_Marzona_2006.csv",
- "dc:uri": "http://hdl.handle.net/10622/SRVW6S",
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
  "dc:modified": {
-  "@value": "2016-11-05",
+  "@value": "2020-10-23",
   "@type": "xsd:date"
  },
  "tableSchema": {
-  "aboutUrl": "{occupation}",
   "columns": [
    {
-    "datatype": "string",
+    "@id": "https://iisg.amsterdam/resource/ForMarHISCO/HISCO_Italian_Formasin_Marzona_2006.csv/column/occupation",
+    "name": "occupation",
     "titles": [
      "occupation"
     ],
-    "name": "occupation",
-    "propertyUrl": "skos:prefLabel",
+    "dc:description": "occupation",
+    "datatype": "string",
     "lang": "it",
-    "dc:description": "occupation"
+    "propertyUrl": "schema:name",
+    "csvw:value": "{{occupation|lower}}"
    },
    {
     "virtual": true,
     "propertyUrl": "rdf:type",
-    "valueUrl": "skos:Concept"
+    "valueUrl": "schema:Occupation"
    },
    {
     "virtual": true,
-    "aboutUrl": "hisco:jobHoard",
-    "propertyUrl": "skos:member",
-    "valueUrl": "{occupation}"
+    "propertyUrl": "schema:occupationalCategory",
+    "valueUrl": "hisco-code:{hisco}",
+    "name": "HISCO",
+    "dc:description": "HISCO"
    },
    {
-    "virtual": true,
-    "aboutUrl": "{occupation}",
     "propertyUrl": "prov:wasDerivedFrom",
-    "valueUrl": "",
-    "dc:description": "provenance"
-   },
-   {
-    "virtual": true,
-    "titles": [
-     "hisco"
-    ],
-    "aboutUrl": "hisco-code:{% if not hisco in ['-3','-2','-1']%}{hisco:0>5}{% else %}{hisco}{% endif %}",
-    "propertyUrl": "skos:member",
-    "valueUrl": "{occupation}",
-    "name": "hisco",
-    "dc:description": "Historical International Standard Classification of Occupations"
-   }
-  ]
+    "valueUrl": "https://hdl.handle.net/10622/SRVW6S"
+    }
+  ],
+  "primaryKey": "occupation",
+  "aboutUrl": "{{occupation|lower}}"
  }
 }
