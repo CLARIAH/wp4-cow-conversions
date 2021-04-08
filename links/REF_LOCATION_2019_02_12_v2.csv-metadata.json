@@ -1,0 +1,182 @@
+{
+ "@id": "https://iisg.amsterdam/REF_LOCATION_2019_02_12_v2.csv",
+ "@context": [
+  "https://raw.githubusercontent.com/CLARIAH/COW/master/csvw.json",
+  {
+   "@language": "en",
+   "@base": "https://iisg.amsterdam/id/placenames/"
+  },
+  {
+   "aat": "http://vocab.getty.edu/aat/",
+   "bibo": "http://purl.org/ontology/bibo/",
+   "bio": "http://purl.org/vocab/bio/0.1/",
+   "cidoc": "http://www.cidoc-crm.org/cidoc-crm/",
+   "csvw": "http://www.w3.org/ns/csvw#",
+   "dbo": "http://dbpedia.org/ontology/",
+   "dc": "http://purl.org/dc/terms/",
+   "dc11": "http://purl.org/dc/elements/1.1/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "ecpo": "http://purl.org/ontology/ecpo#",
+   "foaf": "http://xmlns.com/foaf/0.1/",
+   "frbr": "http://purl.org/spar/frbr/core#",
+   "geo": "http://www.opengis.net/ont/geosparql#",
+   "geonames": "http://www.geonames.org/ontology#",
+   "gvp": "http://vocab.getty.edu/ontology#'",
+   "juso": "http://http://rdfs.co/juso/",
+   "lemon": "http://lemon-model.net/lemon#",
+   "midi": "http://purl.org/midi-ld/midi#",
+   "np": "http://www.nanopub.org/nschema#",
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "periodo": "http://n2t.net/ark:/99152/p0v#",
+   "pnv": "https://www.lodewijkpetram.nl/vocab/pnv/doc/",
+   "prov": "http://www.w3.org/ns/prov#",
+   "qb": "http://purl.org/linked-data/cube#",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "schema": "http://schema.org/",
+   "sdmx-concept": "http://purl.org/linked-data/sdmx/2009/concept#",
+   "sdr": "https://iisg.amsterdam/",
+   "sdv": "https://iisg.amsterdam/vocab/",
+   "sem": "http://semanticweb.cs.vu.nl/2009/11/sem/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "time": "http://www.w3.org/2006/time#",
+   "ulan": "http://vocab.getty.edu/ulan/",
+   "wgs84": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+   "xml": "http://www.w3.org/XML/1998/namespace/",
+   "xsd": "http://www.w3.org/2001/XMLSchema#"
+  }
+ ],
+ "url": "REF_LOCATION_2019_02_12_v2.csv",
+ "dialect": {
+  "delimiter": ",",
+  "encoding": "ISO-8859-1",
+  "quoteChar": "\""
+ },
+ "dc:title": "REF_LOCATION_2019_02_12_v2.csv",
+ "dcat:keyword": [],
+ "dc:publisher": {
+  "schema:name": "CLARIAH Structured Data Hub - Datalegend",
+  "schema:url": {
+   "@id": "http://datalegend.net"
+  }
+ },
+ "dc:license": {
+  "@id": "http://opendefinition.org/licenses/cc-by/"
+ },
+ "dc:modified": {
+  "@value": "2021-04-08",
+  "@type": "xsd:date"
+ },
+ "tableSchema": {
+  "columns": [
+   {
+    "@id": "https://iisg.amsterdam/REF_LOCATION_2019_02_12_v2.csv/column/Location_no",
+    "name": "Location_no",
+    "titles": [
+     "Location_no"
+    ],
+    "dc:description": "Location number HSN/LINKS",
+    "datatype": "integer"
+   },
+   {
+    "virtual": "true",
+    "valueUrl":"https://iisg.amsterdam/id/civ/location/{Location}",
+    "name": "Location",
+    "titles": [  "Location"],
+    "propertyUrl": "schema:Place",
+    "dc:description": "Location name"
+},
+{
+ "virtual": "true",
+ "aboutUrl":"https://iisg.amsterdam/id/civ/location/{Location}",
+ "name": "Location",
+ "titles": [
+  "Location"
+ ],
+ "propertyUrl": "https://iisg.amsterdam/id/civ/inMunicipality",
+ "valueUrl":"https://iisg.amsterdam/id/civ/municipality/{Municipality}",
+ "dc:description": "Municipality"
+},
+{
+ "virtual": "true",
+ "aboutUrl":"https://iisg.amsterdam/id/civ/municipality/{Municipality}",
+ "name": "Municipality",
+ "titles": [
+  "Municipality"
+ ],
+ "propertyUrl": "https://iisg.amsterdam/id/civ/inProvince",
+ "valueUrl":"https://iisg.amsterdam/id/civ/province/{Province}",
+ "dc:description": "Municipality"
+},
+{
+ "virtual": "true",
+ "aboutUrl":"https://iisg.amsterdam/id/civ/province/{Province}",
+ "name": "Province",
+ "titles": [
+  "Province"
+ ],
+ "propertyUrl": "https://iisg.amsterdam/id/civ/inCountry",
+ "valueUrl":"https://iisg.amsterdam/id/civ/country/{Country}",
+ "dc:description": "Municipality"
+},
+{
+"virtual": "true",
+"aboutUrl": "https://iisg.amsterdam/id/civ/location/{Location}",
+"propertyUrl": "rdf:type",
+"valueUrl": "schema:Place"
+},
+{
+"virtual": "true",
+"aboutUrl": "https://iisg.amsterdam/id/civ/municipality/{Municipality}",
+"propertyUrl": "rdf:type",
+"valueUrl": "https://iisg.amsterdam/id/civ/Municipality"
+},
+{
+"virtual": "true",
+"aboutUrl": "https://iisg.amsterdam/id/civ/municipality/{Municipality}",
+"propertyUrl": "schema:name",
+"lang": "nl",
+"name": "Municipality",
+"titles": [
+ "Municipality"]
+},
+{
+"virtual": "true",
+"aboutUrl": "https://iisg.amsterdam/id/civ/province/{Province}",
+"propertyUrl": "schema:name",
+"name": "Province",
+"lang": "nl",
+"titles": [
+ "Province"]
+},
+{
+"virtual": "true",
+"aboutUrl": "https://iisg.amsterdam/id/civ/country/{Country}",
+"propertyUrl": "schema:name",
+"lang": "nl",
+"name": "Country",
+"titles": [
+ "Country"]
+},
+{
+"virtual": "true",
+"aboutUrl": "https://iisg.amsterdam/id/civ/province/{Province}",
+"propertyUrl": "rdf:type",
+"valueUrl": "https://iisg.amsterdam/id/civ/Province"
+},
+{
+"virtual": "true",
+"aboutUrl": "https://iisg.amsterdam/id/civ/country/{Country}",
+"propertyUrl": "rdf:type",
+"valueUrl": "https://iisg.amsterdam/id/civ/Country"
+},
+{
+"virtual": "true",
+"propertyUrl": "rdf:type",
+"valueUrl": "https://iisg.amsterdam/id/civ/placeID"
+}
+  ],
+  "primaryKey": "Location_no",
+  "aboutUrl": "https://iisg.amsterdam/id/zeeland/place/l-{Location_no}"
+ }
+}
