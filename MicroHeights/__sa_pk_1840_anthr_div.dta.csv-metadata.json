@@ -34,7 +34,7 @@
     ]
 },
    "prov:wasDerivedFrom": [{
-   "@id": "",
+   "@id": "https://books.google.nl/books/about/A_Biometric_Study_on_the_Tribes_of_North.html?id=f4EBAAAAMAAJ&redir_esc=y",
    "rdf:type": {"@id": "bibo:Book"},
    "dc:creator": ["S.K. Mazumdar"],
    "dc:title": ["A Biometric Study on the Tribes of North-Western Himalayan Region; Anthropological Survey of India"],
@@ -319,6 +319,12 @@
   "datatype": "string",
   "csvw:value": "PK",
   "dc:description": "standardized isoAlpha2 code of country"
+},
+{
+  "aboutUrl": "https://iisg.amsterdam/microheights/sa_pk_1840/{_row}",
+  "virtual": true,
+  "propertyUrl": "microheights:dimension/dataset",
+  "valueUrl": "microheights:__sa_pk_1840_anthr_div.dta.csv"
 }
   ]
  }
